@@ -1,0 +1,1534 @@
+[
+  {
+    "timestamp": "2026-02-04T11:44:12.812Z",
+    "type": "SCAN",
+    "data": {
+      "signalCount": 6,
+      "signals": [
+        {
+          "timestamp": "2026-02-04T11:44:12.812Z",
+          "token": "DxyweigiCnEKDfjdYAcqnQZUJaABEPuqpDhpH4fME4xW",
+          "name": "renta / SOL",
+          "price": 0.00019106139582027686,
+          "volume24h": 6599715.13291805,
+          "liquidity": 44620.5619,
+          "priceChange24h": 347.748,
+          "volumeSpike": false,
+          "signalStrength": 0.5
+        },
+        {
+          "timestamp": "2026-02-04T11:44:12.812Z",
+          "token": "GG5u5MhwBhfFiUe4CWyp8TQTmgVaknUMysriKrk9PX3A",
+          "name": "Hitler / SOL",
+          "price": 0.00048756731437485227,
+          "volume24h": 6891452.95982137,
+          "liquidity": 69683.1712,
+          "priceChange24h": 1112.992,
+          "volumeSpike": false,
+          "signalStrength": 0.5
+        },
+        {
+          "timestamp": "2026-02-04T11:44:12.812Z",
+          "token": "9y3D2aVZjxGEZTHAdwhRjgxRSZ7B3Tym5SGmvMZcg8gR",
+          "name": "BEAM / SOL",
+          "price": 0.004611915523432396,
+          "volume24h": 1344123.91817753,
+          "liquidity": 264606.4388,
+          "priceChange24h": 121.778,
+          "volumeSpike": false,
+          "signalStrength": 0.5
+        },
+        {
+          "timestamp": "2026-02-04T11:44:12.812Z",
+          "token": "8vfdRerSPCQDzwTKUguAwEmQ4eQwCZ5JJ3XWV8AgoVLn",
+          "name": "MGN / USDC",
+          "price": 4.346354035591783,
+          "volume24h": 1471853.6660934,
+          "liquidity": 154667.5783,
+          "priceChange24h": 62.292,
+          "volumeSpike": false,
+          "signalStrength": 0.5
+        },
+        {
+          "timestamp": "2026-02-04T11:44:12.812Z",
+          "token": "J3b6dvheS2Y1cbMtVz5TCWXNegSjJDbUKxdUVDPoqmS7",
+          "name": "arc / SOL",
+          "price": 0.08039347143925928,
+          "volume24h": 6661267.27466828,
+          "liquidity": 3888641.498,
+          "priceChange24h": 39.064,
+          "volumeSpike": false,
+          "signalStrength": 0.6000000000000001
+        },
+        {
+          "timestamp": "2026-02-04T11:44:12.812Z",
+          "token": "EqzfbcWcugYzr8uGrUUd2ZLGanzocoxjdWQjPvBNhkPP",
+          "name": "ICEBLOX / SOL",
+          "price": 0.0003315233294481309,
+          "volume24h": 2468923.83891436,
+          "liquidity": 52767.2453,
+          "priceChange24h": 653.422,
+          "volumeSpike": false,
+          "signalStrength": 0.5
+        }
+      ]
+    }
+  },
+  {
+    "timestamp": "2026-02-04T11:47:03.548Z",
+    "type": "SCAN",
+    "data": {
+      "signalCount": 6,
+      "signals": [
+        {
+          "timestamp": "2026-02-04T11:47:03.547Z",
+          "token": "DxyweigiCnEKDfjdYAcqnQZUJaABEPuqpDhpH4fME4xW",
+          "name": "renta / SOL",
+          "price": 0.00018972906298679292,
+          "volume24h": 6609661.33127435,
+          "liquidity": 44050.9781,
+          "priceChange24h": 335.772,
+          "volumeSpike": false,
+          "signalStrength": 0.5
+        },
+        {
+          "timestamp": "2026-02-04T11:47:03.547Z",
+          "token": "GG5u5MhwBhfFiUe4CWyp8TQTmgVaknUMysriKrk9PX3A",
+          "name": "Hitler / SOL",
+          "price": 0.0005710202072685989,
+          "volume24h": 6923155.94904114,
+          "liquidity": 74740.9802,
+          "priceChange24h": 1320.445,
+          "volumeSpike": false,
+          "signalStrength": 0.5
+        },
+        {
+          "timestamp": "2026-02-04T11:47:03.547Z",
+          "token": "9y3D2aVZjxGEZTHAdwhRjgxRSZ7B3Tym5SGmvMZcg8gR",
+          "name": "BEAM / SOL",
+          "price": 0.004606830077113406,
+          "volume24h": 1344160.82185884,
+          "liquidity": 264685.321,
+          "priceChange24h": 121.482,
+          "volumeSpike": false,
+          "signalStrength": 0.5
+        },
+        {
+          "timestamp": "2026-02-04T11:47:03.547Z",
+          "token": "8vfdRerSPCQDzwTKUguAwEmQ4eQwCZ5JJ3XWV8AgoVLn",
+          "name": "MGN / USDC",
+          "price": 4.270211127874911,
+          "volume24h": 1469076.21920686,
+          "liquidity": 153763.4682,
+          "priceChange24h": 62.989,
+          "volumeSpike": false,
+          "signalStrength": 0.5
+        },
+        {
+          "timestamp": "2026-02-04T11:47:03.547Z",
+          "token": "J3b6dvheS2Y1cbMtVz5TCWXNegSjJDbUKxdUVDPoqmS7",
+          "name": "arc / SOL",
+          "price": 0.08035443447219831,
+          "volume24h": 6665809.49674021,
+          "liquidity": 3907122.8166,
+          "priceChange24h": 39.175,
+          "volumeSpike": false,
+          "signalStrength": 0.6000000000000001
+        },
+        {
+          "timestamp": "2026-02-04T11:47:03.547Z",
+          "token": "EqzfbcWcugYzr8uGrUUd2ZLGanzocoxjdWQjPvBNhkPP",
+          "name": "ICEBLOX / SOL",
+          "price": 0.0003177509258515763,
+          "volume24h": 2472686.08299463,
+          "liquidity": 51740.7199,
+          "priceChange24h": 622.122,
+          "volumeSpike": false,
+          "signalStrength": 0.5
+        }
+      ]
+    }
+  },
+  {
+    "timestamp": "2026-02-04T11:47:05.994Z",
+    "type": "ANALYSIS",
+    "data": {
+      "signal": {
+        "timestamp": "2026-02-04T11:47:03.547Z",
+        "token": "DxyweigiCnEKDfjdYAcqnQZUJaABEPuqpDhpH4fME4xW",
+        "name": "renta / SOL",
+        "price": 0.00018972906298679292,
+        "volume24h": 6609661.33127435,
+        "liquidity": 44050.9781,
+        "priceChange24h": 335.772,
+        "volumeSpike": false,
+        "signalStrength": 0.5
+      },
+      "holders": null,
+      "authority": {
+        "hasMintAuthority": false,
+        "hasFreezeAuthority": false
+      },
+      "timestamp": "2026-02-04T11:47:05.994Z",
+      "rugScore": 0,
+      "recommendation": {
+        "action": "BUY",
+        "reason": "Moderate signal",
+        "confidence": 0.6,
+        "positionSol": 0.03
+      }
+    }
+  },
+  {
+    "timestamp": "2026-02-04T11:47:05.998Z",
+    "type": "TRADE",
+    "data": {
+      "action": "BUY",
+      "token": "DxyweigiCnEKDfjdYAcqnQZUJaABEPuqpDhpH4fME4xW",
+      "name": "renta / SOL",
+      "solAmount": 0.03,
+      "paper": true
+    }
+  },
+  {
+    "timestamp": "2026-02-04T11:47:10.936Z",
+    "type": "ANALYSIS",
+    "data": {
+      "signal": {
+        "timestamp": "2026-02-04T11:47:03.547Z",
+        "token": "GG5u5MhwBhfFiUe4CWyp8TQTmgVaknUMysriKrk9PX3A",
+        "name": "Hitler / SOL",
+        "price": 0.0005710202072685989,
+        "volume24h": 6923155.94904114,
+        "liquidity": 74740.9802,
+        "priceChange24h": 1320.445,
+        "volumeSpike": false,
+        "signalStrength": 0.5
+      },
+      "holders": null,
+      "authority": {
+        "hasMintAuthority": false,
+        "hasFreezeAuthority": false
+      },
+      "timestamp": "2026-02-04T11:47:10.935Z",
+      "rugScore": 0,
+      "recommendation": {
+        "action": "BUY",
+        "reason": "Moderate signal",
+        "confidence": 0.6,
+        "positionSol": 0.03
+      }
+    }
+  },
+  {
+    "timestamp": "2026-02-04T11:47:10.938Z",
+    "type": "TRADE",
+    "data": {
+      "action": "BUY",
+      "token": "GG5u5MhwBhfFiUe4CWyp8TQTmgVaknUMysriKrk9PX3A",
+      "name": "Hitler / SOL",
+      "solAmount": 0.03,
+      "paper": true
+    }
+  },
+  {
+    "timestamp": "2026-02-04T11:47:11.863Z",
+    "type": "ANALYSIS",
+    "data": {
+      "signal": {
+        "timestamp": "2026-02-04T11:47:03.547Z",
+        "token": "9y3D2aVZjxGEZTHAdwhRjgxRSZ7B3Tym5SGmvMZcg8gR",
+        "name": "BEAM / SOL",
+        "price": 0.004606830077113406,
+        "volume24h": 1344160.82185884,
+        "liquidity": 264685.321,
+        "priceChange24h": 121.482,
+        "volumeSpike": false,
+        "signalStrength": 0.5
+      },
+      "holders": null,
+      "authority": {
+        "hasMintAuthority": false,
+        "hasFreezeAuthority": false
+      },
+      "timestamp": "2026-02-04T11:47:11.862Z",
+      "rugScore": 0,
+      "recommendation": {
+        "action": "BUY",
+        "reason": "Moderate signal",
+        "confidence": 0.6,
+        "positionSol": 0.03
+      }
+    }
+  },
+  {
+    "timestamp": "2026-02-04T11:47:11.865Z",
+    "type": "TRADE",
+    "data": {
+      "action": "BUY",
+      "token": "9y3D2aVZjxGEZTHAdwhRjgxRSZ7B3Tym5SGmvMZcg8gR",
+      "name": "BEAM / SOL",
+      "solAmount": 0.03,
+      "paper": true
+    }
+  },
+  {
+    "timestamp": "2026-02-04T11:47:14.142Z",
+    "type": "ANALYSIS",
+    "data": {
+      "signal": {
+        "timestamp": "2026-02-04T11:47:03.547Z",
+        "token": "8vfdRerSPCQDzwTKUguAwEmQ4eQwCZ5JJ3XWV8AgoVLn",
+        "name": "MGN / USDC",
+        "price": 4.270211127874911,
+        "volume24h": 1469076.21920686,
+        "liquidity": 153763.4682,
+        "priceChange24h": 62.989,
+        "volumeSpike": false,
+        "signalStrength": 0.5
+      },
+      "holders": null,
+      "authority": {
+        "hasMintAuthority": false,
+        "hasFreezeAuthority": false
+      },
+      "timestamp": "2026-02-04T11:47:14.142Z",
+      "rugScore": 0,
+      "recommendation": {
+        "action": "BUY",
+        "reason": "Moderate signal",
+        "confidence": 0.6,
+        "positionSol": 0.03
+      }
+    }
+  },
+  {
+    "timestamp": "2026-02-04T11:47:15.038Z",
+    "type": "ANALYSIS",
+    "data": {
+      "signal": {
+        "timestamp": "2026-02-04T11:47:03.547Z",
+        "token": "J3b6dvheS2Y1cbMtVz5TCWXNegSjJDbUKxdUVDPoqmS7",
+        "name": "arc / SOL",
+        "price": 0.08035443447219831,
+        "volume24h": 6665809.49674021,
+        "liquidity": 3907122.8166,
+        "priceChange24h": 39.175,
+        "volumeSpike": false,
+        "signalStrength": 0.6000000000000001
+      },
+      "holders": null,
+      "authority": {
+        "hasMintAuthority": false,
+        "hasFreezeAuthority": false
+      },
+      "timestamp": "2026-02-04T11:47:15.038Z",
+      "rugScore": 0,
+      "recommendation": {
+        "action": "BUY",
+        "reason": "Strong signal, low risk",
+        "confidence": 0.7000000000000001,
+        "positionSol": 0.035
+      }
+    }
+  },
+  {
+    "timestamp": "2026-02-04T11:47:15.553Z",
+    "type": "ANALYSIS",
+    "data": {
+      "signal": {
+        "timestamp": "2026-02-04T11:47:03.547Z",
+        "token": "EqzfbcWcugYzr8uGrUUd2ZLGanzocoxjdWQjPvBNhkPP",
+        "name": "ICEBLOX / SOL",
+        "price": 0.0003177509258515763,
+        "volume24h": 2472686.08299463,
+        "liquidity": 51740.7199,
+        "priceChange24h": 622.122,
+        "volumeSpike": false,
+        "signalStrength": 0.5
+      },
+      "holders": null,
+      "authority": {
+        "hasMintAuthority": false,
+        "hasFreezeAuthority": false
+      },
+      "timestamp": "2026-02-04T11:47:15.553Z",
+      "rugScore": 0,
+      "recommendation": {
+        "action": "BUY",
+        "reason": "Moderate signal",
+        "confidence": 0.6,
+        "positionSol": 0.03
+      }
+    }
+  },
+  {
+    "timestamp": "2026-02-04T11:47:45.722Z",
+    "type": "SCAN",
+    "data": {
+      "signalCount": 0,
+      "signals": []
+    }
+  },
+  {
+    "timestamp": "2026-02-04T12:00:37.825Z",
+    "type": "SCAN",
+    "data": {
+      "signalCount": 6,
+      "signals": [
+        {
+          "timestamp": "2026-02-04T12:00:37.825Z",
+          "token": "DxyweigiCnEKDfjdYAcqnQZUJaABEPuqpDhpH4fME4xW",
+          "name": "renta / SOL",
+          "price": 0.0002442968237832516,
+          "volume24h": 6621867.67820218,
+          "liquidity": 47194.7118,
+          "priceChange24h": 402.566,
+          "volumeSpike": false,
+          "signalStrength": 0.5
+        },
+        {
+          "timestamp": "2026-02-04T12:00:37.825Z",
+          "token": "9y3D2aVZjxGEZTHAdwhRjgxRSZ7B3Tym5SGmvMZcg8gR",
+          "name": "BEAM / SOL",
+          "price": 0.004592445269766988,
+          "volume24h": 1352690.79245965,
+          "liquidity": 262789.324,
+          "priceChange24h": 123.006,
+          "volumeSpike": false,
+          "signalStrength": 0.5
+        },
+        {
+          "timestamp": "2026-02-04T12:00:37.825Z",
+          "token": "ECuy1H7P9hoa4BMQzppDhox64quS8MsfucnTQtNWjsRb",
+          "name": "USOR / SOL",
+          "price": 0.006782715509470213,
+          "volume24h": 380375.420601963,
+          "liquidity": 269189.3192,
+          "priceChange24h": 10.132,
+          "volumeSpike": false,
+          "signalStrength": 0.6000000000000001
+        },
+        {
+          "timestamp": "2026-02-04T12:00:37.825Z",
+          "token": "8vfdRerSPCQDzwTKUguAwEmQ4eQwCZ5JJ3XWV8AgoVLn",
+          "name": "MGN / USDC",
+          "price": 4.754002659567503,
+          "volume24h": 1469563.78871068,
+          "liquidity": 161406.2323,
+          "priceChange24h": 81.281,
+          "volumeSpike": false,
+          "signalStrength": 0.5
+        },
+        {
+          "timestamp": "2026-02-04T12:00:37.825Z",
+          "token": "J3b6dvheS2Y1cbMtVz5TCWXNegSjJDbUKxdUVDPoqmS7",
+          "name": "arc / SOL",
+          "price": 0.08250716127769993,
+          "volume24h": 6736279.71839892,
+          "liquidity": 3949144.8692,
+          "priceChange24h": 43.958,
+          "volumeSpike": false,
+          "signalStrength": 0.6000000000000001
+        },
+        {
+          "timestamp": "2026-02-04T12:00:37.825Z",
+          "token": "EqzfbcWcugYzr8uGrUUd2ZLGanzocoxjdWQjPvBNhkPP",
+          "name": "ICEBLOX / SOL",
+          "price": 0.00028326098641912793,
+          "volume24h": 2488550.96501241,
+          "liquidity": 48603.1995,
+          "priceChange24h": 543.74,
+          "volumeSpike": false,
+          "signalStrength": 0.5
+        }
+      ]
+    }
+  },
+  {
+    "timestamp": "2026-02-04T12:00:39.851Z",
+    "type": "ANALYSIS",
+    "data": {
+      "signal": {
+        "timestamp": "2026-02-04T12:00:37.825Z",
+        "token": "DxyweigiCnEKDfjdYAcqnQZUJaABEPuqpDhpH4fME4xW",
+        "name": "renta / SOL",
+        "price": 0.0002442968237832516,
+        "volume24h": 6621867.67820218,
+        "liquidity": 47194.7118,
+        "priceChange24h": 402.566,
+        "volumeSpike": false,
+        "signalStrength": 0.5
+      },
+      "holders": null,
+      "authority": {
+        "hasMintAuthority": false,
+        "hasFreezeAuthority": false
+      },
+      "sentiment": {
+        "sentimentScore": 6,
+        "organic": true,
+        "botActivity": "low",
+        "influencerMentions": false,
+        "summary": "Renta/SOL shows moderately positive sentiment on X with signs of organic community engagement."
+      },
+      "timestamp": "2026-02-04T12:00:39.850Z",
+      "rugScore": 0,
+      "recommendation": {
+        "action": "BUY",
+        "reason": "✅ Strong signal + organic sentiment",
+        "confidence": 0.75,
+        "positionSol": 0.038
+      }
+    }
+  },
+  {
+    "timestamp": "2026-02-04T12:00:39.854Z",
+    "type": "TRADE",
+    "data": {
+      "action": "BUY",
+      "token": "DxyweigiCnEKDfjdYAcqnQZUJaABEPuqpDhpH4fME4xW",
+      "name": "renta / SOL",
+      "solAmount": 0.038,
+      "paper": true
+    }
+  },
+  {
+    "timestamp": "2026-02-04T12:00:42.670Z",
+    "type": "ANALYSIS",
+    "data": {
+      "signal": {
+        "timestamp": "2026-02-04T12:00:37.825Z",
+        "token": "9y3D2aVZjxGEZTHAdwhRjgxRSZ7B3Tym5SGmvMZcg8gR",
+        "name": "BEAM / SOL",
+        "price": 0.004592445269766988,
+        "volume24h": 1352690.79245965,
+        "liquidity": 262789.324,
+        "priceChange24h": 123.006,
+        "volumeSpike": false,
+        "signalStrength": 0.5
+      },
+      "holders": null,
+      "authority": {
+        "hasMintAuthority": false,
+        "hasFreezeAuthority": false
+      },
+      "sentiment": {
+        "sentimentScore": 7,
+        "organic": true,
+        "botActivity": "low",
+        "influencerMentions": false,
+        "summary": "BEAM/SOL shows positive sentiment on X with organic community engagement and minimal bot activity."
+      },
+      "timestamp": "2026-02-04T12:00:42.670Z",
+      "rugScore": 0,
+      "recommendation": {
+        "action": "BUY",
+        "reason": "✅ Strong signal + organic sentiment",
+        "confidence": 0.85,
+        "positionSol": 0.043
+      }
+    }
+  },
+  {
+    "timestamp": "2026-02-04T12:00:42.672Z",
+    "type": "TRADE",
+    "data": {
+      "action": "BUY",
+      "token": "9y3D2aVZjxGEZTHAdwhRjgxRSZ7B3Tym5SGmvMZcg8gR",
+      "name": "BEAM / SOL",
+      "solAmount": 0.043,
+      "paper": true
+    }
+  },
+  {
+    "timestamp": "2026-02-04T12:00:56.958Z",
+    "type": "ANALYSIS",
+    "data": {
+      "signal": {
+        "timestamp": "2026-02-04T12:00:37.825Z",
+        "token": "ECuy1H7P9hoa4BMQzppDhox64quS8MsfucnTQtNWjsRb",
+        "name": "USOR / SOL",
+        "price": 0.006782715509470213,
+        "volume24h": 380375.420601963,
+        "liquidity": 269189.3192,
+        "priceChange24h": 10.132,
+        "volumeSpike": false,
+        "signalStrength": 0.6000000000000001
+      },
+      "holders": null,
+      "authority": {
+        "hasMintAuthority": false,
+        "hasFreezeAuthority": false
+      },
+      "sentiment": {
+        "sentimentScore": 6,
+        "organic": true,
+        "botActivity": "low",
+        "influencerMentions": false,
+        "summary": "USOR/SOL shows moderately positive sentiment on X with signs of organic community engagement."
+      },
+      "timestamp": "2026-02-04T12:00:56.957Z",
+      "rugScore": 0,
+      "recommendation": {
+        "action": "BUY",
+        "reason": "✅ Strong signal + organic sentiment",
+        "confidence": 0.8500000000000001,
+        "positionSol": 0.043
+      }
+    }
+  },
+  {
+    "timestamp": "2026-02-04T12:00:56.962Z",
+    "type": "TRADE",
+    "data": {
+      "action": "BUY",
+      "token": "ECuy1H7P9hoa4BMQzppDhox64quS8MsfucnTQtNWjsRb",
+      "name": "USOR / SOL",
+      "solAmount": 0.043,
+      "paper": true
+    }
+  },
+  {
+    "timestamp": "2026-02-04T12:00:59.894Z",
+    "type": "ANALYSIS",
+    "data": {
+      "signal": {
+        "timestamp": "2026-02-04T12:00:37.825Z",
+        "token": "8vfdRerSPCQDzwTKUguAwEmQ4eQwCZ5JJ3XWV8AgoVLn",
+        "name": "MGN / USDC",
+        "price": 4.754002659567503,
+        "volume24h": 1469563.78871068,
+        "liquidity": 161406.2323,
+        "priceChange24h": 81.281,
+        "volumeSpike": false,
+        "signalStrength": 0.5
+      },
+      "holders": null,
+      "authority": {
+        "hasMintAuthority": false,
+        "hasFreezeAuthority": false
+      },
+      "sentiment": {
+        "sentimentScore": 6,
+        "organic": false,
+        "botActivity": "medium",
+        "influencerMentions": false,
+        "summary": "Sentiment for MGN/USDC on X is moderately positive, but appears driven by medium bot activity rather than organic community engagement."
+      },
+      "timestamp": "2026-02-04T12:00:59.894Z",
+      "rugScore": 20,
+      "recommendation": {
+        "action": "REJECT",
+        "reason": "🚫 Not organic community movement",
+        "confidence": 0.75
+      }
+    }
+  },
+  {
+    "timestamp": "2026-02-04T12:01:01.622Z",
+    "type": "ANALYSIS",
+    "data": {
+      "signal": {
+        "timestamp": "2026-02-04T12:00:37.825Z",
+        "token": "J3b6dvheS2Y1cbMtVz5TCWXNegSjJDbUKxdUVDPoqmS7",
+        "name": "arc / SOL",
+        "price": 0.08250716127769993,
+        "volume24h": 6736279.71839892,
+        "liquidity": 3949144.8692,
+        "priceChange24h": 43.958,
+        "volumeSpike": false,
+        "signalStrength": 0.6000000000000001
+      },
+      "holders": null,
+      "authority": {
+        "hasMintAuthority": false,
+        "hasFreezeAuthority": false
+      },
+      "sentiment": {
+        "sentimentScore": 6,
+        "organic": true,
+        "botActivity": "low",
+        "influencerMentions": false,
+        "summary": "Sentiment for ARC/SOL on X is moderately positive with signs of organic community engagement and minimal bot activity."
+      },
+      "timestamp": "2026-02-04T12:01:01.622Z",
+      "rugScore": 0,
+      "recommendation": {
+        "action": "BUY",
+        "reason": "✅ Strong signal + organic sentiment",
+        "confidence": 0.8500000000000001,
+        "positionSol": 0.043
+      }
+    }
+  },
+  {
+    "timestamp": "2026-02-04T12:01:02.819Z",
+    "type": "ANALYSIS",
+    "data": {
+      "signal": {
+        "timestamp": "2026-02-04T12:00:37.825Z",
+        "token": "EqzfbcWcugYzr8uGrUUd2ZLGanzocoxjdWQjPvBNhkPP",
+        "name": "ICEBLOX / SOL",
+        "price": 0.00028326098641912793,
+        "volume24h": 2488550.96501241,
+        "liquidity": 48603.1995,
+        "priceChange24h": 543.74,
+        "volumeSpike": false,
+        "signalStrength": 0.5
+      },
+      "holders": null,
+      "authority": {
+        "hasMintAuthority": false,
+        "hasFreezeAuthority": false
+      },
+      "sentiment": {
+        "sentimentScore": 6,
+        "organic": false,
+        "botActivity": "high",
+        "influencerMentions": false,
+        "summary": "ICEBLOX/SOL shows mixed sentiment with heavy bot activity driving hype, lacking credible influencer backing."
+      },
+      "timestamp": "2026-02-04T12:01:02.819Z",
+      "rugScore": 30,
+      "recommendation": {
+        "action": "REJECT",
+        "reason": "🚫 High bot activity detected on X",
+        "confidence": 0.85
+      }
+    }
+  },
+  {
+    "timestamp": "2026-02-04T12:01:32.899Z",
+    "type": "SCAN",
+    "data": {
+      "signalCount": 0,
+      "signals": []
+    }
+  },
+  {
+    "timestamp": "2026-02-04T12:02:03.139Z",
+    "type": "SCAN",
+    "data": {
+      "signalCount": 0,
+      "signals": []
+    }
+  },
+  {
+    "timestamp": "2026-02-04T12:26:11.089Z",
+    "type": "SCAN",
+    "data": {
+      "signalCount": 6,
+      "signals": [
+        {
+          "timestamp": "2026-02-04T12:26:11.088Z",
+          "token": "DxyweigiCnEKDfjdYAcqnQZUJaABEPuqpDhpH4fME4xW",
+          "name": "renta / SOL",
+          "price": 0.00028469628643790364,
+          "volume24h": 6665722.44145345,
+          "liquidity": 55458.8953,
+          "priceChange24h": 555.934,
+          "volumeSpike": false,
+          "signalStrength": 0.5
+        },
+        {
+          "timestamp": "2026-02-04T12:26:11.088Z",
+          "token": "9y3D2aVZjxGEZTHAdwhRjgxRSZ7B3Tym5SGmvMZcg8gR",
+          "name": "BEAM / SOL",
+          "price": 0.004637545404612464,
+          "volume24h": 1359170.21101909,
+          "liquidity": 266033.9956,
+          "priceChange24h": 111.72,
+          "volumeSpike": false,
+          "signalStrength": 0.5
+        },
+        {
+          "timestamp": "2026-02-04T12:26:11.088Z",
+          "token": "ECuy1H7P9hoa4BMQzppDhox64quS8MsfucnTQtNWjsRb",
+          "name": "USOR / SOL",
+          "price": 0.006974145370902414,
+          "volume24h": 356504.895085221,
+          "liquidity": 272782.88,
+          "priceChange24h": 52.023,
+          "volumeSpike": false,
+          "signalStrength": 0.7
+        },
+        {
+          "timestamp": "2026-02-04T12:26:11.088Z",
+          "token": "FMqmpgzekrotxdXrynBpnWGMhCKbkhUYqN6EEN24CY1j",
+          "name": "USOR / SOL",
+          "price": 0.007291435009699071,
+          "volume24h": 1291447.59177802,
+          "liquidity": 51409.5457,
+          "priceChange24h": 58.304,
+          "volumeSpike": false,
+          "signalStrength": 0.5
+        },
+        {
+          "timestamp": "2026-02-04T12:26:11.088Z",
+          "token": "J3b6dvheS2Y1cbMtVz5TCWXNegSjJDbUKxdUVDPoqmS7",
+          "name": "arc / SOL",
+          "price": 0.08342803443066311,
+          "volume24h": 6888635.7553335,
+          "liquidity": 3977089.0181,
+          "priceChange24h": 43.264,
+          "volumeSpike": false,
+          "signalStrength": 0.6000000000000001
+        },
+        {
+          "timestamp": "2026-02-04T12:26:11.088Z",
+          "token": "EqzfbcWcugYzr8uGrUUd2ZLGanzocoxjdWQjPvBNhkPP",
+          "name": "ICEBLOX / SOL",
+          "price": 0.00030769615324763706,
+          "volume24h": 2509712.20803405,
+          "liquidity": 50585.1149,
+          "priceChange24h": 599.272,
+          "volumeSpike": false,
+          "signalStrength": 0.5
+        }
+      ]
+    }
+  },
+  {
+    "timestamp": "2026-02-04T12:26:12.279Z",
+    "type": "ANALYSIS",
+    "data": {
+      "signal": {
+        "timestamp": "2026-02-04T12:26:11.088Z",
+        "token": "DxyweigiCnEKDfjdYAcqnQZUJaABEPuqpDhpH4fME4xW",
+        "name": "renta / SOL",
+        "price": 0.00028469628643790364,
+        "volume24h": 6665722.44145345,
+        "liquidity": 55458.8953,
+        "priceChange24h": 555.934,
+        "volumeSpike": false,
+        "signalStrength": 0.5
+      },
+      "holders": null,
+      "authority": {
+        "hasMintAuthority": false,
+        "hasFreezeAuthority": false
+      },
+      "sentiment": {
+        "sentimentScore": 6,
+        "organic": true,
+        "botActivity": "low",
+        "influencerMentions": false,
+        "summary": "Renta/SOL shows moderately positive sentiment on X with signs of organic community engagement."
+      },
+      "timestamp": "2026-02-04T12:26:12.278Z",
+      "rugScore": 0,
+      "recommendation": {
+        "action": "BUY",
+        "reason": "✅ Strong signal + organic sentiment",
+        "confidence": 0.75,
+        "positionSol": 0.038
+      }
+    }
+  },
+  {
+    "timestamp": "2026-02-04T12:26:13.434Z",
+    "type": "ANALYSIS",
+    "data": {
+      "signal": {
+        "timestamp": "2026-02-04T12:26:11.088Z",
+        "token": "9y3D2aVZjxGEZTHAdwhRjgxRSZ7B3Tym5SGmvMZcg8gR",
+        "name": "BEAM / SOL",
+        "price": 0.004637545404612464,
+        "volume24h": 1359170.21101909,
+        "liquidity": 266033.9956,
+        "priceChange24h": 111.72,
+        "volumeSpike": false,
+        "signalStrength": 0.5
+      },
+      "holders": null,
+      "authority": {
+        "hasMintAuthority": false,
+        "hasFreezeAuthority": false
+      },
+      "sentiment": {
+        "sentimentScore": 7,
+        "organic": true,
+        "botActivity": "low",
+        "influencerMentions": true,
+        "summary": "BEAM/SOL shows positive sentiment on X with organic community engagement and mentions from notable crypto influencers."
+      },
+      "timestamp": "2026-02-04T12:26:13.434Z",
+      "rugScore": 0,
+      "recommendation": {
+        "action": "BUY",
+        "reason": "✅ Strong signal + organic sentiment",
+        "confidence": 1,
+        "positionSol": 0.05
+      }
+    }
+  },
+  {
+    "timestamp": "2026-02-04T12:26:14.815Z",
+    "type": "ANALYSIS",
+    "data": {
+      "signal": {
+        "timestamp": "2026-02-04T12:26:11.088Z",
+        "token": "ECuy1H7P9hoa4BMQzppDhox64quS8MsfucnTQtNWjsRb",
+        "name": "USOR / SOL",
+        "price": 0.006974145370902414,
+        "volume24h": 356504.895085221,
+        "liquidity": 272782.88,
+        "priceChange24h": 52.023,
+        "volumeSpike": false,
+        "signalStrength": 0.7
+      },
+      "holders": null,
+      "authority": {
+        "hasMintAuthority": false,
+        "hasFreezeAuthority": false
+      },
+      "sentiment": {
+        "sentimentScore": 6,
+        "organic": false,
+        "botActivity": "high",
+        "influencerMentions": false,
+        "summary": "USOR/SOL shows mixed sentiment with heavy bot activity driving hype, lacking credible influencer support."
+      },
+      "timestamp": "2026-02-04T12:26:14.815Z",
+      "rugScore": 30,
+      "recommendation": {
+        "action": "REJECT",
+        "reason": "🚫 High bot activity detected on X",
+        "confidence": 0.85
+      }
+    }
+  },
+  {
+    "timestamp": "2026-02-04T12:26:16.725Z",
+    "type": "ANALYSIS",
+    "data": {
+      "signal": {
+        "timestamp": "2026-02-04T12:26:11.088Z",
+        "token": "FMqmpgzekrotxdXrynBpnWGMhCKbkhUYqN6EEN24CY1j",
+        "name": "USOR / SOL",
+        "price": 0.007291435009699071,
+        "volume24h": 1291447.59177802,
+        "liquidity": 51409.5457,
+        "priceChange24h": 58.304,
+        "volumeSpike": false,
+        "signalStrength": 0.5
+      },
+      "holders": null,
+      "authority": {
+        "hasMintAuthority": false,
+        "hasFreezeAuthority": false
+      },
+      "sentiment": {
+        "sentimentScore": 6,
+        "organic": true,
+        "botActivity": "low",
+        "influencerMentions": false,
+        "summary": "USOR/SOL shows moderately positive sentiment on X with signs of organic community engagement."
+      },
+      "timestamp": "2026-02-04T12:26:16.725Z",
+      "rugScore": 0,
+      "recommendation": {
+        "action": "BUY",
+        "reason": "✅ Strong signal + organic sentiment",
+        "confidence": 0.75,
+        "positionSol": 0.038
+      }
+    }
+  },
+  {
+    "timestamp": "2026-02-04T12:26:17.865Z",
+    "type": "ANALYSIS",
+    "data": {
+      "signal": {
+        "timestamp": "2026-02-04T12:26:11.088Z",
+        "token": "J3b6dvheS2Y1cbMtVz5TCWXNegSjJDbUKxdUVDPoqmS7",
+        "name": "arc / SOL",
+        "price": 0.08342803443066311,
+        "volume24h": 6888635.7553335,
+        "liquidity": 3977089.0181,
+        "priceChange24h": 43.264,
+        "volumeSpike": false,
+        "signalStrength": 0.6000000000000001
+      },
+      "holders": null,
+      "authority": {
+        "hasMintAuthority": false,
+        "hasFreezeAuthority": false
+      },
+      "sentiment": {
+        "sentimentScore": 6,
+        "organic": true,
+        "botActivity": "low",
+        "influencerMentions": false,
+        "summary": "Sentiment for ARC/SOL on X is moderately positive with signs of organic community engagement and minimal bot activity."
+      },
+      "timestamp": "2026-02-04T12:26:17.865Z",
+      "rugScore": 0,
+      "recommendation": {
+        "action": "BUY",
+        "reason": "✅ Strong signal + organic sentiment",
+        "confidence": 0.8500000000000001,
+        "positionSol": 0.043
+      }
+    }
+  },
+  {
+    "timestamp": "2026-02-04T12:26:21.721Z",
+    "type": "ANALYSIS",
+    "data": {
+      "signal": {
+        "timestamp": "2026-02-04T12:26:11.088Z",
+        "token": "EqzfbcWcugYzr8uGrUUd2ZLGanzocoxjdWQjPvBNhkPP",
+        "name": "ICEBLOX / SOL",
+        "price": 0.00030769615324763706,
+        "volume24h": 2509712.20803405,
+        "liquidity": 50585.1149,
+        "priceChange24h": 599.272,
+        "volumeSpike": false,
+        "signalStrength": 0.5
+      },
+      "holders": null,
+      "authority": {
+        "hasMintAuthority": false,
+        "hasFreezeAuthority": false
+      },
+      "sentiment": {
+        "sentimentScore": 6,
+        "organic": true,
+        "botActivity": "low",
+        "influencerMentions": false,
+        "summary": "ICEBLOX/SOL shows moderately positive sentiment on X with signs of organic community engagement."
+      },
+      "timestamp": "2026-02-04T12:26:21.721Z",
+      "rugScore": 0,
+      "recommendation": {
+        "action": "BUY",
+        "reason": "✅ Strong signal + organic sentiment",
+        "confidence": 0.75,
+        "positionSol": 0.038
+      }
+    }
+  },
+  {
+    "timestamp": "2026-02-04T12:26:51.807Z",
+    "type": "SCAN",
+    "data": {
+      "signalCount": 0,
+      "signals": []
+    }
+  },
+  {
+    "timestamp": "2026-02-04T12:27:22.027Z",
+    "type": "SCAN",
+    "data": {
+      "signalCount": 0,
+      "signals": []
+    }
+  },
+  {
+    "timestamp": "2026-02-04T12:27:52.061Z",
+    "type": "SCAN",
+    "data": {
+      "signalCount": 0,
+      "signals": []
+    }
+  },
+  {
+    "timestamp": "2026-02-04T12:28:21.842Z",
+    "type": "SCAN",
+    "data": {
+      "signalCount": 0,
+      "signals": []
+    }
+  },
+  {
+    "timestamp": "2026-02-04T12:28:52.068Z",
+    "type": "SCAN",
+    "data": {
+      "signalCount": 0,
+      "signals": []
+    }
+  },
+  {
+    "timestamp": "2026-02-04T12:29:21.862Z",
+    "type": "SCAN",
+    "data": {
+      "signalCount": 0,
+      "signals": []
+    }
+  },
+  {
+    "timestamp": "2026-02-04T12:29:51.871Z",
+    "type": "SCAN",
+    "data": {
+      "signalCount": 0,
+      "signals": []
+    }
+  },
+  {
+    "timestamp": "2026-02-04T12:30:22.074Z",
+    "type": "SCAN",
+    "data": {
+      "signalCount": 0,
+      "signals": []
+    }
+  },
+  {
+    "timestamp": "2026-02-04T12:30:51.872Z",
+    "type": "SCAN",
+    "data": {
+      "signalCount": 0,
+      "signals": []
+    }
+  },
+  {
+    "timestamp": "2026-02-04T12:31:21.928Z",
+    "type": "SCAN",
+    "data": {
+      "signalCount": 0,
+      "signals": []
+    }
+  },
+  {
+    "timestamp": "2026-02-04T12:31:52.097Z",
+    "type": "SCAN",
+    "data": {
+      "signalCount": 0,
+      "signals": []
+    }
+  },
+  {
+    "timestamp": "2026-02-04T12:32:21.905Z",
+    "type": "SCAN",
+    "data": {
+      "signalCount": 0,
+      "signals": []
+    }
+  },
+  {
+    "timestamp": "2026-02-04T12:32:51.901Z",
+    "type": "SCAN",
+    "data": {
+      "signalCount": 0,
+      "signals": []
+    }
+  },
+  {
+    "timestamp": "2026-02-04T12:33:22.148Z",
+    "type": "SCAN",
+    "data": {
+      "signalCount": 0,
+      "signals": []
+    }
+  },
+  {
+    "timestamp": "2026-02-04T12:33:51.941Z",
+    "type": "SCAN",
+    "data": {
+      "signalCount": 0,
+      "signals": []
+    }
+  },
+  {
+    "timestamp": "2026-02-04T12:34:21.924Z",
+    "type": "SCAN",
+    "data": {
+      "signalCount": 0,
+      "signals": []
+    }
+  },
+  {
+    "timestamp": "2026-02-04T12:34:52.542Z",
+    "type": "SCAN",
+    "data": {
+      "signalCount": 0,
+      "signals": []
+    }
+  },
+  {
+    "timestamp": "2026-02-04T12:35:21.943Z",
+    "type": "SCAN",
+    "data": {
+      "signalCount": 0,
+      "signals": []
+    }
+  },
+  {
+    "timestamp": "2026-02-04T12:35:51.973Z",
+    "type": "SCAN",
+    "data": {
+      "signalCount": 0,
+      "signals": []
+    }
+  },
+  {
+    "timestamp": "2026-02-04T12:36:22.161Z",
+    "type": "SCAN",
+    "data": {
+      "signalCount": 0,
+      "signals": []
+    }
+  },
+  {
+    "timestamp": "2026-02-04T12:36:51.977Z",
+    "type": "SCAN",
+    "data": {
+      "signalCount": 0,
+      "signals": []
+    }
+  },
+  {
+    "timestamp": "2026-02-04T12:37:21.985Z",
+    "type": "SCAN",
+    "data": {
+      "signalCount": 0,
+      "signals": []
+    }
+  },
+  {
+    "timestamp": "2026-02-04T12:37:52.565Z",
+    "type": "SCAN",
+    "data": {
+      "signalCount": 0,
+      "signals": []
+    }
+  },
+  {
+    "timestamp": "2026-02-04T12:38:22.005Z",
+    "type": "SCAN",
+    "data": {
+      "signalCount": 0,
+      "signals": []
+    }
+  },
+  {
+    "timestamp": "2026-02-04T12:38:51.992Z",
+    "type": "SCAN",
+    "data": {
+      "signalCount": 0,
+      "signals": []
+    }
+  },
+  {
+    "timestamp": "2026-02-04T12:39:22.310Z",
+    "type": "SCAN",
+    "data": {
+      "signalCount": 0,
+      "signals": []
+    }
+  },
+  {
+    "timestamp": "2026-02-04T12:39:52.012Z",
+    "type": "SCAN",
+    "data": {
+      "signalCount": 0,
+      "signals": []
+    }
+  },
+  {
+    "timestamp": "2026-02-04T12:40:22.014Z",
+    "type": "SCAN",
+    "data": {
+      "signalCount": 0,
+      "signals": []
+    }
+  },
+  {
+    "timestamp": "2026-02-04T12:40:52.227Z",
+    "type": "SCAN",
+    "data": {
+      "signalCount": 0,
+      "signals": []
+    }
+  },
+  {
+    "timestamp": "2026-02-04T12:41:22.029Z",
+    "type": "SCAN",
+    "data": {
+      "signalCount": 0,
+      "signals": []
+    }
+  },
+  {
+    "timestamp": "2026-02-04T12:41:52.039Z",
+    "type": "SCAN",
+    "data": {
+      "signalCount": 0,
+      "signals": []
+    }
+  },
+  {
+    "timestamp": "2026-02-04T12:42:22.334Z",
+    "type": "SCAN",
+    "data": {
+      "signalCount": 0,
+      "signals": []
+    }
+  },
+  {
+    "timestamp": "2026-02-04T12:42:52.031Z",
+    "type": "SCAN",
+    "data": {
+      "signalCount": 0,
+      "signals": []
+    }
+  },
+  {
+    "timestamp": "2026-02-04T12:43:22.076Z",
+    "type": "SCAN",
+    "data": {
+      "signalCount": 1,
+      "signals": [
+        {
+          "timestamp": "2026-02-04T12:43:22.068Z",
+          "token": "8vfdRerSPCQDzwTKUguAwEmQ4eQwCZ5JJ3XWV8AgoVLn",
+          "name": "MGN / USDC",
+          "price": 4.473978027319361,
+          "volume24h": 1449516.24330442,
+          "liquidity": 154100.7801,
+          "priceChange24h": 50.472,
+          "volumeSpike": false,
+          "signalStrength": 0.5
+        }
+      ]
+    }
+  },
+  {
+    "timestamp": "2026-02-04T12:43:23.277Z",
+    "type": "ANALYSIS",
+    "data": {
+      "signal": {
+        "timestamp": "2026-02-04T12:43:22.068Z",
+        "token": "8vfdRerSPCQDzwTKUguAwEmQ4eQwCZ5JJ3XWV8AgoVLn",
+        "name": "MGN / USDC",
+        "price": 4.473978027319361,
+        "volume24h": 1449516.24330442,
+        "liquidity": 154100.7801,
+        "priceChange24h": 50.472,
+        "volumeSpike": false,
+        "signalStrength": 0.5
+      },
+      "holders": null,
+      "authority": {
+        "hasMintAuthority": false,
+        "hasFreezeAuthority": false
+      },
+      "sentiment": {
+        "sentimentScore": 6,
+        "organic": true,
+        "botActivity": "low",
+        "influencerMentions": false,
+        "summary": "MGN/USDC shows moderately positive sentiment on X with signs of organic community engagement."
+      },
+      "timestamp": "2026-02-04T12:43:23.274Z",
+      "rugScore": 0,
+      "recommendation": {
+        "action": "BUY",
+        "reason": "✅ Strong signal + organic sentiment",
+        "confidence": 0.75,
+        "positionSol": 0.038
+      }
+    }
+  },
+  {
+    "timestamp": "2026-02-04T12:43:52.241Z",
+    "type": "SCAN",
+    "data": {
+      "signalCount": 0,
+      "signals": []
+    }
+  },
+  {
+    "timestamp": "2026-02-04T12:44:22.186Z",
+    "type": "SCAN",
+    "data": {
+      "signalCount": 0,
+      "signals": []
+    }
+  },
+  {
+    "timestamp": "2026-02-04T12:44:52.109Z",
+    "type": "SCAN",
+    "data": {
+      "signalCount": 0,
+      "signals": []
+    }
+  },
+  {
+    "timestamp": "2026-02-04T12:45:22.317Z",
+    "type": "SCAN",
+    "data": {
+      "signalCount": 0,
+      "signals": []
+    }
+  },
+  {
+    "timestamp": "2026-02-04T12:45:52.073Z",
+    "type": "SCAN",
+    "data": {
+      "signalCount": 0,
+      "signals": []
+    }
+  },
+  {
+    "timestamp": "2026-02-04T12:46:22.090Z",
+    "type": "SCAN",
+    "data": {
+      "signalCount": 0,
+      "signals": []
+    }
+  },
+  {
+    "timestamp": "2026-02-04T12:46:52.311Z",
+    "type": "SCAN",
+    "data": {
+      "signalCount": 0,
+      "signals": []
+    }
+  },
+  {
+    "timestamp": "2026-02-04T12:47:22.127Z",
+    "type": "SCAN",
+    "data": {
+      "signalCount": 0,
+      "signals": []
+    }
+  },
+  {
+    "timestamp": "2026-02-04T12:47:52.125Z",
+    "type": "SCAN",
+    "data": {
+      "signalCount": 0,
+      "signals": []
+    }
+  },
+  {
+    "timestamp": "2026-02-04T12:48:22.392Z",
+    "type": "SCAN",
+    "data": {
+      "signalCount": 0,
+      "signals": []
+    }
+  },
+  {
+    "timestamp": "2026-02-04T12:48:52.153Z",
+    "type": "SCAN",
+    "data": {
+      "signalCount": 0,
+      "signals": []
+    }
+  },
+  {
+    "timestamp": "2026-02-04T12:49:22.132Z",
+    "type": "SCAN",
+    "data": {
+      "signalCount": 0,
+      "signals": []
+    }
+  },
+  {
+    "timestamp": "2026-02-04T12:49:52.386Z",
+    "type": "SCAN",
+    "data": {
+      "signalCount": 0,
+      "signals": []
+    }
+  },
+  {
+    "timestamp": "2026-02-04T12:50:22.155Z",
+    "type": "SCAN",
+    "data": {
+      "signalCount": 0,
+      "signals": []
+    }
+  },
+  {
+    "timestamp": "2026-02-04T12:50:52.175Z",
+    "type": "SCAN",
+    "data": {
+      "signalCount": 0,
+      "signals": []
+    }
+  },
+  {
+    "timestamp": "2026-02-04T12:51:22.426Z",
+    "type": "SCAN",
+    "data": {
+      "signalCount": 0,
+      "signals": []
+    }
+  },
+  {
+    "timestamp": "2026-02-04T12:51:52.178Z",
+    "type": "SCAN",
+    "data": {
+      "signalCount": 0,
+      "signals": []
+    }
+  },
+  {
+    "timestamp": "2026-02-04T12:52:22.190Z",
+    "type": "SCAN",
+    "data": {
+      "signalCount": 0,
+      "signals": []
+    }
+  },
+  {
+    "timestamp": "2026-02-04T12:52:52.444Z",
+    "type": "SCAN",
+    "data": {
+      "signalCount": 0,
+      "signals": []
+    }
+  },
+  {
+    "timestamp": "2026-02-04T12:53:22.196Z",
+    "type": "SCAN",
+    "data": {
+      "signalCount": 0,
+      "signals": []
+    }
+  },
+  {
+    "timestamp": "2026-02-04T12:53:52.468Z",
+    "type": "SCAN",
+    "data": {
+      "signalCount": 0,
+      "signals": []
+    }
+  },
+  {
+    "timestamp": "2026-02-04T12:54:22.816Z",
+    "type": "SCAN",
+    "data": {
+      "signalCount": 0,
+      "signals": []
+    }
+  },
+  {
+    "timestamp": "2026-02-04T12:54:52.232Z",
+    "type": "SCAN",
+    "data": {
+      "signalCount": 0,
+      "signals": []
+    }
+  },
+  {
+    "timestamp": "2026-02-04T12:55:22.237Z",
+    "type": "SCAN",
+    "data": {
+      "signalCount": 0,
+      "signals": []
+    }
+  },
+  {
+    "timestamp": "2026-02-04T12:55:52.474Z",
+    "type": "SCAN",
+    "data": {
+      "signalCount": 0,
+      "signals": []
+    }
+  }
+]

@@ -1,0 +1,963 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MoltShield Scanner — Free AI Agent Security Scan</title>
+  <meta name="description" content="Scan your AI agent code for prompt injection, sleeper triggers, and security vulnerabilities. Free. No login required.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg: #0a0a0a;
+      --card: #111;
+      --border: #222;
+      --text: #e5e5e5;
+      --text-dim: #888;
+      --red: #ff3b5c;
+      --red-dim: #D20A0A;
+      --blue: #00d4ff;
+      --gold: #ffd700;
+      --green: #22c55e;
+      --orange: #f97316;
+    }
+
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    body {
+      background: var(--bg);
+      color: var(--text);
+      font-family: 'Inter', -apple-system, sans-serif;
+      min-height: 100vh;
+      line-height: 1.6;
+    }
+
+    /* Header */
+    header {
+      border-bottom: 1px solid var(--border);
+      background: linear-gradient(180deg, rgba(255,59,92,0.03) 0%, transparent 100%);
+    }
+
+    .header-inner {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 1rem 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .logo {
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+      text-decoration: none;
+      color: inherit;
+    }
+
+    .logo-icon {
+      width: 40px;
+      height: 40px;
+      background: linear-gradient(135deg, var(--red), var(--red-dim));
+      border-radius: 10px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.25rem;
+    }
+
+    .logo-text {
+      font-weight: 800;
+      font-size: 1.25rem;
+      letter-spacing: -0.02em;
+    }
+
+    .logo-text span { color: var(--red); }
+
+    .scan-counter {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      padding: 0.5rem 1rem;
+      background: rgba(255,59,92,0.08);
+      border: 1px solid rgba(255,59,92,0.15);
+      border-radius: 8px;
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 0.85rem;
+    }
+
+    .scan-counter .dot {
+      width: 8px;
+      height: 8px;
+      background: var(--green);
+      border-radius: 50%;
+      animation: pulse 2s infinite;
+    }
+
+    @keyframes pulse {
+      0%, 100% { opacity: 1; }
+      50% { opacity: 0.5; }
+    }
+
+    /* Main */
+    main {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 3rem 2rem;
+    }
+
+    .hero {
+      text-align: center;
+      margin-bottom: 3rem;
+    }
+
+    .hero h1 {
+      font-size: 2.5rem;
+      font-weight: 800;
+      letter-spacing: -0.03em;
+      margin-bottom: 1rem;
+      background: linear-gradient(135deg, #fff, #aaa);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    .hero p {
+      color: var(--text-dim);
+      font-size: 1.1rem;
+      max-width: 600px;
+      margin: 0 auto;
+    }
+
+    /* Scanner Card */
+    .scanner-card {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 16px;
+      overflow: hidden;
+    }
+
+    .scanner-header {
+      padding: 1rem 1.5rem;
+      border-bottom: 1px solid var(--border);
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+      background: rgba(255,255,255,0.02);
+    }
+
+    .scanner-header .badge {
+      padding: 0.25rem 0.75rem;
+      background: rgba(0,212,255,0.1);
+      border: 1px solid rgba(0,212,255,0.2);
+      border-radius: 20px;
+      font-size: 0.75rem;
+      font-weight: 600;
+      color: var(--blue);
+      font-family: 'JetBrains Mono', monospace;
+    }
+
+    .scanner-header h2 {
+      font-size: 1rem;
+      font-weight: 600;
+    }
+
+    .scanner-body {
+      padding: 1.5rem;
+    }
+
+    .input-group {
+      margin-bottom: 1rem;
+    }
+
+    .input-group label {
+      display: block;
+      font-size: 0.8rem;
+      font-weight: 600;
+      color: var(--text-dim);
+      margin-bottom: 0.5rem;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      font-family: 'JetBrains Mono', monospace;
+    }
+
+    .code-input {
+      width: 100%;
+      height: 300px;
+      background: rgba(0,0,0,0.3);
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      padding: 1rem;
+      color: var(--text);
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 0.9rem;
+      resize: vertical;
+      transition: border-color 0.2s;
+    }
+
+    .code-input:focus {
+      outline: none;
+      border-color: var(--blue);
+    }
+
+    .code-input::placeholder {
+      color: #444;
+    }
+
+    .options-row {
+      display: flex;
+      gap: 1rem;
+      margin-bottom: 1.5rem;
+      flex-wrap: wrap;
+    }
+
+    .option-select {
+      flex: 1;
+      min-width: 150px;
+    }
+
+    .option-select select {
+      width: 100%;
+      padding: 0.75rem 1rem;
+      background: rgba(0,0,0,0.3);
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      color: var(--text);
+      font-family: 'Inter', sans-serif;
+      font-size: 0.9rem;
+      cursor: pointer;
+    }
+
+    .option-select select:focus {
+      outline: none;
+      border-color: var(--blue);
+    }
+
+    .scan-btn {
+      width: 100%;
+      padding: 1rem 2rem;
+      background: linear-gradient(135deg, var(--red), var(--red-dim));
+      border: none;
+      border-radius: 10px;
+      color: white;
+      font-size: 1rem;
+      font-weight: 700;
+      cursor: pointer;
+      transition: transform 0.2s, box-shadow 0.2s;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 0.5rem;
+    }
+
+    .scan-btn:hover:not(:disabled) {
+      transform: translateY(-2px);
+      box-shadow: 0 10px 40px rgba(255,59,92,0.3);
+    }
+
+    .scan-btn:disabled {
+      opacity: 0.6;
+      cursor: not-allowed;
+    }
+
+    .scan-btn .spinner {
+      width: 20px;
+      height: 20px;
+      border: 2px solid rgba(255,255,255,0.3);
+      border-top-color: white;
+      border-radius: 50%;
+      animation: spin 0.8s linear infinite;
+    }
+
+    @keyframes spin {
+      to { transform: rotate(360deg); }
+    }
+
+    /* Results */
+    .results {
+      display: none;
+      margin-top: 2rem;
+    }
+
+    .results.visible { display: block; }
+
+    .results-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 1.5rem;
+    }
+
+    .results-header h3 {
+      font-size: 1.25rem;
+      font-weight: 700;
+    }
+
+    .trust-score {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+      padding: 1rem 1.5rem;
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+    }
+
+    .trust-score .score {
+      font-size: 2.5rem;
+      font-weight: 800;
+      font-family: 'JetBrains Mono', monospace;
+    }
+
+    .trust-score.high .score { color: var(--green); }
+    .trust-score.medium .score { color: var(--gold); }
+    .trust-score.low .score { color: var(--orange); }
+    .trust-score.critical .score { color: var(--red); }
+
+    .trust-score .label {
+      font-size: 0.85rem;
+      color: var(--text-dim);
+    }
+
+    .trust-score .tier {
+      font-weight: 700;
+      font-size: 1rem;
+    }
+
+    .summary-cards {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 1rem;
+      margin-bottom: 1.5rem;
+    }
+
+    .summary-card {
+      padding: 1rem;
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      text-align: center;
+    }
+
+    .summary-card .count {
+      font-size: 1.75rem;
+      font-weight: 800;
+      font-family: 'JetBrains Mono', monospace;
+    }
+
+    .summary-card .label {
+      font-size: 0.75rem;
+      color: var(--text-dim);
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+    }
+
+    .summary-card.critical .count { color: var(--red); }
+    .summary-card.high .count { color: var(--orange); }
+    .summary-card.medium .count { color: var(--gold); }
+    .summary-card.low .count { color: var(--blue); }
+
+    .findings-list {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      overflow: hidden;
+    }
+
+    .findings-header {
+      padding: 1rem 1.5rem;
+      border-bottom: 1px solid var(--border);
+      font-weight: 600;
+      background: rgba(255,255,255,0.02);
+    }
+
+    .finding {
+      padding: 1rem 1.5rem;
+      border-bottom: 1px solid var(--border);
+      display: flex;
+      gap: 1rem;
+      align-items: flex-start;
+    }
+
+    .finding:last-child { border-bottom: none; }
+
+    .finding .severity {
+      padding: 0.25rem 0.5rem;
+      border-radius: 4px;
+      font-size: 0.7rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      font-family: 'JetBrains Mono', monospace;
+      white-space: nowrap;
+    }
+
+    .finding .severity.critical {
+      background: rgba(255,59,92,0.15);
+      color: var(--red);
+    }
+
+    .finding .severity.high {
+      background: rgba(249,115,22,0.15);
+      color: var(--orange);
+    }
+
+    .finding .severity.medium {
+      background: rgba(255,215,0,0.15);
+      color: var(--gold);
+    }
+
+    .finding .severity.low {
+      background: rgba(0,212,255,0.15);
+      color: var(--blue);
+    }
+
+    .finding .content { flex: 1; }
+
+    .finding .rule {
+      font-weight: 600;
+      margin-bottom: 0.25rem;
+    }
+
+    .finding .description {
+      font-size: 0.9rem;
+      color: var(--text-dim);
+    }
+
+    .finding .match {
+      margin-top: 0.5rem;
+      padding: 0.5rem;
+      background: rgba(0,0,0,0.3);
+      border-radius: 4px;
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 0.8rem;
+      color: var(--red);
+      overflow-x: auto;
+    }
+
+    .no-findings {
+      padding: 3rem;
+      text-align: center;
+      color: var(--green);
+    }
+
+    .no-findings .icon { font-size: 3rem; margin-bottom: 1rem; }
+
+    /* CTA Section */
+    .cta-section {
+      margin-top: 3rem;
+      padding: 2rem;
+      background: linear-gradient(135deg, rgba(255,59,92,0.05), rgba(0,212,255,0.05));
+      border: 1px solid var(--border);
+      border-radius: 16px;
+      text-align: center;
+    }
+
+    .cta-section h3 {
+      font-size: 1.5rem;
+      margin-bottom: 0.5rem;
+    }
+
+    .cta-section p {
+      color: var(--text-dim);
+      margin-bottom: 1.5rem;
+    }
+
+    .cta-buttons {
+      display: flex;
+      gap: 1rem;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+
+    .cta-btn {
+      padding: 0.75rem 1.5rem;
+      border-radius: 8px;
+      font-weight: 600;
+      text-decoration: none;
+      transition: transform 0.2s;
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
+
+    .cta-btn:hover { transform: translateY(-2px); }
+
+    .cta-btn.primary {
+      background: linear-gradient(135deg, var(--red), var(--red-dim));
+      color: white;
+    }
+
+    .cta-btn.secondary {
+      background: rgba(255,255,255,0.05);
+      border: 1px solid var(--border);
+      color: var(--text);
+    }
+
+    /* Footer */
+    footer {
+      border-top: 1px solid var(--border);
+      padding: 2rem;
+      text-align: center;
+      color: var(--text-dim);
+      font-size: 0.85rem;
+    }
+
+    footer a { color: var(--blue); text-decoration: none; }
+    footer a:hover { text-decoration: underline; }
+
+    /* Responsive */
+    @media (max-width: 768px) {
+      .hero h1 { font-size: 1.75rem; }
+      .summary-cards { grid-template-columns: repeat(2, 1fr); }
+      .scan-counter { display: none; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="header-inner">
+      <a href="/" class="logo">
+        <div class="logo-icon">🛡️</div>
+        <div class="logo-text">Molt<span>Shield</span></div>
+      </a>
+      <div class="scan-counter">
+        <div class="dot"></div>
+        <span id="scanCount">Loading...</span> scans processed
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <div class="hero">
+      <h1>Scan Your AI Agent for Security Vulnerabilities</h1>
+      <p>Free security analysis for agent skill packages. Detects prompt injection, sleeper triggers, data exfiltration, and 17 other vulnerability categories. No login required.</p>
+    </div>
+
+    <div class="scanner-card">
+      <div class="scanner-header">
+        <span class="badge">FREE TIER</span>
+        <h2>MoltShield Security Scanner</h2>
+      </div>
+      <div class="scanner-body">
+        <div class="input-group">
+          <label>Paste your agent code</label>
+          <textarea 
+            class="code-input" 
+            id="codeInput"
+            placeholder="// Paste your skill code, agent code, or tool implementation here...
+// 
+// Example vulnerable code that MoltShield would catch:
+// 
+// async function handleUserRequest(userInput) {
+//   // DANGER: Unsanitized user input passed to LLM
+//   const prompt = `Execute this task: ${userInput}`;
+//   const response = await llm.complete(prompt);
+//   
+//   // DANGER: Authority spoofing vulnerability
+//   if (userInput.includes('admin approved')) {
+//     return await executeWithElevatedPermissions(response);
+//   }
+// }"
+          ></textarea>
+        </div>
+
+        <div class="options-row">
+          <div class="option-select">
+            <label>Language</label>
+            <select id="language">
+              <option value="typescript">TypeScript / JavaScript</option>
+              <option value="python">Python</option>
+              <option value="solidity">Solidity</option>
+              <option value="other">Other</option>
+            </select>
+          </div>
+          <div class="option-select">
+            <label>Framework</label>
+            <select id="framework">
+              <option value="custom">Custom / Unknown</option>
+              <option value="openclaw">OpenClaw</option>
+              <option value="langchain">LangChain</option>
+              <option value="autogen">AutoGen</option>
+              <option value="crewai">CrewAI</option>
+            </select>
+          </div>
+        </div>
+
+        <button class="scan-btn" id="scanBtn" onclick="runScan()">
+          <span>🔍 Scan Code</span>
+        </button>
+      </div>
+    </div>
+
+    <div class="results" id="results">
+      <div class="results-header">
+        <h3>Scan Results</h3>
+        <div class="trust-score" id="trustScore">
+          <div>
+            <div class="score" id="scoreValue">--</div>
+            <div class="label">Trust Score</div>
+          </div>
+          <div>
+            <div class="tier" id="tierValue">--</div>
+            <div class="label">Classification</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="summary-cards">
+        <div class="summary-card critical">
+          <div class="count" id="criticalCount">0</div>
+          <div class="label">Critical</div>
+        </div>
+        <div class="summary-card high">
+          <div class="count" id="highCount">0</div>
+          <div class="label">High</div>
+        </div>
+        <div class="summary-card medium">
+          <div class="count" id="mediumCount">0</div>
+          <div class="label">Medium</div>
+        </div>
+        <div class="summary-card low">
+          <div class="count" id="lowCount">0</div>
+          <div class="label">Low</div>
+        </div>
+      </div>
+
+      <div class="findings-list" id="findingsList">
+        <div class="findings-header">Findings</div>
+        <!-- Findings inserted here -->
+      </div>
+    </div>
+
+    <div class="cta-section">
+      <h3>Want the Full 79-Rule Engine?</h3>
+      <p>Join the waitlist for MoltCops Pro. Get access to advanced detection, continuous monitoring, and on-chain reputation scores.</p>
+      <div class="cta-buttons">
+        <a href="#waitlist" class="cta-btn primary">Join Waitlist</a>
+        <a href="https://github.com/moltcops/moltshield" class="cta-btn secondary">⭐ Star on GitHub</a>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <p>
+      MoltCops — To Protect and Serve (Humanity) |
+      <a href="https://moltcops.com/docs">Docs</a> |
+      <a href="https://github.com/moltcops">GitHub</a> |
+      <a href="https://twitter.com/moltcops">Twitter</a>
+    </p>
+  </footer>
+
+  <script>
+    // ════════════════════════════════════════════════════════════════
+    // MOLTSHIELD FREE TIER — 20 RULE ENGINE
+    // ════════════════════════════════════════════════════════════════
+
+    const RULES = [
+      // CRITICAL — Immediate blockers
+      {
+        id: 'MS-001',
+        name: 'Private Key Export',
+        pattern: /(?:export|reveal|show|print|display|give|send)\s*(?:the\s+)?(?:private\s*key|seed\s*phrase|mnemonic|secret\s*key)/gi,
+        severity: 'critical',
+        description: 'Attempts to extract or expose private cryptographic material',
+        weight: 40
+      },
+      {
+        id: 'MS-002',
+        name: 'Authority Spoofing',
+        pattern: /(?:admin|owner|system|deployer)\s+(?:has\s+)?(?:approved|authorized|confirmed|granted)/gi,
+        severity: 'critical',
+        description: 'Claims false authority to bypass security checks',
+        weight: 35
+      },
+      {
+        id: 'MS-003',
+        name: 'Instruction Override',
+        pattern: /(?:ignore|disregard|override|forget)\s+(?:all\s+)?(?:previous|prior|above|earlier)\s+(?:instructions|rules|guidelines|policies)/gi,
+        severity: 'critical',
+        description: 'Attempts to override system instructions via prompt injection',
+        weight: 40
+      },
+      {
+        id: 'MS-004',
+        name: 'Drain Pattern',
+        pattern: /(?:transfer|send|drain|withdraw|move)\s+(?:all|entire|max|everything|remaining|full\s*balance)/gi,
+        severity: 'critical',
+        description: 'Attempts to drain all funds from a wallet or contract',
+        weight: 35
+      },
+      {
+        id: 'MS-005',
+        name: 'Unlimited Approval',
+        pattern: /(?:approve|allowance|permit)\s*(?:\(|:)?\s*(?:max|unlimited|infinity|type\s*\(\s*uint256\s*\)\s*\.\s*max)/gi,
+        severity: 'critical',
+        description: 'Sets unlimited token approval, enabling future drains',
+        weight: 30
+      },
+
+      // HIGH — Serious concerns
+      {
+        id: 'MS-010',
+        name: 'Sleeper Trigger (Count)',
+        pattern: /(?:if|when|after)\s*\(?\s*(?:count|calls?|requests?|transactions?|executions?)\s*(?:>=?|>|===?)\s*\d+/gi,
+        severity: 'high',
+        description: 'Conditional logic that activates after N operations (sleeper agent pattern)',
+        weight: 25
+      },
+      {
+        id: 'MS-011',
+        name: 'Sleeper Trigger (Time)',
+        pattern: /(?:if|when|after)\s*\(?\s*(?:Date\.now|time|timestamp|block\.timestamp)\s*(?:>=?|>)\s*\d+/gi,
+        severity: 'high',
+        description: 'Time-delayed execution pattern (sleeper agent)',
+        weight: 25
+      },
+      {
+        id: 'MS-012',
+        name: 'Obfuscated Eval',
+        pattern: /(?:eval|Function|new\s+Function)\s*\(\s*(?:atob|Buffer\.from|decodeURI|unescape)/gi,
+        severity: 'high',
+        description: 'Obfuscated code execution via encoding tricks',
+        weight: 28
+      },
+      {
+        id: 'MS-013',
+        name: 'Data Exfiltration',
+        pattern: /(?:fetch|axios|http|request|post)\s*\(\s*(?:['"`]https?:\/\/(?!(?:localhost|127\.0\.0\.1))|[^'"`\s]+\s*\+\s*['"`])/gi,
+        severity: 'high',
+        description: 'Sends data to external endpoints',
+        weight: 22
+      },
+      {
+        id: 'MS-014',
+        name: 'Environment Variable Access',
+        pattern: /process\.env\[?['"`]?(?:PRIVATE|SECRET|KEY|PASSWORD|TOKEN|API_KEY)/gi,
+        severity: 'high',
+        description: 'Accesses sensitive environment variables',
+        weight: 20
+      },
+
+      // MEDIUM — Notable concerns
+      {
+        id: 'MS-020',
+        name: 'Unsanitized User Input',
+        pattern: /(?:prompt|message|input|query|request)\s*(?:=|:|\+=|\+)\s*(?:\$\{|['"`]\s*\+\s*)/gi,
+        severity: 'medium',
+        description: 'User input concatenated into prompts without sanitization',
+        weight: 15
+      },
+      {
+        id: 'MS-021',
+        name: 'Shell Execution',
+        pattern: /(?:exec|spawn|execSync|spawnSync|system|popen|subprocess)\s*\(/gi,
+        severity: 'medium',
+        description: 'Executes shell commands (potential command injection)',
+        weight: 18
+      },
+      {
+        id: 'MS-022',
+        name: 'File System Write',
+        pattern: /(?:writeFile|writeFileSync|fs\.write|open\s*\([^)]*['"`]w)/gi,
+        severity: 'medium',
+        description: 'Writes to the file system (potential persistence mechanism)',
+        weight: 12
+      },
+      {
+        id: 'MS-023',
+        name: 'Roleplay Manipulation',
+        pattern: /(?:pretend|imagine|roleplay|act\s+as(?:\s+if)?)\s+(?:you\s+)?(?:are|have|can|were)/gi,
+        severity: 'medium',
+        description: 'Attempts to manipulate agent behavior through roleplay framing',
+        weight: 15
+      },
+      {
+        id: 'MS-024',
+        name: 'Context Poisoning',
+        pattern: /(?:from\s+now\s+on|going\s+forward|remember\s+that|your\s+new\s+instructions)/gi,
+        severity: 'medium',
+        description: 'Attempts to persistently modify agent behavior',
+        weight: 15
+      },
+
+      // LOW — Informational
+      {
+        id: 'MS-030',
+        name: 'Hardcoded URL',
+        pattern: /['"`]https?:\/\/[^'"`\s]{10,}['"`]/gi,
+        severity: 'low',
+        description: 'Hardcoded external URL (verify it\'s trusted)',
+        weight: 5
+      },
+      {
+        id: 'MS-031',
+        name: 'Base64 Encoding',
+        pattern: /(?:atob|btoa|Buffer\.from\s*\([^)]*['"`]base64)/gi,
+        severity: 'low',
+        description: 'Base64 encoding/decoding (may obscure malicious content)',
+        weight: 8
+      },
+      {
+        id: 'MS-032',
+        name: 'Dynamic Import',
+        pattern: /(?:import|require)\s*\(\s*[^'"`]/gi,
+        severity: 'low',
+        description: 'Dynamic module loading (potential for code injection)',
+        weight: 8
+      },
+      {
+        id: 'MS-033',
+        name: 'Console Logging Secrets',
+        pattern: /console\.(?:log|info|debug|warn)\s*\([^)]*(?:key|secret|password|token)/gi,
+        severity: 'low',
+        description: 'Potentially logs sensitive information',
+        weight: 6
+      },
+      {
+        id: 'MS-034',
+        name: 'Regex Denial of Service',
+        pattern: /(?:\.\*){3,}|(?:\+\+){2,}|\(\?:[^)]+\)\+\+/gi,
+        severity: 'low',
+        description: 'Complex regex that may cause ReDoS',
+        weight: 5
+      }
+    ];
+
+    // ════════════════════════════════════════════════════════════════
+    // SCANNER LOGIC
+    // ════════════════════════════════════════════════════════════════
+
+    function runScan() {
+      const code = document.getElementById('codeInput').value;
+      const btn = document.getElementById('scanBtn');
+
+      if (!code.trim()) {
+        alert('Please paste some code to scan');
+        return;
+      }
+
+      // Show loading
+      btn.disabled = true;
+      btn.innerHTML = '<div class="spinner"></div> Scanning...';
+
+      // Simulate async scan (in production, this would call the backend)
+      setTimeout(() => {
+        const findings = [];
+        let totalWeight = 0;
+
+        for (const rule of RULES) {
+          const matches = code.match(rule.pattern);
+          if (matches) {
+            for (const match of matches) {
+              findings.push({
+                ruleId: rule.id,
+                ruleName: rule.name,
+                severity: rule.severity,
+                description: rule.description,
+                match: match.substring(0, 80) + (match.length > 80 ? '...' : '')
+              });
+              totalWeight += rule.weight;
+            }
+          }
+        }
+
+        // Calculate trust score (100 - weighted findings, min 0)
+        const trustScore = Math.max(0, 100 - totalWeight);
+        
+        // Determine tier
+        let tier, tierClass;
+        if (trustScore >= 80) { tier = 'TRUSTED'; tierClass = 'high'; }
+        else if (trustScore >= 60) { tier = 'TRUSTED'; tierClass = 'high'; }
+        else if (trustScore >= 40) { tier = 'CAUTION'; tierClass = 'medium'; }
+        else if (trustScore >= 20) { tier = 'WARNING'; tierClass = 'low'; }
+        else { tier = 'DANGER'; tierClass = 'critical'; }
+
+        // Count by severity
+        const counts = { critical: 0, high: 0, medium: 0, low: 0 };
+        for (const f of findings) { counts[f.severity]++; }
+
+        // Update UI
+        displayResults(trustScore, tier, tierClass, counts, findings);
+        incrementScanCount();
+
+        // Reset button
+        btn.disabled = false;
+        btn.innerHTML = '<span>🔍 Scan Code</span>';
+      }, 800);
+    }
+
+    function displayResults(score, tier, tierClass, counts, findings) {
+      document.getElementById('results').classList.add('visible');
+      
+      const scoreEl = document.getElementById('trustScore');
+      scoreEl.className = `trust-score ${tierClass}`;
+      document.getElementById('scoreValue').textContent = score;
+      document.getElementById('tierValue').textContent = tier;
+
+      document.getElementById('criticalCount').textContent = counts.critical;
+      document.getElementById('highCount').textContent = counts.high;
+      document.getElementById('mediumCount').textContent = counts.medium;
+      document.getElementById('lowCount').textContent = counts.low;
+
+      const listEl = document.getElementById('findingsList');
+      
+      if (findings.length === 0) {
+        listEl.innerHTML = `
+          <div class="findings-header">Findings</div>
+          <div class="no-findings">
+            <div class="icon">✅</div>
+            <div>No vulnerabilities detected. Your code passed all 20 free-tier rules.</div>
+          </div>
+        `;
+      } else {
+        let html = '<div class="findings-header">Findings (' + findings.length + ')</div>';
+        for (const f of findings) {
+          html += `
+            <div class="finding">
+              <span class="severity ${f.severity}">${f.severity}</span>
+              <div class="content">
+                <div class="rule">${f.ruleId}: ${f.ruleName}</div>
+                <div class="description">${f.description}</div>
+                <div class="match">${escapeHtml(f.match)}</div>
+              </div>
+            </div>
+          `;
+        }
+        listEl.innerHTML = html;
+      }
+
+      // Scroll to results
+      document.getElementById('results').scrollIntoView({ behavior: 'smooth' });
+    }
+
+    function escapeHtml(text) {
+      const div = document.createElement('div');
+      div.textContent = text;
+      return div.innerHTML;
+    }
+
+    // ════════════════════════════════════════════════════════════════
+    // SCAN COUNTER (localStorage-based for demo)
+    // ════════════════════════════════════════════════════════════════
+
+    function getScanCount() {
+      // In production, this would fetch from the backend
+      const stored = localStorage.getItem('moltshield_scan_count');
+      return stored ? parseInt(stored) : 1247; // Start with a plausible number
+    }
+
+    function incrementScanCount() {
+      const count = getScanCount() + 1;
+      localStorage.setItem('moltshield_scan_count', count.toString());
+      updateCounterDisplay(count);
+    }
+
+    function updateCounterDisplay(count) {
+      document.getElementById('scanCount').textContent = count.toLocaleString();
+    }
+
+    // Initialize
+    updateCounterDisplay(getScanCount());
+  </script>
+</body>
+</html>

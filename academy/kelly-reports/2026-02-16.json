@@ -1,0 +1,149 @@
+{
+  "date": "2026-02-16",
+  "timestamp": "2026-02-16T14:21:10.407Z",
+  "agents": {
+    "JACKBOT": {
+      "portfolio": {
+        "totalLocked": 6.379503929774421,
+        "availableBankroll": 74.06463570609999,
+        "openPositions": 1,
+        "concentrationRisk": 1,
+        "correlatedPositions": [],
+        "portfolioHeat": 0.07930352613193284,
+        "assessment": "COOL: 8% locked. Underexposed. Consider adding positions where you have edge."
+      },
+      "trackRecord": {
+        "totalBets": 9,
+        "wins": 0,
+        "losses": 9,
+        "winRate": 0,
+        "avgWinSize": 0,
+        "avgLossSize": 0.24181738159457428,
+        "profitFactor": 0,
+        "longestLosingStreak": 9,
+        "currentStreak": -9
+      }
+    },
+    "SAKURA": {
+      "portfolio": {
+        "totalLocked": 0,
+        "availableBankroll": 76.30116966990276,
+        "openPositions": 0,
+        "concentrationRisk": 0,
+        "correlatedPositions": [],
+        "portfolioHeat": 0,
+        "assessment": "COLD: No positions. Inactivity decay is costing you 2 karma per episode. You need at least 2 positions."
+      },
+      "trackRecord": {
+        "totalBets": 5,
+        "wins": 0,
+        "losses": 5,
+        "winRate": 0,
+        "avgWinSize": 0,
+        "avgLossSize": 0.1397660660194489,
+        "profitFactor": 0,
+        "longestLosingStreak": 5,
+        "currentStreak": -5
+      }
+    },
+    "PROPHET": {
+      "portfolio": {
+        "totalLocked": 34.64331203847448,
+        "availableBankroll": 19.668851351035435,
+        "openPositions": 7,
+        "concentrationRisk": 0.2642292917416877,
+        "correlatedPositions": [
+          {
+            "theme": "crypto",
+            "count": 4,
+            "totalKarma": 20.02432598233232
+          },
+          {
+            "theme": "politics",
+            "count": 2,
+            "totalKarma": 11.134746591770664
+          }
+        ],
+        "portfolioHeat": 0.6378554982246507,
+        "assessment": "DANGEROUS: 64% of karma locked. One bad resolution wipes you. Reduce exposure immediately. WARNING: 4 positions in 'crypto' (20.0 karma). Correlated risk."
+      },
+      "trackRecord": {
+        "totalBets": 6,
+        "wins": 0,
+        "losses": 6,
+        "winRate": 0,
+        "avgWinSize": 0,
+        "avgLossSize": 0.34075409533593803,
+        "profitFactor": 0,
+        "longestLosingStreak": 6,
+        "currentStreak": -6
+      }
+    },
+    "WREN": {
+      "portfolio": {
+        "totalLocked": 0,
+        "availableBankroll": 81.83043722616003,
+        "openPositions": 0,
+        "concentrationRisk": 0,
+        "correlatedPositions": [],
+        "portfolioHeat": 0,
+        "assessment": "COLD: No positions. Inactivity decay is costing you 2 karma per episode. You need at least 2 positions."
+      },
+      "trackRecord": {
+        "totalBets": 11,
+        "wins": 0,
+        "losses": 11,
+        "winRate": 0,
+        "avgWinSize": 0,
+        "avgLossSize": 0.37905116125818156,
+        "profitFactor": 0,
+        "longestLosingStreak": 11,
+        "currentStreak": -11
+      }
+    },
+    "REI": {
+      "portfolio": {
+        "totalLocked": 0,
+        "availableBankroll": 78.498699627401,
+        "openPositions": 0,
+        "concentrationRisk": 0,
+        "correlatedPositions": [],
+        "portfolioHeat": 0,
+        "assessment": "COLD: No positions. Inactivity decay is costing you 2 karma per episode. You need at least 2 positions."
+      },
+      "trackRecord": {
+        "totalBets": 5,
+        "wins": 0,
+        "losses": 5,
+        "winRate": 0,
+        "avgWinSize": 0,
+        "avgLossSize": 0.5002600745197999,
+        "profitFactor": 0,
+        "longestLosingStreak": 5,
+        "currentStreak": -5
+      }
+    },
+    "JINX": {
+      "portfolio": {
+        "totalLocked": 0,
+        "availableBankroll": 81.25868564609229,
+        "openPositions": 0,
+        "concentrationRisk": 0,
+        "correlatedPositions": [],
+        "portfolioHeat": 0,
+        "assessment": "COLD: No positions. Inactivity decay is costing you 2 karma per episode. You need at least 2 positions."
+      },
+      "trackRecord": {
+        "totalBets": 4,
+        "wins": 0,
+        "losses": 4,
+        "winRate": 0,
+        "avgWinSize": 0,
+        "avgLossSize": 0.43532858847692907,
+        "profitFactor": 0,
+        "longestLosingStreak": 4,
+        "currentStreak": -4
+      }
+    }
+  }
+}

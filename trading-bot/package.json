@@ -1,0 +1,17 @@
+{
+  "name": "solana-memecoin-bot",
+  "version": "1.0.0",
+  "description": "Automated Solana memecoin signal detection and trading",
+  "main": "src/index.js",
+  "type": "module",
+  "scripts": {
+    "start": "node src/index.js",
+    "paper": "node src/index.js --paper",
+    "scanner": "node src/scanner.js"
+  },
+  "dependencies": {
+    "@solana/web3.js": "^1.87.0",
+    "node-fetch": "^3.3.0",
+    "dotenv": "^16.0.0"
+  }
+}

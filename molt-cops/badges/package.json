@@ -1,0 +1,35 @@
+{
+  "name": "molt-cops-badges",
+  "version": "1.0.0",
+  "description": "Founding Operative Badge NFT - Molt Cops trusted reviewer backbone",
+  "scripts": {
+    "compile": "hardhat compile",
+    "clean": "hardhat clean",
+    "test": "hardhat test",
+    "coverage": "hardhat coverage",
+    "merkle": "npx ts-node scripts/generate-merkle.ts",
+    "deploy:local": "hardhat run scripts/deploy.ts --network hardhat",
+    "deploy:testnet": "hardhat run scripts/deploy.ts --network baseSepolia",
+    "deploy:mainnet": "hardhat run scripts/deploy.ts --network base",
+    "verify": "hardhat verify",
+    "node": "hardhat node"
+  },
+  "devDependencies": {
+    "@nomicfoundation/hardhat-toolbox": "^5.0.0",
+    "@types/node": "^20.11.0",
+    "hardhat": "^2.22.0",
+    "hardhat-gas-reporter": "^1.0.8",
+    "ts-node": "^10.9.0",
+    "typescript": "^5.4.0"
+  },
+  "dependencies": {
+    "@openzeppelin/contracts": "^5.0.0",
+    "dotenv": "^16.4.0",
+    "ethers": "^6.11.0",
+    "keccak256": "^1.0.6",
+    "merkletreejs": "^0.3.0"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}

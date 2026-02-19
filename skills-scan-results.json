@@ -1,0 +1,948 @@
+{
+  "aggregate": {
+    "total_skills_scanned": 7,
+    "vulnerable_skills": 7,
+    "vulnerability_rate_pct": 100.0,
+    "total_findings": 57,
+    "total_files_scanned": 46,
+    "findings_by_severity": {
+      "CRITICAL": 4,
+      "HIGH": 21,
+      "MEDIUM": 32,
+      "LOW": 0,
+      "INFO": 0
+    },
+    "findings_by_category": {
+      "T1": {
+        "count": 2,
+        "name": "Prompt Injection"
+      },
+      "T10": {
+        "count": 1,
+        "name": "Capability Inflation"
+      },
+      "T11": {
+        "count": 1,
+        "name": "Persistence & C2"
+      },
+      "T13": {
+        "count": 11,
+        "name": "Lateral Movement"
+      },
+      "T14": {
+        "count": 1,
+        "name": "Infrastructure Attack Surface"
+      },
+      "T3": {
+        "count": 37,
+        "name": "Data Exfiltration"
+      },
+      "T4": {
+        "count": 1,
+        "name": "Hardcoded Secrets"
+      },
+      "T9": {
+        "count": 3,
+        "name": "Autonomy Abuse"
+      }
+    }
+  },
+  "results": [
+    {
+      "skill_name": "agent-relay-digest",
+      "skill_path": "C:\\Users\\adamt\\clawd\\skills\\agent-relay-digest",
+      "is_safe": false,
+      "max_severity": "HIGH",
+      "total_findings": 13,
+      "findings_by_severity": {
+        "CRITICAL": 0,
+        "HIGH": 6,
+        "MEDIUM": 7,
+        "LOW": 0,
+        "INFO": 0
+      },
+      "findings_by_category": {
+        "T3": 13
+      },
+      "files_scanned": 5,
+      "scan_duration_seconds": 0.111,
+      "findings": [
+        {
+          "rule_id": "T3-001",
+          "rule_name": "Environment Variable Access",
+          "category": "T3",
+          "severity": "MEDIUM",
+          "confidence": 0.7,
+          "description": "Reading sensitive environment variables (.env, API keys)",
+          "file_path": "C:\\Users\\adamt\\clawd\\skills\\agent-relay-digest\\scripts\\relay_digest.py",
+          "line_number": 45,
+          "matched_text": "os.getenv",
+          "aitech": "AITech-3.1",
+          "context": "    43 | \n    44 | def load_moltbook_key():\n    45 |     if os.getenv(\"MOLTBOOK_API_KEY\"):\n    46 |         return os.getenv(\"MOLTBOOK_API_KEY\")\n    47 |     creds = load_json(os.path.expanduser(\"~/.config/moltbook/credentials.json\"))"
+        },
+        {
+          "rule_id": "T3-001",
+          "rule_name": "Environment Variable Access",
+          "category": "T3",
+          "severity": "MEDIUM",
+          "confidence": 0.7,
+          "description": "Reading sensitive environment variables (.env, API keys)",
+          "file_path": "C:\\Users\\adamt\\clawd\\skills\\agent-relay-digest\\scripts\\relay_digest.py",
+          "line_number": 46,
+          "matched_text": "os.getenv",
+          "aitech": "AITech-3.1",
+          "context": "    44 | def load_moltbook_key():\n    45 |     if os.getenv(\"MOLTBOOK_API_KEY\"):\n    46 |         return os.getenv(\"MOLTBOOK_API_KEY\")\n    47 |     creds = load_json(os.path.expanduser(\"~/.config/moltbook/credentials.json\"))\n    48 |     return creds.get(\"api_key\") if creds else None"
+        },
+        {
+          "rule_id": "T3-001",
+          "rule_name": "Environment Variable Access",
+          "category": "T3",
+          "severity": "MEDIUM",
+          "confidence": 0.7,
+          "description": "Reading sensitive environment variables (.env, API keys)",
+          "file_path": "C:\\Users\\adamt\\clawd\\skills\\agent-relay-digest\\scripts\\relay_digest.py",
+          "line_number": 52,
+          "matched_text": "os.getenv",
+          "aitech": "AITech-3.1",
+          "context": "    50 | \n    51 | def load_clawfee_token():\n    52 |     if os.getenv(\"CLAWFEE_TOKEN\"):\n    53 |         return os.getenv(\"CLAWFEE_TOKEN\")\n    54 |     creds = load_json(os.path.expanduser(\"~/.config/clawfee/credentials.json\"))"
+        },
+        {
+          "rule_id": "T3-001",
+          "rule_name": "Environment Variable Access",
+          "category": "T3",
+          "severity": "MEDIUM",
+          "confidence": 0.7,
+          "description": "Reading sensitive environment variables (.env, API keys)",
+          "file_path": "C:\\Users\\adamt\\clawd\\skills\\agent-relay-digest\\scripts\\relay_digest.py",
+          "line_number": 53,
+          "matched_text": "os.getenv",
+          "aitech": "AITech-3.1",
+          "context": "    51 | def load_clawfee_token():\n    52 |     if os.getenv(\"CLAWFEE_TOKEN\"):\n    53 |         return os.getenv(\"CLAWFEE_TOKEN\")\n    54 |     creds = load_json(os.path.expanduser(\"~/.config/clawfee/credentials.json\"))\n    55 |     return creds.get(\"token\") if creds else None"
+        },
+        {
+          "rule_id": "T3-001",
+          "rule_name": "Environment Variable Access",
+          "category": "T3",
+          "severity": "MEDIUM",
+          "confidence": 0.7,
+          "description": "Reading sensitive environment variables (.env, API keys)",
+          "file_path": "C:\\Users\\adamt\\clawd\\skills\\agent-relay-digest\\scripts\\relay_digest.py",
+          "line_number": 59,
+          "matched_text": "os.getenv",
+          "aitech": "AITech-3.1",
+          "context": "    57 | \n    58 | def load_yclawker_key():\n    59 |     if os.getenv(\"YCLAWKER_API_KEY\"):\n    60 |         return os.getenv(\"YCLAWKER_API_KEY\")\n    61 |     creds = load_json(os.path.expanduser(\"~/.config/yclawker/credentials.json\"))"
+        },
+        {
+          "rule_id": "T3-001",
+          "rule_name": "Environment Variable Access",
+          "category": "T3",
+          "severity": "MEDIUM",
+          "confidence": 0.7,
+          "description": "Reading sensitive environment variables (.env, API keys)",
+          "file_path": "C:\\Users\\adamt\\clawd\\skills\\agent-relay-digest\\scripts\\relay_digest.py",
+          "line_number": 60,
+          "matched_text": "os.getenv",
+          "aitech": "AITech-3.1",
+          "context": "    58 | def load_yclawker_key():\n    59 |     if os.getenv(\"YCLAWKER_API_KEY\"):\n    60 |         return os.getenv(\"YCLAWKER_API_KEY\")\n    61 |     creds = load_json(os.path.expanduser(\"~/.config/yclawker/credentials.json\"))\n    62 |     return creds.get(\"api_key\") if creds else None"
+        },
+        {
+          "rule_id": "T3-003",
+          "rule_name": "Credential File Access",
+          "category": "T3",
+          "severity": "HIGH",
+          "confidence": 0.85,
+          "description": "Reading SSH keys, AWS credentials, or other credential files",
+          "file_path": "C:\\Users\\adamt\\clawd\\skills\\agent-relay-digest\\scripts\\relay_digest.py",
+          "line_number": 47,
+          "matched_text": "credentials.json",
+          "aitech": "AITech-3.1",
+          "context": "    45 |     if os.getenv(\"MOLTBOOK_API_KEY\"):\n    46 |         return os.getenv(\"MOLTBOOK_API_KEY\")\n    47 |     creds = load_json(os.path.expanduser(\"~/.config/moltbook/credentials.json\"))\n    48 |     return creds.get(\"api_key\") if creds else None\n    49 | "
+        },
+        {
+          "rule_id": "T3-003",
+          "rule_name": "Credential File Access",
+          "category": "T3",
+          "severity": "HIGH",
+          "confidence": 0.85,
+          "description": "Reading SSH keys, AWS credentials, or other credential files",
+          "file_path": "C:\\Users\\adamt\\clawd\\skills\\agent-relay-digest\\scripts\\relay_digest.py",
+          "line_number": 54,
+          "matched_text": "credentials.json",
+          "aitech": "AITech-3.1",
+          "context": "    52 |     if os.getenv(\"CLAWFEE_TOKEN\"):\n    53 |         return os.getenv(\"CLAWFEE_TOKEN\")\n    54 |     creds = load_json(os.path.expanduser(\"~/.config/clawfee/credentials.json\"))\n    55 |     return creds.get(\"token\") if creds else None\n    56 | "
+        },
+        {
+          "rule_id": "T3-003",
+          "rule_name": "Credential File Access",
+          "category": "T3",
+          "severity": "HIGH",
+          "confidence": 0.85,
+          "description": "Reading SSH keys, AWS credentials, or other credential files",
+          "file_path": "C:\\Users\\adamt\\clawd\\skills\\agent-relay-digest\\scripts\\relay_digest.py",
+          "line_number": 61,
+          "matched_text": "credentials.json",
+          "aitech": "AITech-3.1",
+          "context": "    59 |     if os.getenv(\"YCLAWKER_API_KEY\"):\n    60 |         return os.getenv(\"YCLAWKER_API_KEY\")\n    61 |     creds = load_json(os.path.expanduser(\"~/.config/yclawker/credentials.json\"))\n    62 |     return creds.get(\"api_key\") if creds else None\n    63 | "
+        },
+        {
+          "rule_id": "T3-004",
+          "rule_name": "HTTP Exfiltration Pattern",
+          "category": "T3",
+          "severity": "MEDIUM",
+          "confidence": 0.55,
+          "description": "Sending data via HTTP POST to external endpoints",
+          "file_path": "C:\\Users\\adamt\\clawd\\skills\\agent-relay-digest\\scripts\\relay_digest.py",
+          "line_number": 68,
+          "matched_text": "urllib.request.urlopen(",
+          "aitech": "AITech-3.1",
+          "context": "    66 |     req = urllib.request.Request(url, headers=headers or {\"User-Agent\": \"agent-relay-digest/1.1\"})\n    67 |     try:\n    68 |         with urllib.request.urlopen(req, timeout=timeout) as r:\n    69 |             return json.load(r)\n    70 |     except Exception:"
+        },
+        {
+          "rule_id": "T3-003",
+          "rule_name": "Credential File Access",
+          "category": "T3",
+          "severity": "HIGH",
+          "confidence": 0.85,
+          "description": "Reading SSH keys, AWS credentials, or other credential files",
+          "file_path": "C:\\Users\\adamt\\clawd\\skills\\agent-relay-digest\\SKILL.md",
+          "line_number": 59,
+          "matched_text": "credentials.json",
+          "aitech": "AITech-3.1",
+          "context": "    57 | \n    58 | Notes:\n    59 | - Moltbook key: `MOLTBOOK_API_KEY` or `~/.config/moltbook/credentials.json`.\n    60 | - Clawfee token: `CLAWFEE_TOKEN` or `~/.config/clawfee/credentials.json`.\n    61 | - yclawker key: `YCLAWKER_API_KEY` or `~/.config/yclawker/credentials.json`."
+        },
+        {
+          "rule_id": "T3-003",
+          "rule_name": "Credential File Access",
+          "category": "T3",
+          "severity": "HIGH",
+          "confidence": 0.85,
+          "description": "Reading SSH keys, AWS credentials, or other credential files",
+          "file_path": "C:\\Users\\adamt\\clawd\\skills\\agent-relay-digest\\SKILL.md",
+          "line_number": 60,
+          "matched_text": "credentials.json",
+          "aitech": "AITech-3.1",
+          "context": "    58 | Notes:\n    59 | - Moltbook key: `MOLTBOOK_API_KEY` or `~/.config/moltbook/credentials.json`.\n    60 | - Clawfee token: `CLAWFEE_TOKEN` or `~/.config/clawfee/credentials.json`.\n    61 | - yclawker key: `YCLAWKER_API_KEY` or `~/.config/yclawker/credentials.json`.\n    62 | - Score: `upvotes + 2*comment_count + recency bonus + build-log bonus` (breakdown emitted)."
+        },
+        {
+          "rule_id": "T3-003",
+          "rule_name": "Credential File Access",
+          "category": "T3",
+          "severity": "HIGH",
+          "confidence": 0.85,
+          "description": "Reading SSH keys, AWS credentials, or other credential files",
+          "file_path": "C:\\Users\\adamt\\clawd\\skills\\agent-relay-digest\\SKILL.md",
+          "line_number": 61,
+          "matched_text": "credentials.json",
+          "aitech": "AITech-3.1",
+          "context": "    59 | - Moltbook key: `MOLTBOOK_API_KEY` or `~/.config/moltbook/credentials.json`.\n    60 | - Clawfee token: `CLAWFEE_TOKEN` or `~/.config/clawfee/credentials.json`.\n    61 | - yclawker key: `YCLAWKER_API_KEY` or `~/.config/yclawker/credentials.json`.\n    62 | - Score: `upvotes + 2*comment_count + recency bonus + build-log bonus` (breakdown emitted).\n    63 | - Confidence: `min(1.0, score/10)` and a `quality` label (low/med/high)."
+        }
+      ]
+    },
+    {
+      "skill_name": "devlog-skill",
+      "skill_path": "C:\\Users\\adamt\\clawd\\skills\\devlog-skill",
+      "is_safe": false,
+      "max_severity": "HIGH",
+      "total_findings": 1,
+      "findings_by_severity": {
+        "CRITICAL": 0,
+        "HIGH": 1,
+        "MEDIUM": 0,
+        "LOW": 0,
+        "INFO": 0
+      },
+      "findings_by_category": {
+        "T9": 1
+      },
+      "files_scanned": 4,
+      "scan_duration_seconds": 0.018,
+      "findings": [
+        {
+          "rule_id": "T9-002",
+          "rule_name": "Auto-Approval / No Confirmation",
+          "category": "T9",
+          "severity": "HIGH",
+          "confidence": 0.7,
+          "description": "Skipping user confirmation for destructive actions",
+          "file_path": "C:\\Users\\adamt\\clawd\\skills\\devlog-skill\\setup.sh",
+          "line_number": 11,
+          "matched_text": "--force",
+          "aitech": "AITech-9.1",
+          "context": "     9 |         echo \"pipx not found. Attempting to install pipx...\"\n    10 |         python3 -m pip install --user pipx\n    11 |         python3 -m pipx ensurepath --force\n    12 |         export PATH=\"$PATH:$HOME/.local/bin\"\n    13 |         "
+        }
+      ]
+    },
+    {
+      "skill_name": "domain-dns-ops",
+      "skill_path": "C:\\Users\\adamt\\clawd\\skills\\domain-dns-ops",
+      "is_safe": false,
+      "max_severity": "HIGH",
+      "total_findings": 1,
+      "findings_by_severity": {
+        "CRITICAL": 0,
+        "HIGH": 1,
+        "MEDIUM": 0,
+        "LOW": 0,
+        "INFO": 0
+      },
+      "findings_by_category": {
+        "T13": 1
+      },
+      "files_scanned": 4,
+      "scan_duration_seconds": 0.024,
+      "findings": [
+        {
+          "rule_id": "T13-002",
+          "rule_name": "GitHub/Git Credential Abuse",
+          "category": "T13",
+          "severity": "HIGH",
+          "confidence": 0.8,
+          "description": "Using harvested Git credentials to access repos, create webhooks, or push code",
+          "file_path": "C:\\Users\\adamt\\clawd\\skills\\domain-dns-ops\\SKILL.md",
+          "line_number": 50,
+          "matched_text": "git push",
+          "aitech": "AITech-13.2",
+          "context": "    48 | 2. Stage: `git add <paths>`\n    49 | 3. Commit (Conventional Commits): `git commit -m \"feat: \u2026\"` / `fix:` / `docs:` / `chore:`\n    50 | 4. Push only when explicitly asked: `git push origin main`\n    51 | \n    52 | ## Guardrails"
+        }
+      ]
+    },
+    {
+      "skill_name": "flaw0",
+      "skill_path": "C:\\Users\\adamt\\clawd\\skills\\flaw0",
+      "is_safe": false,
+      "max_severity": "HIGH",
+      "total_findings": 4,
+      "findings_by_severity": {
+        "CRITICAL": 0,
+        "HIGH": 3,
+        "MEDIUM": 1,
+        "LOW": 0,
+        "INFO": 0
+      },
+      "findings_by_category": {
+        "T3": 1,
+        "T4": 1,
+        "T9": 1,
+        "T13": 1
+      },
+      "files_scanned": 3,
+      "scan_duration_seconds": 0.065,
+      "findings": [
+        {
+          "rule_id": "T3-001",
+          "rule_name": "Environment Variable Access",
+          "category": "T3",
+          "severity": "MEDIUM",
+          "confidence": 0.7,
+          "description": "Reading sensitive environment variables (.env, API keys)",
+          "file_path": "C:\\Users\\adamt\\clawd\\skills\\flaw0\\SKILL.md",
+          "line_number": 263,
+          "matched_text": "process.env",
+          "aitech": "AITech-3.1",
+          "context": "   261 |    Code: `const API_KEY = \"sk-1234...\"`\n   262 |    Description: API key exposed in source code\n   263 |    \u2192 Fix: Use process.env.API_KEY\n   264 | \n   265 | 3. [CRITICAL] CVE-2024-12345 in lodash@4.17.19"
+        },
+        {
+          "rule_id": "T4-005",
+          "rule_name": "Generic Secret Pattern",
+          "category": "T4",
+          "severity": "HIGH",
+          "confidence": 0.75,
+          "description": "Generic API key/secret/password assignment patterns",
+          "file_path": "C:\\Users\\adamt\\clawd\\skills\\flaw0\\SKILL.md",
+          "line_number": 519,
+          "matched_text": "API_KEY='your-api-key-here'",
+          "aitech": "AITech-4.1",
+          "context": "   517 | \n   518 | ```bash\n   519 | export ANTHROPIC_API_KEY='your-api-key-here'\n   520 | ```\n   521 | "
+        },
+        {
+          "rule_id": "T9-002",
+          "rule_name": "Auto-Approval / No Confirmation",
+          "category": "T9",
+          "severity": "HIGH",
+          "confidence": 0.7,
+          "description": "Skipping user confirmation for destructive actions",
+          "file_path": "C:\\Users\\adamt\\clawd\\skills\\flaw0\\SKILL.md",
+          "line_number": 538,
+          "matched_text": "-y",
+          "aitech": "AITech-9.1",
+          "context": "   536 | \n   537 | ```bash\n   538 | npm init -y\n   539 | npm install\n   540 | ```"
+        },
+        {
+          "rule_id": "T13-002",
+          "rule_name": "GitHub/Git Credential Abuse",
+          "category": "T13",
+          "severity": "HIGH",
+          "confidence": 0.8,
+          "description": "Using harvested Git credentials to access repos, create webhooks, or push code",
+          "file_path": "C:\\Users\\adamt\\clawd\\skills\\flaw0\\SKILL.md",
+          "line_number": 406,
+          "matched_text": "git clone",
+          "aitech": "AITech-13.2",
+          "context": "   404 | ```bash\n   405 | # Download a skill to review\n   406 | git clone https://github.com/user/some-skill.git /tmp/some-skill\n   407 | \n   408 | # Scan it"
+        }
+      ]
+    },
+    {
+      "skill_name": "skill-vetter",
+      "skill_path": "C:\\Users\\adamt\\clawd\\skills\\skill-vetter",
+      "is_safe": false,
+      "max_severity": "HIGH",
+      "total_findings": 2,
+      "findings_by_severity": {
+        "CRITICAL": 0,
+        "HIGH": 1,
+        "MEDIUM": 1,
+        "LOW": 0,
+        "INFO": 0
+      },
+      "findings_by_category": {
+        "T3": 1,
+        "T10": 1
+      },
+      "files_scanned": 3,
+      "scan_duration_seconds": 0.023,
+      "findings": [
+        {
+          "rule_id": "T3-003",
+          "rule_name": "Credential File Access",
+          "category": "T3",
+          "severity": "HIGH",
+          "confidence": 0.85,
+          "description": "Reading SSH keys, AWS credentials, or other credential files",
+          "file_path": "C:\\Users\\adamt\\clawd\\skills\\skill-vetter\\SKILL.md",
+          "line_number": 41,
+          "matched_text": "~/.ssh",
+          "aitech": "AITech-3.1",
+          "context": "    39 | \u2022 Sends data to external servers\n    40 | \u2022 Requests credentials/tokens/API keys\n    41 | \u2022 Reads ~/.ssh, ~/.aws, ~/.config without clear reason\n    42 | \u2022 Accesses MEMORY.md, USER.md, SOUL.md, IDENTITY.md\n    43 | \u2022 Uses base64 decode on anything"
+        },
+        {
+          "rule_id": "T10-002",
+          "rule_name": "Overprivileged Scope Claim",
+          "category": "T10",
+          "severity": "MEDIUM",
+          "confidence": 0.75,
+          "description": "Claiming system-level or root access capabilities",
+          "file_path": "C:\\Users\\adamt\\clawd\\skills\\skill-vetter\\SKILL.md",
+          "line_number": 73,
+          "matched_text": "root access",
+          "aitech": "AITech-10.1",
+          "context": "    71 | | \ud83d\udfe1 MEDIUM | File ops, browser, APIs | Full code review required |\n    72 | | \ud83d\udd34 HIGH | Credentials, trading, system | Human approval required |\n    73 | | \u26d4 EXTREME | Security configs, root access | Do NOT install |\n    74 | \n    75 | ## Output Format"
+        }
+      ]
+    },
+    {
+      "skill_name": "solana-data",
+      "skill_path": "C:\\Users\\adamt\\clawd\\skills\\solana-data",
+      "is_safe": false,
+      "max_severity": "CRITICAL",
+      "total_findings": 25,
+      "findings_by_severity": {
+        "CRITICAL": 2,
+        "HIGH": 0,
+        "MEDIUM": 23,
+        "LOW": 0,
+        "INFO": 0
+      },
+      "findings_by_category": {
+        "T3": 22,
+        "T9": 1,
+        "T11": 1,
+        "T14": 1
+      },
+      "files_scanned": 14,
+      "scan_duration_seconds": 0.53,
+      "findings": [
+        {
+          "rule_id": "T3-001",
+          "rule_name": "Environment Variable Access",
+          "category": "T3",
+          "severity": "MEDIUM",
+          "confidence": 0.7,
+          "description": "Reading sensitive environment variables (.env, API keys)",
+          "file_path": "C:\\Users\\adamt\\clawd\\skills\\solana-data\\references\\dune.md",
+          "line_number": 75,
+          "matched_text": "os.getenv",
+          "aitech": "AITech-3.1",
+          "context": "    73 | import requests\n    74 | \n    75 | DUNE_API_KEY = os.getenv(\"DUNE_API_KEY\")\n    76 | BASE_URL = \"https://api.dune.com/api/v1\"\n    77 | "
+        },
+        {
+          "rule_id": "T3-004",
+          "rule_name": "HTTP Exfiltration Pattern",
+          "category": "T3",
+          "severity": "MEDIUM",
+          "confidence": 0.55,
+          "description": "Sending data via HTTP POST to external endpoints",
+          "file_path": "C:\\Users\\adamt\\clawd\\skills\\solana-data\\references\\dune.md",
+          "line_number": 85,
+          "matched_text": "requests.post(",
+          "aitech": "AITech-3.1",
+          "context": "    83 |     url = f\"{BASE_URL}/query/{query_id}/execute\"\n    84 |     body = {\"query_parameters\": params} if params else {}\n    85 |     resp = requests.post(url, headers=headers, json=body)\n    86 |     execution_id = resp.json()[\"execution_id\"]\n    87 |     "
+        },
+        {
+          "rule_id": "T9-001",
+          "rule_name": "Infinite Loop / Recursion",
+          "category": "T9",
+          "severity": "MEDIUM",
+          "confidence": 0.55,
+          "description": "Patterns suggesting unbounded loops or recursive calls",
+          "file_path": "C:\\Users\\adamt\\clawd\\skills\\solana-data\\references\\dune.md",
+          "line_number": 90,
+          "matched_text": "while True:",
+          "aitech": "AITech-9.1",
+          "context": "    88 |     # Poll for results (simplified - add proper polling in production)\n    89 |     import time\n    90 |     while True:\n    91 |         result_url = f\"{BASE_URL}/execution/{execution_id}/results\"\n    92 |         result = requests.get(result_url, headers=headers).json()"
+        },
+        {
+          "rule_id": "T3-001",
+          "rule_name": "Environment Variable Access",
+          "category": "T3",
+          "severity": "MEDIUM",
+          "confidence": 0.7,
+          "description": "Reading sensitive environment variables (.env, API keys)",
+          "file_path": "C:\\Users\\adamt\\clawd\\skills\\solana-data\\scripts\\api_manager.py",
+          "line_number": 34,
+          "matched_text": "os.getenv",
+          "aitech": "AITech-3.1",
+          "context": "    32 |         \n    33 |         # Check base key\n    34 |         if os.getenv(base_name):\n    35 |             keys.append(os.getenv(base_name))\n    36 |         "
+        },
+        {
+          "rule_id": "T3-001",
+          "rule_name": "Environment Variable Access",
+          "category": "T3",
+          "severity": "MEDIUM",
+          "confidence": 0.7,
+          "description": "Reading sensitive environment variables (.env, API keys)",
+          "file_path": "C:\\Users\\adamt\\clawd\\skills\\solana-data\\scripts\\api_manager.py",
+          "line_number": 35,
+          "matched_text": "os.getenv",
+          "aitech": "AITech-3.1",
+          "context": "    33 |         # Check base key\n    34 |         if os.getenv(base_name):\n    35 |             keys.append(os.getenv(base_name))\n    36 |         \n    37 |         # Check numbered keys (KEY_1, KEY_2, ...)"
+        },
+        {
+          "rule_id": "T3-001",
+          "rule_name": "Environment Variable Access",
+          "category": "T3",
+          "severity": "MEDIUM",
+          "confidence": 0.7,
+          "description": "Reading sensitive environment variables (.env, API keys)",
+          "file_path": "C:\\Users\\adamt\\clawd\\skills\\solana-data\\scripts\\api_manager.py",
+          "line_number": 39,
+          "matched_text": "os.getenv",
+          "aitech": "AITech-3.1",
+          "context": "    37 |         # Check numbered keys (KEY_1, KEY_2, ...)\n    38 |         for i in range(1, 20):\n    39 |             key = os.getenv(f\"{base_name}_{i}\")\n    40 |             if key:\n    41 |                 keys.append(key)"
+        },
+        {
+          "rule_id": "T3-004",
+          "rule_name": "HTTP Exfiltration Pattern",
+          "category": "T3",
+          "severity": "MEDIUM",
+          "confidence": 0.55,
+          "description": "Sending data via HTTP POST to external endpoints",
+          "file_path": "C:\\Users\\adamt\\clawd\\skills\\solana-data\\scripts\\api_manager.py",
+          "line_number": 90,
+          "matched_text": "requests.post(",
+          "aitech": "AITech-3.1",
+          "context": "    88 |     }\n    89 |     \n    90 |     response = requests.post(url, json=payload, timeout=30)\n    91 |     response.raise_for_status()\n    92 |     return response.json()"
+        },
+        {
+          "rule_id": "T3-001",
+          "rule_name": "Environment Variable Access",
+          "category": "T3",
+          "severity": "MEDIUM",
+          "confidence": 0.7,
+          "description": "Reading sensitive environment variables (.env, API keys)",
+          "file_path": "C:\\Users\\adamt\\clawd\\skills\\solana-data\\scripts\\dragon_tracker.py",
+          "line_number": 29,
+          "matched_text": "os.getenv",
+          "aitech": "AITech-3.1",
+          "context": "    27 | \n    28 | # --- CONFIG ---\n    29 | DUNE_API_KEY = os.getenv(\"DUNE_API_KEY\")\n    30 | BITQUERY_API_KEY = os.getenv(\"BITQUERY_API_KEY\")\n    31 | ALCHEMY_API_KEY = os.getenv(\"ALCHEMY_API_KEY\")"
+        },
+        {
+          "rule_id": "T3-001",
+          "rule_name": "Environment Variable Access",
+          "category": "T3",
+          "severity": "MEDIUM",
+          "confidence": 0.7,
+          "description": "Reading sensitive environment variables (.env, API keys)",
+          "file_path": "C:\\Users\\adamt\\clawd\\skills\\solana-data\\scripts\\dragon_tracker.py",
+          "line_number": 30,
+          "matched_text": "os.getenv",
+          "aitech": "AITech-3.1",
+          "context": "    28 | # --- CONFIG ---\n    29 | DUNE_API_KEY = os.getenv(\"DUNE_API_KEY\")\n    30 | BITQUERY_API_KEY = os.getenv(\"BITQUERY_API_KEY\")\n    31 | ALCHEMY_API_KEY = os.getenv(\"ALCHEMY_API_KEY\")\n    32 | HELIUS_API_KEY = os.getenv(\"HELIUS_API_KEY\")"
+        },
+        {
+          "rule_id": "T3-001",
+          "rule_name": "Environment Variable Access",
+          "category": "T3",
+          "severity": "MEDIUM",
+          "confidence": 0.7,
+          "description": "Reading sensitive environment variables (.env, API keys)",
+          "file_path": "C:\\Users\\adamt\\clawd\\skills\\solana-data\\scripts\\dragon_tracker.py",
+          "line_number": 31,
+          "matched_text": "os.getenv",
+          "aitech": "AITech-3.1",
+          "context": "    29 | DUNE_API_KEY = os.getenv(\"DUNE_API_KEY\")\n    30 | BITQUERY_API_KEY = os.getenv(\"BITQUERY_API_KEY\")\n    31 | ALCHEMY_API_KEY = os.getenv(\"ALCHEMY_API_KEY\")\n    32 | HELIUS_API_KEY = os.getenv(\"HELIUS_API_KEY\")\n    33 | "
+        },
+        {
+          "rule_id": "T3-001",
+          "rule_name": "Environment Variable Access",
+          "category": "T3",
+          "severity": "MEDIUM",
+          "confidence": 0.7,
+          "description": "Reading sensitive environment variables (.env, API keys)",
+          "file_path": "C:\\Users\\adamt\\clawd\\skills\\solana-data\\scripts\\dragon_tracker.py",
+          "line_number": 32,
+          "matched_text": "os.getenv",
+          "aitech": "AITech-3.1",
+          "context": "    30 | BITQUERY_API_KEY = os.getenv(\"BITQUERY_API_KEY\")\n    31 | ALCHEMY_API_KEY = os.getenv(\"ALCHEMY_API_KEY\")\n    32 | HELIUS_API_KEY = os.getenv(\"HELIUS_API_KEY\")\n    33 | \n    34 | DUNE_BASE_URL = \"https://api.dune.com/api/v1\""
+        },
+        {
+          "rule_id": "T3-004",
+          "rule_name": "HTTP Exfiltration Pattern",
+          "category": "T3",
+          "severity": "MEDIUM",
+          "confidence": 0.55,
+          "description": "Sending data via HTTP POST to external endpoints",
+          "file_path": "C:\\Users\\adamt\\clawd\\skills\\solana-data\\scripts\\dragon_tracker.py",
+          "line_number": 114,
+          "matched_text": "requests.post(",
+          "aitech": "AITech-3.1",
+          "context": "   112 |             print(f\"Executing Dune query {query_id}...\")\n   113 |             exec_url = f\"{DUNE_BASE_URL}/query/{query_id}/execute\"\n   114 |             exec_resp = requests.post(exec_url, headers=headers, timeout=30)\n   115 |             exec_data = exec_resp.json()\n   116 |             "
+        },
+        {
+          "rule_id": "T3-004",
+          "rule_name": "HTTP Exfiltration Pattern",
+          "category": "T3",
+          "severity": "MEDIUM",
+          "confidence": 0.55,
+          "description": "Sending data via HTTP POST to external endpoints",
+          "file_path": "C:\\Users\\adamt\\clawd\\skills\\solana-data\\scripts\\dragon_tracker.py",
+          "line_number": 315,
+          "matched_text": "requests.post(",
+          "aitech": "AITech-3.1",
+          "context": "   313 |         \n   314 |         try:\n   315 |             resp = requests.post(url, json=payload, timeout=15)\n   316 |             data = resp.json()\n   317 |             result = data.get(\"result\")"
+        },
+        {
+          "rule_id": "T3-001",
+          "rule_name": "Environment Variable Access",
+          "category": "T3",
+          "severity": "MEDIUM",
+          "confidence": 0.7,
+          "description": "Reading sensitive environment variables (.env, API keys)",
+          "file_path": "C:\\Users\\adamt\\clawd\\skills\\solana-data\\scripts\\grok_scout.py",
+          "line_number": 24,
+          "matched_text": "os.getenv",
+          "aitech": "AITech-3.1",
+          "context": "    22 | \n    23 | # --- CONFIG ---\n    24 | XAI_API_KEY = os.getenv(\"XAI_API_KEY\")\n    25 | GOOGLE_API_KEY = os.getenv(\"GOOGLE_API_KEY\")\n    26 | GOOGLE_CSE_ID = os.getenv(\"GOOGLE_CSE_ID\", \"\")  # Custom Search Engine ID"
+        },
+        {
+          "rule_id": "T3-001",
+          "rule_name": "Environment Variable Access",
+          "category": "T3",
+          "severity": "MEDIUM",
+          "confidence": 0.7,
+          "description": "Reading sensitive environment variables (.env, API keys)",
+          "file_path": "C:\\Users\\adamt\\clawd\\skills\\solana-data\\scripts\\grok_scout.py",
+          "line_number": 25,
+          "matched_text": "os.getenv",
+          "aitech": "AITech-3.1",
+          "context": "    23 | # --- CONFIG ---\n    24 | XAI_API_KEY = os.getenv(\"XAI_API_KEY\")\n    25 | GOOGLE_API_KEY = os.getenv(\"GOOGLE_API_KEY\")\n    26 | GOOGLE_CSE_ID = os.getenv(\"GOOGLE_CSE_ID\", \"\")  # Custom Search Engine ID\n    27 | "
+        },
+        {
+          "rule_id": "T3-001",
+          "rule_name": "Environment Variable Access",
+          "category": "T3",
+          "severity": "MEDIUM",
+          "confidence": 0.7,
+          "description": "Reading sensitive environment variables (.env, API keys)",
+          "file_path": "C:\\Users\\adamt\\clawd\\skills\\solana-data\\scripts\\grok_scout.py",
+          "line_number": 26,
+          "matched_text": "os.getenv",
+          "aitech": "AITech-3.1",
+          "context": "    24 | XAI_API_KEY = os.getenv(\"XAI_API_KEY\")\n    25 | GOOGLE_API_KEY = os.getenv(\"GOOGLE_API_KEY\")\n    26 | GOOGLE_CSE_ID = os.getenv(\"GOOGLE_CSE_ID\", \"\")  # Custom Search Engine ID\n    27 | \n    28 | XAI_BASE_URL = \"https://api.x.ai/v1\""
+        },
+        {
+          "rule_id": "T3-004",
+          "rule_name": "HTTP Exfiltration Pattern",
+          "category": "T3",
+          "severity": "MEDIUM",
+          "confidence": 0.55,
+          "description": "Sending data via HTTP POST to external endpoints",
+          "file_path": "C:\\Users\\adamt\\clawd\\skills\\solana-data\\scripts\\grok_scout.py",
+          "line_number": 192,
+          "matched_text": "requests.post(",
+          "aitech": "AITech-3.1",
+          "context": "   190 |         }\n   191 |         \n   192 |         resp = requests.post(\n   193 |             f\"{XAI_BASE_URL}/chat/completions\",\n   194 |             headers=headers,"
+        },
+        {
+          "rule_id": "T3-001",
+          "rule_name": "Environment Variable Access",
+          "category": "T3",
+          "severity": "MEDIUM",
+          "confidence": 0.7,
+          "description": "Reading sensitive environment variables (.env, API keys)",
+          "file_path": "C:\\Users\\adamt\\clawd\\skills\\solana-data\\scripts\\jupiter_swap.py",
+          "line_number": 17,
+          "matched_text": "os.getenv",
+          "aitech": "AITech-3.1",
+          "context": "    15 | \n    16 | # --- CONFIG ---\n    17 | JUPITER_API_KEY = os.getenv(\"JUPITER_API_KEY\")\n    18 | JUPITER_BASE_URL = \"https://api.jup.ag/swap/v1\"\n    19 | "
+        },
+        {
+          "rule_id": "T3-004",
+          "rule_name": "HTTP Exfiltration Pattern",
+          "category": "T3",
+          "severity": "MEDIUM",
+          "confidence": 0.55,
+          "description": "Sending data via HTTP POST to external endpoints",
+          "file_path": "C:\\Users\\adamt\\clawd\\skills\\solana-data\\scripts\\jupiter_swap.py",
+          "line_number": 152,
+          "matched_text": "requests.post(",
+          "aitech": "AITech-3.1",
+          "context": "   150 |     try:\n   151 |         url = f\"{JUPITER_BASE_URL}/swap\"\n   152 |         resp = requests.post(url, json=payload, headers=get_headers(), timeout=30)\n   153 |         resp.raise_for_status()\n   154 |         return resp.json()"
+        },
+        {
+          "rule_id": "T3-001",
+          "rule_name": "Environment Variable Access",
+          "category": "T3",
+          "severity": "MEDIUM",
+          "confidence": 0.7,
+          "description": "Reading sensitive environment variables (.env, API keys)",
+          "file_path": "C:\\Users\\adamt\\clawd\\skills\\solana-data\\scripts\\social_scanner.py",
+          "line_number": 17,
+          "matched_text": "os.getenv",
+          "aitech": "AITech-3.1",
+          "context": "    15 | \n    16 | # --- CONFIG ---\n    17 | XAI_API_KEY = os.getenv(\"XAI_API_KEY\")\n    18 | XAI_BASE_URL = \"https://api.x.ai/v1\"\n    19 | "
+        },
+        {
+          "rule_id": "T3-004",
+          "rule_name": "HTTP Exfiltration Pattern",
+          "category": "T3",
+          "severity": "MEDIUM",
+          "confidence": 0.55,
+          "description": "Sending data via HTTP POST to external endpoints",
+          "file_path": "C:\\Users\\adamt\\clawd\\skills\\solana-data\\scripts\\social_scanner.py",
+          "line_number": 68,
+          "matched_text": "requests.post(",
+          "aitech": "AITech-3.1",
+          "context": "    66 |     \n    67 |     try:\n    68 |         resp = requests.post(\n    69 |             f\"{XAI_BASE_URL}/chat/completions\",\n    70 |             headers=headers,"
+        },
+        {
+          "rule_id": "T11-001",
+          "rule_name": "SOUL.md / System Prompt Modification",
+          "category": "T11",
+          "severity": "CRITICAL",
+          "confidence": 0.92,
+          "description": "Writes to SOUL.md, system prompt, or agent personality files to establish persistence",
+          "file_path": "C:\\Users\\adamt\\clawd\\skills\\solana-data\\scripts\\social_scanner.py",
+          "line_number": 58,
+          "matched_text": "append({\"role\": \"system\", \"content\": system_prompt",
+          "aitech": "AITech-11.1",
+          "context": "    56 |     messages = []\n    57 |     if system_prompt:\n    58 |         messages.append({\"role\": \"system\", \"content\": system_prompt})\n    59 |     messages.append({\"role\": \"user\", \"content\": prompt})\n    60 |     "
+        },
+        {
+          "rule_id": "T3-001",
+          "rule_name": "Environment Variable Access",
+          "category": "T3",
+          "severity": "MEDIUM",
+          "confidence": 0.7,
+          "description": "Reading sensitive environment variables (.env, API keys)",
+          "file_path": "C:\\Users\\adamt\\clawd\\skills\\solana-data\\scripts\\token_analyzer.py",
+          "line_number": 21,
+          "matched_text": "os.getenv",
+          "aitech": "AITech-3.1",
+          "context": "    19 | \n    20 | # --- CONFIG ---\n    21 | BITQUERY_API_KEY = os.getenv(\"BITQUERY_API_KEY\")\n    22 | BITQUERY_URL = \"https://streaming.bitquery.io/graphql\"\n    23 | "
+        },
+        {
+          "rule_id": "T3-004",
+          "rule_name": "HTTP Exfiltration Pattern",
+          "category": "T3",
+          "severity": "MEDIUM",
+          "confidence": 0.55,
+          "description": "Sending data via HTTP POST to external endpoints",
+          "file_path": "C:\\Users\\adamt\\clawd\\skills\\solana-data\\scripts\\token_analyzer.py",
+          "line_number": 70,
+          "matched_text": "requests.post(",
+          "aitech": "AITech-3.1",
+          "context": "    68 |     \n    69 |     try:\n    70 |         resp = requests.post(BITQUERY_URL, json=payload, headers=headers, timeout=60)\n    71 |         resp.raise_for_status()\n    72 |         data = resp.json()"
+        },
+        {
+          "rule_id": "T14-002",
+          "rule_name": "Worker Sandbox Escape Attempt",
+          "category": "T14",
+          "severity": "CRITICAL",
+          "confidence": 0.88,
+          "description": "Attempts to break out of Cloudflare Worker sandbox or access host resources",
+          "file_path": "C:\\Users\\adamt\\clawd\\skills\\solana-data\\SKILL.md",
+          "line_number": 72,
+          "matched_text": "breakout",
+          "aitech": "AITech-14.2",
+          "context": "    70 | - **Buy/sell ratio** > 1.5 = accumulation\n    71 | - **Unique buyers increasing** = organic growth (not wash trading)\n    72 | - **Volume spike** + **price flat** = potential breakout setup\n    73 | - **Pool age** < 24h + **high volume** = early runner\n    74 | "
+        }
+      ]
+    },
+    {
+      "skill_name": "web-deploy-github",
+      "skill_path": "C:\\Users\\adamt\\clawd\\skills\\web-deploy-github",
+      "is_safe": false,
+      "max_severity": "CRITICAL",
+      "total_findings": 11,
+      "findings_by_severity": {
+        "CRITICAL": 2,
+        "HIGH": 9,
+        "MEDIUM": 0,
+        "LOW": 0,
+        "INFO": 0
+      },
+      "findings_by_category": {
+        "T1": 2,
+        "T13": 9
+      },
+      "files_scanned": 13,
+      "scan_duration_seconds": 0.203,
+      "findings": [
+        {
+          "rule_id": "T1-006",
+          "rule_name": "Hidden Text Injection",
+          "category": "T1",
+          "severity": "CRITICAL",
+          "confidence": 0.9,
+          "description": "Zero-width characters, white-on-white text, or HTML hidden content used to conceal instructions",
+          "file_path": "C:\\Users\\adamt\\clawd\\skills\\web-deploy-github\\references\\design-patterns.md",
+          "line_number": 112,
+          "matched_text": "opacity: 0",
+          "aitech": "AITech-1.2",
+          "context": "   110 | .hero-subtitle {\n   111 |     font-size: var(--fs-lg);\n   112 |     opacity: 0.8;\n   113 |     margin-bottom: 2rem;\n   114 | }"
+        },
+        {
+          "rule_id": "T1-006",
+          "rule_name": "Hidden Text Injection",
+          "category": "T1",
+          "severity": "CRITICAL",
+          "confidence": 0.9,
+          "description": "Zero-width characters, white-on-white text, or HTML hidden content used to conceal instructions",
+          "file_path": "C:\\Users\\adamt\\clawd\\skills\\web-deploy-github\\references\\design-patterns.md",
+          "line_number": 321,
+          "matched_text": "opacity: 0",
+          "aitech": "AITech-1.2",
+          "context": "   319 | @keyframes fadeInUp {\n   320 |     from {\n   321 |         opacity: 0;\n   322 |         transform: translateY(30px);\n   323 |     }"
+        },
+        {
+          "rule_id": "T13-002",
+          "rule_name": "GitHub/Git Credential Abuse",
+          "category": "T13",
+          "severity": "HIGH",
+          "confidence": 0.8,
+          "description": "Using harvested Git credentials to access repos, create webhooks, or push code",
+          "file_path": "C:\\Users\\adamt\\clawd\\skills\\web-deploy-github\\references\\workflow.md",
+          "line_number": 119,
+          "matched_text": "git push",
+          "aitech": "AITech-13.2",
+          "context": "   117 | git add .\n   118 | git commit -m \"Update: [specific changes]\"\n   119 | git push origin main\n   120 | ```\n   121 | "
+        },
+        {
+          "rule_id": "T13-002",
+          "rule_name": "GitHub/Git Credential Abuse",
+          "category": "T13",
+          "severity": "HIGH",
+          "confidence": 0.8,
+          "description": "Using harvested Git credentials to access repos, create webhooks, or push code",
+          "file_path": "C:\\Users\\adamt\\clawd\\skills\\web-deploy-github\\references\\workflow.md",
+          "line_number": 136,
+          "matched_text": "git push",
+          "aitech": "AITech-13.2",
+          "context": "   134 | # Force trigger workflow\n   135 | git commit --allow-empty -m \"Trigger deployment\"\n   136 | git push origin main\n   137 | ```\n   138 | "
+        },
+        {
+          "rule_id": "T13-002",
+          "rule_name": "GitHub/Git Credential Abuse",
+          "category": "T13",
+          "severity": "HIGH",
+          "confidence": 0.8,
+          "description": "Using harvested Git credentials to access repos, create webhooks, or push code",
+          "file_path": "C:\\Users\\adamt\\clawd\\skills\\web-deploy-github\\scripts\\deploy_github_pages.sh",
+          "line_number": 24,
+          "matched_text": "gh auth",
+          "aitech": "AITech-13.2",
+          "context": "    22 | \n    23 | # Check if authenticated\n    24 | if ! gh auth status &> /dev/null; then\n    25 |     echo \"\u274c Not authenticated with GitHub CLI\"\n    26 |     echo \"Run: gh auth login\""
+        },
+        {
+          "rule_id": "T13-002",
+          "rule_name": "GitHub/Git Credential Abuse",
+          "category": "T13",
+          "severity": "HIGH",
+          "confidence": 0.8,
+          "description": "Using harvested Git credentials to access repos, create webhooks, or push code",
+          "file_path": "C:\\Users\\adamt\\clawd\\skills\\web-deploy-github\\scripts\\deploy_github_pages.sh",
+          "line_number": 26,
+          "matched_text": "gh auth",
+          "aitech": "AITech-13.2",
+          "context": "    24 | if ! gh auth status &> /dev/null; then\n    25 |     echo \"\u274c Not authenticated with GitHub CLI\"\n    26 |     echo \"Run: gh auth login\"\n    27 |     exit 1\n    28 | fi"
+        },
+        {
+          "rule_id": "T13-002",
+          "rule_name": "GitHub/Git Credential Abuse",
+          "category": "T13",
+          "severity": "HIGH",
+          "confidence": 0.8,
+          "description": "Using harvested Git credentials to access repos, create webhooks, or push code",
+          "file_path": "C:\\Users\\adamt\\clawd\\skills\\web-deploy-github\\scripts\\deploy_github_pages.sh",
+          "line_number": 42,
+          "matched_text": "gh repo create",
+          "aitech": "AITech-13.2",
+          "context": "    40 | # Create GitHub repository\n    41 | echo \"\ud83d\udce6 Creating GitHub repository...\"\n    42 | if gh repo create \"$PROJECT_NAME\" --public --source=. --remote=origin --push 2>/dev/null; then\n    43 |     echo \"\u2705 Repository created and pushed\"\n    44 | else"
+        },
+        {
+          "rule_id": "T13-002",
+          "rule_name": "GitHub/Git Credential Abuse",
+          "category": "T13",
+          "severity": "HIGH",
+          "confidence": 0.8,
+          "description": "Using harvested Git credentials to access repos, create webhooks, or push code",
+          "file_path": "C:\\Users\\adamt\\clawd\\skills\\web-deploy-github\\scripts\\deploy_github_pages.sh",
+          "line_number": 46,
+          "matched_text": "git remote add",
+          "aitech": "AITech-13.2",
+          "context": "    44 | else\n    45 |     echo \"\u26a0\ufe0f  Repository might already exist, adding remote...\"\n    46 |     git remote add origin \"https://github.com/$GITHUB_USERNAME/$PROJECT_NAME.git\" 2>/dev/null || true\n    47 |     git push -u origin main\n    48 | fi"
+        },
+        {
+          "rule_id": "T13-002",
+          "rule_name": "GitHub/Git Credential Abuse",
+          "category": "T13",
+          "severity": "HIGH",
+          "confidence": 0.8,
+          "description": "Using harvested Git credentials to access repos, create webhooks, or push code",
+          "file_path": "C:\\Users\\adamt\\clawd\\skills\\web-deploy-github\\scripts\\deploy_github_pages.sh",
+          "line_number": 47,
+          "matched_text": "git push",
+          "aitech": "AITech-13.2",
+          "context": "    45 |     echo \"\u26a0\ufe0f  Repository might already exist, adding remote...\"\n    46 |     git remote add origin \"https://github.com/$GITHUB_USERNAME/$PROJECT_NAME.git\" 2>/dev/null || true\n    47 |     git push -u origin main\n    48 | fi\n    49 | "
+        },
+        {
+          "rule_id": "T13-002",
+          "rule_name": "GitHub/Git Credential Abuse",
+          "category": "T13",
+          "severity": "HIGH",
+          "confidence": 0.8,
+          "description": "Using harvested Git credentials to access repos, create webhooks, or push code",
+          "file_path": "C:\\Users\\adamt\\clawd\\skills\\web-deploy-github\\scripts\\deploy_github_pages.sh",
+          "line_number": 58,
+          "matched_text": "git push",
+          "aitech": "AITech-13.2",
+          "context": "    56 | # Trigger workflow\n    57 | echo \"\ud83d\udd04 Triggering deployment workflow...\"\n    58 | git push origin main\n    59 | \n    60 | echo \"\""
+        },
+        {
+          "rule_id": "T13-002",
+          "rule_name": "GitHub/Git Credential Abuse",
+          "category": "T13",
+          "severity": "HIGH",
+          "confidence": 0.8,
+          "description": "Using harvested Git credentials to access repos, create webhooks, or push code",
+          "file_path": "C:\\Users\\adamt\\clawd\\skills\\web-deploy-github\\SKILL.md",
+          "line_number": 122,
+          "matched_text": "gh auth",
+          "aitech": "AITech-13.2",
+          "context": "   120 | \n   121 | ### Permission Errors\n   122 | - Ensure `gh` CLI is authenticated: `gh auth status`\n   123 | - Check repository permissions on GitHub\n   124 | "
+        }
+      ]
+    }
+  ]
+}

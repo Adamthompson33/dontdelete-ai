@@ -1,0 +1,58 @@
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+jobs:
+  test:
+    runs-on: ${{ matrix.os }}
+    strategy:
+      matrix:
+        os: [ubuntu-latest, windows-latest, macos-latest]
+        python-version: ["3.10", "3.11", "3.12", "3.13"]
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Set up Python ${{ matrix.python-version }}
+        uses: actions/setup-python@v5
+        with:
+          python-version: ${{ matrix.python-version }}
+
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install -e ".[dev]"
+
+      - name: Run tests
+        run: python run_tests.py
+
+      - name: Lint with ruff
+        run: ruff check moltshield/
+
+  scan-corpus:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install MoltShield
+        run: pip install -e .
+
+      - name: Scan test corpus
+        run: |
+          moltshield scan-all tests/corpus --format json --output scan-results.json
+          cat scan-results.json | python -c "import json,sys; d=json.load(sys.stdin); print(f'Scanned {d[\"aggregate\"][\"total_skills_scanned\"]} skills, found {d[\"aggregate\"][\"total_findings\"]} findings')"
+
+      - name: Upload scan results
+        uses: actions/upload-artifact@v4
+        with:
+          name: scan-results
+          path: scan-results.json

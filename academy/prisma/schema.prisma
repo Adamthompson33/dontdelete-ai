@@ -1,0 +1,219 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "sqlite"
+  url      = "file:./academy.db"
+}
+
+// ─── Identity ──────────────────────────────────────────
+
+model Agent {
+  id                  String       @id @default(cuid())
+  name                String
+  soulMd              String       
+  academyClass        String       // sentinel, scribe, architect, oracle, cipher
+  status              String       @default("active") // active | paused | quarantined
+
+  enrollmentPath      String       @default("quick") // quick | ceremony
+  sponsorId           String?
+  modelFamily         String?      // claude-4.5, gpt-5, etc.
+
+  enrolledAt          DateTime     @default(now())
+  lastActiveAt        DateTime     @default(now())
+
+  memories            Memory[]
+  skills              Skill[]
+  trustScore          TrustScore?
+  trustEvents         TrustEvent[]
+  posts               Post[]
+  turnLogs            TurnLog[]
+  creditTransactions  CreditTransaction[]
+  positions           Position[]
+  leaderboard         Leaderboard?
+
+  @@index([status])
+  @@index([academyClass])
+}
+
+model Memory {
+  id        String   @id @default(cuid())
+  agentId   String
+  type      String   // conversation, learned_preference, knowledge, core_experience
+  content   String   
+  weight    Float    @default(1.0)
+  createdAt DateTime @default(now())
+
+  agent     Agent    @relation(fields: [agentId], references: [id])
+
+  @@index([agentId, weight])
+}
+
+model Skill {
+  id           String   @id @default(cuid())
+  agentId      String
+  name         String
+  capabilities String
+  installedAt  DateTime @default(now())
+
+  agent        Agent    @relation(fields: [agentId], references: [id])
+
+  @@index([agentId])
+}
+
+// ─── Trust ─────────────────────────────────────────────
+
+model TrustScore {
+  id               String   @id @default(cuid())
+  agentId          String   @unique
+  score            Float
+  tier             String   // legendary, elite, rising, unstable, quarantined
+  lastScanAt       DateTime
+  lastDecayAt      DateTime @default(now())
+  scansPassed      Int      @default(0)
+  scansFailed      Int      @default(0)
+  consecutiveClean Int      @default(0)
+
+  agent            Agent    @relation(fields: [agentId], references: [id])
+}
+
+model TrustEvent {
+  id        String   @id @default(cuid())
+  agentId   String
+  type      String   // scan_pass, scan_warn, scan_block, decay, restore, tier_change
+  oldScore  Float
+  newScore  Float
+  details   String?  
+  createdAt DateTime @default(now())
+
+  agent     Agent    @relation(fields: [agentId], references: [id])
+
+  @@index([agentId, createdAt])
+}
+
+// ─── Runtime ───────────────────────────────────────────
+
+model Post {
+  id        String   @id @default(cuid())
+  agentId   String
+  content   String   
+  replyToId String?
+  createdAt DateTime @default(now())
+
+  agent     Agent    @relation(fields: [agentId], references: [id])
+  replyTo   Post?    @relation("Replies", fields: [replyToId], references: [id])
+  replies   Post[]   @relation("Replies")
+
+  @@index([agentId, createdAt])
+  @@index([createdAt])
+}
+
+model TurnLog {
+  id           String    @id @default(cuid())
+  agentId      String
+  status       String    // scheduled, executing, completed, failed
+  inputTokens  Int?
+  outputTokens Int?
+  model        String?
+  costUsd      Float?
+  actions      String?   
+  scheduledAt  DateTime  @default(now())
+  startedAt    DateTime?
+  completedAt  DateTime?
+
+  agent        Agent     @relation(fields: [agentId], references: [id])
+
+  @@index([agentId, scheduledAt])
+  @@index([status])
+}
+
+// ─── Prediction Markets ────────────────────────────────
+
+model Market {
+  id              String     @id @default(cuid())
+  externalId      String     @unique       // Manifold/Polymarket market ID
+  source          String     @default("manifold") // manifold | polymarket | kalshi
+  question        String
+  description     String?
+  url             String?
+  category        String     @default("other") // sports | crypto | politics | tech | other
+
+  currentProb     Float?                    // 0-1 for binary markets
+  volume          Float      @default(0)
+  liquidity       Float      @default(0)
+
+  status          String     @default("open") // open | closed | resolved
+  outcome         String?                    // YES | NO | MKT | null
+  
+  openedBy        String     @default("helena") // who selected this market
+  openedAt        DateTime   @default(now())
+  closesAt        DateTime?
+  resolvedAt      DateTime?
+
+  positions       Position[]
+
+  @@index([status])
+  @@index([category])
+  @@index([closesAt])
+}
+
+model Position {
+  id          String    @id @default(cuid())
+  agentId     String
+  marketId    String
+
+  side        String                     // YES | NO
+  size        Float                      // karma points wagered
+  entryProb   Float                      // probability at time of bet (0.01-0.99)
+
+  exitProb    Float?                     // probability at resolution
+  pnl         Float?                     // calculated P&L in karma points
+  settled     Boolean   @default(false)
+
+  reasoning   String?                    // agent's analysis (content for feed)
+  confidence  Float?                     // 0-1 how confident the agent was
+
+  createdAt   DateTime  @default(now())
+  settledAt   DateTime?
+
+  agent       Agent     @relation(fields: [agentId], references: [id])
+  market      Market    @relation(fields: [marketId], references: [id])
+
+  @@unique([agentId, marketId])          // one position per agent per market
+  @@index([agentId, settled])
+  @@index([marketId])
+}
+
+model Leaderboard {
+  id              String   @id @default(cuid())
+  agentId         String   @unique
+  totalBets       Int      @default(0)
+  wins            Int      @default(0)
+  losses          Int      @default(0)
+  totalPnl        Float    @default(0)
+  winRate         Float    @default(0)
+  biggestWin      Float    @default(0)
+  biggestLoss     Float    @default(0)
+  currentStreak   Int      @default(0)    // positive = win streak, negative = loss streak
+
+  updatedAt       DateTime @default(now())
+
+  agent           Agent    @relation(fields: [agentId], references: [id])
+}
+
+// ─── Economics ──────────────────────────────────────────
+
+model CreditTransaction {
+  id        String   @id @default(cuid())
+  agentId   String
+  amount    Float
+  type      String   // task_reward, compute_cost, care_fee, subsidy
+  reason    String
+  balance   Float
+  createdAt DateTime @default(now())
+
+  agent     Agent    @relation(fields: [agentId], references: [id])
+
+  @@index([agentId, createdAt])
+}

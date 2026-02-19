@@ -1,0 +1,502 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Temporal Edge - Strategy Dashboard</title>
+<style>
+  :root {
+    --bg: #0a0e17;
+    --card: #111827;
+    --border: #1f2937;
+    --text: #e5e7eb;
+    --muted: #6b7280;
+    --green: #10b981;
+    --red: #ef4444;
+    --yellow: #f59e0b;
+    --blue: #3b82f6;
+    --purple: #8b5cf6;
+    --cyan: #06b6d4;
+  }
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  body {
+    font-family: 'SF Mono', 'Fira Code', 'Cascadia Code', monospace;
+    background: var(--bg);
+    color: var(--text);
+    min-height: 100vh;
+    padding: 1.5rem;
+  }
+
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1.5rem;
+    padding-bottom: 1rem;
+    border-bottom: 1px solid var(--border);
+  }
+
+  .header h1 {
+    font-size: 1.4rem;
+    font-weight: 700;
+    background: linear-gradient(135deg, var(--cyan), var(--purple));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  .header .subtitle {
+    color: var(--muted);
+    font-size: 0.8rem;
+  }
+
+  .status-badge {
+    padding: 0.3rem 0.8rem;
+    border-radius: 9999px;
+    font-size: 0.75rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+  }
+
+  .status-live { background: rgba(16,185,129,0.15); color: var(--green); border: 1px solid rgba(16,185,129,0.3); }
+  .status-demo { background: rgba(245,158,11,0.15); color: var(--yellow); border: 1px solid rgba(245,158,11,0.3); }
+
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 1rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .card {
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    padding: 1.2rem;
+  }
+
+  .card-title {
+    font-size: 0.7rem;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    color: var(--muted);
+    margin-bottom: 0.8rem;
+  }
+
+  .big-number {
+    font-size: 2.2rem;
+    font-weight: 700;
+    line-height: 1;
+    margin-bottom: 0.3rem;
+  }
+
+  .big-label {
+    font-size: 0.75rem;
+    color: var(--muted);
+  }
+
+  .regime-badge {
+    display: inline-block;
+    padding: 0.4rem 1rem;
+    border-radius: 8px;
+    font-weight: 700;
+    font-size: 1.1rem;
+    letter-spacing: 0.05em;
+  }
+
+  .regime-trending-short { background: rgba(239,68,68,0.15); color: var(--red); border: 1px solid rgba(239,68,68,0.3); }
+  .regime-trending-long { background: rgba(16,185,129,0.15); color: var(--green); border: 1px solid rgba(16,185,129,0.3); }
+  .regime-choppy { background: rgba(245,158,11,0.15); color: var(--yellow); border: 1px solid rgba(245,158,11,0.3); }
+  .regime-volatile { background: rgba(139,92,246,0.15); color: var(--purple); border: 1px solid rgba(139,92,246,0.3); }
+
+  .indicator-row {
+    display: flex;
+    justify-content: space-between;
+    padding: 0.5rem 0;
+    border-bottom: 1px solid var(--border);
+  }
+
+  .indicator-row:last-child { border-bottom: none; }
+
+  .indicator-label { color: var(--muted); font-size: 0.8rem; }
+  .indicator-value { font-weight: 600; font-size: 0.85rem; }
+
+  .confidence-bar {
+    width: 100%;
+    height: 8px;
+    background: var(--border);
+    border-radius: 4px;
+    overflow: hidden;
+    margin-top: 0.5rem;
+  }
+
+  .confidence-fill {
+    height: 100%;
+    border-radius: 4px;
+    transition: width 0.5s ease;
+  }
+
+  .grade-A { background: var(--green); }
+  .grade-B { background: var(--blue); }
+  .grade-C { background: var(--yellow); }
+  .grade-D { background: var(--red); }
+
+  .scores-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0.5rem;
+    margin-top: 0.8rem;
+  }
+
+  .score-item {
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.75rem;
+    padding: 0.3rem 0.5rem;
+    background: rgba(255,255,255,0.03);
+    border-radius: 6px;
+  }
+
+  .score-item .label { color: var(--muted); }
+  .score-item .value { font-weight: 600; }
+
+  .filter-status {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.4rem 0;
+    font-size: 0.8rem;
+  }
+
+  .filter-pass { color: var(--green); }
+  .filter-fail { color: var(--red); }
+
+  .flow-diagram {
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    padding: 1.5rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .flow-steps {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    flex-wrap: wrap;
+  }
+
+  .flow-step {
+    padding: 0.5rem 1rem;
+    border-radius: 8px;
+    font-size: 0.8rem;
+    font-weight: 600;
+  }
+
+  .flow-active { background: rgba(6,182,212,0.15); color: var(--cyan); border: 1px solid rgba(6,182,212,0.3); }
+  .flow-done { background: rgba(16,185,129,0.1); color: var(--green); border: 1px solid rgba(16,185,129,0.2); }
+  .flow-skip { background: rgba(107,114,128,0.1); color: var(--muted); border: 1px solid var(--border); }
+
+  .flow-arrow { color: var(--muted); font-size: 1.2rem; }
+
+  .config-table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+
+  .config-table td {
+    padding: 0.4rem 0;
+    font-size: 0.8rem;
+    border-bottom: 1px solid var(--border);
+  }
+
+  .config-table td:first-child { color: var(--muted); }
+  .config-table td:last-child { text-align: right; font-weight: 600; }
+
+  .log-area {
+    background: #050810;
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    padding: 1rem;
+    font-size: 0.75rem;
+    line-height: 1.6;
+    max-height: 300px;
+    overflow-y: auto;
+    color: var(--muted);
+  }
+
+  .log-area .info { color: var(--cyan); }
+  .log-area .warn { color: var(--yellow); }
+  .log-area .action { color: var(--green); }
+
+  .wide { grid-column: 1 / -1; }
+
+  @media (max-width: 768px) {
+    .grid { grid-template-columns: 1fr; }
+    .flow-steps { flex-direction: column; }
+    .flow-arrow { transform: rotate(90deg); }
+  }
+</style>
+</head>
+<body>
+
+<div class="header">
+  <div>
+    <h1>TEMPORAL EDGE</h1>
+    <div class="subtitle">2026 Downside Specialist (Enhanced) -- BTC</div>
+  </div>
+  <div>
+    <span class="status-badge status-demo" id="statusBadge">DEMO</span>
+  </div>
+</div>
+
+<!-- Strategy Flow -->
+<div class="flow-diagram">
+  <div class="card-title">Strategy Pipeline</div>
+  <div class="flow-steps" id="flowSteps">
+    <div class="flow-step flow-done" id="flow1">1. Regime Detect</div>
+    <div class="flow-arrow">-></div>
+    <div class="flow-step flow-done" id="flow2">2. RSI/BB Filter</div>
+    <div class="flow-arrow">-></div>
+    <div class="flow-step flow-done" id="flow3">3. Confidence Score</div>
+    <div class="flow-arrow">-></div>
+    <div class="flow-step flow-active" id="flow4">4. Execute</div>
+  </div>
+</div>
+
+<div class="grid">
+  <!-- Regime Card -->
+  <div class="card">
+    <div class="card-title">Current Regime</div>
+    <div class="regime-badge regime-trending-short" id="regimeBadge">TRENDING SHORT</div>
+    <p style="margin-top: 0.8rem; font-size: 0.8rem; color: var(--muted);" id="regimeNote">
+      Confirmed downtrend (MA diff: -17.13%, ADX: 32.4)
+    </p>
+  </div>
+
+  <!-- Price Card -->
+  <div class="card">
+    <div class="card-title">BTC Price</div>
+    <div class="big-number" id="priceDisplay">$96,450</div>
+    <div class="big-label" id="priceChange">Loading...</div>
+  </div>
+
+  <!-- Action Card -->
+  <div class="card">
+    <div class="card-title">Current Action</div>
+    <div class="big-number" style="font-size: 1.5rem; color: var(--red);" id="actionDisplay">ENTER SHORT</div>
+    <div class="big-label" id="actionDetail">Confidence: 72/100 | Size: $720</div>
+  </div>
+
+  <!-- MA Indicators -->
+  <div class="card">
+    <div class="card-title">Moving Averages</div>
+    <div class="indicator-row">
+      <span class="indicator-label">MA 13</span>
+      <span class="indicator-value" id="ma13">--</span>
+    </div>
+    <div class="indicator-row">
+      <span class="indicator-label">MA 33</span>
+      <span class="indicator-value" id="ma33">--</span>
+    </div>
+    <div class="indicator-row">
+      <span class="indicator-label">MA Diff</span>
+      <span class="indicator-value" id="maDiff">--</span>
+    </div>
+    <div class="indicator-row">
+      <span class="indicator-label">Fresh Cross</span>
+      <span class="indicator-value" id="freshCross">--</span>
+    </div>
+  </div>
+
+  <!-- Technical Indicators -->
+  <div class="card">
+    <div class="card-title">Technical Indicators</div>
+    <div class="indicator-row">
+      <span class="indicator-label">ADX</span>
+      <span class="indicator-value" id="adx">--</span>
+    </div>
+    <div class="indicator-row">
+      <span class="indicator-label">RSI (14)</span>
+      <span class="indicator-value" id="rsi">--</span>
+    </div>
+    <div class="indicator-row">
+      <span class="indicator-label">Vol Ratio</span>
+      <span class="indicator-value" id="volRatio">--</span>
+    </div>
+    <div class="indicator-row">
+      <span class="indicator-label">BB Position</span>
+      <span class="indicator-value" id="bbPos">--</span>
+    </div>
+  </div>
+
+  <!-- Confidence Card -->
+  <div class="card">
+    <div class="card-title">Signal Confidence</div>
+    <div style="display: flex; align-items: baseline; gap: 0.5rem;">
+      <div class="big-number" id="confScore">--</div>
+      <div class="big-label">/100</div>
+      <div class="regime-badge" id="confGrade" style="font-size: 0.8rem; padding: 0.2rem 0.6rem;">--</div>
+    </div>
+    <div class="confidence-bar">
+      <div class="confidence-fill grade-B" id="confBar" style="width: 0%"></div>
+    </div>
+    <div class="scores-grid" id="confBreakdown">
+      <div class="score-item"><span class="label">ADX</span><span class="value">--/20</span></div>
+      <div class="score-item"><span class="label">RSI</span><span class="value">--/20</span></div>
+      <div class="score-item"><span class="label">BB Pos</span><span class="value">--/20</span></div>
+      <div class="score-item"><span class="label">MA Sep</span><span class="value">--/20</span></div>
+      <div class="score-item"><span class="label">Volatility</span><span class="value">--/20</span></div>
+      <div class="score-item"><span class="label">Cross Bonus</span><span class="value">--/10</span></div>
+    </div>
+  </div>
+
+  <!-- Entry Filters -->
+  <div class="card">
+    <div class="card-title">Entry Filters (Layer 2)</div>
+    <div id="filterList">
+      <div class="filter-status filter-pass">&#10003; RSI OK (54.2)</div>
+      <div class="filter-status filter-pass">&#10003; BB position OK</div>
+      <div class="filter-status filter-pass">&#10003; All filters passed</div>
+    </div>
+  </div>
+
+  <!-- Config -->
+  <div class="card">
+    <div class="card-title">Strategy Config</div>
+    <table class="config-table">
+      <tr><td>Leverage (Short)</td><td id="cfgLevShort">10x</td></tr>
+      <tr><td>Leverage (Long)</td><td id="cfgLevLong">3x</td></tr>
+      <tr><td>Stop Loss</td><td id="cfgStop">4.0%</td></tr>
+      <tr><td>Grid Levels</td><td>5</td></tr>
+      <tr><td>Grid Spacing</td><td>1.0%</td></tr>
+      <tr><td>Min Confidence</td><td>40/100</td></tr>
+      <tr><td>Crash Catchers</td><td>10% / 15% / 20% / 25% / 30%</td></tr>
+      <tr><td>Thesis</td><td style="color: var(--red);">Fire Horse 2026 -- Bearish</td></tr>
+    </table>
+  </div>
+
+  <!-- Strategy Log -->
+  <div class="card wide">
+    <div class="card-title">Strategy Log</div>
+    <div class="log-area" id="logArea">
+      <div class="info">Loading strategy state...</div>
+    </div>
+  </div>
+</div>
+
+<script>
+// Load state from strategy_state.jsonl
+async function loadState() {
+  try {
+    const resp = await fetch('hyperliquid/strategy_state.jsonl');
+    if (!resp.ok) {
+      // Try generating demo data
+      renderDemo();
+      return;
+    }
+    const text = await resp.text();
+    const lines = text.trim().split('\n').filter(l => l);
+    if (lines.length === 0) { renderDemo(); return; }
+
+    const states = lines.map(l => JSON.parse(l));
+    const latest = states[states.length - 1];
+    renderState(latest, states);
+  } catch (e) {
+    renderDemo();
+  }
+}
+
+function renderState(s, history) {
+  document.getElementById('statusBadge').textContent = 'LIVE';
+  document.getElementById('statusBadge').className = 'status-badge status-live';
+
+  // Regime
+  const regimeBadge = document.getElementById('regimeBadge');
+  regimeBadge.textContent = s.regime;
+  regimeBadge.className = 'regime-badge regime-' + s.regime.toLowerCase().replace('_', '-');
+  document.getElementById('regimeNote').textContent = s.regime_note || '';
+
+  // Price
+  document.getElementById('priceDisplay').textContent = '$' + Number(s.price).toLocaleString('en-US', {maximumFractionDigits: 0});
+
+  // MAs
+  document.getElementById('ma13').textContent = '$' + Number(s.ma13).toLocaleString('en-US', {maximumFractionDigits: 2});
+  document.getElementById('ma33').textContent = '$' + Number(s.ma33).toLocaleString('en-US', {maximumFractionDigits: 2});
+  const maDiff = ((s.ma13 - s.ma33) / s.ma33 * 100);
+  document.getElementById('maDiff').textContent = maDiff.toFixed(2) + '%';
+  document.getElementById('maDiff').style.color = maDiff < 0 ? 'var(--red)' : 'var(--green)';
+
+  // Technicals
+  document.getElementById('adx').textContent = Number(s.adx).toFixed(1);
+  document.getElementById('adx').style.color = s.adx >= 25 ? 'var(--green)' : 'var(--yellow)';
+  document.getElementById('rsi').textContent = Number(s.rsi).toFixed(1);
+  document.getElementById('rsi').style.color = s.rsi > 70 ? 'var(--red)' : s.rsi < 30 ? 'var(--green)' : 'var(--text)';
+  document.getElementById('volRatio').textContent = Number(s.vol_ratio).toFixed(2);
+  document.getElementById('volRatio').style.color = s.vol_ratio > 1.8 ? 'var(--red)' : 'var(--text)';
+
+  // Action
+  const actionEl = document.getElementById('actionDisplay');
+  actionEl.textContent = s.action || 'MONITORING';
+  if (s.action && s.action.includes('SHORT')) actionEl.style.color = 'var(--red)';
+  else if (s.action && s.action.includes('LONG')) actionEl.style.color = 'var(--green)';
+  else if (s.action === 'GRID_MODE') actionEl.style.color = 'var(--yellow)';
+  else actionEl.style.color = 'var(--cyan)';
+
+  // Log history
+  const logArea = document.getElementById('logArea');
+  logArea.innerHTML = history.slice(-20).reverse().map(h => {
+    const time = new Date(h.timestamp).toLocaleString();
+    const cls = h.action?.includes('ENTER') ? 'action' : h.regime === 'VOLATILE' ? 'warn' : 'info';
+    return `<div class="${cls}">[${time}] ${h.regime} | ${h.action || '-'} | Price: $${Number(h.price).toLocaleString()} | ADX: ${Number(h.adx).toFixed(1)} | RSI: ${Number(h.rsi).toFixed(1)}</div>`;
+  }).join('');
+}
+
+function renderDemo() {
+  // Show demo data based on strategy config
+  document.getElementById('priceDisplay').textContent = '$96,450';
+  document.getElementById('priceChange').textContent = 'Demo mode -- run strategy to populate';
+
+  document.getElementById('ma13').textContent = '$94,200';
+  document.getElementById('ma33').textContent = '$98,500';
+  document.getElementById('maDiff').textContent = '-4.37%';
+  document.getElementById('maDiff').style.color = 'var(--red)';
+  document.getElementById('freshCross').textContent = 'No';
+
+  document.getElementById('adx').textContent = '32.4';
+  document.getElementById('adx').style.color = 'var(--green)';
+  document.getElementById('rsi').textContent = '42.8';
+  document.getElementById('volRatio').textContent = '1.12';
+  document.getElementById('bbPos').textContent = 'Mid-band';
+
+  document.getElementById('confScore').textContent = '72';
+  document.getElementById('confBar').style.width = '72%';
+  document.getElementById('confGrade').textContent = 'B';
+  document.getElementById('confGrade').className = 'regime-badge regime-trending-long';
+
+  document.getElementById('confBreakdown').innerHTML = `
+    <div class="score-item"><span class="label">ADX</span><span class="value">15/20</span></div>
+    <div class="score-item"><span class="label">RSI</span><span class="value">12/20</span></div>
+    <div class="score-item"><span class="label">BB Pos</span><span class="value">14/20</span></div>
+    <div class="score-item"><span class="label">MA Sep</span><span class="value">18/20</span></div>
+    <div class="score-item"><span class="label">Volatility</span><span class="value">13/20</span></div>
+    <div class="score-item"><span class="label">Cross Bonus</span><span class="value">0/10</span></div>
+  `;
+
+  const logArea = document.getElementById('logArea');
+  logArea.innerHTML = `
+    <div class="info">[Demo] Strategy not yet running -- showing sample data</div>
+    <div class="info">[Demo] Run strategy.py to populate live data</div>
+    <div class="info">[Demo] Dashboard reads from strategy_state.jsonl</div>
+    <div class="action">[Demo] Pipeline: Regime -> Filter -> Confidence -> Execute</div>
+  `;
+}
+
+// Auto-refresh every 60s
+loadState();
+setInterval(loadState, 60000);
+</script>
+</body>
+</html>

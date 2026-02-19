@@ -1,0 +1,9 @@
+{
+  "name": "moltbook_post_verified",
+  "version": "1.0.1",
+  "description": "Create a Moltbook post and auto-verify it",
+  "type": "agent-skill",
+  "entrypoint": "run.sh",
+  "license": "MIT"
+}
+

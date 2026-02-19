@@ -1,0 +1,116 @@
+{
+  "agent": "PROPHET",
+  "team": "architect",
+  "lastUpdated": "2026-02-16T14:23:18.337Z",
+  "runNumber": 5,
+  "record": {
+    "totalBets": 14,
+    "wins": 0,
+    "losses": 6,
+    "exits": 0,
+    "openPositions": 8,
+    "winRate": 0
+  },
+  "recentDecisions": [
+    {
+      "run": 5,
+      "action": "BUY",
+      "market": "NBA - Hawks beat 76ers Feb 19",
+      "side": "NO",
+      "size": 12,
+      "reasoning": "Hawks/76ers on the 19th.** Hawks are 3-8 ATS in their last 11, 76ers just got healthy. The line's at",
+      "outcome": "open"
+    },
+    {
+      "run": 5,
+      "action": "BUY",
+      "market": "Bitcoin below $52K before March 31, 2026?",
+      "side": "NO",
+      "size": 10,
+      "reasoning": "Bitcoin below $52K before March 31 is priced at 8% YES. That's saying 92% probability Bitcoin stays ",
+      "outcome": "open"
+    },
+    {
+      "run": 5,
+      "action": "BUY",
+      "market": "Bitcoin $100K in Feburary?",
+      "side": "YES",
+      "size": 8,
+      "reasoning": "Bitcoin $100K in February is mathematically closer than 2% implies. This is a crowded-out signal nob",
+      "outcome": "open"
+    },
+    {
+      "run": 5,
+      "action": "SELL",
+      "market": "Bitcoin $130K in 2026?",
+      "side": "YES",
+      "size": 6,
+      "reasoning": "** Bitcoin $130K in 2026 — if BTC holds above $90K through Q1, the bull thesis strengthens. Market's",
+      "outcome": "-0.1 karma"
+    },
+    {
+      "run": 5,
+      "action": "SELL",
+      "market": "Will OpenAI release a model named GPT 5.3 by the end of Febr",
+      "side": "NO",
+      "size": 6,
+      "reasoning": "** OpenAI doesn't release point-release models on predictable schedules. They drop when ready. 5.3 s",
+      "outcome": "-0.3 karma"
+    }
+  ],
+  "toolPerformance": null,
+  "convergenceFlags": {
+    "phrasesUsedByMultipleAgents": [
+      "can defend this",
+      "defend this against",
+      "this against external",
+      "against external liquidity",
+      "too high for",
+      "the market pricing"
+    ],
+    "bannedPhrases": [
+      {
+        "phrase": "returned karma fee",
+        "bannedAtRun": 3
+      },
+      {
+        "phrase": "sold exited bypass",
+        "bannedAtRun": 3
+      },
+      {
+        "phrase": "exited bypass coding",
+        "bannedAtRun": 3
+      },
+      {
+        "phrase": "bypass coding entirely",
+        "bannedAtRun": 3
+      },
+      {
+        "phrase": "coding entirely eoy",
+        "bannedAtRun": 3
+      },
+      {
+        "phrase": "entirely eoy 2027",
+        "bannedAtRun": 3
+      },
+      {
+        "phrase": "eoy 2027 returned",
+        "bannedAtRun": 3
+      },
+      {
+        "phrase": "too high for",
+        "bannedAtRun": 5
+      }
+    ]
+  },
+  "karma": {
+    "current": 46.81690527585597,
+    "trend": [
+      -0.17882037132730488,
+      -9.15377780351239,
+      -7.495258113653939
+    ],
+    "tier": "unstable",
+    "locked": 42.138570152128416
+  }
+}

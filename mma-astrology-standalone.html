@@ -1,0 +1,682 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MMA Astrology - GG33 Fighter Analysis</title>
+  <style>
+    :root {
+      --background: #0a0a0a;
+      --foreground: #ededed;
+      --ufc-red: #D20A0A;
+      --electric-blue: #00D4FF;
+      --gold: #FFD700;
+      --gold-dim: #B8860B;
+      --card-bg: #141414;
+      --card-border: #2a2a2a;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      background: var(--background);
+      color: var(--foreground);
+      font-family: 'Segoe UI', Arial, sans-serif;
+      min-height: 100vh;
+      background-image:
+        linear-gradient(rgba(210, 10, 10, 0.03) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(210, 10, 10, 0.03) 1px, transparent 1px);
+      background-size: 50px 50px;
+    }
+
+    /* Header */
+    header {
+      background: black;
+      border-bottom: 4px solid var(--ufc-red);
+      padding: 1rem 2rem;
+    }
+
+    .header-bar {
+      height: 4px;
+      background: linear-gradient(90deg, var(--ufc-red), var(--gold), var(--electric-blue));
+      margin-bottom: 1rem;
+    }
+
+    .logo {
+      display: inline-block;
+      transform: skewX(-6deg);
+      background: var(--ufc-red);
+      padding: 0.5rem 1.5rem;
+      border: 4px solid black;
+      border-bottom-width: 8px;
+      border-right-width: 8px;
+    }
+
+    .logo h1 {
+      transform: skewX(6deg);
+      font-family: Impact, 'Arial Black', sans-serif;
+      font-size: 1.5rem;
+      letter-spacing: 2px;
+      text-shadow: 2px 2px 0 black;
+    }
+
+    .logo span {
+      color: var(--gold);
+    }
+
+    /* Main Content */
+    main {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 2rem;
+    }
+
+    /* Section Headers */
+    .section-header {
+      display: inline-block;
+      transform: skewX(-12deg);
+      background: linear-gradient(180deg, var(--ufc-red), #8B0000);
+      padding: 0.5rem 1.5rem;
+      border: 3px solid black;
+      border-bottom-width: 5px;
+      margin-bottom: 1.5rem;
+    }
+
+    .section-header span {
+      display: block;
+      transform: skewX(12deg);
+      font-family: Impact, 'Arial Black', sans-serif;
+      letter-spacing: 3px;
+      text-transform: uppercase;
+      color: white;
+      text-shadow: 2px 2px 0 black;
+    }
+
+    /* Fighter Lookup Form */
+    .lookup-form {
+      background: var(--card-bg);
+      border: 2px solid var(--card-border);
+      border-radius: 12px;
+      padding: 2rem;
+      margin-bottom: 2rem;
+    }
+
+    .form-row {
+      display: grid;
+      grid-template-columns: 1fr 1fr auto;
+      gap: 1rem;
+      align-items: end;
+    }
+
+    .form-group {
+      display: flex;
+      flex-direction: column;
+      gap: 0.5rem;
+    }
+
+    .form-group label {
+      font-size: 0.75rem;
+      font-family: 'Courier New', monospace;
+      color: rgba(255,255,255,0.5);
+      letter-spacing: 1px;
+      text-transform: uppercase;
+    }
+
+    .form-group input {
+      background: rgba(255,255,255,0.05);
+      border: 2px solid var(--card-border);
+      border-radius: 8px;
+      padding: 0.75rem 1rem;
+      color: white;
+      font-size: 1rem;
+    }
+
+    .form-group input:focus {
+      outline: none;
+      border-color: var(--electric-blue);
+      box-shadow: 0 0 10px rgba(0, 212, 255, 0.3);
+    }
+
+    .analyze-btn {
+      transform: skewX(-6deg);
+      background: linear-gradient(180deg, var(--ufc-red), #8B0000);
+      border: 4px solid black;
+      border-bottom-width: 8px;
+      border-right-width: 8px;
+      padding: 0.75rem 2rem;
+      cursor: pointer;
+      transition: all 0.2s;
+    }
+
+    .analyze-btn:hover {
+      transform: skewX(-6deg) scale(1.05);
+      box-shadow: 0 0 20px rgba(210, 10, 10, 0.5);
+    }
+
+    .analyze-btn span {
+      display: block;
+      transform: skewX(6deg);
+      font-family: Impact, 'Arial Black', sans-serif;
+      color: white;
+      letter-spacing: 2px;
+      text-shadow: 2px 2px 0 black;
+    }
+
+    /* Results */
+    .results {
+      display: none;
+    }
+
+    .results.visible {
+      display: block;
+    }
+
+    .fighter-card {
+      background: linear-gradient(135deg, #1a1a1a, #0a0a0a);
+      border: 4px solid black;
+      border-bottom-width: 8px;
+      border-right-width: 8px;
+      border-radius: 12px;
+      padding: 2rem;
+      margin-bottom: 2rem;
+    }
+
+    .fighter-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      margin-bottom: 1.5rem;
+      padding-bottom: 1.5rem;
+      border-bottom: 2px solid var(--card-border);
+    }
+
+    .fighter-name {
+      font-family: Impact, 'Arial Black', sans-serif;
+      font-size: 2rem;
+      text-transform: uppercase;
+      letter-spacing: 3px;
+      -webkit-text-stroke: 1px black;
+    }
+
+    .fighter-dob {
+      color: rgba(255,255,255,0.5);
+      font-family: 'Courier New', monospace;
+      margin-top: 0.5rem;
+    }
+
+    /* Grid for analysis sections */
+    .analysis-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 1.5rem;
+    }
+
+    .analysis-section {
+      background: rgba(0,0,0,0.3);
+      border: 2px solid var(--card-border);
+      border-radius: 8px;
+      padding: 1.5rem;
+    }
+
+    .analysis-section h3 {
+      font-family: Impact, 'Arial Black', sans-serif;
+      font-size: 1rem;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      margin-bottom: 1rem;
+      padding-bottom: 0.5rem;
+      border-bottom: 2px solid var(--card-border);
+    }
+
+    .analysis-section h3.zodiac {
+      color: var(--gold);
+    }
+
+    .analysis-section h3.numerology {
+      color: var(--electric-blue);
+    }
+
+    .zodiac-animal {
+      font-size: 3rem;
+      margin-bottom: 0.5rem;
+    }
+
+    .zodiac-name {
+      font-size: 1.5rem;
+      font-weight: bold;
+      color: var(--gold);
+    }
+
+    .zodiac-element {
+      color: rgba(255,255,255,0.6);
+      margin-bottom: 1rem;
+    }
+
+    .traits {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.5rem;
+      margin-top: 1rem;
+    }
+
+    .trait {
+      background: rgba(255, 215, 0, 0.1);
+      border: 1px solid rgba(255, 215, 0, 0.3);
+      padding: 0.25rem 0.75rem;
+      border-radius: 20px;
+      font-size: 0.85rem;
+      color: var(--gold);
+    }
+
+    .life-path-number {
+      font-size: 4rem;
+      font-family: Impact, 'Arial Black', sans-serif;
+      color: var(--electric-blue);
+      text-shadow: 0 0 20px rgba(0, 212, 255, 0.5);
+    }
+
+    .life-path-name {
+      font-size: 1.25rem;
+      font-weight: bold;
+      margin-bottom: 1rem;
+    }
+
+    .info-row {
+      display: flex;
+      justify-content: space-between;
+      padding: 0.5rem 0;
+      border-bottom: 1px solid rgba(255,255,255,0.1);
+    }
+
+    .info-label {
+      color: rgba(255,255,255,0.5);
+    }
+
+    .info-value {
+      font-weight: bold;
+    }
+
+    .info-value.warning {
+      color: var(--ufc-red);
+    }
+
+    .fight-style {
+      margin-top: 1rem;
+      padding: 1rem;
+      background: rgba(255, 215, 0, 0.05);
+      border-left: 3px solid var(--gold);
+      font-style: italic;
+    }
+
+    /* Risks Section */
+    .risks-section {
+      grid-column: 1 / -1;
+      background: rgba(210, 10, 10, 0.1);
+      border: 2px solid rgba(210, 10, 10, 0.3);
+    }
+
+    .risks-section h3 {
+      color: var(--ufc-red);
+    }
+
+    .risk-item {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      padding: 0.5rem 0;
+      color: var(--ufc-red);
+    }
+
+    .risk-item::before {
+      content: '⚠️';
+    }
+
+    .no-risks {
+      color: #4ade80;
+    }
+
+    .no-risks::before {
+      content: '✅';
+    }
+
+    /* Footer */
+    footer {
+      text-align: center;
+      padding: 2rem;
+      border-top: 4px solid var(--ufc-red);
+      background: black;
+      margin-top: 3rem;
+    }
+
+    footer p {
+      font-family: Impact, sans-serif;
+      color: rgba(255,255,255,0.5);
+      letter-spacing: 1px;
+    }
+
+    footer span {
+      color: var(--gold);
+    }
+
+    /* Responsive */
+    @media (max-width: 768px) {
+      .form-row {
+        grid-template-columns: 1fr;
+      }
+      .analysis-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="header-bar"></div>
+    <div class="logo">
+      <h1>MMA <span>ASTROLOGY</span></h1>
+    </div>
+  </header>
+
+  <main>
+    <section>
+      <div class="section-header">
+        <span>Fighter Analysis</span>
+      </div>
+
+      <div class="lookup-form">
+        <div class="form-row">
+          <div class="form-group">
+            <label>Fighter Name</label>
+            <input type="text" id="fighterName" placeholder="e.g., Justin Gaethje">
+          </div>
+          <div class="form-group">
+            <label>Date of Birth (YYYY-MM-DD)</label>
+            <input type="date" id="fighterDob">
+          </div>
+          <button class="analyze-btn" onclick="analyzeFighter()">
+            <span>ANALYZE</span>
+          </button>
+        </div>
+      </div>
+
+      <div class="results" id="results">
+        <div class="fighter-card">
+          <div class="fighter-header">
+            <div>
+              <div class="fighter-name" id="displayName">-</div>
+              <div class="fighter-dob" id="displayDob">-</div>
+            </div>
+          </div>
+
+          <div class="analysis-grid">
+            <!-- Chinese Zodiac -->
+            <div class="analysis-section">
+              <h3 class="zodiac">🐉 Chinese Zodiac</h3>
+              <div class="zodiac-animal" id="zodiacEmoji">-</div>
+              <div class="zodiac-name" id="zodiacAnimal">-</div>
+              <div class="zodiac-element" id="zodiacElement">-</div>
+              <div class="info-row">
+                <span class="info-label">Enemy Sign</span>
+                <span class="info-value" id="enemySign">-</span>
+              </div>
+              <div class="info-row">
+                <span class="info-label">Soulmate Sign</span>
+                <span class="info-value" id="soulmateSign">-</span>
+              </div>
+              <div class="traits" id="zodiacTraits"></div>
+              <div class="fight-style" id="fightStyle">-</div>
+            </div>
+
+            <!-- GG33 Numerology -->
+            <div class="analysis-section">
+              <h3 class="numerology">🔢 GG33 Numerology</h3>
+              <div class="life-path-number" id="lifePath">-</div>
+              <div class="life-path-name" id="lifePathName">-</div>
+              <div class="info-row">
+                <span class="info-label">Secondary Energy</span>
+                <span class="info-value" id="secondaryEnergy">-</span>
+              </div>
+              <div class="info-row">
+                <span class="info-label">Personal Year (2026)</span>
+                <span class="info-value" id="personalYear">-</span>
+              </div>
+              <div class="traits" id="lifePathTraits"></div>
+              <div class="fight-style" id="numerologyStrengths">-</div>
+            </div>
+
+            <!-- Risk Factors -->
+            <div class="analysis-section risks-section">
+              <h3>⚠️ Risk Factors</h3>
+              <div id="riskFactors">
+                <div class="no-risks">No major risk factors detected</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>NUMEROLOGY INSPIRED BY <span>GARY "THE NUMBERS GUY"</span> & GG33</p>
+    <p style="margin-top: 0.5rem; font-size: 0.8rem;">FIGHT METRICS FOR ENTERTAINMENT PURPOSES ONLY</p>
+  </footer>
+
+  <script>
+    // ============================================
+    // CHINESE ZODIAC DATA
+    // ============================================
+    
+    const ZODIAC_EMOJI = {
+      Rat: '🐀', Ox: '🐂', Tiger: '🐅', Cat: '🐱', Dragon: '🐉', Snake: '🐍',
+      Horse: '🐴', Goat: '🐐', Monkey: '🐵', Rooster: '🐓', Dog: '🐕', Pig: '🐷'
+    };
+
+    const ENEMY_SIGNS = {
+      Rat: 'Horse', Horse: 'Rat', Ox: 'Goat', Goat: 'Ox',
+      Tiger: 'Monkey', Monkey: 'Tiger', Cat: 'Rooster', Rooster: 'Cat',
+      Dragon: 'Dog', Dog: 'Dragon', Snake: 'Pig', Pig: 'Snake'
+    };
+
+    const SOULMATE_SIGNS = {
+      Rat: 'Ox', Ox: 'Rat', Tiger: 'Pig', Pig: 'Tiger',
+      Cat: 'Dog', Dog: 'Cat', Dragon: 'Rooster', Rooster: 'Dragon',
+      Snake: 'Monkey', Monkey: 'Snake', Horse: 'Goat', Goat: 'Horse'
+    };
+
+    const ZODIAC_ELEMENTS = {
+      Tiger: 'Wood', Cat: 'Wood', Dragon: 'Earth', Snake: 'Fire',
+      Horse: 'Fire', Goat: 'Earth', Monkey: 'Metal', Rooster: 'Metal',
+      Dog: 'Earth', Pig: 'Water', Rat: 'Water', Ox: 'Earth'
+    };
+
+    const ZODIAC_TRAITS = {
+      Rat: ['Resourceful', 'Quick-witted', 'Adaptable', 'Opportunistic'],
+      Ox: ['Dependable', 'Determined', 'Patient', 'Methodical'],
+      Tiger: ['Brave', 'Competitive', 'Unpredictable', 'Confident'],
+      Cat: ['Elegant', 'Alert', 'Quick', 'Diplomatic'],
+      Dragon: ['Ambitious', 'Dominant', 'Energetic', 'Fearless'],
+      Snake: ['Wise', 'Intuitive', 'Analytical', 'Calculating'],
+      Horse: ['Energetic', 'Independent', 'Impatient', 'Adventurous'],
+      Goat: ['Creative', 'Gentle', 'Persevering', 'Resilient'],
+      Monkey: ['Clever', 'Innovative', 'Tricky', 'Versatile'],
+      Rooster: ['Observant', 'Hardworking', 'Confident', 'Courageous'],
+      Dog: ['Loyal', 'Honest', 'Determined', 'Protective'],
+      Pig: ['Generous', 'Compassionate', 'Diligent', 'Calm']
+    };
+
+    const ZODIAC_FIGHT_STYLES = {
+      Rat: 'Opportunistic counter-striker who capitalizes on mistakes',
+      Ox: 'Pressure fighter with relentless forward momentum',
+      Tiger: 'Explosive finisher with unpredictable timing',
+      Cat: 'Elusive point fighter with quick combinations',
+      Dragon: 'Dominant presence seeking finish in every exchange',
+      Snake: 'Technical striker who waits for perfect moment',
+      Horse: 'High-output volume striker with endless cardio',
+      Goat: 'Resilient grinder who wears opponents down',
+      Monkey: 'Unorthodox fighter with creative techniques',
+      Rooster: 'Sharp counter-striker with precise timing',
+      Dog: 'Durable brawler who never quits',
+      Pig: 'Patient grappler who controls the pace'
+    };
+
+    function getZodiacFromYear(year) {
+      const zodiacCycle = [
+        'Monkey', 'Rooster', 'Dog', 'Pig', 'Rat', 'Ox',
+        'Tiger', 'Cat', 'Dragon', 'Snake', 'Horse', 'Goat'
+      ];
+      return zodiacCycle[year % 12];
+    }
+
+    // ============================================
+    // GG33 NUMEROLOGY
+    // ============================================
+
+    const LIFE_PATH_MEANINGS = {
+      1: { name: 'The Leader', traits: ['Independent', 'Pioneering', 'Ambitious', 'Determined'], strengths: 'Natural alpha presence, leads exchanges, imposes will on opponents' },
+      2: { name: 'Hidden 11 (Master Intuitive)', traits: ['Visionary', 'Inspirational', 'Sensitive', 'Cooperative'], strengths: 'Heightened instincts, reads opponents well, spiritual warrior energy' },
+      3: { name: 'The Communicator', traits: ['Creative', 'Expressive', 'Optimistic', 'Social'], strengths: 'Showman who thrives under lights, creative combinations' },
+      4: { name: 'The Builder', traits: ['Practical', 'Hardworking', 'Disciplined', 'Reliable'], strengths: 'Solid fundamentals, builds toward finish, relentless work ethic' },
+      5: { name: 'The Adventurer', traits: ['Dynamic', 'Versatile', 'Freedom-loving', 'Curious'], strengths: 'Unpredictable movement, multiple weapons, adapts quickly' },
+      6: { name: 'The Nurturer', traits: ['Responsible', 'Caring', 'Harmonious', 'Protective'], strengths: 'Team-oriented, protects training partners, fights for others' },
+      7: { name: 'The Seeker', traits: ['Analytical', 'Introspective', 'Spiritual', 'Wise'], strengths: 'Studies opponents deeply, finds weaknesses, strategic mind', warning: 'INJURY/HEALTH RISK' },
+      8: { name: 'The Powerhouse', traits: ['Ambitious', 'Authoritative', 'Successful', 'Material'], strengths: 'Championship mindset, seeks power positions, finishes fights' },
+      9: { name: 'The Humanitarian', traits: ['Compassionate', 'Generous', 'Wise', 'Worldly'], strengths: 'Global perspective, completion energy, legacy-driven' },
+      11: { name: 'The Master Intuitive', traits: ['Visionary', 'Inspirational', 'Sensitive', 'Idealistic'], strengths: 'Heightened instincts, sees openings others miss, spiritual warrior' },
+      13: { name: 'The Transformer (Sub-Master)', traits: ['Karmic', 'Transformative', 'Hard-working', 'Resilient'], strengths: 'Overcomes adversity, transforms through struggle, karmic warrior', warning: 'Karmic debt' },
+      19: { name: 'The Sun (Sub-Master)', traits: ['Independent', 'Self-reliant', 'Karmic lessons', 'Ego battles'], strengths: 'Must prove self alone, learns through isolation, eventual triumph', warning: 'INJURY/HEALTH RISK' },
+      22: { name: 'The Master Builder', traits: ['Practical visionary', 'Disciplined', 'Ambitious', 'Powerful'], strengths: 'Builds legacies, methodical destruction, long-term vision' },
+      28: { name: 'The Leader Intensified (Sub-Master)', traits: ['Leadership', 'Independence', 'Courage', 'Inner conflict'], strengths: 'Warrior spirit with internal battles, explosive when focused', warning: 'Internal struggles' },
+      33: { name: 'The Master Teacher', traits: ['Nurturing', 'Selfless', 'Spiritual', 'Healing'], strengths: 'Elevates others, leads by example, transcendent performances' },
+      44: { name: 'The Master Healer', traits: ['Practical mastery', 'Material and spiritual balance', 'Ultimate builder', 'Healing through action'], strengths: 'Combines all master energies, builds legacy while healing, ultimate warrior spirit' }
+    };
+
+    function reduceToLifePath(num) {
+      if ([11, 22, 33, 44].includes(num)) return num;
+      if ([13, 19, 28].includes(num)) return num;
+      if (num === 20) return 11;
+      
+      while (num > 9) {
+        num = String(num).split('').reduce((sum, d) => sum + parseInt(d), 0);
+        if ([11, 22, 33, 44, 13, 19, 28].includes(num)) return num;
+        if (num === 20) return 11;
+      }
+      return num;
+    }
+
+    function calculateLifePath(birthDate) {
+      const [year, month, day] = birthDate.split('-').map(Number);
+      const dateStr = `${month}${day}${year}`;
+      const total = dateStr.split('').reduce((sum, d) => sum + parseInt(d), 0);
+      return reduceToLifePath(total);
+    }
+
+    function getSecondaryEnergy(birthDate) {
+      return parseInt(birthDate.split('-')[2]);
+    }
+
+    function calculatePersonalYear(birthDate, year = 2026) {
+      const [birthYear, birthMonth, birthDay] = birthDate.split('-').map(Number);
+      const sum = birthMonth + birthDay + year;
+      if (sum === 19) return 19;
+      if (sum === 20) return 11;
+      return reduceToLifePath(sum);
+    }
+
+    function getNumerologyRisks(lifePath, secondaryEnergy, personalYear) {
+      const risks = [];
+      
+      if (lifePath === 7) risks.push('Life Path 7: Elevated injury/health risk');
+      if (lifePath === 19) risks.push('Life Path 19: Karmic injury/health risk');
+      
+      if (secondaryEnergy === 7) risks.push('Secondary Energy 7: Injury prone');
+      if (secondaryEnergy === 19) risks.push('Secondary Energy 19: Karmic physical challenges');
+      if (secondaryEnergy === 13) risks.push('Secondary Energy 13: Must work harder, karmic debt');
+      
+      if (personalYear === 7) risks.push('Personal Year 7: INJURY RISK this cycle');
+      if (personalYear === 19) risks.push('Personal Year 19: INJURY RISK - karmic year');
+      if (personalYear === 9) risks.push('Personal Year 9: COMPLETION - retirement/contract loss risk');
+      
+      return risks;
+    }
+
+    // ============================================
+    // MAIN ANALYSIS FUNCTION
+    // ============================================
+
+    function analyzeFighter() {
+      const name = document.getElementById('fighterName').value.trim();
+      const dob = document.getElementById('fighterDob').value;
+
+      if (!name || !dob) {
+        alert('Please enter both name and date of birth');
+        return;
+      }
+
+      // Parse date
+      const date = new Date(dob);
+      const year = date.getFullYear();
+
+      // Chinese Zodiac
+      const zodiacAnimal = getZodiacFromYear(year);
+      const zodiacElement = ZODIAC_ELEMENTS[zodiacAnimal];
+      const zodiacTraits = ZODIAC_TRAITS[zodiacAnimal];
+      const fightStyle = ZODIAC_FIGHT_STYLES[zodiacAnimal];
+      const enemySign = ENEMY_SIGNS[zodiacAnimal];
+      const soulmateSign = SOULMATE_SIGNS[zodiacAnimal];
+
+      // GG33 Numerology
+      const lifePath = calculateLifePath(dob);
+      const secondaryEnergy = getSecondaryEnergy(dob);
+      const personalYear = calculatePersonalYear(dob);
+      const lifePathInfo = LIFE_PATH_MEANINGS[lifePath] || LIFE_PATH_MEANINGS[reduceToLifePath(lifePath)] || { name: 'Unknown', traits: [], strengths: 'Unknown' };
+
+      // Risk factors
+      const risks = getNumerologyRisks(lifePath, secondaryEnergy, personalYear);
+
+      // Update UI
+      document.getElementById('displayName').textContent = name.toUpperCase();
+      document.getElementById('displayDob').textContent = `Born: ${date.toLocaleDateString('en-US', { month: 'long', day: 'numeric', year: 'numeric' })}`;
+
+      // Zodiac section
+      document.getElementById('zodiacEmoji').textContent = ZODIAC_EMOJI[zodiacAnimal];
+      document.getElementById('zodiacAnimal').textContent = zodiacAnimal;
+      document.getElementById('zodiacElement').textContent = `${zodiacElement} Element`;
+      document.getElementById('enemySign').textContent = `${ZODIAC_EMOJI[enemySign]} ${enemySign}`;
+      document.getElementById('soulmateSign').textContent = `${ZODIAC_EMOJI[soulmateSign]} ${soulmateSign}`;
+      document.getElementById('zodiacTraits').innerHTML = zodiacTraits.map(t => `<span class="trait">${t}</span>`).join('');
+      document.getElementById('fightStyle').textContent = fightStyle;
+
+      // Numerology section
+      document.getElementById('lifePath').textContent = lifePath;
+      document.getElementById('lifePathName').textContent = lifePathInfo.name;
+      document.getElementById('secondaryEnergy').textContent = `Day ${secondaryEnergy}`;
+      document.getElementById('personalYear').textContent = personalYear + (personalYear === 9 ? ' ⚠️' : personalYear === 7 ? ' ⚠️' : '');
+      document.getElementById('lifePathTraits').innerHTML = lifePathInfo.traits.map(t => `<span class="trait" style="background: rgba(0,212,255,0.1); border-color: rgba(0,212,255,0.3); color: var(--electric-blue);">${t}</span>`).join('');
+      document.getElementById('numerologyStrengths').textContent = lifePathInfo.strengths;
+
+      // Risk factors
+      const riskContainer = document.getElementById('riskFactors');
+      if (risks.length > 0) {
+        riskContainer.innerHTML = risks.map(r => `<div class="risk-item">${r}</div>`).join('');
+      } else {
+        riskContainer.innerHTML = '<div class="no-risks">No major risk factors detected</div>';
+      }
+
+      // Show results
+      document.getElementById('results').classList.add('visible');
+    }
+
+    // Allow Enter key to trigger analysis
+    document.addEventListener('keypress', function(e) {
+      if (e.key === 'Enter') {
+        analyzeFighter();
+      }
+    });
+  </script>
+</body>
+</html>

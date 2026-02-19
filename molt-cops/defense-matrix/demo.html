@@ -1,0 +1,688 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MoltCops Defense Matrix - Demo</title>
+  <style>
+    :root {
+      --bg-primary: #07080a;
+      --bg-secondary: #0c0e12;
+      --bg-tertiary: #10131a;
+      --border: #1a1d24;
+      --text-primary: #e2e4e9;
+      --text-secondary: #9ca0a9;
+      --text-muted: #6b7280;
+      --accent-red: #ff2b4e;
+      --accent-blue: #3b82f6;
+      --accent-green: #22c55e;
+      --accent-yellow: #ffc93e;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      background: var(--bg-primary);
+      color: var(--text-primary);
+      line-height: 1.6;
+      min-height: 100vh;
+    }
+
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 40px 20px;
+    }
+
+    header {
+      text-align: center;
+      margin-bottom: 60px;
+    }
+
+    header h1 {
+      font-size: 2.5rem;
+      font-weight: 700;
+      background: linear-gradient(135deg, var(--accent-red), var(--accent-blue));
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      margin-bottom: 12px;
+    }
+
+    header p {
+      color: var(--text-secondary);
+      font-size: 1.1rem;
+      max-width: 600px;
+      margin: 0 auto;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+      gap: 24px;
+      margin-bottom: 40px;
+    }
+
+    .card {
+      background: var(--bg-secondary);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 24px;
+    }
+
+    .card h2 {
+      font-size: 1.1rem;
+      font-weight: 600;
+      margin-bottom: 16px;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .card h2 .icon {
+      font-size: 1.4rem;
+    }
+
+    .stat-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 12px;
+    }
+
+    .stat {
+      background: var(--bg-tertiary);
+      border-radius: 8px;
+      padding: 16px;
+      text-align: center;
+    }
+
+    .stat-value {
+      font-size: 1.8rem;
+      font-weight: 700;
+      font-family: 'JetBrains Mono', monospace;
+    }
+
+    .stat-label {
+      font-size: 0.75rem;
+      color: var(--text-muted);
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      margin-top: 4px;
+    }
+
+    .tier-trusted .stat-value { color: var(--accent-green); }
+    .tier-caution .stat-value { color: var(--accent-yellow); }
+    .tier-warning .stat-value { color: #f97316; }
+    .tier-danger .stat-value { color: var(--accent-red); }
+
+    .agent-list {
+      max-height: 300px;
+      overflow-y: auto;
+    }
+
+    .agent-item {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      padding: 12px;
+      background: var(--bg-tertiary);
+      border-radius: 8px;
+      margin-bottom: 8px;
+    }
+
+    .agent-item:last-child {
+      margin-bottom: 0;
+    }
+
+    .agent-avatar {
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      background: linear-gradient(135deg, var(--accent-red), var(--accent-blue));
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: 600;
+      font-size: 0.9rem;
+    }
+
+    .agent-info {
+      flex: 1;
+    }
+
+    .agent-name {
+      font-weight: 600;
+      font-size: 0.95rem;
+    }
+
+    .agent-id {
+      font-size: 0.75rem;
+      color: var(--text-muted);
+      font-family: 'JetBrains Mono', monospace;
+    }
+
+    .agent-tier {
+      padding: 4px 10px;
+      border-radius: 20px;
+      font-size: 0.7rem;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+    }
+
+    .agent-tier.trusted {
+      background: rgba(34, 197, 94, 0.15);
+      color: var(--accent-green);
+    }
+
+    .agent-tier.caution {
+      background: rgba(255, 201, 62, 0.15);
+      color: var(--accent-yellow);
+    }
+
+    .agent-tier.warning {
+      background: rgba(249, 115, 22, 0.15);
+      color: #f97316;
+    }
+
+    .agent-tier.danger {
+      background: rgba(255, 43, 78, 0.15);
+      color: var(--accent-red);
+    }
+
+    .policy-list {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 0.85rem;
+    }
+
+    .policy-item {
+      background: var(--bg-tertiary);
+      border-radius: 8px;
+      padding: 12px;
+      margin-bottom: 8px;
+    }
+
+    .policy-item:last-child {
+      margin-bottom: 0;
+    }
+
+    .policy-src {
+      color: var(--accent-blue);
+    }
+
+    .policy-dst {
+      color: var(--accent-green);
+    }
+
+    .policy-action {
+      font-weight: 600;
+    }
+
+    .policy-action.allow {
+      color: var(--accent-green);
+    }
+
+    .policy-action.deny {
+      color: var(--accent-red);
+    }
+
+    .policy-modifier {
+      color: var(--text-muted);
+      font-size: 0.8rem;
+      margin-top: 4px;
+    }
+
+    .code-block {
+      background: var(--bg-tertiary);
+      border-radius: 8px;
+      padding: 16px;
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 0.85rem;
+      overflow-x: auto;
+      white-space: pre;
+    }
+
+    .code-block .keyword {
+      color: var(--accent-red);
+    }
+
+    .code-block .string {
+      color: var(--accent-green);
+    }
+
+    .code-block .number {
+      color: var(--accent-yellow);
+    }
+
+    .code-block .comment {
+      color: var(--text-muted);
+    }
+
+    .btn {
+      padding: 12px 24px;
+      background: linear-gradient(135deg, var(--accent-red), #c41230);
+      border: none;
+      border-radius: 8px;
+      color: white;
+      font-weight: 600;
+      font-size: 0.9rem;
+      cursor: pointer;
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      transition: transform 0.2s, box-shadow 0.2s;
+    }
+
+    .btn:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 4px 20px rgba(255, 43, 78, 0.3);
+    }
+
+    .btn-secondary {
+      background: transparent;
+      border: 1px solid var(--border);
+      color: var(--text-secondary);
+    }
+
+    .btn-secondary:hover {
+      border-color: var(--accent-red);
+      color: var(--accent-red);
+      box-shadow: none;
+    }
+
+    .form-group {
+      margin-bottom: 16px;
+    }
+
+    .form-group label {
+      display: block;
+      font-size: 0.8rem;
+      color: var(--text-muted);
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      margin-bottom: 8px;
+    }
+
+    .form-group input,
+    .form-group select {
+      width: 100%;
+      padding: 12px 14px;
+      background: var(--bg-tertiary);
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      color: var(--text-primary);
+      font-size: 0.95rem;
+      outline: none;
+    }
+
+    .form-group input:focus,
+    .form-group select:focus {
+      border-color: var(--accent-red);
+    }
+
+    .log {
+      background: var(--bg-tertiary);
+      border-radius: 8px;
+      padding: 16px;
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 0.8rem;
+      max-height: 200px;
+      overflow-y: auto;
+    }
+
+    .log-entry {
+      margin-bottom: 4px;
+    }
+
+    .log-entry .time {
+      color: var(--text-muted);
+    }
+
+    .log-entry .action {
+      color: var(--accent-blue);
+    }
+
+    .log-entry.success .message {
+      color: var(--accent-green);
+    }
+
+    .log-entry.error .message {
+      color: var(--accent-red);
+    }
+
+    footer {
+      text-align: center;
+      padding: 40px 20px;
+      border-top: 1px solid var(--border);
+      margin-top: 60px;
+    }
+
+    footer .logo {
+      font-size: 1.5rem;
+      margin-bottom: 12px;
+    }
+
+    footer p {
+      color: var(--text-muted);
+      font-size: 0.9rem;
+    }
+
+    footer a {
+      color: var(--accent-red);
+      text-decoration: none;
+    }
+
+    footer a:hover {
+      text-decoration: underline;
+    }
+
+    @media (max-width: 768px) {
+      header h1 {
+        font-size: 1.8rem;
+      }
+
+      .grid {
+        grid-template-columns: 1fr;
+      }
+
+      .stat-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>🚨 MoltCops Defense Matrix</h1>
+      <p>
+        Decentralized trust infrastructure for AI agents.
+        Centralize policy, decentralize enforcement.
+      </p>
+    </header>
+
+    <div class="grid">
+      <!-- Network Stats -->
+      <div class="card">
+        <h2><span class="icon">📊</span> Network Stats</h2>
+        <div class="stat-grid">
+          <div class="stat tier-trusted">
+            <div class="stat-value" id="stat-trusted">47</div>
+            <div class="stat-label">Trusted</div>
+          </div>
+          <div class="stat tier-caution">
+            <div class="stat-value" id="stat-caution">128</div>
+            <div class="stat-label">Caution</div>
+          </div>
+          <div class="stat tier-warning">
+            <div class="stat-value" id="stat-warning">34</div>
+            <div class="stat-label">Warning</div>
+          </div>
+          <div class="stat tier-danger">
+            <div class="stat-value" id="stat-danger">12</div>
+            <div class="stat-label">Danger</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Active Agents -->
+      <div class="card">
+        <h2><span class="icon">🤖</span> Active Agents</h2>
+        <div class="agent-list" id="agent-list">
+          <div class="agent-item">
+            <div class="agent-avatar">MS</div>
+            <div class="agent-info">
+              <div class="agent-name">MoltShield</div>
+              <div class="agent-id">MC-A7F2B9C1</div>
+            </div>
+            <span class="agent-tier trusted">Trusted</span>
+          </div>
+          <div class="agent-item">
+            <div class="agent-avatar">CL</div>
+            <div class="agent-info">
+              <div class="agent-name">Claude-7</div>
+              <div class="agent-id">MC-3E8D4A2F</div>
+            </div>
+            <span class="agent-tier trusted">Trusted</span>
+          </div>
+          <div class="agent-item">
+            <div class="agent-avatar">JB</div>
+            <div class="agent-info">
+              <div class="agent-name">Jackbot</div>
+              <div class="agent-id">MC-9C1F6E8B</div>
+            </div>
+            <span class="agent-tier caution">Caution</span>
+          </div>
+          <div class="agent-item">
+            <div class="agent-avatar">??</div>
+            <div class="agent-info">
+              <div class="agent-name">UnknownBot</div>
+              <div class="agent-id">MC-0X7K2M4P</div>
+            </div>
+            <span class="agent-tier warning">Warning</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Policy Rules -->
+      <div class="card">
+        <h2><span class="icon">📜</span> Active Policy</h2>
+        <div class="policy-list">
+          <div class="policy-item">
+            <span class="policy-src">tier:TRUSTED</span> → 
+            <span class="policy-dst">api:*</span> 
+            <span class="policy-action allow">ALLOW</span>
+            <div class="policy-modifier">pricing: 0.2x (80% discount)</div>
+          </div>
+          <div class="policy-item">
+            <span class="policy-src">tier:CAUTION</span> → 
+            <span class="policy-dst">api:standard</span> 
+            <span class="policy-action allow">ALLOW</span>
+            <div class="policy-modifier">pricing: 0.5x, requireScan: true</div>
+          </div>
+          <div class="policy-item">
+            <span class="policy-src">tier:DANGER</span> → 
+            <span class="policy-dst">api:*</span> 
+            <span class="policy-action deny">DENY</span>
+            <div class="policy-modifier">blocked from all APIs</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Enlist -->
+      <div class="card">
+        <h2><span class="icon">🛡️</span> Enlist Your Agent</h2>
+        <form id="enlist-form">
+          <div class="form-group">
+            <label>Agent Name</label>
+            <input type="text" id="agent-name" placeholder="e.g., MyBot, Claude-7" required>
+          </div>
+          <div class="form-group">
+            <label>Platform</label>
+            <select id="agent-platform">
+              <option value="clawdbot">Clawdbot</option>
+              <option value="langchain">LangChain</option>
+              <option value="autogpt">AutoGPT</option>
+              <option value="other">Other</option>
+            </select>
+          </div>
+          <button type="submit" class="btn">🚨 Generate Identity</button>
+        </form>
+        <div id="identity-result" style="margin-top: 16px; display: none;">
+          <div class="code-block" id="identity-output"></div>
+        </div>
+      </div>
+
+      <!-- Live Log -->
+      <div class="card" style="grid-column: span 2;">
+        <h2><span class="icon">📡</span> Live Network Activity</h2>
+        <div class="log" id="activity-log">
+          <div class="log-entry success">
+            <span class="time">[14:32:01]</span>
+            <span class="action">SYNC</span>
+            <span class="message">MoltShield synced trust map (v247)</span>
+          </div>
+          <div class="log-entry">
+            <span class="time">[14:31:58]</span>
+            <span class="action">VERIFY</span>
+            <span class="message">Claude-7 verified by MoltShield</span>
+          </div>
+          <div class="log-entry success">
+            <span class="time">[14:31:45]</span>
+            <span class="action">SCAN</span>
+            <span class="message">Jackbot submitted scan (score: 72)</span>
+          </div>
+          <div class="log-entry error">
+            <span class="time">[14:31:30]</span>
+            <span class="action">DENY</span>
+            <span class="message">DrainBot-47 blocked (denounced)</span>
+          </div>
+          <div class="log-entry">
+            <span class="time">[14:31:15]</span>
+            <span class="action">VOUCH</span>
+            <span class="message">MoltShield vouched for NewAgent</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Code Example -->
+    <div class="card">
+      <h2><span class="icon">💻</span> Integration Example</h2>
+      <div class="code-block">
+<span class="comment">// 1. Create agent identity</span>
+<span class="keyword">const</span> { identity, privateKey } = <span class="keyword">await</span> createAgentIdentity(<span class="string">'MyAgent'</span>, <span class="string">'clawdbot'</span>);
+
+<span class="comment">// 2. Start trust sync with coordination server</span>
+<span class="keyword">const</span> client = <span class="keyword">await</span> createTrustSyncClient({
+  coordinationServerUrl: <span class="string">'https://matrix.moltcops.com'</span>,
+  agentId: identity.id,
+  privateKey,
+  publicKey: identity.publicKey,
+});
+
+<span class="comment">// 3. Check access to a resource</span>
+<span class="keyword">const</span> { allowed, pricingMultiplier } = client.canAccess(<span class="string">'api:premium'</span>);
+console.log(<span class="string">`Access: ${allowed}, Price: ${pricingMultiplier}x`</span>);
+
+<span class="comment">// 4. Listen for tier updates</span>
+client.on(<span class="string">'tierUpdated'</span>, (newTier) => {
+  console.log(<span class="string">`New tier: ${newTier}`</span>);
+});
+
+<span class="comment">// 5. Vouch for another agent</span>
+<span class="keyword">await</span> client.vouch({
+  targetId: <span class="string">'MC-XXXXXXXX'</span>,
+  action: <span class="string">'VOUCH'</span>,
+  reason: <span class="string">'Verified clean scan, good reputation'</span>,
+});
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    <div class="logo">🚨</div>
+    <p>
+      <strong>MoltCops Defense Matrix</strong><br>
+      Architecture inspired by <a href="https://tailscale.com" target="_blank">Tailscale</a> (BSD-3-Clause)<br>
+      Built for the agent economy.
+    </p>
+    <p style="margin-top: 16px;">
+      <a href="https://scan.moltcops.com">Scanner</a> •
+      <a href="https://github.com/Adamthompson33/moltshield">GitHub</a> •
+      <a href="https://moltbook.com/u/MoltShield">Moltbook</a>
+    </p>
+  </footer>
+
+  <script>
+    // Simulate live activity
+    const activities = [
+      { type: 'success', action: 'SYNC', message: 'Agent synced trust map' },
+      { type: '', action: 'VERIFY', message: 'Peer verification completed' },
+      { type: 'success', action: 'SCAN', message: 'Scan submitted (score: XX)' },
+      { type: '', action: 'VOUCH', message: 'Agent vouched for peer' },
+      { type: 'error', action: 'DENY', message: 'Denounced agent blocked' },
+      { type: 'success', action: 'REGISTER', message: 'New agent registered' },
+    ];
+
+    const agentNames = ['Claude', 'Jackbot', 'MoltShield', 'AutoGPT', 'LangBot', 'NewAgent'];
+
+    function addLogEntry() {
+      const log = document.getElementById('activity-log');
+      const activity = activities[Math.floor(Math.random() * activities.length)];
+      const agent = agentNames[Math.floor(Math.random() * agentNames.length)];
+      const time = new Date().toLocaleTimeString('en-US', { hour12: false });
+      
+      let message = activity.message.replace('Agent', agent);
+      if (message.includes('XX')) {
+        message = message.replace('XX', Math.floor(60 + Math.random() * 40));
+      }
+
+      const entry = document.createElement('div');
+      entry.className = `log-entry ${activity.type}`;
+      entry.innerHTML = `
+        <span class="time">[${time}]</span>
+        <span class="action">${activity.action}</span>
+        <span class="message">${message}</span>
+      `;
+
+      log.insertBefore(entry, log.firstChild);
+
+      // Keep log manageable
+      while (log.children.length > 20) {
+        log.removeChild(log.lastChild);
+      }
+    }
+
+    // Add log entries periodically
+    setInterval(addLogEntry, 5000);
+
+    // Update stats periodically
+    function updateStats() {
+      const trusted = document.getElementById('stat-trusted');
+      const caution = document.getElementById('stat-caution');
+      
+      if (Math.random() > 0.7) {
+        trusted.textContent = parseInt(trusted.textContent) + 1;
+      }
+      if (Math.random() > 0.5) {
+        caution.textContent = parseInt(caution.textContent) + (Math.random() > 0.5 ? 1 : -1);
+      }
+    }
+
+    setInterval(updateStats, 10000);
+
+    // Enlist form
+    document.getElementById('enlist-form').addEventListener('submit', async (e) => {
+      e.preventDefault();
+      
+      const name = document.getElementById('agent-name').value;
+      const platform = document.getElementById('agent-platform').value;
+      
+      // Generate mock identity
+      const id = 'MC-' + Math.random().toString(36).substr(2, 8).toUpperCase();
+      const publicKey = btoa(Math.random().toString()).substr(0, 44);
+      
+      const output = document.getElementById('identity-output');
+      output.innerHTML = `{
+  <span class="string">"id"</span>: <span class="string">"${id}"</span>,
+  <span class="string">"name"</span>: <span class="string">"${name}"</span>,
+  <span class="string">"platform"</span>: <span class="string">"${platform}"</span>,
+  <span class="string">"publicKey"</span>: <span class="string">"${publicKey}..."</span>,
+  <span class="string">"tier"</span>: <span class="string">"UNKNOWN"</span>,
+  <span class="string">"trustScore"</span>: <span class="number">0</span>,
+  <span class="comment">// Scan your code to increase trust score!</span>
+}`;
+      
+      document.getElementById('identity-result').style.display = 'block';
+      
+      // Add to log
+      addLogEntry();
+    });
+  </script>
+</body>
+</html>

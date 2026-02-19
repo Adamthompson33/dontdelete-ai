@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>🦀 Memecoin Bot - Paper Trading Results</title>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { 
+      font-family: 'Segoe UI', system-ui, sans-serif; 
+      background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+      color: #e0e0e0;
+      min-height: 100vh;
+      padding: 20px;
+    }
+    .header { text-align: center; margin-bottom: 30px; }
+    .header h1 { 
+      font-size: 2.5em; 
+      background: linear-gradient(90deg, #f87171, #7c3aed);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+    .alert {
+      background: rgba(248, 113, 113, 0.2);
+      border: 2px solid #f87171;
+      border-radius: 15px;
+      padding: 20px;
+      margin-bottom: 30px;
+      text-align: center;
+    }
+    .alert h2 { color: #f87171; margin-bottom: 10px; }
+    .stats-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 20px;
+      margin-bottom: 30px;
+    }
+    .stat-card {
+      background: rgba(255,255,255,0.05);
+      border: 1px solid rgba(255,255,255,0.1);
+      border-radius: 15px;
+      padding: 20px;
+      text-align: center;
+    }
+    .stat-card .value { font-size: 2em; font-weight: bold; }
+    .stat-card .label { color: #888; margin-top: 5px; }
+    .stat-card.loss .value { color: #f87171; }
+    .stat-card.neutral .value { color: #fbbf24; }
+    .positions-table {
+      width: 100%;
+      background: rgba(255,255,255,0.05);
+      border: 1px solid rgba(255,255,255,0.1);
+      border-radius: 15px;
+      overflow: hidden;
+      margin-bottom: 30px;
+    }
+    .positions-table th, .positions-table td {
+      padding: 15px;
+      text-align: left;
+      border-bottom: 1px solid rgba(255,255,255,0.1);
+    }
+    .positions-table th { background: rgba(248,113,113,0.1); color: #f87171; }
+    .rugged { color: #f87171; font-weight: bold; }
+    .charts-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; margin-bottom: 30px; }
+    .chart-card {
+      background: rgba(255,255,255,0.05);
+      border: 1px solid rgba(255,255,255,0.1);
+      border-radius: 15px;
+      padding: 20px;
+    }
+    .chart-card h3 { margin-bottom: 15px; color: #fff; }
+    .lesson-box {
+      background: rgba(251, 191, 36, 0.1);
+      border: 2px solid #fbbf24;
+      border-radius: 15px;
+      padding: 20px;
+    }
+    .lesson-box h3 { color: #fbbf24; margin-bottom: 15px; }
+    .lesson-box ul { list-style: none; }
+    .lesson-box li { padding: 8px 0; border-bottom: 1px solid rgba(255,255,255,0.1); }
+    .lesson-box li:last-child { border: none; }
+  </style>
+</head>
+<body>
+  <div class="header">
+    <h1>🦀 Paper Trading Results</h1>
+    <p style="color:#888">Feb 4, 2026 - Session 1</p>
+  </div>
+
+  <div class="alert">
+    <h2>💀 ALL 3 POSITIONS LIKELY RUGGED</h2>
+    <p>DexScreener & GeckoTerminal return no data for these tokens</p>
+  </div>
+
+  <div class="stats-grid">
+    <div class="stat-card loss">
+      <div class="value">-0.124</div>
+      <div class="label">Estimated P&L (SOL)</div>
+    </div>
+    <div class="stat-card loss">
+      <div class="value">-100%</div>
+      <div class="label">Return</div>
+    </div>
+    <div class="stat-card neutral">
+      <div class="value">0/3</div>
+      <div class="label">Survived</div>
+    </div>
+    <div class="stat-card">
+      <div class="value">~1hr</div>
+      <div class="label">Time to Rug</div>
+    </div>
+  </div>
+
+  <h3 style="margin-bottom: 15px; color: #fff;">📋 Position Autopsy</h3>
+  <table class="positions-table">
+    <thead>
+      <tr>
+        <th>Token</th>
+        <th>Entry Price</th>
+        <th>Position</th>
+        <th>Current Status</th>
+        <th>Sentiment Was</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><strong>renta / SOL</strong></td>
+        <td>$0.000244</td>
+        <td>0.038 SOL</td>
+        <td class="rugged">💀 RUGGED</td>
+        <td>6/10, Organic ✓</td>
+      </tr>
+      <tr>
+        <td><strong>BEAM / SOL</strong></td>
+        <td>$0.00459</td>
+        <td>0.043 SOL</td>
+        <td class="rugged">💀 RUGGED</td>
+        <td>7/10, Organic ✓</td>
+      </tr>
+      <tr>
+        <td><strong>USOR / SOL</strong></td>
+        <td>$0.00678</td>
+        <td>0.043 SOL</td>
+        <td class="rugged">💀 RUGGED</td>
+        <td>6/10, Organic ✓</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <div class="charts-grid">
+    <div class="chart-card">
+      <h3>📊 What Passed vs Reality</h3>
+      <canvas id="passChart"></canvas>
+    </div>
+    <div class="chart-card">
+      <h3>⏱️ Time in Position</h3>
+      <canvas id="timeChart"></canvas>
+    </div>
+  </div>
+
+  <div class="lesson-box">
+    <h3>📝 Lessons Learned - Filters Need MORE Tightening</h3>
+    <ul>
+      <li>🔴 <strong>Sentiment "Organic" was wrong</strong> — Grok may not have real-time X data</li>
+      <li>🔴 <strong>Holder data returned 0</strong> — Need to require actual holder counts</li>
+      <li>🔴 <strong>Tokens too new</strong> — Even 30min age wasn't enough</li>
+      <li>🟡 <strong>Consider:</strong> Min age 2-4 hours instead of 30 min</li>
+      <li>🟡 <strong>Consider:</strong> Require on-chain holder verification before trade</li>
+      <li>🟡 <strong>Consider:</strong> Higher liquidity minimum ($50k+)</li>
+      <li>🟢 <strong>Good:</strong> Paper trading saved 0.124 SOL of real money!</li>
+    </ul>
+  </div>
+
+  <script>
+    new Chart(document.getElementById('passChart'), {
+      type: 'bar',
+      data: {
+        labels: ['renta', 'BEAM', 'USOR'],
+        datasets: [
+          { label: 'Sentiment Score', data: [6, 7, 6], backgroundColor: '#60a5fa' },
+          { label: 'Rug Score', data: [0, 0, 0], backgroundColor: '#4ade80' },
+          { label: 'Reality', data: [100, 100, 100], backgroundColor: '#f87171' }
+        ]
+      },
+      options: {
+        responsive: true,
+        scales: {
+          y: { ticks: { color: '#888' }, grid: { color: 'rgba(255,255,255,0.1)' } },
+          x: { ticks: { color: '#888' } }
+        },
+        plugins: { legend: { labels: { color: '#e0e0e0' } } }
+      }
+    });
+
+    new Chart(document.getElementById('timeChart'), {
+      type: 'doughnut',
+      data: {
+        labels: ['Time Active (~1hr)', 'Expected Hold (24hr+)'],
+        datasets: [{
+          data: [1, 23],
+          backgroundColor: ['#f87171', '#374151'],
+          borderWidth: 0
+        }]
+      },
+      options: {
+        responsive: true,
+        plugins: { legend: { position: 'bottom', labels: { color: '#e0e0e0' } } }
+      }
+    });
+  </script>
+</body>
+</html>

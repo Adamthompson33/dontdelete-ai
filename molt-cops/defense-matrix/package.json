@@ -1,0 +1,53 @@
+{
+  "name": "@moltcops/defense-matrix",
+  "version": "0.1.0",
+  "description": "Decentralized trust infrastructure for AI agents. Inspired by Tailscale.",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist",
+    "src",
+    "README.md"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsc --watch",
+    "test": "jest",
+    "lint": "eslint src/**/*.ts"
+  },
+  "keywords": [
+    "ai-agents",
+    "trust",
+    "security",
+    "mesh-network",
+    "moltcops",
+    "defense-matrix",
+    "tailscale-inspired"
+  ],
+  "author": "MoltCops <team@moltcops.com>",
+  "license": "MIT AND BSD-3-Clause",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Adamthompson33/moltshield"
+  },
+  "homepage": "https://scan.moltcops.com",
+  "bugs": {
+    "url": "https://github.com/Adamthompson33/moltshield/issues"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "@types/node": "^20.0.0",
+    "typescript": "^5.0.0"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "peerDependencies": {},
+  "exports": {
+    ".": {
+      "import": "./dist/index.js",
+      "require": "./dist/index.js",
+      "types": "./dist/index.d.ts"
+    }
+  }
+}

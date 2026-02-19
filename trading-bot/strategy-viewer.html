@@ -1,0 +1,554 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hyperliquid Trading Strategy - 2026 Downside Specialist</title>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    
+    body {
+      background: #0a0a0f;
+      color: #e2e8f0;
+      font-family: 'JetBrains Mono', monospace;
+      line-height: 1.6;
+      padding: 40px;
+    }
+    
+    .container { max-width: 1000px; margin: 0 auto; }
+    
+    header {
+      text-align: center;
+      margin-bottom: 40px;
+      padding-bottom: 30px;
+      border-bottom: 1px solid #1e293b;
+    }
+    
+    h1 {
+      font-family: 'Space Grotesk', sans-serif;
+      font-size: 32px;
+      font-weight: 700;
+      background: linear-gradient(135deg, #ef4444, #f97316);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      margin-bottom: 8px;
+    }
+    
+    .subtitle { color: #64748b; font-size: 14px; }
+    
+    .thesis-box {
+      background: linear-gradient(135deg, rgba(239,68,68,0.1), rgba(249,115,22,0.1));
+      border: 1px solid rgba(239,68,68,0.3);
+      border-radius: 12px;
+      padding: 24px;
+      margin-bottom: 32px;
+    }
+    
+    .thesis-box h2 {
+      color: #ef4444;
+      font-size: 16px;
+      margin-bottom: 12px;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+    
+    .thesis-box p { color: #94a3b8; font-size: 13px; }
+    
+    .modes-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 16px;
+      margin-bottom: 32px;
+    }
+    
+    .mode-card {
+      background: rgba(15,23,42,0.6);
+      border: 1px solid #1e293b;
+      border-radius: 10px;
+      padding: 20px;
+    }
+    
+    .mode-card h3 {
+      font-size: 14px;
+      margin-bottom: 8px;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+    
+    .mode-card.trending-short h3 { color: #ef4444; }
+    .mode-card.trending-long h3 { color: #10b981; }
+    .mode-card.choppy h3 { color: #8b5cf6; }
+    .mode-card.crash h3 { color: #f59e0b; }
+    
+    .mode-card p { color: #64748b; font-size: 11px; }
+    
+    .mode-card ul {
+      margin-top: 12px;
+      padding-left: 16px;
+      font-size: 11px;
+      color: #94a3b8;
+    }
+    
+    .mode-card li { margin-bottom: 4px; }
+    
+    .config-section {
+      background: rgba(15,23,42,0.6);
+      border: 1px solid #1e293b;
+      border-radius: 10px;
+      padding: 24px;
+      margin-bottom: 24px;
+    }
+    
+    .config-section h2 {
+      font-size: 14px;
+      color: #64748b;
+      letter-spacing: 2px;
+      margin-bottom: 16px;
+      text-transform: uppercase;
+    }
+    
+    .config-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 12px;
+    }
+    
+    .config-item {
+      background: #0f172a;
+      border-radius: 8px;
+      padding: 14px;
+    }
+    
+    .config-item .label {
+      font-size: 10px;
+      color: #64748b;
+      letter-spacing: 1px;
+      margin-bottom: 4px;
+    }
+    
+    .config-item .value {
+      font-size: 18px;
+      font-weight: 600;
+      font-family: 'Space Grotesk', sans-serif;
+    }
+    
+    .config-item .value.red { color: #ef4444; }
+    .config-item .value.green { color: #10b981; }
+    .config-item .value.blue { color: #3b82f6; }
+    .config-item .value.yellow { color: #f59e0b; }
+    
+    .code-section {
+      background: #0c0e14;
+      border: 1px solid #1e293b;
+      border-radius: 10px;
+      overflow: hidden;
+      margin-bottom: 24px;
+    }
+    
+    .code-header {
+      background: #0f172a;
+      padding: 12px 20px;
+      border-bottom: 1px solid #1e293b;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    
+    .code-header .filename {
+      color: #64748b;
+      font-size: 12px;
+    }
+    
+    .code-header .lang {
+      background: rgba(59,130,246,0.15);
+      color: #3b82f6;
+      font-size: 10px;
+      padding: 2px 8px;
+      border-radius: 4px;
+    }
+    
+    pre {
+      padding: 20px;
+      overflow-x: auto;
+      font-size: 12px;
+      line-height: 1.8;
+    }
+    
+    code {
+      font-family: 'JetBrains Mono', monospace;
+    }
+    
+    .comment { color: #6b7280; }
+    .keyword { color: #c084fc; }
+    .function { color: #60a5fa; }
+    .string { color: #34d399; }
+    .number { color: #f59e0b; }
+    .decorator { color: #f472b6; }
+    .class { color: #22d3ee; }
+    .variable { color: #e2e8f0; }
+    .operator { color: #94a3b8; }
+    
+    .status-bar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 16px 24px;
+      background: rgba(15,23,42,0.6);
+      border: 1px solid #1e293b;
+      border-radius: 10px;
+      margin-top: 32px;
+    }
+    
+    .status-item {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      font-size: 12px;
+      color: #64748b;
+    }
+    
+    .status-dot {
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background: #10b981;
+      animation: pulse 2s infinite;
+    }
+    
+    @keyframes pulse {
+      0%, 100% { opacity: 1; }
+      50% { opacity: 0.4; }
+    }
+    
+    .crash-levels {
+      display: flex;
+      gap: 8px;
+      margin-top: 16px;
+    }
+    
+    .crash-level {
+      background: rgba(249,115,22,0.1);
+      border: 1px solid rgba(249,115,22,0.3);
+      border-radius: 6px;
+      padding: 8px 12px;
+      font-size: 11px;
+      color: #f59e0b;
+    }
+    
+    .flow-diagram {
+      background: #0f172a;
+      border-radius: 10px;
+      padding: 24px;
+      margin: 24px 0;
+    }
+    
+    .flow-step {
+      display: flex;
+      align-items: center;
+      gap: 16px;
+      margin-bottom: 12px;
+    }
+    
+    .flow-number {
+      width: 28px;
+      height: 28px;
+      border-radius: 50%;
+      background: linear-gradient(135deg, #3b82f6, #8b5cf6);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 12px;
+      font-weight: 600;
+    }
+    
+    .flow-text { font-size: 13px; color: #94a3b8; }
+    .flow-arrow { color: #3b82f6; margin-left: 44px; font-size: 18px; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>🐻 Downside Specialist</h1>
+      <p class="subtitle">Hyperliquid Trading Strategy — 2026 Fire Horse Year</p>
+    </header>
+
+    <div class="thesis-box">
+      <h2>🔥 Core Thesis</h2>
+      <p>Fire Horse year (2026) clashes with BTC's Rat year (2008 birth). Chinese astrology + GG33 numerology suggests major downside pressure. Target: BTC to $40k or lower. Strategy is asymmetrically bearish — 10x leverage on shorts, 3x on longs.</p>
+    </div>
+
+    <div class="modes-grid">
+      <div class="mode-card trending-short">
+        <h3>📉 TRENDING SHORT</h3>
+        <p>13 MA below 33 MA</p>
+        <ul>
+          <li>10x leverage short</li>
+          <li>4% stop loss</li>
+          <li>Ride the move down</li>
+          <li>No grid complexity</li>
+        </ul>
+      </div>
+      
+      <div class="mode-card trending-long">
+        <h3>📈 TRENDING LONG</h3>
+        <p>13 MA above 33 MA</p>
+        <ul>
+          <li>3x leverage (conservative)</li>
+          <li>4% stop loss</li>
+          <li>Half position size</li>
+          <li>Against main thesis</li>
+        </ul>
+      </div>
+      
+      <div class="mode-card choppy">
+        <h3>🔀 CHOPPY MODE</h3>
+        <p>MAs within 1% of each other</p>
+        <ul>
+          <li>Neutral grid bot</li>
+          <li>5 levels above/below</li>
+          <li>1% spacing</li>
+          <li>Profit from volatility</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="mode-card crash" style="margin-bottom: 24px;">
+      <h3>⚡ FLASH CRASH CATCHER (Always On)</h3>
+      <p>Catches liquidation cascades like Oct 10, 2025 ($19B liquidated). Limit orders waiting at extreme prices.</p>
+      <div class="crash-levels">
+        <div class="crash-level">-10% → Buy</div>
+        <div class="crash-level">-15% → Buy</div>
+        <div class="crash-level">-20% → Buy</div>
+        <div class="crash-level">-25% → Buy</div>
+        <div class="crash-level">-30% → Buy</div>
+      </div>
+      <p style="margin-top: 12px; color: #64748b;">$200 per level • 5% take profit on bounce • Plus squeeze shorts at +8/12/15/20%</p>
+    </div>
+
+    <div class="config-section">
+      <h2>⚙️ Configuration</h2>
+      <div class="config-grid">
+        <div class="config-item">
+          <div class="label">SHORT LEVERAGE</div>
+          <div class="value red">10x</div>
+        </div>
+        <div class="config-item">
+          <div class="label">LONG LEVERAGE</div>
+          <div class="value green">3x</div>
+        </div>
+        <div class="config-item">
+          <div class="label">STOP LOSS</div>
+          <div class="value yellow">4%</div>
+        </div>
+        <div class="config-item">
+          <div class="label">GRID LEVELS</div>
+          <div class="value blue">5</div>
+        </div>
+        <div class="config-item">
+          <div class="label">GRID SPACING</div>
+          <div class="value blue">1%</div>
+        </div>
+        <div class="config-item">
+          <div class="label">GRID SIZE</div>
+          <div class="value blue">$100</div>
+        </div>
+        <div class="config-item">
+          <div class="label">CRASH SIZE</div>
+          <div class="value yellow">$200</div>
+        </div>
+        <div class="config-item">
+          <div class="label">CRASH TP</div>
+          <div class="value green">5%</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="flow-diagram">
+      <h2 style="font-size: 14px; color: #64748b; letter-spacing: 2px; margin-bottom: 20px;">STRATEGY FLOW</h2>
+      
+      <div class="flow-step">
+        <div class="flow-number">1</div>
+        <div class="flow-text">Detect market regime using 13/33 MA cross</div>
+      </div>
+      <div class="flow-arrow">↓</div>
+      
+      <div class="flow-step">
+        <div class="flow-number">2</div>
+        <div class="flow-text">If TRENDING → Cancel grid, enter leveraged position with stop loss</div>
+      </div>
+      <div class="flow-arrow">↓</div>
+      
+      <div class="flow-step">
+        <div class="flow-number">3</div>
+        <div class="flow-text">If CHOPPY → Close trend positions, set up neutral grid</div>
+      </div>
+      <div class="flow-arrow">↓</div>
+      
+      <div class="flow-step">
+        <div class="flow-number">4</div>
+        <div class="flow-text">ALWAYS set up flash crash catchers (runs 24/7 alongside main strategy)</div>
+      </div>
+      <div class="flow-arrow">↓</div>
+      
+      <div class="flow-step">
+        <div class="flow-number">5</div>
+        <div class="flow-text">Daily cron checks for regime change → update if fresh cross detected</div>
+      </div>
+    </div>
+
+    <div class="code-section">
+      <div class="code-header">
+        <span class="filename">strategy.py</span>
+        <span class="lang">Python</span>
+      </div>
+      <pre><code><span class="comment">"""
+Hyperliquid Trading Strategy - 2026 Downside Specialist
+========================================================
+
+Two separate modes for two market conditions:
+
+1. TRENDING MODE (13/33 cross confirmed)
+   → Simple leveraged position
+   → Ride the big move with a stop loss
+   → No grid, no complexity
+
+2. CHOPPY MODE (no clear trend)
+   → Neutral grid bot
+   → Buy dips, sell rips
+   → Small consistent profits from volatility
+
+Author: Si + Jackbot
+Thesis: Fire Horse year (2026) clashes with BTC's Rat year (2008)
+Target: BTC to $40k or lower
+"""</span>
+
+<span class="keyword">import</span> pandas <span class="keyword">as</span> pd
+<span class="keyword">from</span> hyperliquid.info <span class="keyword">import</span> Info
+<span class="keyword">from</span> hyperliquid.exchange <span class="keyword">import</span> Exchange
+<span class="keyword">from</span> hyperliquid.utils <span class="keyword">import</span> constants
+<span class="keyword">import</span> os
+<span class="keyword">from</span> datetime <span class="keyword">import</span> datetime
+
+<span class="comment"># === CONFIGURATION ===</span>
+<span class="variable">AGENT_KEY</span> <span class="operator">=</span> os.getenv(<span class="string">"HL_AGENT_KEY"</span>)
+<span class="variable">ACCOUNT_ADDR</span> <span class="operator">=</span> os.getenv(<span class="string">"HL_MAIN_ADDR"</span>)
+<span class="variable">SYMBOL</span> <span class="operator">=</span> <span class="string">"BTC"</span>
+
+<span class="comment"># Leverage settings - bearish 2026 bias</span>
+<span class="variable">LEVERAGE_SHORT</span> <span class="operator">=</span> <span class="number">10</span>  <span class="comment"># More aggressive on downside</span>
+<span class="variable">LEVERAGE_LONG</span> <span class="operator">=</span> <span class="number">3</span>    <span class="comment"># Conservative on upside</span>
+
+<span class="comment"># Grid settings for choppy mode</span>
+<span class="variable">GRID_LEVELS</span> <span class="operator">=</span> <span class="number">5</span>
+<span class="variable">GRID_SPACING_PCT</span> <span class="operator">=</span> <span class="number">0.01</span>  <span class="comment"># 1% between levels</span>
+<span class="variable">GRID_SIZE_USD</span> <span class="operator">=</span> <span class="number">100</span>      <span class="comment"># USD per grid order</span>
+
+<span class="comment"># Stop loss settings</span>
+<span class="variable">STOP_LOSS_PCT</span> <span class="operator">=</span> <span class="number">0.04</span>     <span class="comment"># 4% stop loss on trend trades</span>
+
+<span class="comment"># Flash crash settings (wick catching)</span>
+<span class="variable">CRASH_LEVELS</span> <span class="operator">=</span> [<span class="number">0.10</span>, <span class="number">0.15</span>, <span class="number">0.20</span>, <span class="number">0.25</span>, <span class="number">0.30</span>]
+<span class="variable">CRASH_SIZE_USD</span> <span class="operator">=</span> <span class="number">200</span>
+<span class="variable">CRASH_TAKE_PROFIT_PCT</span> <span class="operator">=</span> <span class="number">0.05</span>
+
+
+<span class="keyword">def</span> <span class="function">detect_market_regime</span>(coin: <span class="class">str</span>) -> <span class="class">dict</span>:
+    <span class="comment">"""
+    Determine if market is TRENDING or CHOPPY using 13/33 MA cross.
+    
+    Returns:
+        dict with:
+        - regime: "TRENDING_SHORT" | "TRENDING_LONG" | "CHOPPY"
+        - ma13: current 13 MA value
+        - ma33: current 33 MA value
+        - ma_diff_pct: percentage difference between MAs
+        - fresh_cross: True if cross happened in last 3 days
+    """</span>
+    df <span class="operator">=</span> get_candles(coin)
+    
+    <span class="comment"># Calculate MAs</span>
+    df[<span class="string">'ma13'</span>] <span class="operator">=</span> df[<span class="string">'close'</span>].rolling(window<span class="operator">=</span><span class="number">13</span>).mean()
+    df[<span class="string">'ma33'</span>] <span class="operator">=</span> df[<span class="string">'close'</span>].rolling(window<span class="operator">=</span><span class="number">33</span>).mean()
+    
+    current <span class="operator">=</span> df.iloc[<span class="number">-1</span>]
+    ma13 <span class="operator">=</span> current[<span class="string">'ma13'</span>]
+    ma33 <span class="operator">=</span> current[<span class="string">'ma33'</span>]
+    
+    <span class="comment"># Calculate MA difference as percentage</span>
+    ma_diff_pct <span class="operator">=</span> ((ma13 <span class="operator">-</span> ma33) <span class="operator">/</span> ma33) <span class="operator">*</span> <span class="number">100</span>
+    
+    <span class="comment"># Determine regime</span>
+    <span class="keyword">if</span> abs(ma_diff_pct) <span class="operator"><</span> <span class="number">1.0</span>:
+        regime <span class="operator">=</span> <span class="string">"CHOPPY"</span>
+    <span class="keyword">elif</span> ma13 <span class="operator"><</span> ma33:
+        regime <span class="operator">=</span> <span class="string">"TRENDING_SHORT"</span>
+    <span class="keyword">else</span>:
+        regime <span class="operator">=</span> <span class="string">"TRENDING_LONG"</span>
+    
+    <span class="keyword">return</span> {
+        <span class="string">'regime'</span>: regime,
+        <span class="string">'ma13'</span>: ma13,
+        <span class="string">'ma33'</span>: ma33,
+        <span class="string">'ma_diff_pct'</span>: ma_diff_pct,
+        <span class="string">'fresh_cross'</span>: fresh_cross,
+        <span class="string">'price'</span>: price
+    }
+
+
+<span class="keyword">def</span> <span class="function">run_strategy</span>(coin: <span class="class">str</span>, position_size_usd: <span class="class">float</span> <span class="operator">=</span> <span class="number">1000</span>):
+    <span class="comment">"""
+    Main strategy loop.
+    
+    1. Detect market regime (trending or choppy)
+    2. If trending → enter leveraged position, ride the move
+    3. If choppy → run neutral grid, profit from volatility
+    4. ALWAYS → Set up crash catchers for black swan events
+    """</span>
+    
+    <span class="comment"># Step 1: Detect regime</span>
+    regime <span class="operator">=</span> detect_market_regime(coin)
+    
+    <span class="comment"># Step 2: Execute appropriate strategy</span>
+    <span class="keyword">if</span> regime[<span class="string">'regime'</span>] <span class="operator">==</span> <span class="string">"TRENDING_SHORT"</span>:
+        cancel_grid(coin)
+        result <span class="operator">=</span> enter_trend_position(coin, <span class="string">"SHORT"</span>, position_size_usd)
+        
+    <span class="keyword">elif</span> regime[<span class="string">'regime'</span>] <span class="operator">==</span> <span class="string">"TRENDING_LONG"</span>:
+        cancel_grid(coin)
+        result <span class="operator">=</span> enter_trend_position(coin, <span class="string">"LONG"</span>, position_size_usd <span class="operator">*</span> <span class="number">0.5</span>)
+        
+    <span class="keyword">else</span>:  <span class="comment"># CHOPPY</span>
+        exit_trend_position(coin)
+        result <span class="operator">=</span> setup_neutral_grid(coin)
+    
+    <span class="comment"># ALWAYS set up crash catchers</span>
+    crash_result <span class="operator">=</span> setup_crash_catcher(coin)
+    pump_result <span class="operator">=</span> setup_pump_catcher(coin)
+    
+    <span class="keyword">return</span> result
+
+
+<span class="keyword">if</span> __name__ <span class="operator">==</span> <span class="string">"__main__"</span>:
+    result <span class="operator">=</span> run_strategy(SYMBOL)
+    print(<span class="string">f"Strategy executed: </span>{result[<span class="string">'action'</span>]}<span class="string">"</span>)
+</code></pre>
+    </div>
+
+    <div class="status-bar">
+      <div class="status-item">
+        <div class="status-dot"></div>
+        <span>Strategy Active</span>
+      </div>
+      <div class="status-item">
+        <span>Current Position: SHORT ETH -0.2262 @ $2,078</span>
+      </div>
+      <div class="status-item">
+        <span>Account: $54.91</span>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

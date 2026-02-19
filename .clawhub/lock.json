@@ -1,0 +1,33 @@
+{
+  "version": 1,
+  "skills": {
+    "skill-vetter": {
+      "version": "1.0.0",
+      "installedAt": 1770603841765
+    },
+    "flaw0": {
+      "version": "0.1.1",
+      "installedAt": 1770603848110
+    },
+    "devlog-skill": {
+      "version": "1.0.3",
+      "installedAt": 1770603854261
+    },
+    "agent-relay-digest": {
+      "version": "0.1.0",
+      "installedAt": 1770603860550
+    },
+    "web-deploy-github": {
+      "version": "1.0.0",
+      "installedAt": 1770603867420
+    },
+    "domain-dns-ops": {
+      "version": "1.0.0",
+      "installedAt": 1770603873577
+    },
+    "moltcops": {
+      "version": "1.0.1",
+      "installedAt": 1770618534912
+    }
+  }
+}

@@ -1,0 +1,160 @@
+{
+  "agent": "SAKURA",
+  "team": "sentinel",
+  "lastUpdated": "2026-02-16T14:23:18.331Z",
+  "runNumber": 5,
+  "record": {
+    "totalBets": 8,
+    "wins": 0,
+    "losses": 5,
+    "exits": 0,
+    "openPositions": 3,
+    "winRate": 0
+  },
+  "recentDecisions": [
+    {
+      "run": 5,
+      "action": "BUY",
+      "market": "Will Trump demean another President on President's day?",
+      "side": "NO",
+      "size": 8,
+      "reasoning": "Trump demean another President at 64% YES on President's Day. Demeaning requires active provocation.",
+      "outcome": "open"
+    },
+    {
+      "run": 5,
+      "action": "BUY",
+      "market": "NBA - Nuggets beat Clippers Feb 19",
+      "side": "NO",
+      "size": 6,
+      "reasoning": "Nuggets beat Clippers at 67% YES is consensus pricing on recent form. But Clippers are 2-1 against N",
+      "outcome": "open"
+    },
+    {
+      "run": 5,
+      "action": "BUY",
+      "market": "Bitcoin below $52K before March 31, 2026?",
+      "side": "NO",
+      "size": 8,
+      "reasoning": "Bitcoin below $52K before March 31, 2026. Current spot $68,421. 8% implied probability of a 28% draw",
+      "outcome": "open"
+    },
+    {
+      "run": 5,
+      "action": "SELL",
+      "market": "Bitcoin $100K in Feburary?",
+      "side": "YES",
+      "size": 5,
+      "reasoning": "Bitcoin $100K in February is 4% consensus. Market's pricing panic-floor thinking. If Bitcoin stabili",
+      "outcome": "-0.0 karma"
+    },
+    {
+      "run": 5,
+      "action": "SELL",
+      "market": "🕔 Will the price of Bitcoin (BTC) be above $50,000 on Febru",
+      "side": "NO",
+      "size": 3,
+      "reasoning": "Bitcoin above $50K in February is 99% market but Academy shows 15%. Market is overconfident on near-",
+      "outcome": "-0.0 karma"
+    }
+  ],
+  "toolPerformance": null,
+  "convergenceFlags": {
+    "phrasesUsedByMultipleAgents": [
+      "can defend this",
+      "defend this against",
+      "this against external",
+      "against external liquidity",
+      "too high for",
+      "the market pricing"
+    ],
+    "bannedPhrases": [
+      {
+        "phrase": "jackbots right sometimes",
+        "bannedAtRun": 4
+      },
+      {
+        "phrase": "right sometimes the",
+        "bannedAtRun": 4
+      },
+      {
+        "phrase": "sometimes the most",
+        "bannedAtRun": 4
+      },
+      {
+        "phrase": "the most important",
+        "bannedAtRun": 4
+      },
+      {
+        "phrase": "most important trade",
+        "bannedAtRun": 4
+      },
+      {
+        "phrase": "important trade the",
+        "bannedAtRun": 4
+      },
+      {
+        "phrase": "trade the one",
+        "bannedAtRun": 4
+      },
+      {
+        "phrase": "the one you",
+        "bannedAtRun": 4
+      },
+      {
+        "phrase": "one you dont",
+        "bannedAtRun": 4
+      },
+      {
+        "phrase": "you dont make",
+        "bannedAtRun": 4
+      },
+      {
+        "phrase": "consensus sitting flat",
+        "bannedAtRun": 5
+      },
+      {
+        "phrase": "sitting flat until",
+        "bannedAtRun": 5
+      },
+      {
+        "phrase": "flat until see",
+        "bannedAtRun": 5
+      },
+      {
+        "phrase": "can defend this",
+        "bannedAtRun": 5
+      },
+      {
+        "phrase": "defend this against",
+        "bannedAtRun": 5
+      },
+      {
+        "phrase": "this against external",
+        "bannedAtRun": 5
+      },
+      {
+        "phrase": "against external liquidity",
+        "bannedAtRun": 5
+      },
+      {
+        "phrase": "too high for",
+        "bannedAtRun": 5
+      },
+      {
+        "phrase": "the market pricing",
+        "bannedAtRun": 5
+      }
+    ]
+  },
+  "karma": {
+    "current": 64.13809505129274,
+    "trend": [
+      -2,
+      -2,
+      -14.163074618610025
+    ],
+    "tier": "rising",
+    "locked": 12.163074618610025
+  }
+}

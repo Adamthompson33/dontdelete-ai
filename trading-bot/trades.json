@@ -1,0 +1,84 @@
+{
+  "positions": [
+    {
+      "id": "ml7z7ir1",
+      "token": "DxyweigiCnEKDfjdYAcqnQZUJaABEPuqpDhpH4fME4xW",
+      "name": "renta / SOL",
+      "entryPrice": 0.0002442968237832516,
+      "entrySol": 0.038,
+      "tokenAmount": 38000000000000,
+      "entryTime": "2026-02-04T12:00:39.853Z",
+      "takeProfitPrice": 0.00036644523567487737,
+      "stopLossPrice": 0.0001710077766482761,
+      "status": "OPEN"
+    },
+    {
+      "id": "ml7z7kxb",
+      "token": "9y3D2aVZjxGEZTHAdwhRjgxRSZ7B3Tym5SGmvMZcg8gR",
+      "name": "BEAM / SOL",
+      "entryPrice": 0.004592445269766988,
+      "entrySol": 0.043,
+      "tokenAmount": 43000000000000,
+      "entryTime": "2026-02-04T12:00:42.671Z",
+      "takeProfitPrice": 0.006888667904650482,
+      "stopLossPrice": 0.0032147116888368915,
+      "status": "OPEN"
+    },
+    {
+      "id": "ml7z7vy8",
+      "token": "ECuy1H7P9hoa4BMQzppDhox64quS8MsfucnTQtNWjsRb",
+      "name": "USOR / SOL",
+      "entryPrice": 0.006782715509470213,
+      "entrySol": 0.043,
+      "tokenAmount": 43000000000000,
+      "entryTime": "2026-02-04T12:00:56.960Z",
+      "takeProfitPrice": 0.01017407326420532,
+      "stopLossPrice": 0.004747900856629149,
+      "status": "OPEN"
+    }
+  ],
+  "history": [
+    {
+      "id": "ml7z7ir1",
+      "token": "DxyweigiCnEKDfjdYAcqnQZUJaABEPuqpDhpH4fME4xW",
+      "name": "renta / SOL",
+      "entryPrice": 0.0002442968237832516,
+      "entrySol": 0.038,
+      "tokenAmount": 38000000000000,
+      "entryTime": "2026-02-04T12:00:39.853Z",
+      "takeProfitPrice": 0.00036644523567487737,
+      "stopLossPrice": 0.0001710077766482761,
+      "status": "OPEN",
+      "action": "BUY"
+    },
+    {
+      "id": "ml7z7kxb",
+      "token": "9y3D2aVZjxGEZTHAdwhRjgxRSZ7B3Tym5SGmvMZcg8gR",
+      "name": "BEAM / SOL",
+      "entryPrice": 0.004592445269766988,
+      "entrySol": 0.043,
+      "tokenAmount": 43000000000000,
+      "entryTime": "2026-02-04T12:00:42.671Z",
+      "takeProfitPrice": 0.006888667904650482,
+      "stopLossPrice": 0.0032147116888368915,
+      "status": "OPEN",
+      "action": "BUY"
+    },
+    {
+      "id": "ml7z7vy8",
+      "token": "ECuy1H7P9hoa4BMQzppDhox64quS8MsfucnTQtNWjsRb",
+      "name": "USOR / SOL",
+      "entryPrice": 0.006782715509470213,
+      "entrySol": 0.043,
+      "tokenAmount": 43000000000000,
+      "entryTime": "2026-02-04T12:00:56.960Z",
+      "takeProfitPrice": 0.01017407326420532,
+      "stopLossPrice": 0.004747900856629149,
+      "status": "OPEN",
+      "action": "BUY"
+    }
+  ],
+  "dailyPnL": 0,
+  "dailyPnLDate": "Wed Feb 04 2026",
+  "updatedAt": "2026-02-04T12:00:56.960Z"
+}

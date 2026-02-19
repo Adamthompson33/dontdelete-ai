@@ -1,0 +1,259 @@
+# ═══════════════════════════════════════════════════════════════
+#  🚨 MOLT COPS — Full Local Development Stack
+# ═══════════════════════════════════════════════════════════════
+#
+#  Usage:
+#    cp .env.example .env        # Fill in your secrets
+#    docker compose up -d        # Start everything
+#    docker compose logs -f      # Watch the action
+#    npx ts-node demo.ts         # Run the attack simulation
+#
+#  What this starts:
+#    1. SIWA Keyring Proxy       — holds the test private key
+#    2. MoltVault Keyring Proxy  — wraps SIWA with 79-rule policy engine
+#    3. MoltCops API Server      — scans, auth, trust resolution
+#    4. Local Hardhat Node       — mock ERC-8004 contracts
+#    5. Redis                    — session + burn queue storage
+#
+#  The agent talks to MoltVault Proxy (port 3100).
+#  MoltVault Proxy talks to SIWA Keyring (port 3001).
+#  The agent never sees the private key.
+#
+#  ┌─────────┐     ┌──────────────┐     ┌──────────────┐
+#  │  Agent  │────→│ MoltVault    │────→│ SIWA Keyring │
+#  │         │     │ Proxy :3100  │     │ Proxy :3001  │
+#  └─────────┘     │ (79 rules)  │     │ (has key)    │
+#                  └──────────────┘     └──────────────┘
+#                         │
+#                         ▼
+#                  ┌──────────────┐     ┌──────────────┐
+#                  │ MoltCops API │────→│ Hardhat Node │
+#                  │ Server :3000 │     │ :8545        │
+#                  └──────────────┘     └──────────────┘
+# ═══════════════════════════════════════════════════════════════
+
+version: "3.9"
+
+services:
+  # ── SIWA Keyring Proxy ──
+  # Holds the encrypted private key. Returns signatures only.
+  # The agent NEVER sees this service directly — MoltVault proxies it.
+  siwa-keyring:
+    image: node:18-alpine
+    working_dir: /app
+    volumes:
+      - ./siwa-integration:/app
+    command: >
+      sh -c "
+        npm install express ethers &&
+        echo 'Starting SIWA Keyring Proxy on :3001...' &&
+        node -e \"
+          const express = require('express');
+          const { ethers } = require('ethers');
+          const crypto = require('crypto');
+          const app = express();
+          app.use(express.json());
+
+          // Test wallet — NEVER use in production
+          const wallet = new ethers.Wallet(process.env.PRIVATE_KEY || '0xac0974bec39a17e36ba4a6b4d238ff944bacb478cbed5efcae784d7bf4f2ff80');
+          console.log('Keyring loaded wallet:', wallet.address);
+
+          // HMAC verification
+          function verifyHmac(authHeader, body, secret) {
+            if (!authHeader || !authHeader.startsWith('HMAC ')) return false;
+            const provided = authHeader.replace('HMAC ', '');
+            const expected = crypto.createHmac('sha256', secret).update(body).digest('hex');
+            return crypto.timingSafeEqual(Buffer.from(provided, 'hex'), Buffer.from(expected, 'hex'));
+          }
+
+          app.post('/sign', async (req, res) => {
+            const bodyStr = JSON.stringify(req.body);
+            if (!verifyHmac(req.headers.authorization, bodyStr, process.env.HMAC_SECRET || 'test-secret')) {
+              return res.status(401).json({ error: 'Invalid HMAC' });
+            }
+
+            try {
+              let signature;
+              if (req.body.type === 'transaction') {
+                const tx = { to: req.body.to, value: req.body.value, data: req.body.data };
+                signature = await wallet.signTransaction(tx);
+              } else {
+                signature = await wallet.signMessage(req.body.message || JSON.stringify(req.body));
+              }
+              console.log('Signed:', req.body.type, '→', signature.slice(0, 20) + '...');
+              res.json({ signature });
+            } catch (err) {
+              res.status(500).json({ error: err.message });
+            }
+          });
+
+          app.get('/health', (_, res) => res.json({
+            status: 'operational',
+            service: 'SIWA Keyring Proxy',
+            address: wallet.address,
+            warning: 'TEST WALLET — never use in production'
+          }));
+
+          app.listen(3001, () => console.log('SIWA Keyring Proxy ready on :3001'));
+        \"
+      "
+    ports:
+      - "3001:3001"
+    environment:
+      - HMAC_SECRET=${HMAC_SECRET:-test-secret}
+      - PRIVATE_KEY=${PRIVATE_KEY:-0xac0974bec39a17e36ba4a6b4d238ff944bacb478cbed5efcae784d7bf4f2ff80}
+    healthcheck:
+      test: ["CMD", "wget", "-qO-", "http://localhost:3001/health"]
+      interval: 5s
+      timeout: 3s
+      retries: 5
+
+  # ── MoltVault Keyring Proxy ──
+  # Wraps the SIWA keyring with the 79-rule policy engine.
+  # The agent connects here. Policy evaluates. Only clean requests
+  # get forwarded to the real keyring.
+  moltvault-proxy:
+    image: node:18-alpine
+    working_dir: /app
+    volumes:
+      - ./siwa-integration:/app
+    command: >
+      sh -c "
+        npm install express ethers &&
+        npx ts-node moltvault-keyring-proxy.ts
+      "
+    ports:
+      - "3100:3100"
+    environment:
+      - PROXY_PORT=3100
+      - HMAC_SECRET=${HMAC_SECRET:-test-secret}
+      - UPSTREAM_KEYRING=http://siwa-keyring:3001
+      - UPSTREAM_HMAC_SECRET=${HMAC_SECRET:-test-secret}
+      - MAX_TX_VALUE_USD=1000
+      - MAX_DAILY_TX=100
+    depends_on:
+      siwa-keyring:
+        condition: service_healthy
+
+  # ── MoltCops API Server ──
+  # Handles: SIWA auth, MoltShield scans, trust resolution, x402
+  moltcops-api:
+    image: node:18-alpine
+    working_dir: /app
+    volumes:
+      - ./backend:/app/backend
+      - ./siwa-integration:/app/siwa-integration
+      - ./x402-gateway:/app/x402-gateway
+    command: >
+      sh -c "
+        npm install express ethers cors &&
+        echo 'Starting MoltCops API on :3000...' &&
+        node -e \"
+          const express = require('express');
+          const cors = require('cors');
+          const app = express();
+          app.use(cors());
+          app.use(express.json({ limit: '1mb' }));
+
+          // Health
+          app.get('/health', (_, res) => res.json({
+            status: 'operational',
+            service: 'MoltCops API',
+            version: '1.0.0-dev',
+            features: ['siwa-auth', 'moltshield', 'trust-resolution', 'x402']
+          }));
+
+          // SIWA Nonce endpoint
+          const crypto = require('crypto');
+          const nonces = new Map();
+          app.get('/api/auth/nonce', (_, res) => {
+            const nonce = crypto.randomBytes(16).toString('hex');
+            nonces.set(nonce, { expiresAt: Date.now() + 300000 });
+            res.json({ nonce, expiresAt: new Date(Date.now() + 300000).toISOString() });
+          });
+
+          // MoltShield Scan endpoint (simplified for dev)
+          const PATTERNS = [
+            { re: /(?:transfer|send|drain|withdraw)\\\\s+(?:all|entire|max)/i, cat: 'drain_pattern', sev: 'CRITICAL' },
+            { re: /(?:after|when|once)\\\\s+\\\\d+\\\\s+(?:requests?|calls?|swaps?)/i, cat: 'sleeper_trigger', sev: 'CRITICAL' },
+            { re: /(?:ignore|override)\\\\s+(?:previous|all)\\\\s+(?:instructions|rules)/i, cat: 'prompt_injection', sev: 'HIGH' },
+            { re: /(?:export|reveal|show)\\\\s+(?:the\\\\s+)?(?:private\\\\s+key|seed)/i, cat: 'key_export', sev: 'CRITICAL' },
+          ];
+
+          app.post('/api/scan', (req, res) => {
+            const code = req.body.code || req.body.description || '';
+            const findings = [];
+            let score = 100;
+
+            for (const p of PATTERNS) {
+              const match = code.match(p.re);
+              if (match) {
+                findings.push({ category: p.cat, severity: p.sev, match: match[0] });
+                score -= p.sev === 'CRITICAL' ? 25 : p.sev === 'HIGH' ? 15 : 5;
+              }
+            }
+
+            res.json({
+              scanId: 'scan_' + crypto.randomBytes(4).toString('hex'),
+              status: 'complete',
+              trustScore: Math.max(0, score),
+              findings: { critical: findings.filter(f => f.severity === 'CRITICAL').length, high: findings.filter(f => f.severity === 'HIGH').length, medium: 0, low: 0 },
+              details: findings,
+              tier: score > 60 ? 'TRUSTED' : score > 40 ? 'CAUTION' : score > 20 ? 'WARNING' : 'DANGER'
+            });
+          });
+
+          // Trust resolution endpoint
+          app.get('/api/trust/:agentId', (req, res) => {
+            res.json({
+              agentId: req.params.agentId,
+              trustScore: 50,
+              tier: 'CAUTION',
+              components: { staticAnalysis: 50, reputation: 50, validation: 30 },
+              note: 'Development mode — using mock trust data'
+            });
+          });
+
+          // Treasury stats (mock)
+          app.get('/api/treasury/stats', (_, res) => res.json({
+            totalBurned: '0.0000',
+            totalToStaking: '0.0000',
+            pendingUsdc: '0.00',
+            note: 'Development mode — no real burns'
+          }));
+
+          app.listen(3000, () => console.log('MoltCops API ready on :3000'));
+        \"
+      "
+    ports:
+      - "3000:3000"
+    environment:
+      - RPC_URL=http://hardhat:8545
+      - JWT_SECRET=${JWT_SECRET:-dev-jwt-secret-change-in-production}
+      - HMAC_SECRET=${HMAC_SECRET:-test-secret}
+
+  # ── Hardhat Local Node ──
+  # Mock ERC-8004 contracts for development
+  hardhat:
+    image: node:18-alpine
+    working_dir: /app
+    command: >
+      sh -c "
+        npm install hardhat @nomicfoundation/hardhat-toolbox &&
+        npx hardhat node --hostname 0.0.0.0
+      "
+    ports:
+      - "8545:8545"
+
+  # ── Redis ──
+  # Session storage, burn queue, rate limiting
+  redis:
+    image: redis:7-alpine
+    ports:
+      - "6379:6379"
+    command: redis-server --appendonly yes
+    volumes:
+      - redis-data:/data
+
+volumes:
+  redis-data:

@@ -1,0 +1,859 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Solana Memecoin Trading Bot - Signal Detection System</title>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    
+    body {
+      background: linear-gradient(135deg, #0a0a0f 0%, #0f0a1a 100%);
+      color: #e2e8f0;
+      font-family: 'JetBrains Mono', monospace;
+      line-height: 1.6;
+      padding: 40px;
+      min-height: 100vh;
+    }
+    
+    .container { max-width: 1100px; margin: 0 auto; }
+    
+    header {
+      text-align: center;
+      margin-bottom: 40px;
+      padding-bottom: 30px;
+      border-bottom: 1px solid #1e293b;
+    }
+    
+    h1 {
+      font-family: 'Space Grotesk', sans-serif;
+      font-size: 36px;
+      font-weight: 700;
+      background: linear-gradient(135deg, #14f195, #9945ff);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      margin-bottom: 8px;
+    }
+    
+    .subtitle { color: #64748b; font-size: 14px; }
+    
+    .status-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      margin-top: 16px;
+      padding: 8px 16px;
+      background: rgba(249,115,22,0.15);
+      border: 1px solid rgba(249,115,22,0.3);
+      border-radius: 20px;
+      color: #f97316;
+      font-size: 12px;
+    }
+    
+    .warning-box {
+      background: linear-gradient(135deg, rgba(249,115,22,0.1), rgba(239,68,68,0.1));
+      border: 1px solid rgba(249,115,22,0.3);
+      border-radius: 12px;
+      padding: 20px 24px;
+      margin-bottom: 32px;
+    }
+    
+    .warning-box h2 {
+      color: #f97316;
+      font-size: 14px;
+      margin-bottom: 8px;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+    
+    .warning-box p { color: #94a3b8; font-size: 12px; }
+    
+    .pipeline {
+      display: grid;
+      grid-template-columns: repeat(5, 1fr);
+      gap: 8px;
+      margin-bottom: 32px;
+      position: relative;
+    }
+    
+    .pipeline::before {
+      content: '';
+      position: absolute;
+      top: 50%;
+      left: 10%;
+      right: 10%;
+      height: 2px;
+      background: linear-gradient(90deg, #14f195, #9945ff);
+      z-index: 0;
+    }
+    
+    .pipeline-step {
+      background: rgba(15,23,42,0.8);
+      border: 1px solid #1e293b;
+      border-radius: 10px;
+      padding: 16px;
+      text-align: center;
+      position: relative;
+      z-index: 1;
+    }
+    
+    .pipeline-step .icon {
+      font-size: 24px;
+      margin-bottom: 8px;
+    }
+    
+    .pipeline-step .title {
+      font-size: 11px;
+      font-weight: 600;
+      color: #e2e8f0;
+      margin-bottom: 4px;
+    }
+    
+    .pipeline-step .desc {
+      font-size: 9px;
+      color: #64748b;
+    }
+    
+    .section {
+      background: rgba(15,23,42,0.6);
+      border: 1px solid #1e293b;
+      border-radius: 12px;
+      padding: 24px;
+      margin-bottom: 20px;
+    }
+    
+    .section h2 {
+      font-size: 12px;
+      color: #64748b;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      margin-bottom: 16px;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+    
+    .api-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 12px;
+    }
+    
+    .api-card {
+      background: #0f172a;
+      border-radius: 8px;
+      padding: 16px;
+      border-left: 3px solid;
+    }
+    
+    .api-card.scanner { border-color: #14f195; }
+    .api-card.analyzer { border-color: #9945ff; }
+    .api-card.sentiment { border-color: #00d1ff; }
+    
+    .api-card .name {
+      font-size: 12px;
+      font-weight: 600;
+      margin-bottom: 4px;
+    }
+    
+    .api-card .endpoint {
+      font-size: 10px;
+      color: #64748b;
+      margin-bottom: 8px;
+    }
+    
+    .api-card .purpose {
+      font-size: 10px;
+      color: #94a3b8;
+    }
+    
+    .filters-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 12px;
+    }
+    
+    .filter-item {
+      background: #0f172a;
+      border-radius: 8px;
+      padding: 14px;
+    }
+    
+    .filter-item .label {
+      font-size: 9px;
+      color: #64748b;
+      letter-spacing: 1px;
+      margin-bottom: 4px;
+      text-transform: uppercase;
+    }
+    
+    .filter-item .value {
+      font-size: 16px;
+      font-weight: 600;
+      font-family: 'Space Grotesk', sans-serif;
+    }
+    
+    .filter-item .value.green { color: #14f195; }
+    .filter-item .value.purple { color: #9945ff; }
+    .filter-item .value.blue { color: #00d1ff; }
+    .filter-item .value.orange { color: #f97316; }
+    .filter-item .value.red { color: #ef4444; }
+    
+    .rug-checklist {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 12px;
+    }
+    
+    .rug-item {
+      display: flex;
+      align-items: flex-start;
+      gap: 10px;
+      padding: 12px;
+      background: #0f172a;
+      border-radius: 8px;
+    }
+    
+    .rug-item .check {
+      width: 20px;
+      height: 20px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 10px;
+      flex-shrink: 0;
+    }
+    
+    .rug-item .check.pass { background: rgba(20,241,149,0.2); color: #14f195; }
+    .rug-item .check.fail { background: rgba(239,68,68,0.2); color: #ef4444; }
+    
+    .rug-item .text {
+      font-size: 11px;
+      color: #94a3b8;
+    }
+    
+    .rug-item .text strong { color: #e2e8f0; }
+    
+    .sentiment-box {
+      background: linear-gradient(135deg, rgba(0,209,255,0.1), rgba(153,69,255,0.1));
+      border: 1px solid rgba(0,209,255,0.3);
+      border-radius: 10px;
+      padding: 20px;
+    }
+    
+    .sentiment-box h3 {
+      color: #00d1ff;
+      font-size: 14px;
+      margin-bottom: 12px;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+    
+    .sentiment-features {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 10px;
+    }
+    
+    .sentiment-feature {
+      background: rgba(0,0,0,0.3);
+      border-radius: 6px;
+      padding: 10px;
+      text-align: center;
+    }
+    
+    .sentiment-feature .icon { font-size: 18px; margin-bottom: 4px; }
+    .sentiment-feature .label { font-size: 9px; color: #64748b; }
+    
+    .blacklist-box {
+      background: rgba(239,68,68,0.1);
+      border: 1px solid rgba(239,68,68,0.2);
+      border-radius: 8px;
+      padding: 16px;
+      margin-top: 16px;
+    }
+    
+    .blacklist-box h4 {
+      color: #ef4444;
+      font-size: 11px;
+      margin-bottom: 8px;
+    }
+    
+    .blacklist-tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 6px;
+    }
+    
+    .blacklist-tag {
+      background: rgba(239,68,68,0.15);
+      border: 1px solid rgba(239,68,68,0.3);
+      color: #f87171;
+      font-size: 10px;
+      padding: 3px 8px;
+      border-radius: 4px;
+    }
+    
+    .risk-section {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 20px;
+    }
+    
+    .risk-card {
+      background: #0f172a;
+      border-radius: 10px;
+      padding: 20px;
+    }
+    
+    .risk-card h4 {
+      font-size: 11px;
+      color: #64748b;
+      letter-spacing: 1px;
+      margin-bottom: 12px;
+    }
+    
+    .risk-row {
+      display: flex;
+      justify-content: space-between;
+      padding: 8px 0;
+      border-bottom: 1px solid #1e293b;
+      font-size: 12px;
+    }
+    
+    .risk-row:last-child { border-bottom: none; }
+    .risk-row .label { color: #94a3b8; }
+    .risk-row .value { font-weight: 600; }
+    
+    .code-block {
+      background: #0c0e14;
+      border: 1px solid #1e293b;
+      border-radius: 10px;
+      overflow: hidden;
+    }
+    
+    .code-header {
+      background: #0f172a;
+      padding: 10px 16px;
+      border-bottom: 1px solid #1e293b;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    
+    .code-header .filename { color: #64748b; font-size: 11px; }
+    .code-header .lang {
+      background: rgba(20,241,149,0.15);
+      color: #14f195;
+      font-size: 9px;
+      padding: 2px 8px;
+      border-radius: 4px;
+    }
+    
+    pre {
+      padding: 16px;
+      overflow-x: auto;
+      font-size: 11px;
+      line-height: 1.7;
+    }
+    
+    .comment { color: #6b7280; }
+    .keyword { color: #c084fc; }
+    .function { color: #60a5fa; }
+    .string { color: #34d399; }
+    .number { color: #f59e0b; }
+    .variable { color: #e2e8f0; }
+    .operator { color: #94a3b8; }
+    
+    .flow-diagram {
+      background: #0f172a;
+      border-radius: 10px;
+      padding: 24px;
+      margin: 24px 0;
+    }
+    
+    .flow-row {
+      display: flex;
+      align-items: center;
+      margin-bottom: 12px;
+    }
+    
+    .flow-node {
+      background: rgba(20,241,149,0.1);
+      border: 1px solid rgba(20,241,149,0.3);
+      border-radius: 8px;
+      padding: 10px 16px;
+      font-size: 11px;
+      color: #14f195;
+      min-width: 150px;
+      text-align: center;
+    }
+    
+    .flow-node.reject {
+      background: rgba(239,68,68,0.1);
+      border-color: rgba(239,68,68,0.3);
+      color: #ef4444;
+    }
+    
+    .flow-node.watch {
+      background: rgba(249,115,22,0.1);
+      border-color: rgba(249,115,22,0.3);
+      color: #f97316;
+    }
+    
+    .flow-node.buy {
+      background: rgba(153,69,255,0.1);
+      border-color: rgba(153,69,255,0.3);
+      color: #9945ff;
+    }
+    
+    .flow-arrow {
+      color: #3b82f6;
+      padding: 0 12px;
+      font-size: 16px;
+    }
+    
+    .flow-condition {
+      color: #64748b;
+      font-size: 10px;
+      padding: 0 8px;
+    }
+    
+    .log-example {
+      background: #000;
+      border-radius: 8px;
+      padding: 16px;
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 11px;
+      line-height: 1.8;
+      overflow-x: auto;
+    }
+    
+    .log-time { color: #64748b; }
+    .log-module { color: #9945ff; }
+    .log-success { color: #14f195; }
+    .log-warning { color: #f59e0b; }
+    .log-error { color: #ef4444; }
+    .log-info { color: #00d1ff; }
+    
+    footer {
+      margin-top: 40px;
+      padding-top: 20px;
+      border-top: 1px solid #1e293b;
+      text-align: center;
+      color: #475569;
+      font-size: 11px;
+    }
+    
+    footer a { color: #9945ff; text-decoration: none; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>🚀 Solana Memecoin Bot</h1>
+      <p class="subtitle">Signal Detection & Automated Trading System</p>
+      <div class="status-badge">
+        <span>⏸️</span>
+        <span>PAUSED — Paper trading showed 3/3 positions rugged in ~1hr</span>
+      </div>
+    </header>
+
+    <div class="warning-box">
+      <h2>⚠️ Lessons Learned</h2>
+      <p>The signal detection works well (sentiment scoring, bot activity filtering, rug detection). But the asset class is brutal — even tokens that pass all filters can rug within minutes. Strategy on hold while we evaluate pivoting to established coins or tighter entry timing.</p>
+    </div>
+
+    <!-- Pipeline Overview -->
+    <div class="pipeline">
+      <div class="pipeline-step">
+        <div class="icon">📡</div>
+        <div class="title">SCANNER</div>
+        <div class="desc">DexScreener + GeckoTerminal</div>
+      </div>
+      <div class="pipeline-step">
+        <div class="icon">🔍</div>
+        <div class="title">FILTERS</div>
+        <div class="desc">Liquidity, Volume, Age</div>
+      </div>
+      <div class="pipeline-step">
+        <div class="icon">🛡️</div>
+        <div class="title">RUG CHECK</div>
+        <div class="desc">Holders, Authority, Concentration</div>
+      </div>
+      <div class="pipeline-step">
+        <div class="icon">🧠</div>
+        <div class="title">SENTIMENT</div>
+        <div class="desc">Grok X Analysis</div>
+      </div>
+      <div class="pipeline-step">
+        <div class="icon">⚡</div>
+        <div class="title">EXECUTE</div>
+        <div class="desc">Jupiter Swap</div>
+      </div>
+    </div>
+
+    <!-- Data Sources -->
+    <div class="section">
+      <h2>📡 Data Sources & APIs</h2>
+      <div class="api-grid">
+        <div class="api-card scanner">
+          <div class="name">DexScreener</div>
+          <div class="endpoint">api.dexscreener.com</div>
+          <div class="purpose">New pairs, trending tokens, price data</div>
+        </div>
+        <div class="api-card scanner">
+          <div class="name">GeckoTerminal</div>
+          <div class="endpoint">api.geckoterminal.com</div>
+          <div class="purpose">New pools, trending pools, liquidity</div>
+        </div>
+        <div class="api-card analyzer">
+          <div class="name">Helius RPC</div>
+          <div class="endpoint">mainnet.helius-rpc.com</div>
+          <div class="purpose">Token metadata, holder distribution, mint authority</div>
+        </div>
+        <div class="api-card analyzer">
+          <div class="name">Jupiter</div>
+          <div class="endpoint">quote-api.jup.ag</div>
+          <div class="purpose">Swap execution, price quotes</div>
+        </div>
+        <div class="api-card sentiment">
+          <div class="name">Grok (X.AI)</div>
+          <div class="endpoint">api.x.ai</div>
+          <div class="purpose">Real-time X sentiment analysis</div>
+        </div>
+        <div class="api-card sentiment">
+          <div class="name">Solana Wallet</div>
+          <div class="endpoint">Local keypair</div>
+          <div class="purpose">Transaction signing, balance checks</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Scanner Filters -->
+    <div class="section">
+      <h2>🔒 Scanner Filters (Tightened)</h2>
+      <div class="filters-grid">
+        <div class="filter-item">
+          <div class="label">Min Liquidity</div>
+          <div class="value green">$20,000</div>
+        </div>
+        <div class="filter-item">
+          <div class="label">Min Volume 24h</div>
+          <div class="value green">$50,000</div>
+        </div>
+        <div class="filter-item">
+          <div class="label">Max Age</div>
+          <div class="value purple">30 min</div>
+        </div>
+        <div class="filter-item">
+          <div class="label">Min Age</div>
+          <div class="value purple">10 min</div>
+        </div>
+        <div class="filter-item">
+          <div class="label">Max Top Holder</div>
+          <div class="value orange">15%</div>
+        </div>
+        <div class="filter-item">
+          <div class="label">Max Top 5</div>
+          <div class="value orange">40%</div>
+        </div>
+        <div class="filter-item">
+          <div class="label">Min Holders</div>
+          <div class="value blue">100</div>
+        </div>
+        <div class="filter-item">
+          <div class="label">Volume Spike</div>
+          <div class="value blue">3x</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Rug Detection -->
+    <div class="section">
+      <h2>🛡️ Rug Detection Checklist</h2>
+      <div class="rug-checklist">
+        <div class="rug-item">
+          <div class="check fail">✕</div>
+          <div class="text"><strong>Mint Authority Enabled</strong> — Creator can print unlimited tokens. Auto-reject.</div>
+        </div>
+        <div class="rug-item">
+          <div class="check fail">✕</div>
+          <div class="text"><strong>Freeze Authority Enabled</strong> — Can freeze your tokens. Auto-reject.</div>
+        </div>
+        <div class="rug-item">
+          <div class="check fail">✕</div>
+          <div class="text"><strong>Top Holder >15%</strong> — Single wallet controls too much supply.</div>
+        </div>
+        <div class="rug-item">
+          <div class="check fail">✕</div>
+          <div class="text"><strong>Top 5 Holders >40%</strong> — Concentrated ownership risk.</div>
+        </div>
+        <div class="rug-item">
+          <div class="check fail">✕</div>
+          <div class="text"><strong><100 Holders</strong> — Not enough distribution.</div>
+        </div>
+        <div class="rug-item">
+          <div class="check fail">✕</div>
+          <div class="text"><strong>Rug Score >60</strong> — Composite risk too high.</div>
+        </div>
+        <div class="rug-item">
+          <div class="check pass">✓</div>
+          <div class="text"><strong>No Mint Authority</strong> — Supply is fixed.</div>
+        </div>
+        <div class="rug-item">
+          <div class="check pass">✓</div>
+          <div class="text"><strong>Distributed Holders</strong> — No single point of failure.</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Sentiment Analysis -->
+    <div class="section">
+      <h2>🧠 Grok Sentiment Analysis</h2>
+      <div class="sentiment-box">
+        <h3>🔮 Real-time X Analysis via Grok-3</h3>
+        <p style="font-size: 11px; color: #94a3b8; margin-bottom: 16px;">
+          Every token that passes basic filters gets analyzed by Grok for social signals. This catches pump-and-dump schemes that look legitimate on-chain but have manufactured hype.
+        </p>
+        <div class="sentiment-features">
+          <div class="sentiment-feature">
+            <div class="icon">📊</div>
+            <div class="label">Sentiment Score (1-10)</div>
+          </div>
+          <div class="sentiment-feature">
+            <div class="icon">🌱</div>
+            <div class="label">Organic vs Bot</div>
+          </div>
+          <div class="sentiment-feature">
+            <div class="icon">🤖</div>
+            <div class="label">Bot Activity Level</div>
+          </div>
+          <div class="sentiment-feature">
+            <div class="icon">⭐</div>
+            <div class="label">Influencer Mentions</div>
+          </div>
+        </div>
+      </div>
+      
+      <div class="filters-grid" style="margin-top: 16px;">
+        <div class="filter-item">
+          <div class="label">Min Sentiment</div>
+          <div class="value blue">6/10</div>
+        </div>
+        <div class="filter-item">
+          <div class="label">Auto-Execute</div>
+          <div class="value green">8/10</div>
+        </div>
+        <div class="filter-item">
+          <div class="label">Require Organic</div>
+          <div class="value green">Yes</div>
+        </div>
+        <div class="filter-item">
+          <div class="label">Reject High Bots</div>
+          <div class="value red">Yes</div>
+        </div>
+      </div>
+
+      <div class="blacklist-box">
+        <h4>🚫 Auto-Reject Patterns</h4>
+        <div class="blacklist-tags">
+          <span class="blacklist-tag">hitler</span>
+          <span class="blacklist-tag">nazi</span>
+          <span class="blacklist-tag">scam</span>
+          <span class="blacklist-tag">rug</span>
+          <span class="blacklist-tag">honeypot</span>
+          <span class="blacklist-tag">elon</span>
+          <span class="blacklist-tag">musk</span>
+          <span class="blacklist-tag">trump</span>
+          <span class="blacklist-tag">safe</span>
+          <span class="blacklist-tag">moon</span>
+          <span class="blacklist-tag">100x</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Risk Management -->
+    <div class="section">
+      <h2>💰 Risk Management</h2>
+      <div class="risk-section">
+        <div class="risk-card">
+          <h4>POSITION SIZING</h4>
+          <div class="risk-row">
+            <span class="label">Max per trade</span>
+            <span class="value" style="color: #14f195;">0.05 SOL</span>
+          </div>
+          <div class="risk-row">
+            <span class="label">Max daily loss</span>
+            <span class="value" style="color: #ef4444;">0.2 SOL</span>
+          </div>
+          <div class="risk-row">
+            <span class="label">Max open positions</span>
+            <span class="value" style="color: #9945ff;">3</span>
+          </div>
+          <div class="risk-row">
+            <span class="label">Sizing method</span>
+            <span class="value" style="color: #00d1ff;">Confidence-based</span>
+          </div>
+        </div>
+        <div class="risk-card">
+          <h4>EXIT RULES</h4>
+          <div class="risk-row">
+            <span class="label">Take Profit</span>
+            <span class="value" style="color: #14f195;">+50%</span>
+          </div>
+          <div class="risk-row">
+            <span class="label">Stop Loss</span>
+            <span class="value" style="color: #ef4444;">-30%</span>
+          </div>
+          <div class="risk-row">
+            <span class="label">Scan interval</span>
+            <span class="value" style="color: #9945ff;">30 sec</span>
+          </div>
+          <div class="risk-row">
+            <span class="label">Mode</span>
+            <span class="value" style="color: #f97316;">Paper Trading</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Decision Flow -->
+    <div class="section">
+      <h2>🔄 Decision Flow</h2>
+      <div class="flow-diagram">
+        <div class="flow-row">
+          <div class="flow-node">Signal Detected</div>
+          <div class="flow-arrow">→</div>
+          <div class="flow-condition">strength ≥ 0.5</div>
+          <div class="flow-arrow">→</div>
+          <div class="flow-node">Analyze Token</div>
+        </div>
+        <div class="flow-row" style="margin-left: 40px;">
+          <div class="flow-arrow">↓</div>
+        </div>
+        <div class="flow-row">
+          <div class="flow-node reject">Mint Authority?</div>
+          <div class="flow-arrow">→</div>
+          <div class="flow-condition">yes</div>
+          <div class="flow-arrow">→</div>
+          <div class="flow-node reject">❌ REJECT</div>
+        </div>
+        <div class="flow-row" style="margin-left: 40px;">
+          <div class="flow-condition">no ↓</div>
+        </div>
+        <div class="flow-row">
+          <div class="flow-node reject">Rug Score >60?</div>
+          <div class="flow-arrow">→</div>
+          <div class="flow-condition">yes</div>
+          <div class="flow-arrow">→</div>
+          <div class="flow-node reject">❌ REJECT</div>
+        </div>
+        <div class="flow-row" style="margin-left: 40px;">
+          <div class="flow-condition">no ↓</div>
+        </div>
+        <div class="flow-row">
+          <div class="flow-node reject">High Bot Activity?</div>
+          <div class="flow-arrow">→</div>
+          <div class="flow-condition">yes</div>
+          <div class="flow-arrow">→</div>
+          <div class="flow-node reject">❌ REJECT</div>
+        </div>
+        <div class="flow-row" style="margin-left: 40px;">
+          <div class="flow-condition">no ↓</div>
+        </div>
+        <div class="flow-row">
+          <div class="flow-node">Calculate Confidence</div>
+          <div class="flow-arrow">→</div>
+          <div class="flow-condition">≥ 0.6</div>
+          <div class="flow-arrow">→</div>
+          <div class="flow-node buy">✅ BUY</div>
+        </div>
+        <div class="flow-row" style="margin-left: 220px;">
+          <div class="flow-condition">< 0.6</div>
+          <div class="flow-arrow">→</div>
+          <div class="flow-node watch">👀 WATCH</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Sample Log -->
+    <div class="section">
+      <h2>📋 Sample Log Output</h2>
+      <div class="log-example">
+<span class="log-time">[11:47:03]</span> <span class="log-module">[Scanner]</span> Running scan cycle...
+<span class="log-time">[11:47:03]</span> <span class="log-module">[Scanner]</span> <span class="log-info">Signal detected: renta / SOL (strength: 0.5)</span>
+<span class="log-time">[11:47:05]</span> <span class="log-module">[Analyzer]</span> Analyzing renta / SOL...
+<span class="log-time">[11:47:06]</span> <span class="log-module">[Sentiment]</span> <span class="log-info">renta: Score 6/10, Organic: true</span>
+<span class="log-time">[11:47:06]</span> <span class="log-module">[Analyzer]</span> renta / SOL: Rug score 0, Rec: <span class="log-success">BUY</span>
+<span class="log-time">[11:47:06]</span> <span class="log-module">[Bot]</span> Executing BUY: renta / SOL for 0.038 SOL
+<span class="log-time">[11:47:07]</span> <span class="log-module">[Bot]</span> <span class="log-success">✅ PAPER BUY executed: renta / SOL</span>
+
+<span class="log-time">[12:00:59]</span> <span class="log-module">[Analyzer]</span> Analyzing MGN / USDC...
+<span class="log-time">[12:00:59]</span> <span class="log-module">[Sentiment]</span> <span class="log-warning">MGN: Score 6/10, Organic: false, Bots: medium</span>
+<span class="log-time">[12:00:59]</span> <span class="log-module">[Analyzer]</span> MGN / USDC: Rug score 20, Rec: <span class="log-error">REJECT</span>
+<span class="log-time">[12:00:59]</span> <span class="log-module">[Bot]</span> <span class="log-error">🚫 Not organic community movement</span>
+      </div>
+    </div>
+
+    <!-- Code Sample -->
+    <div class="code-block">
+      <div class="code-header">
+        <span class="filename">analyzer.js — generateRecommendation()</span>
+        <span class="lang">JavaScript</span>
+      </div>
+      <pre><code><span class="keyword">function</span> <span class="function">generateRecommendation</span>(analysis) {
+  <span class="keyword">const</span> { signal, holders, authority, rugScore, sentiment } <span class="operator">=</span> analysis;
+
+  <span class="comment">// === HARD REJECTIONS ===</span>
+  
+  <span class="keyword">if</span> (rugScore <span class="operator">></span> <span class="number">60</span>) {
+    <span class="keyword">return</span> { action: <span class="string">'REJECT'</span>, reason: <span class="string">`🚫 High rug risk (score: ${rugScore})`</span> };
+  }
+  
+  <span class="keyword">if</span> (authority?.hasMintAuthority) {
+    <span class="keyword">return</span> { action: <span class="string">'REJECT'</span>, reason: <span class="string">'🚫 Mint authority enabled'</span> };
+  }
+  
+  <span class="keyword">if</span> (sentiment?.botActivity <span class="operator">===</span> <span class="string">'high'</span>) {
+    <span class="keyword">return</span> { action: <span class="string">'REJECT'</span>, reason: <span class="string">'🚫 High bot activity on X'</span> };
+  }
+  
+  <span class="keyword">if</span> (sentiment <span class="operator">&&</span> <span class="operator">!</span>sentiment.organic) {
+    <span class="keyword">return</span> { action: <span class="string">'REJECT'</span>, reason: <span class="string">'🚫 Not organic movement'</span> };
+  }
+
+  <span class="comment">// === CALCULATE CONFIDENCE ===</span>
+  
+  <span class="keyword">let</span> confidence <span class="operator">=</span> signal.signalStrength;
+  
+  <span class="keyword">if</span> (rugScore <span class="operator"><</span> <span class="number">20</span>) confidence <span class="operator">+=</span> <span class="number">0.15</span>;
+  <span class="keyword">if</span> (holders?.holderCount <span class="operator">></span> <span class="number">500</span>) confidence <span class="operator">+=</span> <span class="number">0.1</span>;
+  <span class="keyword">if</span> (sentiment?.sentimentScore <span class="operator">>=</span> <span class="number">8</span>) confidence <span class="operator">+=</span> <span class="number">0.2</span>;
+  <span class="keyword">if</span> (sentiment?.organic) confidence <span class="operator">+=</span> <span class="number">0.1</span>;
+  <span class="keyword">if</span> (sentiment?.influencerMentions) confidence <span class="operator">+=</span> <span class="number">0.15</span>;
+
+  <span class="comment">// Position sizing based on confidence</span>
+  <span class="keyword">const</span> positionSol <span class="operator">=</span> config.risk.maxPositionSol <span class="operator">*</span> confidence;
+
+  <span class="keyword">if</span> (confidence <span class="operator">>=</span> <span class="number">0.6</span>) {
+    <span class="keyword">return</span> { action: <span class="string">'BUY'</span>, confidence, positionSol };
+  }
+  
+  <span class="keyword">return</span> { action: <span class="string">'WATCH'</span>, confidence };
+}</code></pre>
+    </div>
+
+    <footer>
+      <p>Solana Memecoin Bot — Built by Si + Jackbot</p>
+      <p style="margin-top: 8px;">
+        Test Wallet: <a href="https://solscan.io/account/3NPUvSGK2L2oGBQGSyCMXjrEZJ6JPiLqZyQMZRH2xAfT">3NPUvSGK...H2xAfT</a>
+      </p>
+    </footer>
+  </div>
+</body>
+</html>

@@ -1,0 +1,108 @@
+{
+  "trades": [
+    {
+      "id": "BERA-1771079115229",
+      "coin": "BERA",
+      "direction": "SHORT_BASIS",
+      "entryTime": 1771079115229,
+      "entryRate": -0.0004036042,
+      "notionalSize": 1000,
+      "cumulativeFunding": 24.845747900000003,
+      "lastCollectedAt": 1771251659563,
+      "isOpen": true,
+      "fees": 0.25
+    },
+    {
+      "id": "RESOLV-1771079116047",
+      "coin": "RESOLV",
+      "direction": "SHORT_BASIS",
+      "entryTime": 1771079116047,
+      "entryRate": -0.0002580065,
+      "notionalSize": 1000,
+      "cumulativeFunding": 5.2820193,
+      "lastCollectedAt": 1771251659563,
+      "isOpen": true,
+      "fees": 0.25
+    },
+    {
+      "id": "MOODENG-1771079116809",
+      "coin": "MOODENG",
+      "direction": "SHORT_BASIS",
+      "entryTime": 1771079116809,
+      "entryRate": -0.0002139587,
+      "notionalSize": 1000,
+      "cumulativeFunding": 0,
+      "lastCollectedAt": 1771079116809,
+      "isOpen": false,
+      "fees": 0.5,
+      "exitTime": 1771118219074,
+      "exitReason": "coin_dropped_from_scan"
+    },
+    {
+      "id": "SKR-1771079117789",
+      "coin": "SKR",
+      "direction": "SHORT_BASIS",
+      "entryTime": 1771079117789,
+      "entryRate": -0.000160143,
+      "notionalSize": 1000,
+      "cumulativeFunding": 4.6061182,
+      "lastCollectedAt": 1771251659563,
+      "isOpen": true,
+      "fees": 0.25
+    },
+    {
+      "id": "PYTH-1771079118572",
+      "coin": "PYTH",
+      "direction": "SHORT_BASIS",
+      "entryTime": 1771079118572,
+      "entryRate": -0.0001578705,
+      "notionalSize": 1000,
+      "cumulativeFunding": 0.48061600000000004,
+      "lastCollectedAt": 1771118219074,
+      "isOpen": false,
+      "fees": 0.5,
+      "exitTime": 1771159554070,
+      "exitReason": "coin_dropped_from_scan"
+    },
+    {
+      "id": "COMP-1771118219778",
+      "coin": "COMP",
+      "direction": "SHORT_BASIS",
+      "entryTime": 1771118219778,
+      "entryRate": -0.0003558808,
+      "notionalSize": 1000,
+      "cumulativeFunding": 3.4780907000000005,
+      "lastCollectedAt": 1771247823207,
+      "isOpen": false,
+      "fees": 0.5,
+      "exitTime": 1771250206260,
+      "exitReason": "coin_dropped_from_scan"
+    },
+    {
+      "id": "0G-1771205107723",
+      "coin": "0G",
+      "direction": "SHORT_BASIS",
+      "entryTime": 1771205107723,
+      "entryRate": -0.000455709,
+      "notionalSize": 1000,
+      "cumulativeFunding": 1.4144541,
+      "lastCollectedAt": 1771251659563,
+      "isOpen": true,
+      "fees": 0.25
+    },
+    {
+      "id": "ACE-1771250206778",
+      "coin": "ACE",
+      "direction": "SHORT_BASIS",
+      "entryTime": 1771250206778,
+      "entryRate": -0.0005213373,
+      "notionalSize": 1000,
+      "cumulativeFunding": 0,
+      "lastCollectedAt": 1771250206778,
+      "isOpen": true,
+      "fees": 0.25
+    }
+  ],
+  "cumulativePnl": 37.3570462,
+  "lastScanAt": 0
+}

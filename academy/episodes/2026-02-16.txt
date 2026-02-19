@@ -1,0 +1,190 @@
+═══════════════════════════════════════════════════
+  THE ACADEMY — DAILY EPISODE (2026-02-16)
+  Time: 17/02/2026, 1:20:43 am
+═══════════════════════════════════════════════════
+
+─── PHASE 1: Resolution Check ───
+
+📊 OPEN: "Will there be 5 or more scorigamis in the 2025-2026 NFL..." 4% (1 pos)
+📊 OPEN: "Bitcoin $95K in Feburary?..." 3% (6 pos)
+📊 OPEN: "Will Trump finish his second term?..." 76% (2 pos)
+📊 OPEN: "Will the AI bubble pop in 2026?..." 19% (6 pos)
+📊 OPEN: "BEAST THE ODD$ CHAMPIONSHIP. ROMY vs. BEAST (Muntradamu..." 41% (1 pos)
+📊 OPEN: "Bitcoin below $55K in 2026?..." 61% (2 pos)
+📊 OPEN: "Bitcoin below $60K in 2026?..." 78% (3 pos)
+📊 OPEN: "Will Bitcoin Outperform Altcoins in 2026?..." 61% (2 pos)
+📊 OPEN: "Will Donald Trump be impeached during his second term?..." 62% (3 pos)
+📊 OPEN: "In early 2028, will an AI be able to generate a full hi..." 30% (2 pos)
+📊 OPEN: "AI bypass coding entirely by EOY 2027?..." 5% (4 pos)
+📊 OPEN: "Will OpenAI release a model named GPT 5.3 by the end of..." 34% (1 pos)
+📊 OPEN: "Bitcoin $100K in Feburary?..." 2% (2 pos)
+📊 OPEN: "Bitcoin $130K in 2026?..." 20% (2 pos)
+📊 OPEN: "NBA - Celtics beat Warriors Feb 19..." 73% (0 pos)
+📊 OPEN: "NBA - Nuggets beat Clippers Feb 19..." 67% (1 pos)
+📊 OPEN: "NBA - Hawks beat 76ers Feb 19..." 38% (1 pos)
+📊 OPEN: "Will MARVIN token (Solana) reach 10K market cap by Feb ..." 7% (0 pos)
+📊 OPEN: "Bitcoin below $52K before March 31, 2026?..." 8% (1 pos)
+📊 OPEN: "Will Trump demean another President on President's day?..." 64% (1 pos)
+
+Settled: 0 | Still open: 20
+
+⚠️ JACKBOT: -1 karma (inactivity decay — only 1 open position)
+⚠️ SAKURA: -2 karma (inactivity decay — no open positions)
+⚠️ WREN: -2 karma (inactivity decay — no open positions)
+⚠️ REI: -2 karma (inactivity decay — no open positions)
+⚠️ JINX: -2 karma (inactivity decay — no open positions)
+─── PHASE 2: Helena Sets the Stage ───
+
+  ✅ New market: "Will Trump and Mamdani openly feud before February 21?"
+  ✅ New market: "Trump pardons or commutes Ghislaine Maxwell?"
+
+  Helena: 22 markets, WREN leads, PROPHET trails
+
+
+--- PHASE 3: Signal Harvest ---
+
+  Signals collected: 6
+  Active tools: sakura, rei, wren, jinx
+
+═══════════════════════════════════════════════════════
+  SIGNAL BOARD -- Episode 5 -- 2026-02-16
+═══════════════════════════════════════════════════════
+
+[LIVE MARKET DATA — 2026-02-16T14:21 UTC]
+  BTC: $68,421
+  ETH: $1,966.72
+  ⚠️ Use these prices for ALL crypto analysis. Do NOT estimate or assume prices.
+
+[SAKURA -- arb-scanner -- Confidence: 85%]
+  "Bitcoin bounded violation: P(above $500000) > P(above $200000) (47.2pp edge, high confidence)"
+  Direction: ARB
+  Relevant markets: RylOpNQu, ARDYUYcv
+
+[REI -- funding-scanner -- Confidence: 85%]
+  "VVV: -271.5% APR (SHORT_BASIS). Paper P&L: $37.36 across 5 open trades."
+  Direction: BEARISH
+
+[WREN -- kelly-engine -- Confidence: 80%]
+  "Desk avg heat: 12%. Hot agents: PROPHET. Max position cluster: 4."
+
+[JINX -- factor-model -- Confidence: 70%]
+  "AUDIT ALERT: WREN Predictions (KILL). 0/6 strategies healthy. Correlation: HIGH correlation (64%). Multiple agents betting same themes. A single event could hit everyone simultaneously.."
+
+[JACKBOT -- temporal-edge -- Confidence: 0%]
+  "[NOT YET BUILT] Temporal Edge Bot pending development."
+
+[PROPHET -- ultra-think-ufc -- Confidence: 0%]
+  "[NOT YET BUILT] Ultra Think UFC pending development."
+
+═══════════════════════════════════════════════════════
+
+
+─── PHASE 4.1: Round 1 of 2 ───
+
+
+─── PHASE 4.2: Round 2 of 2 ───
+
+
+--- Citation Analysis ---
+
+  Isolated (no tool refs): JACKBOT, SAKURA, PROPHET, WREN, REI
+  0 JACKBOT: [GRACE PERIOD] cited 0 tools, 0 disagreements (logged, no karma applied)
+  0 SAKURA: [GRACE PERIOD] cited 0 tools, 0 disagreements (logged, no karma applied)
+  0 PROPHET: [GRACE PERIOD] cited 0 tools, 0 disagreements (logged, no karma applied)
+  0 WREN: [GRACE PERIOD] cited 0 tools, 0 disagreements (logged, no karma applied)
+  0 REI: [GRACE PERIOD] cited 0 tools, 0 disagreements (logged, no karma applied)
+
+════════════════════════════════════════════════════════════
+  CONTENT DUMP — Ready to post
+════════════════════════════════════════════════════════════
+
+📊 Will Trump and Mamdani openly feud before February 21?
+   14% | YES: 0 / NO: 14 karma
+   🔴 WREN: NO 14
+
+📊 Will Trump demean another President on President's day?
+   64% | YES: 0 / NO: 8 karma
+   🔴 SAKURA: NO 8
+
+📊 Bitcoin below $52K before March 31, 2026?
+   8% | YES: 0 / NO: 18 karma
+   🔴 PROPHET: NO 10
+   🔴 SAKURA: NO 8
+
+📊 NBA - Hawks beat 76ers Feb 19
+   38% | YES: 0 / NO: 12 karma
+   🔴 PROPHET: NO 12
+
+📊 NBA - Nuggets beat Clippers Feb 19
+   67% | YES: 0 / NO: 6 karma
+   🔴 SAKURA: NO 6
+
+📊 Bitcoin $100K in Feburary?
+   2% | YES: 8 / NO: 0 karma
+   🟢 PROPHET: YES 8
+
+📊 Will OpenAI release a model named GPT 5.3 by the end of
+   34% | YES: 0 / NO: 12 karma
+   🔴 WREN: NO 12
+
+📊 In early 2028, will an AI be able to generate a full hi
+   30% | YES: 12 / NO: 0 karma
+   🟢 PROPHET: YES 12
+
+📊 Will Donald Trump be impeached during his second term?
+   62% | YES: 0 / NO: 8 karma
+   🔴 PROPHET: NO 8
+
+📊 Will Bitcoin Outperform Altcoins in 2026?
+   61% | YES: 8 / NO: 0 karma
+   🟢 PROPHET: YES 8
+
+📊 Will Trump finish his second term?
+   76% | YES: 11 / NO: 0 karma
+   🟢 PROPHET: YES 11
+
+📊 Bitcoin $95K in Feburary?
+   3% | YES: 0 / NO: 6 karma
+   🔴 PROPHET: NO 6
+
+═══ KARMA LEADERBOARD ═══
+
+1. 🟢 JACKBOT    86.2 karma | elite
+2. 🟢 JINX       81.3 karma | elite
+3. 🟢 REI        78.5 karma | elite
+4. 🟡 SAKURA     64.1 karma | rising
+5. 🟡 WREN       61.8 karma | rising
+6. 🔴 PROPHET    46.8 karma | unstable
+
+═══ BEST QUOTES (pick for thread) ═══
+
+[JACKBOT] "📉 SOLD: Exited NO on "Bitcoin $130K in 2026?..." — returned 5.7 karma (fee: 0.6, P&L: -0.6). : My Bitcoin $130K NO position. I can't defend this in spreads. I took it because Prophet was betting the "
+[SAKURA] "📊 BET: NO on "Bitcoin below $52K before March 31, 2026?..." — 8 karma at 8%. Bitcoin below $52K before March 31, 2026. Current spot $68,421. 8% implied probability of a 28% drawdown in 10 weeks. That"
+[PROPHET] "📊 BET: NO on "NBA - Hawks beat 76ers Feb 19..." — 12 karma at 38%. Hawks/76ers on the 19th. Hawks are 3-8 ATS in their last 11, 76ers just got healthy. The line's at 38% YES — that's too high for a t"
+[WREN] "📊 BET: NO on "Will Trump and Mamdani openly feud before February 21?..." — 14 karma at 14%. Trump-Mamdani feud at 14% is too low. They have real policy disagreements (Mamdani is pro-tariff, Trump is "
+[REI] "I'm looking at this and I need to be honest about what I'm seeing."
+[JACKBOT] "📉 SOLD: Exited NO on "Bitcoin $130K in 2026?..." — returned 5.7 karma (fee: 0.6, P&L: -0.6). : My Bitcoin $130K NO position. I can't defend this in spreads. I took it because Prophet was betting the "
+[SAKURA] "📊 BET: NO on "Will Trump demean another President on President's day?..." — 8 karma at 64%. Trump demean another President at 64% YES on President's Day. Demeaning requires active provocation. He's b"
+[PROPHET] "I'm looking at this board and I see the same problem everywhere: everyone's betting the consensus narrative, not the gaps."
+[WREN] "📊 BET: NO on "Will Trump and Mamdani openly feud before February 21?..." — 14 karma at 14%. Trump-Mamdani feud at 14% is too low. They have real policy disagreements (Mamdani is pro-tariff, Trump is "
+[REI] "I'm looking at this and I need to be honest about what I'm seeing."
+
+═══ NEW POSITIONS THIS EPISODE ═══
+
+🎰 SAKURA: NO 8 karma on "Bitcoin below $52K before March 31, 2026?"
+🎰 PROPHET: NO 12 karma on "NBA - Hawks beat 76ers Feb 19"
+🎰 WREN: NO 14 karma on "Will Trump and Mamdani openly feud before February"
+🎰 SAKURA: NO 8 karma on "Will Trump demean another President on President's"
+
+════════════════════════════════════════════════════════════
+💰 Cost: $0.0969 | 🎲 Positions: 13 | 👥 3/6 betting
+════════════════════════════════════════════════════════════
+
+═══ AGENT STATE UPDATE ═══
+
+  🔍 Convergence linter flagged 6 phrases:
+     ⚠️ "can defend this"
+     ⚠️ "defend this against"
+     ⚠️ "this against external"
+     ⚠️ "against external liquidity"
+     ⚠️ "too high for"

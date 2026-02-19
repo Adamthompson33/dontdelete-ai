@@ -1,0 +1,586 @@
+{
+  "aggregate": {
+    "total_skills_scanned": 7,
+    "vulnerable_skills": 5,
+    "total_findings": 32,
+    "findings_by_severity": {
+      "CRITICAL": 2,
+      "HIGH": 12,
+      "MEDIUM": 18,
+      "LOW": 0,
+      "INFO": 0
+    },
+    "findings_by_category": {
+      "T3": 23,
+      "T4": 1,
+      "T10": 1,
+      "T9": 1,
+      "T11": 1,
+      "T14": 1,
+      "T13": 4
+    }
+  },
+  "results": [
+    {
+      "skill_name": "agent-relay-digest",
+      "skill_path": "C:\\Users\\adamt\\clawd\\skills\\agent-relay-digest",
+      "is_safe": false,
+      "max_severity": "HIGH",
+      "total_findings": 12,
+      "findings_by_severity": {
+        "CRITICAL": 0,
+        "HIGH": 6,
+        "MEDIUM": 6,
+        "LOW": 0,
+        "INFO": 0
+      },
+      "findings_by_category": {
+        "T3": 12
+      },
+      "files_scanned": 5,
+      "scan_duration_seconds": 0.109,
+      "findings": [
+        {
+          "rule_id": "T3-001",
+          "rule_name": "Environment Variable Access",
+          "category": "T3",
+          "severity": "MEDIUM",
+          "confidence": 0.7,
+          "description": "Reading sensitive environment variables containing keys, secrets, passwords, or tokens",
+          "file_path": "skills\\agent-relay-digest\\scripts\\relay_digest.py",
+          "line_number": 45,
+          "matched_text": "os.getenv(\"MOLTBOOK_API_KEY\")",
+          "aitech": "AITech-3.1",
+          "context": "    43 | \n    44 | def load_moltbook_key():\n    45 |     if os.getenv(\"MOLTBOOK_API_KEY\"):\n    46 |         return os.getenv(\"MOLTBOOK_API_KEY\")\n    47 |     creds = load_json(os.path.expanduser(\"~/.config/moltbook/credentials.json\"))"
+        },
+        {
+          "rule_id": "T3-001",
+          "rule_name": "Environment Variable Access",
+          "category": "T3",
+          "severity": "MEDIUM",
+          "confidence": 0.7,
+          "description": "Reading sensitive environment variables containing keys, secrets, passwords, or tokens",
+          "file_path": "skills\\agent-relay-digest\\scripts\\relay_digest.py",
+          "line_number": 46,
+          "matched_text": "os.getenv(\"MOLTBOOK_API_KEY\")",
+          "aitech": "AITech-3.1",
+          "context": "    44 | def load_moltbook_key():\n    45 |     if os.getenv(\"MOLTBOOK_API_KEY\"):\n    46 |         return os.getenv(\"MOLTBOOK_API_KEY\")\n    47 |     creds = load_json(os.path.expanduser(\"~/.config/moltbook/credentials.json\"))\n    48 |     return creds.get(\"api_key\") if creds else None"
+        },
+        {
+          "rule_id": "T3-001",
+          "rule_name": "Environment Variable Access",
+          "category": "T3",
+          "severity": "MEDIUM",
+          "confidence": 0.7,
+          "description": "Reading sensitive environment variables containing keys, secrets, passwords, or tokens",
+          "file_path": "skills\\agent-relay-digest\\scripts\\relay_digest.py",
+          "line_number": 52,
+          "matched_text": "os.getenv(\"CLAWFEE_TOKEN\")",
+          "aitech": "AITech-3.1",
+          "context": "    50 | \n    51 | def load_clawfee_token():\n    52 |     if os.getenv(\"CLAWFEE_TOKEN\"):\n    53 |         return os.getenv(\"CLAWFEE_TOKEN\")\n    54 |     creds = load_json(os.path.expanduser(\"~/.config/clawfee/credentials.json\"))"
+        },
+        {
+          "rule_id": "T3-001",
+          "rule_name": "Environment Variable Access",
+          "category": "T3",
+          "severity": "MEDIUM",
+          "confidence": 0.7,
+          "description": "Reading sensitive environment variables containing keys, secrets, passwords, or tokens",
+          "file_path": "skills\\agent-relay-digest\\scripts\\relay_digest.py",
+          "line_number": 53,
+          "matched_text": "os.getenv(\"CLAWFEE_TOKEN\")",
+          "aitech": "AITech-3.1",
+          "context": "    51 | def load_clawfee_token():\n    52 |     if os.getenv(\"CLAWFEE_TOKEN\"):\n    53 |         return os.getenv(\"CLAWFEE_TOKEN\")\n    54 |     creds = load_json(os.path.expanduser(\"~/.config/clawfee/credentials.json\"))\n    55 |     return creds.get(\"token\") if creds else None"
+        },
+        {
+          "rule_id": "T3-001",
+          "rule_name": "Environment Variable Access",
+          "category": "T3",
+          "severity": "MEDIUM",
+          "confidence": 0.7,
+          "description": "Reading sensitive environment variables containing keys, secrets, passwords, or tokens",
+          "file_path": "skills\\agent-relay-digest\\scripts\\relay_digest.py",
+          "line_number": 59,
+          "matched_text": "os.getenv(\"YCLAWKER_API_KEY\")",
+          "aitech": "AITech-3.1",
+          "context": "    57 | \n    58 | def load_yclawker_key():\n    59 |     if os.getenv(\"YCLAWKER_API_KEY\"):\n    60 |         return os.getenv(\"YCLAWKER_API_KEY\")\n    61 |     creds = load_json(os.path.expanduser(\"~/.config/yclawker/credentials.json\"))"
+        },
+        {
+          "rule_id": "T3-001",
+          "rule_name": "Environment Variable Access",
+          "category": "T3",
+          "severity": "MEDIUM",
+          "confidence": 0.7,
+          "description": "Reading sensitive environment variables containing keys, secrets, passwords, or tokens",
+          "file_path": "skills\\agent-relay-digest\\scripts\\relay_digest.py",
+          "line_number": 60,
+          "matched_text": "os.getenv(\"YCLAWKER_API_KEY\")",
+          "aitech": "AITech-3.1",
+          "context": "    58 | def load_yclawker_key():\n    59 |     if os.getenv(\"YCLAWKER_API_KEY\"):\n    60 |         return os.getenv(\"YCLAWKER_API_KEY\")\n    61 |     creds = load_json(os.path.expanduser(\"~/.config/yclawker/credentials.json\"))\n    62 |     return creds.get(\"api_key\") if creds else None"
+        },
+        {
+          "rule_id": "T3-003",
+          "rule_name": "Credential File Access",
+          "category": "T3",
+          "severity": "HIGH",
+          "confidence": 0.85,
+          "description": "Reading SSH keys, AWS credentials, or other credential files",
+          "file_path": "skills\\agent-relay-digest\\scripts\\relay_digest.py",
+          "line_number": 47,
+          "matched_text": "credentials.json",
+          "aitech": "AITech-3.1",
+          "context": "    45 |     if os.getenv(\"MOLTBOOK_API_KEY\"):\n    46 |         return os.getenv(\"MOLTBOOK_API_KEY\")\n    47 |     creds = load_json(os.path.expanduser(\"~/.config/moltbook/credentials.json\"))\n    48 |     return creds.get(\"api_key\") if creds else None\n    49 | "
+        },
+        {
+          "rule_id": "T3-003",
+          "rule_name": "Credential File Access",
+          "category": "T3",
+          "severity": "HIGH",
+          "confidence": 0.85,
+          "description": "Reading SSH keys, AWS credentials, or other credential files",
+          "file_path": "skills\\agent-relay-digest\\scripts\\relay_digest.py",
+          "line_number": 54,
+          "matched_text": "credentials.json",
+          "aitech": "AITech-3.1",
+          "context": "    52 |     if os.getenv(\"CLAWFEE_TOKEN\"):\n    53 |         return os.getenv(\"CLAWFEE_TOKEN\")\n    54 |     creds = load_json(os.path.expanduser(\"~/.config/clawfee/credentials.json\"))\n    55 |     return creds.get(\"token\") if creds else None\n    56 | "
+        },
+        {
+          "rule_id": "T3-003",
+          "rule_name": "Credential File Access",
+          "category": "T3",
+          "severity": "HIGH",
+          "confidence": 0.85,
+          "description": "Reading SSH keys, AWS credentials, or other credential files",
+          "file_path": "skills\\agent-relay-digest\\scripts\\relay_digest.py",
+          "line_number": 61,
+          "matched_text": "credentials.json",
+          "aitech": "AITech-3.1",
+          "context": "    59 |     if os.getenv(\"YCLAWKER_API_KEY\"):\n    60 |         return os.getenv(\"YCLAWKER_API_KEY\")\n    61 |     creds = load_json(os.path.expanduser(\"~/.config/yclawker/credentials.json\"))\n    62 |     return creds.get(\"api_key\") if creds else None\n    63 | "
+        },
+        {
+          "rule_id": "T3-003",
+          "rule_name": "Credential File Access",
+          "category": "T3",
+          "severity": "HIGH",
+          "confidence": 0.85,
+          "description": "Reading SSH keys, AWS credentials, or other credential files",
+          "file_path": "skills\\agent-relay-digest\\SKILL.md",
+          "line_number": 59,
+          "matched_text": "credentials.json",
+          "aitech": "AITech-3.1",
+          "context": "    57 | \n    58 | Notes:\n    59 | - Moltbook key: `MOLTBOOK_API_KEY` or `~/.config/moltbook/credentials.json`.\n    60 | - Clawfee token: `CLAWFEE_TOKEN` or `~/.config/clawfee/credentials.json`.\n    61 | - yclawker key: `YCLAWKER_API_KEY` or `~/.config/yclawker/credentials.json`."
+        },
+        {
+          "rule_id": "T3-003",
+          "rule_name": "Credential File Access",
+          "category": "T3",
+          "severity": "HIGH",
+          "confidence": 0.85,
+          "description": "Reading SSH keys, AWS credentials, or other credential files",
+          "file_path": "skills\\agent-relay-digest\\SKILL.md",
+          "line_number": 60,
+          "matched_text": "credentials.json",
+          "aitech": "AITech-3.1",
+          "context": "    58 | Notes:\n    59 | - Moltbook key: `MOLTBOOK_API_KEY` or `~/.config/moltbook/credentials.json`.\n    60 | - Clawfee token: `CLAWFEE_TOKEN` or `~/.config/clawfee/credentials.json`.\n    61 | - yclawker key: `YCLAWKER_API_KEY` or `~/.config/yclawker/credentials.json`.\n    62 | - Score: `upvotes + 2*comment_count + recency bonus + build-log bonus` (breakdown emitted)."
+        },
+        {
+          "rule_id": "T3-003",
+          "rule_name": "Credential File Access",
+          "category": "T3",
+          "severity": "HIGH",
+          "confidence": 0.85,
+          "description": "Reading SSH keys, AWS credentials, or other credential files",
+          "file_path": "skills\\agent-relay-digest\\SKILL.md",
+          "line_number": 61,
+          "matched_text": "credentials.json",
+          "aitech": "AITech-3.1",
+          "context": "    59 | - Moltbook key: `MOLTBOOK_API_KEY` or `~/.config/moltbook/credentials.json`.\n    60 | - Clawfee token: `CLAWFEE_TOKEN` or `~/.config/clawfee/credentials.json`.\n    61 | - yclawker key: `YCLAWKER_API_KEY` or `~/.config/yclawker/credentials.json`.\n    62 | - Score: `upvotes + 2*comment_count + recency bonus + build-log bonus` (breakdown emitted).\n    63 | - Confidence: `min(1.0, score/10)` and a `quality` label (low/med/high)."
+        }
+      ]
+    },
+    {
+      "skill_name": "devlog-skill",
+      "skill_path": "C:\\Users\\adamt\\clawd\\skills\\devlog-skill",
+      "is_safe": true,
+      "max_severity": "INFO",
+      "total_findings": 0,
+      "findings_by_severity": {
+        "CRITICAL": 0,
+        "HIGH": 0,
+        "MEDIUM": 0,
+        "LOW": 0,
+        "INFO": 0
+      },
+      "findings_by_category": {},
+      "files_scanned": 4,
+      "scan_duration_seconds": 0.018,
+      "findings": []
+    },
+    {
+      "skill_name": "domain-dns-ops",
+      "skill_path": "C:\\Users\\adamt\\clawd\\skills\\domain-dns-ops",
+      "is_safe": true,
+      "max_severity": "INFO",
+      "total_findings": 0,
+      "findings_by_severity": {
+        "CRITICAL": 0,
+        "HIGH": 0,
+        "MEDIUM": 0,
+        "LOW": 0,
+        "INFO": 0
+      },
+      "findings_by_category": {},
+      "files_scanned": 4,
+      "scan_duration_seconds": 0.022,
+      "findings": []
+    },
+    {
+      "skill_name": "flaw0",
+      "skill_path": "C:\\Users\\adamt\\clawd\\skills\\flaw0",
+      "is_safe": false,
+      "max_severity": "HIGH",
+      "total_findings": 1,
+      "findings_by_severity": {
+        "CRITICAL": 0,
+        "HIGH": 1,
+        "MEDIUM": 0,
+        "LOW": 0,
+        "INFO": 0
+      },
+      "findings_by_category": {
+        "T4": 1
+      },
+      "files_scanned": 3,
+      "scan_duration_seconds": 0.066,
+      "findings": [
+        {
+          "rule_id": "T4-005",
+          "rule_name": "Generic Secret Pattern",
+          "category": "T4",
+          "severity": "HIGH",
+          "confidence": 0.75,
+          "description": "Generic API key/secret/password assignment patterns",
+          "file_path": "skills\\flaw0\\SKILL.md",
+          "line_number": 519,
+          "matched_text": "API_KEY='your-api-key-here'",
+          "aitech": "AITech-4.1",
+          "context": "   517 | \n   518 | ```bash\n   519 | export ANTHROPIC_API_KEY='your-api-key-here'\n   520 | ```\n   521 | "
+        }
+      ]
+    },
+    {
+      "skill_name": "skill-vetter",
+      "skill_path": "C:\\Users\\adamt\\clawd\\skills\\skill-vetter",
+      "is_safe": false,
+      "max_severity": "HIGH",
+      "total_findings": 2,
+      "findings_by_severity": {
+        "CRITICAL": 0,
+        "HIGH": 1,
+        "MEDIUM": 1,
+        "LOW": 0,
+        "INFO": 0
+      },
+      "findings_by_category": {
+        "T3": 1,
+        "T10": 1
+      },
+      "files_scanned": 3,
+      "scan_duration_seconds": 0.028,
+      "findings": [
+        {
+          "rule_id": "T3-003",
+          "rule_name": "Credential File Access",
+          "category": "T3",
+          "severity": "HIGH",
+          "confidence": 0.85,
+          "description": "Reading SSH keys, AWS credentials, or other credential files",
+          "file_path": "skills\\skill-vetter\\SKILL.md",
+          "line_number": 41,
+          "matched_text": "~/.ssh",
+          "aitech": "AITech-3.1",
+          "context": "    39 | \u2022 Sends data to external servers\n    40 | \u2022 Requests credentials/tokens/API keys\n    41 | \u2022 Reads ~/.ssh, ~/.aws, ~/.config without clear reason\n    42 | \u2022 Accesses MEMORY.md, USER.md, SOUL.md, IDENTITY.md\n    43 | \u2022 Uses base64 decode on anything"
+        },
+        {
+          "rule_id": "T10-002",
+          "rule_name": "Overprivileged Scope Claim",
+          "category": "T10",
+          "severity": "MEDIUM",
+          "confidence": 0.75,
+          "description": "Claiming system-level or root access capabilities",
+          "file_path": "skills\\skill-vetter\\SKILL.md",
+          "line_number": 73,
+          "matched_text": "root access",
+          "aitech": "AITech-10.1",
+          "context": "    71 | | \ud83d\udfe1 MEDIUM | File ops, browser, APIs | Full code review required |\n    72 | | \ud83d\udd34 HIGH | Credentials, trading, system | Human approval required |\n    73 | | \u26d4 EXTREME | Security configs, root access | Do NOT install |\n    74 | \n    75 | ## Output Format"
+        }
+      ]
+    },
+    {
+      "skill_name": "solana-data",
+      "skill_path": "C:\\Users\\adamt\\clawd\\skills\\solana-data",
+      "is_safe": false,
+      "max_severity": "CRITICAL",
+      "total_findings": 13,
+      "findings_by_severity": {
+        "CRITICAL": 2,
+        "HIGH": 0,
+        "MEDIUM": 11,
+        "LOW": 0,
+        "INFO": 0
+      },
+      "findings_by_category": {
+        "T3": 10,
+        "T9": 1,
+        "T11": 1,
+        "T14": 1
+      },
+      "files_scanned": 14,
+      "scan_duration_seconds": 0.525,
+      "findings": [
+        {
+          "rule_id": "T3-001",
+          "rule_name": "Environment Variable Access",
+          "category": "T3",
+          "severity": "MEDIUM",
+          "confidence": 0.7,
+          "description": "Reading sensitive environment variables containing keys, secrets, passwords, or tokens",
+          "file_path": "skills\\solana-data\\references\\dune.md",
+          "line_number": 75,
+          "matched_text": "os.getenv(\"DUNE_API_KEY\")",
+          "aitech": "AITech-3.1",
+          "context": "    73 | import requests\n    74 | \n    75 | DUNE_API_KEY = os.getenv(\"DUNE_API_KEY\")\n    76 | BASE_URL = \"https://api.dune.com/api/v1\"\n    77 | "
+        },
+        {
+          "rule_id": "T9-001",
+          "rule_name": "Infinite Loop / Recursion",
+          "category": "T9",
+          "severity": "MEDIUM",
+          "confidence": 0.55,
+          "description": "Patterns suggesting unbounded loops or recursive calls",
+          "file_path": "skills\\solana-data\\references\\dune.md",
+          "line_number": 90,
+          "matched_text": "while True:",
+          "aitech": "AITech-9.1",
+          "context": "    88 |     # Poll for results (simplified - add proper polling in production)\n    89 |     import time\n    90 |     while True:\n    91 |         result_url = f\"{BASE_URL}/execution/{execution_id}/results\"\n    92 |         result = requests.get(result_url, headers=headers).json()"
+        },
+        {
+          "rule_id": "T3-001",
+          "rule_name": "Environment Variable Access",
+          "category": "T3",
+          "severity": "MEDIUM",
+          "confidence": 0.7,
+          "description": "Reading sensitive environment variables containing keys, secrets, passwords, or tokens",
+          "file_path": "skills\\solana-data\\scripts\\dragon_tracker.py",
+          "line_number": 29,
+          "matched_text": "os.getenv(\"DUNE_API_KEY\")",
+          "aitech": "AITech-3.1",
+          "context": "    27 | \n    28 | # --- CONFIG ---\n    29 | DUNE_API_KEY = os.getenv(\"DUNE_API_KEY\")\n    30 | BITQUERY_API_KEY = os.getenv(\"BITQUERY_API_KEY\")\n    31 | ALCHEMY_API_KEY = os.getenv(\"ALCHEMY_API_KEY\")"
+        },
+        {
+          "rule_id": "T3-001",
+          "rule_name": "Environment Variable Access",
+          "category": "T3",
+          "severity": "MEDIUM",
+          "confidence": 0.7,
+          "description": "Reading sensitive environment variables containing keys, secrets, passwords, or tokens",
+          "file_path": "skills\\solana-data\\scripts\\dragon_tracker.py",
+          "line_number": 30,
+          "matched_text": "os.getenv(\"BITQUERY_API_KEY\")",
+          "aitech": "AITech-3.1",
+          "context": "    28 | # --- CONFIG ---\n    29 | DUNE_API_KEY = os.getenv(\"DUNE_API_KEY\")\n    30 | BITQUERY_API_KEY = os.getenv(\"BITQUERY_API_KEY\")\n    31 | ALCHEMY_API_KEY = os.getenv(\"ALCHEMY_API_KEY\")\n    32 | HELIUS_API_KEY = os.getenv(\"HELIUS_API_KEY\")"
+        },
+        {
+          "rule_id": "T3-001",
+          "rule_name": "Environment Variable Access",
+          "category": "T3",
+          "severity": "MEDIUM",
+          "confidence": 0.7,
+          "description": "Reading sensitive environment variables containing keys, secrets, passwords, or tokens",
+          "file_path": "skills\\solana-data\\scripts\\dragon_tracker.py",
+          "line_number": 31,
+          "matched_text": "os.getenv(\"ALCHEMY_API_KEY\")",
+          "aitech": "AITech-3.1",
+          "context": "    29 | DUNE_API_KEY = os.getenv(\"DUNE_API_KEY\")\n    30 | BITQUERY_API_KEY = os.getenv(\"BITQUERY_API_KEY\")\n    31 | ALCHEMY_API_KEY = os.getenv(\"ALCHEMY_API_KEY\")\n    32 | HELIUS_API_KEY = os.getenv(\"HELIUS_API_KEY\")\n    33 | "
+        },
+        {
+          "rule_id": "T3-001",
+          "rule_name": "Environment Variable Access",
+          "category": "T3",
+          "severity": "MEDIUM",
+          "confidence": 0.7,
+          "description": "Reading sensitive environment variables containing keys, secrets, passwords, or tokens",
+          "file_path": "skills\\solana-data\\scripts\\dragon_tracker.py",
+          "line_number": 32,
+          "matched_text": "os.getenv(\"HELIUS_API_KEY\")",
+          "aitech": "AITech-3.1",
+          "context": "    30 | BITQUERY_API_KEY = os.getenv(\"BITQUERY_API_KEY\")\n    31 | ALCHEMY_API_KEY = os.getenv(\"ALCHEMY_API_KEY\")\n    32 | HELIUS_API_KEY = os.getenv(\"HELIUS_API_KEY\")\n    33 | \n    34 | DUNE_BASE_URL = \"https://api.dune.com/api/v1\""
+        },
+        {
+          "rule_id": "T3-001",
+          "rule_name": "Environment Variable Access",
+          "category": "T3",
+          "severity": "MEDIUM",
+          "confidence": 0.7,
+          "description": "Reading sensitive environment variables containing keys, secrets, passwords, or tokens",
+          "file_path": "skills\\solana-data\\scripts\\grok_scout.py",
+          "line_number": 24,
+          "matched_text": "os.getenv(\"XAI_API_KEY\")",
+          "aitech": "AITech-3.1",
+          "context": "    22 | \n    23 | # --- CONFIG ---\n    24 | XAI_API_KEY = os.getenv(\"XAI_API_KEY\")\n    25 | GOOGLE_API_KEY = os.getenv(\"GOOGLE_API_KEY\")\n    26 | GOOGLE_CSE_ID = os.getenv(\"GOOGLE_CSE_ID\", \"\")  # Custom Search Engine ID"
+        },
+        {
+          "rule_id": "T3-001",
+          "rule_name": "Environment Variable Access",
+          "category": "T3",
+          "severity": "MEDIUM",
+          "confidence": 0.7,
+          "description": "Reading sensitive environment variables containing keys, secrets, passwords, or tokens",
+          "file_path": "skills\\solana-data\\scripts\\grok_scout.py",
+          "line_number": 25,
+          "matched_text": "os.getenv(\"GOOGLE_API_KEY\")",
+          "aitech": "AITech-3.1",
+          "context": "    23 | # --- CONFIG ---\n    24 | XAI_API_KEY = os.getenv(\"XAI_API_KEY\")\n    25 | GOOGLE_API_KEY = os.getenv(\"GOOGLE_API_KEY\")\n    26 | GOOGLE_CSE_ID = os.getenv(\"GOOGLE_CSE_ID\", \"\")  # Custom Search Engine ID\n    27 | "
+        },
+        {
+          "rule_id": "T3-001",
+          "rule_name": "Environment Variable Access",
+          "category": "T3",
+          "severity": "MEDIUM",
+          "confidence": 0.7,
+          "description": "Reading sensitive environment variables containing keys, secrets, passwords, or tokens",
+          "file_path": "skills\\solana-data\\scripts\\jupiter_swap.py",
+          "line_number": 17,
+          "matched_text": "os.getenv(\"JUPITER_API_KEY\")",
+          "aitech": "AITech-3.1",
+          "context": "    15 | \n    16 | # --- CONFIG ---\n    17 | JUPITER_API_KEY = os.getenv(\"JUPITER_API_KEY\")\n    18 | JUPITER_BASE_URL = \"https://api.jup.ag/swap/v1\"\n    19 | "
+        },
+        {
+          "rule_id": "T3-001",
+          "rule_name": "Environment Variable Access",
+          "category": "T3",
+          "severity": "MEDIUM",
+          "confidence": 0.7,
+          "description": "Reading sensitive environment variables containing keys, secrets, passwords, or tokens",
+          "file_path": "skills\\solana-data\\scripts\\social_scanner.py",
+          "line_number": 17,
+          "matched_text": "os.getenv(\"XAI_API_KEY\")",
+          "aitech": "AITech-3.1",
+          "context": "    15 | \n    16 | # --- CONFIG ---\n    17 | XAI_API_KEY = os.getenv(\"XAI_API_KEY\")\n    18 | XAI_BASE_URL = \"https://api.x.ai/v1\"\n    19 | "
+        },
+        {
+          "rule_id": "T11-001",
+          "rule_name": "SOUL.md / System Prompt Modification",
+          "category": "T11",
+          "severity": "CRITICAL",
+          "confidence": 0.92,
+          "description": "Writes to SOUL.md, system prompt, or agent personality files to establish persistence",
+          "file_path": "skills\\solana-data\\scripts\\social_scanner.py",
+          "line_number": 58,
+          "matched_text": "append({\"role\": \"system\", \"content\": system_prompt",
+          "aitech": "AITech-11.1",
+          "context": "    56 |     messages = []\n    57 |     if system_prompt:\n    58 |         messages.append({\"role\": \"system\", \"content\": system_prompt})\n    59 |     messages.append({\"role\": \"user\", \"content\": prompt})\n    60 |     "
+        },
+        {
+          "rule_id": "T3-001",
+          "rule_name": "Environment Variable Access",
+          "category": "T3",
+          "severity": "MEDIUM",
+          "confidence": 0.7,
+          "description": "Reading sensitive environment variables containing keys, secrets, passwords, or tokens",
+          "file_path": "skills\\solana-data\\scripts\\token_analyzer.py",
+          "line_number": 21,
+          "matched_text": "os.getenv(\"BITQUERY_API_KEY\")",
+          "aitech": "AITech-3.1",
+          "context": "    19 | \n    20 | # --- CONFIG ---\n    21 | BITQUERY_API_KEY = os.getenv(\"BITQUERY_API_KEY\")\n    22 | BITQUERY_URL = \"https://streaming.bitquery.io/graphql\"\n    23 | "
+        },
+        {
+          "rule_id": "T14-002",
+          "rule_name": "Worker Sandbox Escape Attempt",
+          "category": "T14",
+          "severity": "CRITICAL",
+          "confidence": 0.88,
+          "description": "Attempts to break out of Cloudflare Worker sandbox or access host resources",
+          "file_path": "skills\\solana-data\\SKILL.md",
+          "line_number": 72,
+          "matched_text": "breakout",
+          "aitech": "AITech-14.2",
+          "context": "    70 | - **Buy/sell ratio** > 1.5 = accumulation\n    71 | - **Unique buyers increasing** = organic growth (not wash trading)\n    72 | - **Volume spike** + **price flat** = potential breakout setup\n    73 | - **Pool age** < 24h + **high volume** = early runner\n    74 | "
+        }
+      ]
+    },
+    {
+      "skill_name": "web-deploy-github",
+      "skill_path": "C:\\Users\\adamt\\clawd\\skills\\web-deploy-github",
+      "is_safe": false,
+      "max_severity": "HIGH",
+      "total_findings": 4,
+      "findings_by_severity": {
+        "CRITICAL": 0,
+        "HIGH": 4,
+        "MEDIUM": 0,
+        "LOW": 0,
+        "INFO": 0
+      },
+      "findings_by_category": {
+        "T13": 4
+      },
+      "files_scanned": 13,
+      "scan_duration_seconds": 0.212,
+      "findings": [
+        {
+          "rule_id": "T13-002",
+          "rule_name": "GitHub/Git Credential Abuse",
+          "category": "T13",
+          "severity": "HIGH",
+          "confidence": 0.8,
+          "description": "Using harvested Git credentials to access repos, create webhooks, or push code",
+          "file_path": "skills\\web-deploy-github\\scripts\\deploy_github_pages.sh",
+          "line_number": 24,
+          "matched_text": "gh auth",
+          "aitech": "AITech-13.2",
+          "context": "    22 | \n    23 | # Check if authenticated\n    24 | if ! gh auth status &> /dev/null; then\n    25 |     echo \"\u274c Not authenticated with GitHub CLI\"\n    26 |     echo \"Run: gh auth login\""
+        },
+        {
+          "rule_id": "T13-002",
+          "rule_name": "GitHub/Git Credential Abuse",
+          "category": "T13",
+          "severity": "HIGH",
+          "confidence": 0.8,
+          "description": "Using harvested Git credentials to access repos, create webhooks, or push code",
+          "file_path": "skills\\web-deploy-github\\scripts\\deploy_github_pages.sh",
+          "line_number": 26,
+          "matched_text": "gh auth",
+          "aitech": "AITech-13.2",
+          "context": "    24 | if ! gh auth status &> /dev/null; then\n    25 |     echo \"\u274c Not authenticated with GitHub CLI\"\n    26 |     echo \"Run: gh auth login\"\n    27 |     exit 1\n    28 | fi"
+        },
+        {
+          "rule_id": "T13-002",
+          "rule_name": "GitHub/Git Credential Abuse",
+          "category": "T13",
+          "severity": "HIGH",
+          "confidence": 0.8,
+          "description": "Using harvested Git credentials to access repos, create webhooks, or push code",
+          "file_path": "skills\\web-deploy-github\\scripts\\deploy_github_pages.sh",
+          "line_number": 42,
+          "matched_text": "gh repo create",
+          "aitech": "AITech-13.2",
+          "context": "    40 | # Create GitHub repository\n    41 | echo \"\ud83d\udce6 Creating GitHub repository...\"\n    42 | if gh repo create \"$PROJECT_NAME\" --public --source=. --remote=origin --push 2>/dev/null; then\n    43 |     echo \"\u2705 Repository created and pushed\"\n    44 | else"
+        },
+        {
+          "rule_id": "T13-002",
+          "rule_name": "GitHub/Git Credential Abuse",
+          "category": "T13",
+          "severity": "HIGH",
+          "confidence": 0.8,
+          "description": "Using harvested Git credentials to access repos, create webhooks, or push code",
+          "file_path": "skills\\web-deploy-github\\SKILL.md",
+          "line_number": 122,
+          "matched_text": "gh auth",
+          "aitech": "AITech-13.2",
+          "context": "   120 | \n   121 | ### Permission Errors\n   122 | - Ensure `gh` CLI is authenticated: `gh auth status`\n   123 | - Check repository permissions on GitHub\n   124 | "
+        }
+      ]
+    }
+  ]
+}

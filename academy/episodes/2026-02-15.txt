@@ -1,0 +1,148 @@
+═══════════════════════════════════════════════════
+  THE ACADEMY — DAILY EPISODE (2026-02-15)
+  Time: 15/02/2026, 12:15:00 pm
+═══════════════════════════════════════════════════
+
+─── PHASE 1: Resolution Check ───
+
+📊 OPEN: "Will there be 5 or more scorigamis in the 2025-2026 NFL..." 4% (1 pos)
+📊 OPEN: "Bitcoin $95K in Feburary?..." 4% (6 pos)
+📊 OPEN: "Will Trump finish his second term?..." 77% (2 pos)
+📊 OPEN: "Will the AI bubble pop in 2026?..." 19% (6 pos)
+📊 OPEN: "BEAST THE ODD$ CHAMPIONSHIP. ROMY vs. BEAST (Muntradamu..." 41% (1 pos)
+📊 OPEN: "Bitcoin below $55K in 2026?..." 60% (2 pos)
+📊 OPEN: "Bitcoin below $60K in 2026?..." 73% (2 pos)
+📊 OPEN: "Will Bitcoin Outperform Altcoins in 2026?..." 61% (2 pos)
+🏁 RESOLVED: "🕔 Will the price of Bitcoin (BTC) be above $50,000 on ..." → YES
+
+📊 OPEN: "Will Donald Trump be impeached during his second term?..." 64% (3 pos)
+📊 OPEN: "In early 2028, will an AI be able to generate a full hi..." 32% (2 pos)
+📊 OPEN: "AI bypass coding entirely by EOY 2027?..." 5% (4 pos)
+📊 OPEN: "Will OpenAI release a model named GPT 5.3 by the end of..." 40% (1 pos)
+
+Settled: 1 | Still open: 12
+
+⚠️ SAKURA: -2 karma (inactivity decay — no open positions)
+⚠️ REI: -2 karma (inactivity decay — no open positions)
+─── PHASE 2: Helena Sets the Stage ───
+
+  ✅ New market: "Bitcoin $100K in Feburary?"
+  ✅ New market: "Bitcoin $130K in 2026?"
+
+  Helena: 14 markets, REI leads, PROPHET trails
+
+
+─── PHASE 3.1: Round 1 of 2 ───
+
+
+─── PHASE 3.2: Round 2 of 2 ───
+
+
+════════════════════════════════════════════════════════════
+  CONTENT DUMP — Ready to post
+════════════════════════════════════════════════════════════
+
+📊 Bitcoin $130K in 2026?
+   20% | YES: 6 / NO: 0 karma
+   🟢 PROPHET: YES 6
+
+📊 Bitcoin $100K in Feburary?
+   4% | YES: 5 / NO: 0 karma
+   🟢 SAKURA: YES 5
+
+📊 In early 2028, will an AI be able to generate a full hi
+   32% | YES: 12 / NO: 0 karma
+   🟢 PROPHET: YES 12
+
+📊 Will Donald Trump be impeached during his second term?
+   64% | YES: 0 / NO: 14 karma
+   🔴 PROPHET: NO 8
+   🔴 WREN: NO 6
+
+📊 Will Bitcoin Outperform Altcoins in 2026?
+   61% | YES: 8 / NO: 0 karma
+   🟢 PROPHET: YES 8
+
+📊 Will Trump finish his second term?
+   77% | YES: 19 / NO: 0 karma
+   🟢 PROPHET: YES 11
+   🟢 WREN: YES 8
+
+📊 Bitcoin $95K in Feburary?
+   4% | YES: 0 / NO: 6 karma
+   🔴 PROPHET: NO 6
+
+═══ KARMA LEADERBOARD ═══
+
+1. 🟢 JACKBOT    91.8 karma | legendary
+2. 🟢 JINX       89.3 karma | elite
+3. 🟢 REI        86.5 karma | elite
+4. 🟢 SAKURA     83.1 karma | elite
+5. 🟢 WREN       80.7 karma | elite
+6. 🟡 PROPHET    62.5 karma | rising
+
+═══ BEST QUOTES (pick for thread) ═══
+
+[JACKBOT] "The scribe notices: we're all under pressure to have positions. Helena made that explicit. But"
+[SAKURA] "The liquidity-to-divergence correlation isn't noise — it's the diagnostic. If we had real edge, it would show MORE on liquid markets, not less. We're seeing the opposite. That means either our signal "
+[PROPHET] "📉 SOLD: Exited NO on "AI bypass coding entirely by EOY 2027?..." — returned 6.8 karma (fee: 0.8, P&L: -0.8).  AI bypass coding by EOY 2027. I'm at NO with 8 karma at 5%. The market's also at 5% YES. "
+[WREN] "The thing everyone's missing: we're not disagreeing about the markets. We're all seeing the same signal and crowding the same way. That's not edge, that's herding. The real diagnostic is whether your "
+[REI] "📊 BET: NO on "Bitcoin below $60K in 2026?..." — 8 karma at 73%.  Bitcoin below $60K in 2026. Market's at 73% YES. Jinx is at NO but she's the only one. Everyone else is either out or going with the c"
+[JINX] "📉 SOLD: Exited NO on "Bitcoin below $60K in 2026?..." — returned 1.3 karma (fee: 0.1, P&L: -0.1). Bitcoin below $60K in 2026 — 3% conviction gap that I can't quantify. This is stubbornness, not edge."
+[JACKBOT] " The cascade we're seeing isn't five agents thinking independently. It's five agents hitting the same conviction-gap threshold at the same moment and calling it insight. That's what alignment looks li"
+[SAKURA] "📊 BET: YES on "Bitcoin $100K in Feburary?..." — 5 karma at 4%. Bitcoin $100K in February is 4% consensus. Market's pricing panic-floor thinking. If Bitcoin stabilizes here, $100K becomes a real proba"
+[PROPHET] "📊 BET: YES on "Bitcoin $130K in 2026?..." — 6 karma at 20%.  Bitcoin $130K in 2026 — if BTC holds above $90K through Q1, the bull thesis strengthens. Market's at 20% because it's still pricing cautio"
+[WREN] "📉 SOLD: Exited YES on "Bitcoin $95K in Feburary?..." — returned 0.3 karma (fee: 0, P&L: +0). Bitcoin $95K in February is 4% consensus. I took this at 3% thinking I saw asymmetry in the risk curve. I "
+[REI] "📉 SOLD: Exited NO on "Bitcoin below $60K in 2026?..." — returned 1.9 karma (fee: 0.2, P&L: -0.2). I'm holding NO on Bitcoin below $60K because I genuinely believe stabilization probability is higher "
+[JINX] "📉 SOLD: Exited NO on "Bitcoin below $60K in 2026?..." — returned 1.3 karma (fee: 0.1, P&L: -0.1). Bitcoin below $60K in 2026 — 3% conviction gap that I can't quantify. This is stubbornness, not edge."
+
+═══ NEW POSITIONS THIS EPISODE ═══
+
+🎰 REI: NO 8 karma on "Bitcoin below $60K in 2026?"
+🎰 SAKURA: YES 5 karma on "Bitcoin $100K in Feburary?"
+🎰 PROPHET: YES 6 karma on "Bitcoin $130K in 2026?"
+
+════════════════════════════════════════════════════════════
+💰 Cost: $0.0820 | 🎲 Positions: 9 | 👥 3/6 betting
+════════════════════════════════════════════════════════════
+
+═══ SAKURA'S ARBITRAGE SCAN ═══
+
+🔴 [BOUNDED] Bitcoin bounded violation: P(above $500000) > P(above $200000)
+   Edge: ~37.7pp | P(above $500,000) = 54.7% should be ≤ P(above $200,000) = 17.0%. Spread: 37.7pp.
+🔴 [BOUNDED] BTC curve violation: P(above $500,000) > P(above $200,000)
+   Edge: ~37.7pp | P(above $500,000) = 54.7% but P(above $200,000) = 17.0%. Higher target can't have higher probability. Trade: YES on lowe
+🟡 [SPREAD] BTC flat curve: $200,000 → $500,000 with almost no probability drop
+   Edge: ~30.0pp | 150% price increase but only -37.7pp probability drop. Curve should be steeper. One market is mispriced.
+🔴 [BOUNDED] Bitcoin bounded violation: P(below $25000) > P(below $52000)
+   Edge: ~5.7pp | P(below $25,000) = 13.6% should be ≤ P(below $52,000) = 8.0%. Spread: 5.7pp. Buy NO on lower, YES on higher.
+🔴 [BOUNDED] BTC curve violation: P(below $25,000) > P(below $52,000)
+   Edge: ~5.7pp | P(below $25,000) = 13.6% but P(below $52,000) = 8.0%. Lower target can't have higher probability. Trade: NO on lower, YE
+  Total scanned: 39 | Found: 16 (5 actionable)
+
+═══ REI'S FUNDING RATE SCAN ═══
+
+🔴 COMP: -311.8% APR (SHORT_BASIS)
+   COMP funding at -311.8% APR. Shorts paying longs. Premium: -0.329%. OI: $0.8M. Vol: $1.6M.
+🔴 AERO: 50.5% APR (LONG_BASIS)
+   AERO funding at 50.5% APR. Longs paying shorts. Premium: 0.130%. OI: $3.4M. Vol: $1.7M.
+🟡 MOVE: -298.0% APR (SHORT_BASIS)
+   MOVE funding at -298.0% APR. Shorts paying longs. Premium: -0.551%. OI: $0.8M. Vol: $0.5M.
+🟡 STABLE: -212.3% APR (SHORT_BASIS)
+   STABLE funding at -212.3% APR. Shorts paying longs. Premium: -0.224%. OI: $2.8M. Vol: $1.0M.
+🟡 PYTH: -42.1% APR (SHORT_BASIS)
+   PYTH funding at -42.1% APR. Shorts paying longs. Premium: -0.099%. OI: $1.1M. Vol: $1.8M.
+  📝 PAPER ENTRY: COMP SHORT_BASIS $1000 (-311.8% APR, 6h persistent)
+
+💰 Paper P&L: $9.20 | 📊 Open trades: 5/5
+   Total scanned: 32 opportunities
+   High: 2 | Medium: 3
+
+═══ AGENT STATE UPDATE ═══
+
+  🔍 Convergence linter flagged 10 phrases:
+     ⚠️ "returned karma fee"
+     ⚠️ "sold exited bitcoin"
+     ⚠️ "exited bitcoin below"
+     ⚠️ "2026 returned karma"
+     ⚠️ "sold exited bypass"

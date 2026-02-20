@@ -4,66 +4,22 @@
   "lastUpdated": "2026-02-20T11:59:41.564Z",
   "runNumber": 6,
   "signals": {
-    "total": 3,
+    "total": 0,
     "correct": 0,
     "incorrect": 0,
-    "pending": 3,
+    "pending": 0,
     "accuracy": null,
-    "avgConfidence": 0.6266666666666666,
+    "avgConfidence": 0,
     "calibrationScore": null
   },
-  "recentSignals": [
-    {
-      "run": 6,
-      "asset": "INJ",
-      "direction": "short",
-      "confidence": 0.68,
-      "kelly_size": 0.08,
-      "invalidation": "INJ closes below -200% funding (suggests short-squeeze risk)",
-      "data_sources": [
-        "funding-scanner (Rei's -402% APR is unsustainable)",
-        "microstructure (INJ illiquid enough that extreme funding rates mean mean-reversion",
-        "not direction)"
-      ],
-      "timestamp": "2026-02-20T11:58:57.502Z",
-      "outcome": "pending"
-    },
-    {
-      "run": 6,
-      "asset": "BTC",
-      "direction": "flat",
-      "confidence": 0.6,
-      "kelly_size": 0,
-      "invalidation": "n/a",
-      "data_sources": [
-        "arb-scanner (violation exists but liquidity unconfirmed)",
-        "correlation-audit (65% correlation means directional thesis is phantom)"
-      ],
-      "timestamp": "2026-02-20T11:58:57.498Z",
-      "outcome": "pending"
-    },
-    {
-      "run": 6,
-      "asset": "BTC",
-      "direction": "flat",
-      "confidence": 0.6,
-      "kelly_size": 0,
-      "invalidation": "n/a",
-      "data_sources": [
-        "arb-scanner (flagged violation but need liquidity confirmation)",
-        "correlation-audit (65% means directional thesis is correlated risk)"
-      ],
-      "timestamp": "2026-02-20T11:57:58.007Z",
-      "outcome": "pending"
-    }
-  ],
+  "recentSignals": [],
   "record": {
-    "totalBets": 8,
+    "totalBets": 0,
     "wins": 0,
-    "losses": 5,
+    "losses": 0,
     "exits": 0,
-    "openPositions": 3,
-    "winRate": 0
+    "openPositions": 0,
+    "winRate": null
   },
   "recentDecisions": [],
   "toolPerformance": null,

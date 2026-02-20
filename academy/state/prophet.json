@@ -4,51 +4,22 @@
   "lastUpdated": "2026-02-20T11:59:41.567Z",
   "runNumber": 6,
   "signals": {
-    "total": 2,
+    "total": 0,
     "correct": 0,
     "incorrect": 0,
-    "pending": 2,
+    "pending": 0,
     "accuracy": null,
-    "avgConfidence": 0.55,
+    "avgConfidence": 0,
     "calibrationScore": null
   },
-  "recentSignals": [
-    {
-      "run": 6,
-      "asset": "BTC",
-      "direction": "flat",
-      "confidence": 0.55,
-      "kelly_size": 0,
-      "invalidation": "n/a",
-      "data_sources": [
-        "correlation-audit",
-        "kelly-engine"
-      ],
-      "timestamp": "2026-02-20T11:59:05.897Z",
-      "outcome": "pending"
-    },
-    {
-      "run": 6,
-      "asset": "BTC",
-      "direction": "flat",
-      "confidence": 0.55,
-      "kelly_size": 0,
-      "invalidation": "n/a",
-      "data_sources": [
-        "correlation-audit",
-        "kelly-engine"
-      ],
-      "timestamp": "2026-02-20T11:58:05.891Z",
-      "outcome": "pending"
-    }
-  ],
+  "recentSignals": [],
   "record": {
-    "totalBets": 14,
+    "totalBets": 0,
     "wins": 0,
-    "losses": 6,
+    "losses": 0,
     "exits": 0,
-    "openPositions": 8,
-    "winRate": 0
+    "openPositions": 0,
+    "winRate": null
   },
   "recentDecisions": [],
   "toolPerformance": null,

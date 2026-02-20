@@ -14,12 +14,12 @@
   },
   "recentSignals": [],
   "record": {
-    "totalBets": 4,
+    "totalBets": 0,
     "wins": 0,
-    "losses": 4,
+    "losses": 0,
     "exits": 0,
     "openPositions": 0,
-    "winRate": 0
+    "winRate": null
   },
   "recentDecisions": [],
   "toolPerformance": null,

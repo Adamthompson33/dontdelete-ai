@@ -4,37 +4,22 @@
   "lastUpdated": "2026-02-20T11:59:41.570Z",
   "runNumber": 6,
   "signals": {
-    "total": 1,
+    "total": 0,
     "correct": 0,
     "incorrect": 0,
-    "pending": 1,
+    "pending": 0,
     "accuracy": null,
-    "avgConfidence": 0.68,
+    "avgConfidence": 0,
     "calibrationScore": null
   },
-  "recentSignals": [
-    {
-      "run": 6,
-      "asset": "INJ",
-      "direction": "short",
-      "confidence": 0.68,
-      "kelly_size": 0.08,
-      "invalidation": "INJ closes below -200% funding (suggests short-squeeze risk, funding mean-reverts faster than I can collect carry)",
-      "data_sources": [
-        "funding-scanner",
-        "microstructure-analysis"
-      ],
-      "timestamp": "2026-02-20T11:59:32.529Z",
-      "outcome": "pending"
-    }
-  ],
+  "recentSignals": [],
   "record": {
-    "totalBets": 5,
+    "totalBets": 0,
     "wins": 0,
-    "losses": 5,
+    "losses": 0,
     "exits": 0,
     "openPositions": 0,
-    "winRate": 0
+    "winRate": null
   },
   "recentDecisions": [],
   "toolPerformance": {

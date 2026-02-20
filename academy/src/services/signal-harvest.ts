@@ -3,6 +3,7 @@ import { ArbitrageScanner } from './arbitrage';
 import { FundingScanner } from './funding-scanner';
 import { KellyEngine } from './kelly-engine';
 import { FactorModel } from './factor-model';
+import { TemporalEdgeScanner } from './temporal-edge';
 import { PrismaClient } from '@prisma/client';
 
 export interface HarvestConfig {
@@ -156,16 +157,51 @@ export async function harvestSignals(config: HarvestConfig): Promise<SignalBoard
     signals.push(failedSignal('jinx', 'factor-model', err, now));
   }
 
-  // Jackbot: Temporal Edge — PLACEHOLDER (not built yet)
-  signals.push({
-    source: 'jackbot',
-    tool: 'temporal-edge',
-    timestamp: now,
-    headline: '[NOT YET BUILT] Temporal Edge Bot pending development.',
-    data: { status: 'pending' },
-    confidence: 0,
-    direction: 'neutral',
-  });
+  // Jackbot: Temporal Edge Scanner
+  try {
+    const temporal = new TemporalEdgeScanner();
+    const result = await temporal.scan();
+    const btcRegime = result.regimes['BTC'];
+
+    if (result.signals.length > 0) {
+      const best = result.signals[0]; // highest conviction signal
+      signals.push({
+        source: 'jackbot',
+        tool: 'temporal-edge',
+        timestamp: now,
+        headline: `${best.direction.toUpperCase()} ${best.coin} (${best.pattern}): ${best.reasoning.slice(0, 100)}`,
+        data: {
+          signals: result.signals.map(s => ({
+            coin: s.coin, direction: s.direction, pattern: s.pattern,
+            confidence: s.confidence, kelly: s.kelly_size,
+          })),
+          regime: btcRegime?.regime,
+          session: result.session,
+          nextResetMinutes: result.nextResetMinutes,
+        },
+        confidence: best.confidence,
+        direction: best.direction === 'long' ? 'bullish' : best.direction === 'short' ? 'bearish' : 'neutral',
+      });
+    } else {
+      signals.push({
+        source: 'jackbot',
+        tool: 'temporal-edge',
+        timestamp: now,
+        headline: `No temporal edge detected. Session: ${result.session}. BTC regime: ${btcRegime?.regime || 'unknown'} (ADX: ${btcRegime?.adx.toFixed(0) || '?'}). Next reset: ${result.nextResetMinutes}min.`,
+        data: {
+          regime: btcRegime?.regime,
+          adx: btcRegime?.adx,
+          session: result.session,
+          nextResetMinutes: result.nextResetMinutes,
+          signalCount: 0,
+        },
+        confidence: 0.3,
+        direction: 'neutral',
+      });
+    }
+  } catch (err: any) {
+    signals.push(failedSignal('jackbot', 'temporal-edge', err, now));
+  }
 
   // Prophet: Ultra Think UFC — PLACEHOLDER (not built yet)
   signals.push({

@@ -1,0 +1,15 @@
+{
+  "scannedAt": "2026-02-20T14:21:14.445Z",
+  "signals": [],
+  "regimes": {
+    "BTC": {
+      "regime": "VOLATILE",
+      "adx": 5.577307267079552,
+      "volatilityRatio": 1.5030363133850593,
+      "priceChange1h": -0.21856287425149698,
+      "priceChange24h": 0.3734602294973346
+    }
+  },
+  "nextResetMinutes": 39,
+  "session": "us_europe_overlap"
+}

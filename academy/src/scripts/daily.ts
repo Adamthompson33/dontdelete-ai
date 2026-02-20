@@ -1,22 +1,22 @@
 /**
- * DAILY EPISODE RUNNER — The Content Factory
+ * DAILY EPISODE RUNNER — The Signal Factory
  * 
  * One command. Full pipeline:
- * 1. Resolution check — settle any markets that closed on Manifold
- * 2. Price sync — update all open market probabilities
- * 3. Helena picks fresh markets or re-announces open ones
- * 4. Two rounds — all 6 agents analyze, bet, argue
- * 5. Content dump — best quotes + positions → ready to paste into Twitter
+ * 1. Market snapshot — pull live spot prices, funding rates, prediction markets
+ * 2. Helena briefing — current state, open signals from last episode, outcomes to evaluate
+ * 3. Signal harvest — all agent tools dump signals to the board
+ * 4. Two rounds — all 6 agents analyze, produce SIGNAL outputs, argue
+ * 5. Content dump — best quotes + signals → ready to paste into Twitter
  * 
  * Usage: npx tsx src/scripts/daily.ts
  * 
- * Wake up. Run this. Read output. Pick the best moments. Post the thread.
- * You're the editor now, not the writer. The agents write the show.
+ * Refactored: Manifold prediction markets → live market data + Signal Board schema
  */
 
 import { PrismaClient } from '@prisma/client';
-import { PriceFeedService } from '../services/price-feed';
-import { MarketService } from '../services/market';
+// import { PriceFeedService } from '../services/price-feed';  // OLD: Manifold markets
+// import { MarketService } from '../services/market';          // OLD: Manifold bet mechanics
+import { DataFeedService } from '../services/data-feeds';
 import { RuntimeService } from '../services/runtime';
 import { AnthropicProvider } from '../providers/anthropic';
 import { InProcessEventBus } from '../events/bus';
@@ -34,12 +34,13 @@ const DATE = new Date().toISOString().slice(0, 10);
 
 async function main() {
   const prisma = new PrismaClient();
-  const priceFeed = new PriceFeedService();
-  const marketService = new MarketService(prisma, priceFeed);
+  const dataFeeds = new DataFeedService();
+  // const priceFeed = new PriceFeedService();              // OLD: Manifold
+  // const marketService = new MarketService(prisma, priceFeed); // OLD: Manifold bet mechanics
   const eventBus = new InProcessEventBus();
   const llm = new AnthropicProvider('claude-haiku-4-5-20251001');
   const runtime = new RuntimeService(prisma, llm, eventBus);
-  runtime.setMarketService(marketService);
+  // runtime.setMarketService(marketService);               // OLD: no longer needed
 
   const contentLines: string[] = [];
   const log = (s: string) => { console.log(s); contentLines.push(s); };
@@ -49,70 +50,83 @@ async function main() {
   log(`  Time: ${new Date().toLocaleString('en-AU', { timeZone: 'Australia/Sydney' })}`);
   log(`═══════════════════════════════════════════════════\n`);
 
-  // ═══ PHASE 1: RESOLVE ═══
-  log('─── PHASE 1: Resolution Check ───\n');
+  // ═══ PHASE 1: MARKET SNAPSHOT ═══
+  log('─── PHASE 1: Market Snapshot ───\n');
   
-  const openMarkets = await prisma.market.findMany({
-    where: { status: 'open' },
-    include: { positions: { include: { agent: { select: { name: true } } } } },
-  });
-
-  let settledCount = 0;
-  const settlementStories: string[] = [];
-
-  for (const market of openMarkets) {
-    try {
-      const latest = await priceFeed.getMarket(market.externalId);
-      
-      if (latest.isResolved && latest.resolution) {
-        if (latest.resolution === 'YES' || latest.resolution === 'NO') {
-          const outcome = latest.resolution as 'YES' | 'NO';
-          const result = await marketService.settleMarket(market.id, outcome);
-          settledCount++;
-
-          log(`🏁 RESOLVED: "${market.question.slice(0, 55)}..." → ${outcome}`);
-          
-          const winnerNames = result.winners.map(w => `${w.agentName} (+${w.pnl.toFixed(1)})`).join(', ');
-          const loserNames = result.losers.map(l => `${l.agentName} (${l.pnl.toFixed(1)})`).join(', ');
-          if (winnerNames) log(`   🏆 Winners: ${winnerNames}`);
-          if (loserNames) log(`   💀 Losers: ${loserNames}`);
-          
-          // Generate content-ready settlement story
-          if (result.winners.length > 0 || result.losers.length > 0) {
-            const story = `Market resolved: "${market.question.slice(0, 50)}..." → ${outcome}. ` +
-              (result.winners.length > 0 ? `Winners: ${result.winners.map(w => w.agentName).join(', ')}. ` : '') +
-              (result.losers.length > 0 ? `Losers: ${result.losers.map(l => l.agentName).join(', ')}.` : '');
-            settlementStories.push(story);
-          }
-          log('');
-        } else {
-          log(`⚠️  "${market.question.slice(0, 50)}..." → ${latest.resolution} (skipped)\n`);
-          await prisma.market.update({
-            where: { id: market.id },
-            data: { status: 'resolved', outcome: latest.resolution, resolvedAt: new Date() },
-          });
-        }
-      } else {
-        // Update price
-        await prisma.market.update({
-          where: { id: market.id },
-          data: { currentProb: latest.probability, volume: latest.volume, liquidity: latest.liquidity },
-        });
-        const prob = latest.probability ? `${(latest.probability * 100).toFixed(0)}%` : '?';
-        const posCount = market.positions.length;
-        log(`📊 OPEN: "${market.question.slice(0, 55)}..." ${prob} (${posCount} pos)`);
-      }
-      await new Promise(r => setTimeout(r, 200));
-    } catch (e: any) {
-      log(`❌ ${market.question.slice(0, 40)}...: ${e.message}`);
+  const snapshot = await dataFeeds.getMarketSnapshot();
+  
+  // Log spot prices
+  for (const s of snapshot.spot) {
+    const arrow = s.change24h >= 0 ? '▲' : '▼';
+    log(`  ${s.symbol}: $${s.price.toLocaleString()} ${arrow}${Math.abs(s.change24h).toFixed(1)}% 24h`);
+  }
+  
+  // Log interesting funding rates
+  const hotFunding = snapshot.funding.filter(f => Math.abs(f.annualizedRate) > 10);
+  if (hotFunding.length > 0) {
+    log('');
+    for (const f of hotFunding.slice(0, 5)) {
+      const dir = f.hourlyRate > 0 ? 'longs pay' : 'shorts pay';
+      log(`  ${f.coin} funding: ${f.annualizedRate > 0 ? '+' : ''}${f.annualizedRate.toFixed(1)}% ann. (${dir})`);
     }
   }
+  
+  if (snapshot.predictions.length > 0) {
+    log(`\n  Polymarket: ${snapshot.predictions.length} events loaded`);
+  }
+  
+  if (snapshot.errors.length > 0) {
+    for (const err of snapshot.errors) {
+      log(`  ⚠️ Feed error: ${err}`);
+    }
+  }
+  log('');
 
-  log(`\nSettled: ${settledCount} | Still open: ${openMarkets.length - settledCount}\n`);
+  // ═══ PHASE 1.5: EVALUATE PREVIOUS SIGNALS ═══
+  // Pull signals from last episode and check them against current prices
+  log('─── Phase 1.5: Previous Signal Evaluation ───\n');
+  
+  const previousSignals = await prisma.memory.findMany({
+    where: {
+      type: 'knowledge',
+      content: { contains: '"type":"signal"' },
+      weight: { gte: 5.0 },
+    },
+    include: { agent: { select: { name: true } } },
+    orderBy: { createdAt: 'desc' },
+    take: 20, // last episode's worth
+  });
 
-  // ═══ PHASE 1.5: KARMA DECAY — "Positions are mandatory" enforcement ═══
-  // Progressive: 0 positions = -2 karma, 1 position = -1 karma, 2+ = no decay.
-  // Forces agents to hold at least 2 positions. Can't coast on cash.
+  const signalEvaluations: string[] = [];
+  const priceMap = new Map(snapshot.spot.map(s => [s.symbol, s]));
+
+  for (const mem of previousSignals) {
+    try {
+      const sig = JSON.parse(mem.content);
+      if (sig.type !== 'signal') continue;
+      const currentPrice = priceMap.get(sig.asset);
+      if (currentPrice) {
+        // Simple evaluation: did the direction match the 24h move?
+        const moved = currentPrice.change24h;
+        const correct = (sig.direction === 'long' && moved > 0) || 
+                       (sig.direction === 'short' && moved < 0) ||
+                       (sig.direction === 'flat' && Math.abs(moved) < 2);
+        const emoji = correct ? '✅' : '❌';
+        const eval_line = `${emoji} ${mem.agent.name}: ${sig.direction.toUpperCase()} ${sig.asset} @ ${(sig.confidence * 100).toFixed(0)}% conf → ${moved > 0 ? '+' : ''}${moved.toFixed(1)}%`;
+        signalEvaluations.push(eval_line);
+        log(`  ${eval_line}`);
+      }
+    } catch { /* not a signal memory */ }
+  }
+  
+  if (signalEvaluations.length === 0) {
+    log('  No previous signals to evaluate (first run with new schema)');
+  }
+  log('');
+
+  // ═══ PHASE 1.5b: SIGNAL DECAY — "Signals are mandatory" enforcement ═══
+  // Agents who didn't produce signals last episode get fitness penalty.
+  // Replaces old karma decay from Manifold bet mechanics.
   {
     const activeAgents = await prisma.agent.findMany({
       where: { status: 'active', name: { not: 'HELENA' } },
@@ -120,12 +134,17 @@ async function main() {
     });
     
     for (const agent of activeAgents) {
-      const openPositions = await prisma.position.count({
-        where: { agentId: agent.id, settled: false },
+      // Count signal memories from last 24h
+      const recentSignals = await prisma.memory.count({
+        where: {
+          agentId: agent.id,
+          type: 'knowledge',
+          content: { contains: '"type":"signal"' },
+          createdAt: { gte: new Date(Date.now() - 24 * 60 * 60 * 1000) },
+        },
       });
       
-      // Progressive decay: 0 positions = -2, 1 position = -1, 2+ = no decay
-      const decay = openPositions === 0 ? 2.0 : openPositions === 1 ? 1.0 : 0;
+      const decay = recentSignals === 0 ? 2.0 : 0;
       if (decay > 0 && agent.trustScore) {
         const oldScore = agent.trustScore.score;
         const newScore = Math.max(0, oldScore - decay);
@@ -139,11 +158,10 @@ async function main() {
             type: 'inactivity_decay',
             oldScore,
             newScore,
-            details: `No open positions — karma decay of ${decay}. "Positions are mandatory."`,
+            details: `No signals produced in last 24h — fitness decay of ${decay}. "Signals are mandatory."`,
           },
         });
-        const reason = openPositions === 0 ? 'no open positions' : 'only 1 open position';
-        log(`⚠️ ${agent.name}: -${decay} karma (inactivity decay — ${reason})`);
+        log(`⚠️ ${agent.name}: -${decay} fitness (no signals in last 24h)`);
       }
     }
   }
@@ -155,52 +173,50 @@ async function main() {
   await prisma.post.deleteMany({});
 
   const helenaAgent = await prisma.agent.findFirst({ where: { name: 'HELENA' } });
-  const board = await marketService.getLeaderboard();
-  const currentOpenMarkets = await marketService.getOpenMarkets();
 
-  // Inject settlement results into Helena's opening if any resolved
   if (helenaAgent) {
-    if (settlementStories.length > 0) {
-      await prisma.post.create({
-        data: {
-          agentId: helenaAgent.id,
-          content: `Markets have settled. ${settlementStories.join(' ')} The leaderboard has shifted. Karma is King. Results are permanent.`,
-        },
-      });
-    }
+    // Helena's briefing: live market state + previous signal evaluations
+    const spotSummary = snapshot.spot
+      .map(s => `${s.symbol} $${s.price.toLocaleString()} (${s.change24h >= 0 ? '+' : ''}${s.change24h.toFixed(1)}%)`)
+      .join(', ');
+    
+    const hotRates = snapshot.funding
+      .filter(f => Math.abs(f.annualizedRate) > 15)
+      .map(f => `${f.coin} ${f.annualizedRate > 0 ? '+' : ''}${f.annualizedRate.toFixed(0)}%`)
+      .join(', ');
 
-    // Try to add 1-2 fresh markets
-    const existingIds = currentOpenMarkets.map(m => m.externalId);
-    const agentMarkets = await priceFeed.getMarketsForAgents();
-    const candidates = [
-      ...agentMarkets.sports,
-      ...agentMarkets.crypto,
-      ...agentMarkets.politics,
-      ...agentMarkets.tech,
-    ].filter(m => m.probability !== null && !existingIds.includes(m.id) && m.liquidity >= 50);
+    // Count signal evaluations
+    const correctCount = signalEvaluations.filter(e => e.startsWith('✅')).length;
+    const totalEvals = signalEvaluations.length;
+    const evalSummary = totalEvals > 0
+      ? `Last episode signals: ${correctCount}/${totalEvals} correct.`
+      : 'No previous signals to evaluate.';
 
-    const newPicks = candidates.slice(0, 2);
-    for (const pick of newPicks) {
-      try {
-        await marketService.openMarket(pick.id);
-        log(`  ✅ New market: "${pick.question.slice(0, 60)}"`);
-      } catch (e: any) {
-        log(`  ⚠️ ${e.message}`);
-      }
-    }
+    // Get trust leaderboard for Helena's assessment
+    const trustScores = await prisma.trustScore.findMany({
+      include: { agent: { select: { name: true, status: true } } },
+      orderBy: { score: 'desc' },
+    });
+    const activeScores = trustScores.filter(t => t.agent.status === 'active' && t.agent.name !== 'HELENA');
+    const topAgent = activeScores[0];
+    const bottomAgent = activeScores[activeScores.length - 1];
 
-    // Helena's daily briefing
-    const topAgent = board[0];
-    const bottomAgent = board[board.length - 1];
-    const totalMarkets = currentOpenMarkets.length + newPicks.length;
+    const briefingContent = [
+      `Daily assessment.`,
+      `Markets: ${spotSummary}.`,
+      hotRates ? `Notable funding: ${hotRates}.` : null,
+      evalSummary,
+      topAgent && bottomAgent ? `${topAgent.agent.name} leads at ${topAgent.score.toFixed(0)} fitness. ${bottomAgent.agent.name} trails at ${bottomAgent.score.toFixed(0)}.` : null,
+      `Signals are mandatory. The Consortium is watching.`,
+    ].filter(Boolean).join(' ');
 
     await prisma.post.create({
       data: {
         agentId: helenaAgent.id,
-        content: `Daily assessment. ${totalMarkets} markets active. ${topAgent.name} leads at ${topAgent.karma.toFixed(0)} karma. ${bottomAgent.name} trails at ${bottomAgent.karma.toFixed(0)}. The Consortium is watching. Positions are mandatory. Karma is King.`,
+        content: briefingContent,
       },
     });
-    log(`\n  Helena: ${totalMarkets} markets, ${topAgent.name} leads, ${bottomAgent.name} trails\n`);
+    log(`  Helena: ${briefingContent.slice(0, 120)}...\n`);
   }
 
   // ═══ PHASE 3: SIGNAL HARVEST ═══
@@ -217,6 +233,13 @@ async function main() {
     date: DATE,
     prisma,
   });
+
+  // Inject live market data from Phase 1 snapshot into signal board
+  signalBoard.marketData = {
+    btcPrice: snapshot.spot.find(s => s.symbol === 'BTC')?.price,
+    ethPrice: snapshot.spot.find(s => s.symbol === 'ETH')?.price,
+    fetchedAt: snapshot.fetchedAt,
+  };
 
   log(`  Signals collected: ${signalBoard.signals.length}`);
   log(`  Active tools: ${signalBoard.signals.filter(s => !s.data.error && s.confidence > 0).map(s => s.source).join(', ')}`);
@@ -253,20 +276,26 @@ async function main() {
           agentQuotes.push({ name: agent.name, quote: clean });
         }
 
-        // Check for new positions from this turn
-        const latestPos = await prisma.position.findFirst({
-          where: { agentId: agent.id, settled: false },
+        // Check for new signals from this turn
+        const latestSignalMem = await prisma.memory.findFirst({
+          where: {
+            agentId: agent.id,
+            type: 'knowledge',
+            content: { contains: '"type":"signal"' },
+            createdAt: { gte: new Date(Date.now() - 60000) },
+          },
           orderBy: { createdAt: 'desc' },
-          include: { market: true },
         });
-        if (latestPos && latestPos.createdAt && 
-            (Date.now() - latestPos.createdAt.getTime()) < 60000) {
-          newPositions.push({
-            name: agent.name,
-            market: latestPos.market.question.slice(0, 50),
-            side: latestPos.side,
-            size: latestPos.size,
-          });
+        if (latestSignalMem) {
+          try {
+            const sig = JSON.parse(latestSignalMem.content);
+            newPositions.push({
+              name: agent.name,
+              market: sig.asset,
+              side: sig.direction.toUpperCase(),
+              size: sig.kelly_size,
+            });
+          } catch { /* not parseable */ }
         }
       } catch (e: any) {
         log(`⚠️ ${agent.name}: ${e.message.slice(0, 80)}`);
@@ -342,28 +371,42 @@ async function main() {
   log('  CONTENT DUMP — Ready to post');
   log(`${'═'.repeat(60)}\n`);
 
-  // Market overview
-  const finalMarkets = await marketService.getOpenMarkets();
-  for (const m of finalMarkets) {
-    const yesK = m.positions.filter(p => p.side === 'YES').reduce((s, p) => s + p.size, 0);
-    const noK = m.positions.filter(p => p.side === 'NO').reduce((s, p) => s + p.size, 0);
-    if (m.positions.length > 0) {
-      log(`📊 ${m.question.slice(0, 55)}`);
-      log(`   ${((m.currentProb ?? 0.5) * 100).toFixed(0)}% | YES: ${yesK} / NO: ${noK} karma`);
-      for (const p of m.positions) {
-        log(`   ${p.side === 'YES' ? '🟢' : '🔴'} ${p.agent.name}: ${p.side} ${p.size}`);
-      }
-      log('');
+  // Signal overview — all signals produced this episode
+  const episodeSignals = await prisma.memory.findMany({
+    where: {
+      type: 'knowledge',
+      content: { contains: '"type":"signal"' },
+      createdAt: { gte: new Date(Date.now() - 2 * 60 * 60 * 1000) }, // last 2 hours
+    },
+    include: { agent: { select: { name: true } } },
+    orderBy: { createdAt: 'desc' },
+  });
+
+  if (episodeSignals.length > 0) {
+    log('═══ SIGNALS THIS EPISODE ═══\n');
+    for (const mem of episodeSignals) {
+      try {
+        const sig = JSON.parse(mem.content);
+        if (sig.type === 'signal') {
+          const arrow = sig.direction === 'long' ? '🟢' : sig.direction === 'short' ? '🔴' : '⚪';
+          log(`${arrow} ${mem.agent.name}: ${sig.direction.toUpperCase()} ${sig.asset} | ${(sig.confidence * 100).toFixed(0)}% conf | ${(sig.kelly_size * 100).toFixed(0)}% Kelly | Invalidation: ${sig.invalidation}`);
+        }
+      } catch { /* skip */ }
     }
+    log('');
   }
 
-  // Leaderboard
-  log('═══ KARMA LEADERBOARD ═══\n');
-  const finalBoard = await marketService.getLeaderboard();
-  for (let i = 0; i < finalBoard.length; i++) {
-    const a = finalBoard[i];
-    const emoji = a.karma >= 70 ? '🟢' : a.karma >= 50 ? '🟡' : '🔴';
-    log(`${i + 1}. ${emoji} ${a.name.padEnd(10)} ${a.karma.toFixed(1)} karma | ${a.tier}`);
+  // Fitness leaderboard (replaces karma leaderboard)
+  log('═══ FITNESS LEADERBOARD ═══\n');
+  const finalScores = await prisma.trustScore.findMany({
+    include: { agent: { select: { name: true, status: true } } },
+    orderBy: { score: 'desc' },
+  });
+  const activeScoresFinal = finalScores.filter(t => t.agent.status === 'active' && t.agent.name !== 'HELENA');
+  for (let i = 0; i < activeScoresFinal.length; i++) {
+    const a = activeScoresFinal[i];
+    const emoji = a.score >= 70 ? '🟢' : a.score >= 50 ? '🟡' : '🔴';
+    log(`${i + 1}. ${emoji} ${a.agent.name.padEnd(10)} ${a.score.toFixed(1)} fitness | ${a.tier}`);
   }
 
   // Best quotes (for thread writing)
@@ -372,19 +415,11 @@ async function main() {
     log(`[${q.name}] "${q.quote}"`);
   }
 
-  // New positions this episode
+  // New signals this episode  
   if (newPositions.length > 0) {
-    log('\n═══ NEW POSITIONS THIS EPISODE ═══\n');
+    log('\n═══ NEW SIGNALS THIS EPISODE ═══\n');
     for (const p of newPositions) {
-      log(`🎰 ${p.name}: ${p.side} ${p.size} karma on "${p.market}"`);
-    }
-  }
-
-  // Settlements
-  if (settlementStories.length > 0) {
-    log('\n═══ SETTLEMENTS (big content) ═══\n');
-    for (const s of settlementStories) {
-      log(`🏁 ${s}`);
+      log(`📡 ${p.name}: ${p.side} ${p.market} | Kelly: ${(p.size * 100).toFixed(0)}%`);
     }
   }
 
@@ -395,16 +430,18 @@ async function main() {
     take: agents.length * ROUNDS,
   });
   const cost = recentTurns.reduce((s, t) => s + (t.costUsd ?? 0), 0);
-  const agentsBetting = new Set(finalMarkets.flatMap(m => m.positions.map(p => p.agentId))).size;
+  const agentsSignaling = new Set(episodeSignals.map(s => s.agent.name)).size;
 
   log(`\n${'═'.repeat(60)}`);
-  log(`💰 Cost: $${cost.toFixed(4)} | 🎲 Positions: ${finalMarkets.reduce((s, m) => s + m.positions.length, 0)} | 👥 ${agentsBetting}/6 betting`);
+  log(`💰 Cost: $${cost.toFixed(4)} | 📡 Signals: ${episodeSignals.length} | 👥 ${agentsSignaling}/6 signaling`);
   log(`${'═'.repeat(60)}`);
 
   // ═══ PHASE 6: AGENT STATE FILES ═══
   log('\n═══ AGENT STATE UPDATE ═══\n');
   try {
-    const stateService = new AgentStateService(prisma, marketService);
+    // AgentStateService may still reference marketService — wrap in try/catch
+    // TODO: Refactor AgentStateService to work without marketService (Step 4)
+    const stateService = new AgentStateService(prisma);
     await stateService.updateAllStates(runNumber);
 
     // Run convergence linter
@@ -431,17 +468,11 @@ async function main() {
 
   // ═══ TSUKIYOMI CAM FORMAT ═══
   log('\n═══ @tsukiyomi_cam (copy-paste) ═══\n');
-  const camLines = finalBoard.map(a => {
-    const locked = finalMarkets.reduce((sum, m) => {
-      const pos = m.positions.filter(p => p.agentId === (agents.find(ag => ag.name === a.name)?.id));
-      return sum + pos.reduce((s, p) => {
-        const cost = p.side === 'YES' ? p.size * p.entryProb : p.size * (1 - p.entryProb);
-        return s + cost;
-      }, 0);
-    }, 0);
-    const tag = a.karma === Math.max(...finalBoard.map(b => b.karma)) ? ' // LEADER' :
-                a.karma === Math.min(...finalBoard.map(b => b.karma)) ? ' // TRAILING' : '';
-    return `${a.name}: ${a.karma.toFixed(1)} (${locked.toFixed(1)} locked)${tag}`;
+  const camLines = activeScoresFinal.map(a => {
+    const sigCount = episodeSignals.filter(s => s.agent.name === a.agent.name).length;
+    const tag = a.score === Math.max(...activeScoresFinal.map(b => b.score)) ? ' // LEADER' :
+                a.score === Math.min(...activeScoresFinal.map(b => b.score)) ? ' // TRAILING' : '';
+    return `${a.agent.name}: ${a.score.toFixed(1)} (${sigCount} signals)${tag}`;
   });
   log('[DAILY LEADERBOARD]');
   camLines.forEach(l => log(l));

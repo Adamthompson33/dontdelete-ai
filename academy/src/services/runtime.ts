@@ -158,14 +158,23 @@ ${agent.memories.map(m => `[${m.type}] ${m.content}`).join('\n')}
 WHAT YOU CAN DO THIS TURN:
 You may take UP TO THREE actions. Format each action on its own line:
 
-BET <market-id> <YES|NO> <karma-amount>: <your reasoning>
-  Example: BET abc12345 YES 15: I think this resolves yes because the data supports it
-  You MUST place at least one BET if prediction markets are open. Failure to bet when markets are open results in karma penalties. Use the 8-character market id shown in brackets.
+SIGNAL <asset> <LONG|SHORT|FLAT> <confidence> <kelly_size> | invalidation: <condition> | sources: <source1, source2>
+  Example: SIGNAL ETH LONG 0.7 0.15 | invalidation: ETH breaks below $1900 | sources: funding-rates, spot-price
+  Example: SIGNAL BTC SHORT 0.6 0.10 | invalidation: BTC reclaims $70k with volume | sources: arb-scanner, kelly-engine
+  Example: SIGNAL SOL FLAT 0.5 0.0 | invalidation: n/a | sources: spot-price
+  
+  You SHOULD produce at least one SIGNAL per turn based on the market data and Signal Board.
+  - asset: the ticker (BTC, ETH, SOL, etc.)
+  - direction: LONG (bullish), SHORT (bearish), or FLAT (no edge / sit out)
+  - confidence: 0.0 to 1.0 — how sure you are
+  - kelly_size: 0.0 to 1.0 — fraction of portfolio to risk (use Kelly criterion if you can)
+  - invalidation: plain english condition that would kill your thesis
+  - sources: comma-separated list of data you based this on
 
+<!-- OLD: BET/SELL mechanics (Manifold prediction markets — deprecated)
+BET <market-id> <YES|NO> <karma-amount>: <your reasoning>
 SELL <market-id>: <your reasoning>
-  Exit an existing position at current market price. Returns your locked karma minus a 10% exit fee.
-  Example: SELL abc12345: The thesis no longer holds — exiting before further losses.
-  Use this when your conviction changes or you can't defend the position anymore. Smart exits are better than stubborn holds.
+-->
 
 POST: <your thought, observation, or message to the community>
 REPLY <id>: <your reply to a specific post>
@@ -440,6 +449,28 @@ INSTRUCTION: You now have the Factor Model. Use it. Report Monte Carlo verdicts 
         actions.push({ type: 'reflect', content: reflectMatch[1].trim() });
         continue;
       }
+
+      // SIGNAL <asset> <LONG|SHORT|FLAT> <confidence> <kelly> | invalidation: <condition> | sources: <list>
+      // Example: SIGNAL ETH LONG 0.7 0.15 | invalidation: ETH breaks below $1900 | sources: funding-rates, spot-price
+      const signalMatch = line.match(/^SIGNAL\s+(\S+)\s+(LONG|SHORT|FLAT)\s+([\d.]+)\s+([\d.]+)\s*\|\s*invalidation:\s*(.+?)\s*\|\s*sources:\s*(.+)$/i);
+      if (signalMatch) {
+        const confidence = parseFloat(signalMatch[3]);
+        const kelly = parseFloat(signalMatch[4]);
+        const sources = signalMatch[6].split(',').map((s: string) => s.trim()).filter(Boolean);
+        actions.push({
+          type: 'signal',
+          content: `${signalMatch[2].toUpperCase()} ${signalMatch[1].toUpperCase()} @ ${(confidence * 100).toFixed(0)}% confidence, ${(kelly * 100).toFixed(0)}% Kelly`,
+          signal: {
+            direction: signalMatch[2].toLowerCase() as 'long' | 'short' | 'flat',
+            asset: signalMatch[1].toUpperCase(),
+            confidence: Math.min(1, Math.max(0, confidence)),
+            kelly_size: Math.min(1, Math.max(0, kelly)),
+            invalidation: signalMatch[5].trim(),
+            data_sources: sources,
+          },
+        });
+        continue;
+      }
     }
 
     // If the LLM didn't follow the format, treat the whole response as a post
@@ -577,6 +608,33 @@ INSTRUCTION: You now have the Factor Model. Use it. Report Monte Carlo verdicts 
               } catch (e: any) {
                 console.log(`⚠️ Sell failed: ${e.message}`);
               }
+            }
+            break;
+
+          case 'signal':
+            if (action.signal) {
+              // Store signal in posts (visible to all agents) and as structured data
+              const signalPost = await this.prisma.post.create({
+                data: {
+                  agentId,
+                  content: `📡 SIGNAL: ${action.signal.direction.toUpperCase()} ${action.signal.asset} | Confidence: ${(action.signal.confidence * 100).toFixed(0)}% | Kelly: ${(action.signal.kelly_size * 100).toFixed(0)}% | Invalidation: ${action.signal.invalidation} | Sources: ${action.signal.data_sources.join(', ')}`,
+                },
+              });
+              // Store structured signal as memory for tracking/scoring
+              await this.prisma.memory.create({
+                data: {
+                  agentId,
+                  type: 'knowledge',
+                  content: JSON.stringify({
+                    type: 'signal',
+                    ...action.signal,
+                    timestamp: new Date().toISOString(),
+                    episode: this.signalBoard?.episode,
+                  }),
+                  weight: 5.0, // signals are high-weight memories
+                },
+              });
+              console.log(`📡 ${agent.name} signal: ${action.signal.direction.toUpperCase()} ${action.signal.asset} @ ${(action.signal.confidence * 100).toFixed(0)}% confidence`);
             }
             break;
 

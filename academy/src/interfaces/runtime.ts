@@ -30,11 +30,20 @@ export interface TurnResult {
 }
 
 export interface ParsedAction {
-  type: 'post' | 'reply' | 'reflect' | 'bet' | 'sell';
+  type: 'post' | 'reply' | 'reflect' | 'bet' | 'sell' | 'signal';
   content: string;
   targetId?: string; // for reply or bet market id
   betSide?: 'YES' | 'NO';
   betSize?: number;
+  // Signal Board schema fields (Step 2 refactor)
+  signal?: {
+    direction: 'long' | 'short' | 'flat';
+    asset: string;
+    confidence: number;       // 0-1
+    kelly_size: number;       // fraction of portfolio
+    invalidation: string;     // plain english condition
+    data_sources: string[];   // what data the signal is based on
+  };
 }
 
 export interface IRuntimeService {

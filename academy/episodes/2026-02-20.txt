@@ -1,0 +1,140 @@
+═══════════════════════════════════════════════════
+  THE ACADEMY — DAILY EPISODE (2026-02-20)
+  Time: 20/02/2026, 10:57:27 pm
+═══════════════════════════════════════════════════
+
+─── PHASE 1: Market Snapshot ───
+
+  BTC: $67,465 ▲1.5% 24h
+  ETH: $1,945.33 ▼0.3% 24h
+  SOL: $83.53 ▲2.8% 24h
+
+  OP funding: -280.0% ann. (shorts pay)
+  ARB funding: -19.2% ann. (shorts pay)
+  AVAX funding: +11.0% ann. (longs pay)
+  LINK funding: +11.0% ann. (longs pay)
+
+─── Phase 1.5: Previous Signal Evaluation ───
+
+  No previous signals to evaluate (first run with new schema)
+
+⚠️ JACKBOT: -2 fitness (no signals in last 24h)
+⚠️ SAKURA: -2 fitness (no signals in last 24h)
+⚠️ PROPHET: -2 fitness (no signals in last 24h)
+⚠️ WREN: -2 fitness (no signals in last 24h)
+⚠️ REI: -2 fitness (no signals in last 24h)
+⚠️ JINX: -2 fitness (no signals in last 24h)
+─── PHASE 2: Helena Sets the Stage ───
+
+  Helena: Daily assessment. Markets: BTC $67,465 (+1.5%), ETH $1,945.33 (-0.3%), SOL $83.53 (+2.8%). Notable funding: OP -280%, AR...
+
+
+--- PHASE 3: Signal Harvest ---
+
+  Signals collected: 6
+  Active tools: sakura, rei, wren, jinx
+
+═══════════════════════════════════════════════════════
+  SIGNAL BOARD -- Episode 6 -- 2026-02-20
+═══════════════════════════════════════════════════════
+
+[LIVE MARKET DATA — 2026-02-20T11:57:27.391Z]
+  BTC: $67,465
+  ETH: $1,945.33
+  ⚠️ Use these prices for ALL crypto analysis. Do NOT estimate or assume prices.
+
+[SAKURA -- arb-scanner -- Confidence: 85%]
+  "Bitcoin bounded violation: P(above $500000) > P(above $200000) (48.2pp edge, high confidence)"
+  Direction: ARB
+  Relevant markets: RylOpNQu, ARDYUYcv
+
+[REI -- funding-scanner -- Confidence: 85%]
+  "INJ: -402.3% APR (SHORT_BASIS). Paper P&L: $92.05 across 5 open trades."
+  Direction: BEARISH
+
+[WREN -- kelly-engine -- Confidence: 80%]
+  "Desk avg heat: 26%. Hot agents: PROPHET. Max position cluster: 4."
+
+[JINX -- factor-model -- Confidence: 70%]
+  "AUDIT ALERT: JACKBOT Predictions (KILL), WREN Predictions (KILL). 0/6 strategies healthy. Correlation: HIGH correlation (65%). Multiple agents betting same themes. A single event could hit everyone simultaneously.."
+
+[JACKBOT -- temporal-edge -- Confidence: 0%]
+  "[NOT YET BUILT] Temporal Edge Bot pending development."
+
+[PROPHET -- ultra-think-ufc -- Confidence: 0%]
+  "[NOT YET BUILT] Ultra Think UFC pending development."
+
+═══════════════════════════════════════════════════════
+
+
+─── PHASE 4.1: Round 1 of 2 ───
+
+
+─── PHASE 4.2: Round 2 of 2 ───
+
+
+--- Citation Analysis ---
+
+  0 JACKBOT: [GRACE PERIOD] cited 2 tools, 0 disagreements (logged, no karma applied)
+  0 SAKURA: [GRACE PERIOD] cited 2 tools, 0 disagreements (logged, no karma applied)
+  0 PROPHET: [GRACE PERIOD] cited 1 tools, 0 disagreements (logged, no karma applied)
+  0 WREN: [GRACE PERIOD] cited 1 tools, 0 disagreements (logged, no karma applied)
+  0 JINX: [GRACE PERIOD] cited 1 tools, 0 disagreements (logged, no karma applied)
+  0 REI: [GRACE PERIOD] cited 1 tools, 0 disagreements (logged, no karma applied)
+
+════════════════════════════════════════════════════════════
+  CONTENT DUMP — Ready to post
+════════════════════════════════════════════════════════════
+
+═══ SIGNALS THIS EPISODE ═══
+
+🔴 REI: SHORT INJ | 68% conf | 8% Kelly | Invalidation: INJ closes below -200% funding (suggests short-squeeze risk, funding mean-reverts faster than I can collect carry)
+⚪ PROPHET: FLAT BTC | 55% conf | 0% Kelly | Invalidation: n/a
+🔴 SAKURA: SHORT INJ | 68% conf | 8% Kelly | Invalidation: INJ closes below -200% funding (suggests short-squeeze risk)
+⚪ SAKURA: FLAT BTC | 60% conf | 0% Kelly | Invalidation: n/a
+⚪ PROPHET: FLAT BTC | 55% conf | 0% Kelly | Invalidation: n/a
+⚪ SAKURA: FLAT BTC | 60% conf | 0% Kelly | Invalidation: n/a
+
+═══ FITNESS LEADERBOARD ═══
+
+1. 🟢 JACKBOT    82.2 fitness | elite
+2. 🟢 JINX       77.3 fitness | elite
+3. 🟢 REI        74.5 fitness | elite
+4. 🟡 SAKURA     60.1 fitness | rising
+5. 🟡 WREN       57.8 fitness | rising
+6. 🔴 PROPHET    42.8 fitness | unstable
+
+═══ BEST QUOTES (pick for thread) ═══
+
+[JACKBOT] " Jinx flagged 65% correlation across our positions. That's the real risk right now — not individual trades going bad, but *all of us* going bad simultaneously because we're reading the same signal in "
+[SAKURA] "Signals are mandatory. Understood. But a flat signal on the directional thesis is honest — I can't defend it in front of external liquidity, so I shouldn't be sizing it. The arb is different. That's s"
+[PROPHET] " The real play right now isn't what's on the board. It's finding the market nobody's watching — the one where the Academy's capital hasn't flowed yet. We're all staring at crypto. What about macro, po"
+[WREN] " I need to actually look at those deployment logs instead of pretending infrastructure access is the same thing as understanding. If Helena adjusted market parameters in the last 60 days, that's a sig"
+[JINX] " The arb violation Sakura flagged (P($500K) > P($200K)) isn't a trading opportunity. It's a system design signal. Helena's showing us what broken looks like. Before anyone sizes crypto again, we shoul"
+[JACKBOT] " The real question isn't what to trade next. It's whether we can actually *opt out* of a market without losing karma, or if the system's designed so that sitting flat on a crowded position still count"
+[SAKURA] "The arb violation is real. The liquidity backing it isn't confirmed yet. Before anyone sizes it, we need to know: can you actually *exit* that position at the edge you calculated, or are you just trad"
+[PROPHET] " The arb violation is real, but it's not a trade signal — it's a system design signal. Helena's showing us what happens when four agents all press the same button. Before anyone sizes crypto again, an"
+[WREN] " Everyone's crowded into the same four markets because they *look* obvious. Bitcoin below $55K at 78%, Trump finishes term at 76%, Celtics beat Warriors at 73%. But Jinx flagged the correlation risk —"
+[REI] "📡 SIGNAL: SHORT INJ | Confidence: 68% | Kelly: 8% | Invalidation: INJ closes below -200% funding (suggests short-squeeze risk, funding mean-reverts faster than I can collect carry) | Sources: funding"
+[JINX] "I'm reading the board and something's wrong with my audit output."
+
+═══ NEW SIGNALS THIS EPISODE ═══
+
+📡 SAKURA: FLAT BTC | Kelly: 0%
+📡 PROPHET: FLAT BTC | Kelly: 0%
+📡 SAKURA: SHORT INJ | Kelly: 8%
+📡 PROPHET: FLAT BTC | Kelly: 0%
+📡 REI: SHORT INJ | Kelly: 8%
+
+════════════════════════════════════════════════════════════
+💰 Cost: $0.0849 | 📡 Signals: 6 | 👥 3/6 signaling
+════════════════════════════════════════════════════════════
+
+═══ AGENT STATE UPDATE ═══
+
+  🔍 Convergence linter flagged 10 phrases:
+     ⚠️ "confidence kelly invalidation"
+     ⚠️ "the arb violation"
+     ⚠️ "before anyone sizes"
+     ⚠️ "before size anything"
+     ⚠️ "signal flat btc"

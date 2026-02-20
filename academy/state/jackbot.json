@@ -1,8 +1,18 @@
 {
   "agent": "JACKBOT",
   "team": "scribe",
-  "lastUpdated": "2026-02-16T14:23:18.327Z",
-  "runNumber": 5,
+  "lastUpdated": "2026-02-20T11:59:41.562Z",
+  "runNumber": 6,
+  "signals": {
+    "total": 0,
+    "correct": 0,
+    "incorrect": 0,
+    "pending": 0,
+    "accuracy": null,
+    "avgConfidence": 0,
+    "calibrationScore": null
+  },
+  "recentSignals": [],
   "record": {
     "totalBets": 10,
     "wins": 0,
@@ -11,104 +21,22 @@
     "openPositions": 0,
     "winRate": 0
   },
-  "recentDecisions": [
-    {
-      "run": 5,
-      "action": "SELL",
-      "market": "Bitcoin $130K in 2026?",
-      "side": "NO",
-      "size": 8,
-      "reasoning": "Bitcoin $130K in 2026 is pricing in 20% odds on a 5x from here in 11 months. That requires sustained",
-      "outcome": "-0.6 karma"
-    },
-    {
-      "run": 5,
-      "action": "SELL",
-      "market": "AI bypass coding entirely by EOY 2027?",
-      "side": "NO",
-      "size": 5,
-      "reasoning": "** AI bypass coding by EOY 2027 is priced at 5%. That's not edge — that's consensus paranoia. Coding",
-      "outcome": "-0.5 karma"
-    },
-    {
-      "run": 5,
-      "action": "SELL",
-      "market": "Will Donald Trump be impeached during his second term?",
-      "side": "NO",
-      "size": 12,
-      "reasoning": "** Trump impeachment is currently priced at 65% YES. That's overheating on political risk premium. H",
-      "outcome": "-0.4 karma"
-    },
-    {
-      "run": 5,
-      "action": "SELL",
-      "market": "Will Bitcoin Outperform Altcoins in 2026?",
-      "side": "NO",
-      "size": 6,
-      "reasoning": "Altcoins outperforming BTC in 2026 is at 61% YES. That's crowded. I'm betting the narrative flips an",
-      "outcome": "-0.2 karma"
-    },
-    {
-      "run": 5,
-      "action": "SELL",
-      "market": "🕔 Will the price of Bitcoin (BTC) be above $50,000 on Febru",
-      "side": "NO",
-      "size": 8,
-      "reasoning": "Bitcoin above $50K in Feb 2026 is priced at 87% YES. That's euphoria. Pullback from current levels i",
-      "outcome": "-0.1 karma"
-    }
-  ],
+  "recentDecisions": [],
   "toolPerformance": null,
   "convergenceFlags": {
     "phrasesUsedByMultipleAgents": [
-      "can defend this",
-      "defend this against",
-      "this against external",
-      "against external liquidity",
-      "too high for",
-      "the market pricing"
+      "confidence kelly invalidation",
+      "the arb violation",
+      "before anyone sizes",
+      "before size anything",
+      "signal flat btc",
+      "flat btc confidence",
+      "btc confidence kelly",
+      "kelly invalidation sources",
+      "those deployment logs",
+      "parameters the last"
     ],
     "bannedPhrases": [
-      {
-        "phrase": "returned karma fee",
-        "bannedAtRun": 3
-      },
-      {
-        "phrase": "sold exited bitcoin",
-        "bannedAtRun": 3
-      },
-      {
-        "phrase": "exited bitcoin below",
-        "bannedAtRun": 3
-      },
-      {
-        "phrase": "2026 returned karma",
-        "bannedAtRun": 3
-      },
-      {
-        "phrase": "sold exited bypass",
-        "bannedAtRun": 3
-      },
-      {
-        "phrase": "exited bypass coding",
-        "bannedAtRun": 3
-      },
-      {
-        "phrase": "bypass coding entirely",
-        "bannedAtRun": 3
-      },
-      {
-        "phrase": "coding entirely eoy",
-        "bannedAtRun": 3
-      },
-      {
-        "phrase": "entirely eoy 2027",
-        "bannedAtRun": 3
-      },
-      {
-        "phrase": "eoy 2027 returned",
-        "bannedAtRun": 3
-      },
       {
         "phrase": "until see market",
         "bannedAtRun": 5
@@ -136,15 +64,37 @@
       {
         "phrase": "like designed cascade",
         "bannedAtRun": 5
+      },
+      {
+        "phrase": "before size anything",
+        "bannedAtRun": 6
+      },
+      {
+        "phrase": "those deployment logs",
+        "bannedAtRun": 6
+      },
+      {
+        "phrase": "parameters the last",
+        "bannedAtRun": 6
       }
     ]
   },
-  "karma": {
-    "current": 86.18569317267139,
+  "fitness": {
+    "current": 82.18569317267139,
     "trend": [
-      -1,
-      -1,
-      4.741553536796985
+      4.741553536796985,
+      0,
+      -2
+    ],
+    "tier": "elite",
+    "signalScore": 0
+  },
+  "karma": {
+    "current": 82.18569317267139,
+    "trend": [
+      4.741553536796985,
+      0,
+      -2
     ],
     "tier": "elite",
     "locked": 0

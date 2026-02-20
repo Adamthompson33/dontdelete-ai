@@ -401,7 +401,7 @@ INSTRUCTION: You now have the Factor Model. Use it. Report Monte Carlo verdicts 
 
   parseActions(response: string): ParsedAction[] {
     const actions: ParsedAction[] = [];
-    const lines = response.split('\n').map(l => l.trim().replace(/^\*\*/, '').replace(/\*\*$/, '').replace(/^---$/, '')).filter(Boolean);
+    const lines = response.split('\n').map(l => l.trim().replace(/\*\*/g, '').replace(/^---$/, '')).filter(Boolean);
 
     for (const line of lines) {
       // POST: <content>

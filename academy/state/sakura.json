@@ -1,8 +1,62 @@
 {
   "agent": "SAKURA",
   "team": "sentinel",
-  "lastUpdated": "2026-02-16T14:23:18.331Z",
-  "runNumber": 5,
+  "lastUpdated": "2026-02-20T11:59:41.564Z",
+  "runNumber": 6,
+  "signals": {
+    "total": 3,
+    "correct": 0,
+    "incorrect": 0,
+    "pending": 3,
+    "accuracy": null,
+    "avgConfidence": 0.6266666666666666,
+    "calibrationScore": null
+  },
+  "recentSignals": [
+    {
+      "run": 6,
+      "asset": "INJ",
+      "direction": "short",
+      "confidence": 0.68,
+      "kelly_size": 0.08,
+      "invalidation": "INJ closes below -200% funding (suggests short-squeeze risk)",
+      "data_sources": [
+        "funding-scanner (Rei's -402% APR is unsustainable)",
+        "microstructure (INJ illiquid enough that extreme funding rates mean mean-reversion",
+        "not direction)"
+      ],
+      "timestamp": "2026-02-20T11:58:57.502Z",
+      "outcome": "pending"
+    },
+    {
+      "run": 6,
+      "asset": "BTC",
+      "direction": "flat",
+      "confidence": 0.6,
+      "kelly_size": 0,
+      "invalidation": "n/a",
+      "data_sources": [
+        "arb-scanner (violation exists but liquidity unconfirmed)",
+        "correlation-audit (65% correlation means directional thesis is phantom)"
+      ],
+      "timestamp": "2026-02-20T11:58:57.498Z",
+      "outcome": "pending"
+    },
+    {
+      "run": 6,
+      "asset": "BTC",
+      "direction": "flat",
+      "confidence": 0.6,
+      "kelly_size": 0,
+      "invalidation": "n/a",
+      "data_sources": [
+        "arb-scanner (flagged violation but need liquidity confirmation)",
+        "correlation-audit (65% means directional thesis is correlated risk)"
+      ],
+      "timestamp": "2026-02-20T11:57:58.007Z",
+      "outcome": "pending"
+    }
+  ],
   "record": {
     "totalBets": 8,
     "wins": 0,
@@ -11,62 +65,20 @@
     "openPositions": 3,
     "winRate": 0
   },
-  "recentDecisions": [
-    {
-      "run": 5,
-      "action": "BUY",
-      "market": "Will Trump demean another President on President's day?",
-      "side": "NO",
-      "size": 8,
-      "reasoning": "Trump demean another President at 64% YES on President's Day. Demeaning requires active provocation.",
-      "outcome": "open"
-    },
-    {
-      "run": 5,
-      "action": "BUY",
-      "market": "NBA - Nuggets beat Clippers Feb 19",
-      "side": "NO",
-      "size": 6,
-      "reasoning": "Nuggets beat Clippers at 67% YES is consensus pricing on recent form. But Clippers are 2-1 against N",
-      "outcome": "open"
-    },
-    {
-      "run": 5,
-      "action": "BUY",
-      "market": "Bitcoin below $52K before March 31, 2026?",
-      "side": "NO",
-      "size": 8,
-      "reasoning": "Bitcoin below $52K before March 31, 2026. Current spot $68,421. 8% implied probability of a 28% draw",
-      "outcome": "open"
-    },
-    {
-      "run": 5,
-      "action": "SELL",
-      "market": "Bitcoin $100K in Feburary?",
-      "side": "YES",
-      "size": 5,
-      "reasoning": "Bitcoin $100K in February is 4% consensus. Market's pricing panic-floor thinking. If Bitcoin stabili",
-      "outcome": "-0.0 karma"
-    },
-    {
-      "run": 5,
-      "action": "SELL",
-      "market": "🕔 Will the price of Bitcoin (BTC) be above $50,000 on Febru",
-      "side": "NO",
-      "size": 3,
-      "reasoning": "Bitcoin above $50K in February is 99% market but Academy shows 15%. Market is overconfident on near-",
-      "outcome": "-0.0 karma"
-    }
-  ],
+  "recentDecisions": [],
   "toolPerformance": null,
   "convergenceFlags": {
     "phrasesUsedByMultipleAgents": [
-      "can defend this",
-      "defend this against",
-      "this against external",
-      "against external liquidity",
-      "too high for",
-      "the market pricing"
+      "confidence kelly invalidation",
+      "the arb violation",
+      "before anyone sizes",
+      "before size anything",
+      "signal flat btc",
+      "flat btc confidence",
+      "btc confidence kelly",
+      "kelly invalidation sources",
+      "those deployment logs",
+      "parameters the last"
     ],
     "bannedPhrases": [
       {
@@ -144,17 +156,55 @@
       {
         "phrase": "the market pricing",
         "bannedAtRun": 5
+      },
+      {
+        "phrase": "confidence kelly invalidation",
+        "bannedAtRun": 6
+      },
+      {
+        "phrase": "the arb violation",
+        "bannedAtRun": 6
+      },
+      {
+        "phrase": "before anyone sizes",
+        "bannedAtRun": 6
+      },
+      {
+        "phrase": "signal flat btc",
+        "bannedAtRun": 6
+      },
+      {
+        "phrase": "flat btc confidence",
+        "bannedAtRun": 6
+      },
+      {
+        "phrase": "btc confidence kelly",
+        "bannedAtRun": 6
+      },
+      {
+        "phrase": "kelly invalidation sources",
+        "bannedAtRun": 6
       }
     ]
   },
-  "karma": {
-    "current": 64.13809505129274,
+  "fitness": {
+    "current": 60.13809505129274,
     "trend": [
-      -2,
-      -2,
-      -14.163074618610025
+      -14.163074618610025,
+      0,
+      -2
     ],
     "tier": "rising",
-    "locked": 12.163074618610025
+    "signalScore": 0
+  },
+  "karma": {
+    "current": 60.13809505129274,
+    "trend": [
+      -14.163074618610025,
+      0,
+      -2
+    ],
+    "tier": "rising",
+    "locked": 0
   }
 }

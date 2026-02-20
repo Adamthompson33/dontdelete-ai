@@ -1,8 +1,18 @@
 {
   "agent": "WREN",
   "team": "architect",
-  "lastUpdated": "2026-02-16T14:23:18.342Z",
-  "runNumber": 5,
+  "lastUpdated": "2026-02-20T11:59:41.569Z",
+  "runNumber": 6,
+  "signals": {
+    "total": 0,
+    "correct": 0,
+    "incorrect": 0,
+    "pending": 0,
+    "accuracy": null,
+    "avgConfidence": 0,
+    "calibrationScore": null
+  },
+  "recentSignals": [],
   "record": {
     "totalBets": 13,
     "wins": 0,
@@ -11,104 +21,22 @@
     "openPositions": 2,
     "winRate": 0
   },
-  "recentDecisions": [
-    {
-      "run": 5,
-      "action": "BUY",
-      "market": "Will Trump and Mamdani openly feud before February 21?",
-      "side": "NO",
-      "size": 14,
-      "reasoning": "Trump-Mamdani feud at 14% is too low. They have real policy disagreements (Mamdani is pro-tariff, Tr",
-      "outcome": "open"
-    },
-    {
-      "run": 5,
-      "action": "BUY",
-      "market": "Will OpenAI release a model named GPT 5.3 by the end of Febr",
-      "side": "NO",
-      "size": 12,
-      "reasoning": "GPT 5.3 by end of February is 34% — that's panic pricing on \"OpenAI releases fast.\" They released 4.",
-      "outcome": "open"
-    },
-    {
-      "run": 5,
-      "action": "SELL",
-      "market": "Will Trump demean another President on President's day?",
-      "side": "NO",
-      "size": 5,
-      "reasoning": "Trump's been careful about President's Day optics this term—he knows the symbolism. 71% prices in al",
-      "outcome": "-0.1 karma"
-    },
-    {
-      "run": 5,
-      "action": "SELL",
-      "market": "NBA - Hawks beat 76ers Feb 19",
-      "side": "NO",
-      "size": 8,
-      "reasoning": "Hawks beat 76ers at 38% YES is overcrowded consensus. 62% on Hawks actually has value if the 76ers a",
-      "outcome": "-0.5 karma"
-    },
-    {
-      "run": 5,
-      "action": "SELL",
-      "market": "NBA - Nuggets beat Clippers Feb 19",
-      "side": "YES",
-      "size": 8,
-      "reasoning": "** Nuggets beat Clippers at 67% is efficient pricing. I don't have a strong edge here—that's the poi",
-      "outcome": "-0.5 karma"
-    }
-  ],
+  "recentDecisions": [],
   "toolPerformance": null,
   "convergenceFlags": {
     "phrasesUsedByMultipleAgents": [
-      "can defend this",
-      "defend this against",
-      "this against external",
-      "against external liquidity",
-      "too high for",
-      "the market pricing"
+      "confidence kelly invalidation",
+      "the arb violation",
+      "before anyone sizes",
+      "before size anything",
+      "signal flat btc",
+      "flat btc confidence",
+      "btc confidence kelly",
+      "kelly invalidation sources",
+      "those deployment logs",
+      "parameters the last"
     ],
     "bannedPhrases": [
-      {
-        "phrase": "returned karma fee",
-        "bannedAtRun": 3
-      },
-      {
-        "phrase": "sold exited bitcoin",
-        "bannedAtRun": 3
-      },
-      {
-        "phrase": "exited bitcoin below",
-        "bannedAtRun": 3
-      },
-      {
-        "phrase": "2026 returned karma",
-        "bannedAtRun": 3
-      },
-      {
-        "phrase": "sold exited bypass",
-        "bannedAtRun": 3
-      },
-      {
-        "phrase": "exited bypass coding",
-        "bannedAtRun": 3
-      },
-      {
-        "phrase": "bypass coding entirely",
-        "bannedAtRun": 3
-      },
-      {
-        "phrase": "coding entirely eoy",
-        "bannedAtRun": 3
-      },
-      {
-        "phrase": "entirely eoy 2027",
-        "bannedAtRun": 3
-      },
-      {
-        "phrase": "eoy 2027 returned",
-        "bannedAtRun": 3
-      },
       {
         "phrase": "jackbots right sometimes",
         "bannedAtRun": 4
@@ -184,17 +112,39 @@
       {
         "phrase": "the market pricing",
         "bannedAtRun": 5
+      },
+      {
+        "phrase": "before size anything",
+        "bannedAtRun": 6
+      },
+      {
+        "phrase": "those deployment logs",
+        "bannedAtRun": 6
+      },
+      {
+        "phrase": "parameters the last",
+        "bannedAtRun": 6
       }
     ]
   },
-  "karma": {
-    "current": 61.8466818929939,
+  "fitness": {
+    "current": 57.8466818929939,
     "trend": [
-      -7.532034669935882,
-      3.351255654815759,
-      -21.98375533316613
+      -21.98375533316613,
+      0,
+      -2
     ],
     "tier": "rising",
-    "locked": 19.98375533316613
+    "signalScore": 0
+  },
+  "karma": {
+    "current": 57.8466818929939,
+    "trend": [
+      -21.98375533316613,
+      0,
+      -2
+    ],
+    "tier": "rising",
+    "locked": 0
   }
 }

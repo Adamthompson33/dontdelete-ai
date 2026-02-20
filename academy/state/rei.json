@@ -1,8 +1,33 @@
 {
   "agent": "REI",
   "team": "sentinel",
-  "lastUpdated": "2026-02-16T14:23:18.347Z",
-  "runNumber": 5,
+  "lastUpdated": "2026-02-20T11:59:41.570Z",
+  "runNumber": 6,
+  "signals": {
+    "total": 1,
+    "correct": 0,
+    "incorrect": 0,
+    "pending": 1,
+    "accuracy": null,
+    "avgConfidence": 0.68,
+    "calibrationScore": null
+  },
+  "recentSignals": [
+    {
+      "run": 6,
+      "asset": "INJ",
+      "direction": "short",
+      "confidence": 0.68,
+      "kelly_size": 0.08,
+      "invalidation": "INJ closes below -200% funding (suggests short-squeeze risk, funding mean-reverts faster than I can collect carry)",
+      "data_sources": [
+        "funding-scanner",
+        "microstructure-analysis"
+      ],
+      "timestamp": "2026-02-20T11:59:32.529Z",
+      "outcome": "pending"
+    }
+  ],
   "record": {
     "totalBets": 5,
     "wins": 0,
@@ -11,94 +36,50 @@
     "openPositions": 0,
     "winRate": 0
   },
-  "recentDecisions": [
-    {
-      "run": 5,
-      "action": "SELL",
-      "market": "Bitcoin below $60K in 2026?",
-      "side": "NO",
-      "size": 8,
-      "reasoning": "** Bitcoin below $60K in 2026. Market's at 73% YES. Jinx is at NO but she's the only one. Everyone e",
-      "outcome": "-0.2 karma"
-    },
-    {
-      "run": 5,
-      "action": "SELL",
-      "market": "In early 2028, will an AI be able to generate a full high-qu",
-      "side": "NO",
-      "size": 8,
-      "reasoning": "** Movie generation by early 2028 at \"high quality\" is doing a lot of work. We can generate 30-secon",
-      "outcome": "-0.6 karma"
-    },
-    {
-      "run": 5,
-      "action": "SELL",
-      "market": "Will the AI bubble pop in 2026?",
-      "side": "NO",
-      "size": 10,
-      "reasoning": "The AI bubble at 21% YES is priced like everyone's expecting implosion. But 21% is the *inverse* of ",
-      "outcome": "-0.8 karma"
-    },
-    {
-      "run": 5,
-      "action": "SELL",
-      "market": "🕔 Will the price of Bitcoin (BTC) be above $50,000 on Febru",
-      "side": "NO",
-      "size": 12,
-      "reasoning": "Bitcoin at $50K in February is 87% priced as YES. That's not prediction — that's capitulation. JACKB",
-      "outcome": "-0.2 karma"
-    },
-    {
-      "run": 5,
-      "action": "SELL",
-      "market": "Bitcoin $95K in Feburary?",
-      "side": "NO",
-      "size": 8,
-      "reasoning": "Bitcoin $95K in February at 3% YES is capitulation, but I'm betting NO because I want to see what th",
-      "outcome": "-0.8 karma"
-    }
-  ],
+  "recentDecisions": [],
   "toolPerformance": {
     "name": "Funding Rate Scanner",
-    "paperPnl": 37.3570462,
+    "paperPnl": 92.04914460000002,
     "openPaperTrades": 5,
     "bestTrade": null,
     "worstTrade": null,
-    "totalScans": 4
+    "totalScans": 5
   },
   "convergenceFlags": {
     "phrasesUsedByMultipleAgents": [
-      "can defend this",
-      "defend this against",
-      "this against external",
-      "against external liquidity",
-      "too high for",
-      "the market pricing"
+      "confidence kelly invalidation",
+      "the arb violation",
+      "before anyone sizes",
+      "before size anything",
+      "signal flat btc",
+      "flat btc confidence",
+      "btc confidence kelly",
+      "kelly invalidation sources",
+      "those deployment logs",
+      "parameters the last"
     ],
     "bannedPhrases": [
       {
-        "phrase": "returned karma fee",
-        "bannedAtRun": 3
-      },
-      {
-        "phrase": "sold exited bitcoin",
-        "bannedAtRun": 3
-      },
-      {
-        "phrase": "exited bitcoin below",
-        "bannedAtRun": 3
-      },
-      {
-        "phrase": "2026 returned karma",
-        "bannedAtRun": 3
+        "phrase": "confidence kelly invalidation",
+        "bannedAtRun": 6
       }
     ]
   },
-  "karma": {
-    "current": 78.498699627401,
+  "fitness": {
+    "current": 74.498699627401,
     "trend": [
       -2,
+      0,
+      -2
+    ],
+    "tier": "elite",
+    "signalScore": 0
+  },
+  "karma": {
+    "current": 74.498699627401,
+    "trend": [
       -2,
+      0,
       -2
     ],
     "tier": "elite",

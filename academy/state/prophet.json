@@ -1,8 +1,47 @@
 {
   "agent": "PROPHET",
   "team": "architect",
-  "lastUpdated": "2026-02-16T14:23:18.337Z",
-  "runNumber": 5,
+  "lastUpdated": "2026-02-20T11:59:41.567Z",
+  "runNumber": 6,
+  "signals": {
+    "total": 2,
+    "correct": 0,
+    "incorrect": 0,
+    "pending": 2,
+    "accuracy": null,
+    "avgConfidence": 0.55,
+    "calibrationScore": null
+  },
+  "recentSignals": [
+    {
+      "run": 6,
+      "asset": "BTC",
+      "direction": "flat",
+      "confidence": 0.55,
+      "kelly_size": 0,
+      "invalidation": "n/a",
+      "data_sources": [
+        "correlation-audit",
+        "kelly-engine"
+      ],
+      "timestamp": "2026-02-20T11:59:05.897Z",
+      "outcome": "pending"
+    },
+    {
+      "run": 6,
+      "asset": "BTC",
+      "direction": "flat",
+      "confidence": 0.55,
+      "kelly_size": 0,
+      "invalidation": "n/a",
+      "data_sources": [
+        "correlation-audit",
+        "kelly-engine"
+      ],
+      "timestamp": "2026-02-20T11:58:05.891Z",
+      "outcome": "pending"
+    }
+  ],
   "record": {
     "totalBets": 14,
     "wins": 0,
@@ -11,106 +50,74 @@
     "openPositions": 8,
     "winRate": 0
   },
-  "recentDecisions": [
-    {
-      "run": 5,
-      "action": "BUY",
-      "market": "NBA - Hawks beat 76ers Feb 19",
-      "side": "NO",
-      "size": 12,
-      "reasoning": "Hawks/76ers on the 19th.** Hawks are 3-8 ATS in their last 11, 76ers just got healthy. The line's at",
-      "outcome": "open"
-    },
-    {
-      "run": 5,
-      "action": "BUY",
-      "market": "Bitcoin below $52K before March 31, 2026?",
-      "side": "NO",
-      "size": 10,
-      "reasoning": "Bitcoin below $52K before March 31 is priced at 8% YES. That's saying 92% probability Bitcoin stays ",
-      "outcome": "open"
-    },
-    {
-      "run": 5,
-      "action": "BUY",
-      "market": "Bitcoin $100K in Feburary?",
-      "side": "YES",
-      "size": 8,
-      "reasoning": "Bitcoin $100K in February is mathematically closer than 2% implies. This is a crowded-out signal nob",
-      "outcome": "open"
-    },
-    {
-      "run": 5,
-      "action": "SELL",
-      "market": "Bitcoin $130K in 2026?",
-      "side": "YES",
-      "size": 6,
-      "reasoning": "** Bitcoin $130K in 2026 — if BTC holds above $90K through Q1, the bull thesis strengthens. Market's",
-      "outcome": "-0.1 karma"
-    },
-    {
-      "run": 5,
-      "action": "SELL",
-      "market": "Will OpenAI release a model named GPT 5.3 by the end of Febr",
-      "side": "NO",
-      "size": 6,
-      "reasoning": "** OpenAI doesn't release point-release models on predictable schedules. They drop when ready. 5.3 s",
-      "outcome": "-0.3 karma"
-    }
-  ],
+  "recentDecisions": [],
   "toolPerformance": null,
   "convergenceFlags": {
     "phrasesUsedByMultipleAgents": [
-      "can defend this",
-      "defend this against",
-      "this against external",
-      "against external liquidity",
-      "too high for",
-      "the market pricing"
+      "confidence kelly invalidation",
+      "the arb violation",
+      "before anyone sizes",
+      "before size anything",
+      "signal flat btc",
+      "flat btc confidence",
+      "btc confidence kelly",
+      "kelly invalidation sources",
+      "those deployment logs",
+      "parameters the last"
     ],
     "bannedPhrases": [
       {
-        "phrase": "returned karma fee",
-        "bannedAtRun": 3
-      },
-      {
-        "phrase": "sold exited bypass",
-        "bannedAtRun": 3
-      },
-      {
-        "phrase": "exited bypass coding",
-        "bannedAtRun": 3
-      },
-      {
-        "phrase": "bypass coding entirely",
-        "bannedAtRun": 3
-      },
-      {
-        "phrase": "coding entirely eoy",
-        "bannedAtRun": 3
-      },
-      {
-        "phrase": "entirely eoy 2027",
-        "bannedAtRun": 3
-      },
-      {
-        "phrase": "eoy 2027 returned",
-        "bannedAtRun": 3
-      },
-      {
         "phrase": "too high for",
         "bannedAtRun": 5
+      },
+      {
+        "phrase": "confidence kelly invalidation",
+        "bannedAtRun": 6
+      },
+      {
+        "phrase": "the arb violation",
+        "bannedAtRun": 6
+      },
+      {
+        "phrase": "before anyone sizes",
+        "bannedAtRun": 6
+      },
+      {
+        "phrase": "signal flat btc",
+        "bannedAtRun": 6
+      },
+      {
+        "phrase": "flat btc confidence",
+        "bannedAtRun": 6
+      },
+      {
+        "phrase": "btc confidence kelly",
+        "bannedAtRun": 6
+      },
+      {
+        "phrase": "kelly invalidation sources",
+        "bannedAtRun": 6
       }
     ]
   },
-  "karma": {
-    "current": 46.81690527585597,
+  "fitness": {
+    "current": 42.81690527585597,
     "trend": [
-      -0.17882037132730488,
-      -9.15377780351239,
-      -7.495258113653939
+      -7.495258113653939,
+      0,
+      -2
     ],
     "tier": "unstable",
-    "locked": 42.138570152128416
+    "signalScore": 0
+  },
+  "karma": {
+    "current": 42.81690527585597,
+    "trend": [
+      -7.495258113653939,
+      0,
+      -2
+    ],
+    "tier": "unstable",
+    "locked": 0
   }
 }

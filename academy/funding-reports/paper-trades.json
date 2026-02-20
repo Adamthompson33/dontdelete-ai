@@ -7,10 +7,12 @@
       "entryTime": 1771079115229,
       "entryRate": -0.0004036042,
       "notionalSize": 1000,
-      "cumulativeFunding": 24.845747900000003,
-      "lastCollectedAt": 1771251659563,
-      "isOpen": true,
-      "fees": 0.25
+      "cumulativeFunding": 33.207154700000004,
+      "lastCollectedAt": 1771588221608,
+      "isOpen": false,
+      "fees": 0.5,
+      "exitTime": 1771588221608,
+      "exitReason": "max_duration_72h"
     },
     {
       "id": "RESOLV-1771079116047",
@@ -21,8 +23,10 @@
       "notionalSize": 1000,
       "cumulativeFunding": 5.2820193,
       "lastCollectedAt": 1771251659563,
-      "isOpen": true,
-      "fees": 0.25
+      "isOpen": false,
+      "fees": 0.5,
+      "exitTime": 1771588221608,
+      "exitReason": "coin_dropped_from_scan"
     },
     {
       "id": "MOODENG-1771079116809",
@@ -45,10 +49,12 @@
       "entryTime": 1771079117789,
       "entryRate": -0.000160143,
       "notionalSize": 1000,
-      "cumulativeFunding": 4.6061182,
-      "lastCollectedAt": 1771251659563,
-      "isOpen": true,
-      "fees": 0.25
+      "cumulativeFunding": 16.7676538,
+      "lastCollectedAt": 1771588221608,
+      "isOpen": false,
+      "fees": 0.5,
+      "exitTime": 1771588221608,
+      "exitReason": "max_duration_72h"
     },
     {
       "id": "PYTH-1771079118572",
@@ -85,10 +91,12 @@
       "entryTime": 1771205107723,
       "entryRate": -0.000455709,
       "notionalSize": 1000,
-      "cumulativeFunding": 1.4144541,
-      "lastCollectedAt": 1771251659563,
-      "isOpen": true,
-      "fees": 0.25
+      "cumulativeFunding": 15.489650699999999,
+      "lastCollectedAt": 1771588221608,
+      "isOpen": false,
+      "fees": 0.5,
+      "exitTime": 1771588221608,
+      "exitReason": "max_duration_72h"
     },
     {
       "id": "ACE-1771250206778",
@@ -97,12 +105,74 @@
       "entryTime": 1771250206778,
       "entryRate": -0.0005213373,
       "notionalSize": 1000,
+      "cumulativeFunding": 22.5939594,
+      "lastCollectedAt": 1771588221608,
+      "isOpen": false,
+      "fees": 0.5,
+      "exitTime": 1771588221608,
+      "exitReason": "max_duration_72h"
+    },
+    {
+      "id": "INJ-1771588222169",
+      "coin": "INJ",
+      "direction": "SHORT_BASIS",
+      "entryTime": 1771588222169,
+      "entryRate": -0.0004453211,
+      "notionalSize": 1000,
       "cumulativeFunding": 0,
-      "lastCollectedAt": 1771250206778,
+      "lastCollectedAt": 1771588222169,
+      "isOpen": true,
+      "fees": 0.25
+    },
+    {
+      "id": "OP-1771588222878",
+      "coin": "OP",
+      "direction": "SHORT_BASIS",
+      "entryTime": 1771588222879,
+      "entryRate": -0.0003307789,
+      "notionalSize": 1000,
+      "cumulativeFunding": 0,
+      "lastCollectedAt": 1771588222879,
+      "isOpen": true,
+      "fees": 0.25
+    },
+    {
+      "id": "0G-1771588224599",
+      "coin": "0G",
+      "direction": "SHORT_BASIS",
+      "entryTime": 1771588224599,
+      "entryRate": -0.0001513462,
+      "notionalSize": 1000,
+      "cumulativeFunding": 0,
+      "lastCollectedAt": 1771588224599,
+      "isOpen": true,
+      "fees": 0.25
+    },
+    {
+      "id": "SEI-1771588226004",
+      "coin": "SEI",
+      "direction": "SHORT_BASIS",
+      "entryTime": 1771588226004,
+      "entryRate": -0.0001002334,
+      "notionalSize": 1000,
+      "cumulativeFunding": 0,
+      "lastCollectedAt": 1771588226004,
+      "isOpen": true,
+      "fees": 0.25
+    },
+    {
+      "id": "ICP-1771588226773",
+      "coin": "ICP",
+      "direction": "SHORT_BASIS",
+      "entryTime": 1771588226773,
+      "entryRate": -0.0000971425,
+      "notionalSize": 1000,
+      "cumulativeFunding": 0,
+      "lastCollectedAt": 1771588226773,
       "isOpen": true,
       "fees": 0.25
     }
   ],
-  "cumulativePnl": 37.3570462,
+  "cumulativePnl": 92.04914460000002,
   "lastScanAt": 0
 }

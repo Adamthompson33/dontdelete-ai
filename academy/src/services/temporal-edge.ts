@@ -64,7 +64,7 @@ export interface TemporalScanResult {
 // Funding extremes that matter near reset windows
 const EXTREME_FUNDING_APR = 50;     // 50% annualized = interesting
 const VERY_EXTREME_FUNDING_APR = 100; // 100%+ = high conviction
-const RESET_WINDOW_MINUTES = 30;    // 30 min before/after hourly reset
+const RESET_WINDOW_MINUTES = 45;    // 45 min before hourly reset (expanded from 30 per Oracle)
 
 // Regime thresholds
 const ADX_TRENDING = 25;            // ADX > 25 = trending market

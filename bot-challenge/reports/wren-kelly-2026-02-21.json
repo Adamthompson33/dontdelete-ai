@@ -1,0 +1,455 @@
+{
+  "date": "2026-02-21",
+  "sizedAt": "2026-02-21T18:18:28.688Z",
+  "totalSignals": 55,
+  "newlySized": 55,
+  "alreadySized": 0,
+  "sized": 18,
+  "skipped": 37,
+  "totalAllocation": 2.8000000000000007,
+  "maxKelly": 0.2,
+  "positions": [
+    {
+      "coin": "SKR",
+      "tool": "rei-funding-carry",
+      "direction": "LONG",
+      "confidence": "high",
+      "kelly": 0.2,
+      "action": "SIZE"
+    },
+    {
+      "coin": "JTO",
+      "tool": "rei-funding-carry",
+      "direction": "LONG",
+      "confidence": "high",
+      "kelly": 0.2,
+      "action": "SIZE"
+    },
+    {
+      "coin": "BERA",
+      "tool": "rei-funding-carry",
+      "direction": "LONG",
+      "confidence": "high",
+      "kelly": 0.2,
+      "action": "SIZE"
+    },
+    {
+      "coin": "SNX",
+      "tool": "rei-funding-carry",
+      "direction": "LONG",
+      "confidence": "high",
+      "kelly": 0.2,
+      "action": "SIZE"
+    },
+    {
+      "coin": "INJ",
+      "tool": "rei-funding-carry",
+      "direction": "LONG",
+      "confidence": "high",
+      "kelly": 0.2,
+      "action": "SIZE"
+    },
+    {
+      "coin": "INIT",
+      "tool": "rei-funding-carry",
+      "direction": "LONG",
+      "confidence": "high",
+      "kelly": 0.2,
+      "action": "SIZE"
+    },
+    {
+      "coin": "Will Bitcoin reach $",
+      "tool": "sakura-arb-scanner",
+      "direction": "ARB",
+      "confidence": "high",
+      "kelly": 0.2,
+      "action": "SIZE"
+    },
+    {
+      "coin": "Will Bitcoin reach $",
+      "tool": "sakura-arb-scanner",
+      "direction": "ARB",
+      "confidence": "high",
+      "kelly": 0.2,
+      "action": "SIZE"
+    },
+    {
+      "coin": "AXS",
+      "tool": "rei-funding-carry",
+      "direction": "LONG",
+      "confidence": "medium",
+      "kelly": 0.10000000000000009,
+      "action": "SIZE"
+    },
+    {
+      "coin": "BLAST",
+      "tool": "rei-funding-carry",
+      "direction": "LONG",
+      "confidence": "medium",
+      "kelly": 0.10000000000000009,
+      "action": "SIZE"
+    },
+    {
+      "coin": "SNX",
+      "tool": "rei-funding-carry",
+      "direction": "LONG",
+      "confidence": "medium",
+      "kelly": 0.10000000000000009,
+      "action": "SIZE"
+    },
+    {
+      "coin": "ZORA",
+      "tool": "rei-funding-carry",
+      "direction": "LONG",
+      "confidence": "medium",
+      "kelly": 0.10000000000000009,
+      "action": "SIZE"
+    },
+    {
+      "coin": "OM",
+      "tool": "rei-funding-carry",
+      "direction": "LONG",
+      "confidence": "medium",
+      "kelly": 0.10000000000000009,
+      "action": "SIZE"
+    },
+    {
+      "coin": "BERA",
+      "tool": "rei-funding-carry",
+      "direction": "LONG",
+      "confidence": "medium",
+      "kelly": 0.10000000000000009,
+      "action": "SIZE"
+    },
+    {
+      "coin": "0G",
+      "tool": "rei-funding-carry",
+      "direction": "LONG",
+      "confidence": "medium",
+      "kelly": 0.10000000000000009,
+      "action": "SIZE"
+    },
+    {
+      "coin": "ICP",
+      "tool": "rei-funding-carry",
+      "direction": "LONG",
+      "confidence": "medium",
+      "kelly": 0.10000000000000009,
+      "action": "SIZE"
+    },
+    {
+      "coin": "Will Bitcoin reach $",
+      "tool": "sakura-arb-scanner",
+      "direction": "ARB",
+      "confidence": "high",
+      "kelly": 0.2,
+      "action": "SIZE"
+    },
+    {
+      "coin": "Will Bitcoin reach $",
+      "tool": "sakura-arb-scanner",
+      "direction": "ARB",
+      "confidence": "high",
+      "kelly": 0.2,
+      "action": "SIZE"
+    }
+  ],
+  "skippedPositions": [
+    {
+      "coin": "AZTEC",
+      "tool": "rei-funding-carry",
+      "direction": "LONG",
+      "confidence": "low",
+      "kelly": 0,
+      "action": "SKIP"
+    },
+    {
+      "coin": "OM",
+      "tool": "rei-funding-carry",
+      "direction": "LONG",
+      "confidence": "low",
+      "kelly": 0,
+      "action": "SKIP"
+    },
+    {
+      "coin": "AXS",
+      "tool": "rei-funding-carry",
+      "direction": "LONG",
+      "confidence": "low",
+      "kelly": 0,
+      "action": "SKIP"
+    },
+    {
+      "coin": "BIO",
+      "tool": "rei-funding-carry",
+      "direction": "LONG",
+      "confidence": "low",
+      "kelly": 0,
+      "action": "SKIP"
+    },
+    {
+      "coin": "ACE",
+      "tool": "rei-funding-carry",
+      "direction": "LONG",
+      "confidence": "low",
+      "kelly": 0,
+      "action": "SKIP"
+    },
+    {
+      "coin": "[@mattyb’s 500th mar",
+      "tool": "sakura-arb-scanner",
+      "direction": "ARB",
+      "confidence": "low",
+      "kelly": 0,
+      "action": "SKIP"
+    },
+    {
+      "coin": "Will Bitcoin (BTC) b",
+      "tool": "sakura-arb-scanner",
+      "direction": "ARB",
+      "confidence": "low",
+      "kelly": 0,
+      "action": "SKIP"
+    },
+    {
+      "coin": "Will Bitcoin (BTC) p",
+      "tool": "sakura-arb-scanner",
+      "direction": "ARB",
+      "confidence": "low",
+      "kelly": 0,
+      "action": "SKIP"
+    },
+    {
+      "coin": "Will a Republican Pr",
+      "tool": "sakura-arb-scanner",
+      "direction": "ARB",
+      "confidence": "low",
+      "kelly": 0,
+      "action": "SKIP"
+    },
+    {
+      "coin": "Will a former US pre",
+      "tool": "sakura-arb-scanner",
+      "direction": "ARB",
+      "confidence": "low",
+      "kelly": 0,
+      "action": "SKIP"
+    },
+    {
+      "coin": "Will Quinn Ewers def",
+      "tool": "sakura-arb-scanner",
+      "direction": "ARB",
+      "confidence": "low",
+      "kelly": 0,
+      "action": "SKIP"
+    },
+    {
+      "coin": "(1k subsidy) Will Co",
+      "tool": "sakura-arb-scanner",
+      "direction": "ARB",
+      "confidence": "low",
+      "kelly": 0,
+      "action": "SKIP"
+    },
+    {
+      "coin": "Same city wins 2+ ma",
+      "tool": "sakura-arb-scanner",
+      "direction": "ARB",
+      "confidence": "low",
+      "kelly": 0,
+      "action": "SKIP"
+    },
+    {
+      "coin": "Will Roger Goodell b",
+      "tool": "sakura-arb-scanner",
+      "direction": "ARB",
+      "confidence": "low",
+      "kelly": 0,
+      "action": "SKIP"
+    },
+    {
+      "coin": "Will Bitcoin Outperf",
+      "tool": "sakura-arb-scanner",
+      "direction": "ARB",
+      "confidence": "low",
+      "kelly": 0,
+      "action": "SKIP"
+    },
+    {
+      "coin": "More than 70% of U.S",
+      "tool": "sakura-arb-scanner",
+      "direction": "ARB",
+      "confidence": "low",
+      "kelly": 0,
+      "action": "SKIP"
+    },
+    {
+      "coin": "AZTEC",
+      "tool": "rei-funding-carry",
+      "direction": "LONG",
+      "confidence": "low",
+      "kelly": 0,
+      "action": "SKIP"
+    },
+    {
+      "coin": "YGG",
+      "tool": "rei-funding-carry",
+      "direction": "LONG",
+      "confidence": "low",
+      "kelly": 0,
+      "action": "SKIP"
+    },
+    {
+      "coin": "INJ",
+      "tool": "rei-funding-carry",
+      "direction": "LONG",
+      "confidence": "low",
+      "kelly": 0,
+      "action": "SKIP"
+    },
+    {
+      "coin": "STABLE",
+      "tool": "rei-funding-carry",
+      "direction": "LONG",
+      "confidence": "low",
+      "kelly": 0,
+      "action": "SKIP"
+    },
+    {
+      "coin": "ACE",
+      "tool": "rei-funding-carry",
+      "direction": "LONG",
+      "confidence": "low",
+      "kelly": 0,
+      "action": "SKIP"
+    },
+    {
+      "coin": "ALGO",
+      "tool": "rei-funding-carry",
+      "direction": "LONG",
+      "confidence": "low",
+      "kelly": 0,
+      "action": "SKIP"
+    },
+    {
+      "coin": "ATOM",
+      "tool": "rei-funding-carry",
+      "direction": "LONG",
+      "confidence": "low",
+      "kelly": 0,
+      "action": "SKIP"
+    },
+    {
+      "coin": "DASH",
+      "tool": "rei-funding-carry",
+      "direction": "LONG",
+      "confidence": "low",
+      "kelly": 0,
+      "action": "SKIP"
+    },
+    {
+      "coin": "UMA",
+      "tool": "rei-funding-carry",
+      "direction": "LONG",
+      "confidence": "low",
+      "kelly": 0,
+      "action": "SKIP"
+    },
+    {
+      "coin": "BIGTIME",
+      "tool": "rei-funding-carry",
+      "direction": "LONG",
+      "confidence": "low",
+      "kelly": 0,
+      "action": "SKIP"
+    },
+    {
+      "coin": "CELO",
+      "tool": "rei-funding-carry",
+      "direction": "LONG",
+      "confidence": "low",
+      "kelly": 0,
+      "action": "SKIP"
+    },
+    {
+      "coin": "[@mattyb’s 500th mar",
+      "tool": "sakura-arb-scanner",
+      "direction": "ARB",
+      "confidence": "low",
+      "kelly": 0,
+      "action": "SKIP"
+    },
+    {
+      "coin": "Will Bitcoin (BTC) b",
+      "tool": "sakura-arb-scanner",
+      "direction": "ARB",
+      "confidence": "low",
+      "kelly": 0,
+      "action": "SKIP"
+    },
+    {
+      "coin": "Will Bitcoin (BTC) p",
+      "tool": "sakura-arb-scanner",
+      "direction": "ARB",
+      "confidence": "low",
+      "kelly": 0,
+      "action": "SKIP"
+    },
+    {
+      "coin": "Will a Republican Pr",
+      "tool": "sakura-arb-scanner",
+      "direction": "ARB",
+      "confidence": "low",
+      "kelly": 0,
+      "action": "SKIP"
+    },
+    {
+      "coin": "Will a former US pre",
+      "tool": "sakura-arb-scanner",
+      "direction": "ARB",
+      "confidence": "low",
+      "kelly": 0,
+      "action": "SKIP"
+    },
+    {
+      "coin": "Will Quinn Ewers def",
+      "tool": "sakura-arb-scanner",
+      "direction": "ARB",
+      "confidence": "low",
+      "kelly": 0,
+      "action": "SKIP"
+    },
+    {
+      "coin": "(1k subsidy) Will Co",
+      "tool": "sakura-arb-scanner",
+      "direction": "ARB",
+      "confidence": "low",
+      "kelly": 0,
+      "action": "SKIP"
+    },
+    {
+      "coin": "Will Roger Goodell b",
+      "tool": "sakura-arb-scanner",
+      "direction": "ARB",
+      "confidence": "low",
+      "kelly": 0,
+      "action": "SKIP"
+    },
+    {
+      "coin": "Will Bitcoin Outperf",
+      "tool": "sakura-arb-scanner",
+      "direction": "ARB",
+      "confidence": "low",
+      "kelly": 0,
+      "action": "SKIP"
+    },
+    {
+      "coin": "More than 70% of U.S",
+      "tool": "sakura-arb-scanner",
+      "direction": "ARB",
+      "confidence": "low",
+      "kelly": 0,
+      "action": "SKIP"
+    }
+  ]
+}

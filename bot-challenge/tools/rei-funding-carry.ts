@@ -1,14 +1,16 @@
 #!/usr/bin/env npx tsx
 /**
- * Rei Funding Carry — Bot Challenge Tool
+ * Rei Funding Carry — Bot Challenge Tool (3-Tier Model)
  * 
- * Standalone funding rate scanner for the Bot Challenge leaderboard.
- * Imports FundingScanner from the Academy but runs independently.
+ * Standalone funding rate scanner with Oracle's 3-tier confidence model:
+ *   HIGH: |APR| > 100% + persisted 4+ hours + price stable (<5% 24h move)
+ *   MEDIUM: |APR| > 100% + persisted 2+ hours OR price moving (5-15%)
+ *   LOW: |APR| > 50% OR extreme but recent/unconfirmed — log only, don't trade
  * 
- * Usage: npx tsx tools/rei-funding-carry.ts
+ * Persistence check: compares current scan against paper-ledger.json history.
+ * Was this coin flagged in previous hourly scans?
  * 
- * Output: scans HyperLiquid funding rates, flags extreme opportunities,
- * logs signals to paper-ledger.json with exact timestamps.
+ * DO NOT modify Academy scanner. This is the Bot Challenge lab version.
  */
 
 import * as fs from 'fs';
@@ -24,14 +26,18 @@ interface BotChallengeSignal {
   coin: string;
   direction: 'LONG' | 'SHORT';
   confidence: 'high' | 'medium' | 'low';
+  tier: 'HIGH' | 'MEDIUM' | 'LOW';
+  tierReason: string;
   entryPrice: number;
   annualizedRate: number;
+  priceChange24h: number;
+  persistenceHours: number;
   reasoning: string;
   invalidation: string;
 }
 
 interface PaperLedgerEntry {
-  signals: BotChallengeSignal[];
+  signals: any[];
   lastScanAt: string;
   totalScans: number;
 }
@@ -40,75 +46,161 @@ interface PaperLedgerEntry {
 
 const LEDGER_FILE = path.join(__dirname, '..', 'results', 'paper-ledger.json');
 const REPORT_DIR = path.join(__dirname, '..', 'reports');
-const MIN_APR = 1.00; // 100% annualized — only flag extreme opportunities for Bot Challenge
+
+// Tier thresholds
+const HIGH_MIN_APR = 1.00;       // 100% annualized
+const HIGH_MIN_PERSIST = 4;      // hours
+const HIGH_MAX_PRICE_MOVE = 0.05; // 5%
+
+const MED_MIN_APR = 1.00;
+const MED_MIN_PERSIST = 2;
+const MED_MAX_PRICE_MOVE = 0.15; // 15%
+
+const LOW_MIN_APR = 0.50;        // 50% annualized — log everything above this
+
+// ═══ Persistence Check ═══
+
+function checkPersistence(coin: string, ledger: PaperLedgerEntry): number {
+  // Count how many previous hourly scans flagged this coin
+  const now = Date.now();
+  const maxLookback = 12 * 60 * 60 * 1000; // 12 hours
+
+  const previousSignals = ledger.signals.filter((s: any) =>
+    s.tool === 'rei-funding-carry' &&
+    s.coin === coin &&
+    (now - s.unixMs) < maxLookback &&
+    (now - s.unixMs) > 30 * 60 * 1000 // at least 30 min ago (not this scan)
+  );
+
+  if (previousSignals.length === 0) return 0;
+
+  // Estimate hours of persistence from signal timestamps
+  const oldest = Math.min(...previousSignals.map((s: any) => s.unixMs));
+  const hoursActive = (now - oldest) / (1000 * 60 * 60);
+
+  return hoursActive;
+}
+
+// ═══ 3-Tier Classification ═══
+
+function classifyTier(
+  opp: FundingOpportunity,
+  persistenceHours: number
+): { tier: 'HIGH' | 'MEDIUM' | 'LOW'; reason: string } {
+  const absApr = Math.abs(opp.annualizedRate);
+  const absPriceMove = Math.abs(opp.priceChange24h);
+
+  // HIGH: extreme funding + persistent + price stable
+  if (absApr >= HIGH_MIN_APR && persistenceHours >= HIGH_MIN_PERSIST && absPriceMove <= HIGH_MAX_PRICE_MOVE) {
+    return {
+      tier: 'HIGH',
+      reason: `${(absApr * 100).toFixed(0)}% APR, ${persistenceHours.toFixed(1)}h persistent, price stable (${(absPriceMove * 100).toFixed(1)}% move). Genuine dislocation.`,
+    };
+  }
+
+  // MEDIUM: extreme funding + some persistence or moderate price move
+  if (absApr >= MED_MIN_APR && (persistenceHours >= MED_MIN_PERSIST || absPriceMove <= MED_MAX_PRICE_MOVE)) {
+    return {
+      tier: 'MEDIUM',
+      reason: `${(absApr * 100).toFixed(0)}% APR, ${persistenceHours.toFixed(1)}h persistent, ${(absPriceMove * 100).toFixed(1)}% price move. Could go either way.`,
+    };
+  }
+
+  // LOW: anything above 50% APR — log only
+  if (absApr >= LOW_MIN_APR) {
+    const reasons: string[] = [];
+    if (persistenceHours < MED_MIN_PERSIST) reasons.push(`only ${persistenceHours.toFixed(1)}h persistence`);
+    if (absPriceMove > MED_MAX_PRICE_MOVE) reasons.push(`large price move (${(absPriceMove * 100).toFixed(1)}%)`);
+    if (absApr > 5.0) reasons.push(`extreme APR (${(absApr * 100).toFixed(0)}%) — possible distress`);
+
+    return {
+      tier: 'LOW',
+      reason: `Log only: ${reasons.join(', ')}. Track outcomes, don't trade.`,
+    };
+  }
+
+  // Shouldn't reach here given our filter, but fallback
+  return { tier: 'LOW', reason: 'Below threshold.' };
+}
 
 // ═══ Main ═══
 
 async function main() {
   const scanner = new FundingScanner();
-  
-  console.log('🔍 Rei Funding Carry — scanning HyperLiquid...\n');
-  
+
+  console.log('🔍 Rei Funding Carry (3-Tier Model) — scanning HyperLiquid...\n');
+
   const opportunities = await scanner.scan();
-  
-  // Filter to extreme opportunities only (Bot Challenge threshold: 100% APR)
-  const extreme = opportunities.filter(o => Math.abs(o.annualizedRate) >= MIN_APR);
-  
-  console.log(`Scanned ${opportunities.length} coins. ${extreme.length} above ${MIN_APR * 100}% APR threshold.\n`);
-  
-  // Convert to Bot Challenge signal format
-  const signals: BotChallengeSignal[] = extreme.map(opp => ({
-    tool: 'rei-funding-carry',
-    timestamp: new Date().toISOString(),
-    unixMs: Date.now(),
-    coin: opp.coin,
-    direction: opp.direction === 'LONG_BASIS' ? 'SHORT' as const : 'LONG' as const,
-    // For carry trade: if longs pay shorts (positive funding), you short the perp
-    confidence: opp.confidence,
-    entryPrice: opp.markPrice,
-    annualizedRate: opp.annualizedRate,
-    reasoning: opp.reasoning,
-    invalidation: `Rate drops below 20% APR or flips sign. ${opp.volatile ? 'VOLATILE — basis trade unsafe.' : ''}`,
-  }));
-  
-  // Print signals
-  if (signals.length === 0) {
-    console.log('No extreme funding opportunities. Markets are balanced.');
-  } else {
-    for (const sig of signals) {
-      const icon = sig.confidence === 'high' ? '🔴' : sig.confidence === 'medium' ? '🟡' : '⚪';
-      console.log(`${icon} ${sig.coin}`);
-      console.log(`   Direction: ${sig.direction} perp (carry trade)`);
-      console.log(`   APR: ${(sig.annualizedRate * 100).toFixed(1)}%`);
-      console.log(`   Entry: $${sig.entryPrice.toFixed(4)}`);
-      console.log(`   Confidence: ${sig.confidence}`);
-      console.log(`   Invalidation: ${sig.invalidation}`);
-      console.log(`   ${sig.reasoning}\n`);
-    }
-  }
-  
-  // Append to paper ledger
+
+  // Load existing ledger for persistence check
   let ledger: PaperLedgerEntry;
   try {
     ledger = JSON.parse(fs.readFileSync(LEDGER_FILE, 'utf-8'));
   } catch {
     ledger = { signals: [], lastScanAt: '', totalScans: 0 };
   }
-  
+
+  // Filter to everything above LOW threshold (50% APR)
+  const candidates = opportunities.filter(o => Math.abs(o.annualizedRate) >= LOW_MIN_APR);
+
+  console.log(`Scanned ${opportunities.length} coins. ${candidates.length} above ${LOW_MIN_APR * 100}% APR threshold.\n`);
+
+  // Classify each candidate
+  const signals: BotChallengeSignal[] = [];
+
+  for (const opp of candidates) {
+    const persistenceHours = checkPersistence(opp.coin, ledger);
+    const { tier, reason } = classifyTier(opp, persistenceHours);
+
+    const signal: BotChallengeSignal = {
+      tool: 'rei-funding-carry',
+      timestamp: new Date().toISOString(),
+      unixMs: Date.now(),
+      coin: opp.coin,
+      direction: opp.direction === 'LONG_BASIS' ? 'SHORT' as const : 'LONG' as const,
+      confidence: tier === 'HIGH' ? 'high' : tier === 'MEDIUM' ? 'medium' : 'low',
+      tier,
+      tierReason: reason,
+      entryPrice: opp.markPrice,
+      annualizedRate: opp.annualizedRate,
+      priceChange24h: opp.priceChange24h,
+      persistenceHours,
+      reasoning: opp.reasoning,
+      invalidation: `Rate drops below 20% APR or flips sign.`,
+    };
+
+    signals.push(signal);
+
+    // Print with tier-specific formatting
+    const tierIcon = tier === 'HIGH' ? '🔴' : tier === 'MEDIUM' ? '🟡' : '⚪';
+    const tierLabel = tier === 'LOW' ? ' [LOG ONLY]' : '';
+    console.log(`${tierIcon} ${opp.coin} — ${tier}${tierLabel}`);
+    console.log(`   ${signal.direction} perp | ${(opp.annualizedRate * 100).toFixed(1)}% APR`);
+    console.log(`   Price: $${opp.markPrice.toFixed(4)} | 24h move: ${(opp.priceChange24h * 100).toFixed(1)}%`);
+    console.log(`   Persistence: ${persistenceHours.toFixed(1)}h`);
+    console.log(`   Tier reason: ${reason}\n`);
+  }
+
+  // Summary by tier
+  const highCount = signals.filter(s => s.tier === 'HIGH').length;
+  const medCount = signals.filter(s => s.tier === 'MEDIUM').length;
+  const lowCount = signals.filter(s => s.tier === 'LOW').length;
+  console.log(`Tiers: ${highCount} HIGH | ${medCount} MEDIUM | ${lowCount} LOW (log only)\n`);
+
+  // Append to paper ledger
   ledger.signals.push(...signals);
   ledger.lastScanAt = new Date().toISOString();
   ledger.totalScans++;
-  
-  // Ensure results dir exists
+
   const resultsDir = path.dirname(LEDGER_FILE);
   if (!fs.existsSync(resultsDir)) {
     fs.mkdirSync(resultsDir, { recursive: true });
   }
-  
+
   fs.writeFileSync(LEDGER_FILE, JSON.stringify(ledger, null, 2), 'utf-8');
   console.log(`✅ Logged ${signals.length} signals to paper-ledger.json (total: ${ledger.signals.length} signals, ${ledger.totalScans} scans)`);
-  
-  // Also save daily report
+
+  // Save daily report
   if (!fs.existsSync(REPORT_DIR)) {
     fs.mkdirSync(REPORT_DIR, { recursive: true });
   }
@@ -118,11 +210,12 @@ async function main() {
     date,
     scannedAt: new Date().toISOString(),
     coinsScanned: opportunities.length,
-    extremeCount: extreme.length,
+    candidates: candidates.length,
+    tiers: { high: highCount, medium: medCount, low: lowCount },
     signals,
-    allOpportunities: opportunities.slice(0, 20), // top 20 for reference
+    allOpportunities: opportunities.slice(0, 20),
   }, null, 2), 'utf-8');
-  
+
   console.log(`📊 Daily report saved to reports/rei-funding-${date}.json`);
 }
 

@@ -10,7 +10,15 @@
       "entryPrice": 0.0303,
       "annualizedRate": -21.531189108,
       "reasoning": "AZTEC funding at -2153.1% APR. Shorts paying longs. ⚠️ VOLATILE (58.6% 24h move) — basis trade unsafe. ⚠️ DISTRESSED (-2153% APR) — likely death spiral, not real edge. Premium: -1.698%. OI: $3.6M. Vol: $22.9M.",
-      "invalidation": "Rate drops below 20% APR or flips sign. VOLATILE — basis trade unsafe."
+      "invalidation": "Rate drops below 20% APR or flips sign. VOLATILE — basis trade unsafe.",
+      "outcome": {
+        "checkedAt": "2026-02-21T15:28:42.321Z",
+        "currentPrice": 0.034313,
+        "currentRate": -15.093038496000002,
+        "priceChange": 13.244224422442253,
+        "pnlPercent": 18.530446983562946,
+        "status": "WINNING"
+      }
     },
     {
       "tool": "rei-funding-carry",
@@ -22,7 +30,15 @@
       "entryPrice": 0.0689,
       "annualizedRate": -8.160358728,
       "reasoning": "OM funding at -816.0% APR. Shorts paying longs. ⚠️ DISTRESSED (-816% APR) — likely death spiral, not real edge. Premium: -0.418%. OI: $2.4M. Vol: $6.2M.",
-      "invalidation": "Rate drops below 20% APR or flips sign. "
+      "invalidation": "Rate drops below 20% APR or flips sign. ",
+      "outcome": {
+        "checkedAt": "2026-02-21T15:28:42.322Z",
+        "currentPrice": 0.064,
+        "currentRate": -1.239744984,
+        "priceChange": -7.1117561683599435,
+        "pnlPercent": -5.108268474372627,
+        "status": "LOSING"
+      }
     },
     {
       "tool": "rei-funding-carry",
@@ -34,7 +50,15 @@
       "entryPrice": 1.2943,
       "annualizedRate": -7.335843876,
       "reasoning": "AXS funding at -733.6% APR. Shorts paying longs. ⚠️ DISTRESSED (-734% APR) — likely death spiral, not real edge. Premium: -0.674%. OI: $4.0M. Vol: $7.1M.",
-      "invalidation": "Rate drops below 20% APR or flips sign. "
+      "invalidation": "Rate drops below 20% APR or flips sign. ",
+      "outcome": {
+        "checkedAt": "2026-02-21T15:28:42.323Z",
+        "currentPrice": 1.3335,
+        "currentRate": -4.2864572160000005,
+        "priceChange": 3.0286641427798733,
+        "pnlPercent": 4.82972133041599,
+        "status": "WINNING"
+      }
     },
     {
       "tool": "rei-funding-carry",
@@ -46,7 +70,15 @@
       "entryPrice": 0.031915,
       "annualizedRate": -5.692257636,
       "reasoning": "BIO funding at -569.2% APR. Shorts paying longs. ⚠️ VOLATILE (45.5% 24h move) — basis trade unsafe. ⚠️ DISTRESSED (-569% APR) — likely death spiral, not real edge. Premium: -0.620%. OI: $0.7M. Vol: $2.3M.",
-      "invalidation": "Rate drops below 20% APR or flips sign. VOLATILE — basis trade unsafe."
+      "invalidation": "Rate drops below 20% APR or flips sign. VOLATILE — basis trade unsafe.",
+      "outcome": {
+        "checkedAt": "2026-02-21T15:28:42.323Z",
+        "currentPrice": 0.02876,
+        "currentRate": -0.471906456,
+        "priceChange": -9.88563371455428,
+        "pnlPercent": -8.488101037675051,
+        "status": "LOSING"
+      }
     },
     {
       "tool": "rei-funding-carry",
@@ -58,7 +90,15 @@
       "entryPrice": 0.1614,
       "annualizedRate": -2.403981396,
       "reasoning": "ACE funding at -240.4% APR. Shorts paying longs. Premium: -0.062%. OI: $0.3M. Vol: $0.2M.",
-      "invalidation": "Rate drops below 20% APR or flips sign. "
+      "invalidation": "Rate drops below 20% APR or flips sign. ",
+      "outcome": {
+        "checkedAt": "2026-02-21T15:28:42.323Z",
+        "currentPrice": 0.1632,
+        "currentRate": -0.758730756,
+        "priceChange": 1.1152416356877473,
+        "pnlPercent": 1.7054543017961972,
+        "status": "WINNING"
+      }
     },
     {
       "tool": "rei-funding-carry",
@@ -70,7 +110,15 @@
       "entryPrice": 0.020511,
       "annualizedRate": -2.150103456,
       "reasoning": "SKR funding at -215.0% APR. Shorts paying longs. Premium: -0.374%. OI: $1.1M. Vol: $1.3M.",
-      "invalidation": "Rate drops below 20% APR or flips sign. "
+      "invalidation": "Rate drops below 20% APR or flips sign. ",
+      "outcome": {
+        "checkedAt": "2026-02-21T15:28:42.323Z",
+        "currentPrice": 0.019735,
+        "currentRate": -0.38900619599999997,
+        "priceChange": -3.783335771049692,
+        "pnlPercent": -3.2554538601138256,
+        "status": "LOSING"
+      }
     },
     {
       "tool": "rei-funding-carry",
@@ -82,7 +130,15 @@
       "entryPrice": 0.31745,
       "annualizedRate": -2.12173332,
       "reasoning": "JTO funding at -212.2% APR. Shorts paying longs. Premium: -0.201%. OI: $2.1M. Vol: $1.4M.",
-      "invalidation": "Rate drops below 20% APR or flips sign. "
+      "invalidation": "Rate drops below 20% APR or flips sign. ",
+      "outcome": {
+        "checkedAt": "2026-02-21T15:28:42.323Z",
+        "currentPrice": 0.30463,
+        "currentRate": -0.388364088,
+        "priceChange": -4.038431249015592,
+        "pnlPercent": -3.5175146222679814,
+        "status": "LOSING"
+      }
     },
     {
       "tool": "rei-funding-carry",
@@ -94,7 +150,15 @@
       "entryPrice": 0.60383,
       "annualizedRate": -2.0061118319999998,
       "reasoning": "BERA funding at -200.6% APR. Shorts paying longs. Premium: -0.276%. OI: $4.4M. Vol: $2.8M.",
-      "invalidation": "Rate drops below 20% APR or flips sign. "
+      "invalidation": "Rate drops below 20% APR or flips sign. ",
+      "outcome": {
+        "checkedAt": "2026-02-21T15:28:42.323Z",
+        "currentPrice": 0.58147,
+        "currentRate": -1.3028625360000001,
+        "priceChange": -3.7030289982279676,
+        "pnlPercent": -3.2104991413636235,
+        "status": "LOSING"
+      }
     },
     {
       "tool": "rei-funding-carry",
@@ -106,7 +170,15 @@
       "entryPrice": 0.37322,
       "annualizedRate": -1.50396936,
       "reasoning": "SNX funding at -150.4% APR. Shorts paying longs. Premium: -0.195%. OI: $1.1M. Vol: $2.4M.",
-      "invalidation": "Rate drops below 20% APR or flips sign. "
+      "invalidation": "Rate drops below 20% APR or flips sign. ",
+      "outcome": {
+        "checkedAt": "2026-02-21T15:28:42.323Z",
+        "currentPrice": 0.39123,
+        "currentRate": -2.68733586,
+        "priceChange": 4.8255720486576354,
+        "pnlPercent": 5.194818569112413,
+        "status": "WINNING"
+      }
     },
     {
       "tool": "rei-funding-carry",
@@ -118,7 +190,15 @@
       "entryPrice": 3.3889,
       "annualizedRate": -1.361738496,
       "reasoning": "INJ funding at -136.2% APR. Shorts paying longs. Premium: -0.138%. OI: $3.0M. Vol: $9.5M.",
-      "invalidation": "Rate drops below 20% APR or flips sign. "
+      "invalidation": "Rate drops below 20% APR or flips sign. ",
+      "outcome": {
+        "checkedAt": "2026-02-21T15:28:42.323Z",
+        "currentPrice": 3.8267,
+        "currentRate": -1.7044577280000002,
+        "priceChange": 12.918646168373224,
+        "pnlPercent": 13.252972927142645,
+        "status": "WINNING"
+      }
     },
     {
       "tool": "rei-funding-carry",
@@ -130,9 +210,578 @@
       "entryPrice": 0.10277,
       "annualizedRate": -1.151967156,
       "reasoning": "INIT funding at -115.2% APR. Shorts paying longs. Premium: -0.180%. OI: $1.4M. Vol: $1.6M.",
-      "invalidation": "Rate drops below 20% APR or flips sign. "
+      "invalidation": "Rate drops below 20% APR or flips sign. ",
+      "outcome": {
+        "checkedAt": "2026-02-21T15:28:42.323Z",
+        "currentPrice": 0.10103,
+        "currentRate": 0.019856291999999998,
+        "priceChange": -1.6931010995426734,
+        "pnlPercent": -1.410276279207779,
+        "status": "LOSING"
+      }
+    },
+    {
+      "tool": "sakura-arb-scanner",
+      "timestamp": "2026-02-21T13:41:18.833Z",
+      "unixMs": 1771681278833,
+      "coin": "Will Bitcoin reach $200,000 be",
+      "direction": "ARB",
+      "confidence": "high",
+      "entryPrice": 0.06505928621220008,
+      "expectedEdge": 48.233061350784716,
+      "reasoning": "P(above $500,000) = 54.7% should be ≤ P(above $200,000) = 6.5%. Spread: 48.2pp.",
+      "invalidation": "Edge drops below 3pp or markets resolve.",
+      "markets": [
+        {
+          "question": "Will Bitcoin reach $200,000 before January 1, 2027?",
+          "prob": 0.06505928621220008,
+          "url": "https://manifold.markets/CalibratedGhosts/will-bitcoin-reach-200000-before-ja"
+        },
+        {
+          "question": "[@mattyb’s 500th market spectacular] Will Bitcoin reach $500k before this market reaches 5k traders?",
+          "prob": 0.5473898997200473,
+          "url": "https://manifold.markets/mattyb/mattybs-500th-market-spectacular-wi"
+        }
+      ]
+    },
+    {
+      "tool": "sakura-arb-scanner",
+      "timestamp": "2026-02-21T13:41:18.834Z",
+      "unixMs": 1771681278834,
+      "coin": "Will Bitcoin reach $200,000 be",
+      "direction": "ARB",
+      "confidence": "high",
+      "entryPrice": 0.06505928621220008,
+      "expectedEdge": 48.233061350784716,
+      "reasoning": "P(above $500,000) = 54.7% but P(above $200,000) = 6.5%. Higher target can't have higher probability. Trade: YES on lower, NO on higher.",
+      "invalidation": "Edge drops below 3pp or markets resolve.",
+      "markets": [
+        {
+          "question": "Will Bitcoin reach $200,000 before January 1, 2027?",
+          "prob": 0.06505928621220008,
+          "url": "https://manifold.markets/CalibratedGhosts/will-bitcoin-reach-200000-before-ja"
+        },
+        {
+          "question": "[@mattyb’s 500th market spectacular] Will Bitcoin reach $500k before this market reaches 5k traders?",
+          "prob": 0.5473898997200473,
+          "url": "https://manifold.markets/mattyb/mattybs-500th-market-spectacular-wi"
+        }
+      ]
+    },
+    {
+      "tool": "sakura-arb-scanner",
+      "timestamp": "2026-02-21T13:41:18.834Z",
+      "unixMs": 1771681278834,
+      "coin": "[@mattyb’s 500th market specta",
+      "direction": "ARB",
+      "confidence": "low",
+      "entryPrice": 0.5473898997200473,
+      "expectedEdge": 10,
+      "reasoning": "No bets in 108 days despite $1000 liquidity and $733 volume. Price at 55% may not reflect current information. Research needed.",
+      "invalidation": "Edge drops below 3pp or markets resolve.",
+      "markets": [
+        {
+          "question": "[@mattyb’s 500th market spectacular] Will Bitcoin reach $500k before this market reaches 5k traders?",
+          "prob": 0.5473898997200473,
+          "url": "https://manifold.markets/mattyb/mattybs-500th-market-spectacular-wi"
+        }
+      ]
+    },
+    {
+      "tool": "sakura-arb-scanner",
+      "timestamp": "2026-02-21T13:41:18.834Z",
+      "unixMs": 1771681278834,
+      "coin": "Will Bitcoin (BTC) be below CH",
+      "direction": "ARB",
+      "confidence": "low",
+      "entryPrice": 0.1767572328922678,
+      "expectedEdge": 10,
+      "reasoning": "No bets in 321 days despite $1000 liquidity and $738 volume. Price at 18% may not reflect current information. Research needed.",
+      "invalidation": "Edge drops below 3pp or markets resolve.",
+      "markets": [
+        {
+          "question": "Will Bitcoin (BTC) be below CHF1000 or gone Jan 14th 2033 ?",
+          "prob": 0.1767572328922678,
+          "url": "https://manifold.markets/Zardoru/will-bitcoin-btc-be-below-chf1000-o"
+        }
+      ]
+    },
+    {
+      "tool": "sakura-arb-scanner",
+      "timestamp": "2026-02-21T13:41:18.834Z",
+      "unixMs": 1771681278834,
+      "coin": "Will Bitcoin (BTC) price first",
+      "direction": "ARB",
+      "confidence": "low",
+      "entryPrice": 0.15660108896446878,
+      "expectedEdge": 10,
+      "reasoning": "No bets in 172 days despite $1000 liquidity and $7989 volume. Price at 16% may not reflect current information. Research needed.",
+      "invalidation": "Edge drops below 3pp or markets resolve.",
+      "markets": [
+        {
+          "question": "Will Bitcoin (BTC) price first go below $30,000 and then above $50,000 before 2030?",
+          "prob": 0.15660108896446878,
+          "url": "https://manifold.markets/quther/will-bitcoinbtc-price-first-go-belo"
+        }
+      ]
+    },
+    {
+      "tool": "sakura-arb-scanner",
+      "timestamp": "2026-02-21T13:41:18.834Z",
+      "unixMs": 1771681278834,
+      "coin": "Will a Republican President ch",
+      "direction": "ARB",
+      "confidence": "low",
+      "entryPrice": 0.5664964857599937,
+      "expectedEdge": 10,
+      "reasoning": "No bets in 36 days despite $10000 liquidity and $40216 volume. Price at 57% may not reflect current information. Research needed.",
+      "invalidation": "Edge drops below 3pp or markets resolve.",
+      "markets": [
+        {
+          "question": "Will a Republican President choose Sonia Sotomayor's replacement?",
+          "prob": 0.5664964857599937,
+          "url": "https://manifold.markets/ScottAlexander/will-a-republican-president-choose"
+        }
+      ]
+    },
+    {
+      "tool": "sakura-arb-scanner",
+      "timestamp": "2026-02-21T13:41:18.834Z",
+      "unixMs": 1771681278834,
+      "coin": "Will a former US president acc",
+      "direction": "ARB",
+      "confidence": "low",
+      "entryPrice": 0.2991313832845691,
+      "expectedEdge": 10,
+      "reasoning": "No bets in 186 days despite $2000 liquidity and $1470 volume. Price at 30% may not reflect current information. Research needed.",
+      "invalidation": "Edge drops below 3pp or markets resolve.",
+      "markets": [
+        {
+          "question": "Will a former US president accuse Trump of interfering with the 2026 mid-term elections, before March 2027?",
+          "prob": 0.2991313832845691,
+          "url": "https://manifold.markets/jgyou/will-a-former-us-president-accuse-t"
+        }
+      ]
+    },
+    {
+      "tool": "sakura-arb-scanner",
+      "timestamp": "2026-02-21T13:41:18.834Z",
+      "unixMs": 1771681278834,
+      "coin": "Will Quinn Ewers defeat Arch M",
+      "direction": "ARB",
+      "confidence": "low",
+      "entryPrice": 0.2461538446031391,
+      "expectedEdge": 10,
+      "reasoning": "No bets in 69 days despite $1000 liquidity and $770 volume. Price at 25% may not reflect current information. Research needed.",
+      "invalidation": "Edge drops below 3pp or markets resolve.",
+      "markets": [
+        {
+          "question": "Will Quinn Ewers defeat Arch Manning's NFL team in a conference championship or Super Bowl?",
+          "prob": 0.2461538446031391,
+          "url": "https://manifold.markets/LesterCrafton/will-quinn-ewers-defeat-arch-mannin"
+        }
+      ]
+    },
+    {
+      "tool": "sakura-arb-scanner",
+      "timestamp": "2026-02-21T13:41:18.834Z",
+      "unixMs": 1771681278834,
+      "coin": "(1k subsidy) Will Connor McGre",
+      "direction": "ARB",
+      "confidence": "low",
+      "entryPrice": 0.3772719468964154,
+      "expectedEdge": 10,
+      "reasoning": "No bets in 25 days despite $1000 liquidity and $940 volume. Price at 38% may not reflect current information. Research needed.",
+      "invalidation": "Edge drops below 3pp or markets resolve.",
+      "markets": [
+        {
+          "question": "(1k subsidy) Will Connor McGregor fight at UFC White House?",
+          "prob": 0.3772719468964154,
+          "url": "https://manifold.markets/StephenFowler28ac/will-connor-mcgregor-fight-at-ufc-w"
+        }
+      ]
+    },
+    {
+      "tool": "sakura-arb-scanner",
+      "timestamp": "2026-02-21T13:41:18.834Z",
+      "unixMs": 1771681278834,
+      "coin": "Same city wins 2+ major sports",
+      "direction": "ARB",
+      "confidence": "low",
+      "entryPrice": 0.1057477721059373,
+      "expectedEdge": 9.5,
+      "reasoning": "No bets in 19 days despite $1000 liquidity and $1908 volume. Price at 11% may not reflect current information. Research needed.",
+      "invalidation": "Edge drops below 3pp or markets resolve.",
+      "markets": [
+        {
+          "question": "Same city wins 2+ major sports championships (2025-2026)?",
+          "prob": 0.1057477721059373,
+          "url": "https://manifold.markets/LBeesley/same-city-wins-2-major-sports-champ"
+        }
+      ]
+    },
+    {
+      "tool": "sakura-arb-scanner",
+      "timestamp": "2026-02-21T13:41:18.834Z",
+      "unixMs": 1771681278834,
+      "coin": "Will Roger Goodell be replaced",
+      "direction": "ARB",
+      "confidence": "low",
+      "entryPrice": 0.554555818774804,
+      "expectedEdge": 5,
+      "reasoning": "No bets in 10 days despite $1000 liquidity and $2830 volume. Price at 55% may not reflect current information. Research needed.",
+      "invalidation": "Edge drops below 3pp or markets resolve.",
+      "markets": [
+        {
+          "question": "Will Roger Goodell be replaced as commissioner of the NFL before the Buffalo Bills make it to the Super Bowl?",
+          "prob": 0.554555818774804,
+          "url": "https://manifold.markets/10thOfficial/will-roger-goodell-be-replaced-as-c"
+        }
+      ]
+    },
+    {
+      "tool": "sakura-arb-scanner",
+      "timestamp": "2026-02-21T13:41:18.834Z",
+      "unixMs": 1771681278834,
+      "coin": "Will Bitcoin Outperform Altcoi",
+      "direction": "ARB",
+      "confidence": "low",
+      "entryPrice": 0.6126680811948579,
+      "expectedEdge": 3.5,
+      "reasoning": "No bets in 7 days despite $10000 liquidity and $7757 volume. Price at 61% may not reflect current information. Research needed.",
+      "invalidation": "Edge drops below 3pp or markets resolve.",
+      "markets": [
+        {
+          "question": "Will Bitcoin Outperform Altcoins in 2026?",
+          "prob": 0.6126680811948579,
+          "url": "https://manifold.markets/Putcallparity/will-bitcoin-outperform-altcoins-in-quUc0gps9I"
+        }
+      ]
+    },
+    {
+      "tool": "sakura-arb-scanner",
+      "timestamp": "2026-02-21T13:41:18.834Z",
+      "unixMs": 1771681278834,
+      "coin": "More than 70% of U.S. populati",
+      "direction": "ARB",
+      "confidence": "low",
+      "entryPrice": 0.3805523712130128,
+      "expectedEdge": 3.5,
+      "reasoning": "No bets in 7 days despite $1000 liquidity and $1922 volume. Price at 38% may not reflect current information. Research needed.",
+      "invalidation": "Edge drops below 3pp or markets resolve.",
+      "markets": [
+        {
+          "question": "More than 70% of U.S. population believe Trump is too old to be president by EOY 2026",
+          "prob": 0.3805523712130128,
+          "url": "https://manifold.markets/TheWabiSabi/more-than-70-of-us-population-belie"
+        }
+      ]
+    },
+    {
+      "tool": "rei-funding-carry",
+      "timestamp": "2026-02-21T15:42:33.203Z",
+      "unixMs": 1771688553204,
+      "coin": "AZTEC",
+      "direction": "LONG",
+      "confidence": "low",
+      "tier": "LOW",
+      "tierReason": "Log only: only 0.0h persistence, large price move (15.1%), extreme APR (1483%) — possible distress. Track outcomes, don't trade.",
+      "entryPrice": 0.034634,
+      "annualizedRate": -14.827595603999999,
+      "priceChange24h": 0.15051655981131437,
+      "persistenceHours": 0,
+      "reasoning": "AZTEC funding at -1482.8% APR. Shorts paying longs. ⚠️ DISTRESSED (-1483% APR) — likely death spiral, not real edge. Premium: -1.351%. OI: $3.3M. Vol: $13.1M.",
+      "invalidation": "Rate drops below 20% APR or flips sign."
+    },
+    {
+      "tool": "rei-funding-carry",
+      "timestamp": "2026-02-21T15:42:33.204Z",
+      "unixMs": 1771688553204,
+      "coin": "YGG",
+      "direction": "LONG",
+      "confidence": "low",
+      "tier": "LOW",
+      "tierReason": "Log only: only 0.0h persistence, large price move (21.6%), extreme APR (657%) — possible distress. Track outcomes, don't trade.",
+      "entryPrice": 0.047962,
+      "annualizedRate": -6.568700892,
+      "priceChange24h": 0.21561272335572174,
+      "persistenceHours": 0,
+      "reasoning": "YGG funding at -656.9% APR. Shorts paying longs. ⚠️ VOLATILE (21.6% 24h move) — basis trade unsafe. ⚠️ DISTRESSED (-657% APR) — likely death spiral, not real edge. Premium: -0.669%. OI: $1.0M. Vol: $4.7M.",
+      "invalidation": "Rate drops below 20% APR or flips sign."
+    },
+    {
+      "tool": "rei-funding-carry",
+      "timestamp": "2026-02-21T15:42:33.204Z",
+      "unixMs": 1771688553204,
+      "coin": "AXS",
+      "direction": "LONG",
+      "confidence": "medium",
+      "tier": "MEDIUM",
+      "tierReason": "412% APR, 0.0h persistent, 5.0% price move. Could go either way.",
+      "entryPrice": 1.334,
+      "annualizedRate": -4.11896952,
+      "priceChange24h": 0.05047641546578474,
+      "persistenceHours": 0,
+      "reasoning": "AXS funding at -411.9% APR. Shorts paying longs. Premium: -0.354%. OI: $4.3M. Vol: $2.6M.",
+      "invalidation": "Rate drops below 20% APR or flips sign."
+    },
+    {
+      "tool": "rei-funding-carry",
+      "timestamp": "2026-02-21T15:42:33.204Z",
+      "unixMs": 1771688553204,
+      "coin": "BLAST",
+      "direction": "LONG",
+      "confidence": "medium",
+      "tier": "MEDIUM",
+      "tierReason": "282% APR, 0.0h persistent, 3.6% price move. Could go either way.",
+      "entryPrice": 0.000547,
+      "annualizedRate": -2.82062802,
+      "priceChange24h": 0.03598484848484833,
+      "persistenceHours": 0,
+      "reasoning": "BLAST funding at -282.1% APR. Shorts paying longs. Premium: -0.364%. OI: $0.9M. Vol: $0.1M.",
+      "invalidation": "Rate drops below 20% APR or flips sign."
+    },
+    {
+      "tool": "rei-funding-carry",
+      "timestamp": "2026-02-21T15:42:33.204Z",
+      "unixMs": 1771688553204,
+      "coin": "SNX",
+      "direction": "LONG",
+      "confidence": "medium",
+      "tier": "MEDIUM",
+      "tierReason": "251% APR, 0.0h persistent, 9.7% price move. Could go either way.",
+      "entryPrice": 0.39531,
+      "annualizedRate": -2.512265508,
+      "priceChange24h": 0.09735176548967352,
+      "persistenceHours": 0,
+      "reasoning": "SNX funding at -251.2% APR. Shorts paying longs. Premium: -0.287%. OI: $1.7M. Vol: $1.4M.",
+      "invalidation": "Rate drops below 20% APR or flips sign."
+    },
+    {
+      "tool": "rei-funding-carry",
+      "timestamp": "2026-02-21T15:42:33.204Z",
+      "unixMs": 1771688553204,
+      "coin": "ZORA",
+      "direction": "LONG",
+      "confidence": "medium",
+      "tier": "MEDIUM",
+      "tierReason": "168% APR, 0.0h persistent, 0.5% price move. Could go either way.",
+      "entryPrice": 0.020732,
+      "annualizedRate": -1.6843027199999998,
+      "priceChange24h": -0.0049436045116390175,
+      "persistenceHours": 0,
+      "reasoning": "ZORA funding at -168.4% APR. Shorts paying longs. Premium: -0.226%. OI: $1.5M. Vol: $0.1M.",
+      "invalidation": "Rate drops below 20% APR or flips sign."
+    },
+    {
+      "tool": "rei-funding-carry",
+      "timestamp": "2026-02-21T15:42:33.205Z",
+      "unixMs": 1771688553205,
+      "coin": "INJ",
+      "direction": "LONG",
+      "confidence": "low",
+      "tier": "LOW",
+      "tierReason": "Log only: only 0.0h persistence, large price move (15.7%). Track outcomes, don't trade.",
+      "entryPrice": 3.8687,
+      "annualizedRate": -1.593691032,
+      "priceChange24h": 0.15718473318975834,
+      "persistenceHours": 0,
+      "reasoning": "INJ funding at -159.4% APR. Shorts paying longs. Premium: -0.188%. OI: $2.9M. Vol: $6.8M.",
+      "invalidation": "Rate drops below 20% APR or flips sign."
+    },
+    {
+      "tool": "rei-funding-carry",
+      "timestamp": "2026-02-21T15:42:33.205Z",
+      "unixMs": 1771688553205,
+      "coin": "OM",
+      "direction": "LONG",
+      "confidence": "medium",
+      "tier": "MEDIUM",
+      "tierReason": "158% APR, 0.0h persistent, 4.4% price move. Could go either way.",
+      "entryPrice": 0.06397,
+      "annualizedRate": -1.578108744,
+      "priceChange24h": -0.04379671150971602,
+      "persistenceHours": 0,
+      "reasoning": "OM funding at -157.8% APR. Shorts paying longs. Premium: -0.156%. OI: $2.0M. Vol: $0.9M.",
+      "invalidation": "Rate drops below 20% APR or flips sign."
+    },
+    {
+      "tool": "rei-funding-carry",
+      "timestamp": "2026-02-21T15:42:33.205Z",
+      "unixMs": 1771688553205,
+      "coin": "BERA",
+      "direction": "LONG",
+      "confidence": "medium",
+      "tier": "MEDIUM",
+      "tierReason": "127% APR, 0.0h persistent, 2.7% price move. Could go either way.",
+      "entryPrice": 0.58311,
+      "annualizedRate": -1.274725416,
+      "priceChange24h": -0.026690035052578786,
+      "persistenceHours": 0,
+      "reasoning": "BERA funding at -127.5% APR. Shorts paying longs. Premium: -0.075%. OI: $4.1M. Vol: $1.9M.",
+      "invalidation": "Rate drops below 20% APR or flips sign."
+    },
+    {
+      "tool": "rei-funding-carry",
+      "timestamp": "2026-02-21T15:42:33.205Z",
+      "unixMs": 1771688553205,
+      "coin": "0G",
+      "direction": "LONG",
+      "confidence": "medium",
+      "tier": "MEDIUM",
+      "tierReason": "122% APR, 0.0h persistent, 4.4% price move. Could go either way.",
+      "entryPrice": 0.67862,
+      "annualizedRate": -1.215518328,
+      "priceChange24h": 0.044496775484446895,
+      "persistenceHours": 0,
+      "reasoning": "0G funding at -121.6% APR. Shorts paying longs. Premium: -0.085%. OI: $0.9M. Vol: $1.0M.",
+      "invalidation": "Rate drops below 20% APR or flips sign."
+    },
+    {
+      "tool": "rei-funding-carry",
+      "timestamp": "2026-02-21T15:42:33.205Z",
+      "unixMs": 1771688553205,
+      "coin": "ICP",
+      "direction": "LONG",
+      "confidence": "medium",
+      "tier": "MEDIUM",
+      "tierReason": "115% APR, 0.0h persistent, 5.6% price move. Could go either way.",
+      "entryPrice": 2.2481,
+      "annualizedRate": -1.1532618840000002,
+      "priceChange24h": 0.05643796992481197,
+      "persistenceHours": 0,
+      "reasoning": "ICP funding at -115.3% APR. Shorts paying longs. Premium: -0.162%. OI: $1.1M. Vol: $0.5M.",
+      "invalidation": "Rate drops below 20% APR or flips sign."
+    },
+    {
+      "tool": "rei-funding-carry",
+      "timestamp": "2026-02-21T15:42:33.205Z",
+      "unixMs": 1771688553205,
+      "coin": "STABLE",
+      "direction": "LONG",
+      "confidence": "low",
+      "tier": "LOW",
+      "tierReason": "Log only: only 0.0h persistence. Track outcomes, don't trade.",
+      "entryPrice": 0.029541,
+      "annualizedRate": -0.9812478960000001,
+      "priceChange24h": -0.015004501350405089,
+      "persistenceHours": 0,
+      "reasoning": "STABLE funding at -98.1% APR. Shorts paying longs. Premium: -0.149%. OI: $4.1M. Vol: $0.7M.",
+      "invalidation": "Rate drops below 20% APR or flips sign."
+    },
+    {
+      "tool": "rei-funding-carry",
+      "timestamp": "2026-02-21T15:42:33.205Z",
+      "unixMs": 1771688553205,
+      "coin": "ACE",
+      "direction": "LONG",
+      "confidence": "low",
+      "tier": "LOW",
+      "tierReason": "Log only: only 0.0h persistence. Track outcomes, don't trade.",
+      "entryPrice": 0.1633,
+      "annualizedRate": -0.7037784,
+      "priceChange24h": 0.0361675126903554,
+      "persistenceHours": 0,
+      "reasoning": "ACE funding at -70.4% APR. Shorts paying longs. Premium: 0.000%. OI: $0.3M. Vol: $0.3M.",
+      "invalidation": "Rate drops below 20% APR or flips sign."
+    },
+    {
+      "tool": "rei-funding-carry",
+      "timestamp": "2026-02-21T15:42:33.205Z",
+      "unixMs": 1771688553205,
+      "coin": "ALGO",
+      "direction": "LONG",
+      "confidence": "low",
+      "tier": "LOW",
+      "tierReason": "Log only: only 0.0h persistence. Track outcomes, don't trade.",
+      "entryPrice": 0.090593,
+      "annualizedRate": -0.678297312,
+      "priceChange24h": 0.01711033019344566,
+      "persistenceHours": 0,
+      "reasoning": "ALGO funding at -67.8% APR. Shorts paying longs. Premium: -0.116%. OI: $1.0M. Vol: $0.2M.",
+      "invalidation": "Rate drops below 20% APR or flips sign."
+    },
+    {
+      "tool": "rei-funding-carry",
+      "timestamp": "2026-02-21T15:42:33.205Z",
+      "unixMs": 1771688553205,
+      "coin": "ATOM",
+      "direction": "LONG",
+      "confidence": "low",
+      "tier": "LOW",
+      "tierReason": "Log only: only 0.0h persistence. Track outcomes, don't trade.",
+      "entryPrice": 2.3467,
+      "annualizedRate": -0.646427556,
+      "priceChange24h": 0.002177997950119431,
+      "persistenceHours": 0,
+      "reasoning": "ATOM funding at -64.6% APR. Shorts paying longs. Premium: -0.153%. OI: $4.7M. Vol: $0.9M.",
+      "invalidation": "Rate drops below 20% APR or flips sign."
+    },
+    {
+      "tool": "rei-funding-carry",
+      "timestamp": "2026-02-21T15:42:33.205Z",
+      "unixMs": 1771688553205,
+      "coin": "DASH",
+      "direction": "LONG",
+      "confidence": "low",
+      "tier": "LOW",
+      "tierReason": "Log only: only 0.0h persistence. Track outcomes, don't trade.",
+      "entryPrice": 34.488,
+      "annualizedRate": -0.623080404,
+      "priceChange24h": 0.03823228370160744,
+      "persistenceHours": 0,
+      "reasoning": "DASH funding at -62.3% APR. Shorts paying longs. Premium: -0.111%. OI: $9.8M. Vol: $1.5M.",
+      "invalidation": "Rate drops below 20% APR or flips sign."
+    },
+    {
+      "tool": "rei-funding-carry",
+      "timestamp": "2026-02-21T15:42:33.205Z",
+      "unixMs": 1771688553205,
+      "coin": "UMA",
+      "direction": "LONG",
+      "confidence": "low",
+      "tier": "LOW",
+      "tierReason": "Log only: only 0.0h persistence. Track outcomes, don't trade.",
+      "entryPrice": 0.4742,
+      "annualizedRate": -0.613054584,
+      "priceChange24h": 0.02558556999805352,
+      "persistenceHours": 0,
+      "reasoning": "UMA funding at -61.3% APR. Shorts paying longs. Premium: -0.114%. OI: $0.2M. Vol: $0.1M.",
+      "invalidation": "Rate drops below 20% APR or flips sign."
+    },
+    {
+      "tool": "rei-funding-carry",
+      "timestamp": "2026-02-21T15:42:33.205Z",
+      "unixMs": 1771688553205,
+      "coin": "BIGTIME",
+      "direction": "LONG",
+      "confidence": "low",
+      "tier": "LOW",
+      "tierReason": "Log only: only 0.0h persistence. Track outcomes, don't trade.",
+      "entryPrice": 0.01565,
+      "annualizedRate": -0.579579996,
+      "priceChange24h": 0.04843572050646489,
+      "persistenceHours": 0,
+      "reasoning": "BIGTIME funding at -58.0% APR. Shorts paying longs. Premium: -0.057%. OI: $0.2M. Vol: $0.2M.",
+      "invalidation": "Rate drops below 20% APR or flips sign."
+    },
+    {
+      "tool": "rei-funding-carry",
+      "timestamp": "2026-02-21T15:42:33.205Z",
+      "unixMs": 1771688553205,
+      "coin": "CELO",
+      "direction": "LONG",
+      "confidence": "low",
+      "tier": "LOW",
+      "tierReason": "Log only: only 0.0h persistence. Track outcomes, don't trade.",
+      "entryPrice": 0.078071,
+      "annualizedRate": -0.5503224720000001,
+      "priceChange24h": 0.012856772184743199,
+      "persistenceHours": 0,
+      "reasoning": "CELO funding at -55.0% APR. Shorts paying longs. Premium: -0.014%. OI: $0.7M. Vol: $0.3M.",
+      "invalidation": "Rate drops below 20% APR or flips sign."
     }
   ],
-  "lastScanAt": "2026-02-20T18:07:38.320Z",
-  "totalScans": 2
+  "lastScanAt": "2026-02-21T15:42:33.205Z",
+  "totalScans": 4
 }

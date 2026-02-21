@@ -6,7 +6,8 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "arb": "npx tsx ../bot-challenge/tools/sakura-arb-scanner.ts",
-    "kelly": "npx tsx ../bot-challenge/tools/wren-kelly-sizer.ts"
+    "kelly": "npx tsx ../bot-challenge/tools/wren-kelly-sizer.ts",
+    "momentum": "npx tsx ../bot-challenge/tools/pixel-momentum.ts"
   },
   "keywords": [],
   "author": "",

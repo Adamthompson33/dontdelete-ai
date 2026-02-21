@@ -1,0 +1,6899 @@
+{
+  "tool": "jinx-correlation-monitor",
+  "timestamp": "2026-02-21T22:05:49.354Z",
+  "unixMs": 1771711549356,
+  "signalsAnalyzed": 57,
+  "uniqueCoins": 55,
+  "uniqueTools": 3,
+  "directionalBalance": {
+    "longs": 43,
+    "shorts": 1,
+    "flat": 0,
+    "ratio": 0.9772727272727273
+  },
+  "correlationPairs": [
+    {
+      "coinA": "PNUT",
+      "coinB": "kNEIRO",
+      "correlation": 0.9247,
+      "sameDirection": true,
+      "risk": "HIGH"
+    },
+    {
+      "coinA": "PNUT",
+      "coinB": "PENDLE",
+      "correlation": 0.8581,
+      "sameDirection": true,
+      "risk": "HIGH"
+    },
+    {
+      "coinA": "PYTH",
+      "coinB": "PNUT",
+      "correlation": 0.8537,
+      "sameDirection": true,
+      "risk": "HIGH"
+    },
+    {
+      "coinA": "kNEIRO",
+      "coinB": "PENDLE",
+      "correlation": 0.8447,
+      "sameDirection": true,
+      "risk": "HIGH"
+    },
+    {
+      "coinA": "kNEIRO",
+      "coinB": "W",
+      "correlation": 0.8392,
+      "sameDirection": true,
+      "risk": "HIGH"
+    },
+    {
+      "coinA": "ALGO",
+      "coinB": "kNEIRO",
+      "correlation": 0.8273,
+      "sameDirection": true,
+      "risk": "HIGH"
+    },
+    {
+      "coinA": "ALGO",
+      "coinB": "PNUT",
+      "correlation": 0.8244,
+      "sameDirection": true,
+      "risk": "HIGH"
+    },
+    {
+      "coinA": "ALGO",
+      "coinB": "PENDLE",
+      "correlation": 0.8235,
+      "sameDirection": true,
+      "risk": "HIGH"
+    },
+    {
+      "coinA": "PYTH",
+      "coinB": "PENDLE",
+      "correlation": 0.8216,
+      "sameDirection": true,
+      "risk": "HIGH"
+    },
+    {
+      "coinA": "PYTH",
+      "coinB": "kNEIRO",
+      "correlation": 0.8162,
+      "sameDirection": true,
+      "risk": "HIGH"
+    },
+    {
+      "coinA": "PNUT",
+      "coinB": "W",
+      "correlation": 0.8148,
+      "sameDirection": true,
+      "risk": "HIGH"
+    },
+    {
+      "coinA": "MEME",
+      "coinB": "PENDLE",
+      "correlation": 0.802,
+      "sameDirection": true,
+      "risk": "HIGH"
+    },
+    {
+      "coinA": "PNUT",
+      "coinB": "MEME",
+      "correlation": 0.8,
+      "sameDirection": true,
+      "risk": "HIGH"
+    },
+    {
+      "coinA": "PNUT",
+      "coinB": "MOODENG",
+      "correlation": 0.7997,
+      "sameDirection": true,
+      "risk": "HIGH"
+    },
+    {
+      "coinA": "ALGO",
+      "coinB": "MEME",
+      "correlation": 0.7977,
+      "sameDirection": true,
+      "risk": "HIGH"
+    },
+    {
+      "coinA": "ALGO",
+      "coinB": "W",
+      "correlation": 0.7931,
+      "sameDirection": true,
+      "risk": "HIGH"
+    },
+    {
+      "coinA": "MEME",
+      "coinB": "kNEIRO",
+      "correlation": 0.7896,
+      "sameDirection": true,
+      "risk": "HIGH"
+    },
+    {
+      "coinA": "W",
+      "coinB": "PENDLE",
+      "correlation": 0.7804,
+      "sameDirection": true,
+      "risk": "HIGH"
+    },
+    {
+      "coinA": "PYTH",
+      "coinB": "MEME",
+      "correlation": 0.7727,
+      "sameDirection": true,
+      "risk": "HIGH"
+    },
+    {
+      "coinA": "kNEIRO",
+      "coinB": "MOODENG",
+      "correlation": 0.7626,
+      "sameDirection": true,
+      "risk": "HIGH"
+    },
+    {
+      "coinA": "ZETA",
+      "coinB": "PENDLE",
+      "correlation": 0.7605,
+      "sameDirection": true,
+      "risk": "HIGH"
+    },
+    {
+      "coinA": "kNEIRO",
+      "coinB": "MOVE",
+      "correlation": 0.7533,
+      "sameDirection": true,
+      "risk": "HIGH"
+    },
+    {
+      "coinA": "ALGO",
+      "coinB": "PYTH",
+      "correlation": 0.7512,
+      "sameDirection": true,
+      "risk": "HIGH"
+    },
+    {
+      "coinA": "CELO",
+      "coinB": "MEME",
+      "correlation": 0.7499,
+      "sameDirection": true,
+      "risk": "HIGH"
+    },
+    {
+      "coinA": "MEME",
+      "coinB": "W",
+      "correlation": 0.7411,
+      "sameDirection": true,
+      "risk": "HIGH"
+    },
+    {
+      "coinA": "ALGO",
+      "coinB": "ZETA",
+      "correlation": 0.7334,
+      "sameDirection": true,
+      "risk": "HIGH"
+    },
+    {
+      "coinA": "STRK",
+      "coinB": "PNUT",
+      "correlation": 0.7289,
+      "sameDirection": true,
+      "risk": "HIGH"
+    },
+    {
+      "coinA": "PNUT",
+      "coinB": "ZETA",
+      "correlation": 0.7283,
+      "sameDirection": true,
+      "risk": "HIGH"
+    },
+    {
+      "coinA": "PYTH",
+      "coinB": "W",
+      "correlation": 0.7272,
+      "sameDirection": true,
+      "risk": "HIGH"
+    },
+    {
+      "coinA": "MOVE",
+      "coinB": "PENDLE",
+      "correlation": 0.7236,
+      "sameDirection": true,
+      "risk": "HIGH"
+    },
+    {
+      "coinA": "STRK",
+      "coinB": "PENDLE",
+      "correlation": 0.7214,
+      "sameDirection": true,
+      "risk": "HIGH"
+    },
+    {
+      "coinA": "ZORA",
+      "coinB": "ALGO",
+      "correlation": 0.7195,
+      "sameDirection": true,
+      "risk": "HIGH"
+    },
+    {
+      "coinA": "STRK",
+      "coinB": "kNEIRO",
+      "correlation": 0.7167,
+      "sameDirection": true,
+      "risk": "HIGH"
+    },
+    {
+      "coinA": "kNEIRO",
+      "coinB": "ZETA",
+      "correlation": 0.7154,
+      "sameDirection": true,
+      "risk": "HIGH"
+    },
+    {
+      "coinA": "PENDLE",
+      "coinB": "AVNT",
+      "correlation": 0.7096,
+      "sameDirection": true,
+      "risk": "HIGH"
+    },
+    {
+      "coinA": "PNUT",
+      "coinB": "MOVE",
+      "correlation": 0.7079,
+      "sameDirection": true,
+      "risk": "HIGH"
+    },
+    {
+      "coinA": "ZORA",
+      "coinB": "MOVE",
+      "correlation": 0.707,
+      "sameDirection": true,
+      "risk": "HIGH"
+    },
+    {
+      "coinA": "STRK",
+      "coinB": "PYTH",
+      "correlation": 0.705,
+      "sameDirection": true,
+      "risk": "HIGH"
+    },
+    {
+      "coinA": "PYTH",
+      "coinB": "ZETA",
+      "correlation": 0.7039,
+      "sameDirection": true,
+      "risk": "HIGH"
+    },
+    {
+      "coinA": "ZETA",
+      "coinB": "W",
+      "correlation": 0.7011,
+      "sameDirection": true,
+      "risk": "HIGH"
+    },
+    {
+      "coinA": "ZORA",
+      "coinB": "MEME",
+      "correlation": 0.6956,
+      "sameDirection": true,
+      "risk": "HIGH"
+    },
+    {
+      "coinA": "ZORA",
+      "coinB": "PENDLE",
+      "correlation": 0.6934,
+      "sameDirection": true,
+      "risk": "HIGH"
+    },
+    {
+      "coinA": "CELO",
+      "coinB": "PYTH",
+      "correlation": 0.6914,
+      "sameDirection": true,
+      "risk": "HIGH"
+    },
+    {
+      "coinA": "CELO",
+      "coinB": "PNUT",
+      "correlation": 0.6883,
+      "sameDirection": true,
+      "risk": "HIGH"
+    },
+    {
+      "coinA": "STRK",
+      "coinB": "W",
+      "correlation": 0.6867,
+      "sameDirection": true,
+      "risk": "HIGH"
+    },
+    {
+      "coinA": "CELO",
+      "coinB": "PENDLE",
+      "correlation": 0.6865,
+      "sameDirection": true,
+      "risk": "HIGH"
+    },
+    {
+      "coinA": "MOODENG",
+      "coinB": "PENDLE",
+      "correlation": 0.6863,
+      "sameDirection": true,
+      "risk": "HIGH"
+    },
+    {
+      "coinA": "MEME",
+      "coinB": "ZETA",
+      "correlation": 0.6851,
+      "sameDirection": true,
+      "risk": "HIGH"
+    },
+    {
+      "coinA": "PYTH",
+      "coinB": "MOODENG",
+      "correlation": 0.6848,
+      "sameDirection": true,
+      "risk": "HIGH"
+    },
+    {
+      "coinA": "ALGO",
+      "coinB": "STRK",
+      "correlation": 0.6796,
+      "sameDirection": true,
+      "risk": "HIGH"
+    },
+    {
+      "coinA": "ZETA",
+      "coinB": "MOODENG",
+      "correlation": 0.679,
+      "sameDirection": true,
+      "risk": "HIGH"
+    },
+    {
+      "coinA": "W",
+      "coinB": "MOODENG",
+      "correlation": 0.6778,
+      "sameDirection": true,
+      "risk": "HIGH"
+    },
+    {
+      "coinA": "ZORA",
+      "coinB": "PNUT",
+      "correlation": 0.6724,
+      "sameDirection": true,
+      "risk": "HIGH"
+    },
+    {
+      "coinA": "STRK",
+      "coinB": "MEME",
+      "correlation": 0.6707,
+      "sameDirection": true,
+      "risk": "HIGH"
+    },
+    {
+      "coinA": "ICP",
+      "coinB": "kNEIRO",
+      "correlation": 0.665,
+      "sameDirection": true,
+      "risk": "HIGH"
+    },
+    {
+      "coinA": "PYTH",
+      "coinB": "MOVE",
+      "correlation": 0.6631,
+      "sameDirection": true,
+      "risk": "HIGH"
+    },
+    {
+      "coinA": "CELO",
+      "coinB": "kNEIRO",
+      "correlation": 0.6629,
+      "sameDirection": true,
+      "risk": "HIGH"
+    },
+    {
+      "coinA": "MEME",
+      "coinB": "MOVE",
+      "correlation": 0.6594,
+      "sameDirection": true,
+      "risk": "HIGH"
+    },
+    {
+      "coinA": "ICP",
+      "coinB": "ALGO",
+      "correlation": 0.6584,
+      "sameDirection": true,
+      "risk": "HIGH"
+    },
+    {
+      "coinA": "ALGO",
+      "coinB": "CELO",
+      "correlation": 0.6542,
+      "sameDirection": true,
+      "risk": "HIGH"
+    },
+    {
+      "coinA": "W",
+      "coinB": "MOVE",
+      "correlation": 0.6538,
+      "sameDirection": true,
+      "risk": "HIGH"
+    },
+    {
+      "coinA": "CELO",
+      "coinB": "W",
+      "correlation": 0.6492,
+      "sameDirection": true,
+      "risk": "HIGH"
+    },
+    {
+      "coinA": "ZORA",
+      "coinB": "kNEIRO",
+      "correlation": 0.6467,
+      "sameDirection": true,
+      "risk": "HIGH"
+    },
+    {
+      "coinA": "ZETA",
+      "coinB": "AVNT",
+      "correlation": 0.6437,
+      "sameDirection": true,
+      "risk": "HIGH"
+    },
+    {
+      "coinA": "STRK",
+      "coinB": "ZETA",
+      "correlation": 0.6399,
+      "sameDirection": true,
+      "risk": "HIGH"
+    },
+    {
+      "coinA": "ACE",
+      "coinB": "PYTH",
+      "correlation": 0.6396,
+      "sameDirection": true,
+      "risk": "HIGH"
+    },
+    {
+      "coinA": "ZETA",
+      "coinB": "MOVE",
+      "correlation": 0.6374,
+      "sameDirection": true,
+      "risk": "HIGH"
+    },
+    {
+      "coinA": "ALGO",
+      "coinB": "MOODENG",
+      "correlation": 0.6355,
+      "sameDirection": true,
+      "risk": "HIGH"
+    },
+    {
+      "coinA": "ALGO",
+      "coinB": "MOVE",
+      "correlation": 0.6332,
+      "sameDirection": true,
+      "risk": "HIGH"
+    },
+    {
+      "coinA": "ZORA",
+      "coinB": "ZETA",
+      "correlation": 0.6294,
+      "sameDirection": true,
+      "risk": "HIGH"
+    },
+    {
+      "coinA": "ZORA",
+      "coinB": "W",
+      "correlation": 0.6285,
+      "sameDirection": true,
+      "risk": "HIGH"
+    },
+    {
+      "coinA": "CELO",
+      "coinB": "ZETA",
+      "correlation": 0.6285,
+      "sameDirection": true,
+      "risk": "HIGH"
+    },
+    {
+      "coinA": "MEME",
+      "coinB": "MOODENG",
+      "correlation": 0.6285,
+      "sameDirection": true,
+      "risk": "HIGH"
+    },
+    {
+      "coinA": "ICP",
+      "coinB": "PENDLE",
+      "correlation": 0.6284,
+      "sameDirection": true,
+      "risk": "HIGH"
+    },
+    {
+      "coinA": "MEME",
+      "coinB": "AVNT",
+      "correlation": 0.6276,
+      "sameDirection": true,
+      "risk": "HIGH"
+    },
+    {
+      "coinA": "ACE",
+      "coinB": "BIGTIME",
+      "correlation": 0.6264,
+      "sameDirection": true,
+      "risk": "HIGH"
+    },
+    {
+      "coinA": "ACE",
+      "coinB": "PENDLE",
+      "correlation": 0.625,
+      "sameDirection": true,
+      "risk": "HIGH"
+    },
+    {
+      "coinA": "ZORA",
+      "coinB": "PYTH",
+      "correlation": 0.6237,
+      "sameDirection": true,
+      "risk": "HIGH"
+    },
+    {
+      "coinA": "STRK",
+      "coinB": "AVNT",
+      "correlation": 0.6196,
+      "sameDirection": true,
+      "risk": "HIGH"
+    },
+    {
+      "coinA": "ACE",
+      "coinB": "PNUT",
+      "correlation": 0.6146,
+      "sameDirection": true,
+      "risk": "HIGH"
+    },
+    {
+      "coinA": "W",
+      "coinB": "AVNT",
+      "correlation": 0.6081,
+      "sameDirection": true,
+      "risk": "HIGH"
+    },
+    {
+      "coinA": "kNEIRO",
+      "coinB": "AVNT",
+      "correlation": 0.6049,
+      "sameDirection": true,
+      "risk": "HIGH"
+    },
+    {
+      "coinA": "MON",
+      "coinB": "PENDLE",
+      "correlation": 0.6042,
+      "sameDirection": true,
+      "risk": "HIGH"
+    },
+    {
+      "coinA": "PNUT",
+      "coinB": "AVNT",
+      "correlation": 0.6039,
+      "sameDirection": true,
+      "risk": "HIGH"
+    },
+    {
+      "coinA": "ICP",
+      "coinB": "PNUT",
+      "correlation": 0.6033,
+      "sameDirection": true,
+      "risk": "HIGH"
+    },
+    {
+      "coinA": "ACE",
+      "coinB": "ALGO",
+      "correlation": 0.6004,
+      "sameDirection": true,
+      "risk": "HIGH"
+    },
+    {
+      "coinA": "ACE",
+      "coinB": "W",
+      "correlation": 0.5998,
+      "sameDirection": true,
+      "risk": "MEDIUM"
+    },
+    {
+      "coinA": "STRK",
+      "coinB": "MOVE",
+      "correlation": 0.5966,
+      "sameDirection": true,
+      "risk": "MEDIUM"
+    },
+    {
+      "coinA": "ZORA",
+      "coinB": "STRK",
+      "correlation": 0.5935,
+      "sameDirection": true,
+      "risk": "MEDIUM"
+    },
+    {
+      "coinA": "ALGO",
+      "coinB": "AVNT",
+      "correlation": 0.5932,
+      "sameDirection": true,
+      "risk": "MEDIUM"
+    },
+    {
+      "coinA": "CELO",
+      "coinB": "AVNT",
+      "correlation": 0.5925,
+      "sameDirection": true,
+      "risk": "MEDIUM"
+    },
+    {
+      "coinA": "PYTH",
+      "coinB": "TRUMP",
+      "correlation": 0.591,
+      "sameDirection": true,
+      "risk": "MEDIUM"
+    },
+    {
+      "coinA": "ACE",
+      "coinB": "IO",
+      "correlation": 0.5909,
+      "sameDirection": true,
+      "risk": "MEDIUM"
+    },
+    {
+      "coinA": "ACE",
+      "coinB": "kNEIRO",
+      "correlation": 0.5864,
+      "sameDirection": true,
+      "risk": "MEDIUM"
+    },
+    {
+      "coinA": "MOVE",
+      "coinB": "MOODENG",
+      "correlation": 0.582,
+      "sameDirection": true,
+      "risk": "MEDIUM"
+    },
+    {
+      "coinA": "DASH",
+      "coinB": "PENDLE",
+      "correlation": 0.5806,
+      "sameDirection": true,
+      "risk": "MEDIUM"
+    },
+    {
+      "coinA": "PNUT",
+      "coinB": "TRUMP",
+      "correlation": 0.5791,
+      "sameDirection": true,
+      "risk": "MEDIUM"
+    },
+    {
+      "coinA": "ACE",
+      "coinB": "CELO",
+      "correlation": 0.5714,
+      "sameDirection": true,
+      "risk": "MEDIUM"
+    },
+    {
+      "coinA": "CELO",
+      "coinB": "MOODENG",
+      "correlation": 0.5699,
+      "sameDirection": true,
+      "risk": "MEDIUM"
+    },
+    {
+      "coinA": "ALGO",
+      "coinB": "MON",
+      "correlation": 0.5687,
+      "sameDirection": true,
+      "risk": "MEDIUM"
+    },
+    {
+      "coinA": "PYTH",
+      "coinB": "SOPH",
+      "correlation": 0.5681,
+      "sameDirection": true,
+      "risk": "MEDIUM"
+    },
+    {
+      "coinA": "PYTH",
+      "coinB": "AVNT",
+      "correlation": 0.5673,
+      "sameDirection": true,
+      "risk": "MEDIUM"
+    },
+    {
+      "coinA": "DASH",
+      "coinB": "kNEIRO",
+      "correlation": 0.5667,
+      "sameDirection": true,
+      "risk": "MEDIUM"
+    },
+    {
+      "coinA": "UMA",
+      "coinB": "PYTH",
+      "correlation": 0.5666,
+      "sameDirection": true,
+      "risk": "MEDIUM"
+    },
+    {
+      "coinA": "ICP",
+      "coinB": "MEME",
+      "correlation": 0.5639,
+      "sameDirection": true,
+      "risk": "MEDIUM"
+    },
+    {
+      "coinA": "ALGO",
+      "coinB": "TRUMP",
+      "correlation": 0.5611,
+      "sameDirection": true,
+      "risk": "MEDIUM"
+    },
+    {
+      "coinA": "ICP",
+      "coinB": "W",
+      "correlation": 0.5606,
+      "sameDirection": true,
+      "risk": "MEDIUM"
+    },
+    {
+      "coinA": "MOVE",
+      "coinB": "AVNT",
+      "correlation": 0.5593,
+      "sameDirection": true,
+      "risk": "MEDIUM"
+    },
+    {
+      "coinA": "CELO",
+      "coinB": "STRK",
+      "correlation": 0.5576,
+      "sameDirection": true,
+      "risk": "MEDIUM"
+    },
+    {
+      "coinA": "MEME",
+      "coinB": "SOPH",
+      "correlation": 0.5563,
+      "sameDirection": true,
+      "risk": "MEDIUM"
+    },
+    {
+      "coinA": "ACE",
+      "coinB": "MOVE",
+      "correlation": 0.5544,
+      "sameDirection": true,
+      "risk": "MEDIUM"
+    },
+    {
+      "coinA": "PYTH",
+      "coinB": "MON",
+      "correlation": 0.5534,
+      "sameDirection": true,
+      "risk": "MEDIUM"
+    },
+    {
+      "coinA": "ZORA",
+      "coinB": "CELO",
+      "correlation": 0.5521,
+      "sameDirection": true,
+      "risk": "MEDIUM"
+    },
+    {
+      "coinA": "MON",
+      "coinB": "PNUT",
+      "correlation": 0.5516,
+      "sameDirection": true,
+      "risk": "MEDIUM"
+    },
+    {
+      "coinA": "TRUMP",
+      "coinB": "kNEIRO",
+      "correlation": 0.5484,
+      "sameDirection": true,
+      "risk": "MEDIUM"
+    },
+    {
+      "coinA": "MON",
+      "coinB": "MEME",
+      "correlation": 0.5483,
+      "sameDirection": true,
+      "risk": "MEDIUM"
+    },
+    {
+      "coinA": "ACE",
+      "coinB": "ZETA",
+      "correlation": 0.5469,
+      "sameDirection": true,
+      "risk": "MEDIUM"
+    },
+    {
+      "coinA": "CELO",
+      "coinB": "MOVE",
+      "correlation": 0.5436,
+      "sameDirection": true,
+      "risk": "MEDIUM"
+    },
+    {
+      "coinA": "BIGTIME",
+      "coinB": "CELO",
+      "correlation": 0.5431,
+      "sameDirection": true,
+      "risk": "MEDIUM"
+    },
+    {
+      "coinA": "TRUMP",
+      "coinB": "W",
+      "correlation": 0.5416,
+      "sameDirection": true,
+      "risk": "MEDIUM"
+    },
+    {
+      "coinA": "UMA",
+      "coinB": "PENDLE",
+      "correlation": 0.5399,
+      "sameDirection": true,
+      "risk": "MEDIUM"
+    },
+    {
+      "coinA": "DASH",
+      "coinB": "MEME",
+      "correlation": 0.5375,
+      "sameDirection": true,
+      "risk": "MEDIUM"
+    },
+    {
+      "coinA": "DASH",
+      "coinB": "PNUT",
+      "correlation": 0.5364,
+      "sameDirection": true,
+      "risk": "MEDIUM"
+    },
+    {
+      "coinA": "ACE",
+      "coinB": "AVNT",
+      "correlation": 0.5351,
+      "sameDirection": true,
+      "risk": "MEDIUM"
+    },
+    {
+      "coinA": "CELO",
+      "coinB": "SOPH",
+      "correlation": 0.5338,
+      "sameDirection": true,
+      "risk": "MEDIUM"
+    },
+    {
+      "coinA": "ZORA",
+      "coinB": "AVNT",
+      "correlation": 0.5337,
+      "sameDirection": true,
+      "risk": "MEDIUM"
+    },
+    {
+      "coinA": "UMA",
+      "coinB": "PNUT",
+      "correlation": 0.5308,
+      "sameDirection": true,
+      "risk": "MEDIUM"
+    },
+    {
+      "coinA": "UMA",
+      "coinB": "MEME",
+      "correlation": 0.5291,
+      "sameDirection": true,
+      "risk": "MEDIUM"
+    },
+    {
+      "coinA": "INJ",
+      "coinB": "MEME",
+      "correlation": 0.5289,
+      "sameDirection": true,
+      "risk": "MEDIUM"
+    },
+    {
+      "coinA": "ACE",
+      "coinB": "MEME",
+      "correlation": 0.5287,
+      "sameDirection": true,
+      "risk": "MEDIUM"
+    },
+    {
+      "coinA": "ICP",
+      "coinB": "PYTH",
+      "correlation": 0.5279,
+      "sameDirection": true,
+      "risk": "MEDIUM"
+    },
+    {
+      "coinA": "PYTH",
+      "coinB": "APE",
+      "correlation": 0.5266,
+      "sameDirection": true,
+      "risk": "MEDIUM"
+    },
+    {
+      "coinA": "UMA",
+      "coinB": "kNEIRO",
+      "correlation": 0.5251,
+      "sameDirection": true,
+      "risk": "MEDIUM"
+    },
+    {
+      "coinA": "UMA",
+      "coinB": "W",
+      "correlation": 0.5229,
+      "sameDirection": true,
+      "risk": "MEDIUM"
+    },
+    {
+      "coinA": "ICP",
+      "coinB": "DASH",
+      "correlation": 0.5214,
+      "sameDirection": true,
+      "risk": "MEDIUM"
+    },
+    {
+      "coinA": "BIGTIME",
+      "coinB": "IO",
+      "correlation": 0.5197,
+      "sameDirection": true,
+      "risk": "MEDIUM"
+    },
+    {
+      "coinA": "ALGO",
+      "coinB": "UMA",
+      "correlation": 0.5193,
+      "sameDirection": true,
+      "risk": "MEDIUM"
+    },
+    {
+      "coinA": "DASH",
+      "coinB": "W",
+      "correlation": 0.5178,
+      "sameDirection": true,
+      "risk": "MEDIUM"
+    },
+    {
+      "coinA": "ALGO",
+      "coinB": "DASH",
+      "correlation": 0.5149,
+      "sameDirection": true,
+      "risk": "MEDIUM"
+    },
+    {
+      "coinA": "PNUT",
+      "coinB": "APE",
+      "correlation": 0.5148,
+      "sameDirection": true,
+      "risk": "MEDIUM"
+    },
+    {
+      "coinA": "ZORA",
+      "coinB": "UMA",
+      "correlation": 0.5118,
+      "sameDirection": true,
+      "risk": "MEDIUM"
+    },
+    {
+      "coinA": "BIGTIME",
+      "coinB": "PYTH",
+      "correlation": 0.5092,
+      "sameDirection": true,
+      "risk": "MEDIUM"
+    },
+    {
+      "coinA": "ACE",
+      "coinB": "0G",
+      "correlation": 0.5073,
+      "sameDirection": true,
+      "risk": "MEDIUM"
+    },
+    {
+      "coinA": "PYTH",
+      "coinB": "OP",
+      "correlation": 0.5072,
+      "sameDirection": true,
+      "risk": "MEDIUM"
+    },
+    {
+      "coinA": "ICP",
+      "coinB": "MOVE",
+      "correlation": 0.5065,
+      "sameDirection": true,
+      "risk": "MEDIUM"
+    },
+    {
+      "coinA": "UMA",
+      "coinB": "MOVE",
+      "correlation": 0.4978,
+      "sameDirection": true,
+      "risk": "MEDIUM"
+    },
+    {
+      "coinA": "ICP",
+      "coinB": "CELO",
+      "correlation": 0.4971,
+      "sameDirection": true,
+      "risk": "MEDIUM"
+    },
+    {
+      "coinA": "ACE",
+      "coinB": "UMA",
+      "correlation": 0.4955,
+      "sameDirection": true,
+      "risk": "MEDIUM"
+    },
+    {
+      "coinA": "BIGTIME",
+      "coinB": "PNUT",
+      "correlation": 0.4937,
+      "sameDirection": true,
+      "risk": "MEDIUM"
+    },
+    {
+      "coinA": "STRK",
+      "coinB": "MON",
+      "correlation": 0.493,
+      "sameDirection": true,
+      "risk": "MEDIUM"
+    },
+    {
+      "coinA": "INJ",
+      "coinB": "MON",
+      "correlation": 0.4929,
+      "sameDirection": true,
+      "risk": "MEDIUM"
+    },
+    {
+      "coinA": "ZORA",
+      "coinB": "DASH",
+      "correlation": 0.4929,
+      "sameDirection": true,
+      "risk": "MEDIUM"
+    },
+    {
+      "coinA": "TRUMP",
+      "coinB": "MOODENG",
+      "correlation": 0.4929,
+      "sameDirection": true,
+      "risk": "MEDIUM"
+    },
+    {
+      "coinA": "SOPH",
+      "coinB": "ZETA",
+      "correlation": 0.4923,
+      "sameDirection": true,
+      "risk": "MEDIUM"
+    },
+    {
+      "coinA": "ZORA",
+      "coinB": "MOODENG",
+      "correlation": 0.4921,
+      "sameDirection": true,
+      "risk": "MEDIUM"
+    },
+    {
+      "coinA": "ALGO",
+      "coinB": "SOPH",
+      "correlation": 0.4921,
+      "sameDirection": true,
+      "risk": "MEDIUM"
+    },
+    {
+      "coinA": "DASH",
+      "coinB": "PYTH",
+      "correlation": 0.492,
+      "sameDirection": true,
+      "risk": "MEDIUM"
+    },
+    {
+      "coinA": "ACE",
+      "coinB": "STRK",
+      "correlation": 0.4919,
+      "sameDirection": true,
+      "risk": "MEDIUM"
+    },
+    {
+      "coinA": "CELO",
+      "coinB": "IO",
+      "correlation": 0.4917,
+      "sameDirection": true,
+      "risk": "MEDIUM"
+    },
+    {
+      "coinA": "CELO",
+      "coinB": "MON",
+      "correlation": 0.49,
+      "sameDirection": true,
+      "risk": "MEDIUM"
+    },
+    {
+      "coinA": "TRUMP",
+      "coinB": "MORPHO",
+      "correlation": 0.4898,
+      "sameDirection": true,
+      "risk": "MEDIUM"
+    },
+    {
+      "coinA": "ZORA",
+      "coinB": "ICP",
+      "correlation": 0.4891,
+      "sameDirection": true,
+      "risk": "MEDIUM"
+    },
+    {
+      "coinA": "BIGTIME",
+      "coinB": "W",
+      "correlation": 0.4883,
+      "sameDirection": true,
+      "risk": "MEDIUM"
+    },
+    {
+      "coinA": "ICP",
+      "coinB": "MOODENG",
+      "correlation": 0.4877,
+      "sameDirection": true,
+      "risk": "MEDIUM"
+    },
+    {
+      "coinA": "DASH",
+      "coinB": "STRK",
+      "correlation": 0.4868,
+      "sameDirection": true,
+      "risk": "MEDIUM"
+    },
+    {
+      "coinA": "STRK",
+      "coinB": "MOODENG",
+      "correlation": 0.4861,
+      "sameDirection": true,
+      "risk": "MEDIUM"
+    },
+    {
+      "coinA": "STRK",
+      "coinB": "TRUMP",
+      "correlation": 0.4845,
+      "sameDirection": true,
+      "risk": "MEDIUM"
+    },
+    {
+      "coinA": "CELO",
+      "coinB": "APE",
+      "correlation": 0.483,
+      "sameDirection": true,
+      "risk": "MEDIUM"
+    },
+    {
+      "coinA": "MON",
+      "coinB": "kNEIRO",
+      "correlation": 0.4809,
+      "sameDirection": true,
+      "risk": "MEDIUM"
+    },
+    {
+      "coinA": "TRUMP",
+      "coinB": "PENDLE",
+      "correlation": 0.4807,
+      "sameDirection": true,
+      "risk": "MEDIUM"
+    },
+    {
+      "coinA": "BIGTIME",
+      "coinB": "kNEIRO",
+      "correlation": 0.4779,
+      "sameDirection": true,
+      "risk": "MEDIUM"
+    },
+    {
+      "coinA": "ICP",
+      "coinB": "APE",
+      "correlation": 0.4758,
+      "sameDirection": true,
+      "risk": "MEDIUM"
+    },
+    {
+      "coinA": "SOPH",
+      "coinB": "MOVE",
+      "correlation": 0.4748,
+      "sameDirection": true,
+      "risk": "MEDIUM"
+    },
+    {
+      "coinA": "ACE",
+      "coinB": "MOODENG",
+      "correlation": 0.473,
+      "sameDirection": true,
+      "risk": "MEDIUM"
+    },
+    {
+      "coinA": "PNUT",
+      "coinB": "SOPH",
+      "correlation": 0.4723,
+      "sameDirection": true,
+      "risk": "MEDIUM"
+    },
+    {
+      "coinA": "0G",
+      "coinB": "BIGTIME",
+      "correlation": 0.472,
+      "sameDirection": true,
+      "risk": "MEDIUM"
+    },
+    {
+      "coinA": "SOPH",
+      "coinB": "PENDLE",
+      "correlation": 0.4718,
+      "sameDirection": true,
+      "risk": "MEDIUM"
+    },
+    {
+      "coinA": "ALGO",
+      "coinB": "BIGTIME",
+      "correlation": 0.4715,
+      "sameDirection": true,
+      "risk": "MEDIUM"
+    },
+    {
+      "coinA": "kNEIRO",
+      "coinB": "APE",
+      "correlation": 0.4713,
+      "sameDirection": true,
+      "risk": "MEDIUM"
+    },
+    {
+      "coinA": "MEME",
+      "coinB": "APE",
+      "correlation": 0.471,
+      "sameDirection": true,
+      "risk": "MEDIUM"
+    },
+    {
+      "coinA": "kNEIRO",
+      "coinB": "SOPH",
+      "correlation": 0.4705,
+      "sameDirection": true,
+      "risk": "MEDIUM"
+    },
+    {
+      "coinA": "DASH",
+      "coinB": "MOVE",
+      "correlation": 0.4698,
+      "sameDirection": true,
+      "risk": "MEDIUM"
+    },
+    {
+      "coinA": "BIGTIME",
+      "coinB": "PENDLE",
+      "correlation": 0.4693,
+      "sameDirection": true,
+      "risk": "MEDIUM"
+    },
+    {
+      "coinA": "DASH",
+      "coinB": "MOODENG",
+      "correlation": 0.4692,
+      "sameDirection": true,
+      "risk": "MEDIUM"
+    },
+    {
+      "coinA": "AXS",
+      "coinB": "MOVE",
+      "correlation": 0.4678,
+      "sameDirection": true,
+      "risk": "MEDIUM"
+    },
+    {
+      "coinA": "MON",
+      "coinB": "W",
+      "correlation": 0.4634,
+      "sameDirection": true,
+      "risk": "MEDIUM"
+    },
+    {
+      "coinA": "OP",
+      "coinB": "APE",
+      "correlation": 0.4631,
+      "sameDirection": true,
+      "risk": "MEDIUM"
+    },
+    {
+      "coinA": "ALGO",
+      "coinB": "APE",
+      "correlation": 0.4611,
+      "sameDirection": true,
+      "risk": "MEDIUM"
+    },
+    {
+      "coinA": "DASH",
+      "coinB": "CELO",
+      "correlation": 0.4611,
+      "sameDirection": true,
+      "risk": "MEDIUM"
+    },
+    {
+      "coinA": "ICP",
+      "coinB": "UMA",
+      "correlation": 0.4607,
+      "sameDirection": true,
+      "risk": "MEDIUM"
+    },
+    {
+      "coinA": "MON",
+      "coinB": "ZETA",
+      "correlation": 0.4603,
+      "sameDirection": true,
+      "risk": "MEDIUM"
+    },
+    {
+      "coinA": "ZORA",
+      "coinB": "kLUNC",
+      "correlation": 0.46,
+      "sameDirection": true,
+      "risk": "MEDIUM"
+    },
+    {
+      "coinA": "INJ",
+      "coinB": "W",
+      "correlation": 0.4596,
+      "sameDirection": true,
+      "risk": "MEDIUM"
+    },
+    {
+      "coinA": "DASH",
+      "coinB": "MON",
+      "correlation": 0.4593,
+      "sameDirection": true,
+      "risk": "MEDIUM"
+    },
+    {
+      "coinA": "JTO",
+      "coinB": "ZORA",
+      "correlation": 0.4592,
+      "sameDirection": true,
+      "risk": "MEDIUM"
+    },
+    {
+      "coinA": "JTO",
+      "coinB": "PENDLE",
+      "correlation": 0.4591,
+      "sameDirection": true,
+      "risk": "MEDIUM"
+    },
+    {
+      "coinA": "ICP",
+      "coinB": "ZETA",
+      "correlation": 0.4586,
+      "sameDirection": true,
+      "risk": "MEDIUM"
+    },
+    {
+      "coinA": "ICP",
+      "coinB": "STRK",
+      "correlation": 0.4574,
+      "sameDirection": true,
+      "risk": "MEDIUM"
+    },
+    {
+      "coinA": "ACE",
+      "coinB": "TRUMP",
+      "correlation": 0.457,
+      "sameDirection": true,
+      "risk": "MEDIUM"
+    },
+    {
+      "coinA": "PENDLE",
+      "coinB": "APE",
+      "correlation": 0.4568,
+      "sameDirection": true,
+      "risk": "MEDIUM"
+    },
+    {
+      "coinA": "DASH",
+      "coinB": "ZETA",
+      "correlation": 0.4551,
+      "sameDirection": true,
+      "risk": "MEDIUM"
+    },
+    {
+      "coinA": "JTO",
+      "coinB": "kNEIRO",
+      "correlation": 0.4548,
+      "sameDirection": true,
+      "risk": "MEDIUM"
+    },
+    {
+      "coinA": "JTO",
+      "coinB": "MEME",
+      "correlation": 0.4539,
+      "sameDirection": true,
+      "risk": "MEDIUM"
+    },
+    {
+      "coinA": "TRUMP",
+      "coinB": "ZETA",
+      "correlation": 0.4504,
+      "sameDirection": true,
+      "risk": "MEDIUM"
+    },
+    {
+      "coinA": "W",
+      "coinB": "kLUNC",
+      "correlation": 0.449,
+      "sameDirection": true,
+      "risk": "MEDIUM"
+    },
+    {
+      "coinA": "UMA",
+      "coinB": "MOODENG",
+      "correlation": 0.4471,
+      "sameDirection": true,
+      "risk": "MEDIUM"
+    },
+    {
+      "coinA": "JTO",
+      "coinB": "STRK",
+      "correlation": 0.4453,
+      "sameDirection": true,
+      "risk": "MEDIUM"
+    },
+    {
+      "coinA": "BIGTIME",
+      "coinB": "MEME",
+      "correlation": 0.4446,
+      "sameDirection": true,
+      "risk": "MEDIUM"
+    },
+    {
+      "coinA": "JTO",
+      "coinB": "PNUT",
+      "correlation": 0.4442,
+      "sameDirection": true,
+      "risk": "MEDIUM"
+    },
+    {
+      "coinA": "OM",
+      "coinB": "SOPH",
+      "correlation": 0.4434,
+      "sameDirection": true,
+      "risk": "MEDIUM"
+    },
+    {
+      "coinA": "ZETA",
+      "coinB": "APE",
+      "correlation": 0.4431,
+      "sameDirection": true,
+      "risk": "MEDIUM"
+    },
+    {
+      "coinA": "BIGTIME",
+      "coinB": "MOVE",
+      "correlation": 0.4416,
+      "sameDirection": true,
+      "risk": "MEDIUM"
+    },
+    {
+      "coinA": "ACE",
+      "coinB": "ZORA",
+      "correlation": 0.4408,
+      "sameDirection": true,
+      "risk": "MEDIUM"
+    },
+    {
+      "coinA": "DASH",
+      "coinB": "UMA",
+      "correlation": 0.4394,
+      "sameDirection": true,
+      "risk": "MEDIUM"
+    },
+    {
+      "coinA": "ICP",
+      "coinB": "MON",
+      "correlation": 0.4383,
+      "sameDirection": true,
+      "risk": "MEDIUM"
+    },
+    {
+      "coinA": "UMA",
+      "coinB": "ZETA",
+      "correlation": 0.4371,
+      "sameDirection": true,
+      "risk": "MEDIUM"
+    },
+    {
+      "coinA": "MOODENG",
+      "coinB": "APE",
+      "correlation": 0.4352,
+      "sameDirection": true,
+      "risk": "MEDIUM"
+    },
+    {
+      "coinA": "MOODENG",
+      "coinB": "AVNT",
+      "correlation": 0.4343,
+      "sameDirection": true,
+      "risk": "MEDIUM"
+    },
+    {
+      "coinA": "TRUMP",
+      "coinB": "MOVE",
+      "correlation": 0.433,
+      "sameDirection": true,
+      "risk": "MEDIUM"
+    },
+    {
+      "coinA": "BIGTIME",
+      "coinB": "MOODENG",
+      "correlation": 0.4319,
+      "sameDirection": true,
+      "risk": "MEDIUM"
+    },
+    {
+      "coinA": "MON",
+      "coinB": "OP",
+      "correlation": 0.4309,
+      "sameDirection": true,
+      "risk": "MEDIUM"
+    },
+    {
+      "coinA": "JTO",
+      "coinB": "W",
+      "correlation": 0.4308,
+      "sameDirection": true,
+      "risk": "MEDIUM"
+    },
+    {
+      "coinA": "UMA",
+      "coinB": "STRK",
+      "correlation": 0.4297,
+      "sameDirection": true,
+      "risk": "MEDIUM"
+    },
+    {
+      "coinA": "AXS",
+      "coinB": "BERA",
+      "correlation": 0.4266,
+      "sameDirection": true,
+      "risk": "MEDIUM"
+    },
+    {
+      "coinA": "INJ",
+      "coinB": "PENDLE",
+      "correlation": 0.4256,
+      "sameDirection": true,
+      "risk": "MEDIUM"
+    },
+    {
+      "coinA": "AXS",
+      "coinB": "PENDLE",
+      "correlation": 0.424,
+      "sameDirection": true,
+      "risk": "MEDIUM"
+    },
+    {
+      "coinA": "PNUT",
+      "coinB": "OP",
+      "correlation": 0.4232,
+      "sameDirection": true,
+      "risk": "MEDIUM"
+    },
+    {
+      "coinA": "STRK",
+      "coinB": "XMR",
+      "correlation": 0.4208,
+      "sameDirection": false,
+      "risk": "LOW"
+    },
+    {
+      "coinA": "JTO",
+      "coinB": "ALGO",
+      "correlation": 0.4202,
+      "sameDirection": true,
+      "risk": "MEDIUM"
+    },
+    {
+      "coinA": "BERA",
+      "coinB": "MOVE",
+      "correlation": 0.4194,
+      "sameDirection": true,
+      "risk": "MEDIUM"
+    },
+    {
+      "coinA": "JTO",
+      "coinB": "CELO",
+      "correlation": 0.4179,
+      "sameDirection": true,
+      "risk": "MEDIUM"
+    },
+    {
+      "coinA": "SKR",
+      "coinB": "PNUT",
+      "correlation": 0.4178,
+      "sameDirection": true,
+      "risk": "MEDIUM"
+    },
+    {
+      "coinA": "SKR",
+      "coinB": "PENDLE",
+      "correlation": 0.4176,
+      "sameDirection": true,
+      "risk": "MEDIUM"
+    },
+    {
+      "coinA": "SOPH",
+      "coinB": "W",
+      "correlation": 0.4169,
+      "sameDirection": true,
+      "risk": "MEDIUM"
+    },
+    {
+      "coinA": "PYTH",
+      "coinB": "IO",
+      "correlation": 0.4168,
+      "sameDirection": true,
+      "risk": "MEDIUM"
+    },
+    {
+      "coinA": "UMA",
+      "coinB": "MON",
+      "correlation": 0.4158,
+      "sameDirection": true,
+      "risk": "MEDIUM"
+    },
+    {
+      "coinA": "PNUT",
+      "coinB": "XMR",
+      "correlation": 0.4158,
+      "sameDirection": false,
+      "risk": "LOW"
+    },
+    {
+      "coinA": "INJ",
+      "coinB": "PYTH",
+      "correlation": 0.4128,
+      "sameDirection": true,
+      "risk": "MEDIUM"
+    },
+    {
+      "coinA": "INJ",
+      "coinB": "ICP",
+      "correlation": 0.4107,
+      "sameDirection": true,
+      "risk": "MEDIUM"
+    },
+    {
+      "coinA": "ATOM",
+      "coinB": "STRK",
+      "correlation": 0.4107,
+      "sameDirection": true,
+      "risk": "MEDIUM"
+    },
+    {
+      "coinA": "AXS",
+      "coinB": "ZETA",
+      "correlation": 0.4106,
+      "sameDirection": true,
+      "risk": "MEDIUM"
+    },
+    {
+      "coinA": "MON",
+      "coinB": "MOVE",
+      "correlation": 0.4106,
+      "sameDirection": true,
+      "risk": "MEDIUM"
+    },
+    {
+      "coinA": "ACE",
+      "coinB": "ATOM",
+      "correlation": 0.4105,
+      "sameDirection": true,
+      "risk": "MEDIUM"
+    },
+    {
+      "coinA": "JTO",
+      "coinB": "MOVE",
+      "correlation": 0.4085,
+      "sameDirection": true,
+      "risk": "MEDIUM"
+    },
+    {
+      "coinA": "DASH",
+      "coinB": "XMR",
+      "correlation": 0.4074,
+      "sameDirection": false,
+      "risk": "LOW"
+    },
+    {
+      "coinA": "TRUMP",
+      "coinB": "MEME",
+      "correlation": 0.4066,
+      "sameDirection": true,
+      "risk": "MEDIUM"
+    },
+    {
+      "coinA": "JTO",
+      "coinB": "PYTH",
+      "correlation": 0.4064,
+      "sameDirection": true,
+      "risk": "MEDIUM"
+    },
+    {
+      "coinA": "AXS",
+      "coinB": "ALGO",
+      "correlation": 0.4058,
+      "sameDirection": true,
+      "risk": "MEDIUM"
+    },
+    {
+      "coinA": "kNEIRO",
+      "coinB": "XMR",
+      "correlation": 0.4055,
+      "sameDirection": false,
+      "risk": "LOW"
+    },
+    {
+      "coinA": "XMR",
+      "coinB": "ZETA",
+      "correlation": 0.4053,
+      "sameDirection": false,
+      "risk": "LOW"
+    },
+    {
+      "coinA": "ACE",
+      "coinB": "BLAST",
+      "correlation": 0.4049,
+      "sameDirection": true,
+      "risk": "MEDIUM"
+    },
+    {
+      "coinA": "BIGTIME",
+      "coinB": "ZETA",
+      "correlation": 0.4048,
+      "sameDirection": true,
+      "risk": "MEDIUM"
+    },
+    {
+      "coinA": "AXS",
+      "coinB": "MON",
+      "correlation": 0.4006,
+      "sameDirection": true,
+      "risk": "MEDIUM"
+    },
+    {
+      "coinA": "ICP",
+      "coinB": "OP",
+      "correlation": 0.3984,
+      "sameDirection": true,
+      "risk": "LOW"
+    },
+    {
+      "coinA": "TRUMP",
+      "coinB": "AVNT",
+      "correlation": 0.3984,
+      "sameDirection": true,
+      "risk": "LOW"
+    },
+    {
+      "coinA": "CELO",
+      "coinB": "XMR",
+      "correlation": 0.3983,
+      "sameDirection": false,
+      "risk": "LOW"
+    },
+    {
+      "coinA": "XMR",
+      "coinB": "PENDLE",
+      "correlation": 0.3967,
+      "sameDirection": false,
+      "risk": "LOW"
+    },
+    {
+      "coinA": "BIGTIME",
+      "coinB": "STRK",
+      "correlation": 0.3961,
+      "sameDirection": true,
+      "risk": "LOW"
+    },
+    {
+      "coinA": "SKR",
+      "coinB": "kNEIRO",
+      "correlation": 0.396,
+      "sameDirection": true,
+      "risk": "LOW"
+    },
+    {
+      "coinA": "TRUMP",
+      "coinB": "SOPH",
+      "correlation": 0.3957,
+      "sameDirection": true,
+      "risk": "LOW"
+    },
+    {
+      "coinA": "INJ",
+      "coinB": "PNUT",
+      "correlation": 0.3939,
+      "sameDirection": true,
+      "risk": "LOW"
+    },
+    {
+      "coinA": "SKR",
+      "coinB": "CELO",
+      "correlation": 0.3932,
+      "sameDirection": true,
+      "risk": "LOW"
+    },
+    {
+      "coinA": "ZORA",
+      "coinB": "BIGTIME",
+      "correlation": 0.3925,
+      "sameDirection": true,
+      "risk": "LOW"
+    },
+    {
+      "coinA": "W",
+      "coinB": "APE",
+      "correlation": 0.3903,
+      "sameDirection": true,
+      "risk": "LOW"
+    },
+    {
+      "coinA": "ZORA",
+      "coinB": "MON",
+      "correlation": 0.3898,
+      "sameDirection": true,
+      "risk": "LOW"
+    },
+    {
+      "coinA": "ATOM",
+      "coinB": "W",
+      "correlation": 0.3873,
+      "sameDirection": true,
+      "risk": "LOW"
+    },
+    {
+      "coinA": "IO",
+      "coinB": "W",
+      "correlation": 0.3871,
+      "sameDirection": true,
+      "risk": "LOW"
+    },
+    {
+      "coinA": "CELO",
+      "coinB": "OP",
+      "correlation": 0.3867,
+      "sameDirection": true,
+      "risk": "LOW"
+    },
+    {
+      "coinA": "W",
+      "coinB": "MORPHO",
+      "correlation": 0.3852,
+      "sameDirection": true,
+      "risk": "LOW"
+    },
+    {
+      "coinA": "0G",
+      "coinB": "IO",
+      "correlation": 0.3836,
+      "sameDirection": true,
+      "risk": "LOW"
+    },
+    {
+      "coinA": "BLAST",
+      "coinB": "PENDLE",
+      "correlation": 0.3835,
+      "sameDirection": true,
+      "risk": "LOW"
+    },
+    {
+      "coinA": "ACE",
+      "coinB": "SOPH",
+      "correlation": 0.3822,
+      "sameDirection": true,
+      "risk": "LOW"
+    },
+    {
+      "coinA": "BERA",
+      "coinB": "ZORA",
+      "correlation": 0.3819,
+      "sameDirection": true,
+      "risk": "LOW"
+    },
+    {
+      "coinA": "SKR",
+      "coinB": "ICP",
+      "correlation": 0.3813,
+      "sameDirection": true,
+      "risk": "LOW"
+    },
+    {
+      "coinA": "SOPH",
+      "coinB": "AVNT",
+      "correlation": 0.381,
+      "sameDirection": true,
+      "risk": "LOW"
+    },
+    {
+      "coinA": "OP",
+      "coinB": "W",
+      "correlation": 0.3809,
+      "sameDirection": true,
+      "risk": "LOW"
+    },
+    {
+      "coinA": "ACE",
+      "coinB": "kLUNC",
+      "correlation": 0.3803,
+      "sameDirection": true,
+      "risk": "LOW"
+    },
+    {
+      "coinA": "ACE",
+      "coinB": "MON",
+      "correlation": 0.3802,
+      "sameDirection": true,
+      "risk": "LOW"
+    },
+    {
+      "coinA": "AXS",
+      "coinB": "STRK",
+      "correlation": 0.38,
+      "sameDirection": true,
+      "risk": "LOW"
+    },
+    {
+      "coinA": "AXS",
+      "coinB": "PYTH",
+      "correlation": 0.3795,
+      "sameDirection": true,
+      "risk": "LOW"
+    },
+    {
+      "coinA": "IO",
+      "coinB": "MEME",
+      "correlation": 0.3785,
+      "sameDirection": true,
+      "risk": "LOW"
+    },
+    {
+      "coinA": "ATOM",
+      "coinB": "MON",
+      "correlation": 0.3784,
+      "sameDirection": true,
+      "risk": "LOW"
+    },
+    {
+      "coinA": "UMA",
+      "coinB": "BIGTIME",
+      "correlation": 0.378,
+      "sameDirection": true,
+      "risk": "LOW"
+    },
+    {
+      "coinA": "ALGO",
+      "coinB": "XMR",
+      "correlation": 0.3768,
+      "sameDirection": false,
+      "risk": "LOW"
+    },
+    {
+      "coinA": "AXS",
+      "coinB": "ZORA",
+      "correlation": 0.3765,
+      "sameDirection": true,
+      "risk": "LOW"
+    },
+    {
+      "coinA": "MOVE",
+      "coinB": "kLUNC",
+      "correlation": 0.3741,
+      "sameDirection": true,
+      "risk": "LOW"
+    },
+    {
+      "coinA": "INJ",
+      "coinB": "ALGO",
+      "correlation": 0.3737,
+      "sameDirection": true,
+      "risk": "LOW"
+    },
+    {
+      "coinA": "0G",
+      "coinB": "CELO",
+      "correlation": 0.3729,
+      "sameDirection": true,
+      "risk": "LOW"
+    },
+    {
+      "coinA": "ZORA",
+      "coinB": "TRUMP",
+      "correlation": 0.3724,
+      "sameDirection": true,
+      "risk": "LOW"
+    },
+    {
+      "coinA": "UMA",
+      "coinB": "CELO",
+      "correlation": 0.3721,
+      "sameDirection": true,
+      "risk": "LOW"
+    },
+    {
+      "coinA": "MORPHO",
+      "coinB": "AVNT",
+      "correlation": 0.3712,
+      "sameDirection": true,
+      "risk": "LOW"
+    },
+    {
+      "coinA": "CELO",
+      "coinB": "TRUMP",
+      "correlation": 0.3706,
+      "sameDirection": true,
+      "risk": "LOW"
+    },
+    {
+      "coinA": "BLAST",
+      "coinB": "MOVE",
+      "correlation": 0.3693,
+      "sameDirection": true,
+      "risk": "LOW"
+    },
+    {
+      "coinA": "INJ",
+      "coinB": "kNEIRO",
+      "correlation": 0.3688,
+      "sameDirection": true,
+      "risk": "LOW"
+    },
+    {
+      "coinA": "BLAST",
+      "coinB": "kNEIRO",
+      "correlation": 0.3686,
+      "sameDirection": true,
+      "risk": "LOW"
+    },
+    {
+      "coinA": "BLAST",
+      "coinB": "WLFI",
+      "correlation": 0.3685,
+      "sameDirection": true,
+      "risk": "LOW"
+    },
+    {
+      "coinA": "OP",
+      "coinB": "MOODENG",
+      "correlation": 0.3676,
+      "sameDirection": true,
+      "risk": "LOW"
+    },
+    {
+      "coinA": "XMR",
+      "coinB": "W",
+      "correlation": 0.3663,
+      "sameDirection": false,
+      "risk": "LOW"
+    },
+    {
+      "coinA": "ICP",
+      "coinB": "AVNT",
+      "correlation": 0.3658,
+      "sameDirection": true,
+      "risk": "LOW"
+    },
+    {
+      "coinA": "ALGO",
+      "coinB": "IO",
+      "correlation": 0.3652,
+      "sameDirection": true,
+      "risk": "LOW"
+    },
+    {
+      "coinA": "0G",
+      "coinB": "UMA",
+      "correlation": 0.3651,
+      "sameDirection": true,
+      "risk": "LOW"
+    },
+    {
+      "coinA": "BLAST",
+      "coinB": "AVNT",
+      "correlation": 0.3646,
+      "sameDirection": true,
+      "risk": "LOW"
+    },
+    {
+      "coinA": "BIGTIME",
+      "coinB": "kLUNC",
+      "correlation": 0.3638,
+      "sameDirection": true,
+      "risk": "LOW"
+    },
+    {
+      "coinA": "DASH",
+      "coinB": "WLFI",
+      "correlation": 0.3637,
+      "sameDirection": true,
+      "risk": "LOW"
+    },
+    {
+      "coinA": "AXS",
+      "coinB": "MEME",
+      "correlation": 0.3632,
+      "sameDirection": true,
+      "risk": "LOW"
+    },
+    {
+      "coinA": "SOPH",
+      "coinB": "MOODENG",
+      "correlation": 0.3632,
+      "sameDirection": true,
+      "risk": "LOW"
+    },
+    {
+      "coinA": "OP",
+      "coinB": "kNEIRO",
+      "correlation": 0.363,
+      "sameDirection": true,
+      "risk": "LOW"
+    },
+    {
+      "coinA": "BLAST",
+      "coinB": "CELO",
+      "correlation": 0.3629,
+      "sameDirection": true,
+      "risk": "LOW"
+    },
+    {
+      "coinA": "OP",
+      "coinB": "ZETA",
+      "correlation": 0.3616,
+      "sameDirection": true,
+      "risk": "LOW"
+    },
+    {
+      "coinA": "MON",
+      "coinB": "MOODENG",
+      "correlation": 0.3601,
+      "sameDirection": true,
+      "risk": "LOW"
+    },
+    {
+      "coinA": "INJ",
+      "coinB": "STRK",
+      "correlation": 0.3599,
+      "sameDirection": true,
+      "risk": "LOW"
+    },
+    {
+      "coinA": "SKR",
+      "coinB": "PYTH",
+      "correlation": 0.359,
+      "sameDirection": true,
+      "risk": "LOW"
+    },
+    {
+      "coinA": "ZORA",
+      "coinB": "SOPH",
+      "correlation": 0.357,
+      "sameDirection": true,
+      "risk": "LOW"
+    },
+    {
+      "coinA": "AXS",
+      "coinB": "ACE",
+      "correlation": 0.3566,
+      "sameDirection": true,
+      "risk": "LOW"
+    },
+    {
+      "coinA": "MEME",
+      "coinB": "OP",
+      "correlation": 0.356,
+      "sameDirection": true,
+      "risk": "LOW"
+    },
+    {
+      "coinA": "PYTH",
+      "coinB": "XMR",
+      "correlation": 0.3559,
+      "sameDirection": false,
+      "risk": "LOW"
+    },
+    {
+      "coinA": "BLAST",
+      "coinB": "PNUT",
+      "correlation": 0.3557,
+      "sameDirection": true,
+      "risk": "LOW"
+    },
+    {
+      "coinA": "STRK",
+      "coinB": "MORPHO",
+      "correlation": 0.3556,
+      "sameDirection": true,
+      "risk": "LOW"
+    },
+    {
+      "coinA": "ALGO",
+      "coinB": "OP",
+      "correlation": 0.3554,
+      "sameDirection": true,
+      "risk": "LOW"
+    },
+    {
+      "coinA": "YGG",
+      "coinB": "AVNT",
+      "correlation": 0.3552,
+      "sameDirection": true,
+      "risk": "LOW"
+    },
+    {
+      "coinA": "AXS",
+      "coinB": "0G",
+      "correlation": 0.3547,
+      "sameDirection": true,
+      "risk": "LOW"
+    },
+    {
+      "coinA": "OP",
+      "coinB": "PENDLE",
+      "correlation": 0.3545,
+      "sameDirection": true,
+      "risk": "LOW"
+    },
+    {
+      "coinA": "JTO",
+      "coinB": "ZETA",
+      "correlation": 0.3538,
+      "sameDirection": true,
+      "risk": "LOW"
+    },
+    {
+      "coinA": "ACE",
+      "coinB": "JTO",
+      "correlation": 0.3514,
+      "sameDirection": true,
+      "risk": "LOW"
+    },
+    {
+      "coinA": "STRK",
+      "coinB": "SOPH",
+      "correlation": 0.351,
+      "sameDirection": true,
+      "risk": "LOW"
+    },
+    {
+      "coinA": "ATOM",
+      "coinB": "MOVE",
+      "correlation": 0.3493,
+      "sameDirection": true,
+      "risk": "LOW"
+    },
+    {
+      "coinA": "JTO",
+      "coinB": "TRUMP",
+      "correlation": 0.3489,
+      "sameDirection": true,
+      "risk": "LOW"
+    },
+    {
+      "coinA": "MON",
+      "coinB": "XMR",
+      "correlation": 0.3479,
+      "sameDirection": false,
+      "risk": "LOW"
+    },
+    {
+      "coinA": "BERA",
+      "coinB": "MEME",
+      "correlation": 0.3476,
+      "sameDirection": true,
+      "risk": "LOW"
+    },
+    {
+      "coinA": "SKR",
+      "coinB": "ZETA",
+      "correlation": 0.3474,
+      "sameDirection": true,
+      "risk": "LOW"
+    },
+    {
+      "coinA": "ATOM",
+      "coinB": "kNEIRO",
+      "correlation": 0.3468,
+      "sameDirection": true,
+      "risk": "LOW"
+    },
+    {
+      "coinA": "JTO",
+      "coinB": "DASH",
+      "correlation": 0.3465,
+      "sameDirection": true,
+      "risk": "LOW"
+    },
+    {
+      "coinA": "AXS",
+      "coinB": "UMA",
+      "correlation": 0.3459,
+      "sameDirection": true,
+      "risk": "LOW"
+    },
+    {
+      "coinA": "INJ",
+      "coinB": "OP",
+      "correlation": 0.3453,
+      "sameDirection": true,
+      "risk": "LOW"
+    },
+    {
+      "coinA": "BLAST",
+      "coinB": "PYTH",
+      "correlation": 0.3452,
+      "sameDirection": true,
+      "risk": "LOW"
+    },
+    {
+      "coinA": "SKR",
+      "coinB": "ALGO",
+      "correlation": 0.3451,
+      "sameDirection": true,
+      "risk": "LOW"
+    },
+    {
+      "coinA": "0G",
+      "coinB": "MEME",
+      "correlation": 0.3442,
+      "sameDirection": true,
+      "risk": "LOW"
+    },
+    {
+      "coinA": "UMA",
+      "coinB": "kLUNC",
+      "correlation": 0.3435,
+      "sameDirection": true,
+      "risk": "LOW"
+    },
+    {
+      "coinA": "ATOM",
+      "coinB": "PYTH",
+      "correlation": 0.3431,
+      "sameDirection": true,
+      "risk": "LOW"
+    },
+    {
+      "coinA": "0G",
+      "coinB": "ZETA",
+      "correlation": 0.3425,
+      "sameDirection": true,
+      "risk": "LOW"
+    },
+    {
+      "coinA": "kLUNC",
+      "coinB": "PENDLE",
+      "correlation": 0.3421,
+      "sameDirection": true,
+      "risk": "LOW"
+    },
+    {
+      "coinA": "AXS",
+      "coinB": "TRUMP",
+      "correlation": 0.3409,
+      "sameDirection": true,
+      "risk": "LOW"
+    },
+    {
+      "coinA": "AXS",
+      "coinB": "AVNT",
+      "correlation": 0.3408,
+      "sameDirection": true,
+      "risk": "LOW"
+    },
+    {
+      "coinA": "BIGTIME",
+      "coinB": "TRUMP",
+      "correlation": 0.3401,
+      "sameDirection": true,
+      "risk": "LOW"
+    },
+    {
+      "coinA": "BERA",
+      "coinB": "PENDLE",
+      "correlation": 0.3377,
+      "sameDirection": true,
+      "risk": "LOW"
+    },
+    {
+      "coinA": "AXS",
+      "coinB": "PNUT",
+      "correlation": 0.3369,
+      "sameDirection": true,
+      "risk": "LOW"
+    },
+    {
+      "coinA": "ACE",
+      "coinB": "OP",
+      "correlation": 0.3342,
+      "sameDirection": true,
+      "risk": "LOW"
+    },
+    {
+      "coinA": "0G",
+      "coinB": "AVNT",
+      "correlation": 0.334,
+      "sameDirection": true,
+      "risk": "LOW"
+    },
+    {
+      "coinA": "JTO",
+      "coinB": "BIGTIME",
+      "correlation": 0.3333,
+      "sameDirection": true,
+      "risk": "LOW"
+    },
+    {
+      "coinA": "SKR",
+      "coinB": "TRUMP",
+      "correlation": 0.3325,
+      "sameDirection": true,
+      "risk": "LOW"
+    },
+    {
+      "coinA": "MEME",
+      "coinB": "XMR",
+      "correlation": 0.3311,
+      "sameDirection": false,
+      "risk": "LOW"
+    },
+    {
+      "coinA": "ATOM",
+      "coinB": "ZETA",
+      "correlation": 0.3304,
+      "sameDirection": true,
+      "risk": "LOW"
+    },
+    {
+      "coinA": "UMA",
+      "coinB": "OP",
+      "correlation": 0.3304,
+      "sameDirection": true,
+      "risk": "LOW"
+    },
+    {
+      "coinA": "PNUT",
+      "coinB": "MORPHO",
+      "correlation": 0.3298,
+      "sameDirection": true,
+      "risk": "LOW"
+    },
+    {
+      "coinA": "ATOM",
+      "coinB": "PNUT",
+      "correlation": 0.3296,
+      "sameDirection": true,
+      "risk": "LOW"
+    },
+    {
+      "coinA": "AXS",
+      "coinB": "BIGTIME",
+      "correlation": 0.3287,
+      "sameDirection": true,
+      "risk": "LOW"
+    },
+    {
+      "coinA": "IO",
+      "coinB": "kNEIRO",
+      "correlation": 0.3285,
+      "sameDirection": true,
+      "risk": "LOW"
+    },
+    {
+      "coinA": "0G",
+      "coinB": "PYTH",
+      "correlation": 0.3281,
+      "sameDirection": true,
+      "risk": "LOW"
+    },
+    {
+      "coinA": "BIGTIME",
+      "coinB": "AVNT",
+      "correlation": 0.328,
+      "sameDirection": true,
+      "risk": "LOW"
+    },
+    {
+      "coinA": "ZORA",
+      "coinB": "XMR",
+      "correlation": 0.3278,
+      "sameDirection": false,
+      "risk": "LOW"
+    },
+    {
+      "coinA": "0G",
+      "coinB": "ALGO",
+      "correlation": 0.3278,
+      "sameDirection": true,
+      "risk": "LOW"
+    },
+    {
+      "coinA": "TRUMP",
+      "coinB": "IO",
+      "correlation": 0.3278,
+      "sameDirection": true,
+      "risk": "LOW"
+    },
+    {
+      "coinA": "SKR",
+      "coinB": "MOODENG",
+      "correlation": 0.327,
+      "sameDirection": true,
+      "risk": "LOW"
+    },
+    {
+      "coinA": "BLAST",
+      "coinB": "ZETA",
+      "correlation": 0.3267,
+      "sameDirection": true,
+      "risk": "LOW"
+    },
+    {
+      "coinA": "OP",
+      "coinB": "XMR",
+      "correlation": 0.3262,
+      "sameDirection": false,
+      "risk": "LOW"
+    },
+    {
+      "coinA": "PNUT",
+      "coinB": "kLUNC",
+      "correlation": 0.3256,
+      "sameDirection": true,
+      "risk": "LOW"
+    },
+    {
+      "coinA": "PENDLE",
+      "coinB": "MORPHO",
+      "correlation": 0.3251,
+      "sameDirection": true,
+      "risk": "LOW"
+    },
+    {
+      "coinA": "MON",
+      "coinB": "TRUMP",
+      "correlation": 0.3244,
+      "sameDirection": true,
+      "risk": "LOW"
+    },
+    {
+      "coinA": "BLAST",
+      "coinB": "MOODENG",
+      "correlation": 0.3229,
+      "sameDirection": true,
+      "risk": "LOW"
+    },
+    {
+      "coinA": "PNUT",
+      "coinB": "IO",
+      "correlation": 0.3223,
+      "sameDirection": true,
+      "risk": "LOW"
+    },
+    {
+      "coinA": "ACE",
+      "coinB": "ICP",
+      "correlation": 0.3216,
+      "sameDirection": true,
+      "risk": "LOW"
+    },
+    {
+      "coinA": "UMA",
+      "coinB": "APE",
+      "correlation": 0.3209,
+      "sameDirection": true,
+      "risk": "LOW"
+    },
+    {
+      "coinA": "JTO",
+      "coinB": "kLUNC",
+      "correlation": 0.32,
+      "sameDirection": true,
+      "risk": "LOW"
+    },
+    {
+      "coinA": "OM",
+      "coinB": "ALGO",
+      "correlation": 0.3198,
+      "sameDirection": true,
+      "risk": "LOW"
+    },
+    {
+      "coinA": "BERA",
+      "coinB": "ZETA",
+      "correlation": 0.3191,
+      "sameDirection": true,
+      "risk": "LOW"
+    },
+    {
+      "coinA": "0G",
+      "coinB": "ATOM",
+      "correlation": 0.3181,
+      "sameDirection": true,
+      "risk": "LOW"
+    },
+    {
+      "coinA": "ALGO",
+      "coinB": "MORPHO",
+      "correlation": 0.3169,
+      "sameDirection": true,
+      "risk": "LOW"
+    },
+    {
+      "coinA": "BERA",
+      "coinB": "ALGO",
+      "correlation": 0.3166,
+      "sameDirection": true,
+      "risk": "LOW"
+    },
+    {
+      "coinA": "AXS",
+      "coinB": "MOODENG",
+      "correlation": 0.316,
+      "sameDirection": true,
+      "risk": "LOW"
+    },
+    {
+      "coinA": "ATOM",
+      "coinB": "OP",
+      "correlation": 0.3147,
+      "sameDirection": true,
+      "risk": "LOW"
+    },
+    {
+      "coinA": "STRK",
+      "coinB": "OP",
+      "correlation": 0.3145,
+      "sameDirection": true,
+      "risk": "LOW"
+    },
+    {
+      "coinA": "BERA",
+      "coinB": "0G",
+      "correlation": 0.3129,
+      "sameDirection": true,
+      "risk": "LOW"
+    },
+    {
+      "coinA": "MON",
+      "coinB": "AVNT",
+      "correlation": 0.3123,
+      "sameDirection": true,
+      "risk": "LOW"
+    },
+    {
+      "coinA": "BERA",
+      "coinB": "PYTH",
+      "correlation": 0.3117,
+      "sameDirection": true,
+      "risk": "LOW"
+    },
+    {
+      "coinA": "DASH",
+      "coinB": "AVNT",
+      "correlation": 0.3115,
+      "sameDirection": true,
+      "risk": "LOW"
+    },
+    {
+      "coinA": "OM",
+      "coinB": "MEME",
+      "correlation": 0.3105,
+      "sameDirection": true,
+      "risk": "LOW"
+    },
+    {
+      "coinA": "AXS",
+      "coinB": "W",
+      "correlation": 0.3097,
+      "sameDirection": true,
+      "risk": "LOW"
+    },
+    {
+      "coinA": "ATOM",
+      "coinB": "CELO",
+      "correlation": 0.3095,
+      "sameDirection": true,
+      "risk": "LOW"
+    },
+    {
+      "coinA": "ACE",
+      "coinB": "APE",
+      "correlation": 0.3094,
+      "sameDirection": true,
+      "risk": "LOW"
+    },
+    {
+      "coinA": "STRK",
+      "coinB": "IO",
+      "correlation": 0.3094,
+      "sameDirection": true,
+      "risk": "LOW"
+    },
+    {
+      "coinA": "XMR",
+      "coinB": "MOODENG",
+      "correlation": 0.309,
+      "sameDirection": false,
+      "risk": "LOW"
+    },
+    {
+      "coinA": "JTO",
+      "coinB": "MOODENG",
+      "correlation": 0.3085,
+      "sameDirection": true,
+      "risk": "LOW"
+    },
+    {
+      "coinA": "SKR",
+      "coinB": "MON",
+      "correlation": 0.3078,
+      "sameDirection": true,
+      "risk": "LOW"
+    },
+    {
+      "coinA": "SKR",
+      "coinB": "W",
+      "correlation": 0.3069,
+      "sameDirection": true,
+      "risk": "LOW"
+    },
+    {
+      "coinA": "JTO",
+      "coinB": "IO",
+      "correlation": 0.3068,
+      "sameDirection": true,
+      "risk": "LOW"
+    },
+    {
+      "coinA": "INJ",
+      "coinB": "ZORA",
+      "correlation": 0.3067,
+      "sameDirection": true,
+      "risk": "LOW"
+    },
+    {
+      "coinA": "INJ",
+      "coinB": "CELO",
+      "correlation": 0.3067,
+      "sameDirection": true,
+      "risk": "LOW"
+    },
+    {
+      "coinA": "INJ",
+      "coinB": "UMA",
+      "correlation": 0.3055,
+      "sameDirection": true,
+      "risk": "LOW"
+    },
+    {
+      "coinA": "MON",
+      "coinB": "APE",
+      "correlation": 0.3055,
+      "sameDirection": true,
+      "risk": "LOW"
+    },
+    {
+      "coinA": "INJ",
+      "coinB": "DASH",
+      "correlation": 0.3053,
+      "sameDirection": true,
+      "risk": "LOW"
+    },
+    {
+      "coinA": "ICP",
+      "coinB": "XMR",
+      "correlation": 0.3047,
+      "sameDirection": false,
+      "risk": "LOW"
+    },
+    {
+      "coinA": "PNUT",
+      "coinB": "WLFI",
+      "correlation": 0.3031,
+      "sameDirection": true,
+      "risk": "LOW"
+    },
+    {
+      "coinA": "ACE",
+      "coinB": "BERA",
+      "correlation": 0.3012,
+      "sameDirection": true,
+      "risk": "LOW"
+    },
+    {
+      "coinA": "BIGTIME",
+      "coinB": "MON",
+      "correlation": 0.3005,
+      "sameDirection": true,
+      "risk": "LOW"
+    },
+    {
+      "coinA": "MON",
+      "coinB": "SOPH",
+      "correlation": 0.3005,
+      "sameDirection": true,
+      "risk": "LOW"
+    },
+    {
+      "coinA": "ZORA",
+      "coinB": "APE",
+      "correlation": 0.299,
+      "sameDirection": true,
+      "risk": "LOW"
+    },
+    {
+      "coinA": "SKR",
+      "coinB": "AVNT",
+      "correlation": 0.2974,
+      "sameDirection": true,
+      "risk": "LOW"
+    },
+    {
+      "coinA": "ATOM",
+      "coinB": "AVNT",
+      "correlation": 0.2966,
+      "sameDirection": true,
+      "risk": "LOW"
+    },
+    {
+      "coinA": "BLAST",
+      "coinB": "MEME",
+      "correlation": 0.296,
+      "sameDirection": true,
+      "risk": "LOW"
+    },
+    {
+      "coinA": "0G",
+      "coinB": "TRUMP",
+      "correlation": 0.296,
+      "sameDirection": true,
+      "risk": "LOW"
+    },
+    {
+      "coinA": "BIGTIME",
+      "coinB": "OP",
+      "correlation": 0.2957,
+      "sameDirection": true,
+      "risk": "LOW"
+    },
+    {
+      "coinA": "MOVE",
+      "coinB": "APE",
+      "correlation": 0.2952,
+      "sameDirection": true,
+      "risk": "LOW"
+    },
+    {
+      "coinA": "kNEIRO",
+      "coinB": "kLUNC",
+      "correlation": 0.2916,
+      "sameDirection": true,
+      "risk": "LOW"
+    },
+    {
+      "coinA": "UMA",
+      "coinB": "IO",
+      "correlation": 0.2912,
+      "sameDirection": true,
+      "risk": "LOW"
+    },
+    {
+      "coinA": "0G",
+      "coinB": "MON",
+      "correlation": 0.291,
+      "sameDirection": true,
+      "risk": "LOW"
+    },
+    {
+      "coinA": "ATOM",
+      "coinB": "PENDLE",
+      "correlation": 0.291,
+      "sameDirection": true,
+      "risk": "LOW"
+    },
+    {
+      "coinA": "BIGTIME",
+      "coinB": "SOPH",
+      "correlation": 0.291,
+      "sameDirection": true,
+      "risk": "LOW"
+    },
+    {
+      "coinA": "XMR",
+      "coinB": "MOVE",
+      "correlation": 0.291,
+      "sameDirection": false,
+      "risk": "LOW"
+    },
+    {
+      "coinA": "OM",
+      "coinB": "0G",
+      "correlation": 0.2902,
+      "sameDirection": true,
+      "risk": "LOW"
+    },
+    {
+      "coinA": "ZORA",
+      "coinB": "0G",
+      "correlation": 0.2895,
+      "sameDirection": true,
+      "risk": "LOW"
+    },
+    {
+      "coinA": "SKR",
+      "coinB": "MEME",
+      "correlation": 0.2894,
+      "sameDirection": true,
+      "risk": "LOW"
+    },
+    {
+      "coinA": "ZORA",
+      "coinB": "ATOM",
+      "correlation": 0.2891,
+      "sameDirection": true,
+      "risk": "LOW"
+    },
+    {
+      "coinA": "JTO",
+      "coinB": "MON",
+      "correlation": 0.2885,
+      "sameDirection": true,
+      "risk": "LOW"
+    },
+    {
+      "coinA": "ALGO",
+      "coinB": "kLUNC",
+      "correlation": 0.2863,
+      "sameDirection": true,
+      "risk": "LOW"
+    },
+    {
+      "coinA": "STABLE",
+      "coinB": "UMA",
+      "correlation": 0.2861,
+      "sameDirection": true,
+      "risk": "LOW"
+    },
+    {
+      "coinA": "SNX",
+      "coinB": "WLFI",
+      "correlation": 0.2856,
+      "sameDirection": true,
+      "risk": "LOW"
+    },
+    {
+      "coinA": "SKR",
+      "coinB": "DASH",
+      "correlation": 0.2846,
+      "sameDirection": true,
+      "risk": "LOW"
+    },
+    {
+      "coinA": "PYTH",
+      "coinB": "kLUNC",
+      "correlation": 0.2838,
+      "sameDirection": true,
+      "risk": "LOW"
+    },
+    {
+      "coinA": "kNEIRO",
+      "coinB": "MORPHO",
+      "correlation": 0.2838,
+      "sameDirection": true,
+      "risk": "LOW"
+    },
+    {
+      "coinA": "BLAST",
+      "coinB": "W",
+      "correlation": 0.2829,
+      "sameDirection": true,
+      "risk": "LOW"
+    },
+    {
+      "coinA": "BERA",
+      "coinB": "UMA",
+      "correlation": 0.2824,
+      "sameDirection": true,
+      "risk": "LOW"
+    },
+    {
+      "coinA": "INJ",
+      "coinB": "AVNT",
+      "correlation": 0.282,
+      "sameDirection": true,
+      "risk": "LOW"
+    },
+    {
+      "coinA": "0G",
+      "coinB": "W",
+      "correlation": 0.2804,
+      "sameDirection": true,
+      "risk": "LOW"
+    },
+    {
+      "coinA": "XMR",
+      "coinB": "MORPHO",
+      "correlation": 0.2802,
+      "sameDirection": false,
+      "risk": "LOW"
+    },
+    {
+      "coinA": "OM",
+      "coinB": "MON",
+      "correlation": 0.2795,
+      "sameDirection": true,
+      "risk": "LOW"
+    },
+    {
+      "coinA": "OM",
+      "coinB": "PYTH",
+      "correlation": 0.2794,
+      "sameDirection": true,
+      "risk": "LOW"
+    },
+    {
+      "coinA": "OM",
+      "coinB": "CELO",
+      "correlation": 0.2782,
+      "sameDirection": true,
+      "risk": "LOW"
+    },
+    {
+      "coinA": "STRK",
+      "coinB": "APE",
+      "correlation": 0.2781,
+      "sameDirection": true,
+      "risk": "LOW"
+    },
+    {
+      "coinA": "CELO",
+      "coinB": "WLFI",
+      "correlation": 0.2773,
+      "sameDirection": true,
+      "risk": "LOW"
+    },
+    {
+      "coinA": "DASH",
+      "coinB": "OP",
+      "correlation": 0.2772,
+      "sameDirection": true,
+      "risk": "LOW"
+    },
+    {
+      "coinA": "IO",
+      "coinB": "PENDLE",
+      "correlation": 0.2768,
+      "sameDirection": true,
+      "risk": "LOW"
+    },
+    {
+      "coinA": "STABLE",
+      "coinB": "APE",
+      "correlation": 0.2765,
+      "sameDirection": true,
+      "risk": "LOW"
+    },
+    {
+      "coinA": "BERA",
+      "coinB": "AVNT",
+      "correlation": 0.2763,
+      "sameDirection": true,
+      "risk": "LOW"
+    },
+    {
+      "coinA": "ATOM",
+      "coinB": "BIGTIME",
+      "correlation": 0.2761,
+      "sameDirection": true,
+      "risk": "LOW"
+    },
+    {
+      "coinA": "YGG",
+      "coinB": "CELO",
+      "correlation": 0.2758,
+      "sameDirection": true,
+      "risk": "LOW"
+    },
+    {
+      "coinA": "ATOM",
+      "coinB": "TRUMP",
+      "correlation": 0.2755,
+      "sameDirection": true,
+      "risk": "LOW"
+    },
+    {
+      "coinA": "BLAST",
+      "coinB": "IO",
+      "correlation": 0.2753,
+      "sameDirection": true,
+      "risk": "LOW"
+    },
+    {
+      "coinA": "SKR",
+      "coinB": "MOVE",
+      "correlation": 0.2751,
+      "sameDirection": true,
+      "risk": "LOW"
+    },
+    {
+      "coinA": "IO",
+      "coinB": "AVNT",
+      "correlation": 0.2743,
+      "sameDirection": true,
+      "risk": "LOW"
+    },
+    {
+      "coinA": "OM",
+      "coinB": "MOVE",
+      "correlation": 0.2723,
+      "sameDirection": true,
+      "risk": "LOW"
+    },
+    {
+      "coinA": "BLAST",
+      "coinB": "ICP",
+      "correlation": 0.2722,
+      "sameDirection": true,
+      "risk": "LOW"
+    },
+    {
+      "coinA": "UMA",
+      "coinB": "TRUMP",
+      "correlation": 0.2721,
+      "sameDirection": true,
+      "risk": "LOW"
+    },
+    {
+      "coinA": "INJ",
+      "coinB": "MOODENG",
+      "correlation": 0.272,
+      "sameDirection": true,
+      "risk": "LOW"
+    },
+    {
+      "coinA": "YGG",
+      "coinB": "BLAST",
+      "correlation": 0.2713,
+      "sameDirection": true,
+      "risk": "LOW"
+    },
+    {
+      "coinA": "WLFI",
+      "coinB": "PENDLE",
+      "correlation": 0.2707,
+      "sameDirection": true,
+      "risk": "LOW"
+    },
+    {
+      "coinA": "JTO",
+      "coinB": "ICP",
+      "correlation": 0.2701,
+      "sameDirection": true,
+      "risk": "LOW"
+    },
+    {
+      "coinA": "AXS",
+      "coinB": "kNEIRO",
+      "correlation": 0.2696,
+      "sameDirection": true,
+      "risk": "LOW"
+    },
+    {
+      "coinA": "IO",
+      "coinB": "SOPH",
+      "correlation": 0.2683,
+      "sameDirection": true,
+      "risk": "LOW"
+    },
+    {
+      "coinA": "DASH",
+      "coinB": "BIGTIME",
+      "correlation": 0.2676,
+      "sameDirection": true,
+      "risk": "LOW"
+    },
+    {
+      "coinA": "ICP",
+      "coinB": "STABLE",
+      "correlation": 0.2674,
+      "sameDirection": true,
+      "risk": "LOW"
+    },
+    {
+      "coinA": "JTO",
+      "coinB": "UMA",
+      "correlation": 0.2661,
+      "sameDirection": true,
+      "risk": "LOW"
+    },
+    {
+      "coinA": "SKR",
+      "coinB": "UMA",
+      "correlation": 0.2658,
+      "sameDirection": true,
+      "risk": "LOW"
+    },
+    {
+      "coinA": "SNX",
+      "coinB": "CELO",
+      "correlation": 0.2657,
+      "sameDirection": true,
+      "risk": "LOW"
+    },
+    {
+      "coinA": "MEME",
+      "coinB": "kLUNC",
+      "correlation": 0.2657,
+      "sameDirection": true,
+      "risk": "LOW"
+    },
+    {
+      "coinA": "SKR",
+      "coinB": "JTO",
+      "correlation": 0.2651,
+      "sameDirection": true,
+      "risk": "LOW"
+    },
+    {
+      "coinA": "STABLE",
+      "coinB": "ALGO",
+      "correlation": 0.2645,
+      "sameDirection": true,
+      "risk": "LOW"
+    },
+    {
+      "coinA": "0G",
+      "coinB": "PENDLE",
+      "correlation": 0.2632,
+      "sameDirection": true,
+      "risk": "LOW"
+    },
+    {
+      "coinA": "JTO",
+      "coinB": "XMR",
+      "correlation": 0.2629,
+      "sameDirection": false,
+      "risk": "LOW"
+    },
+    {
+      "coinA": "ZORA",
+      "coinB": "IO",
+      "correlation": 0.2617,
+      "sameDirection": true,
+      "risk": "LOW"
+    },
+    {
+      "coinA": "ICP",
+      "coinB": "TRUMP",
+      "correlation": 0.2612,
+      "sameDirection": true,
+      "risk": "LOW"
+    },
+    {
+      "coinA": "YGG",
+      "coinB": "BIGTIME",
+      "correlation": 0.2605,
+      "sameDirection": true,
+      "risk": "LOW"
+    },
+    {
+      "coinA": "ATOM",
+      "coinB": "DASH",
+      "correlation": 0.2597,
+      "sameDirection": true,
+      "risk": "LOW"
+    },
+    {
+      "coinA": "ATOM",
+      "coinB": "MEME",
+      "correlation": 0.2596,
+      "sameDirection": true,
+      "risk": "LOW"
+    },
+    {
+      "coinA": "ZORA",
+      "coinB": "OP",
+      "correlation": 0.2592,
+      "sameDirection": true,
+      "risk": "LOW"
+    },
+    {
+      "coinA": "ALGO",
+      "coinB": "ATOM",
+      "correlation": 0.2579,
+      "sameDirection": true,
+      "risk": "LOW"
+    },
+    {
+      "coinA": "WLFI",
+      "coinB": "APE",
+      "correlation": 0.2561,
+      "sameDirection": true,
+      "risk": "LOW"
+    },
+    {
+      "coinA": "OP",
+      "coinB": "MOVE",
+      "correlation": 0.2555,
+      "sameDirection": true,
+      "risk": "LOW"
+    },
+    {
+      "coinA": "SNX",
+      "coinB": "MORPHO",
+      "correlation": 0.2549,
+      "sameDirection": true,
+      "risk": "LOW"
+    },
+    {
+      "coinA": "YGG",
+      "coinB": "IO",
+      "correlation": 0.2541,
+      "sameDirection": true,
+      "risk": "LOW"
+    },
+    {
+      "coinA": "SKR",
+      "coinB": "BIGTIME",
+      "correlation": 0.2529,
+      "sameDirection": true,
+      "risk": "LOW"
+    },
+    {
+      "coinA": "PYTH",
+      "coinB": "MORPHO",
+      "correlation": 0.2524,
+      "sameDirection": true,
+      "risk": "LOW"
+    },
+    {
+      "coinA": "BLAST",
+      "coinB": "ZORA",
+      "correlation": 0.2516,
+      "sameDirection": true,
+      "risk": "LOW"
+    },
+    {
+      "coinA": "XMR",
+      "coinB": "WLFI",
+      "correlation": 0.2515,
+      "sameDirection": false,
+      "risk": "LOW"
+    },
+    {
+      "coinA": "BERA",
+      "coinB": "PNUT",
+      "correlation": 0.2513,
+      "sameDirection": true,
+      "risk": "LOW"
+    },
+    {
+      "coinA": "UMA",
+      "coinB": "AVNT",
+      "correlation": 0.2503,
+      "sameDirection": true,
+      "risk": "LOW"
+    },
+    {
+      "coinA": "ALGO",
+      "coinB": "WLFI",
+      "correlation": 0.2499,
+      "sameDirection": true,
+      "risk": "LOW"
+    },
+    {
+      "coinA": "ACE",
+      "coinB": "DASH",
+      "correlation": 0.2498,
+      "sameDirection": true,
+      "risk": "LOW"
+    },
+    {
+      "coinA": "YGG",
+      "coinB": "MEME",
+      "correlation": 0.2491,
+      "sameDirection": true,
+      "risk": "LOW"
+    },
+    {
+      "coinA": "AZTEC",
+      "coinB": "STABLE",
+      "correlation": 0.2487,
+      "sameDirection": true,
+      "risk": "LOW"
+    },
+    {
+      "coinA": "ACE",
+      "coinB": "SKR",
+      "correlation": 0.2487,
+      "sameDirection": true,
+      "risk": "LOW"
+    },
+    {
+      "coinA": "BERA",
+      "coinB": "MON",
+      "correlation": 0.2483,
+      "sameDirection": true,
+      "risk": "LOW"
+    },
+    {
+      "coinA": "BLAST",
+      "coinB": "ALGO",
+      "correlation": 0.248,
+      "sameDirection": true,
+      "risk": "LOW"
+    },
+    {
+      "coinA": "BERA",
+      "coinB": "kNEIRO",
+      "correlation": 0.2479,
+      "sameDirection": true,
+      "risk": "LOW"
+    },
+    {
+      "coinA": "CELO",
+      "coinB": "kLUNC",
+      "correlation": 0.2465,
+      "sameDirection": true,
+      "risk": "LOW"
+    },
+    {
+      "coinA": "BERA",
+      "coinB": "kLUNC",
+      "correlation": 0.2459,
+      "sameDirection": true,
+      "risk": "LOW"
+    },
+    {
+      "coinA": "AZTEC",
+      "coinB": "JTO",
+      "correlation": 0.2454,
+      "sameDirection": true,
+      "risk": "LOW"
+    },
+    {
+      "coinA": "BIGTIME",
+      "coinB": "APE",
+      "correlation": 0.2454,
+      "sameDirection": true,
+      "risk": "LOW"
+    },
+    {
+      "coinA": "OP",
+      "coinB": "SOPH",
+      "correlation": 0.2447,
+      "sameDirection": true,
+      "risk": "LOW"
+    },
+    {
+      "coinA": "kNEIRO",
+      "coinB": "WLFI",
+      "correlation": 0.2445,
+      "sameDirection": true,
+      "risk": "LOW"
+    },
+    {
+      "coinA": "INJ",
+      "coinB": "kLUNC",
+      "correlation": 0.2442,
+      "sameDirection": true,
+      "risk": "LOW"
+    },
+    {
+      "coinA": "0G",
+      "coinB": "MOVE",
+      "correlation": 0.243,
+      "sameDirection": true,
+      "risk": "LOW"
+    },
+    {
+      "coinA": "0G",
+      "coinB": "SOPH",
+      "correlation": 0.2416,
+      "sameDirection": true,
+      "risk": "LOW"
+    },
+    {
+      "coinA": "BIGTIME",
+      "coinB": "WLFI",
+      "correlation": 0.2416,
+      "sameDirection": true,
+      "risk": "LOW"
+    },
+    {
+      "coinA": "CELO",
+      "coinB": "MORPHO",
+      "correlation": 0.2404,
+      "sameDirection": true,
+      "risk": "LOW"
+    },
+    {
+      "coinA": "AXS",
+      "coinB": "MORPHO",
+      "correlation": 0.2397,
+      "sameDirection": true,
+      "risk": "LOW"
+    },
+    {
+      "coinA": "AXS",
+      "coinB": "kLUNC",
+      "correlation": 0.2396,
+      "sameDirection": true,
+      "risk": "LOW"
+    },
+    {
+      "coinA": "XMR",
+      "coinB": "APE",
+      "correlation": 0.239,
+      "sameDirection": false,
+      "risk": "LOW"
+    },
+    {
+      "coinA": "BLAST",
+      "coinB": "APE",
+      "correlation": 0.2389,
+      "sameDirection": true,
+      "risk": "LOW"
+    },
+    {
+      "coinA": "DASH",
+      "coinB": "TRUMP",
+      "correlation": 0.2386,
+      "sameDirection": true,
+      "risk": "LOW"
+    },
+    {
+      "coinA": "OP",
+      "coinB": "AVNT",
+      "correlation": 0.2385,
+      "sameDirection": true,
+      "risk": "LOW"
+    },
+    {
+      "coinA": "IO",
+      "coinB": "ZETA",
+      "correlation": 0.2375,
+      "sameDirection": true,
+      "risk": "LOW"
+    },
+    {
+      "coinA": "PYTH",
+      "coinB": "WLFI",
+      "correlation": 0.2373,
+      "sameDirection": true,
+      "risk": "LOW"
+    },
+    {
+      "coinA": "AXS",
+      "coinB": "BLAST",
+      "correlation": 0.237,
+      "sameDirection": true,
+      "risk": "LOW"
+    },
+    {
+      "coinA": "DASH",
+      "coinB": "SOPH",
+      "correlation": 0.2368,
+      "sameDirection": true,
+      "risk": "LOW"
+    },
+    {
+      "coinA": "AXS",
+      "coinB": "JTO",
+      "correlation": 0.2361,
+      "sameDirection": true,
+      "risk": "LOW"
+    },
+    {
+      "coinA": "YGG",
+      "coinB": "0G",
+      "correlation": 0.2352,
+      "sameDirection": true,
+      "risk": "LOW"
+    },
+    {
+      "coinA": "BLAST",
+      "coinB": "BIGTIME",
+      "correlation": 0.2343,
+      "sameDirection": true,
+      "risk": "LOW"
+    },
+    {
+      "coinA": "INJ",
+      "coinB": "SOPH",
+      "correlation": 0.2341,
+      "sameDirection": true,
+      "risk": "LOW"
+    },
+    {
+      "coinA": "AXS",
+      "coinB": "SOPH",
+      "correlation": 0.2313,
+      "sameDirection": true,
+      "risk": "LOW"
+    },
+    {
+      "coinA": "SOPH",
+      "coinB": "XMR",
+      "correlation": 0.231,
+      "sameDirection": false,
+      "risk": "LOW"
+    },
+    {
+      "coinA": "SKR",
+      "coinB": "SOPH",
+      "correlation": 0.2308,
+      "sameDirection": true,
+      "risk": "LOW"
+    },
+    {
+      "coinA": "JTO",
+      "coinB": "MORPHO",
+      "correlation": 0.2304,
+      "sameDirection": true,
+      "risk": "LOW"
+    },
+    {
+      "coinA": "ACE",
+      "coinB": "WLFI",
+      "correlation": 0.2302,
+      "sameDirection": true,
+      "risk": "LOW"
+    },
+    {
+      "coinA": "STRK",
+      "coinB": "kLUNC",
+      "correlation": 0.23,
+      "sameDirection": true,
+      "risk": "LOW"
+    },
+    {
+      "coinA": "ATOM",
+      "coinB": "IO",
+      "correlation": 0.2294,
+      "sameDirection": true,
+      "risk": "LOW"
+    },
+    {
+      "coinA": "BLAST",
+      "coinB": "STRK",
+      "correlation": 0.2289,
+      "sameDirection": true,
+      "risk": "LOW"
+    },
+    {
+      "coinA": "MEME",
+      "coinB": "WLFI",
+      "correlation": 0.2281,
+      "sameDirection": true,
+      "risk": "LOW"
+    },
+    {
+      "coinA": "OM",
+      "coinB": "ZORA",
+      "correlation": 0.2265,
+      "sameDirection": true,
+      "risk": "LOW"
+    },
+    {
+      "coinA": "SKR",
+      "coinB": "ZORA",
+      "correlation": 0.2257,
+      "sameDirection": true,
+      "risk": "LOW"
+    },
+    {
+      "coinA": "OM",
+      "coinB": "PENDLE",
+      "correlation": 0.2247,
+      "sameDirection": true,
+      "risk": "LOW"
+    },
+    {
+      "coinA": "STABLE",
+      "coinB": "kNEIRO",
+      "correlation": 0.2232,
+      "sameDirection": true,
+      "risk": "LOW"
+    },
+    {
+      "coinA": "BERA",
+      "coinB": "MOODENG",
+      "correlation": 0.2231,
+      "sameDirection": true,
+      "risk": "LOW"
+    },
+    {
+      "coinA": "BLAST",
+      "coinB": "SOPH",
+      "correlation": 0.222,
+      "sameDirection": true,
+      "risk": "LOW"
+    },
+    {
+      "coinA": "MOODENG",
+      "coinB": "MORPHO",
+      "correlation": 0.2211,
+      "sameDirection": true,
+      "risk": "LOW"
+    },
+    {
+      "coinA": "JTO",
+      "coinB": "SOPH",
+      "correlation": 0.2209,
+      "sameDirection": true,
+      "risk": "LOW"
+    },
+    {
+      "coinA": "YGG",
+      "coinB": "WLFI",
+      "correlation": 0.2204,
+      "sameDirection": true,
+      "risk": "LOW"
+    },
+    {
+      "coinA": "MON",
+      "coinB": "WLFI",
+      "correlation": 0.2196,
+      "sameDirection": true,
+      "risk": "LOW"
+    },
+    {
+      "coinA": "ACE",
+      "coinB": "YGG",
+      "correlation": 0.2186,
+      "sameDirection": true,
+      "risk": "LOW"
+    },
+    {
+      "coinA": "IO",
+      "coinB": "WLFI",
+      "correlation": 0.2185,
+      "sameDirection": true,
+      "risk": "LOW"
+    },
+    {
+      "coinA": "JTO",
+      "coinB": "ATOM",
+      "correlation": 0.2182,
+      "sameDirection": true,
+      "risk": "LOW"
+    },
+    {
+      "coinA": "MON",
+      "coinB": "IO",
+      "correlation": 0.2175,
+      "sameDirection": true,
+      "risk": "LOW"
+    },
+    {
+      "coinA": "MOODENG",
+      "coinB": "kLUNC",
+      "correlation": 0.2174,
+      "sameDirection": true,
+      "risk": "LOW"
+    },
+    {
+      "coinA": "STABLE",
+      "coinB": "PNUT",
+      "correlation": 0.2164,
+      "sameDirection": true,
+      "risk": "LOW"
+    },
+    {
+      "coinA": "TRUMP",
+      "coinB": "kLUNC",
+      "correlation": 0.2158,
+      "sameDirection": true,
+      "risk": "LOW"
+    },
+    {
+      "coinA": "ZETA",
+      "coinB": "MORPHO",
+      "correlation": 0.2158,
+      "sameDirection": true,
+      "risk": "LOW"
+    },
+    {
+      "coinA": "BERA",
+      "coinB": "W",
+      "correlation": 0.2155,
+      "sameDirection": true,
+      "risk": "LOW"
+    },
+    {
+      "coinA": "WLFI",
+      "coinB": "MORPHO",
+      "correlation": 0.2154,
+      "sameDirection": true,
+      "risk": "LOW"
+    },
+    {
+      "coinA": "ZETA",
+      "coinB": "kLUNC",
+      "correlation": 0.2153,
+      "sameDirection": true,
+      "risk": "LOW"
+    },
+    {
+      "coinA": "AZTEC",
+      "coinB": "XMR",
+      "correlation": 0.215,
+      "sameDirection": false,
+      "risk": "LOW"
+    },
+    {
+      "coinA": "OM",
+      "coinB": "kNEIRO",
+      "correlation": 0.2147,
+      "sameDirection": true,
+      "risk": "LOW"
+    },
+    {
+      "coinA": "BERA",
+      "coinB": "ATOM",
+      "correlation": 0.2145,
+      "sameDirection": true,
+      "risk": "LOW"
+    },
+    {
+      "coinA": "SKR",
+      "coinB": "OP",
+      "correlation": 0.2142,
+      "sameDirection": true,
+      "risk": "LOW"
+    },
+    {
+      "coinA": "IO",
+      "coinB": "APE",
+      "correlation": 0.2142,
+      "sameDirection": true,
+      "risk": "LOW"
+    },
+    {
+      "coinA": "UMA",
+      "coinB": "XMR",
+      "correlation": 0.2123,
+      "sameDirection": false,
+      "risk": "LOW"
+    },
+    {
+      "coinA": "ATOM",
+      "coinB": "UMA",
+      "correlation": 0.2107,
+      "sameDirection": true,
+      "risk": "LOW"
+    },
+    {
+      "coinA": "IO",
+      "coinB": "MOODENG",
+      "correlation": 0.2101,
+      "sameDirection": true,
+      "risk": "LOW"
+    },
+    {
+      "coinA": "AXS",
+      "coinB": "CELO",
+      "correlation": 0.2098,
+      "sameDirection": true,
+      "risk": "LOW"
+    },
+    {
+      "coinA": "STRK",
+      "coinB": "WLFI",
+      "correlation": 0.2088,
+      "sameDirection": true,
+      "risk": "LOW"
+    },
+    {
+      "coinA": "APE",
+      "coinB": "AVNT",
+      "correlation": 0.2086,
+      "sameDirection": true,
+      "risk": "LOW"
+    },
+    {
+      "coinA": "INJ",
+      "coinB": "APE",
+      "correlation": 0.2085,
+      "sameDirection": true,
+      "risk": "LOW"
+    },
+    {
+      "coinA": "BLAST",
+      "coinB": "TRUMP",
+      "correlation": 0.2085,
+      "sameDirection": true,
+      "risk": "LOW"
+    },
+    {
+      "coinA": "IO",
+      "coinB": "OP",
+      "correlation": 0.208,
+      "sameDirection": true,
+      "risk": "LOW"
+    },
+    {
+      "coinA": "BERA",
+      "coinB": "STRK",
+      "correlation": 0.2077,
+      "sameDirection": true,
+      "risk": "LOW"
+    },
+    {
+      "coinA": "SKR",
+      "coinB": "BERA",
+      "correlation": 0.2075,
+      "sameDirection": true,
+      "risk": "LOW"
+    },
+    {
+      "coinA": "INJ",
+      "coinB": "ZETA",
+      "correlation": 0.2071,
+      "sameDirection": true,
+      "risk": "LOW"
+    },
+    {
+      "coinA": "STABLE",
+      "coinB": "W",
+      "correlation": 0.2056,
+      "sameDirection": true,
+      "risk": "LOW"
+    },
+    {
+      "coinA": "SOPH",
+      "coinB": "APE",
+      "correlation": 0.2054,
+      "sameDirection": true,
+      "risk": "LOW"
+    },
+    {
+      "coinA": "SNX",
+      "coinB": "IO",
+      "correlation": 0.2046,
+      "sameDirection": true,
+      "risk": "LOW"
+    },
+    {
+      "coinA": "MEME",
+      "coinB": "MORPHO",
+      "correlation": 0.2028,
+      "sameDirection": true,
+      "risk": "LOW"
+    },
+    {
+      "coinA": "AZTEC",
+      "coinB": "MON",
+      "correlation": 0.2025,
+      "sameDirection": true,
+      "risk": "LOW"
+    },
+    {
+      "coinA": "OM",
+      "coinB": "PNUT",
+      "correlation": 0.2025,
+      "sameDirection": true,
+      "risk": "LOW"
+    },
+    {
+      "coinA": "INJ",
+      "coinB": "TRUMP",
+      "correlation": 0.2019,
+      "sameDirection": true,
+      "risk": "LOW"
+    },
+    {
+      "coinA": "kLUNC",
+      "coinB": "AVNT",
+      "correlation": 0.2017,
+      "sameDirection": true,
+      "risk": "LOW"
+    },
+    {
+      "coinA": "0G",
+      "coinB": "PNUT",
+      "correlation": 0.2007,
+      "sameDirection": true,
+      "risk": "LOW"
+    },
+    {
+      "coinA": "ATOM",
+      "coinB": "kLUNC",
+      "correlation": 0.1999,
+      "sameDirection": true,
+      "risk": "LOW"
+    },
+    {
+      "coinA": "DASH",
+      "coinB": "APE",
+      "correlation": 0.1991,
+      "sameDirection": true,
+      "risk": "LOW"
+    },
+    {
+      "coinA": "AXS",
+      "coinB": "ATOM",
+      "correlation": 0.1989,
+      "sameDirection": true,
+      "risk": "LOW"
+    },
+    {
+      "coinA": "0G",
+      "coinB": "STRK",
+      "correlation": 0.1986,
+      "sameDirection": true,
+      "risk": "LOW"
+    },
+    {
+      "coinA": "INJ",
+      "coinB": "MOVE",
+      "correlation": 0.1983,
+      "sameDirection": true,
+      "risk": "LOW"
+    },
+    {
+      "coinA": "SKR",
+      "coinB": "APE",
+      "correlation": 0.1942,
+      "sameDirection": true,
+      "risk": "LOW"
+    },
+    {
+      "coinA": "0G",
+      "coinB": "OP",
+      "correlation": 0.1935,
+      "sameDirection": true,
+      "risk": "LOW"
+    },
+    {
+      "coinA": "0G",
+      "coinB": "kNEIRO",
+      "correlation": 0.189,
+      "sameDirection": true,
+      "risk": "LOW"
+    },
+    {
+      "coinA": "ATOM",
+      "coinB": "MOODENG",
+      "correlation": 0.1862,
+      "sameDirection": true,
+      "risk": "LOW"
+    },
+    {
+      "coinA": "BERA",
+      "coinB": "SOPH",
+      "correlation": 0.186,
+      "sameDirection": true,
+      "risk": "LOW"
+    },
+    {
+      "coinA": "0G",
+      "coinB": "kLUNC",
+      "correlation": 0.1858,
+      "sameDirection": true,
+      "risk": "LOW"
+    },
+    {
+      "coinA": "BLAST",
+      "coinB": "UMA",
+      "correlation": 0.1854,
+      "sameDirection": true,
+      "risk": "LOW"
+    },
+    {
+      "coinA": "BLAST",
+      "coinB": "MORPHO",
+      "correlation": 0.1849,
+      "sameDirection": true,
+      "risk": "LOW"
+    },
+    {
+      "coinA": "TRUMP",
+      "coinB": "XMR",
+      "correlation": 0.1839,
+      "sameDirection": false,
+      "risk": "LOW"
+    },
+    {
+      "coinA": "BERA",
+      "coinB": "ICP",
+      "correlation": 0.1828,
+      "sameDirection": true,
+      "risk": "LOW"
+    },
+    {
+      "coinA": "ICP",
+      "coinB": "SOPH",
+      "correlation": 0.1828,
+      "sameDirection": true,
+      "risk": "LOW"
+    },
+    {
+      "coinA": "AXS",
+      "coinB": "DASH",
+      "correlation": 0.1827,
+      "sameDirection": true,
+      "risk": "LOW"
+    },
+    {
+      "coinA": "INJ",
+      "coinB": "YGG",
+      "correlation": 0.1825,
+      "sameDirection": true,
+      "risk": "LOW"
+    },
+    {
+      "coinA": "OM",
+      "coinB": "W",
+      "correlation": 0.1821,
+      "sameDirection": true,
+      "risk": "LOW"
+    },
+    {
+      "coinA": "DASH",
+      "coinB": "MORPHO",
+      "correlation": 0.1817,
+      "sameDirection": true,
+      "risk": "LOW"
+    },
+    {
+      "coinA": "0G",
+      "coinB": "MOODENG",
+      "correlation": 0.1813,
+      "sameDirection": true,
+      "risk": "LOW"
+    },
+    {
+      "coinA": "SOPH",
+      "coinB": "kLUNC",
+      "correlation": 0.1804,
+      "sameDirection": true,
+      "risk": "LOW"
+    },
+    {
+      "coinA": "BLAST",
+      "coinB": "DASH",
+      "correlation": 0.1799,
+      "sameDirection": true,
+      "risk": "LOW"
+    },
+    {
+      "coinA": "AZTEC",
+      "coinB": "STRK",
+      "correlation": 0.1789,
+      "sameDirection": true,
+      "risk": "LOW"
+    },
+    {
+      "coinA": "TRUMP",
+      "coinB": "OP",
+      "correlation": 0.1789,
+      "sameDirection": true,
+      "risk": "LOW"
+    },
+    {
+      "coinA": "OM",
+      "coinB": "ZETA",
+      "correlation": 0.1785,
+      "sameDirection": true,
+      "risk": "LOW"
+    },
+    {
+      "coinA": "YGG",
+      "coinB": "W",
+      "correlation": 0.1784,
+      "sameDirection": true,
+      "risk": "LOW"
+    },
+    {
+      "coinA": "JTO",
+      "coinB": "AVNT",
+      "correlation": 0.1759,
+      "sameDirection": true,
+      "risk": "LOW"
+    },
+    {
+      "coinA": "MON",
+      "coinB": "kLUNC",
+      "correlation": 0.1756,
+      "sameDirection": true,
+      "risk": "LOW"
+    },
+    {
+      "coinA": "WLFI",
+      "coinB": "W",
+      "correlation": 0.1749,
+      "sameDirection": true,
+      "risk": "LOW"
+    },
+    {
+      "coinA": "JTO",
+      "coinB": "SNX",
+      "correlation": 0.1742,
+      "sameDirection": true,
+      "risk": "LOW"
+    },
+    {
+      "coinA": "BERA",
+      "coinB": "CELO",
+      "correlation": 0.1741,
+      "sameDirection": true,
+      "risk": "LOW"
+    },
+    {
+      "coinA": "ZORA",
+      "coinB": "WLFI",
+      "correlation": 0.1727,
+      "sameDirection": true,
+      "risk": "LOW"
+    },
+    {
+      "coinA": "BERA",
+      "coinB": "BIGTIME",
+      "correlation": 0.1726,
+      "sameDirection": true,
+      "risk": "LOW"
+    },
+    {
+      "coinA": "AZTEC",
+      "coinB": "BIGTIME",
+      "correlation": -0.1724,
+      "sameDirection": true,
+      "risk": "LOW"
+    },
+    {
+      "coinA": "ICP",
+      "coinB": "BIGTIME",
+      "correlation": 0.1724,
+      "sameDirection": true,
+      "risk": "LOW"
+    },
+    {
+      "coinA": "SNX",
+      "coinB": "MON",
+      "correlation": 0.172,
+      "sameDirection": true,
+      "risk": "LOW"
+    },
+    {
+      "coinA": "ICP",
+      "coinB": "ATOM",
+      "correlation": 0.171,
+      "sameDirection": true,
+      "risk": "LOW"
+    },
+    {
+      "coinA": "BERA",
+      "coinB": "STABLE",
+      "correlation": -0.1705,
+      "sameDirection": true,
+      "risk": "LOW"
+    },
+    {
+      "coinA": "INJ",
+      "coinB": "IO",
+      "correlation": 0.17,
+      "sameDirection": true,
+      "risk": "LOW"
+    },
+    {
+      "coinA": "UMA",
+      "coinB": "SOPH",
+      "correlation": 0.1691,
+      "sameDirection": true,
+      "risk": "LOW"
+    },
+    {
+      "coinA": "AXS",
+      "coinB": "XMR",
+      "correlation": 0.1675,
+      "sameDirection": false,
+      "risk": "LOW"
+    },
+    {
+      "coinA": "OM",
+      "coinB": "XMR",
+      "correlation": 0.1671,
+      "sameDirection": false,
+      "risk": "LOW"
+    },
+    {
+      "coinA": "BERA",
+      "coinB": "DASH",
+      "correlation": 0.1655,
+      "sameDirection": true,
+      "risk": "LOW"
+    },
+    {
+      "coinA": "DASH",
+      "coinB": "kLUNC",
+      "correlation": 0.1654,
+      "sameDirection": true,
+      "risk": "LOW"
+    },
+    {
+      "coinA": "ATOM",
+      "coinB": "XMR",
+      "correlation": 0.1649,
+      "sameDirection": false,
+      "risk": "LOW"
+    },
+    {
+      "coinA": "IO",
+      "coinB": "MOVE",
+      "correlation": 0.164,
+      "sameDirection": true,
+      "risk": "LOW"
+    },
+    {
+      "coinA": "AZTEC",
+      "coinB": "ICP",
+      "correlation": 0.1616,
+      "sameDirection": true,
+      "risk": "LOW"
+    },
+    {
+      "coinA": "ICP",
+      "coinB": "WLFI",
+      "correlation": 0.1615,
+      "sameDirection": true,
+      "risk": "LOW"
+    },
+    {
+      "coinA": "ACE",
+      "coinB": "XMR",
+      "correlation": 0.1611,
+      "sameDirection": false,
+      "risk": "LOW"
+    },
+    {
+      "coinA": "YGG",
+      "coinB": "PNUT",
+      "correlation": 0.1601,
+      "sameDirection": true,
+      "risk": "LOW"
+    },
+    {
+      "coinA": "ACE",
+      "coinB": "MORPHO",
+      "correlation": 0.1599,
+      "sameDirection": true,
+      "risk": "LOW"
+    },
+    {
+      "coinA": "IO",
+      "coinB": "kLUNC",
+      "correlation": 0.1592,
+      "sameDirection": true,
+      "risk": "LOW"
+    },
+    {
+      "coinA": "OM",
+      "coinB": "APE",
+      "correlation": 0.1591,
+      "sameDirection": true,
+      "risk": "LOW"
+    },
+    {
+      "coinA": "YGG",
+      "coinB": "PENDLE",
+      "correlation": 0.1587,
+      "sameDirection": true,
+      "risk": "LOW"
+    },
+    {
+      "coinA": "SOPH",
+      "coinB": "MORPHO",
+      "correlation": 0.1587,
+      "sameDirection": true,
+      "risk": "LOW"
+    },
+    {
+      "coinA": "STABLE",
+      "coinB": "PYTH",
+      "correlation": 0.1583,
+      "sameDirection": true,
+      "risk": "LOW"
+    },
+    {
+      "coinA": "WLFI",
+      "coinB": "MOVE",
+      "correlation": 0.1581,
+      "sameDirection": true,
+      "risk": "LOW"
+    },
+    {
+      "coinA": "STABLE",
+      "coinB": "MON",
+      "correlation": 0.1576,
+      "sameDirection": true,
+      "risk": "LOW"
+    },
+    {
+      "coinA": "SKR",
+      "coinB": "STRK",
+      "correlation": 0.1573,
+      "sameDirection": true,
+      "risk": "LOW"
+    },
+    {
+      "coinA": "OP",
+      "coinB": "MORPHO",
+      "correlation": 0.1529,
+      "sameDirection": true,
+      "risk": "LOW"
+    },
+    {
+      "coinA": "ZORA",
+      "coinB": "MORPHO",
+      "correlation": 0.1502,
+      "sameDirection": true,
+      "risk": "LOW"
+    },
+    {
+      "coinA": "BLAST",
+      "coinB": "XMR",
+      "correlation": 0.1499,
+      "sameDirection": false,
+      "risk": "LOW"
+    },
+    {
+      "coinA": "AZTEC",
+      "coinB": "OP",
+      "correlation": 0.1494,
+      "sameDirection": true,
+      "risk": "LOW"
+    },
+    {
+      "coinA": "STABLE",
+      "coinB": "PENDLE",
+      "correlation": 0.1494,
+      "sameDirection": true,
+      "risk": "LOW"
+    },
+    {
+      "coinA": "AZTEC",
+      "coinB": "DASH",
+      "correlation": 0.1492,
+      "sameDirection": true,
+      "risk": "LOW"
+    },
+    {
+      "coinA": "OM",
+      "coinB": "AXS",
+      "correlation": 0.1492,
+      "sameDirection": true,
+      "risk": "LOW"
+    },
+    {
+      "coinA": "SNX",
+      "coinB": "STABLE",
+      "correlation": -0.1486,
+      "sameDirection": true,
+      "risk": "LOW"
+    },
+    {
+      "coinA": "AZTEC",
+      "coinB": "OM",
+      "correlation": -0.1483,
+      "sameDirection": true,
+      "risk": "LOW"
+    },
+    {
+      "coinA": "BLAST",
+      "coinB": "MON",
+      "correlation": 0.1482,
+      "sameDirection": true,
+      "risk": "LOW"
+    },
+    {
+      "coinA": "ICP",
+      "coinB": "MORPHO",
+      "correlation": 0.1469,
+      "sameDirection": true,
+      "risk": "LOW"
+    },
+    {
+      "coinA": "STABLE",
+      "coinB": "STRK",
+      "correlation": 0.1464,
+      "sameDirection": true,
+      "risk": "LOW"
+    },
+    {
+      "coinA": "XMR",
+      "coinB": "AVNT",
+      "correlation": 0.1448,
+      "sameDirection": false,
+      "risk": "LOW"
+    },
+    {
+      "coinA": "STABLE",
+      "coinB": "DASH",
+      "correlation": 0.1444,
+      "sameDirection": true,
+      "risk": "LOW"
+    },
+    {
+      "coinA": "BERA",
+      "coinB": "MORPHO",
+      "correlation": -0.144,
+      "sameDirection": true,
+      "risk": "LOW"
+    },
+    {
+      "coinA": "SKR",
+      "coinB": "XMR",
+      "correlation": 0.1433,
+      "sameDirection": false,
+      "risk": "LOW"
+    },
+    {
+      "coinA": "ATOM",
+      "coinB": "SOPH",
+      "correlation": 0.1433,
+      "sameDirection": true,
+      "risk": "LOW"
+    },
+    {
+      "coinA": "STABLE",
+      "coinB": "TRUMP",
+      "correlation": 0.143,
+      "sameDirection": true,
+      "risk": "LOW"
+    },
+    {
+      "coinA": "SNX",
+      "coinB": "OP",
+      "correlation": 0.1416,
+      "sameDirection": true,
+      "risk": "LOW"
+    },
+    {
+      "coinA": "OM",
+      "coinB": "TRUMP",
+      "correlation": 0.1415,
+      "sameDirection": true,
+      "risk": "LOW"
+    },
+    {
+      "coinA": "OM",
+      "coinB": "BERA",
+      "correlation": 0.1399,
+      "sameDirection": true,
+      "risk": "LOW"
+    },
+    {
+      "coinA": "SNX",
+      "coinB": "STRK",
+      "correlation": 0.1394,
+      "sameDirection": true,
+      "risk": "LOW"
+    },
+    {
+      "coinA": "INJ",
+      "coinB": "ATOM",
+      "correlation": 0.1389,
+      "sameDirection": true,
+      "risk": "LOW"
+    },
+    {
+      "coinA": "AXS",
+      "coinB": "OP",
+      "correlation": 0.1388,
+      "sameDirection": true,
+      "risk": "LOW"
+    },
+    {
+      "coinA": "JTO",
+      "coinB": "WLFI",
+      "correlation": 0.1386,
+      "sameDirection": true,
+      "risk": "LOW"
+    },
+    {
+      "coinA": "OM",
+      "coinB": "ICP",
+      "correlation": 0.1369,
+      "sameDirection": true,
+      "risk": "LOW"
+    },
+    {
+      "coinA": "TRUMP",
+      "coinB": "WLFI",
+      "correlation": 0.1354,
+      "sameDirection": true,
+      "risk": "LOW"
+    },
+    {
+      "coinA": "ICP",
+      "coinB": "IO",
+      "correlation": 0.1352,
+      "sameDirection": true,
+      "risk": "LOW"
+    },
+    {
+      "coinA": "AZTEC",
+      "coinB": "BERA",
+      "correlation": -0.1348,
+      "sameDirection": true,
+      "risk": "LOW"
+    },
+    {
+      "coinA": "MOVE",
+      "coinB": "MORPHO",
+      "correlation": 0.1348,
+      "sameDirection": true,
+      "risk": "LOW"
+    },
+    {
+      "coinA": "OP",
+      "coinB": "WLFI",
+      "correlation": 0.1347,
+      "sameDirection": true,
+      "risk": "LOW"
+    },
+    {
+      "coinA": "STABLE",
+      "coinB": "XMR",
+      "correlation": 0.1332,
+      "sameDirection": false,
+      "risk": "LOW"
+    },
+    {
+      "coinA": "WLFI",
+      "coinB": "ZETA",
+      "correlation": 0.1331,
+      "sameDirection": true,
+      "risk": "LOW"
+    },
+    {
+      "coinA": "BIGTIME",
+      "coinB": "XMR",
+      "correlation": 0.1328,
+      "sameDirection": false,
+      "risk": "LOW"
+    },
+    {
+      "coinA": "SNX",
+      "coinB": "TRUMP",
+      "correlation": 0.1325,
+      "sameDirection": true,
+      "risk": "LOW"
+    },
+    {
+      "coinA": "TRUMP",
+      "coinB": "APE",
+      "correlation": 0.1322,
+      "sameDirection": true,
+      "risk": "LOW"
+    },
+    {
+      "coinA": "AXS",
+      "coinB": "IO",
+      "correlation": 0.1304,
+      "sameDirection": true,
+      "risk": "LOW"
+    },
+    {
+      "coinA": "AZTEC",
+      "coinB": "kNEIRO",
+      "correlation": 0.1302,
+      "sameDirection": true,
+      "risk": "LOW"
+    },
+    {
+      "coinA": "BERA",
+      "coinB": "OP",
+      "correlation": 0.13,
+      "sameDirection": true,
+      "risk": "LOW"
+    },
+    {
+      "coinA": "STABLE",
+      "coinB": "IO",
+      "correlation": 0.1294,
+      "sameDirection": true,
+      "risk": "LOW"
+    },
+    {
+      "coinA": "BLAST",
+      "coinB": "OP",
+      "correlation": 0.129,
+      "sameDirection": true,
+      "risk": "LOW"
+    },
+    {
+      "coinA": "STABLE",
+      "coinB": "MEME",
+      "correlation": 0.1272,
+      "sameDirection": true,
+      "risk": "LOW"
+    },
+    {
+      "coinA": "ACE",
+      "coinB": "STABLE",
+      "correlation": 0.1263,
+      "sameDirection": true,
+      "risk": "LOW"
+    },
+    {
+      "coinA": "SKR",
+      "coinB": "STABLE",
+      "correlation": 0.1244,
+      "sameDirection": true,
+      "risk": "LOW"
+    },
+    {
+      "coinA": "AZTEC",
+      "coinB": "INJ",
+      "correlation": 0.1236,
+      "sameDirection": true,
+      "risk": "LOW"
+    },
+    {
+      "coinA": "SKR",
+      "coinB": "MORPHO",
+      "correlation": 0.1235,
+      "sameDirection": true,
+      "risk": "LOW"
+    },
+    {
+      "coinA": "OM",
+      "coinB": "STRK",
+      "correlation": 0.1221,
+      "sameDirection": true,
+      "risk": "LOW"
+    },
+    {
+      "coinA": "STABLE",
+      "coinB": "WLFI",
+      "correlation": 0.1221,
+      "sameDirection": true,
+      "risk": "LOW"
+    },
+    {
+      "coinA": "AZTEC",
+      "coinB": "kLUNC",
+      "correlation": -0.1199,
+      "sameDirection": true,
+      "risk": "LOW"
+    },
+    {
+      "coinA": "AXS",
+      "coinB": "ICP",
+      "correlation": 0.1196,
+      "sameDirection": true,
+      "risk": "LOW"
+    },
+    {
+      "coinA": "AZTEC",
+      "coinB": "0G",
+      "correlation": -0.1192,
+      "sameDirection": true,
+      "risk": "LOW"
+    },
+    {
+      "coinA": "ATOM",
+      "coinB": "MORPHO",
+      "correlation": 0.1191,
+      "sameDirection": true,
+      "risk": "LOW"
+    },
+    {
+      "coinA": "YGG",
+      "coinB": "OP",
+      "correlation": 0.1185,
+      "sameDirection": true,
+      "risk": "LOW"
+    },
+    {
+      "coinA": "YGG",
+      "coinB": "XMR",
+      "correlation": -0.1181,
+      "sameDirection": false,
+      "risk": "LOW"
+    },
+    {
+      "coinA": "SNX",
+      "coinB": "BLAST",
+      "correlation": 0.118,
+      "sameDirection": true,
+      "risk": "LOW"
+    },
+    {
+      "coinA": "AZTEC",
+      "coinB": "SNX",
+      "correlation": 0.1179,
+      "sameDirection": true,
+      "risk": "LOW"
+    },
+    {
+      "coinA": "SKR",
+      "coinB": "INJ",
+      "correlation": 0.1174,
+      "sameDirection": true,
+      "risk": "LOW"
+    },
+    {
+      "coinA": "SNX",
+      "coinB": "SOPH",
+      "correlation": 0.1171,
+      "sameDirection": true,
+      "risk": "LOW"
+    },
+    {
+      "coinA": "BERA",
+      "coinB": "BLAST",
+      "correlation": 0.117,
+      "sameDirection": true,
+      "risk": "LOW"
+    },
+    {
+      "coinA": "AZTEC",
+      "coinB": "TRUMP",
+      "correlation": -0.1168,
+      "sameDirection": true,
+      "risk": "LOW"
+    },
+    {
+      "coinA": "ATOM",
+      "coinB": "WLFI",
+      "correlation": 0.1166,
+      "sameDirection": true,
+      "risk": "LOW"
+    },
+    {
+      "coinA": "JTO",
+      "coinB": "APE",
+      "correlation": 0.1161,
+      "sameDirection": true,
+      "risk": "LOW"
+    },
+    {
+      "coinA": "SOPH",
+      "coinB": "WLFI",
+      "correlation": 0.1161,
+      "sameDirection": true,
+      "risk": "LOW"
+    },
+    {
+      "coinA": "OM",
+      "coinB": "AVNT",
+      "correlation": 0.1153,
+      "sameDirection": true,
+      "risk": "LOW"
+    },
+    {
+      "coinA": "kLUNC",
+      "coinB": "MORPHO",
+      "correlation": 0.1147,
+      "sameDirection": true,
+      "risk": "LOW"
+    },
+    {
+      "coinA": "SNX",
+      "coinB": "PENDLE",
+      "correlation": 0.1143,
+      "sameDirection": true,
+      "risk": "LOW"
+    },
+    {
+      "coinA": "ACE",
+      "coinB": "SNX",
+      "correlation": 0.1132,
+      "sameDirection": true,
+      "risk": "LOW"
+    },
+    {
+      "coinA": "OM",
+      "coinB": "kLUNC",
+      "correlation": 0.113,
+      "sameDirection": true,
+      "risk": "LOW"
+    },
+    {
+      "coinA": "SKR",
+      "coinB": "BLAST",
+      "correlation": 0.1116,
+      "sameDirection": true,
+      "risk": "LOW"
+    },
+    {
+      "coinA": "YGG",
+      "coinB": "ZORA",
+      "correlation": 0.1108,
+      "sameDirection": true,
+      "risk": "LOW"
+    },
+    {
+      "coinA": "SNX",
+      "coinB": "ZETA",
+      "correlation": 0.1104,
+      "sameDirection": true,
+      "risk": "LOW"
+    },
+    {
+      "coinA": "SNX",
+      "coinB": "MEME",
+      "correlation": 0.1095,
+      "sameDirection": true,
+      "risk": "LOW"
+    },
+    {
+      "coinA": "STABLE",
+      "coinB": "ZETA",
+      "correlation": 0.109,
+      "sameDirection": true,
+      "risk": "LOW"
+    },
+    {
+      "coinA": "INJ",
+      "coinB": "BIGTIME",
+      "correlation": 0.1087,
+      "sameDirection": true,
+      "risk": "LOW"
+    },
+    {
+      "coinA": "ICP",
+      "coinB": "kLUNC",
+      "correlation": 0.1082,
+      "sameDirection": true,
+      "risk": "LOW"
+    },
+    {
+      "coinA": "AXS",
+      "coinB": "APE",
+      "correlation": 0.108,
+      "sameDirection": true,
+      "risk": "LOW"
+    },
+    {
+      "coinA": "IO",
+      "coinB": "XMR",
+      "correlation": 0.1065,
+      "sameDirection": false,
+      "risk": "LOW"
+    },
+    {
+      "coinA": "SNX",
+      "coinB": "BIGTIME",
+      "correlation": 0.1061,
+      "sameDirection": true,
+      "risk": "LOW"
+    },
+    {
+      "coinA": "SKR",
+      "coinB": "ATOM",
+      "correlation": 0.1053,
+      "sameDirection": true,
+      "risk": "LOW"
+    },
+    {
+      "coinA": "0G",
+      "coinB": "APE",
+      "correlation": 0.1047,
+      "sameDirection": true,
+      "risk": "LOW"
+    },
+    {
+      "coinA": "YGG",
+      "coinB": "STRK",
+      "correlation": 0.1036,
+      "sameDirection": true,
+      "risk": "LOW"
+    },
+    {
+      "coinA": "OM",
+      "coinB": "MORPHO",
+      "correlation": -0.1032,
+      "sameDirection": true,
+      "risk": "LOW"
+    },
+    {
+      "coinA": "YGG",
+      "coinB": "ALGO",
+      "correlation": 0.1019,
+      "sameDirection": true,
+      "risk": "LOW"
+    },
+    {
+      "coinA": "BERA",
+      "coinB": "SNX",
+      "correlation": -0.1013,
+      "sameDirection": true,
+      "risk": "LOW"
+    },
+    {
+      "coinA": "0G",
+      "coinB": "DASH",
+      "correlation": 0.1013,
+      "sameDirection": true,
+      "risk": "LOW"
+    },
+    {
+      "coinA": "BERA",
+      "coinB": "TRUMP",
+      "correlation": 0.1008,
+      "sameDirection": true,
+      "risk": "LOW"
+    },
+    {
+      "coinA": "OM",
+      "coinB": "ACE",
+      "correlation": 0.1007,
+      "sameDirection": true,
+      "risk": "LOW"
+    },
+    {
+      "coinA": "OM",
+      "coinB": "WLFI",
+      "correlation": 0.1002,
+      "sameDirection": true,
+      "risk": "LOW"
+    },
+    {
+      "coinA": "SNX",
+      "coinB": "XMR",
+      "correlation": 0.0994,
+      "sameDirection": false,
+      "risk": "LOW"
+    },
+    {
+      "coinA": "DASH",
+      "coinB": "IO",
+      "correlation": 0.0992,
+      "sameDirection": true,
+      "risk": "LOW"
+    },
+    {
+      "coinA": "WLFI",
+      "coinB": "MOODENG",
+      "correlation": 0.0984,
+      "sameDirection": true,
+      "risk": "LOW"
+    },
+    {
+      "coinA": "SKR",
+      "coinB": "YGG",
+      "correlation": 0.0982,
+      "sameDirection": true,
+      "risk": "LOW"
+    },
+    {
+      "coinA": "YGG",
+      "coinB": "PYTH",
+      "correlation": 0.0975,
+      "sameDirection": true,
+      "risk": "LOW"
+    },
+    {
+      "coinA": "SNX",
+      "coinB": "AVNT",
+      "correlation": 0.0958,
+      "sameDirection": true,
+      "risk": "LOW"
+    },
+    {
+      "coinA": "BERA",
+      "coinB": "XMR",
+      "correlation": 0.0941,
+      "sameDirection": false,
+      "risk": "LOW"
+    },
+    {
+      "coinA": "SKR",
+      "coinB": "WLFI",
+      "correlation": 0.0936,
+      "sameDirection": true,
+      "risk": "LOW"
+    },
+    {
+      "coinA": "AZTEC",
+      "coinB": "MEME",
+      "correlation": 0.0925,
+      "sameDirection": true,
+      "risk": "LOW"
+    },
+    {
+      "coinA": "AXS",
+      "coinB": "INJ",
+      "correlation": 0.0923,
+      "sameDirection": true,
+      "risk": "LOW"
+    },
+    {
+      "coinA": "YGG",
+      "coinB": "APE",
+      "correlation": 0.0918,
+      "sameDirection": true,
+      "risk": "LOW"
+    },
+    {
+      "coinA": "INJ",
+      "coinB": "MORPHO",
+      "correlation": 0.0917,
+      "sameDirection": true,
+      "risk": "LOW"
+    },
+    {
+      "coinA": "OM",
+      "coinB": "BLAST",
+      "correlation": 0.0914,
+      "sameDirection": true,
+      "risk": "LOW"
+    },
+    {
+      "coinA": "OM",
+      "coinB": "YGG",
+      "correlation": -0.0913,
+      "sameDirection": true,
+      "risk": "LOW"
+    },
+    {
+      "coinA": "OM",
+      "coinB": "SNX",
+      "correlation": 0.0912,
+      "sameDirection": true,
+      "risk": "LOW"
+    },
+    {
+      "coinA": "AZTEC",
+      "coinB": "UMA",
+      "correlation": 0.0905,
+      "sameDirection": true,
+      "risk": "LOW"
+    },
+    {
+      "coinA": "AZTEC",
+      "coinB": "IO",
+      "correlation": 0.0905,
+      "sameDirection": true,
+      "risk": "LOW"
+    },
+    {
+      "coinA": "OM",
+      "coinB": "ATOM",
+      "correlation": 0.0902,
+      "sameDirection": true,
+      "risk": "LOW"
+    },
+    {
+      "coinA": "BERA",
+      "coinB": "INJ",
+      "correlation": 0.0897,
+      "sameDirection": true,
+      "risk": "LOW"
+    },
+    {
+      "coinA": "OM",
+      "coinB": "BIGTIME",
+      "correlation": 0.0895,
+      "sameDirection": true,
+      "risk": "LOW"
+    },
+    {
+      "coinA": "STABLE",
+      "coinB": "MORPHO",
+      "correlation": 0.0891,
+      "sameDirection": true,
+      "risk": "LOW"
+    },
+    {
+      "coinA": "UMA",
+      "coinB": "MORPHO",
+      "correlation": 0.0888,
+      "sameDirection": true,
+      "risk": "LOW"
+    },
+    {
+      "coinA": "AZTEC",
+      "coinB": "BLAST",
+      "correlation": -0.0881,
+      "sameDirection": true,
+      "risk": "LOW"
+    },
+    {
+      "coinA": "MON",
+      "coinB": "MORPHO",
+      "correlation": 0.0867,
+      "sameDirection": true,
+      "risk": "LOW"
+    },
+    {
+      "coinA": "BLAST",
+      "coinB": "STABLE",
+      "correlation": -0.0863,
+      "sameDirection": true,
+      "risk": "LOW"
+    },
+    {
+      "coinA": "YGG",
+      "coinB": "UMA",
+      "correlation": 0.0858,
+      "sameDirection": true,
+      "risk": "LOW"
+    },
+    {
+      "coinA": "OM",
+      "coinB": "INJ",
+      "correlation": 0.0857,
+      "sameDirection": true,
+      "risk": "LOW"
+    },
+    {
+      "coinA": "AZTEC",
+      "coinB": "W",
+      "correlation": 0.0852,
+      "sameDirection": true,
+      "risk": "LOW"
+    },
+    {
+      "coinA": "YGG",
+      "coinB": "kNEIRO",
+      "correlation": 0.0852,
+      "sameDirection": true,
+      "risk": "LOW"
+    },
+    {
+      "coinA": "SNX",
+      "coinB": "ALGO",
+      "correlation": 0.0846,
+      "sameDirection": true,
+      "risk": "LOW"
+    },
+    {
+      "coinA": "SNX",
+      "coinB": "PYTH",
+      "correlation": 0.0845,
+      "sameDirection": true,
+      "risk": "LOW"
+    },
+    {
+      "coinA": "AZTEC",
+      "coinB": "CELO",
+      "correlation": 0.084,
+      "sameDirection": true,
+      "risk": "LOW"
+    },
+    {
+      "coinA": "JTO",
+      "coinB": "BLAST",
+      "correlation": 0.0822,
+      "sameDirection": true,
+      "risk": "LOW"
+    },
+    {
+      "coinA": "BERA",
+      "coinB": "YGG",
+      "correlation": -0.0821,
+      "sameDirection": true,
+      "risk": "LOW"
+    },
+    {
+      "coinA": "AZTEC",
+      "coinB": "MORPHO",
+      "correlation": 0.0809,
+      "sameDirection": true,
+      "risk": "LOW"
+    },
+    {
+      "coinA": "BERA",
+      "coinB": "APE",
+      "correlation": 0.08,
+      "sameDirection": true,
+      "risk": "LOW"
+    },
+    {
+      "coinA": "STABLE",
+      "coinB": "OP",
+      "correlation": 0.0799,
+      "sameDirection": true,
+      "risk": "LOW"
+    },
+    {
+      "coinA": "AXS",
+      "coinB": "SNX",
+      "correlation": 0.0797,
+      "sameDirection": true,
+      "risk": "LOW"
+    },
+    {
+      "coinA": "WLFI",
+      "coinB": "AVNT",
+      "correlation": 0.0787,
+      "sameDirection": true,
+      "risk": "LOW"
+    },
+    {
+      "coinA": "JTO",
+      "coinB": "YGG",
+      "correlation": -0.0779,
+      "sameDirection": true,
+      "risk": "LOW"
+    },
+    {
+      "coinA": "YGG",
+      "coinB": "MORPHO",
+      "correlation": 0.0772,
+      "sameDirection": true,
+      "risk": "LOW"
+    },
+    {
+      "coinA": "OM",
+      "coinB": "MOODENG",
+      "correlation": 0.0743,
+      "sameDirection": true,
+      "risk": "LOW"
+    },
+    {
+      "coinA": "SNX",
+      "coinB": "UMA",
+      "correlation": 0.074,
+      "sameDirection": true,
+      "risk": "LOW"
+    },
+    {
+      "coinA": "SKR",
+      "coinB": "SNX",
+      "correlation": 0.0724,
+      "sameDirection": true,
+      "risk": "LOW"
+    },
+    {
+      "coinA": "SKR",
+      "coinB": "kLUNC",
+      "correlation": 0.0723,
+      "sameDirection": true,
+      "risk": "LOW"
+    },
+    {
+      "coinA": "AZTEC",
+      "coinB": "MOODENG",
+      "correlation": 0.0719,
+      "sameDirection": true,
+      "risk": "LOW"
+    },
+    {
+      "coinA": "IO",
+      "coinB": "MORPHO",
+      "correlation": 0.0716,
+      "sameDirection": true,
+      "risk": "LOW"
+    },
+    {
+      "coinA": "BIGTIME",
+      "coinB": "MORPHO",
+      "correlation": 0.0713,
+      "sameDirection": true,
+      "risk": "LOW"
+    },
+    {
+      "coinA": "SNX",
+      "coinB": "ICP",
+      "correlation": 0.0703,
+      "sameDirection": true,
+      "risk": "LOW"
+    },
+    {
+      "coinA": "STABLE",
+      "coinB": "BIGTIME",
+      "correlation": 0.0701,
+      "sameDirection": true,
+      "risk": "LOW"
+    },
+    {
+      "coinA": "JTO",
+      "coinB": "INJ",
+      "correlation": 0.0673,
+      "sameDirection": true,
+      "risk": "LOW"
+    },
+    {
+      "coinA": "SNX",
+      "coinB": "PNUT",
+      "correlation": 0.0672,
+      "sameDirection": true,
+      "risk": "LOW"
+    },
+    {
+      "coinA": "YGG",
+      "coinB": "TRUMP",
+      "correlation": -0.067,
+      "sameDirection": true,
+      "risk": "LOW"
+    },
+    {
+      "coinA": "ACE",
+      "coinB": "INJ",
+      "correlation": 0.0669,
+      "sameDirection": true,
+      "risk": "LOW"
+    },
+    {
+      "coinA": "AZTEC",
+      "coinB": "ACE",
+      "correlation": -0.0659,
+      "sameDirection": true,
+      "risk": "LOW"
+    },
+    {
+      "coinA": "AXS",
+      "coinB": "STABLE",
+      "correlation": 0.0656,
+      "sameDirection": true,
+      "risk": "LOW"
+    },
+    {
+      "coinA": "0G",
+      "coinB": "XMR",
+      "correlation": 0.065,
+      "sameDirection": false,
+      "risk": "LOW"
+    },
+    {
+      "coinA": "ATOM",
+      "coinB": "APE",
+      "correlation": 0.0645,
+      "sameDirection": true,
+      "risk": "LOW"
+    },
+    {
+      "coinA": "STABLE",
+      "coinB": "SOPH",
+      "correlation": 0.0644,
+      "sameDirection": true,
+      "risk": "LOW"
+    },
+    {
+      "coinA": "0G",
+      "coinB": "MORPHO",
+      "correlation": 0.0631,
+      "sameDirection": true,
+      "risk": "LOW"
+    },
+    {
+      "coinA": "OM",
+      "coinB": "IO",
+      "correlation": 0.0629,
+      "sameDirection": true,
+      "risk": "LOW"
+    },
+    {
+      "coinA": "JTO",
+      "coinB": "0G",
+      "correlation": 0.0617,
+      "sameDirection": true,
+      "risk": "LOW"
+    },
+    {
+      "coinA": "AZTEC",
+      "coinB": "YGG",
+      "correlation": -0.0615,
+      "sameDirection": true,
+      "risk": "LOW"
+    },
+    {
+      "coinA": "YGG",
+      "coinB": "MOODENG",
+      "correlation": 0.0615,
+      "sameDirection": true,
+      "risk": "LOW"
+    },
+    {
+      "coinA": "JTO",
+      "coinB": "BERA",
+      "correlation": 0.0602,
+      "sameDirection": true,
+      "risk": "LOW"
+    },
+    {
+      "coinA": "AXS",
+      "coinB": "SKR",
+      "correlation": 0.0591,
+      "sameDirection": true,
+      "risk": "LOW"
+    },
+    {
+      "coinA": "OP",
+      "coinB": "kLUNC",
+      "correlation": 0.0591,
+      "sameDirection": true,
+      "risk": "LOW"
+    },
+    {
+      "coinA": "AXS",
+      "coinB": "WLFI",
+      "correlation": 0.059,
+      "sameDirection": true,
+      "risk": "LOW"
+    },
+    {
+      "coinA": "AZTEC",
+      "coinB": "MOVE",
+      "correlation": -0.0579,
+      "sameDirection": true,
+      "risk": "LOW"
+    },
+    {
+      "coinA": "YGG",
+      "coinB": "MOVE",
+      "correlation": -0.0571,
+      "sameDirection": true,
+      "risk": "LOW"
+    },
+    {
+      "coinA": "UMA",
+      "coinB": "WLFI",
+      "correlation": 0.0567,
+      "sameDirection": true,
+      "risk": "LOW"
+    },
+    {
+      "coinA": "AZTEC",
+      "coinB": "ZORA",
+      "correlation": -0.0566,
+      "sameDirection": true,
+      "risk": "LOW"
+    },
+    {
+      "coinA": "SNX",
+      "coinB": "0G",
+      "correlation": 0.0554,
+      "sameDirection": true,
+      "risk": "LOW"
+    },
+    {
+      "coinA": "YGG",
+      "coinB": "MON",
+      "correlation": 0.0553,
+      "sameDirection": true,
+      "risk": "LOW"
+    },
+    {
+      "coinA": "JTO",
+      "coinB": "STABLE",
+      "correlation": 0.0552,
+      "sameDirection": true,
+      "risk": "LOW"
+    },
+    {
+      "coinA": "BLAST",
+      "coinB": "ATOM",
+      "correlation": -0.0552,
+      "sameDirection": true,
+      "risk": "LOW"
+    },
+    {
+      "coinA": "AZTEC",
+      "coinB": "ALGO",
+      "correlation": 0.0549,
+      "sameDirection": true,
+      "risk": "LOW"
+    },
+    {
+      "coinA": "SNX",
+      "coinB": "INJ",
+      "correlation": 0.0547,
+      "sameDirection": true,
+      "risk": "LOW"
+    },
+    {
+      "coinA": "SNX",
+      "coinB": "kLUNC",
+      "correlation": -0.0528,
+      "sameDirection": true,
+      "risk": "LOW"
+    },
+    {
+      "coinA": "XMR",
+      "coinB": "kLUNC",
+      "correlation": 0.0525,
+      "sameDirection": false,
+      "risk": "LOW"
+    },
+    {
+      "coinA": "SNX",
+      "coinB": "YGG",
+      "correlation": -0.0522,
+      "sameDirection": true,
+      "risk": "LOW"
+    },
+    {
+      "coinA": "kLUNC",
+      "coinB": "APE",
+      "correlation": 0.0518,
+      "sameDirection": true,
+      "risk": "LOW"
+    },
+    {
+      "coinA": "STABLE",
+      "coinB": "MOODENG",
+      "correlation": 0.0492,
+      "sameDirection": true,
+      "risk": "LOW"
+    },
+    {
+      "coinA": "BLAST",
+      "coinB": "kLUNC",
+      "correlation": 0.0473,
+      "sameDirection": true,
+      "risk": "LOW"
+    },
+    {
+      "coinA": "ZORA",
+      "coinB": "STABLE",
+      "correlation": 0.047,
+      "sameDirection": true,
+      "risk": "LOW"
+    },
+    {
+      "coinA": "YGG",
+      "coinB": "SOPH",
+      "correlation": 0.0466,
+      "sameDirection": true,
+      "risk": "LOW"
+    },
+    {
+      "coinA": "AZTEC",
+      "coinB": "ATOM",
+      "correlation": 0.0452,
+      "sameDirection": true,
+      "risk": "LOW"
+    },
+    {
+      "coinA": "AZTEC",
+      "coinB": "PENDLE",
+      "correlation": 0.0443,
+      "sameDirection": true,
+      "risk": "LOW"
+    },
+    {
+      "coinA": "YGG",
+      "coinB": "STABLE",
+      "correlation": -0.0418,
+      "sameDirection": true,
+      "risk": "LOW"
+    },
+    {
+      "coinA": "SNX",
+      "coinB": "MOVE",
+      "correlation": 0.0417,
+      "sameDirection": true,
+      "risk": "LOW"
+    },
+    {
+      "coinA": "AZTEC",
+      "coinB": "PNUT",
+      "correlation": 0.0408,
+      "sameDirection": true,
+      "risk": "LOW"
+    },
+    {
+      "coinA": "0G",
+      "coinB": "ICP",
+      "correlation": 0.0404,
+      "sameDirection": true,
+      "risk": "LOW"
+    },
+    {
+      "coinA": "YGG",
+      "coinB": "ATOM",
+      "correlation": 0.0386,
+      "sameDirection": true,
+      "risk": "LOW"
+    },
+    {
+      "coinA": "WLFI",
+      "coinB": "kLUNC",
+      "correlation": -0.0384,
+      "sameDirection": true,
+      "risk": "LOW"
+    },
+    {
+      "coinA": "AZTEC",
+      "coinB": "APE",
+      "correlation": 0.0377,
+      "sameDirection": true,
+      "risk": "LOW"
+    },
+    {
+      "coinA": "INJ",
+      "coinB": "BLAST",
+      "correlation": -0.0377,
+      "sameDirection": true,
+      "risk": "LOW"
+    },
+    {
+      "coinA": "BERA",
+      "coinB": "WLFI",
+      "correlation": -0.0376,
+      "sameDirection": true,
+      "risk": "LOW"
+    },
+    {
+      "coinA": "AZTEC",
+      "coinB": "AVNT",
+      "correlation": -0.0366,
+      "sameDirection": true,
+      "risk": "LOW"
+    },
+    {
+      "coinA": "OM",
+      "coinB": "UMA",
+      "correlation": -0.0366,
+      "sameDirection": true,
+      "risk": "LOW"
+    },
+    {
+      "coinA": "STABLE",
+      "coinB": "kLUNC",
+      "correlation": 0.0366,
+      "sameDirection": true,
+      "risk": "LOW"
+    },
+    {
+      "coinA": "0G",
+      "coinB": "WLFI",
+      "correlation": 0.036,
+      "sameDirection": true,
+      "risk": "LOW"
+    },
+    {
+      "coinA": "OM",
+      "coinB": "OP",
+      "correlation": -0.0353,
+      "sameDirection": true,
+      "risk": "LOW"
+    },
+    {
+      "coinA": "SNX",
+      "coinB": "APE",
+      "correlation": 0.0316,
+      "sameDirection": true,
+      "risk": "LOW"
+    },
+    {
+      "coinA": "AXS",
+      "coinB": "YGG",
+      "correlation": 0.0309,
+      "sameDirection": true,
+      "risk": "LOW"
+    },
+    {
+      "coinA": "OM",
+      "coinB": "STABLE",
+      "correlation": 0.0272,
+      "sameDirection": true,
+      "risk": "LOW"
+    },
+    {
+      "coinA": "SNX",
+      "coinB": "ZORA",
+      "correlation": 0.0271,
+      "sameDirection": true,
+      "risk": "LOW"
+    },
+    {
+      "coinA": "OM",
+      "coinB": "JTO",
+      "correlation": 0.026,
+      "sameDirection": true,
+      "risk": "LOW"
+    },
+    {
+      "coinA": "YGG",
+      "coinB": "ICP",
+      "correlation": 0.0241,
+      "sameDirection": true,
+      "risk": "LOW"
+    },
+    {
+      "coinA": "YGG",
+      "coinB": "ZETA",
+      "correlation": 0.0227,
+      "sameDirection": true,
+      "risk": "LOW"
+    },
+    {
+      "coinA": "OM",
+      "coinB": "DASH",
+      "correlation": -0.0221,
+      "sameDirection": true,
+      "risk": "LOW"
+    },
+    {
+      "coinA": "AZTEC",
+      "coinB": "ZETA",
+      "correlation": 0.0216,
+      "sameDirection": true,
+      "risk": "LOW"
+    },
+    {
+      "coinA": "JTO",
+      "coinB": "OP",
+      "correlation": 0.0203,
+      "sameDirection": true,
+      "risk": "LOW"
+    },
+    {
+      "coinA": "AZTEC",
+      "coinB": "PYTH",
+      "correlation": 0.02,
+      "sameDirection": true,
+      "risk": "LOW"
+    },
+    {
+      "coinA": "STABLE",
+      "coinB": "AVNT",
+      "correlation": -0.0196,
+      "sameDirection": true,
+      "risk": "LOW"
+    },
+    {
+      "coinA": "BERA",
+      "coinB": "IO",
+      "correlation": 0.0188,
+      "sameDirection": true,
+      "risk": "LOW"
+    },
+    {
+      "coinA": "YGG",
+      "coinB": "DASH",
+      "correlation": 0.0181,
+      "sameDirection": true,
+      "risk": "LOW"
+    },
+    {
+      "coinA": "AZTEC",
+      "coinB": "SKR",
+      "correlation": 0.0166,
+      "sameDirection": true,
+      "risk": "LOW"
+    },
+    {
+      "coinA": "AZTEC",
+      "coinB": "SOPH",
+      "correlation": 0.0156,
+      "sameDirection": true,
+      "risk": "LOW"
+    },
+    {
+      "coinA": "OM",
+      "coinB": "SKR",
+      "correlation": 0.0144,
+      "sameDirection": true,
+      "risk": "LOW"
+    },
+    {
+      "coinA": "AZTEC",
+      "coinB": "WLFI",
+      "correlation": 0.0136,
+      "sameDirection": true,
+      "risk": "LOW"
+    },
+    {
+      "coinA": "SNX",
+      "coinB": "DASH",
+      "correlation": -0.0136,
+      "sameDirection": true,
+      "risk": "LOW"
+    },
+    {
+      "coinA": "INJ",
+      "coinB": "0G",
+      "correlation": 0.0108,
+      "sameDirection": true,
+      "risk": "LOW"
+    },
+    {
+      "coinA": "0G",
+      "coinB": "STABLE",
+      "correlation": 0.0105,
+      "sameDirection": true,
+      "risk": "LOW"
+    },
+    {
+      "coinA": "INJ",
+      "coinB": "WLFI",
+      "correlation": 0.0101,
+      "sameDirection": true,
+      "risk": "LOW"
+    },
+    {
+      "coinA": "AZTEC",
+      "coinB": "AXS",
+      "correlation": 0.0099,
+      "sameDirection": true,
+      "risk": "LOW"
+    },
+    {
+      "coinA": "SNX",
+      "coinB": "kNEIRO",
+      "correlation": -0.0098,
+      "sameDirection": true,
+      "risk": "LOW"
+    },
+    {
+      "coinA": "YGG",
+      "coinB": "kLUNC",
+      "correlation": 0.0095,
+      "sameDirection": true,
+      "risk": "LOW"
+    },
+    {
+      "coinA": "SNX",
+      "coinB": "MOODENG",
+      "correlation": -0.0085,
+      "sameDirection": true,
+      "risk": "LOW"
+    },
+    {
+      "coinA": "STABLE",
+      "coinB": "MOVE",
+      "correlation": 0.0083,
+      "sameDirection": true,
+      "risk": "LOW"
+    },
+    {
+      "coinA": "SKR",
+      "coinB": "0G",
+      "correlation": 0.0074,
+      "sameDirection": true,
+      "risk": "LOW"
+    },
+    {
+      "coinA": "INJ",
+      "coinB": "XMR",
+      "correlation": -0.0064,
+      "sameDirection": false,
+      "risk": "LOW"
+    },
+    {
+      "coinA": "SNX",
+      "coinB": "W",
+      "correlation": -0.0053,
+      "sameDirection": true,
+      "risk": "LOW"
+    },
+    {
+      "coinA": "BLAST",
+      "coinB": "0G",
+      "correlation": 0.0045,
+      "sameDirection": true,
+      "risk": "LOW"
+    },
+    {
+      "coinA": "SKR",
+      "coinB": "IO",
+      "correlation": -0.0026,
+      "sameDirection": true,
+      "risk": "LOW"
+    },
+    {
+      "coinA": "STABLE",
+      "coinB": "ATOM",
+      "correlation": -0.002,
+      "sameDirection": true,
+      "risk": "LOW"
+    },
+    {
+      "coinA": "MORPHO",
+      "coinB": "APE",
+      "correlation": 0.0019,
+      "sameDirection": true,
+      "risk": "LOW"
+    },
+    {
+      "coinA": "INJ",
+      "coinB": "STABLE",
+      "correlation": 0.0015,
+      "sameDirection": true,
+      "risk": "LOW"
+    },
+    {
+      "coinA": "STABLE",
+      "coinB": "CELO",
+      "correlation": 0.0014,
+      "sameDirection": true,
+      "risk": "LOW"
+    },
+    {
+      "coinA": "SNX",
+      "coinB": "ATOM",
+      "correlation": -0.0003,
+      "sameDirection": true,
+      "risk": "LOW"
+    }
+  ],
+  "alerts": [
+    {
+      "type": "correlation",
+      "severity": "HIGH",
+      "message": "PNUT/kNEIRO correlation 92% — same direction (LONG). Effective exposure doubled.",
+      "coins": [
+        "PNUT",
+        "kNEIRO"
+      ]
+    },
+    {
+      "type": "correlation",
+      "severity": "HIGH",
+      "message": "PNUT/PENDLE correlation 86% — same direction (LONG). Effective exposure doubled.",
+      "coins": [
+        "PNUT",
+        "PENDLE"
+      ]
+    },
+    {
+      "type": "correlation",
+      "severity": "HIGH",
+      "message": "PYTH/PNUT correlation 85% — same direction (LONG). Effective exposure doubled.",
+      "coins": [
+        "PYTH",
+        "PNUT"
+      ]
+    },
+    {
+      "type": "correlation",
+      "severity": "HIGH",
+      "message": "kNEIRO/PENDLE correlation 84% — same direction (LONG). Effective exposure doubled.",
+      "coins": [
+        "kNEIRO",
+        "PENDLE"
+      ]
+    },
+    {
+      "type": "correlation",
+      "severity": "HIGH",
+      "message": "kNEIRO/W correlation 84% — same direction (LONG). Effective exposure doubled.",
+      "coins": [
+        "kNEIRO",
+        "W"
+      ]
+    },
+    {
+      "type": "correlation",
+      "severity": "HIGH",
+      "message": "ALGO/kNEIRO correlation 83% — same direction (LONG). Effective exposure doubled.",
+      "coins": [
+        "ALGO",
+        "kNEIRO"
+      ]
+    },
+    {
+      "type": "correlation",
+      "severity": "HIGH",
+      "message": "ALGO/PNUT correlation 82% — same direction (LONG). Effective exposure doubled.",
+      "coins": [
+        "ALGO",
+        "PNUT"
+      ]
+    },
+    {
+      "type": "correlation",
+      "severity": "HIGH",
+      "message": "ALGO/PENDLE correlation 82% — same direction (LONG). Effective exposure doubled.",
+      "coins": [
+        "ALGO",
+        "PENDLE"
+      ]
+    },
+    {
+      "type": "correlation",
+      "severity": "HIGH",
+      "message": "PYTH/PENDLE correlation 82% — same direction (LONG). Effective exposure doubled.",
+      "coins": [
+        "PYTH",
+        "PENDLE"
+      ]
+    },
+    {
+      "type": "correlation",
+      "severity": "HIGH",
+      "message": "PYTH/kNEIRO correlation 82% — same direction (LONG). Effective exposure doubled.",
+      "coins": [
+        "PYTH",
+        "kNEIRO"
+      ]
+    },
+    {
+      "type": "correlation",
+      "severity": "HIGH",
+      "message": "PNUT/W correlation 81% — same direction (LONG). Effective exposure doubled.",
+      "coins": [
+        "PNUT",
+        "W"
+      ]
+    },
+    {
+      "type": "correlation",
+      "severity": "HIGH",
+      "message": "MEME/PENDLE correlation 80% — same direction (LONG). Effective exposure doubled.",
+      "coins": [
+        "MEME",
+        "PENDLE"
+      ]
+    },
+    {
+      "type": "correlation",
+      "severity": "HIGH",
+      "message": "PNUT/MEME correlation 80% — same direction (LONG). Effective exposure doubled.",
+      "coins": [
+        "PNUT",
+        "MEME"
+      ]
+    },
+    {
+      "type": "correlation",
+      "severity": "HIGH",
+      "message": "PNUT/MOODENG correlation 80% — same direction (LONG). Effective exposure doubled.",
+      "coins": [
+        "PNUT",
+        "MOODENG"
+      ]
+    },
+    {
+      "type": "correlation",
+      "severity": "HIGH",
+      "message": "ALGO/MEME correlation 80% — same direction (LONG). Effective exposure doubled.",
+      "coins": [
+        "ALGO",
+        "MEME"
+      ]
+    },
+    {
+      "type": "correlation",
+      "severity": "HIGH",
+      "message": "ALGO/W correlation 79% — same direction (LONG). Effective exposure doubled.",
+      "coins": [
+        "ALGO",
+        "W"
+      ]
+    },
+    {
+      "type": "correlation",
+      "severity": "HIGH",
+      "message": "MEME/kNEIRO correlation 79% — same direction (LONG). Effective exposure doubled.",
+      "coins": [
+        "MEME",
+        "kNEIRO"
+      ]
+    },
+    {
+      "type": "correlation",
+      "severity": "HIGH",
+      "message": "W/PENDLE correlation 78% — same direction (LONG). Effective exposure doubled.",
+      "coins": [
+        "W",
+        "PENDLE"
+      ]
+    },
+    {
+      "type": "correlation",
+      "severity": "HIGH",
+      "message": "PYTH/MEME correlation 77% — same direction (LONG). Effective exposure doubled.",
+      "coins": [
+        "PYTH",
+        "MEME"
+      ]
+    },
+    {
+      "type": "correlation",
+      "severity": "HIGH",
+      "message": "kNEIRO/MOODENG correlation 76% — same direction (LONG). Effective exposure doubled.",
+      "coins": [
+        "kNEIRO",
+        "MOODENG"
+      ]
+    },
+    {
+      "type": "correlation",
+      "severity": "HIGH",
+      "message": "ZETA/PENDLE correlation 76% — same direction (LONG). Effective exposure doubled.",
+      "coins": [
+        "ZETA",
+        "PENDLE"
+      ]
+    },
+    {
+      "type": "correlation",
+      "severity": "HIGH",
+      "message": "kNEIRO/MOVE correlation 75% — same direction (LONG). Effective exposure doubled.",
+      "coins": [
+        "kNEIRO",
+        "MOVE"
+      ]
+    },
+    {
+      "type": "correlation",
+      "severity": "HIGH",
+      "message": "ALGO/PYTH correlation 75% — same direction (LONG). Effective exposure doubled.",
+      "coins": [
+        "ALGO",
+        "PYTH"
+      ]
+    },
+    {
+      "type": "correlation",
+      "severity": "HIGH",
+      "message": "CELO/MEME correlation 75% — same direction (LONG). Effective exposure doubled.",
+      "coins": [
+        "CELO",
+        "MEME"
+      ]
+    },
+    {
+      "type": "correlation",
+      "severity": "HIGH",
+      "message": "MEME/W correlation 74% — same direction (LONG). Effective exposure doubled.",
+      "coins": [
+        "MEME",
+        "W"
+      ]
+    },
+    {
+      "type": "correlation",
+      "severity": "HIGH",
+      "message": "ALGO/ZETA correlation 73% — same direction (LONG). Effective exposure doubled.",
+      "coins": [
+        "ALGO",
+        "ZETA"
+      ]
+    },
+    {
+      "type": "correlation",
+      "severity": "HIGH",
+      "message": "STRK/PNUT correlation 73% — same direction (LONG). Effective exposure doubled.",
+      "coins": [
+        "STRK",
+        "PNUT"
+      ]
+    },
+    {
+      "type": "correlation",
+      "severity": "HIGH",
+      "message": "PNUT/ZETA correlation 73% — same direction (LONG). Effective exposure doubled.",
+      "coins": [
+        "PNUT",
+        "ZETA"
+      ]
+    },
+    {
+      "type": "correlation",
+      "severity": "HIGH",
+      "message": "PYTH/W correlation 73% — same direction (LONG). Effective exposure doubled.",
+      "coins": [
+        "PYTH",
+        "W"
+      ]
+    },
+    {
+      "type": "correlation",
+      "severity": "HIGH",
+      "message": "MOVE/PENDLE correlation 72% — same direction (LONG). Effective exposure doubled.",
+      "coins": [
+        "MOVE",
+        "PENDLE"
+      ]
+    },
+    {
+      "type": "correlation",
+      "severity": "HIGH",
+      "message": "STRK/PENDLE correlation 72% — same direction (LONG). Effective exposure doubled.",
+      "coins": [
+        "STRK",
+        "PENDLE"
+      ]
+    },
+    {
+      "type": "correlation",
+      "severity": "HIGH",
+      "message": "ZORA/ALGO correlation 72% — same direction (LONG). Effective exposure doubled.",
+      "coins": [
+        "ZORA",
+        "ALGO"
+      ]
+    },
+    {
+      "type": "correlation",
+      "severity": "HIGH",
+      "message": "STRK/kNEIRO correlation 72% — same direction (LONG). Effective exposure doubled.",
+      "coins": [
+        "STRK",
+        "kNEIRO"
+      ]
+    },
+    {
+      "type": "correlation",
+      "severity": "HIGH",
+      "message": "kNEIRO/ZETA correlation 72% — same direction (LONG). Effective exposure doubled.",
+      "coins": [
+        "kNEIRO",
+        "ZETA"
+      ]
+    },
+    {
+      "type": "correlation",
+      "severity": "HIGH",
+      "message": "PENDLE/AVNT correlation 71% — same direction (LONG). Effective exposure doubled.",
+      "coins": [
+        "PENDLE",
+        "AVNT"
+      ]
+    },
+    {
+      "type": "correlation",
+      "severity": "HIGH",
+      "message": "PNUT/MOVE correlation 71% — same direction (LONG). Effective exposure doubled.",
+      "coins": [
+        "PNUT",
+        "MOVE"
+      ]
+    },
+    {
+      "type": "correlation",
+      "severity": "HIGH",
+      "message": "ZORA/MOVE correlation 71% — same direction (LONG). Effective exposure doubled.",
+      "coins": [
+        "ZORA",
+        "MOVE"
+      ]
+    },
+    {
+      "type": "correlation",
+      "severity": "HIGH",
+      "message": "STRK/PYTH correlation 71% — same direction (LONG). Effective exposure doubled.",
+      "coins": [
+        "STRK",
+        "PYTH"
+      ]
+    },
+    {
+      "type": "correlation",
+      "severity": "HIGH",
+      "message": "PYTH/ZETA correlation 70% — same direction (LONG). Effective exposure doubled.",
+      "coins": [
+        "PYTH",
+        "ZETA"
+      ]
+    },
+    {
+      "type": "correlation",
+      "severity": "HIGH",
+      "message": "ZETA/W correlation 70% — same direction (LONG). Effective exposure doubled.",
+      "coins": [
+        "ZETA",
+        "W"
+      ]
+    },
+    {
+      "type": "correlation",
+      "severity": "HIGH",
+      "message": "ZORA/MEME correlation 70% — same direction (LONG). Effective exposure doubled.",
+      "coins": [
+        "ZORA",
+        "MEME"
+      ]
+    },
+    {
+      "type": "correlation",
+      "severity": "HIGH",
+      "message": "ZORA/PENDLE correlation 69% — same direction (LONG). Effective exposure doubled.",
+      "coins": [
+        "ZORA",
+        "PENDLE"
+      ]
+    },
+    {
+      "type": "correlation",
+      "severity": "HIGH",
+      "message": "CELO/PYTH correlation 69% — same direction (LONG). Effective exposure doubled.",
+      "coins": [
+        "CELO",
+        "PYTH"
+      ]
+    },
+    {
+      "type": "correlation",
+      "severity": "HIGH",
+      "message": "CELO/PNUT correlation 69% — same direction (LONG). Effective exposure doubled.",
+      "coins": [
+        "CELO",
+        "PNUT"
+      ]
+    },
+    {
+      "type": "correlation",
+      "severity": "HIGH",
+      "message": "STRK/W correlation 69% — same direction (LONG). Effective exposure doubled.",
+      "coins": [
+        "STRK",
+        "W"
+      ]
+    },
+    {
+      "type": "correlation",
+      "severity": "HIGH",
+      "message": "CELO/PENDLE correlation 69% — same direction (LONG). Effective exposure doubled.",
+      "coins": [
+        "CELO",
+        "PENDLE"
+      ]
+    },
+    {
+      "type": "correlation",
+      "severity": "HIGH",
+      "message": "MOODENG/PENDLE correlation 69% — same direction (LONG). Effective exposure doubled.",
+      "coins": [
+        "MOODENG",
+        "PENDLE"
+      ]
+    },
+    {
+      "type": "correlation",
+      "severity": "HIGH",
+      "message": "MEME/ZETA correlation 69% — same direction (LONG). Effective exposure doubled.",
+      "coins": [
+        "MEME",
+        "ZETA"
+      ]
+    },
+    {
+      "type": "correlation",
+      "severity": "HIGH",
+      "message": "PYTH/MOODENG correlation 68% — same direction (LONG). Effective exposure doubled.",
+      "coins": [
+        "PYTH",
+        "MOODENG"
+      ]
+    },
+    {
+      "type": "correlation",
+      "severity": "HIGH",
+      "message": "ALGO/STRK correlation 68% — same direction (LONG). Effective exposure doubled.",
+      "coins": [
+        "ALGO",
+        "STRK"
+      ]
+    },
+    {
+      "type": "correlation",
+      "severity": "HIGH",
+      "message": "ZETA/MOODENG correlation 68% — same direction (LONG). Effective exposure doubled.",
+      "coins": [
+        "ZETA",
+        "MOODENG"
+      ]
+    },
+    {
+      "type": "correlation",
+      "severity": "HIGH",
+      "message": "W/MOODENG correlation 68% — same direction (LONG). Effective exposure doubled.",
+      "coins": [
+        "W",
+        "MOODENG"
+      ]
+    },
+    {
+      "type": "correlation",
+      "severity": "HIGH",
+      "message": "ZORA/PNUT correlation 67% — same direction (LONG). Effective exposure doubled.",
+      "coins": [
+        "ZORA",
+        "PNUT"
+      ]
+    },
+    {
+      "type": "correlation",
+      "severity": "HIGH",
+      "message": "STRK/MEME correlation 67% — same direction (LONG). Effective exposure doubled.",
+      "coins": [
+        "STRK",
+        "MEME"
+      ]
+    },
+    {
+      "type": "correlation",
+      "severity": "HIGH",
+      "message": "ICP/kNEIRO correlation 67% — same direction (LONG). Effective exposure doubled.",
+      "coins": [
+        "ICP",
+        "kNEIRO"
+      ]
+    },
+    {
+      "type": "correlation",
+      "severity": "HIGH",
+      "message": "PYTH/MOVE correlation 66% — same direction (LONG). Effective exposure doubled.",
+      "coins": [
+        "PYTH",
+        "MOVE"
+      ]
+    },
+    {
+      "type": "correlation",
+      "severity": "HIGH",
+      "message": "CELO/kNEIRO correlation 66% — same direction (LONG). Effective exposure doubled.",
+      "coins": [
+        "CELO",
+        "kNEIRO"
+      ]
+    },
+    {
+      "type": "correlation",
+      "severity": "HIGH",
+      "message": "MEME/MOVE correlation 66% — same direction (LONG). Effective exposure doubled.",
+      "coins": [
+        "MEME",
+        "MOVE"
+      ]
+    },
+    {
+      "type": "correlation",
+      "severity": "HIGH",
+      "message": "ICP/ALGO correlation 66% — same direction (LONG). Effective exposure doubled.",
+      "coins": [
+        "ICP",
+        "ALGO"
+      ]
+    },
+    {
+      "type": "correlation",
+      "severity": "HIGH",
+      "message": "ALGO/CELO correlation 65% — same direction (LONG). Effective exposure doubled.",
+      "coins": [
+        "ALGO",
+        "CELO"
+      ]
+    },
+    {
+      "type": "correlation",
+      "severity": "HIGH",
+      "message": "W/MOVE correlation 65% — same direction (LONG). Effective exposure doubled.",
+      "coins": [
+        "W",
+        "MOVE"
+      ]
+    },
+    {
+      "type": "correlation",
+      "severity": "HIGH",
+      "message": "CELO/W correlation 65% — same direction (LONG). Effective exposure doubled.",
+      "coins": [
+        "CELO",
+        "W"
+      ]
+    },
+    {
+      "type": "correlation",
+      "severity": "HIGH",
+      "message": "ZORA/kNEIRO correlation 65% — same direction (LONG). Effective exposure doubled.",
+      "coins": [
+        "ZORA",
+        "kNEIRO"
+      ]
+    },
+    {
+      "type": "correlation",
+      "severity": "HIGH",
+      "message": "ZETA/AVNT correlation 64% — same direction (LONG). Effective exposure doubled.",
+      "coins": [
+        "ZETA",
+        "AVNT"
+      ]
+    },
+    {
+      "type": "correlation",
+      "severity": "HIGH",
+      "message": "STRK/ZETA correlation 64% — same direction (LONG). Effective exposure doubled.",
+      "coins": [
+        "STRK",
+        "ZETA"
+      ]
+    },
+    {
+      "type": "correlation",
+      "severity": "HIGH",
+      "message": "ACE/PYTH correlation 64% — same direction (LONG). Effective exposure doubled.",
+      "coins": [
+        "ACE",
+        "PYTH"
+      ]
+    },
+    {
+      "type": "correlation",
+      "severity": "HIGH",
+      "message": "ZETA/MOVE correlation 64% — same direction (LONG). Effective exposure doubled.",
+      "coins": [
+        "ZETA",
+        "MOVE"
+      ]
+    },
+    {
+      "type": "correlation",
+      "severity": "HIGH",
+      "message": "ALGO/MOODENG correlation 64% — same direction (LONG). Effective exposure doubled.",
+      "coins": [
+        "ALGO",
+        "MOODENG"
+      ]
+    },
+    {
+      "type": "correlation",
+      "severity": "HIGH",
+      "message": "ALGO/MOVE correlation 63% — same direction (LONG). Effective exposure doubled.",
+      "coins": [
+        "ALGO",
+        "MOVE"
+      ]
+    },
+    {
+      "type": "correlation",
+      "severity": "HIGH",
+      "message": "ZORA/ZETA correlation 63% — same direction (LONG). Effective exposure doubled.",
+      "coins": [
+        "ZORA",
+        "ZETA"
+      ]
+    },
+    {
+      "type": "correlation",
+      "severity": "HIGH",
+      "message": "ZORA/W correlation 63% — same direction (LONG). Effective exposure doubled.",
+      "coins": [
+        "ZORA",
+        "W"
+      ]
+    },
+    {
+      "type": "correlation",
+      "severity": "HIGH",
+      "message": "CELO/ZETA correlation 63% — same direction (LONG). Effective exposure doubled.",
+      "coins": [
+        "CELO",
+        "ZETA"
+      ]
+    },
+    {
+      "type": "correlation",
+      "severity": "HIGH",
+      "message": "MEME/MOODENG correlation 63% — same direction (LONG). Effective exposure doubled.",
+      "coins": [
+        "MEME",
+        "MOODENG"
+      ]
+    },
+    {
+      "type": "correlation",
+      "severity": "HIGH",
+      "message": "ICP/PENDLE correlation 63% — same direction (LONG). Effective exposure doubled.",
+      "coins": [
+        "ICP",
+        "PENDLE"
+      ]
+    },
+    {
+      "type": "correlation",
+      "severity": "HIGH",
+      "message": "MEME/AVNT correlation 63% — same direction (LONG). Effective exposure doubled.",
+      "coins": [
+        "MEME",
+        "AVNT"
+      ]
+    },
+    {
+      "type": "correlation",
+      "severity": "HIGH",
+      "message": "ACE/BIGTIME correlation 63% — same direction (LONG). Effective exposure doubled.",
+      "coins": [
+        "ACE",
+        "BIGTIME"
+      ]
+    },
+    {
+      "type": "correlation",
+      "severity": "HIGH",
+      "message": "ACE/PENDLE correlation 63% — same direction (LONG). Effective exposure doubled.",
+      "coins": [
+        "ACE",
+        "PENDLE"
+      ]
+    },
+    {
+      "type": "correlation",
+      "severity": "HIGH",
+      "message": "ZORA/PYTH correlation 62% — same direction (LONG). Effective exposure doubled.",
+      "coins": [
+        "ZORA",
+        "PYTH"
+      ]
+    },
+    {
+      "type": "correlation",
+      "severity": "HIGH",
+      "message": "STRK/AVNT correlation 62% — same direction (LONG). Effective exposure doubled.",
+      "coins": [
+        "STRK",
+        "AVNT"
+      ]
+    },
+    {
+      "type": "correlation",
+      "severity": "HIGH",
+      "message": "ACE/PNUT correlation 61% — same direction (LONG). Effective exposure doubled.",
+      "coins": [
+        "ACE",
+        "PNUT"
+      ]
+    },
+    {
+      "type": "correlation",
+      "severity": "HIGH",
+      "message": "W/AVNT correlation 61% — same direction (LONG). Effective exposure doubled.",
+      "coins": [
+        "W",
+        "AVNT"
+      ]
+    },
+    {
+      "type": "correlation",
+      "severity": "HIGH",
+      "message": "kNEIRO/AVNT correlation 60% — same direction (LONG). Effective exposure doubled.",
+      "coins": [
+        "kNEIRO",
+        "AVNT"
+      ]
+    },
+    {
+      "type": "correlation",
+      "severity": "HIGH",
+      "message": "MON/PENDLE correlation 60% — same direction (LONG). Effective exposure doubled.",
+      "coins": [
+        "MON",
+        "PENDLE"
+      ]
+    },
+    {
+      "type": "correlation",
+      "severity": "HIGH",
+      "message": "PNUT/AVNT correlation 60% — same direction (LONG). Effective exposure doubled.",
+      "coins": [
+        "PNUT",
+        "AVNT"
+      ]
+    },
+    {
+      "type": "correlation",
+      "severity": "HIGH",
+      "message": "ICP/PNUT correlation 60% — same direction (LONG). Effective exposure doubled.",
+      "coins": [
+        "ICP",
+        "PNUT"
+      ]
+    },
+    {
+      "type": "correlation",
+      "severity": "HIGH",
+      "message": "ACE/ALGO correlation 60% — same direction (LONG). Effective exposure doubled.",
+      "coins": [
+        "ACE",
+        "ALGO"
+      ]
+    },
+    {
+      "type": "crowding",
+      "severity": "HIGH",
+      "message": "Directional crowding: 98% LONG. Portfolio is a leveraged directional bet, not diversified.",
+      "coins": [
+        "AZTEC",
+        "OM",
+        "AXS",
+        "ACE",
+        "SKR",
+        "JTO",
+        "BERA",
+        "SNX",
+        "INJ",
+        "YGG",
+        "BLAST",
+        "ZORA",
+        "0G",
+        "ICP",
+        "STABLE",
+        "ALGO",
+        "ATOM",
+        "DASH",
+        "UMA",
+        "BIGTIME",
+        "CELO",
+        "STRK",
+        "PYTH",
+        "MON",
+        "PNUT",
+        "TRUMP",
+        "IO",
+        "MEME",
+        "OP",
+        "kNEIRO",
+        "SOPH",
+        "OP",
+        "INJ",
+        "WLFI",
+        "ZETA",
+        "W",
+        "MOVE",
+        "MOODENG",
+        "kLUNC",
+        "PENDLE",
+        "MORPHO",
+        "APE",
+        "AVNT"
+      ]
+    },
+    {
+      "type": "concentration",
+      "severity": "MEDIUM",
+      "message": "3 signals in L2 sector: STRK, OP, OP. Sector risk concentrated.",
+      "coins": [
+        "STRK",
+        "OP",
+        "OP"
+      ]
+    },
+    {
+      "type": "stale",
+      "severity": "MEDIUM",
+      "message": "11 signals older than 24h. Review or close: AZTEC, OM, AXS, BIO, ACE, SKR, JTO, BERA, SNX, INJ, INIT",
+      "coins": [
+        "AZTEC",
+        "OM",
+        "AXS",
+        "BIO",
+        "ACE",
+        "SKR",
+        "JTO",
+        "BERA",
+        "SNX",
+        "INJ",
+        "INIT"
+      ]
+    }
+  ],
+  "portfolioRiskScore": 84,
+  "recommendation": "DANGER: Portfolio risk is extreme. Reduce positions or hedge. Multiple correlated bets in same direction."
+}

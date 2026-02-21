@@ -1,76 +1,36 @@
 {
   "date": "2026-02-21",
-  "sizedAt": "2026-02-21T18:18:28.688Z",
-  "totalSignals": 55,
-  "newlySized": 55,
-  "alreadySized": 0,
-  "sized": 18,
-  "skipped": 37,
-  "totalAllocation": 2.8000000000000007,
+  "sizedAt": "2026-02-21T22:06:53.673Z",
+  "totalSignals": 185,
+  "newlySized": 44,
+  "alreadySized": 141,
+  "sized": 17,
+  "skipped": 27,
+  "totalAllocation": 2.300000000000001,
   "maxKelly": 0.2,
   "positions": [
     {
-      "coin": "SKR",
+      "coin": "AZTEC",
       "tool": "rei-funding-carry",
       "direction": "LONG",
-      "confidence": "high",
-      "kelly": 0.2,
+      "confidence": "medium",
+      "kelly": 0.10000000000000009,
       "action": "SIZE"
     },
     {
-      "coin": "JTO",
+      "coin": "YGG",
       "tool": "rei-funding-carry",
       "direction": "LONG",
-      "confidence": "high",
-      "kelly": 0.2,
-      "action": "SIZE"
-    },
-    {
-      "coin": "BERA",
-      "tool": "rei-funding-carry",
-      "direction": "LONG",
-      "confidence": "high",
-      "kelly": 0.2,
+      "confidence": "medium",
+      "kelly": 0.10000000000000009,
       "action": "SIZE"
     },
     {
       "coin": "SNX",
       "tool": "rei-funding-carry",
       "direction": "LONG",
-      "confidence": "high",
-      "kelly": 0.2,
-      "action": "SIZE"
-    },
-    {
-      "coin": "INJ",
-      "tool": "rei-funding-carry",
-      "direction": "LONG",
-      "confidence": "high",
-      "kelly": 0.2,
-      "action": "SIZE"
-    },
-    {
-      "coin": "INIT",
-      "tool": "rei-funding-carry",
-      "direction": "LONG",
-      "confidence": "high",
-      "kelly": 0.2,
-      "action": "SIZE"
-    },
-    {
-      "coin": "Will Bitcoin reach $",
-      "tool": "sakura-arb-scanner",
-      "direction": "ARB",
-      "confidence": "high",
-      "kelly": 0.2,
-      "action": "SIZE"
-    },
-    {
-      "coin": "Will Bitcoin reach $",
-      "tool": "sakura-arb-scanner",
-      "direction": "ARB",
-      "confidence": "high",
-      "kelly": 0.2,
+      "confidence": "medium",
+      "kelly": 0.10000000000000009,
       "action": "SIZE"
     },
     {
@@ -82,39 +42,15 @@
       "action": "SIZE"
     },
     {
-      "coin": "BLAST",
-      "tool": "rei-funding-carry",
-      "direction": "LONG",
-      "confidence": "medium",
-      "kelly": 0.10000000000000009,
-      "action": "SIZE"
-    },
-    {
-      "coin": "SNX",
-      "tool": "rei-funding-carry",
-      "direction": "LONG",
-      "confidence": "medium",
-      "kelly": 0.10000000000000009,
-      "action": "SIZE"
-    },
-    {
-      "coin": "ZORA",
-      "tool": "rei-funding-carry",
-      "direction": "LONG",
-      "confidence": "medium",
-      "kelly": 0.10000000000000009,
-      "action": "SIZE"
-    },
-    {
       "coin": "OM",
       "tool": "rei-funding-carry",
       "direction": "LONG",
-      "confidence": "medium",
-      "kelly": 0.10000000000000009,
+      "confidence": "high",
+      "kelly": 0.2,
       "action": "SIZE"
     },
     {
-      "coin": "BERA",
+      "coin": "INJ",
       "tool": "rei-funding-carry",
       "direction": "LONG",
       "confidence": "medium",
@@ -130,7 +66,15 @@
       "action": "SIZE"
     },
     {
-      "coin": "ICP",
+      "coin": "BLAST",
+      "tool": "rei-funding-carry",
+      "direction": "LONG",
+      "confidence": "high",
+      "kelly": 0.2,
+      "action": "SIZE"
+    },
+    {
+      "coin": "SOPH",
       "tool": "rei-funding-carry",
       "direction": "LONG",
       "confidence": "medium",
@@ -138,7 +82,55 @@
       "action": "SIZE"
     },
     {
-      "coin": "Will Bitcoin reach $",
+      "coin": "BERA",
+      "tool": "rei-funding-carry",
+      "direction": "LONG",
+      "confidence": "high",
+      "kelly": 0.2,
+      "action": "SIZE"
+    },
+    {
+      "coin": "SKR",
+      "tool": "rei-funding-carry",
+      "direction": "LONG",
+      "confidence": "medium",
+      "kelly": 0.10000000000000009,
+      "action": "SIZE"
+    },
+    {
+      "coin": "ZORA",
+      "tool": "rei-funding-carry",
+      "direction": "LONG",
+      "confidence": "high",
+      "kelly": 0.2,
+      "action": "SIZE"
+    },
+    {
+      "coin": "TRUMP",
+      "tool": "rei-funding-carry",
+      "direction": "LONG",
+      "confidence": "medium",
+      "kelly": 0.10000000000000009,
+      "action": "SIZE"
+    },
+    {
+      "coin": "ZETA",
+      "tool": "rei-funding-carry",
+      "direction": "LONG",
+      "confidence": "medium",
+      "kelly": 0.10000000000000009,
+      "action": "SIZE"
+    },
+    {
+      "coin": "Will Bitcoin be high",
+      "tool": "sakura-arb-scanner",
+      "direction": "ARB",
+      "confidence": "medium",
+      "kelly": 0.10000000000000009,
+      "action": "SIZE"
+    },
+    {
+      "coin": "Will Bitcoin be high",
       "tool": "sakura-arb-scanner",
       "direction": "ARB",
       "confidence": "high",
@@ -146,7 +138,7 @@
       "action": "SIZE"
     },
     {
-      "coin": "Will Bitcoin reach $",
+      "coin": "Will Bitcoin be high",
       "tool": "sakura-arb-scanner",
       "direction": "ARB",
       "confidence": "high",
@@ -156,7 +148,7 @@
   ],
   "skippedPositions": [
     {
-      "coin": "AZTEC",
+      "coin": "ICP",
       "tool": "rei-funding-carry",
       "direction": "LONG",
       "confidence": "low",
@@ -164,7 +156,7 @@
       "action": "SKIP"
     },
     {
-      "coin": "OM",
+      "coin": "JTO",
       "tool": "rei-funding-carry",
       "direction": "LONG",
       "confidence": "low",
@@ -172,7 +164,7 @@
       "action": "SKIP"
     },
     {
-      "coin": "AXS",
+      "coin": "WLFI",
       "tool": "rei-funding-carry",
       "direction": "LONG",
       "confidence": "low",
@@ -180,7 +172,7 @@
       "action": "SKIP"
     },
     {
-      "coin": "BIO",
+      "coin": "W",
       "tool": "rei-funding-carry",
       "direction": "LONG",
       "confidence": "low",
@@ -188,119 +180,7 @@
       "action": "SKIP"
     },
     {
-      "coin": "ACE",
-      "tool": "rei-funding-carry",
-      "direction": "LONG",
-      "confidence": "low",
-      "kelly": 0,
-      "action": "SKIP"
-    },
-    {
-      "coin": "[@mattyb’s 500th mar",
-      "tool": "sakura-arb-scanner",
-      "direction": "ARB",
-      "confidence": "low",
-      "kelly": 0,
-      "action": "SKIP"
-    },
-    {
-      "coin": "Will Bitcoin (BTC) b",
-      "tool": "sakura-arb-scanner",
-      "direction": "ARB",
-      "confidence": "low",
-      "kelly": 0,
-      "action": "SKIP"
-    },
-    {
-      "coin": "Will Bitcoin (BTC) p",
-      "tool": "sakura-arb-scanner",
-      "direction": "ARB",
-      "confidence": "low",
-      "kelly": 0,
-      "action": "SKIP"
-    },
-    {
-      "coin": "Will a Republican Pr",
-      "tool": "sakura-arb-scanner",
-      "direction": "ARB",
-      "confidence": "low",
-      "kelly": 0,
-      "action": "SKIP"
-    },
-    {
-      "coin": "Will a former US pre",
-      "tool": "sakura-arb-scanner",
-      "direction": "ARB",
-      "confidence": "low",
-      "kelly": 0,
-      "action": "SKIP"
-    },
-    {
-      "coin": "Will Quinn Ewers def",
-      "tool": "sakura-arb-scanner",
-      "direction": "ARB",
-      "confidence": "low",
-      "kelly": 0,
-      "action": "SKIP"
-    },
-    {
-      "coin": "(1k subsidy) Will Co",
-      "tool": "sakura-arb-scanner",
-      "direction": "ARB",
-      "confidence": "low",
-      "kelly": 0,
-      "action": "SKIP"
-    },
-    {
-      "coin": "Same city wins 2+ ma",
-      "tool": "sakura-arb-scanner",
-      "direction": "ARB",
-      "confidence": "low",
-      "kelly": 0,
-      "action": "SKIP"
-    },
-    {
-      "coin": "Will Roger Goodell b",
-      "tool": "sakura-arb-scanner",
-      "direction": "ARB",
-      "confidence": "low",
-      "kelly": 0,
-      "action": "SKIP"
-    },
-    {
-      "coin": "Will Bitcoin Outperf",
-      "tool": "sakura-arb-scanner",
-      "direction": "ARB",
-      "confidence": "low",
-      "kelly": 0,
-      "action": "SKIP"
-    },
-    {
-      "coin": "More than 70% of U.S",
-      "tool": "sakura-arb-scanner",
-      "direction": "ARB",
-      "confidence": "low",
-      "kelly": 0,
-      "action": "SKIP"
-    },
-    {
-      "coin": "AZTEC",
-      "tool": "rei-funding-carry",
-      "direction": "LONG",
-      "confidence": "low",
-      "kelly": 0,
-      "action": "SKIP"
-    },
-    {
-      "coin": "YGG",
-      "tool": "rei-funding-carry",
-      "direction": "LONG",
-      "confidence": "low",
-      "kelly": 0,
-      "action": "SKIP"
-    },
-    {
-      "coin": "INJ",
+      "coin": "STRK",
       "tool": "rei-funding-carry",
       "direction": "LONG",
       "confidence": "low",
@@ -316,9 +196,17 @@
       "action": "SKIP"
     },
     {
-      "coin": "ACE",
+      "coin": "MOVE",
       "tool": "rei-funding-carry",
       "direction": "LONG",
+      "confidence": "low",
+      "kelly": 0,
+      "action": "SKIP"
+    },
+    {
+      "coin": "XMR",
+      "tool": "rei-funding-carry",
+      "direction": "SHORT",
       "confidence": "low",
       "kelly": 0,
       "action": "SKIP"
@@ -332,7 +220,7 @@
       "action": "SKIP"
     },
     {
-      "coin": "ATOM",
+      "coin": "MOODENG",
       "tool": "rei-funding-carry",
       "direction": "LONG",
       "confidence": "low",
@@ -340,7 +228,7 @@
       "action": "SKIP"
     },
     {
-      "coin": "DASH",
+      "coin": "kLUNC",
       "tool": "rei-funding-carry",
       "direction": "LONG",
       "confidence": "low",
@@ -348,7 +236,7 @@
       "action": "SKIP"
     },
     {
-      "coin": "UMA",
+      "coin": "PENDLE",
       "tool": "rei-funding-carry",
       "direction": "LONG",
       "confidence": "low",
@@ -356,7 +244,7 @@
       "action": "SKIP"
     },
     {
-      "coin": "BIGTIME",
+      "coin": "OP",
       "tool": "rei-funding-carry",
       "direction": "LONG",
       "confidence": "low",
@@ -364,7 +252,23 @@
       "action": "SKIP"
     },
     {
-      "coin": "CELO",
+      "coin": "MORPHO",
+      "tool": "rei-funding-carry",
+      "direction": "LONG",
+      "confidence": "low",
+      "kelly": 0,
+      "action": "SKIP"
+    },
+    {
+      "coin": "APE",
+      "tool": "rei-funding-carry",
+      "direction": "LONG",
+      "confidence": "low",
+      "kelly": 0,
+      "action": "SKIP"
+    },
+    {
+      "coin": "AVNT",
       "tool": "rei-funding-carry",
       "direction": "LONG",
       "confidence": "low",
@@ -448,6 +352,14 @@
       "tool": "sakura-arb-scanner",
       "direction": "ARB",
       "confidence": "low",
+      "kelly": 0,
+      "action": "SKIP"
+    },
+    {
+      "coin": "PORTFOLIO",
+      "tool": "jinx-correlation-monitor",
+      "direction": "FLAT",
+      "confidence": 1,
       "kelly": 0,
       "action": "SKIP"
     }

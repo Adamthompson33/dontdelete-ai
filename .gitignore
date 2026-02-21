@@ -1,6 +1,27 @@
-﻿node_modules/
-*.jackbot.ts
-*.local.ts
+# Secrets
 .env
 .env.*
+.secrets/
+*.key
+*.pem
+
+# Build
 dist/
+node_modules/
+
+# Backup patterns
+*.jackbot.ts
+*.local.ts
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+venv/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log

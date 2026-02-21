@@ -10,7 +10,15 @@
       "entryPrice": 0.0303,
       "annualizedRate": -21.531189108,
       "reasoning": "AZTEC funding at -2153.1% APR. Shorts paying longs. ⚠️ VOLATILE (58.6% 24h move) — basis trade unsafe. ⚠️ DISTRESSED (-2153% APR) — likely death spiral, not real edge. Premium: -1.698%. OI: $3.6M. Vol: $22.9M.",
-      "invalidation": "Rate drops below 20% APR or flips sign. VOLATILE — basis trade unsafe."
+      "invalidation": "Rate drops below 20% APR or flips sign. VOLATILE — basis trade unsafe.",
+      "outcome": {
+        "checkedAt": "2026-02-21T15:28:42.321Z",
+        "currentPrice": 0.034313,
+        "currentRate": -15.093038496000002,
+        "priceChange": 13.244224422442253,
+        "pnlPercent": 18.530446983562946,
+        "status": "WINNING"
+      }
     },
     {
       "tool": "rei-funding-carry",
@@ -22,7 +30,15 @@
       "entryPrice": 0.0689,
       "annualizedRate": -8.160358728,
       "reasoning": "OM funding at -816.0% APR. Shorts paying longs. ⚠️ DISTRESSED (-816% APR) — likely death spiral, not real edge. Premium: -0.418%. OI: $2.4M. Vol: $6.2M.",
-      "invalidation": "Rate drops below 20% APR or flips sign. "
+      "invalidation": "Rate drops below 20% APR or flips sign. ",
+      "outcome": {
+        "checkedAt": "2026-02-21T15:28:42.322Z",
+        "currentPrice": 0.064,
+        "currentRate": -1.239744984,
+        "priceChange": -7.1117561683599435,
+        "pnlPercent": -5.108268474372627,
+        "status": "LOSING"
+      }
     },
     {
       "tool": "rei-funding-carry",
@@ -34,7 +50,15 @@
       "entryPrice": 1.2943,
       "annualizedRate": -7.335843876,
       "reasoning": "AXS funding at -733.6% APR. Shorts paying longs. ⚠️ DISTRESSED (-734% APR) — likely death spiral, not real edge. Premium: -0.674%. OI: $4.0M. Vol: $7.1M.",
-      "invalidation": "Rate drops below 20% APR or flips sign. "
+      "invalidation": "Rate drops below 20% APR or flips sign. ",
+      "outcome": {
+        "checkedAt": "2026-02-21T15:28:42.323Z",
+        "currentPrice": 1.3335,
+        "currentRate": -4.2864572160000005,
+        "priceChange": 3.0286641427798733,
+        "pnlPercent": 4.82972133041599,
+        "status": "WINNING"
+      }
     },
     {
       "tool": "rei-funding-carry",
@@ -46,7 +70,15 @@
       "entryPrice": 0.031915,
       "annualizedRate": -5.692257636,
       "reasoning": "BIO funding at -569.2% APR. Shorts paying longs. ⚠️ VOLATILE (45.5% 24h move) — basis trade unsafe. ⚠️ DISTRESSED (-569% APR) — likely death spiral, not real edge. Premium: -0.620%. OI: $0.7M. Vol: $2.3M.",
-      "invalidation": "Rate drops below 20% APR or flips sign. VOLATILE — basis trade unsafe."
+      "invalidation": "Rate drops below 20% APR or flips sign. VOLATILE — basis trade unsafe.",
+      "outcome": {
+        "checkedAt": "2026-02-21T15:28:42.323Z",
+        "currentPrice": 0.02876,
+        "currentRate": -0.471906456,
+        "priceChange": -9.88563371455428,
+        "pnlPercent": -8.488101037675051,
+        "status": "LOSING"
+      }
     },
     {
       "tool": "rei-funding-carry",
@@ -58,7 +90,15 @@
       "entryPrice": 0.1614,
       "annualizedRate": -2.403981396,
       "reasoning": "ACE funding at -240.4% APR. Shorts paying longs. Premium: -0.062%. OI: $0.3M. Vol: $0.2M.",
-      "invalidation": "Rate drops below 20% APR or flips sign. "
+      "invalidation": "Rate drops below 20% APR or flips sign. ",
+      "outcome": {
+        "checkedAt": "2026-02-21T15:28:42.323Z",
+        "currentPrice": 0.1632,
+        "currentRate": -0.758730756,
+        "priceChange": 1.1152416356877473,
+        "pnlPercent": 1.7054543017961972,
+        "status": "WINNING"
+      }
     },
     {
       "tool": "rei-funding-carry",
@@ -70,7 +110,15 @@
       "entryPrice": 0.020511,
       "annualizedRate": -2.150103456,
       "reasoning": "SKR funding at -215.0% APR. Shorts paying longs. Premium: -0.374%. OI: $1.1M. Vol: $1.3M.",
-      "invalidation": "Rate drops below 20% APR or flips sign. "
+      "invalidation": "Rate drops below 20% APR or flips sign. ",
+      "outcome": {
+        "checkedAt": "2026-02-21T15:28:42.323Z",
+        "currentPrice": 0.019735,
+        "currentRate": -0.38900619599999997,
+        "priceChange": -3.783335771049692,
+        "pnlPercent": -3.2554538601138256,
+        "status": "LOSING"
+      }
     },
     {
       "tool": "rei-funding-carry",
@@ -82,7 +130,15 @@
       "entryPrice": 0.31745,
       "annualizedRate": -2.12173332,
       "reasoning": "JTO funding at -212.2% APR. Shorts paying longs. Premium: -0.201%. OI: $2.1M. Vol: $1.4M.",
-      "invalidation": "Rate drops below 20% APR or flips sign. "
+      "invalidation": "Rate drops below 20% APR or flips sign. ",
+      "outcome": {
+        "checkedAt": "2026-02-21T15:28:42.323Z",
+        "currentPrice": 0.30463,
+        "currentRate": -0.388364088,
+        "priceChange": -4.038431249015592,
+        "pnlPercent": -3.5175146222679814,
+        "status": "LOSING"
+      }
     },
     {
       "tool": "rei-funding-carry",
@@ -94,7 +150,15 @@
       "entryPrice": 0.60383,
       "annualizedRate": -2.0061118319999998,
       "reasoning": "BERA funding at -200.6% APR. Shorts paying longs. Premium: -0.276%. OI: $4.4M. Vol: $2.8M.",
-      "invalidation": "Rate drops below 20% APR or flips sign. "
+      "invalidation": "Rate drops below 20% APR or flips sign. ",
+      "outcome": {
+        "checkedAt": "2026-02-21T15:28:42.323Z",
+        "currentPrice": 0.58147,
+        "currentRate": -1.3028625360000001,
+        "priceChange": -3.7030289982279676,
+        "pnlPercent": -3.2104991413636235,
+        "status": "LOSING"
+      }
     },
     {
       "tool": "rei-funding-carry",
@@ -106,7 +170,15 @@
       "entryPrice": 0.37322,
       "annualizedRate": -1.50396936,
       "reasoning": "SNX funding at -150.4% APR. Shorts paying longs. Premium: -0.195%. OI: $1.1M. Vol: $2.4M.",
-      "invalidation": "Rate drops below 20% APR or flips sign. "
+      "invalidation": "Rate drops below 20% APR or flips sign. ",
+      "outcome": {
+        "checkedAt": "2026-02-21T15:28:42.323Z",
+        "currentPrice": 0.39123,
+        "currentRate": -2.68733586,
+        "priceChange": 4.8255720486576354,
+        "pnlPercent": 5.194818569112413,
+        "status": "WINNING"
+      }
     },
     {
       "tool": "rei-funding-carry",
@@ -118,7 +190,15 @@
       "entryPrice": 3.3889,
       "annualizedRate": -1.361738496,
       "reasoning": "INJ funding at -136.2% APR. Shorts paying longs. Premium: -0.138%. OI: $3.0M. Vol: $9.5M.",
-      "invalidation": "Rate drops below 20% APR or flips sign. "
+      "invalidation": "Rate drops below 20% APR or flips sign. ",
+      "outcome": {
+        "checkedAt": "2026-02-21T15:28:42.323Z",
+        "currentPrice": 3.8267,
+        "currentRate": -1.7044577280000002,
+        "priceChange": 12.918646168373224,
+        "pnlPercent": 13.252972927142645,
+        "status": "WINNING"
+      }
     },
     {
       "tool": "rei-funding-carry",
@@ -130,7 +210,15 @@
       "entryPrice": 0.10277,
       "annualizedRate": -1.151967156,
       "reasoning": "INIT funding at -115.2% APR. Shorts paying longs. Premium: -0.180%. OI: $1.4M. Vol: $1.6M.",
-      "invalidation": "Rate drops below 20% APR or flips sign. "
+      "invalidation": "Rate drops below 20% APR or flips sign. ",
+      "outcome": {
+        "checkedAt": "2026-02-21T15:28:42.323Z",
+        "currentPrice": 0.10103,
+        "currentRate": 0.019856291999999998,
+        "priceChange": -1.6931010995426734,
+        "pnlPercent": -1.410276279207779,
+        "status": "LOSING"
+      }
     },
     {
       "tool": "sakura-arb-scanner",

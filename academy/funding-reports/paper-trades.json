@@ -119,8 +119,8 @@
       "entryTime": 1771588222169,
       "entryRate": -0.0004453211,
       "notionalSize": 1000,
-      "cumulativeFunding": 0,
-      "lastCollectedAt": 1771588222169,
+      "cumulativeFunding": 1.9114656,
+      "lastCollectedAt": 1771633812068,
       "isOpen": true,
       "fees": 0.25
     },
@@ -131,8 +131,8 @@
       "entryTime": 1771588222879,
       "entryRate": -0.0003307789,
       "notionalSize": 1000,
-      "cumulativeFunding": 0,
-      "lastCollectedAt": 1771588222879,
+      "cumulativeFunding": 0.8911739999999999,
+      "lastCollectedAt": 1771633812068,
       "isOpen": true,
       "fees": 0.25
     },
@@ -143,8 +143,8 @@
       "entryTime": 1771588224599,
       "entryRate": -0.0001513462,
       "notionalSize": 1000,
-      "cumulativeFunding": 0,
-      "lastCollectedAt": 1771588224599,
+      "cumulativeFunding": 7.0217124,
+      "lastCollectedAt": 1771633812068,
       "isOpen": true,
       "fees": 0.25
     },
@@ -157,8 +157,10 @@
       "notionalSize": 1000,
       "cumulativeFunding": 0,
       "lastCollectedAt": 1771588226004,
-      "isOpen": true,
-      "fees": 0.25
+      "isOpen": false,
+      "fees": 0.5,
+      "exitTime": 1771633812068,
+      "exitReason": "coin_dropped_from_scan"
     },
     {
       "id": "ICP-1771588226773",
@@ -167,12 +169,24 @@
       "entryTime": 1771588226773,
       "entryRate": -0.0000971425,
       "notionalSize": 1000,
+      "cumulativeFunding": 0.5170908,
+      "lastCollectedAt": 1771633812068,
+      "isOpen": true,
+      "fees": 0.25
+    },
+    {
+      "id": "BERA-1771633812588",
+      "coin": "BERA",
+      "direction": "SHORT_BASIS",
+      "entryTime": 1771633812588,
+      "entryRate": -0.000226416,
+      "notionalSize": 1000,
       "cumulativeFunding": 0,
-      "lastCollectedAt": 1771588226773,
+      "lastCollectedAt": 1771633812588,
       "isOpen": true,
       "fees": 0.25
     }
   ],
-  "cumulativePnl": 92.04914460000002,
+  "cumulativePnl": 102.14058740000003,
   "lastScanAt": 0
 }

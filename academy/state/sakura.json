@@ -1,40 +1,107 @@
 {
   "agent": "SAKURA",
   "team": "sentinel",
-  "lastUpdated": "2026-02-20T11:59:41.564Z",
+  "lastUpdated": "2026-02-21T00:32:13.185Z",
   "runNumber": 6,
   "signals": {
-    "total": 0,
+    "total": 5,
     "correct": 0,
     "incorrect": 0,
-    "pending": 0,
+    "pending": 5,
     "accuracy": null,
-    "avgConfidence": 0,
+    "avgConfidence": 0.5760000000000001,
     "calibrationScore": null
   },
-  "recentSignals": [],
+  "recentSignals": [
+    {
+      "run": 6,
+      "asset": "BTC",
+      "direction": "flat",
+      "confidence": 0.5,
+      "kelly_size": 0,
+      "invalidation": "n/a",
+      "data_sources": [
+        "correlation-stress-test",
+        "execution-profile"
+      ],
+      "timestamp": "2026-02-21T00:31:30.557Z",
+      "outcome": "pending"
+    },
+    {
+      "run": 6,
+      "asset": "BTC",
+      "direction": "flat",
+      "confidence": 0.5,
+      "kelly_size": 0,
+      "invalidation": "n/a",
+      "data_sources": [
+        "liquidity-audit"
+      ],
+      "timestamp": "2026-02-21T00:30:32.726Z",
+      "outcome": "pending"
+    },
+    {
+      "run": 6,
+      "asset": "INJ",
+      "direction": "short",
+      "confidence": 0.68,
+      "kelly_size": 0.08,
+      "invalidation": "INJ closes below -200% funding (suggests short-squeeze risk)",
+      "data_sources": [
+        "funding-scanner (Rei's -402% APR is unsustainable)",
+        "microstructure (INJ illiquid enough that extreme funding rates mean mean-reversion",
+        "not direction)"
+      ],
+      "timestamp": "2026-02-20T11:58:57.502Z",
+      "outcome": "pending"
+    },
+    {
+      "run": 6,
+      "asset": "BTC",
+      "direction": "flat",
+      "confidence": 0.6,
+      "kelly_size": 0,
+      "invalidation": "n/a",
+      "data_sources": [
+        "arb-scanner (violation exists but liquidity unconfirmed)",
+        "correlation-audit (65% correlation means directional thesis is phantom)"
+      ],
+      "timestamp": "2026-02-20T11:58:57.498Z",
+      "outcome": "pending"
+    },
+    {
+      "run": 6,
+      "asset": "BTC",
+      "direction": "flat",
+      "confidence": 0.6,
+      "kelly_size": 0,
+      "invalidation": "n/a",
+      "data_sources": [
+        "arb-scanner (flagged violation but need liquidity confirmation)",
+        "correlation-audit (65% means directional thesis is correlated risk)"
+      ],
+      "timestamp": "2026-02-20T11:57:58.007Z",
+      "outcome": "pending"
+    }
+  ],
   "record": {
-    "totalBets": 0,
+    "totalBets": 8,
     "wins": 0,
-    "losses": 0,
+    "losses": 5,
     "exits": 0,
-    "openPositions": 0,
-    "winRate": null
+    "openPositions": 3,
+    "winRate": 0
   },
   "recentDecisions": [],
   "toolPerformance": null,
   "convergenceFlags": {
     "phrasesUsedByMultipleAgents": [
       "confidence kelly invalidation",
-      "the arb violation",
-      "before anyone sizes",
-      "before size anything",
+      "kelly invalidation sources",
       "signal flat btc",
       "flat btc confidence",
       "btc confidence kelly",
-      "kelly invalidation sources",
-      "those deployment logs",
-      "parameters the last"
+      "invalidation sources correlationstresstest"
     ],
     "bannedPhrases": [
       {
@@ -140,15 +207,19 @@
       {
         "phrase": "kelly invalidation sources",
         "bannedAtRun": 6
+      },
+      {
+        "phrase": "invalidation sources correlationstresstest",
+        "bannedAtRun": 6
       }
     ]
   },
   "fitness": {
     "current": 60.13809505129274,
     "trend": [
-      -14.163074618610025,
       0,
-      -2
+      -2,
+      0
     ],
     "tier": "rising",
     "signalScore": 0
@@ -156,9 +227,9 @@
   "karma": {
     "current": 60.13809505129274,
     "trend": [
-      -14.163074618610025,
       0,
-      -2
+      -2,
+      0
     ],
     "tier": "rising",
     "locked": 0

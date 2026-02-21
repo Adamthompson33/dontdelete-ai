@@ -1,40 +1,65 @@
 {
   "agent": "JINX",
   "team": "sentinel",
-  "lastUpdated": "2026-02-20T11:59:41.572Z",
+  "lastUpdated": "2026-02-21T00:32:13.191Z",
   "runNumber": 6,
   "signals": {
-    "total": 0,
+    "total": 2,
     "correct": 0,
     "incorrect": 0,
-    "pending": 0,
+    "pending": 2,
     "accuracy": null,
-    "avgConfidence": 0,
+    "avgConfidence": 0.5,
     "calibrationScore": null
   },
-  "recentSignals": [],
+  "recentSignals": [
+    {
+      "run": 6,
+      "asset": "BTC",
+      "direction": "flat",
+      "confidence": 0.5,
+      "kelly_size": 0,
+      "invalidation": "n/a",
+      "data_sources": [
+        "insufficient-trade-history",
+        "correlation-audit"
+      ],
+      "timestamp": "2026-02-21T00:32:12.849Z",
+      "outcome": "pending"
+    },
+    {
+      "run": 6,
+      "asset": "BTC",
+      "direction": "flat",
+      "confidence": 0.5,
+      "kelly_size": 0,
+      "invalidation": "n/a",
+      "data_sources": [
+        "factor-model-audit",
+        "monte-carlo-insufficient-data"
+      ],
+      "timestamp": "2026-02-21T00:31:14.379Z",
+      "outcome": "pending"
+    }
+  ],
   "record": {
-    "totalBets": 0,
+    "totalBets": 4,
     "wins": 0,
-    "losses": 0,
+    "losses": 4,
     "exits": 0,
     "openPositions": 0,
-    "winRate": null
+    "winRate": 0
   },
   "recentDecisions": [],
   "toolPerformance": null,
   "convergenceFlags": {
     "phrasesUsedByMultipleAgents": [
       "confidence kelly invalidation",
-      "the arb violation",
-      "before anyone sizes",
-      "before size anything",
+      "kelly invalidation sources",
       "signal flat btc",
       "flat btc confidence",
       "btc confidence kelly",
-      "kelly invalidation sources",
-      "those deployment logs",
-      "parameters the last"
+      "invalidation sources correlationstresstest"
     ],
     "bannedPhrases": [
       {
@@ -100,24 +125,44 @@
       {
         "phrase": "before anyone sizes",
         "bannedAtRun": 6
+      },
+      {
+        "phrase": "confidence kelly invalidation",
+        "bannedAtRun": 6
+      },
+      {
+        "phrase": "kelly invalidation sources",
+        "bannedAtRun": 6
+      },
+      {
+        "phrase": "signal flat btc",
+        "bannedAtRun": 6
+      },
+      {
+        "phrase": "flat btc confidence",
+        "bannedAtRun": 6
+      },
+      {
+        "phrase": "btc confidence kelly",
+        "bannedAtRun": 6
       }
     ]
   },
   "fitness": {
-    "current": 77.25868564609229,
+    "current": 75.25868564609229,
     "trend": [
-      -2,
       0,
+      -2,
       -2
     ],
     "tier": "elite",
     "signalScore": 0
   },
   "karma": {
-    "current": 77.25868564609229,
+    "current": 75.25868564609229,
     "trend": [
-      -2,
       0,
+      -2,
       -2
     ],
     "tier": "elite",

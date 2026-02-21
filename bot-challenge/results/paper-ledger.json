@@ -1,0 +1,138 @@
+{
+  "signals": [
+    {
+      "tool": "rei-funding-carry",
+      "timestamp": "2026-02-20T17:58:16.816Z",
+      "unixMs": 1771610296818,
+      "coin": "AZTEC",
+      "direction": "LONG",
+      "confidence": "low",
+      "entryPrice": 0.0303,
+      "annualizedRate": -21.531189108,
+      "reasoning": "AZTEC funding at -2153.1% APR. Shorts paying longs. ⚠️ VOLATILE (58.6% 24h move) — basis trade unsafe. ⚠️ DISTRESSED (-2153% APR) — likely death spiral, not real edge. Premium: -1.698%. OI: $3.6M. Vol: $22.9M.",
+      "invalidation": "Rate drops below 20% APR or flips sign. VOLATILE — basis trade unsafe."
+    },
+    {
+      "tool": "rei-funding-carry",
+      "timestamp": "2026-02-20T17:58:16.818Z",
+      "unixMs": 1771610296818,
+      "coin": "OM",
+      "direction": "LONG",
+      "confidence": "low",
+      "entryPrice": 0.0689,
+      "annualizedRate": -8.160358728,
+      "reasoning": "OM funding at -816.0% APR. Shorts paying longs. ⚠️ DISTRESSED (-816% APR) — likely death spiral, not real edge. Premium: -0.418%. OI: $2.4M. Vol: $6.2M.",
+      "invalidation": "Rate drops below 20% APR or flips sign. "
+    },
+    {
+      "tool": "rei-funding-carry",
+      "timestamp": "2026-02-20T17:58:16.819Z",
+      "unixMs": 1771610296819,
+      "coin": "AXS",
+      "direction": "LONG",
+      "confidence": "low",
+      "entryPrice": 1.2943,
+      "annualizedRate": -7.335843876,
+      "reasoning": "AXS funding at -733.6% APR. Shorts paying longs. ⚠️ DISTRESSED (-734% APR) — likely death spiral, not real edge. Premium: -0.674%. OI: $4.0M. Vol: $7.1M.",
+      "invalidation": "Rate drops below 20% APR or flips sign. "
+    },
+    {
+      "tool": "rei-funding-carry",
+      "timestamp": "2026-02-20T17:58:16.819Z",
+      "unixMs": 1771610296819,
+      "coin": "BIO",
+      "direction": "LONG",
+      "confidence": "low",
+      "entryPrice": 0.031915,
+      "annualizedRate": -5.692257636,
+      "reasoning": "BIO funding at -569.2% APR. Shorts paying longs. ⚠️ VOLATILE (45.5% 24h move) — basis trade unsafe. ⚠️ DISTRESSED (-569% APR) — likely death spiral, not real edge. Premium: -0.620%. OI: $0.7M. Vol: $2.3M.",
+      "invalidation": "Rate drops below 20% APR or flips sign. VOLATILE — basis trade unsafe."
+    },
+    {
+      "tool": "rei-funding-carry",
+      "timestamp": "2026-02-20T17:58:16.819Z",
+      "unixMs": 1771610296819,
+      "coin": "ACE",
+      "direction": "LONG",
+      "confidence": "low",
+      "entryPrice": 0.1614,
+      "annualizedRate": -2.403981396,
+      "reasoning": "ACE funding at -240.4% APR. Shorts paying longs. Premium: -0.062%. OI: $0.3M. Vol: $0.2M.",
+      "invalidation": "Rate drops below 20% APR or flips sign. "
+    },
+    {
+      "tool": "rei-funding-carry",
+      "timestamp": "2026-02-20T17:58:16.819Z",
+      "unixMs": 1771610296819,
+      "coin": "SKR",
+      "direction": "LONG",
+      "confidence": "high",
+      "entryPrice": 0.020511,
+      "annualizedRate": -2.150103456,
+      "reasoning": "SKR funding at -215.0% APR. Shorts paying longs. Premium: -0.374%. OI: $1.1M. Vol: $1.3M.",
+      "invalidation": "Rate drops below 20% APR or flips sign. "
+    },
+    {
+      "tool": "rei-funding-carry",
+      "timestamp": "2026-02-20T17:58:16.819Z",
+      "unixMs": 1771610296819,
+      "coin": "JTO",
+      "direction": "LONG",
+      "confidence": "high",
+      "entryPrice": 0.31745,
+      "annualizedRate": -2.12173332,
+      "reasoning": "JTO funding at -212.2% APR. Shorts paying longs. Premium: -0.201%. OI: $2.1M. Vol: $1.4M.",
+      "invalidation": "Rate drops below 20% APR or flips sign. "
+    },
+    {
+      "tool": "rei-funding-carry",
+      "timestamp": "2026-02-20T17:58:16.819Z",
+      "unixMs": 1771610296819,
+      "coin": "BERA",
+      "direction": "LONG",
+      "confidence": "high",
+      "entryPrice": 0.60383,
+      "annualizedRate": -2.0061118319999998,
+      "reasoning": "BERA funding at -200.6% APR. Shorts paying longs. Premium: -0.276%. OI: $4.4M. Vol: $2.8M.",
+      "invalidation": "Rate drops below 20% APR or flips sign. "
+    },
+    {
+      "tool": "rei-funding-carry",
+      "timestamp": "2026-02-20T17:58:16.819Z",
+      "unixMs": 1771610296819,
+      "coin": "SNX",
+      "direction": "LONG",
+      "confidence": "high",
+      "entryPrice": 0.37322,
+      "annualizedRate": -1.50396936,
+      "reasoning": "SNX funding at -150.4% APR. Shorts paying longs. Premium: -0.195%. OI: $1.1M. Vol: $2.4M.",
+      "invalidation": "Rate drops below 20% APR or flips sign. "
+    },
+    {
+      "tool": "rei-funding-carry",
+      "timestamp": "2026-02-20T17:58:16.819Z",
+      "unixMs": 1771610296819,
+      "coin": "INJ",
+      "direction": "LONG",
+      "confidence": "high",
+      "entryPrice": 3.3889,
+      "annualizedRate": -1.361738496,
+      "reasoning": "INJ funding at -136.2% APR. Shorts paying longs. Premium: -0.138%. OI: $3.0M. Vol: $9.5M.",
+      "invalidation": "Rate drops below 20% APR or flips sign. "
+    },
+    {
+      "tool": "rei-funding-carry",
+      "timestamp": "2026-02-20T17:58:16.819Z",
+      "unixMs": 1771610296819,
+      "coin": "INIT",
+      "direction": "LONG",
+      "confidence": "high",
+      "entryPrice": 0.10277,
+      "annualizedRate": -1.151967156,
+      "reasoning": "INIT funding at -115.2% APR. Shorts paying longs. Premium: -0.180%. OI: $1.4M. Vol: $1.6M.",
+      "invalidation": "Rate drops below 20% APR or flips sign. "
+    }
+  ],
+  "lastScanAt": "2026-02-20T18:07:38.320Z",
+  "totalScans": 2
+}

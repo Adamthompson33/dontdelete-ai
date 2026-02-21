@@ -1,51 +1,110 @@
 {
   "agent": "REI",
   "team": "sentinel",
-  "lastUpdated": "2026-02-20T11:59:41.570Z",
+  "lastUpdated": "2026-02-21T00:32:13.190Z",
   "runNumber": 6,
   "signals": {
-    "total": 0,
+    "total": 3,
     "correct": 0,
     "incorrect": 0,
-    "pending": 0,
+    "pending": 3,
     "accuracy": null,
-    "avgConfidence": 0,
+    "avgConfidence": 0.56,
     "calibrationScore": null
   },
-  "recentSignals": [],
+  "recentSignals": [
+    {
+      "run": 6,
+      "asset": "BTC",
+      "direction": "flat",
+      "confidence": 0.5,
+      "kelly_size": 0,
+      "invalidation": "n/a",
+      "data_sources": [
+        "self-audit",
+        "correlation-stress-test"
+      ],
+      "timestamp": "2026-02-21T00:32:05.068Z",
+      "outcome": "pending"
+    },
+    {
+      "run": 6,
+      "asset": "BTC",
+      "direction": "flat",
+      "confidence": 0.5,
+      "kelly_size": 0,
+      "invalidation": "n/a",
+      "data_sources": [
+        "correlation-stress-test",
+        "self-audit"
+      ],
+      "timestamp": "2026-02-21T00:31:06.494Z",
+      "outcome": "pending"
+    },
+    {
+      "run": 6,
+      "asset": "INJ",
+      "direction": "short",
+      "confidence": 0.68,
+      "kelly_size": 0.08,
+      "invalidation": "INJ closes below -200% funding (suggests short-squeeze risk, funding mean-reverts faster than I can collect carry)",
+      "data_sources": [
+        "funding-scanner",
+        "microstructure-analysis"
+      ],
+      "timestamp": "2026-02-20T11:59:32.529Z",
+      "outcome": "pending"
+    }
+  ],
   "record": {
-    "totalBets": 0,
+    "totalBets": 5,
     "wins": 0,
-    "losses": 0,
+    "losses": 5,
     "exits": 0,
     "openPositions": 0,
-    "winRate": null
+    "winRate": 0
   },
   "recentDecisions": [],
   "toolPerformance": {
     "name": "Funding Rate Scanner",
-    "paperPnl": 92.04914460000002,
+    "paperPnl": 102.14058740000003,
     "openPaperTrades": 5,
     "bestTrade": null,
     "worstTrade": null,
-    "totalScans": 5
+    "totalScans": 6
   },
   "convergenceFlags": {
     "phrasesUsedByMultipleAgents": [
       "confidence kelly invalidation",
-      "the arb violation",
-      "before anyone sizes",
-      "before size anything",
+      "kelly invalidation sources",
       "signal flat btc",
       "flat btc confidence",
       "btc confidence kelly",
-      "kelly invalidation sources",
-      "those deployment logs",
-      "parameters the last"
+      "invalidation sources correlationstresstest"
     ],
     "bannedPhrases": [
       {
         "phrase": "confidence kelly invalidation",
+        "bannedAtRun": 6
+      },
+      {
+        "phrase": "kelly invalidation sources",
+        "bannedAtRun": 6
+      },
+      {
+        "phrase": "signal flat btc",
+        "bannedAtRun": 6
+      },
+      {
+        "phrase": "flat btc confidence",
+        "bannedAtRun": 6
+      },
+      {
+        "phrase": "btc confidence kelly",
+        "bannedAtRun": 6
+      },
+      {
+        "phrase": "invalidation sources correlationstresstest",
         "bannedAtRun": 6
       }
     ]
@@ -53,9 +112,9 @@
   "fitness": {
     "current": 74.498699627401,
     "trend": [
-      -2,
       0,
-      -2
+      -2,
+      0
     ],
     "tier": "elite",
     "signalScore": 0
@@ -63,9 +122,9 @@
   "karma": {
     "current": 74.498699627401,
     "trend": [
-      -2,
       0,
-      -2
+      -2,
+      0
     ],
     "tier": "elite",
     "locked": 0

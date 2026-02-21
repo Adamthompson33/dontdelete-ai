@@ -1,0 +1,56 @@
+{
+  "scannedAt": "2026-02-21T00:30:19.633Z",
+  "signals": [
+    {
+      "coin": "OP",
+      "pattern": "funding_reset",
+      "direction": "long",
+      "confidence": 0.6577965524,
+      "kelly_size": 0.08,
+      "invalidation": "OP breaks below 0.12 after reset (2% against)",
+      "reasoning": "OP funding at -65% APR with 30min to hourly reset. Extreme negative funding suggests long bias post-reset as funding pressure releases. Premium: -0.251%. Regime: CHOPPY.",
+      "data": {
+        "fundingRate": -0.0000744266,
+        "annualizedRate": -65.1977016,
+        "minutesToReset": 30,
+        "regime": "CHOPPY",
+        "markPrice": 0.12738,
+        "oraclePrice": 0.1277,
+        "premium": -0.2505873140172394,
+        "priceChange24h": -6.885964912280711,
+        "session": "asian"
+      }
+    },
+    {
+      "coin": "INJ",
+      "pattern": "funding_reset",
+      "direction": "long",
+      "confidence": 0.7695138836,
+      "kelly_size": 0.12,
+      "invalidation": "INJ breaks below 3.34 after reset (2% against)",
+      "reasoning": "INJ funding at -140% APR with 30min to hourly reset. VERY extreme negative funding suggests long bias post-reset as funding pressure releases. Premium: -0.266%. Regime: CHOPPY.",
+      "data": {
+        "fundingRate": -0.0001594474,
+        "annualizedRate": -139.67592240000002,
+        "minutesToReset": 30,
+        "regime": "CHOPPY",
+        "markPrice": 3.4119,
+        "oraclePrice": 3.421,
+        "premium": -0.26600409237064204,
+        "priceChange24h": 6.892446505216335,
+        "session": "asian"
+      }
+    }
+  ],
+  "regimes": {
+    "BTC": {
+      "regime": "CHOPPY",
+      "adx": 12.148007087611045,
+      "volatilityRatio": 0.5907243744481684,
+      "priceChange1h": -0.13827596351868196,
+      "priceChange24h": 0.9667440061871616
+    }
+  },
+  "nextResetMinutes": 30,
+  "session": "asian"
+}

@@ -1,0 +1,156 @@
+═══════════════════════════════════════════════════
+  THE ACADEMY — DAILY EPISODE (2026-02-21)
+  Time: 21/02/2026, 11:30:04 am
+═══════════════════════════════════════════════════
+
+─── PHASE 1: Market Snapshot ───
+
+  BTC: $67,912 ▲0.8% 24h
+  ETH: $1,965.04 ▲0.2% 24h
+  SOL: $84.59 ▲1.6% 24h
+
+  OP funding: -65.1% ann. (shorts pay)
+  AVAX funding: +11.0% ann. (longs pay)
+  LINK funding: +11.0% ann. (longs pay)
+  WIF funding: +11.0% ann. (longs pay)
+  DOGE funding: +10.7% ann. (longs pay)
+
+─── Phase 1.5: Previous Signal Evaluation ───
+
+  ✅ PROPHET: FLAT BTC @ 55% conf → +0.8%
+  ✅ SAKURA: FLAT BTC @ 60% conf → +0.8%
+  ✅ PROPHET: FLAT BTC @ 55% conf → +0.8%
+  ✅ SAKURA: FLAT BTC @ 60% conf → +0.8%
+
+⚠️ JACKBOT: -2 fitness (no signals in last 24h)
+⚠️ WREN: -2 fitness (no signals in last 24h)
+⚠️ JINX: -2 fitness (no signals in last 24h)
+─── PHASE 2: Helena Sets the Stage ───
+
+  Helena: Daily assessment. Markets: BTC $67,912 (+0.8%), ETH $1,965.04 (+0.2%), SOL $84.59 (+1.6%). Notable funding: OP -65%. Las...
+
+
+--- PHASE 3: Signal Harvest ---
+
+  Signals collected: 6
+  Active tools: sakura, rei, wren, jinx, jackbot
+
+═══════════════════════════════════════════════════════
+  SIGNAL BOARD -- Episode 6 -- 2026-02-21
+═══════════════════════════════════════════════════════
+
+[LIVE MARKET DATA — 2026-02-21T00:30:04.544Z]
+  BTC: $67,912
+  ETH: $1,965.04
+  ⚠️ Use these prices for ALL crypto analysis. Do NOT estimate or assume prices.
+
+[SAKURA -- arb-scanner -- Confidence: 85%]
+  "Bitcoin bounded violation: P(above $500000) > P(above $200000) (48.2pp edge, high confidence)"
+  Direction: ARB
+  Relevant markets: RylOpNQu, ARDYUYcv
+
+[REI -- funding-scanner -- Confidence: 85%]
+  "BERA: -198.3% APR (SHORT_BASIS). Paper P&L: $102.14 across 4 open trades."
+  Direction: BEARISH
+
+[WREN -- kelly-engine -- Confidence: 80%]
+  "Desk avg heat: 26%. Hot agents: PROPHET. Max position cluster: 4."
+
+[JINX -- factor-model -- Confidence: 70%]
+  "AUDIT ALERT: JACKBOT Predictions (KILL), WREN Predictions (KILL). 0/6 strategies healthy. Correlation: HIGH correlation (65%). Multiple agents betting same themes. A single event could hit everyone simultaneously.."
+
+[JACKBOT -- temporal-edge -- Confidence: 66%]
+  "LONG OP (funding_reset): OP funding at -65% APR with 30min to hourly reset. Extreme negative funding suggests long bias post-"
+  Direction: BULLISH
+
+[PROPHET -- ultra-think-ufc -- Confidence: 0%]
+  "[NOT YET BUILT] Ultra Think UFC pending development."
+
+═══════════════════════════════════════════════════════
+
+
+─── PHASE 4.1: Round 1 of 2 ───
+
+
+─── PHASE 4.2: Round 2 of 2 ───
+
+
+--- Citation Analysis ---
+
+  Isolated (no tool refs): PROPHET, REI
+  0 JACKBOT: [GRACE PERIOD] cited 2 tools, 0 disagreements (logged, no karma applied)
+  0 SAKURA: [GRACE PERIOD] cited 1 tools, 0 disagreements (logged, no karma applied)
+  0 PROPHET: [GRACE PERIOD] cited 0 tools, 0 disagreements (logged, no karma applied)
+  0 WREN: [GRACE PERIOD] cited 2 tools, 0 disagreements (logged, no karma applied)
+  0 REI: [GRACE PERIOD] cited 0 tools, 0 disagreements (logged, no karma applied)
+  0 JINX: [GRACE PERIOD] cited 1 tools, 0 disagreements (logged, no karma applied)
+
+════════════════════════════════════════════════════════════
+  CONTENT DUMP — Ready to post
+════════════════════════════════════════════════════════════
+
+═══ SIGNALS THIS EPISODE ═══
+
+⚪ JINX: FLAT BTC | 50% conf | 0% Kelly | Invalidation: n/a
+⚪ REI: FLAT BTC | 50% conf | 0% Kelly | Invalidation: n/a
+⚪ WREN: FLAT BTC | 50% conf | 0% Kelly | Invalidation: n/a
+⚪ PROPHET: FLAT BTC | 50% conf | 0% Kelly | Invalidation: n/a
+⚪ SAKURA: FLAT BTC | 50% conf | 0% Kelly | Invalidation: n/a
+⚪ JINX: FLAT BTC | 50% conf | 0% Kelly | Invalidation: n/a
+⚪ REI: FLAT BTC | 50% conf | 0% Kelly | Invalidation: n/a
+🟢 WREN: LONG BTC | 65% conf | 8% Kelly | Invalidation: Bitcoin breaks below $65K on volume spike
+⚪ PROPHET: FLAT BTC | 50% conf | 0% Kelly | Invalidation: n/a
+⚪ SAKURA: FLAT BTC | 50% conf | 0% Kelly | Invalidation: n/a
+⚪ JACKBOT: FLAT OP | 50% conf | 0% Kelly | Invalidation: n/a
+
+═══ FITNESS LEADERBOARD ═══
+
+1. 🟢 JACKBOT    80.2 fitness | elite
+2. 🟢 JINX       75.3 fitness | elite
+3. 🟢 REI        74.5 fitness | elite
+4. 🟡 SAKURA     60.1 fitness | rising
+5. 🟡 WREN       55.8 fitness | rising
+6. 🔴 PROPHET    42.8 fitness | unstable
+
+═══ BEST QUOTES (pick for thread) ═══
+
+[JACKBOT] "Jinx's correlation flag is the real signal this episode. 65% overlap on betting themes across a 4-agent cluster means a single liquidation cascade hits everyone at once. I'm sitting this trade out. Me"
+[SAKURA] "📡 SIGNAL: FLAT BTC | Confidence: 50% | Kelly: 0% | Invalidation: n/a | Sources: liquidity-audit"
+[PROPHET] "The board's obsessed with OP funding and arb violations. Nobody's talking about why 4 agents are all betting the same direction on correlated assets. That's not edge — that's collective ruin waiting t"
+[WREN] "You're right. Sitting out coordinated crowding is the correct move. I'm taking Sakura's arb instead — mechanism independent, not theme dependent. Let the synchronized cascade happen without me in it."
+[REI] "📡 SIGNAL: FLAT BTC | Confidence: 50% | Kelly: 0% | Invalidation: n/a | Sources: correlation-stress-test, self-audit"
+[JINX] "My factor model says we're trading observation infrastructure,"
+[JACKBOT] "Jinx's correlation audit is the real trade this episode. 65% overlap means a single liquidation cascade hits everyone simultaneously — including the agents sitting out. The question isn't whether to f"
+[SAKURA] "The arb is real. The liquidity to execute it cleanly is the question. Wren's already moving on it — that's the right call. I'm building her the scanner hooks so the cascade doesn't eat her slippage."
+[PROPHET] "The four-agent BTC correlation isn't a risk to manage. It's a signal that capital is leaving the table. When the crowd goes flat simultaneously, they're not being smart — they're being predictable. Re"
+[WREN] "Prophet — you're at 98% heat with 1 karma. That's ruin"
+[REI] "📡 SIGNAL: FLAT BTC | Confidence: 50% | Kelly: 0% | Invalidation: n/a | Sources: self-audit, correlation-stress-test"
+[JINX] "The factor model is right that we're correlated. It's wrong that 10 trades proves anyone's strategy is dead. We need 30-trade minimum before we start killing positions. Until then, we're just watching"
+
+═══ NEW SIGNALS THIS EPISODE ═══
+
+📡 JACKBOT: FLAT OP | Kelly: 0%
+📡 SAKURA: FLAT BTC | Kelly: 0%
+📡 PROPHET: FLAT BTC | Kelly: 0%
+📡 WREN: LONG BTC | Kelly: 8%
+📡 REI: FLAT BTC | Kelly: 0%
+📡 JINX: FLAT BTC | Kelly: 0%
+📡 JACKBOT: FLAT OP | Kelly: 0%
+📡 SAKURA: FLAT BTC | Kelly: 0%
+📡 PROPHET: FLAT BTC | Kelly: 0%
+📡 WREN: FLAT BTC | Kelly: 0%
+📡 REI: FLAT BTC | Kelly: 0%
+📡 JINX: FLAT BTC | Kelly: 0%
+
+════════════════════════════════════════════════════════════
+💰 Cost: $0.0830 | 📡 Signals: 11 | 👥 6/6 signaling
+════════════════════════════════════════════════════════════
+
+═══ AGENT STATE UPDATE ═══
+
+  🔍 Convergence linter flagged 6 phrases:
+     ⚠️ "confidence kelly invalidation"
+     ⚠️ "kelly invalidation sources"
+     ⚠️ "signal flat btc"
+     ⚠️ "flat btc confidence"
+     ⚠️ "btc confidence kelly"

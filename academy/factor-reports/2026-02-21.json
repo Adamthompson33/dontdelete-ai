@@ -1,0 +1,288 @@
+{
+  "date": "2026-02-21",
+  "timestamp": "2026-02-21T00:30:19.633Z",
+  "audits": [
+    {
+      "strategyName": "JACKBOT Predictions",
+      "agent": "JACKBOT",
+      "sharpe": {
+        "sharpeRatio": -24.4452976146817,
+        "sortinoRatio": -13.515553364696881,
+        "meanReturn": -0.2814306827328611,
+        "stdReturn": 0.18275799531286632,
+        "downsideDeviation": 0.33055054915879994,
+        "winRate": 0,
+        "profitFactor": 0,
+        "calmarRatio": -25.200000000000003,
+        "maxDrawdown": 2.8143068273286107,
+        "currentDrawdown": 2.8143068273286107,
+        "assessment": "Negative Sharpe (-24.45). Strategy is losing money risk-adjusted. Kill or redesign."
+      },
+      "monteCarlo": {
+        "simulations": 10000,
+        "tradeCount": 10,
+        "meanPnl": -2.818738172847882,
+        "medianPnl": -2.8034020901331127,
+        "stdPnl": 0.5458795625460544,
+        "profitProbability": 0,
+        "ruinProbability": 0,
+        "percentile5": -3.738618499018236,
+        "percentile25": -3.184870755296018,
+        "percentile75": -2.436195279585503,
+        "percentile95": -1.9474767507050406,
+        "maxDrawdown": {
+          "mean": 2.818738172847887,
+          "median": 2.8036123781099014,
+          "worst": 5.221262206691286,
+          "percentile95": 3.7387925820497707
+        },
+        "avgRecoveryTrades": 10,
+        "confidence": "significant",
+        "summary": "NO EDGE DETECTED. Mean P&L: $-2.82. 0% profit probability. This strategy is losing money. Consider killing it."
+      },
+      "verdict": "kill",
+      "explanation": "Strategy is losing money over 10 trades. Mean P&L: $-2.82. Sharpe: -24.45. Kill it."
+    },
+    {
+      "strategyName": "SAKURA Predictions",
+      "agent": "SAKURA",
+      "sharpe": {
+        "sharpeRatio": -8.013276798399666,
+        "sortinoRatio": -7.802299715160394,
+        "meanReturn": -0.1397660660194489,
+        "stdReturn": 0.2768801790202584,
+        "downsideDeviation": 0.28436712193568586,
+        "winRate": 0,
+        "profitFactor": 0,
+        "calmarRatio": -50.39999999999999,
+        "maxDrawdown": 0.6988303300972446,
+        "currentDrawdown": 0.6988303300972446,
+        "assessment": "Only 5 data points. Sharpe of -8.01 is unreliable. Need 30+ for confidence."
+      },
+      "monteCarlo": {
+        "simulations": 10000,
+        "tradeCount": 5,
+        "meanPnl": -0.7015297111831439,
+        "medianPnl": -0.6988303300972446,
+        "stdPnl": 0.5586633986899129,
+        "profitProbability": 0,
+        "ruinProbability": 0,
+        "percentile5": -1.9291446641487324,
+        "percentile25": -1.2972719190821138,
+        "percentile75": -0.09139870963762567,
+        "percentile95": -0.06289922625393692,
+        "maxDrawdown": {
+          "mean": 0.7015297111831547,
+          "median": 0.6988303300972446,
+          "worst": 3.1743637253330936,
+          "percentile95": 1.9291446641487324
+        },
+        "avgRecoveryTrades": 5,
+        "confidence": "significant",
+        "summary": "NO EDGE DETECTED. Mean P&L: $-0.70. 0% profit probability. This strategy is losing money. Consider killing it."
+      },
+      "verdict": "monitor",
+      "explanation": "Inconclusive. Mean P&L: $-0.70, Sharpe: -8.01. Need more data."
+    },
+    {
+      "strategyName": "PROPHET Predictions",
+      "agent": "PROPHET",
+      "sharpe": {
+        "sharpeRatio": -16.94343900813696,
+        "sortinoRatio": -12.063925162270039,
+        "meanReturn": -0.34075409533593803,
+        "stdReturn": 0.3192565313521265,
+        "downsideDeviation": 0.4483866978743976,
+        "winRate": 0,
+        "profitFactor": 0,
+        "calmarRatio": -42,
+        "maxDrawdown": 2.044524572015628,
+        "currentDrawdown": 2.044524572015628,
+        "assessment": "Only 6 data points. Sharpe of -16.94 is unreliable. Need 30+ for confidence."
+      },
+      "monteCarlo": {
+        "simulations": 10000,
+        "tradeCount": 6,
+        "meanPnl": -2.0547999627044145,
+        "medianPnl": -2.025240996293121,
+        "stdPnl": 0.7122332554967342,
+        "profitProbability": 0,
+        "ruinProbability": 0,
+        "percentile5": -3.2654455720352713,
+        "percentile25": -2.536897654479392,
+        "percentile75": -1.526863908505029,
+        "percentile95": -0.8970364384709739,
+        "maxDrawdown": {
+          "mean": 2.0547999627044238,
+          "median": 2.025240996293121,
+          "worst": 4.46367565627705,
+          "percentile95": 3.2654455720352713
+        },
+        "avgRecoveryTrades": 6,
+        "confidence": "significant",
+        "summary": "NO EDGE DETECTED. Mean P&L: $-2.05. 0% profit probability. This strategy is losing money. Consider killing it."
+      },
+      "verdict": "monitor",
+      "explanation": "Inconclusive. Mean P&L: $-2.05, Sharpe: -16.94. Need more data."
+    },
+    {
+      "strategyName": "WREN Predictions",
+      "agent": "WREN",
+      "sharpe": {
+        "sharpeRatio": -20.869865871784576,
+        "sortinoRatio": -12.850675841616999,
+        "meanReturn": -0.37905116125818156,
+        "stdReturn": 0.28832243954626835,
+        "downsideDeviation": 0.4682439052481139,
+        "winRate": 0,
+        "profitFactor": 0,
+        "calmarRatio": -22.909090909090907,
+        "maxDrawdown": 4.169562773839997,
+        "currentDrawdown": 4.169562773839997,
+        "assessment": "Negative Sharpe (-20.87). Strategy is losing money risk-adjusted. Kill or redesign."
+      },
+      "monteCarlo": {
+        "simulations": 10000,
+        "tradeCount": 11,
+        "meanPnl": -4.165681019991762,
+        "medianPnl": -4.141809610972583,
+        "stdPnl": 0.9215321523126232,
+        "profitProbability": 0,
+        "ruinProbability": 0,
+        "percentile5": -5.715116858887175,
+        "percentile25": -4.78047637012423,
+        "percentile75": -3.538533379004392,
+        "percentile95": -2.6774354604765924,
+        "maxDrawdown": {
+          "mean": 4.165681019991775,
+          "median": 4.141858222870649,
+          "worst": 7.822914537503657,
+          "percentile95": 5.715194370156231
+        },
+        "avgRecoveryTrades": 11,
+        "confidence": "significant",
+        "summary": "NO EDGE DETECTED. Mean P&L: $-4.17. 0% profit probability. This strategy is losing money. Consider killing it."
+      },
+      "verdict": "kill",
+      "explanation": "Strategy is losing money over 11 trades. Mean P&L: $-4.17. Sharpe: -20.87. Kill it."
+    },
+    {
+      "strategyName": "REI Predictions",
+      "agent": "REI",
+      "sharpe": {
+        "sharpeRatio": -26.39763444710124,
+        "sortinoRatio": -13.98047491288792,
+        "meanReturn": -0.5002600745197999,
+        "stdReturn": 0.30083689900767746,
+        "downsideDeviation": 0.5680338141362714,
+        "winRate": 0,
+        "profitFactor": 0,
+        "calmarRatio": -50.4,
+        "maxDrawdown": 2.5013003725989997,
+        "currentDrawdown": 2.5013003725989997,
+        "assessment": "Only 5 data points. Sharpe of -26.40 is unreliable. Need 30+ for confidence."
+      },
+      "monteCarlo": {
+        "simulations": 10000,
+        "tradeCount": 5,
+        "meanPnl": -2.500210891643653,
+        "medianPnl": -2.5013003725989997,
+        "stdPnl": 0.5938937192986865,
+        "profitProbability": 0,
+        "ruinProbability": 0,
+        "percentile5": -3.4695369135328034,
+        "percentile25": -2.913485825808303,
+        "percentile75": -2.089114919389696,
+        "percentile95": -1.515114919389696,
+        "maxDrawdown": {
+          "mean": 2.5002108916436905,
+          "median": 2.5013003725989997,
+          "worst": 3.95,
+          "percentile95": 3.4695369135328034
+        },
+        "avgRecoveryTrades": 5,
+        "confidence": "significant",
+        "summary": "NO EDGE DETECTED. Mean P&L: $-2.50. 0% profit probability. This strategy is losing money. Consider killing it."
+      },
+      "verdict": "monitor",
+      "explanation": "Inconclusive. Mean P&L: $-2.50, Sharpe: -26.40. Need more data."
+    },
+    {
+      "strategyName": "JINX Predictions",
+      "agent": "JINX",
+      "sharpe": {
+        "sharpeRatio": -17.442880185797822,
+        "sortinoRatio": -12.467607733817015,
+        "meanReturn": -0.43532858847692907,
+        "stdReturn": 0.3961861245751778,
+        "downsideDeviation": 0.5542865359403376,
+        "winRate": 0,
+        "profitFactor": 0,
+        "calmarRatio": -63,
+        "maxDrawdown": 1.7413143539077163,
+        "currentDrawdown": 1.7413143539077163,
+        "assessment": "Only 4 data points. Sharpe of -17.44 is unreliable. Need 30+ for confidence."
+      },
+      "monteCarlo": {
+        "simulations": 10000,
+        "tradeCount": 4,
+        "meanPnl": -1.7487476630570713,
+        "medianPnl": -1.741314353907716,
+        "stdPnl": 0.6930813179840102,
+        "profitProbability": 0,
+        "ruinProbability": 0,
+        "percentile5": -3.069999916241141,
+        "percentile25": -2.3879082260490856,
+        "percentile75": -1.129508418130331,
+        "percentile95": -0.48291454598896133,
+        "maxDrawdown": {
+          "mean": 1.7487476630570926,
+          "median": 1.741314353907716,
+          "worst": 3.174363725333094,
+          "percentile95": 3.069999916241141
+        },
+        "avgRecoveryTrades": 4,
+        "confidence": "insufficient_data",
+        "summary": "4 trades is too few for reliable Monte Carlo. Accumulate more data. Current mean P&L: $-1.75."
+      },
+      "verdict": "monitor",
+      "explanation": "Only 4 trades. Too early to judge. Continue paper trading."
+    }
+  ],
+  "correlations": {
+    "correlatedPairs": [
+      {
+        "agent1": "SAKURA",
+        "agent2": "PROPHET",
+        "sharedThemes": [
+          "crypto",
+          "sports",
+          "politics"
+        ],
+        "correlation": 0.9358354709312776,
+        "combinedExposure": 50.81740530636696
+      },
+      {
+        "agent1": "PROPHET",
+        "agent2": "WREN",
+        "sharedThemes": [
+          "politics",
+          "ai_tech"
+        ],
+        "correlation": 0.5570097564602497,
+        "combinedExposure": 34.60274138930828
+      },
+      {
+        "agent1": "SAKURA",
+        "agent2": "WREN",
+        "sharedThemes": [
+          "politics"
+        ],
+        "correlation": 0.4638703619715017,
+        "combinedExposure": 14.911961645966718
+      }
+    ],
+    "portfolioCorrelation": 0.6522385297876764,
+    "assessment": "HIGH correlation (65%). Multiple agents betting same themes. A single event could hit everyone simultaneously."
+  }
+}

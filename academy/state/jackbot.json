@@ -1,40 +1,51 @@
 {
   "agent": "JACKBOT",
   "team": "scribe",
-  "lastUpdated": "2026-02-20T11:59:41.562Z",
+  "lastUpdated": "2026-02-21T00:32:13.184Z",
   "runNumber": 6,
   "signals": {
-    "total": 0,
+    "total": 1,
     "correct": 0,
     "incorrect": 0,
-    "pending": 0,
+    "pending": 1,
     "accuracy": null,
-    "avgConfidence": 0,
+    "avgConfidence": 0.5,
     "calibrationScore": null
   },
-  "recentSignals": [],
+  "recentSignals": [
+    {
+      "run": 6,
+      "asset": "OP",
+      "direction": "flat",
+      "confidence": 0.5,
+      "kelly_size": 0,
+      "invalidation": "n/a",
+      "data_sources": [
+        "temporal-edge",
+        "self-audit"
+      ],
+      "timestamp": "2026-02-21T00:30:26.583Z",
+      "outcome": "pending"
+    }
+  ],
   "record": {
-    "totalBets": 0,
+    "totalBets": 10,
     "wins": 0,
-    "losses": 0,
+    "losses": 10,
     "exits": 0,
     "openPositions": 0,
-    "winRate": null
+    "winRate": 0
   },
   "recentDecisions": [],
   "toolPerformance": null,
   "convergenceFlags": {
     "phrasesUsedByMultipleAgents": [
       "confidence kelly invalidation",
-      "the arb violation",
-      "before anyone sizes",
-      "before size anything",
+      "kelly invalidation sources",
       "signal flat btc",
       "flat btc confidence",
       "btc confidence kelly",
-      "kelly invalidation sources",
-      "those deployment logs",
-      "parameters the last"
+      "invalidation sources correlationstresstest"
     ],
     "bannedPhrases": [
       {
@@ -76,24 +87,32 @@
       {
         "phrase": "parameters the last",
         "bannedAtRun": 6
+      },
+      {
+        "phrase": "confidence kelly invalidation",
+        "bannedAtRun": 6
+      },
+      {
+        "phrase": "kelly invalidation sources",
+        "bannedAtRun": 6
       }
     ]
   },
   "fitness": {
-    "current": 82.18569317267139,
+    "current": 80.18569317267139,
     "trend": [
-      4.741553536796985,
       0,
+      -2,
       -2
     ],
     "tier": "elite",
     "signalScore": 0
   },
   "karma": {
-    "current": 82.18569317267139,
+    "current": 80.18569317267139,
     "trend": [
-      4.741553536796985,
       0,
+      -2,
       -2
     ],
     "tier": "elite",

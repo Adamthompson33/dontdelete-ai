@@ -1,13 +1,13 @@
 {
   "date": "2026-02-21",
-  "scannedAt": "2026-02-21T13:41:18.836Z",
-  "marketsScanned": 38,
-  "opportunitiesFound": 13,
+  "scannedAt": "2026-02-21T18:14:11.953Z",
+  "marketsScanned": 39,
+  "opportunitiesFound": 12,
   "signals": [
     {
       "tool": "sakura-arb-scanner",
-      "timestamp": "2026-02-21T13:41:18.833Z",
-      "unixMs": 1771681278833,
+      "timestamp": "2026-02-21T18:14:11.834Z",
+      "unixMs": 1771697651834,
       "coin": "Will Bitcoin reach $200,000 be",
       "direction": "ARB",
       "confidence": "high",
@@ -30,8 +30,8 @@
     },
     {
       "tool": "sakura-arb-scanner",
-      "timestamp": "2026-02-21T13:41:18.834Z",
-      "unixMs": 1771681278834,
+      "timestamp": "2026-02-21T18:14:11.834Z",
+      "unixMs": 1771697651834,
       "coin": "Will Bitcoin reach $200,000 be",
       "direction": "ARB",
       "confidence": "high",
@@ -54,8 +54,8 @@
     },
     {
       "tool": "sakura-arb-scanner",
-      "timestamp": "2026-02-21T13:41:18.834Z",
-      "unixMs": 1771681278834,
+      "timestamp": "2026-02-21T18:14:11.834Z",
+      "unixMs": 1771697651834,
       "coin": "[@mattyb’s 500th market specta",
       "direction": "ARB",
       "confidence": "low",
@@ -73,8 +73,8 @@
     },
     {
       "tool": "sakura-arb-scanner",
-      "timestamp": "2026-02-21T13:41:18.834Z",
-      "unixMs": 1771681278834,
+      "timestamp": "2026-02-21T18:14:11.834Z",
+      "unixMs": 1771697651834,
       "coin": "Will Bitcoin (BTC) be below CH",
       "direction": "ARB",
       "confidence": "low",
@@ -92,8 +92,8 @@
     },
     {
       "tool": "sakura-arb-scanner",
-      "timestamp": "2026-02-21T13:41:18.834Z",
-      "unixMs": 1771681278834,
+      "timestamp": "2026-02-21T18:14:11.834Z",
+      "unixMs": 1771697651834,
       "coin": "Will Bitcoin (BTC) price first",
       "direction": "ARB",
       "confidence": "low",
@@ -111,8 +111,8 @@
     },
     {
       "tool": "sakura-arb-scanner",
-      "timestamp": "2026-02-21T13:41:18.834Z",
-      "unixMs": 1771681278834,
+      "timestamp": "2026-02-21T18:14:11.834Z",
+      "unixMs": 1771697651834,
       "coin": "Will a Republican President ch",
       "direction": "ARB",
       "confidence": "low",
@@ -130,8 +130,8 @@
     },
     {
       "tool": "sakura-arb-scanner",
-      "timestamp": "2026-02-21T13:41:18.834Z",
-      "unixMs": 1771681278834,
+      "timestamp": "2026-02-21T18:14:11.834Z",
+      "unixMs": 1771697651834,
       "coin": "Will a former US president acc",
       "direction": "ARB",
       "confidence": "low",
@@ -149,8 +149,8 @@
     },
     {
       "tool": "sakura-arb-scanner",
-      "timestamp": "2026-02-21T13:41:18.834Z",
-      "unixMs": 1771681278834,
+      "timestamp": "2026-02-21T18:14:11.834Z",
+      "unixMs": 1771697651834,
       "coin": "Will Quinn Ewers defeat Arch M",
       "direction": "ARB",
       "confidence": "low",
@@ -168,14 +168,14 @@
     },
     {
       "tool": "sakura-arb-scanner",
-      "timestamp": "2026-02-21T13:41:18.834Z",
-      "unixMs": 1771681278834,
+      "timestamp": "2026-02-21T18:14:11.834Z",
+      "unixMs": 1771697651834,
       "coin": "(1k subsidy) Will Connor McGre",
       "direction": "ARB",
       "confidence": "low",
       "entryPrice": 0.3772719468964154,
       "expectedEdge": 10,
-      "reasoning": "No bets in 25 days despite $1000 liquidity and $940 volume. Price at 38% may not reflect current information. Research needed.",
+      "reasoning": "No bets in 26 days despite $1000 liquidity and $940 volume. Price at 38% may not reflect current information. Research needed.",
       "invalidation": "Edge drops below 3pp or markets resolve.",
       "markets": [
         {
@@ -187,33 +187,14 @@
     },
     {
       "tool": "sakura-arb-scanner",
-      "timestamp": "2026-02-21T13:41:18.834Z",
-      "unixMs": 1771681278834,
-      "coin": "Same city wins 2+ major sports",
-      "direction": "ARB",
-      "confidence": "low",
-      "entryPrice": 0.1057477721059373,
-      "expectedEdge": 9.5,
-      "reasoning": "No bets in 19 days despite $1000 liquidity and $1908 volume. Price at 11% may not reflect current information. Research needed.",
-      "invalidation": "Edge drops below 3pp or markets resolve.",
-      "markets": [
-        {
-          "question": "Same city wins 2+ major sports championships (2025-2026)?",
-          "prob": 0.1057477721059373,
-          "url": "https://manifold.markets/LBeesley/same-city-wins-2-major-sports-champ"
-        }
-      ]
-    },
-    {
-      "tool": "sakura-arb-scanner",
-      "timestamp": "2026-02-21T13:41:18.834Z",
-      "unixMs": 1771681278834,
+      "timestamp": "2026-02-21T18:14:11.834Z",
+      "unixMs": 1771697651834,
       "coin": "Will Roger Goodell be replaced",
       "direction": "ARB",
       "confidence": "low",
       "entryPrice": 0.554555818774804,
-      "expectedEdge": 5,
-      "reasoning": "No bets in 10 days despite $1000 liquidity and $2830 volume. Price at 55% may not reflect current information. Research needed.",
+      "expectedEdge": 5.5,
+      "reasoning": "No bets in 11 days despite $1000 liquidity and $2830 volume. Price at 55% may not reflect current information. Research needed.",
       "invalidation": "Edge drops below 3pp or markets resolve.",
       "markets": [
         {
@@ -225,14 +206,14 @@
     },
     {
       "tool": "sakura-arb-scanner",
-      "timestamp": "2026-02-21T13:41:18.834Z",
-      "unixMs": 1771681278834,
+      "timestamp": "2026-02-21T18:14:11.834Z",
+      "unixMs": 1771697651834,
       "coin": "Will Bitcoin Outperform Altcoi",
       "direction": "ARB",
       "confidence": "low",
       "entryPrice": 0.6126680811948579,
-      "expectedEdge": 3.5,
-      "reasoning": "No bets in 7 days despite $10000 liquidity and $7757 volume. Price at 61% may not reflect current information. Research needed.",
+      "expectedEdge": 4,
+      "reasoning": "No bets in 8 days despite $10000 liquidity and $7757 volume. Price at 61% may not reflect current information. Research needed.",
       "invalidation": "Edge drops below 3pp or markets resolve.",
       "markets": [
         {
@@ -244,8 +225,8 @@
     },
     {
       "tool": "sakura-arb-scanner",
-      "timestamp": "2026-02-21T13:41:18.834Z",
-      "unixMs": 1771681278834,
+      "timestamp": "2026-02-21T18:14:11.834Z",
+      "unixMs": 1771697651834,
       "coin": "More than 70% of U.S. populati",
       "direction": "ARB",
       "confidence": "low",
@@ -417,7 +398,7 @@
     },
     {
       "type": "stale",
-      "description": "Stale price: \"(1k subsidy) Will Connor McGregor fight at UFC White House?...\" (25 days, $1000 liq)",
+      "description": "Stale price: \"(1k subsidy) Will Connor McGregor fight at UFC White House?...\" (26 days, $1000 liq)",
       "markets": [
         {
           "id": "C0zIqc8tdN",
@@ -430,28 +411,11 @@
       ],
       "expectedEdge": 10,
       "confidence": "low",
-      "reasoning": "No bets in 25 days despite $1000 liquidity and $940 volume. Price at 38% may not reflect current information. Research needed."
+      "reasoning": "No bets in 26 days despite $1000 liquidity and $940 volume. Price at 38% may not reflect current information. Research needed."
     },
     {
       "type": "stale",
-      "description": "Stale price: \"Same city wins 2+ major sports championships (2025-2026)?...\" (19 days, $1000 liq)",
-      "markets": [
-        {
-          "id": "nuchc9hQPz",
-          "question": "Same city wins 2+ major sports championships (2025-2026)?",
-          "prob": 0.1057477721059373,
-          "volume": 1908,
-          "liquidity": 1000,
-          "url": "https://manifold.markets/LBeesley/same-city-wins-2-major-sports-champ"
-        }
-      ],
-      "expectedEdge": 9.5,
-      "confidence": "low",
-      "reasoning": "No bets in 19 days despite $1000 liquidity and $1908 volume. Price at 11% may not reflect current information. Research needed."
-    },
-    {
-      "type": "stale",
-      "description": "Stale price: \"Will Roger Goodell be replaced as commissioner of the NFL be...\" (10 days, $1000 liq)",
+      "description": "Stale price: \"Will Roger Goodell be replaced as commissioner of the NFL be...\" (11 days, $1000 liq)",
       "markets": [
         {
           "id": "oyapnVL3kBXZdKi1mesu",
@@ -462,13 +426,13 @@
           "url": "https://manifold.markets/10thOfficial/will-roger-goodell-be-replaced-as-c"
         }
       ],
-      "expectedEdge": 5,
+      "expectedEdge": 5.5,
       "confidence": "low",
-      "reasoning": "No bets in 10 days despite $1000 liquidity and $2830 volume. Price at 55% may not reflect current information. Research needed."
+      "reasoning": "No bets in 11 days despite $1000 liquidity and $2830 volume. Price at 55% may not reflect current information. Research needed."
     },
     {
       "type": "stale",
-      "description": "Stale price: \"Will Bitcoin Outperform Altcoins in 2026?...\" (7 days, $10000 liq)",
+      "description": "Stale price: \"Will Bitcoin Outperform Altcoins in 2026?...\" (8 days, $10000 liq)",
       "markets": [
         {
           "id": "268sIPs8ZA",
@@ -479,9 +443,9 @@
           "url": "https://manifold.markets/Putcallparity/will-bitcoin-outperform-altcoins-in-quUc0gps9I"
         }
       ],
-      "expectedEdge": 3.5,
+      "expectedEdge": 4,
       "confidence": "low",
-      "reasoning": "No bets in 7 days despite $10000 liquidity and $7757 volume. Price at 61% may not reflect current information. Research needed."
+      "reasoning": "No bets in 8 days despite $10000 liquidity and $7757 volume. Price at 61% may not reflect current information. Research needed."
     },
     {
       "type": "stale",
@@ -519,6 +483,23 @@
     },
     {
       "type": "stale",
+      "description": "Stale price: \"Bitcoin $130K in 2026?...\" (4 days, $1000 liq)",
+      "markets": [
+        {
+          "id": "PSzhLsl2sZ",
+          "question": "Bitcoin $130K in 2026?",
+          "prob": 0.19999999999999996,
+          "volume": 4333.262959765337,
+          "liquidity": 1000,
+          "url": "https://manifold.markets/predyx_markets/bitcoin-130k-in-2026"
+        }
+      ],
+      "expectedEdge": 2,
+      "confidence": "low",
+      "reasoning": "No bets in 4 days despite $1000 liquidity and $4333 volume. Price at 20% may not reflect current information. Research needed."
+    },
+    {
+      "type": "stale",
       "description": "Stale price: \"Bitcoin $140K in 2026?...\" (4 days, $1000 liq)",
       "markets": [
         {
@@ -550,23 +531,6 @@
       "expectedEdge": 2,
       "confidence": "low",
       "reasoning": "No bets in 4 days despite $10000 liquidity and $16278 volume. Price at 13% may not reflect current information. Research needed."
-    },
-    {
-      "type": "stale",
-      "description": "Stale price: \"Bitcoin $130K in 2026?...\" (3 days, $1000 liq)",
-      "markets": [
-        {
-          "id": "PSzhLsl2sZ",
-          "question": "Bitcoin $130K in 2026?",
-          "prob": 0.19999999999999996,
-          "volume": 4333.262959765337,
-          "liquidity": 1000,
-          "url": "https://manifold.markets/predyx_markets/bitcoin-130k-in-2026"
-        }
-      ],
-      "expectedEdge": 1.5,
-      "confidence": "low",
-      "reasoning": "No bets in 3 days despite $1000 liquidity and $4333 volume. Price at 20% may not reflect current information. Research needed."
     },
     {
       "type": "stale",

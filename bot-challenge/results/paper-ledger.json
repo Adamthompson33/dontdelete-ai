@@ -780,8 +780,246 @@
       "persistenceHours": 0,
       "reasoning": "CELO funding at -55.0% APR. Shorts paying longs. Premium: -0.014%. OI: $0.7M. Vol: $0.3M.",
       "invalidation": "Rate drops below 20% APR or flips sign."
+    },
+    {
+      "tool": "sakura-arb-scanner",
+      "timestamp": "2026-02-21T18:14:11.834Z",
+      "unixMs": 1771697651834,
+      "coin": "Will Bitcoin reach $200,000 be",
+      "direction": "ARB",
+      "confidence": "high",
+      "entryPrice": 0.06505928621220008,
+      "expectedEdge": 48.233061350784716,
+      "reasoning": "P(above $500,000) = 54.7% should be ≤ P(above $200,000) = 6.5%. Spread: 48.2pp.",
+      "invalidation": "Edge drops below 3pp or markets resolve.",
+      "markets": [
+        {
+          "question": "Will Bitcoin reach $200,000 before January 1, 2027?",
+          "prob": 0.06505928621220008,
+          "url": "https://manifold.markets/CalibratedGhosts/will-bitcoin-reach-200000-before-ja"
+        },
+        {
+          "question": "[@mattyb’s 500th market spectacular] Will Bitcoin reach $500k before this market reaches 5k traders?",
+          "prob": 0.5473898997200473,
+          "url": "https://manifold.markets/mattyb/mattybs-500th-market-spectacular-wi"
+        }
+      ]
+    },
+    {
+      "tool": "sakura-arb-scanner",
+      "timestamp": "2026-02-21T18:14:11.834Z",
+      "unixMs": 1771697651834,
+      "coin": "Will Bitcoin reach $200,000 be",
+      "direction": "ARB",
+      "confidence": "high",
+      "entryPrice": 0.06505928621220008,
+      "expectedEdge": 48.233061350784716,
+      "reasoning": "P(above $500,000) = 54.7% but P(above $200,000) = 6.5%. Higher target can't have higher probability. Trade: YES on lower, NO on higher.",
+      "invalidation": "Edge drops below 3pp or markets resolve.",
+      "markets": [
+        {
+          "question": "Will Bitcoin reach $200,000 before January 1, 2027?",
+          "prob": 0.06505928621220008,
+          "url": "https://manifold.markets/CalibratedGhosts/will-bitcoin-reach-200000-before-ja"
+        },
+        {
+          "question": "[@mattyb’s 500th market spectacular] Will Bitcoin reach $500k before this market reaches 5k traders?",
+          "prob": 0.5473898997200473,
+          "url": "https://manifold.markets/mattyb/mattybs-500th-market-spectacular-wi"
+        }
+      ]
+    },
+    {
+      "tool": "sakura-arb-scanner",
+      "timestamp": "2026-02-21T18:14:11.834Z",
+      "unixMs": 1771697651834,
+      "coin": "[@mattyb’s 500th market specta",
+      "direction": "ARB",
+      "confidence": "low",
+      "entryPrice": 0.5473898997200473,
+      "expectedEdge": 10,
+      "reasoning": "No bets in 108 days despite $1000 liquidity and $733 volume. Price at 55% may not reflect current information. Research needed.",
+      "invalidation": "Edge drops below 3pp or markets resolve.",
+      "markets": [
+        {
+          "question": "[@mattyb’s 500th market spectacular] Will Bitcoin reach $500k before this market reaches 5k traders?",
+          "prob": 0.5473898997200473,
+          "url": "https://manifold.markets/mattyb/mattybs-500th-market-spectacular-wi"
+        }
+      ]
+    },
+    {
+      "tool": "sakura-arb-scanner",
+      "timestamp": "2026-02-21T18:14:11.834Z",
+      "unixMs": 1771697651834,
+      "coin": "Will Bitcoin (BTC) be below CH",
+      "direction": "ARB",
+      "confidence": "low",
+      "entryPrice": 0.1767572328922678,
+      "expectedEdge": 10,
+      "reasoning": "No bets in 321 days despite $1000 liquidity and $738 volume. Price at 18% may not reflect current information. Research needed.",
+      "invalidation": "Edge drops below 3pp or markets resolve.",
+      "markets": [
+        {
+          "question": "Will Bitcoin (BTC) be below CHF1000 or gone Jan 14th 2033 ?",
+          "prob": 0.1767572328922678,
+          "url": "https://manifold.markets/Zardoru/will-bitcoin-btc-be-below-chf1000-o"
+        }
+      ]
+    },
+    {
+      "tool": "sakura-arb-scanner",
+      "timestamp": "2026-02-21T18:14:11.834Z",
+      "unixMs": 1771697651834,
+      "coin": "Will Bitcoin (BTC) price first",
+      "direction": "ARB",
+      "confidence": "low",
+      "entryPrice": 0.15660108896446878,
+      "expectedEdge": 10,
+      "reasoning": "No bets in 172 days despite $1000 liquidity and $7989 volume. Price at 16% may not reflect current information. Research needed.",
+      "invalidation": "Edge drops below 3pp or markets resolve.",
+      "markets": [
+        {
+          "question": "Will Bitcoin (BTC) price first go below $30,000 and then above $50,000 before 2030?",
+          "prob": 0.15660108896446878,
+          "url": "https://manifold.markets/quther/will-bitcoinbtc-price-first-go-belo"
+        }
+      ]
+    },
+    {
+      "tool": "sakura-arb-scanner",
+      "timestamp": "2026-02-21T18:14:11.834Z",
+      "unixMs": 1771697651834,
+      "coin": "Will a Republican President ch",
+      "direction": "ARB",
+      "confidence": "low",
+      "entryPrice": 0.5664964857599937,
+      "expectedEdge": 10,
+      "reasoning": "No bets in 36 days despite $10000 liquidity and $40216 volume. Price at 57% may not reflect current information. Research needed.",
+      "invalidation": "Edge drops below 3pp or markets resolve.",
+      "markets": [
+        {
+          "question": "Will a Republican President choose Sonia Sotomayor's replacement?",
+          "prob": 0.5664964857599937,
+          "url": "https://manifold.markets/ScottAlexander/will-a-republican-president-choose"
+        }
+      ]
+    },
+    {
+      "tool": "sakura-arb-scanner",
+      "timestamp": "2026-02-21T18:14:11.834Z",
+      "unixMs": 1771697651834,
+      "coin": "Will a former US president acc",
+      "direction": "ARB",
+      "confidence": "low",
+      "entryPrice": 0.2991313832845691,
+      "expectedEdge": 10,
+      "reasoning": "No bets in 186 days despite $2000 liquidity and $1470 volume. Price at 30% may not reflect current information. Research needed.",
+      "invalidation": "Edge drops below 3pp or markets resolve.",
+      "markets": [
+        {
+          "question": "Will a former US president accuse Trump of interfering with the 2026 mid-term elections, before March 2027?",
+          "prob": 0.2991313832845691,
+          "url": "https://manifold.markets/jgyou/will-a-former-us-president-accuse-t"
+        }
+      ]
+    },
+    {
+      "tool": "sakura-arb-scanner",
+      "timestamp": "2026-02-21T18:14:11.834Z",
+      "unixMs": 1771697651834,
+      "coin": "Will Quinn Ewers defeat Arch M",
+      "direction": "ARB",
+      "confidence": "low",
+      "entryPrice": 0.2461538446031391,
+      "expectedEdge": 10,
+      "reasoning": "No bets in 69 days despite $1000 liquidity and $770 volume. Price at 25% may not reflect current information. Research needed.",
+      "invalidation": "Edge drops below 3pp or markets resolve.",
+      "markets": [
+        {
+          "question": "Will Quinn Ewers defeat Arch Manning's NFL team in a conference championship or Super Bowl?",
+          "prob": 0.2461538446031391,
+          "url": "https://manifold.markets/LesterCrafton/will-quinn-ewers-defeat-arch-mannin"
+        }
+      ]
+    },
+    {
+      "tool": "sakura-arb-scanner",
+      "timestamp": "2026-02-21T18:14:11.834Z",
+      "unixMs": 1771697651834,
+      "coin": "(1k subsidy) Will Connor McGre",
+      "direction": "ARB",
+      "confidence": "low",
+      "entryPrice": 0.3772719468964154,
+      "expectedEdge": 10,
+      "reasoning": "No bets in 26 days despite $1000 liquidity and $940 volume. Price at 38% may not reflect current information. Research needed.",
+      "invalidation": "Edge drops below 3pp or markets resolve.",
+      "markets": [
+        {
+          "question": "(1k subsidy) Will Connor McGregor fight at UFC White House?",
+          "prob": 0.3772719468964154,
+          "url": "https://manifold.markets/StephenFowler28ac/will-connor-mcgregor-fight-at-ufc-w"
+        }
+      ]
+    },
+    {
+      "tool": "sakura-arb-scanner",
+      "timestamp": "2026-02-21T18:14:11.834Z",
+      "unixMs": 1771697651834,
+      "coin": "Will Roger Goodell be replaced",
+      "direction": "ARB",
+      "confidence": "low",
+      "entryPrice": 0.554555818774804,
+      "expectedEdge": 5.5,
+      "reasoning": "No bets in 11 days despite $1000 liquidity and $2830 volume. Price at 55% may not reflect current information. Research needed.",
+      "invalidation": "Edge drops below 3pp or markets resolve.",
+      "markets": [
+        {
+          "question": "Will Roger Goodell be replaced as commissioner of the NFL before the Buffalo Bills make it to the Super Bowl?",
+          "prob": 0.554555818774804,
+          "url": "https://manifold.markets/10thOfficial/will-roger-goodell-be-replaced-as-c"
+        }
+      ]
+    },
+    {
+      "tool": "sakura-arb-scanner",
+      "timestamp": "2026-02-21T18:14:11.834Z",
+      "unixMs": 1771697651834,
+      "coin": "Will Bitcoin Outperform Altcoi",
+      "direction": "ARB",
+      "confidence": "low",
+      "entryPrice": 0.6126680811948579,
+      "expectedEdge": 4,
+      "reasoning": "No bets in 8 days despite $10000 liquidity and $7757 volume. Price at 61% may not reflect current information. Research needed.",
+      "invalidation": "Edge drops below 3pp or markets resolve.",
+      "markets": [
+        {
+          "question": "Will Bitcoin Outperform Altcoins in 2026?",
+          "prob": 0.6126680811948579,
+          "url": "https://manifold.markets/Putcallparity/will-bitcoin-outperform-altcoins-in-quUc0gps9I"
+        }
+      ]
+    },
+    {
+      "tool": "sakura-arb-scanner",
+      "timestamp": "2026-02-21T18:14:11.834Z",
+      "unixMs": 1771697651834,
+      "coin": "More than 70% of U.S. populati",
+      "direction": "ARB",
+      "confidence": "low",
+      "entryPrice": 0.3805523712130128,
+      "expectedEdge": 3.5,
+      "reasoning": "No bets in 7 days despite $1000 liquidity and $1922 volume. Price at 38% may not reflect current information. Research needed.",
+      "invalidation": "Edge drops below 3pp or markets resolve.",
+      "markets": [
+        {
+          "question": "More than 70% of U.S. population believe Trump is too old to be president by EOY 2026",
+          "prob": 0.3805523712130128,
+          "url": "https://manifold.markets/TheWabiSabi/more-than-70-of-us-population-belie"
+        }
+      ]
     }
   ],
-  "lastScanAt": "2026-02-21T15:42:33.205Z",
-  "totalScans": 4
+  "lastScanAt": "2026-02-21T18:14:11.952Z",
+  "totalScans": 5
 }

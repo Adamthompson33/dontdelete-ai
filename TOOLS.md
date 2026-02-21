@@ -70,4 +70,23 @@ Free (no key): DexScreener, GeckoTerminal
 
 ---
 
+### AgentMail
+- **Jackbot inbox:** jackbot-academy@agentmail.to
+- **Taylor inbox:** taylor@agentmail.to
+- **API Key:** `am_us_659c3161043d65356073582b76e23d33b6eb61982d7cffd4085c778d4c2ab228`
+- **SDK:** Python `agentmail` package (installed)
+- **Usage:**
+  ```python
+  from agentmail import AgentMail
+  c = AgentMail(api_key="YOUR_KEY")
+  # Send
+  c.inboxes.messages.send(inbox_id="jackbot-academy@agentmail.to", to="taylor@agentmail.to", subject="...", text="...")
+  # List
+  msgs = c.inboxes.messages.list(inbox_id="jackbot-academy@agentmail.to")
+  # Read (fields: from_, subject, text, preview, thread_id, message_id)
+  m = c.inboxes.messages.get(inbox_id="...", message_id="...")
+  ```
+
+---
+
 Add whatever helps you do your job. This is your cheat sheet.

@@ -1,0 +1,17 @@
+{
+  "name": "bot-challenge",
+  "version": "0.1.0",
+  "description": "Academy Bot Challenge — AI trading tool evaluation framework",
+  "scripts": {
+    "scan": "npx ts-node tools/rei-funding-carry.ts",
+    "track": "npx ts-node tools/outcome-tracker.ts"
+  },
+  "dependencies": {
+    "axios": "^1.7.0"
+  },
+  "devDependencies": {
+    "typescript": "^5.4.0",
+    "ts-node": "^10.9.0",
+    "@types/node": "^20.0.0"
+  }
+}

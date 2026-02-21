@@ -18,7 +18,12 @@
         "priceChange": 13.244224422442253,
         "pnlPercent": 18.530446983562946,
         "status": "WINNING"
-      }
+      },
+      "kelly_size": 0,
+      "kelly_raw": -0.30000000000000004,
+      "kelly_action": "SKIP",
+      "kelly_reasoning": "Kelly = -30.0% (p=35%). Negative edge — no position.",
+      "kelly_sizedAt": "2026-02-21T18:18:28.686Z"
     },
     {
       "tool": "rei-funding-carry",
@@ -38,7 +43,12 @@
         "priceChange": -7.1117561683599435,
         "pnlPercent": -5.108268474372627,
         "status": "LOSING"
-      }
+      },
+      "kelly_size": 0,
+      "kelly_raw": -0.30000000000000004,
+      "kelly_action": "SKIP",
+      "kelly_reasoning": "Kelly = -30.0% (p=35%). Negative edge — no position.",
+      "kelly_sizedAt": "2026-02-21T18:18:28.687Z"
     },
     {
       "tool": "rei-funding-carry",
@@ -58,7 +68,12 @@
         "priceChange": 3.0286641427798733,
         "pnlPercent": 4.82972133041599,
         "status": "WINNING"
-      }
+      },
+      "kelly_size": 0,
+      "kelly_raw": -0.30000000000000004,
+      "kelly_action": "SKIP",
+      "kelly_reasoning": "Kelly = -30.0% (p=35%). Negative edge — no position.",
+      "kelly_sizedAt": "2026-02-21T18:18:28.687Z"
     },
     {
       "tool": "rei-funding-carry",
@@ -78,7 +93,12 @@
         "priceChange": -9.88563371455428,
         "pnlPercent": -8.488101037675051,
         "status": "LOSING"
-      }
+      },
+      "kelly_size": 0,
+      "kelly_raw": -0.30000000000000004,
+      "kelly_action": "SKIP",
+      "kelly_reasoning": "Kelly = -30.0% (p=35%). Negative edge — no position.",
+      "kelly_sizedAt": "2026-02-21T18:18:28.687Z"
     },
     {
       "tool": "rei-funding-carry",
@@ -98,7 +118,12 @@
         "priceChange": 1.1152416356877473,
         "pnlPercent": 1.7054543017961972,
         "status": "WINNING"
-      }
+      },
+      "kelly_size": 0,
+      "kelly_raw": -0.30000000000000004,
+      "kelly_action": "SKIP",
+      "kelly_reasoning": "Kelly = -30.0% (p=35%). Negative edge — no position.",
+      "kelly_sizedAt": "2026-02-21T18:18:28.687Z"
     },
     {
       "tool": "rei-funding-carry",
@@ -118,7 +143,12 @@
         "priceChange": -3.783335771049692,
         "pnlPercent": -3.2554538601138256,
         "status": "LOSING"
-      }
+      },
+      "kelly_size": 0.2,
+      "kelly_raw": 0.3999999999999999,
+      "kelly_action": "SIZE",
+      "kelly_reasoning": "Kelly = 40.0% (p=70%). Capped at 20% max position.",
+      "kelly_sizedAt": "2026-02-21T18:18:28.687Z"
     },
     {
       "tool": "rei-funding-carry",
@@ -138,7 +168,12 @@
         "priceChange": -4.038431249015592,
         "pnlPercent": -3.5175146222679814,
         "status": "LOSING"
-      }
+      },
+      "kelly_size": 0.2,
+      "kelly_raw": 0.3999999999999999,
+      "kelly_action": "SIZE",
+      "kelly_reasoning": "Kelly = 40.0% (p=70%). Capped at 20% max position.",
+      "kelly_sizedAt": "2026-02-21T18:18:28.687Z"
     },
     {
       "tool": "rei-funding-carry",
@@ -158,7 +193,12 @@
         "priceChange": -3.7030289982279676,
         "pnlPercent": -3.2104991413636235,
         "status": "LOSING"
-      }
+      },
+      "kelly_size": 0.2,
+      "kelly_raw": 0.3999999999999999,
+      "kelly_action": "SIZE",
+      "kelly_reasoning": "Kelly = 40.0% (p=70%). Capped at 20% max position.",
+      "kelly_sizedAt": "2026-02-21T18:18:28.687Z"
     },
     {
       "tool": "rei-funding-carry",
@@ -178,7 +218,12 @@
         "priceChange": 4.8255720486576354,
         "pnlPercent": 5.194818569112413,
         "status": "WINNING"
-      }
+      },
+      "kelly_size": 0.2,
+      "kelly_raw": 0.3999999999999999,
+      "kelly_action": "SIZE",
+      "kelly_reasoning": "Kelly = 40.0% (p=70%). Capped at 20% max position.",
+      "kelly_sizedAt": "2026-02-21T18:18:28.687Z"
     },
     {
       "tool": "rei-funding-carry",
@@ -198,7 +243,12 @@
         "priceChange": 12.918646168373224,
         "pnlPercent": 13.252972927142645,
         "status": "WINNING"
-      }
+      },
+      "kelly_size": 0.2,
+      "kelly_raw": 0.3999999999999999,
+      "kelly_action": "SIZE",
+      "kelly_reasoning": "Kelly = 40.0% (p=70%). Capped at 20% max position.",
+      "kelly_sizedAt": "2026-02-21T18:18:28.687Z"
     },
     {
       "tool": "rei-funding-carry",
@@ -218,7 +268,12 @@
         "priceChange": -1.6931010995426734,
         "pnlPercent": -1.410276279207779,
         "status": "LOSING"
-      }
+      },
+      "kelly_size": 0.2,
+      "kelly_raw": 0.3999999999999999,
+      "kelly_action": "SIZE",
+      "kelly_reasoning": "Kelly = 40.0% (p=70%). Capped at 20% max position.",
+      "kelly_sizedAt": "2026-02-21T18:18:28.687Z"
     },
     {
       "tool": "sakura-arb-scanner",
@@ -242,7 +297,12 @@
           "prob": 0.5473898997200473,
           "url": "https://manifold.markets/mattyb/mattybs-500th-market-spectacular-wi"
         }
-      ]
+      ],
+      "kelly_size": 0.2,
+      "kelly_raw": 0.3999999999999999,
+      "kelly_action": "SIZE",
+      "kelly_reasoning": "Kelly = 40.0% (p=70%). Capped at 20% max position.",
+      "kelly_sizedAt": "2026-02-21T18:18:28.687Z"
     },
     {
       "tool": "sakura-arb-scanner",
@@ -266,7 +326,12 @@
           "prob": 0.5473898997200473,
           "url": "https://manifold.markets/mattyb/mattybs-500th-market-spectacular-wi"
         }
-      ]
+      ],
+      "kelly_size": 0.2,
+      "kelly_raw": 0.3999999999999999,
+      "kelly_action": "SIZE",
+      "kelly_reasoning": "Kelly = 40.0% (p=70%). Capped at 20% max position.",
+      "kelly_sizedAt": "2026-02-21T18:18:28.687Z"
     },
     {
       "tool": "sakura-arb-scanner",
@@ -285,7 +350,12 @@
           "prob": 0.5473898997200473,
           "url": "https://manifold.markets/mattyb/mattybs-500th-market-spectacular-wi"
         }
-      ]
+      ],
+      "kelly_size": 0,
+      "kelly_raw": -0.30000000000000004,
+      "kelly_action": "SKIP",
+      "kelly_reasoning": "Kelly = -30.0% (p=35%). Negative edge — no position.",
+      "kelly_sizedAt": "2026-02-21T18:18:28.687Z"
     },
     {
       "tool": "sakura-arb-scanner",
@@ -304,7 +374,12 @@
           "prob": 0.1767572328922678,
           "url": "https://manifold.markets/Zardoru/will-bitcoin-btc-be-below-chf1000-o"
         }
-      ]
+      ],
+      "kelly_size": 0,
+      "kelly_raw": -0.30000000000000004,
+      "kelly_action": "SKIP",
+      "kelly_reasoning": "Kelly = -30.0% (p=35%). Negative edge — no position.",
+      "kelly_sizedAt": "2026-02-21T18:18:28.687Z"
     },
     {
       "tool": "sakura-arb-scanner",
@@ -323,7 +398,12 @@
           "prob": 0.15660108896446878,
           "url": "https://manifold.markets/quther/will-bitcoinbtc-price-first-go-belo"
         }
-      ]
+      ],
+      "kelly_size": 0,
+      "kelly_raw": -0.30000000000000004,
+      "kelly_action": "SKIP",
+      "kelly_reasoning": "Kelly = -30.0% (p=35%). Negative edge — no position.",
+      "kelly_sizedAt": "2026-02-21T18:18:28.687Z"
     },
     {
       "tool": "sakura-arb-scanner",
@@ -342,7 +422,12 @@
           "prob": 0.5664964857599937,
           "url": "https://manifold.markets/ScottAlexander/will-a-republican-president-choose"
         }
-      ]
+      ],
+      "kelly_size": 0,
+      "kelly_raw": -0.30000000000000004,
+      "kelly_action": "SKIP",
+      "kelly_reasoning": "Kelly = -30.0% (p=35%). Negative edge — no position.",
+      "kelly_sizedAt": "2026-02-21T18:18:28.687Z"
     },
     {
       "tool": "sakura-arb-scanner",
@@ -361,7 +446,12 @@
           "prob": 0.2991313832845691,
           "url": "https://manifold.markets/jgyou/will-a-former-us-president-accuse-t"
         }
-      ]
+      ],
+      "kelly_size": 0,
+      "kelly_raw": -0.30000000000000004,
+      "kelly_action": "SKIP",
+      "kelly_reasoning": "Kelly = -30.0% (p=35%). Negative edge — no position.",
+      "kelly_sizedAt": "2026-02-21T18:18:28.687Z"
     },
     {
       "tool": "sakura-arb-scanner",
@@ -380,7 +470,12 @@
           "prob": 0.2461538446031391,
           "url": "https://manifold.markets/LesterCrafton/will-quinn-ewers-defeat-arch-mannin"
         }
-      ]
+      ],
+      "kelly_size": 0,
+      "kelly_raw": -0.30000000000000004,
+      "kelly_action": "SKIP",
+      "kelly_reasoning": "Kelly = -30.0% (p=35%). Negative edge — no position.",
+      "kelly_sizedAt": "2026-02-21T18:18:28.687Z"
     },
     {
       "tool": "sakura-arb-scanner",
@@ -399,7 +494,12 @@
           "prob": 0.3772719468964154,
           "url": "https://manifold.markets/StephenFowler28ac/will-connor-mcgregor-fight-at-ufc-w"
         }
-      ]
+      ],
+      "kelly_size": 0,
+      "kelly_raw": -0.30000000000000004,
+      "kelly_action": "SKIP",
+      "kelly_reasoning": "Kelly = -30.0% (p=35%). Negative edge — no position.",
+      "kelly_sizedAt": "2026-02-21T18:18:28.687Z"
     },
     {
       "tool": "sakura-arb-scanner",
@@ -418,7 +518,12 @@
           "prob": 0.1057477721059373,
           "url": "https://manifold.markets/LBeesley/same-city-wins-2-major-sports-champ"
         }
-      ]
+      ],
+      "kelly_size": 0,
+      "kelly_raw": -0.30000000000000004,
+      "kelly_action": "SKIP",
+      "kelly_reasoning": "Kelly = -30.0% (p=35%). Negative edge — no position.",
+      "kelly_sizedAt": "2026-02-21T18:18:28.687Z"
     },
     {
       "tool": "sakura-arb-scanner",
@@ -437,7 +542,12 @@
           "prob": 0.554555818774804,
           "url": "https://manifold.markets/10thOfficial/will-roger-goodell-be-replaced-as-c"
         }
-      ]
+      ],
+      "kelly_size": 0,
+      "kelly_raw": -0.30000000000000004,
+      "kelly_action": "SKIP",
+      "kelly_reasoning": "Kelly = -30.0% (p=35%). Negative edge — no position.",
+      "kelly_sizedAt": "2026-02-21T18:18:28.687Z"
     },
     {
       "tool": "sakura-arb-scanner",
@@ -456,7 +566,12 @@
           "prob": 0.6126680811948579,
           "url": "https://manifold.markets/Putcallparity/will-bitcoin-outperform-altcoins-in-quUc0gps9I"
         }
-      ]
+      ],
+      "kelly_size": 0,
+      "kelly_raw": -0.30000000000000004,
+      "kelly_action": "SKIP",
+      "kelly_reasoning": "Kelly = -30.0% (p=35%). Negative edge — no position.",
+      "kelly_sizedAt": "2026-02-21T18:18:28.687Z"
     },
     {
       "tool": "sakura-arb-scanner",
@@ -475,7 +590,12 @@
           "prob": 0.3805523712130128,
           "url": "https://manifold.markets/TheWabiSabi/more-than-70-of-us-population-belie"
         }
-      ]
+      ],
+      "kelly_size": 0,
+      "kelly_raw": -0.30000000000000004,
+      "kelly_action": "SKIP",
+      "kelly_reasoning": "Kelly = -30.0% (p=35%). Negative edge — no position.",
+      "kelly_sizedAt": "2026-02-21T18:18:28.687Z"
     },
     {
       "tool": "rei-funding-carry",
@@ -491,7 +611,12 @@
       "priceChange24h": 0.15051655981131437,
       "persistenceHours": 0,
       "reasoning": "AZTEC funding at -1482.8% APR. Shorts paying longs. ⚠️ DISTRESSED (-1483% APR) — likely death spiral, not real edge. Premium: -1.351%. OI: $3.3M. Vol: $13.1M.",
-      "invalidation": "Rate drops below 20% APR or flips sign."
+      "invalidation": "Rate drops below 20% APR or flips sign.",
+      "kelly_size": 0,
+      "kelly_raw": -0.30000000000000004,
+      "kelly_action": "SKIP",
+      "kelly_reasoning": "Kelly = -30.0% (p=35%). Negative edge — no position.",
+      "kelly_sizedAt": "2026-02-21T18:18:28.687Z"
     },
     {
       "tool": "rei-funding-carry",
@@ -507,7 +632,12 @@
       "priceChange24h": 0.21561272335572174,
       "persistenceHours": 0,
       "reasoning": "YGG funding at -656.9% APR. Shorts paying longs. ⚠️ VOLATILE (21.6% 24h move) — basis trade unsafe. ⚠️ DISTRESSED (-657% APR) — likely death spiral, not real edge. Premium: -0.669%. OI: $1.0M. Vol: $4.7M.",
-      "invalidation": "Rate drops below 20% APR or flips sign."
+      "invalidation": "Rate drops below 20% APR or flips sign.",
+      "kelly_size": 0,
+      "kelly_raw": -0.30000000000000004,
+      "kelly_action": "SKIP",
+      "kelly_reasoning": "Kelly = -30.0% (p=35%). Negative edge — no position.",
+      "kelly_sizedAt": "2026-02-21T18:18:28.687Z"
     },
     {
       "tool": "rei-funding-carry",
@@ -523,7 +653,12 @@
       "priceChange24h": 0.05047641546578474,
       "persistenceHours": 0,
       "reasoning": "AXS funding at -411.9% APR. Shorts paying longs. Premium: -0.354%. OI: $4.3M. Vol: $2.6M.",
-      "invalidation": "Rate drops below 20% APR or flips sign."
+      "invalidation": "Rate drops below 20% APR or flips sign.",
+      "kelly_size": 0.10000000000000009,
+      "kelly_raw": 0.10000000000000009,
+      "kelly_action": "SIZE",
+      "kelly_reasoning": "Kelly = 10.0% (p=55%). Within cap.",
+      "kelly_sizedAt": "2026-02-21T18:18:28.687Z"
     },
     {
       "tool": "rei-funding-carry",
@@ -539,7 +674,12 @@
       "priceChange24h": 0.03598484848484833,
       "persistenceHours": 0,
       "reasoning": "BLAST funding at -282.1% APR. Shorts paying longs. Premium: -0.364%. OI: $0.9M. Vol: $0.1M.",
-      "invalidation": "Rate drops below 20% APR or flips sign."
+      "invalidation": "Rate drops below 20% APR or flips sign.",
+      "kelly_size": 0.10000000000000009,
+      "kelly_raw": 0.10000000000000009,
+      "kelly_action": "SIZE",
+      "kelly_reasoning": "Kelly = 10.0% (p=55%). Within cap.",
+      "kelly_sizedAt": "2026-02-21T18:18:28.687Z"
     },
     {
       "tool": "rei-funding-carry",
@@ -555,7 +695,12 @@
       "priceChange24h": 0.09735176548967352,
       "persistenceHours": 0,
       "reasoning": "SNX funding at -251.2% APR. Shorts paying longs. Premium: -0.287%. OI: $1.7M. Vol: $1.4M.",
-      "invalidation": "Rate drops below 20% APR or flips sign."
+      "invalidation": "Rate drops below 20% APR or flips sign.",
+      "kelly_size": 0.10000000000000009,
+      "kelly_raw": 0.10000000000000009,
+      "kelly_action": "SIZE",
+      "kelly_reasoning": "Kelly = 10.0% (p=55%). Within cap.",
+      "kelly_sizedAt": "2026-02-21T18:18:28.687Z"
     },
     {
       "tool": "rei-funding-carry",
@@ -571,7 +716,12 @@
       "priceChange24h": -0.0049436045116390175,
       "persistenceHours": 0,
       "reasoning": "ZORA funding at -168.4% APR. Shorts paying longs. Premium: -0.226%. OI: $1.5M. Vol: $0.1M.",
-      "invalidation": "Rate drops below 20% APR or flips sign."
+      "invalidation": "Rate drops below 20% APR or flips sign.",
+      "kelly_size": 0.10000000000000009,
+      "kelly_raw": 0.10000000000000009,
+      "kelly_action": "SIZE",
+      "kelly_reasoning": "Kelly = 10.0% (p=55%). Within cap.",
+      "kelly_sizedAt": "2026-02-21T18:18:28.687Z"
     },
     {
       "tool": "rei-funding-carry",
@@ -587,7 +737,12 @@
       "priceChange24h": 0.15718473318975834,
       "persistenceHours": 0,
       "reasoning": "INJ funding at -159.4% APR. Shorts paying longs. Premium: -0.188%. OI: $2.9M. Vol: $6.8M.",
-      "invalidation": "Rate drops below 20% APR or flips sign."
+      "invalidation": "Rate drops below 20% APR or flips sign.",
+      "kelly_size": 0,
+      "kelly_raw": -0.30000000000000004,
+      "kelly_action": "SKIP",
+      "kelly_reasoning": "Kelly = -30.0% (p=35%). Negative edge — no position.",
+      "kelly_sizedAt": "2026-02-21T18:18:28.687Z"
     },
     {
       "tool": "rei-funding-carry",
@@ -603,7 +758,12 @@
       "priceChange24h": -0.04379671150971602,
       "persistenceHours": 0,
       "reasoning": "OM funding at -157.8% APR. Shorts paying longs. Premium: -0.156%. OI: $2.0M. Vol: $0.9M.",
-      "invalidation": "Rate drops below 20% APR or flips sign."
+      "invalidation": "Rate drops below 20% APR or flips sign.",
+      "kelly_size": 0.10000000000000009,
+      "kelly_raw": 0.10000000000000009,
+      "kelly_action": "SIZE",
+      "kelly_reasoning": "Kelly = 10.0% (p=55%). Within cap.",
+      "kelly_sizedAt": "2026-02-21T18:18:28.687Z"
     },
     {
       "tool": "rei-funding-carry",
@@ -619,7 +779,12 @@
       "priceChange24h": -0.026690035052578786,
       "persistenceHours": 0,
       "reasoning": "BERA funding at -127.5% APR. Shorts paying longs. Premium: -0.075%. OI: $4.1M. Vol: $1.9M.",
-      "invalidation": "Rate drops below 20% APR or flips sign."
+      "invalidation": "Rate drops below 20% APR or flips sign.",
+      "kelly_size": 0.10000000000000009,
+      "kelly_raw": 0.10000000000000009,
+      "kelly_action": "SIZE",
+      "kelly_reasoning": "Kelly = 10.0% (p=55%). Within cap.",
+      "kelly_sizedAt": "2026-02-21T18:18:28.687Z"
     },
     {
       "tool": "rei-funding-carry",
@@ -635,7 +800,12 @@
       "priceChange24h": 0.044496775484446895,
       "persistenceHours": 0,
       "reasoning": "0G funding at -121.6% APR. Shorts paying longs. Premium: -0.085%. OI: $0.9M. Vol: $1.0M.",
-      "invalidation": "Rate drops below 20% APR or flips sign."
+      "invalidation": "Rate drops below 20% APR or flips sign.",
+      "kelly_size": 0.10000000000000009,
+      "kelly_raw": 0.10000000000000009,
+      "kelly_action": "SIZE",
+      "kelly_reasoning": "Kelly = 10.0% (p=55%). Within cap.",
+      "kelly_sizedAt": "2026-02-21T18:18:28.687Z"
     },
     {
       "tool": "rei-funding-carry",
@@ -651,7 +821,12 @@
       "priceChange24h": 0.05643796992481197,
       "persistenceHours": 0,
       "reasoning": "ICP funding at -115.3% APR. Shorts paying longs. Premium: -0.162%. OI: $1.1M. Vol: $0.5M.",
-      "invalidation": "Rate drops below 20% APR or flips sign."
+      "invalidation": "Rate drops below 20% APR or flips sign.",
+      "kelly_size": 0.10000000000000009,
+      "kelly_raw": 0.10000000000000009,
+      "kelly_action": "SIZE",
+      "kelly_reasoning": "Kelly = 10.0% (p=55%). Within cap.",
+      "kelly_sizedAt": "2026-02-21T18:18:28.687Z"
     },
     {
       "tool": "rei-funding-carry",
@@ -667,7 +842,12 @@
       "priceChange24h": -0.015004501350405089,
       "persistenceHours": 0,
       "reasoning": "STABLE funding at -98.1% APR. Shorts paying longs. Premium: -0.149%. OI: $4.1M. Vol: $0.7M.",
-      "invalidation": "Rate drops below 20% APR or flips sign."
+      "invalidation": "Rate drops below 20% APR or flips sign.",
+      "kelly_size": 0,
+      "kelly_raw": -0.30000000000000004,
+      "kelly_action": "SKIP",
+      "kelly_reasoning": "Kelly = -30.0% (p=35%). Negative edge — no position.",
+      "kelly_sizedAt": "2026-02-21T18:18:28.687Z"
     },
     {
       "tool": "rei-funding-carry",
@@ -683,7 +863,12 @@
       "priceChange24h": 0.0361675126903554,
       "persistenceHours": 0,
       "reasoning": "ACE funding at -70.4% APR. Shorts paying longs. Premium: 0.000%. OI: $0.3M. Vol: $0.3M.",
-      "invalidation": "Rate drops below 20% APR or flips sign."
+      "invalidation": "Rate drops below 20% APR or flips sign.",
+      "kelly_size": 0,
+      "kelly_raw": -0.30000000000000004,
+      "kelly_action": "SKIP",
+      "kelly_reasoning": "Kelly = -30.0% (p=35%). Negative edge — no position.",
+      "kelly_sizedAt": "2026-02-21T18:18:28.687Z"
     },
     {
       "tool": "rei-funding-carry",
@@ -699,7 +884,12 @@
       "priceChange24h": 0.01711033019344566,
       "persistenceHours": 0,
       "reasoning": "ALGO funding at -67.8% APR. Shorts paying longs. Premium: -0.116%. OI: $1.0M. Vol: $0.2M.",
-      "invalidation": "Rate drops below 20% APR or flips sign."
+      "invalidation": "Rate drops below 20% APR or flips sign.",
+      "kelly_size": 0,
+      "kelly_raw": -0.30000000000000004,
+      "kelly_action": "SKIP",
+      "kelly_reasoning": "Kelly = -30.0% (p=35%). Negative edge — no position.",
+      "kelly_sizedAt": "2026-02-21T18:18:28.687Z"
     },
     {
       "tool": "rei-funding-carry",
@@ -715,7 +905,12 @@
       "priceChange24h": 0.002177997950119431,
       "persistenceHours": 0,
       "reasoning": "ATOM funding at -64.6% APR. Shorts paying longs. Premium: -0.153%. OI: $4.7M. Vol: $0.9M.",
-      "invalidation": "Rate drops below 20% APR or flips sign."
+      "invalidation": "Rate drops below 20% APR or flips sign.",
+      "kelly_size": 0,
+      "kelly_raw": -0.30000000000000004,
+      "kelly_action": "SKIP",
+      "kelly_reasoning": "Kelly = -30.0% (p=35%). Negative edge — no position.",
+      "kelly_sizedAt": "2026-02-21T18:18:28.687Z"
     },
     {
       "tool": "rei-funding-carry",
@@ -731,7 +926,12 @@
       "priceChange24h": 0.03823228370160744,
       "persistenceHours": 0,
       "reasoning": "DASH funding at -62.3% APR. Shorts paying longs. Premium: -0.111%. OI: $9.8M. Vol: $1.5M.",
-      "invalidation": "Rate drops below 20% APR or flips sign."
+      "invalidation": "Rate drops below 20% APR or flips sign.",
+      "kelly_size": 0,
+      "kelly_raw": -0.30000000000000004,
+      "kelly_action": "SKIP",
+      "kelly_reasoning": "Kelly = -30.0% (p=35%). Negative edge — no position.",
+      "kelly_sizedAt": "2026-02-21T18:18:28.687Z"
     },
     {
       "tool": "rei-funding-carry",
@@ -747,7 +947,12 @@
       "priceChange24h": 0.02558556999805352,
       "persistenceHours": 0,
       "reasoning": "UMA funding at -61.3% APR. Shorts paying longs. Premium: -0.114%. OI: $0.2M. Vol: $0.1M.",
-      "invalidation": "Rate drops below 20% APR or flips sign."
+      "invalidation": "Rate drops below 20% APR or flips sign.",
+      "kelly_size": 0,
+      "kelly_raw": -0.30000000000000004,
+      "kelly_action": "SKIP",
+      "kelly_reasoning": "Kelly = -30.0% (p=35%). Negative edge — no position.",
+      "kelly_sizedAt": "2026-02-21T18:18:28.687Z"
     },
     {
       "tool": "rei-funding-carry",
@@ -763,7 +968,12 @@
       "priceChange24h": 0.04843572050646489,
       "persistenceHours": 0,
       "reasoning": "BIGTIME funding at -58.0% APR. Shorts paying longs. Premium: -0.057%. OI: $0.2M. Vol: $0.2M.",
-      "invalidation": "Rate drops below 20% APR or flips sign."
+      "invalidation": "Rate drops below 20% APR or flips sign.",
+      "kelly_size": 0,
+      "kelly_raw": -0.30000000000000004,
+      "kelly_action": "SKIP",
+      "kelly_reasoning": "Kelly = -30.0% (p=35%). Negative edge — no position.",
+      "kelly_sizedAt": "2026-02-21T18:18:28.687Z"
     },
     {
       "tool": "rei-funding-carry",
@@ -779,7 +989,12 @@
       "priceChange24h": 0.012856772184743199,
       "persistenceHours": 0,
       "reasoning": "CELO funding at -55.0% APR. Shorts paying longs. Premium: -0.014%. OI: $0.7M. Vol: $0.3M.",
-      "invalidation": "Rate drops below 20% APR or flips sign."
+      "invalidation": "Rate drops below 20% APR or flips sign.",
+      "kelly_size": 0,
+      "kelly_raw": -0.30000000000000004,
+      "kelly_action": "SKIP",
+      "kelly_reasoning": "Kelly = -30.0% (p=35%). Negative edge — no position.",
+      "kelly_sizedAt": "2026-02-21T18:18:28.687Z"
     },
     {
       "tool": "sakura-arb-scanner",
@@ -803,7 +1018,12 @@
           "prob": 0.5473898997200473,
           "url": "https://manifold.markets/mattyb/mattybs-500th-market-spectacular-wi"
         }
-      ]
+      ],
+      "kelly_size": 0.2,
+      "kelly_raw": 0.3999999999999999,
+      "kelly_action": "SIZE",
+      "kelly_reasoning": "Kelly = 40.0% (p=70%). Capped at 20% max position.",
+      "kelly_sizedAt": "2026-02-21T18:18:28.687Z"
     },
     {
       "tool": "sakura-arb-scanner",
@@ -827,7 +1047,12 @@
           "prob": 0.5473898997200473,
           "url": "https://manifold.markets/mattyb/mattybs-500th-market-spectacular-wi"
         }
-      ]
+      ],
+      "kelly_size": 0.2,
+      "kelly_raw": 0.3999999999999999,
+      "kelly_action": "SIZE",
+      "kelly_reasoning": "Kelly = 40.0% (p=70%). Capped at 20% max position.",
+      "kelly_sizedAt": "2026-02-21T18:18:28.687Z"
     },
     {
       "tool": "sakura-arb-scanner",
@@ -846,7 +1071,12 @@
           "prob": 0.5473898997200473,
           "url": "https://manifold.markets/mattyb/mattybs-500th-market-spectacular-wi"
         }
-      ]
+      ],
+      "kelly_size": 0,
+      "kelly_raw": -0.30000000000000004,
+      "kelly_action": "SKIP",
+      "kelly_reasoning": "Kelly = -30.0% (p=35%). Negative edge — no position.",
+      "kelly_sizedAt": "2026-02-21T18:18:28.687Z"
     },
     {
       "tool": "sakura-arb-scanner",
@@ -865,7 +1095,12 @@
           "prob": 0.1767572328922678,
           "url": "https://manifold.markets/Zardoru/will-bitcoin-btc-be-below-chf1000-o"
         }
-      ]
+      ],
+      "kelly_size": 0,
+      "kelly_raw": -0.30000000000000004,
+      "kelly_action": "SKIP",
+      "kelly_reasoning": "Kelly = -30.0% (p=35%). Negative edge — no position.",
+      "kelly_sizedAt": "2026-02-21T18:18:28.687Z"
     },
     {
       "tool": "sakura-arb-scanner",
@@ -884,7 +1119,12 @@
           "prob": 0.15660108896446878,
           "url": "https://manifold.markets/quther/will-bitcoinbtc-price-first-go-belo"
         }
-      ]
+      ],
+      "kelly_size": 0,
+      "kelly_raw": -0.30000000000000004,
+      "kelly_action": "SKIP",
+      "kelly_reasoning": "Kelly = -30.0% (p=35%). Negative edge — no position.",
+      "kelly_sizedAt": "2026-02-21T18:18:28.687Z"
     },
     {
       "tool": "sakura-arb-scanner",
@@ -903,7 +1143,12 @@
           "prob": 0.5664964857599937,
           "url": "https://manifold.markets/ScottAlexander/will-a-republican-president-choose"
         }
-      ]
+      ],
+      "kelly_size": 0,
+      "kelly_raw": -0.30000000000000004,
+      "kelly_action": "SKIP",
+      "kelly_reasoning": "Kelly = -30.0% (p=35%). Negative edge — no position.",
+      "kelly_sizedAt": "2026-02-21T18:18:28.687Z"
     },
     {
       "tool": "sakura-arb-scanner",
@@ -922,7 +1167,12 @@
           "prob": 0.2991313832845691,
           "url": "https://manifold.markets/jgyou/will-a-former-us-president-accuse-t"
         }
-      ]
+      ],
+      "kelly_size": 0,
+      "kelly_raw": -0.30000000000000004,
+      "kelly_action": "SKIP",
+      "kelly_reasoning": "Kelly = -30.0% (p=35%). Negative edge — no position.",
+      "kelly_sizedAt": "2026-02-21T18:18:28.687Z"
     },
     {
       "tool": "sakura-arb-scanner",
@@ -941,7 +1191,12 @@
           "prob": 0.2461538446031391,
           "url": "https://manifold.markets/LesterCrafton/will-quinn-ewers-defeat-arch-mannin"
         }
-      ]
+      ],
+      "kelly_size": 0,
+      "kelly_raw": -0.30000000000000004,
+      "kelly_action": "SKIP",
+      "kelly_reasoning": "Kelly = -30.0% (p=35%). Negative edge — no position.",
+      "kelly_sizedAt": "2026-02-21T18:18:28.687Z"
     },
     {
       "tool": "sakura-arb-scanner",
@@ -960,7 +1215,12 @@
           "prob": 0.3772719468964154,
           "url": "https://manifold.markets/StephenFowler28ac/will-connor-mcgregor-fight-at-ufc-w"
         }
-      ]
+      ],
+      "kelly_size": 0,
+      "kelly_raw": -0.30000000000000004,
+      "kelly_action": "SKIP",
+      "kelly_reasoning": "Kelly = -30.0% (p=35%). Negative edge — no position.",
+      "kelly_sizedAt": "2026-02-21T18:18:28.687Z"
     },
     {
       "tool": "sakura-arb-scanner",
@@ -979,7 +1239,12 @@
           "prob": 0.554555818774804,
           "url": "https://manifold.markets/10thOfficial/will-roger-goodell-be-replaced-as-c"
         }
-      ]
+      ],
+      "kelly_size": 0,
+      "kelly_raw": -0.30000000000000004,
+      "kelly_action": "SKIP",
+      "kelly_reasoning": "Kelly = -30.0% (p=35%). Negative edge — no position.",
+      "kelly_sizedAt": "2026-02-21T18:18:28.687Z"
     },
     {
       "tool": "sakura-arb-scanner",
@@ -998,7 +1263,12 @@
           "prob": 0.6126680811948579,
           "url": "https://manifold.markets/Putcallparity/will-bitcoin-outperform-altcoins-in-quUc0gps9I"
         }
-      ]
+      ],
+      "kelly_size": 0,
+      "kelly_raw": -0.30000000000000004,
+      "kelly_action": "SKIP",
+      "kelly_reasoning": "Kelly = -30.0% (p=35%). Negative edge — no position.",
+      "kelly_sizedAt": "2026-02-21T18:18:28.687Z"
     },
     {
       "tool": "sakura-arb-scanner",
@@ -1017,7 +1287,12 @@
           "prob": 0.3805523712130128,
           "url": "https://manifold.markets/TheWabiSabi/more-than-70-of-us-population-belie"
         }
-      ]
+      ],
+      "kelly_size": 0,
+      "kelly_raw": -0.30000000000000004,
+      "kelly_action": "SKIP",
+      "kelly_reasoning": "Kelly = -30.0% (p=35%). Negative edge — no position.",
+      "kelly_sizedAt": "2026-02-21T18:18:28.687Z"
     }
   ],
   "lastScanAt": "2026-02-21T18:14:11.952Z",

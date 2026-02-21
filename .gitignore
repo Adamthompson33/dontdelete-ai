@@ -1,24 +1,6 @@
-# Secrets - NEVER commit these
-.secrets/
-*.key
-*.pem
-
-# Environment files with secrets
+﻿node_modules/
+*.jackbot.ts
+*.local.ts
 .env
-trading-bot/hyperliquid/.env
-
-# Python
-__pycache__/
-*.pyc
-.venv/
-venv/
-
-# Node
-node_modules/
-
-# OS
-.DS_Store
-Thumbs.db
-
-# Logs
-*.log
+.env.*
+dist/

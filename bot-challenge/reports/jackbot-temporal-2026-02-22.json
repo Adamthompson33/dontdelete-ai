@@ -1,0 +1,51 @@
+{
+  "date": "2026-02-22",
+  "scannedAt": "2026-02-22T17:04:25.599Z",
+  "session": "us",
+  "nextResetMinutes": 56,
+  "btcRegime": {
+    "regime": "TRENDING",
+    "adx": 25.371704576657923,
+    "volatilityRatio": 1.1883858595792727,
+    "priceChange1h": -0.050295857988165674,
+    "priceChange24h": -1.2178540621938916
+  },
+  "signalCount": 1,
+  "signals": [
+    {
+      "tool": "jackbot-temporal-edge",
+      "timestamp": "2026-02-22T17:04:25.589Z",
+      "unixMs": 1771779865589,
+      "coin": "INJ",
+      "direction": "LONG",
+      "confidence": 0.6619474783999999,
+      "kelly_size": 0.08,
+      "entryPrice": 3.5299,
+      "pattern": "funding_reset",
+      "reasoning": "INJ funding at -68% APR with 56min to hourly reset. Extreme negative funding suggests long bias post-reset as funding pressure releases. Premium: -0.158%. Regime: TRENDING.",
+      "invalidation": "INJ breaks below 3.46 after reset (2% against)"
+    }
+  ],
+  "allRawSignals": [
+    {
+      "coin": "INJ",
+      "pattern": "funding_reset",
+      "direction": "long",
+      "confidence": 0.6619474783999999,
+      "kelly_size": 0.08,
+      "invalidation": "INJ breaks below 3.46 after reset (2% against)",
+      "reasoning": "INJ funding at -68% APR with 56min to hourly reset. Extreme negative funding suggests long bias post-reset as funding pressure releases. Premium: -0.158%. Regime: TRENDING.",
+      "data": {
+        "fundingRate": -0.0000775856,
+        "annualizedRate": -67.96498559999999,
+        "minutesToReset": 56,
+        "regime": "TRENDING",
+        "markPrice": 3.5299,
+        "oraclePrice": 3.5355,
+        "premium": -0.1583934379861357,
+        "priceChange24h": -8.061155388862842,
+        "session": "us"
+      }
+    }
+  ]
+}

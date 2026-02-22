@@ -30,6 +30,8 @@ interface BotChallengeSignal {
   tierReason: string;
   entryPrice: number;
   annualizedRate: number;
+  basis: number;              // mark/index basis — The Surgeon variable
+  surgeonSignal: boolean;     // true when dual-condition met (negative basis + extreme funding)
   priceChange24h: number;
   persistenceHours: number;
   reasoning: string;
@@ -89,20 +91,35 @@ function classifyTier(
 ): { tier: 'HIGH' | 'MEDIUM' | 'LOW'; reason: string } {
   const absApr = Math.abs(opp.annualizedRate);
   const absPriceMove = Math.abs(opp.priceChange24h);
+  const basisPct = opp.basis * 100;
+  const negativeBasis = opp.basis < -0.001; // mark trading below index
 
-  // HIGH: extreme funding + persistent + price stable
+  // HIGH: Surgeon-grade = extreme funding + negative basis + persistent + price stable
+  // Dual-condition upgrade: basis confirms funding dislocation is real, not just a spike
+  if (absApr >= HIGH_MIN_APR && negativeBasis && persistenceHours >= HIGH_MIN_PERSIST && absPriceMove <= HIGH_MAX_PRICE_MOVE) {
+    return {
+      tier: 'HIGH',
+      reason: `🔪 SURGEON: ${(absApr * 100).toFixed(0)}% APR + ${basisPct.toFixed(3)}% basis (mark below index), ${persistenceHours.toFixed(1)}h persistent, price stable. Dual-condition dislocation.`,
+    };
+  }
+
+  // HIGH (legacy): extreme funding + persistent + stable, but no basis confirmation
   if (absApr >= HIGH_MIN_APR && persistenceHours >= HIGH_MIN_PERSIST && absPriceMove <= HIGH_MAX_PRICE_MOVE) {
     return {
       tier: 'HIGH',
-      reason: `${(absApr * 100).toFixed(0)}% APR, ${persistenceHours.toFixed(1)}h persistent, price stable (${(absPriceMove * 100).toFixed(1)}% move). Genuine dislocation.`,
+      reason: `${(absApr * 100).toFixed(0)}% APR, ${persistenceHours.toFixed(1)}h persistent, price stable (${(absPriceMove * 100).toFixed(1)}% move). Basis: ${basisPct.toFixed(3)}% (single-condition — funding only).`,
     };
   }
 
   // MEDIUM: extreme funding + some persistence or moderate price move
+  // Boost: if basis confirms, note it
   if (absApr >= MED_MIN_APR && (persistenceHours >= MED_MIN_PERSIST || absPriceMove <= MED_MAX_PRICE_MOVE)) {
+    const basisNote = negativeBasis
+      ? ` Basis confirms (${basisPct.toFixed(3)}% — mark below index).`
+      : ` Basis neutral/positive (${basisPct.toFixed(3)}%).`;
     return {
       tier: 'MEDIUM',
-      reason: `${(absApr * 100).toFixed(0)}% APR, ${persistenceHours.toFixed(1)}h persistent, ${(absPriceMove * 100).toFixed(1)}% price move. Could go either way.`,
+      reason: `${(absApr * 100).toFixed(0)}% APR, ${persistenceHours.toFixed(1)}h persistent, ${(absPriceMove * 100).toFixed(1)}% price move.${basisNote} Could go either way.`,
     };
   }
 
@@ -112,6 +129,7 @@ function classifyTier(
     if (persistenceHours < MED_MIN_PERSIST) reasons.push(`only ${persistenceHours.toFixed(1)}h persistence`);
     if (absPriceMove > MED_MAX_PRICE_MOVE) reasons.push(`large price move (${(absPriceMove * 100).toFixed(1)}%)`);
     if (absApr > 5.0) reasons.push(`extreme APR (${(absApr * 100).toFixed(0)}%) — possible distress`);
+    reasons.push(`basis: ${basisPct.toFixed(3)}%`);
 
     return {
       tier: 'LOW',
@@ -152,6 +170,8 @@ async function main() {
     const persistenceHours = checkPersistence(opp.coin, ledger);
     const { tier, reason } = classifyTier(opp, persistenceHours);
 
+    const isSurgeonSignal = opp.basis < -0.001 && opp.currentRate < 0 && Math.abs(opp.annualizedRate) >= 0.50;
+
     const signal: BotChallengeSignal = {
       tool: 'rei-funding-carry',
       timestamp: new Date().toISOString(),
@@ -163,10 +183,12 @@ async function main() {
       tierReason: reason,
       entryPrice: opp.markPrice,
       annualizedRate: opp.annualizedRate,
+      basis: opp.basis,
+      surgeonSignal: isSurgeonSignal,
       priceChange24h: opp.priceChange24h,
       persistenceHours,
       reasoning: opp.reasoning,
-      invalidation: `Rate drops below 20% APR or flips sign.`,
+      invalidation: `Rate drops below 20% APR or flips sign. Basis convergence (mark = index) also signals exit.`,
     };
 
     signals.push(signal);
@@ -174,9 +196,10 @@ async function main() {
     // Print with tier-specific formatting
     const tierIcon = tier === 'HIGH' ? '🔴' : tier === 'MEDIUM' ? '🟡' : '⚪';
     const tierLabel = tier === 'LOW' ? ' [LOG ONLY]' : '';
-    console.log(`${tierIcon} ${opp.coin} — ${tier}${tierLabel}`);
-    console.log(`   ${signal.direction} perp | ${(opp.annualizedRate * 100).toFixed(1)}% APR`);
-    console.log(`   Price: $${opp.markPrice.toFixed(4)} | 24h move: ${(opp.priceChange24h * 100).toFixed(1)}%`);
+    const surgeonTag = isSurgeonSignal ? ' 🔪' : '';
+    console.log(`${tierIcon} ${opp.coin} — ${tier}${tierLabel}${surgeonTag}`);
+    console.log(`   ${signal.direction} perp | ${(opp.annualizedRate * 100).toFixed(1)}% APR | Basis: ${(opp.basis * 100).toFixed(3)}%`);
+    console.log(`   Price: $${opp.markPrice.toFixed(4)} | Oracle: $${opp.oraclePrice.toFixed(4)} | 24h move: ${(opp.priceChange24h * 100).toFixed(1)}%`);
     console.log(`   Persistence: ${persistenceHours.toFixed(1)}h`);
     console.log(`   Tier reason: ${reason}\n`);
   }

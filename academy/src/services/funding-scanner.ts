@@ -26,6 +26,7 @@ export interface FundingOpportunity {
   direction: 'LONG_BASIS' | 'SHORT_BASIS';
   markPrice: number;
   oraclePrice: number;
+  basis: number;              // (markPx - oraclePx) / oraclePx — The Surgeon's edge
   premium: number;
   openInterest: number;       // in coin units
   openInterestUsd: number;
@@ -124,6 +125,9 @@ export class FundingScanner {
       const vol = parseFloat(ctx.dayNtlVlm);
       const oiUsd = oi * markPx;
 
+      // Mark/index basis — The Surgeon's key variable
+      const basis = oraclePx > 0 ? (markPx - oraclePx) / oraclePx : 0;
+
       // Price change from previous day
       const priceChange24h = prevDayPx > 0 ? (markPx - prevDayPx) / prevDayPx : 0;
       const volatile = Math.abs(priceChange24h) > 0.20; // >20% move = death spiral or pump
@@ -151,6 +155,9 @@ export class FundingScanner {
         confidence = 'medium';
       }
 
+      // Surgeon dual-condition: negative basis + extreme negative funding = high conviction short entry
+      const surgeonSignal = basis < -0.001 && rate < 0 && Math.abs(annualized) >= 0.50;
+
       opportunities.push({
         coin,
         currentRate: rate,
@@ -158,6 +165,7 @@ export class FundingScanner {
         direction,
         markPrice: markPx,
         oraclePrice: oraclePx,
+        basis,
         premium,
         openInterest: oi,
         openInterestUsd: oiUsd,
@@ -167,6 +175,8 @@ export class FundingScanner {
         confidence,
         reasoning: `${coin} funding at ${(annualized * 100).toFixed(1)}% APR. ` +
           `${direction === 'LONG_BASIS' ? 'Longs paying shorts' : 'Shorts paying longs'}. ` +
+          `Basis: ${(basis * 100).toFixed(3)}% (mark ${basis < 0 ? 'below' : 'above'} index). ` +
+          `${surgeonSignal ? '🔪 SURGEON SIGNAL: negative basis + extreme negative funding. ' : ''}` +
           `${volatile ? `⚠️ VOLATILE (${(priceChange24h * 100).toFixed(1)}% 24h move) — basis trade unsafe. ` : ''}` +
           `${distressed ? `⚠️ DISTRESSED (${(annualized * 100).toFixed(0)}% APR) — likely death spiral, not real edge. ` : ''}` +
           `Premium: ${(premium * 100).toFixed(3)}%. ` +

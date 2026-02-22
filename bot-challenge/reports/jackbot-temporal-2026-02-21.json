@@ -1,16 +1,84 @@
 {
   "date": "2026-02-21",
-  "scannedAt": "2026-02-21T22:05:28.006Z",
+  "scannedAt": "2026-02-21T23:04:24.893Z",
   "session": "dead_zone",
-  "nextResetMinutes": 55,
+  "nextResetMinutes": 56,
   "btcRegime": {
     "regime": "CHOPPY",
-    "adx": 10.060690831610264,
-    "volatilityRatio": 1.0726405820939373,
-    "priceChange1h": 0.045362091924084344,
-    "priceChange24h": 0.46433714403267995
+    "adx": 1.13751993633766,
+    "volatilityRatio": 1.2985346801087725,
+    "priceChange1h": -0.007359434795407713,
+    "priceChange24h": -0.06619593998234775
   },
-  "signalCount": 0,
-  "signals": [],
-  "allRawSignals": []
+  "signalCount": 2,
+  "signals": [
+    {
+      "tool": "jackbot-temporal-edge",
+      "timestamp": "2026-02-21T23:04:24.891Z",
+      "unixMs": 1771715064891,
+      "coin": "OP",
+      "direction": "LONG",
+      "confidence": 0.7342054558,
+      "kelly_size": 0.08,
+      "entryPrice": 0.12811,
+      "pattern": "funding_reset",
+      "reasoning": "OP funding at -83% APR with 56min to hourly reset. Extreme negative funding suggests long bias post-reset as funding pressure releases. Premium: -0.187%. Regime: CHOPPY. Session: dead zone (low liquidity amplifies funding reset impact).",
+      "invalidation": "OP breaks below 0.13 after reset (2% against)"
+    },
+    {
+      "tool": "jackbot-temporal-edge",
+      "timestamp": "2026-02-21T23:04:24.891Z",
+      "unixMs": 1771715064891,
+      "coin": "INJ",
+      "direction": "LONG",
+      "confidence": 0.9,
+      "kelly_size": 0.12,
+      "entryPrice": 3.7733,
+      "pattern": "funding_reset",
+      "reasoning": "INJ funding at -305% APR with 56min to hourly reset. VERY extreme negative funding suggests long bias post-reset as funding pressure releases. Premium: -0.375%. Regime: CHOPPY. Session: dead zone (low liquidity amplifies funding reset impact).",
+      "invalidation": "INJ breaks below 3.70 after reset (2% against)"
+    }
+  ],
+  "allRawSignals": [
+    {
+      "coin": "OP",
+      "pattern": "funding_reset",
+      "direction": "long",
+      "confidence": 0.7342054558,
+      "kelly_size": 0.08,
+      "invalidation": "OP breaks below 0.13 after reset (2% against)",
+      "reasoning": "OP funding at -83% APR with 56min to hourly reset. Extreme negative funding suggests long bias post-reset as funding pressure releases. Premium: -0.187%. Regime: CHOPPY. Session: dead zone (low liquidity amplifies funding reset impact).",
+      "data": {
+        "fundingRate": -0.0000945247,
+        "annualizedRate": -82.8036372,
+        "minutesToReset": 56,
+        "regime": "CHOPPY",
+        "markPrice": 0.12811,
+        "oraclePrice": 0.12835,
+        "premium": -0.18698870276586696,
+        "priceChange24h": 0.778791692888602,
+        "session": "dead_zone"
+      }
+    },
+    {
+      "coin": "INJ",
+      "pattern": "funding_reset",
+      "direction": "long",
+      "confidence": 0.9,
+      "kelly_size": 0.12,
+      "invalidation": "INJ breaks below 3.70 after reset (2% against)",
+      "reasoning": "INJ funding at -305% APR with 56min to hourly reset. VERY extreme negative funding suggests long bias post-reset as funding pressure releases. Premium: -0.375%. Regime: CHOPPY. Session: dead zone (low liquidity amplifies funding reset impact).",
+      "data": {
+        "fundingRate": -0.0003479391,
+        "annualizedRate": -304.79465159999995,
+        "minutesToReset": 56,
+        "regime": "CHOPPY",
+        "markPrice": 3.7733,
+        "oraclePrice": 3.7875,
+        "premium": -0.37491749174918054,
+        "priceChange24h": 10.156478075553224,
+        "session": "dead_zone"
+      }
+    }
+  ]
 }

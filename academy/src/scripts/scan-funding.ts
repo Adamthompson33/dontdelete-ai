@@ -26,7 +26,8 @@ async function main() {
     const icon = opp.confidence === 'high' ? '🔴' :
                  opp.confidence === 'medium' ? '🟡' : '⚪';
     const volTag = opp.volatile ? ' ⚠️VOLATILE' : '';
-    console.log(`${icon} ${opp.coin.padEnd(8)} ${(opp.annualizedRate * 100).toFixed(1).padStart(7)}% APR  ${opp.direction.padEnd(12)}  Vol: $${(opp.dailyVolume / 1e6).toFixed(1)}M  OI: $${(opp.openInterestUsd / 1e6).toFixed(1)}M  24h: ${(opp.priceChange24h * 100).toFixed(1)}%${volTag}`);
+    const surgeonTag = (opp.basis < -0.001 && opp.currentRate < 0 && Math.abs(opp.annualizedRate) >= 0.50) ? ' 🔪SURGEON' : '';
+    console.log(`${icon} ${opp.coin.padEnd(8)} ${(opp.annualizedRate * 100).toFixed(1).padStart(7)}% APR  ${opp.direction.padEnd(12)}  Basis: ${(opp.basis * 100).toFixed(3).padStart(7)}%  Vol: $${(opp.dailyVolume / 1e6).toFixed(1)}M  OI: $${(opp.openInterestUsd / 1e6).toFixed(1)}M  24h: ${(opp.priceChange24h * 100).toFixed(1)}%${volTag}${surgeonTag}`);
   }
 
   // Update existing paper trades

@@ -1,24 +1,16 @@
 {
-  "date": "2026-02-21",
-  "sizedAt": "2026-02-21T23:06:03.310Z",
-  "totalSignals": 229,
-  "newlySized": 42,
-  "alreadySized": 187,
-  "sized": 17,
-  "skipped": 25,
-  "totalAllocation": 2.600000000000001,
+  "date": "2026-02-22",
+  "sizedAt": "2026-02-22T17:06:03.891Z",
+  "totalSignals": 528,
+  "newlySized": 61,
+  "alreadySized": 467,
+  "sized": 19,
+  "skipped": 42,
+  "totalAllocation": 3.100000000000001,
   "maxKelly": 0.2,
   "positions": [
     {
       "coin": "AZTEC",
-      "tool": "rei-funding-carry",
-      "direction": "LONG",
-      "confidence": "medium",
-      "kelly": 0.10000000000000009,
-      "action": "SIZE"
-    },
-    {
-      "coin": "YGG",
       "tool": "rei-funding-carry",
       "direction": "LONG",
       "confidence": "medium",
@@ -34,6 +26,30 @@
       "action": "SIZE"
     },
     {
+      "coin": "ZORA",
+      "tool": "rei-funding-carry",
+      "direction": "LONG",
+      "confidence": "high",
+      "kelly": 0.2,
+      "action": "SIZE"
+    },
+    {
+      "coin": "JTO",
+      "tool": "rei-funding-carry",
+      "direction": "LONG",
+      "confidence": "high",
+      "kelly": 0.2,
+      "action": "SIZE"
+    },
+    {
+      "coin": "VVV",
+      "tool": "rei-funding-carry",
+      "direction": "LONG",
+      "confidence": "medium",
+      "kelly": 0.10000000000000009,
+      "action": "SIZE"
+    },
+    {
       "coin": "AXS",
       "tool": "rei-funding-carry",
       "direction": "LONG",
@@ -42,7 +58,7 @@
       "action": "SIZE"
     },
     {
-      "coin": "SNX",
+      "coin": "ACE",
       "tool": "rei-funding-carry",
       "direction": "LONG",
       "confidence": "high",
@@ -50,63 +66,7 @@
       "action": "SIZE"
     },
     {
-      "coin": "0G",
-      "tool": "rei-funding-carry",
-      "direction": "LONG",
-      "confidence": "medium",
-      "kelly": 0.10000000000000009,
-      "action": "SIZE"
-    },
-    {
-      "coin": "BLAST",
-      "tool": "rei-funding-carry",
-      "direction": "LONG",
-      "confidence": "high",
-      "kelly": 0.2,
-      "action": "SIZE"
-    },
-    {
-      "coin": "INJ",
-      "tool": "rei-funding-carry",
-      "direction": "LONG",
-      "confidence": "medium",
-      "kelly": 0.10000000000000009,
-      "action": "SIZE"
-    },
-    {
-      "coin": "SOPH",
-      "tool": "rei-funding-carry",
-      "direction": "LONG",
-      "confidence": "medium",
-      "kelly": 0.10000000000000009,
-      "action": "SIZE"
-    },
-    {
-      "coin": "STABLE",
-      "tool": "rei-funding-carry",
-      "direction": "LONG",
-      "confidence": "high",
-      "kelly": 0.2,
-      "action": "SIZE"
-    },
-    {
-      "coin": "BIO",
-      "tool": "rei-funding-carry",
-      "direction": "LONG",
-      "confidence": "medium",
-      "kelly": 0.10000000000000009,
-      "action": "SIZE"
-    },
-    {
-      "coin": "JTO",
-      "tool": "rei-funding-carry",
-      "direction": "LONG",
-      "confidence": "medium",
-      "kelly": 0.10000000000000009,
-      "action": "SIZE"
-    },
-    {
-      "coin": "ZORA",
+      "coin": "YGG",
       "tool": "rei-funding-carry",
       "direction": "LONG",
       "confidence": "high",
@@ -122,7 +82,63 @@
       "action": "SIZE"
     },
     {
-      "coin": "MANTA",
+      "coin": "SNX",
+      "tool": "rei-funding-carry",
+      "direction": "LONG",
+      "confidence": "high",
+      "kelly": 0.2,
+      "action": "SIZE"
+    },
+    {
+      "coin": "SEI",
+      "tool": "rei-funding-carry",
+      "direction": "LONG",
+      "confidence": "high",
+      "kelly": 0.2,
+      "action": "SIZE"
+    },
+    {
+      "coin": "INIT",
+      "tool": "rei-funding-carry",
+      "direction": "LONG",
+      "confidence": "medium",
+      "kelly": 0.10000000000000009,
+      "action": "SIZE"
+    },
+    {
+      "coin": "FET",
+      "tool": "rei-funding-carry",
+      "direction": "LONG",
+      "confidence": "medium",
+      "kelly": 0.10000000000000009,
+      "action": "SIZE"
+    },
+    {
+      "coin": "SOPH",
+      "tool": "rei-funding-carry",
+      "direction": "LONG",
+      "confidence": "high",
+      "kelly": 0.2,
+      "action": "SIZE"
+    },
+    {
+      "coin": "0G",
+      "tool": "rei-funding-carry",
+      "direction": "LONG",
+      "confidence": "medium",
+      "kelly": 0.10000000000000009,
+      "action": "SIZE"
+    },
+    {
+      "coin": "ICP",
+      "tool": "rei-funding-carry",
+      "direction": "LONG",
+      "confidence": "medium",
+      "kelly": 0.10000000000000009,
+      "action": "SIZE"
+    },
+    {
+      "coin": "AIXBT",
       "tool": "rei-funding-carry",
       "direction": "LONG",
       "confidence": "medium",
@@ -148,7 +164,79 @@
   ],
   "skippedPositions": [
     {
-      "coin": "FET",
+      "coin": "BTC",
+      "tool": "sentry-sentiment-scanner",
+      "direction": "FLAT",
+      "confidence": 0.35,
+      "kelly": 0,
+      "action": "SKIP"
+    },
+    {
+      "coin": "PENGU",
+      "tool": "sentry-sentiment-scanner",
+      "direction": "SHORT",
+      "confidence": 0.44949941294638535,
+      "kelly": 0,
+      "action": "SKIP"
+    },
+    {
+      "coin": "SOL",
+      "tool": "sentry-sentiment-scanner",
+      "direction": "SHORT",
+      "confidence": 0.4327325664024771,
+      "kelly": 0,
+      "action": "SKIP"
+    },
+    {
+      "coin": "AZTEC",
+      "tool": "sentry-sentiment-scanner",
+      "direction": "SHORT",
+      "confidence": 0.588839000805266,
+      "kelly": 0,
+      "action": "SKIP"
+    },
+    {
+      "coin": "OP",
+      "tool": "sentry-sentiment-scanner",
+      "direction": "SHORT",
+      "confidence": 0.4341947681474888,
+      "kelly": 0,
+      "action": "SKIP"
+    },
+    {
+      "coin": "DOGE",
+      "tool": "sentry-sentiment-scanner",
+      "direction": "SHORT",
+      "confidence": 0.44106157361101744,
+      "kelly": 0,
+      "action": "SKIP"
+    },
+    {
+      "coin": "ETH",
+      "tool": "sentry-sentiment-scanner",
+      "direction": "FLAT",
+      "confidence": 0.35,
+      "kelly": 0,
+      "action": "SKIP"
+    },
+    {
+      "coin": "XRP",
+      "tool": "sentry-sentiment-scanner",
+      "direction": "SHORT",
+      "confidence": 0.4369761288811915,
+      "kelly": 0,
+      "action": "SKIP"
+    },
+    {
+      "coin": "SUI",
+      "tool": "sentry-sentiment-scanner",
+      "direction": "FLAT",
+      "confidence": 0.35,
+      "kelly": 0,
+      "action": "SKIP"
+    },
+    {
+      "coin": "STABLE",
       "tool": "rei-funding-carry",
       "direction": "LONG",
       "confidence": "low",
@@ -156,7 +244,23 @@
       "action": "SKIP"
     },
     {
-      "coin": "OP",
+      "coin": "DASH",
+      "tool": "rei-funding-carry",
+      "direction": "LONG",
+      "confidence": "low",
+      "kelly": 0,
+      "action": "SKIP"
+    },
+    {
+      "coin": "S",
+      "tool": "rei-funding-carry",
+      "direction": "LONG",
+      "confidence": "low",
+      "kelly": 0,
+      "action": "SKIP"
+    },
+    {
+      "coin": "KAITO",
       "tool": "rei-funding-carry",
       "direction": "LONG",
       "confidence": "low",
@@ -172,7 +276,7 @@
       "action": "SKIP"
     },
     {
-      "coin": "ICP",
+      "coin": "BRETT",
       "tool": "rei-funding-carry",
       "direction": "LONG",
       "confidence": "low",
@@ -180,7 +284,7 @@
       "action": "SKIP"
     },
     {
-      "coin": "CELO",
+      "coin": "2Z",
       "tool": "rei-funding-carry",
       "direction": "LONG",
       "confidence": "low",
@@ -188,15 +292,7 @@
       "action": "SKIP"
     },
     {
-      "coin": "MNT",
-      "tool": "rei-funding-carry",
-      "direction": "LONG",
-      "confidence": "low",
-      "kelly": 0,
-      "action": "SKIP"
-    },
-    {
-      "coin": "IO",
+      "coin": "BSV",
       "tool": "rei-funding-carry",
       "direction": "LONG",
       "confidence": "low",
@@ -212,39 +308,7 @@
       "action": "SKIP"
     },
     {
-      "coin": "SEI",
-      "tool": "rei-funding-carry",
-      "direction": "LONG",
-      "confidence": "low",
-      "kelly": 0,
-      "action": "SKIP"
-    },
-    {
-      "coin": "UMA",
-      "tool": "rei-funding-carry",
-      "direction": "LONG",
-      "confidence": "low",
-      "kelly": 0,
-      "action": "SKIP"
-    },
-    {
-      "coin": "MOVE",
-      "tool": "rei-funding-carry",
-      "direction": "LONG",
-      "confidence": "low",
-      "kelly": 0,
-      "action": "SKIP"
-    },
-    {
-      "coin": "MORPHO",
-      "tool": "rei-funding-carry",
-      "direction": "LONG",
-      "confidence": "low",
-      "kelly": 0,
-      "action": "SKIP"
-    },
-    {
-      "coin": "AVNT",
+      "coin": "ZK",
       "tool": "rei-funding-carry",
       "direction": "LONG",
       "confidence": "low",
@@ -253,6 +317,86 @@
     },
     {
       "coin": "ANIME",
+      "tool": "rei-funding-carry",
+      "direction": "LONG",
+      "confidence": "low",
+      "kelly": 0,
+      "action": "SKIP"
+    },
+    {
+      "coin": "INJ",
+      "tool": "rei-funding-carry",
+      "direction": "LONG",
+      "confidence": "low",
+      "kelly": 0,
+      "action": "SKIP"
+    },
+    {
+      "coin": "kFLOKI",
+      "tool": "rei-funding-carry",
+      "direction": "LONG",
+      "confidence": "low",
+      "kelly": 0,
+      "action": "SKIP"
+    },
+    {
+      "coin": "kNEIRO",
+      "tool": "rei-funding-carry",
+      "direction": "LONG",
+      "confidence": "low",
+      "kelly": 0,
+      "action": "SKIP"
+    },
+    {
+      "coin": "POL",
+      "tool": "rei-funding-carry",
+      "direction": "LONG",
+      "confidence": "low",
+      "kelly": 0,
+      "action": "SKIP"
+    },
+    {
+      "coin": "SKR",
+      "tool": "rei-funding-carry",
+      "direction": "LONG",
+      "confidence": "low",
+      "kelly": 0,
+      "action": "SKIP"
+    },
+    {
+      "coin": "EIGEN",
+      "tool": "rei-funding-carry",
+      "direction": "LONG",
+      "confidence": "low",
+      "kelly": 0,
+      "action": "SKIP"
+    },
+    {
+      "coin": "MET",
+      "tool": "rei-funding-carry",
+      "direction": "LONG",
+      "confidence": "low",
+      "kelly": 0,
+      "action": "SKIP"
+    },
+    {
+      "coin": "kSHIB",
+      "tool": "rei-funding-carry",
+      "direction": "LONG",
+      "confidence": "low",
+      "kelly": 0,
+      "action": "SKIP"
+    },
+    {
+      "coin": "NXPC",
+      "tool": "rei-funding-carry",
+      "direction": "LONG",
+      "confidence": "low",
+      "kelly": 0,
+      "action": "SKIP"
+    },
+    {
+      "coin": "DYDX",
       "tool": "rei-funding-carry",
       "direction": "LONG",
       "confidence": "low",
@@ -333,6 +477,14 @@
     },
     {
       "coin": "More than 70% of U.S",
+      "tool": "sakura-arb-scanner",
+      "direction": "ARB",
+      "confidence": "low",
+      "kelly": 0,
+      "action": "SKIP"
+    },
+    {
+      "coin": "Bitcoin $120K in 202",
       "tool": "sakura-arb-scanner",
       "direction": "ARB",
       "confidence": "low",

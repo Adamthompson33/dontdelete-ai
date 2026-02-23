@@ -36,6 +36,8 @@ interface BotChallengeSignal {
   persistenceHours: number;
   reasoning: string;
   invalidation: string;
+  sentryConflict?: boolean;   // true when Sentry SHORT conflicts with Rei LONG
+  originalConfidence?: string; // pre-soft-gate confidence (before halving)
 }
 
 interface PaperLedgerEntry {
@@ -63,6 +65,32 @@ const MED_MIN_PERSIST = 2;
 const MED_MAX_PRICE_MOVE = 0.15; // 15%
 
 const LOW_MIN_APR = 0.50;        // 50% annualized — log everything above this
+
+// ═══ Sentry Conflict Check ═══
+
+function getSentryConflicts(ledger: PaperLedgerEntry, reiSignals: BotChallengeSignal[]): Set<string> {
+  const conflicts = new Set<string>();
+  const now = Date.now();
+  const lookback = 5 * 60 * 60 * 1000; // 5 hours — covers the gap between 4h cron cycles
+
+  // Find recent Sentry SHORT signals
+  const recentSentryShorts = ledger.signals.filter((s: any) =>
+    s.tool === 'sentry-sentiment-scanner' &&
+    s.direction === 'SHORT' &&
+    (now - s.unixMs) < lookback
+  );
+
+  const sentryShortCoins = new Set(recentSentryShorts.map((s: any) => s.coin));
+
+  // Check which Rei LONG signals conflict
+  for (const rei of reiSignals) {
+    if (rei.direction === 'LONG' && sentryShortCoins.has(rei.coin)) {
+      conflicts.add(rei.coin);
+    }
+  }
+
+  return conflicts;
+}
 
 // ═══ Persistence Check ═══
 
@@ -217,6 +245,32 @@ async function main() {
     console.log(`   Price: $${opp.markPrice.toFixed(4)} | Oracle: $${opp.oraclePrice.toFixed(4)} | 24h move: ${(opp.priceChange24h * 100).toFixed(1)}%`);
     console.log(`   Persistence: ${persistenceHours.toFixed(1)}h`);
     console.log(`   Tier reason: ${reason}\n`);
+  }
+
+  // ═══ Sentry Soft Gate ═══
+  // When Sentry SHORT conflicts with Rei LONG on same coin, halve confidence.
+  // Oracle-approved architecture: don't suppress, reduce confidence + flag.
+  // Auto-escalation: if Sentry hits 25/25 on conflicts, promote to hard gate.
+  const sentryConflicts = getSentryConflicts(ledger, signals);
+  if (sentryConflicts.size > 0) {
+    console.log(`🛡️ Sentry soft gate: ${sentryConflicts.size} conflicts detected\n`);
+    for (const signal of signals) {
+      if (sentryConflicts.has(signal.coin)) {
+        signal.sentryConflict = true;
+        signal.originalConfidence = signal.confidence;
+        // Halve confidence: HIGH → MEDIUM, MEDIUM → LOW, LOW stays LOW
+        if (signal.confidence === 'high') {
+          signal.confidence = 'medium';
+          signal.tier = 'MEDIUM';
+        } else if (signal.confidence === 'medium') {
+          signal.confidence = 'low';
+          signal.tier = 'LOW';
+        }
+        signal.tierReason = `⚠️ SENTRY CONFLICT (confidence halved): Sentry says SHORT, Rei says LONG. ${signal.tierReason}`;
+        console.log(`  ⚠️ ${signal.coin} — Sentry SHORT conflicts with Rei LONG → confidence halved (${signal.originalConfidence} → ${signal.confidence})`);
+      }
+    }
+    console.log('');
   }
 
   // Summary by tier

@@ -1,0 +1,273 @@
+{
+  "date": "2026-02-23",
+  "scannedAt": "2026-02-23T05:02:03.915Z",
+  "mode": "heuristic",
+  "trendingCount": 15,
+  "tradeableCount": 8,
+  "signals": [
+    {
+      "tool": "sentry-sentiment-scanner",
+      "timestamp": "2026-02-23T05:02:03.908Z",
+      "unixMs": 1771822923909,
+      "coin": "BTC",
+      "direction": "SHORT",
+      "confidence": 0.44793907272327976,
+      "entryPrice": 64703.83724798062,
+      "reasoning": "Trending #1 with -4.8% decline. Fading momentum.",
+      "invalidation": "Sentiment shifts or coin drops off trending within 12h.",
+      "sentimentScore": 44.79390727232798,
+      "trendingRank": 1,
+      "priceChange24h": -4.793907272327979
+    },
+    {
+      "tool": "sentry-sentiment-scanner",
+      "timestamp": "2026-02-23T05:02:03.909Z",
+      "unixMs": 1771822923909,
+      "coin": "SOL",
+      "direction": "SHORT",
+      "confidence": 0.49173821801162776,
+      "entryPrice": 77.31095201171264,
+      "reasoning": "Trending #2 with -9.2% decline. Fading momentum.",
+      "invalidation": "Sentiment shifts or coin drops off trending within 12h.",
+      "sentimentScore": 49.173821801162774,
+      "trendingRank": 2,
+      "priceChange24h": -9.173821801162774
+    },
+    {
+      "tool": "sentry-sentiment-scanner",
+      "timestamp": "2026-02-23T05:02:03.909Z",
+      "unixMs": 1771822923909,
+      "coin": "PENGU",
+      "direction": "SHORT",
+      "confidence": 0.47953597174936496,
+      "entryPrice": 0.0061739176921566784,
+      "reasoning": "Trending #3 with -8.0% decline. Fading momentum.",
+      "invalidation": "Sentiment shifts or coin drops off trending within 12h.",
+      "sentimentScore": 47.9535971749365,
+      "trendingRank": 3,
+      "priceChange24h": -7.953597174936498
+    },
+    {
+      "tool": "sentry-sentiment-scanner",
+      "timestamp": "2026-02-23T05:02:03.909Z",
+      "unixMs": 1771822923909,
+      "coin": "SUI",
+      "direction": "SHORT",
+      "confidence": 0.4736929755088238,
+      "entryPrice": 0.8697473128742372,
+      "reasoning": "Trending #4 with -7.4% decline. Fading momentum.",
+      "invalidation": "Sentiment shifts or coin drops off trending within 12h.",
+      "sentimentScore": 47.36929755088238,
+      "trendingRank": 4,
+      "priceChange24h": -7.369297550882381
+    },
+    {
+      "tool": "sentry-sentiment-scanner",
+      "timestamp": "2026-02-23T05:02:03.909Z",
+      "unixMs": 1771822923909,
+      "coin": "ETH",
+      "direction": "SHORT",
+      "confidence": 0.4583658028574882,
+      "entryPrice": 1857.3392210453,
+      "reasoning": "Trending #6 with -5.8% decline. Fading momentum.",
+      "invalidation": "Sentiment shifts or coin drops off trending within 12h.",
+      "sentimentScore": 45.836580285748816,
+      "trendingRank": 6,
+      "priceChange24h": -5.836580285748814
+    },
+    {
+      "tool": "sentry-sentiment-scanner",
+      "timestamp": "2026-02-23T05:02:03.909Z",
+      "unixMs": 1771822923909,
+      "coin": "TAO",
+      "direction": "SHORT",
+      "confidence": 0.4718650376863948,
+      "entryPrice": 165.64247732792404,
+      "reasoning": "Trending #9 with -7.2% decline. Fading momentum.",
+      "invalidation": "Sentiment shifts or coin drops off trending within 12h.",
+      "sentimentScore": 47.18650376863948,
+      "trendingRank": 9,
+      "priceChange24h": -7.186503768639484
+    },
+    {
+      "tool": "sentry-sentiment-scanner",
+      "timestamp": "2026-02-23T05:02:03.909Z",
+      "unixMs": 1771822923909,
+      "coin": "DOGE",
+      "direction": "SHORT",
+      "confidence": 0.45144735362519095,
+      "entryPrice": 0.09236606635717966,
+      "reasoning": "Trending #12 with -5.1% decline. Fading momentum.",
+      "invalidation": "Sentiment shifts or coin drops off trending within 12h.",
+      "sentimentScore": 45.14473536251909,
+      "trendingRank": 12,
+      "priceChange24h": -5.144735362519093
+    },
+    {
+      "tool": "sentry-sentiment-scanner",
+      "timestamp": "2026-02-23T05:02:03.909Z",
+      "unixMs": 1771822923909,
+      "coin": "AZTEC",
+      "direction": "SHORT",
+      "confidence": 0.7513126273203785,
+      "entryPrice": 0.028308312040529287,
+      "reasoning": "Trending #13 but down -15.1%. Selling into attention. High volume/mcap ratio (71%).",
+      "invalidation": "Sentiment shifts or coin drops off trending within 12h.",
+      "sentimentScore": 75.13126273203785,
+      "trendingRank": 13,
+      "priceChange24h": -15.131262732037854
+    }
+  ],
+  "allTrending": [
+    {
+      "id": "bitcoin",
+      "name": "Bitcoin",
+      "symbol": "BTC",
+      "rank": 1,
+      "price": 64703.83724798062,
+      "priceChange24h": -4.793907272327979,
+      "marketCap": 1293566643763,
+      "volume24h": 33407708630
+    },
+    {
+      "id": "solana",
+      "name": "Solana",
+      "symbol": "SOL",
+      "rank": 2,
+      "price": 77.31095201171264,
+      "priceChange24h": -9.173821801162774,
+      "marketCap": 43951581390,
+      "volume24h": 3252682547
+    },
+    {
+      "id": "pudgy-penguins",
+      "name": "Pudgy Penguins",
+      "symbol": "PENGU",
+      "rank": 3,
+      "price": 0.0061739176921566784,
+      "priceChange24h": -7.953597174936498,
+      "marketCap": 388066595,
+      "volume24h": 56291300
+    },
+    {
+      "id": "sui",
+      "name": "Sui",
+      "symbol": "SUI",
+      "rank": 4,
+      "price": 0.8697473128742372,
+      "priceChange24h": -7.369297550882381,
+      "marketCap": 3345418885,
+      "volume24h": 397420800
+    },
+    {
+      "id": "pippin",
+      "name": "pippin",
+      "symbol": "PIPPIN",
+      "rank": 5,
+      "price": 0.6576833219419737,
+      "priceChange24h": 32.74611601069305,
+      "marketCap": 654630815,
+      "volume24h": 63072323
+    },
+    {
+      "id": "ethereum",
+      "name": "Ethereum",
+      "symbol": "ETH",
+      "rank": 6,
+      "price": 1857.3392210453,
+      "priceChange24h": -5.836580285748814,
+      "marketCap": 224152424152,
+      "volume24h": 15988821969
+    },
+    {
+      "id": "punch-2",
+      "name": "パンチ (Punch)",
+      "symbol": "PUNCH",
+      "rank": 7,
+      "price": 0.0331645404198975,
+      "priceChange24h": -12.262454128653397,
+      "marketCap": 33126553,
+      "volume24h": 22466195
+    },
+    {
+      "id": "pi-network",
+      "name": "Pi Network",
+      "symbol": "PI",
+      "rank": 8,
+      "price": 0.15728129495199714,
+      "priceChange24h": -6.158921217734164,
+      "marketCap": 1448735232,
+      "volume24h": 16624417
+    },
+    {
+      "id": "bittensor",
+      "name": "Bittensor",
+      "symbol": "TAO",
+      "rank": 9,
+      "price": 165.64247732792404,
+      "priceChange24h": -7.186503768639484,
+      "marketCap": 1587672902,
+      "volume24h": 71272184
+    },
+    {
+      "id": "monad",
+      "name": "Monad",
+      "symbol": "MON",
+      "rank": 10,
+      "price": 0.019084228956649147,
+      "priceChange24h": -5.484010497591847,
+      "marketCap": 206692529,
+      "volume24h": 45694718
+    },
+    {
+      "id": "hyperliquid",
+      "name": "Hyperliquid",
+      "symbol": "HYPE",
+      "rank": 11,
+      "price": 27.09807037960382,
+      "priceChange24h": -8.576509738223399,
+      "marketCap": 6463278107,
+      "volume24h": 142696711
+    },
+    {
+      "id": "dogecoin",
+      "name": "Dogecoin",
+      "symbol": "DOGE",
+      "rank": 12,
+      "price": 0.09236606635717966,
+      "priceChange24h": -5.144735362519093,
+      "marketCap": 15593316284,
+      "volume24h": 818399513
+    },
+    {
+      "id": "aztec",
+      "name": "Aztec",
+      "symbol": "AZTEC",
+      "rank": 13,
+      "price": 0.028308312040529287,
+      "priceChange24h": -15.131262732037854,
+      "marketCap": 82852960,
+      "volume24h": 58458624
+    },
+    {
+      "id": "tether-gold",
+      "name": "Tether Gold",
+      "symbol": "XAUT",
+      "rank": 14,
+      "price": 5144.85134376905,
+      "priceChange24h": 1.008897742381051,
+      "marketCap": 2679494977,
+      "volume24h": 352160977
+    },
+    {
+      "id": "internet-computer",
+      "name": "Internet Computer",
+      "symbol": "ICP",
+      "rank": 15,
+      "price": 2.034797553018638,
+      "priceChange24h": -5.996820244684171,
+      "marketCap": 1118226976,
+      "volume24h": 55697402
+    }
+  ]
+}

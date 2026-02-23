@@ -119,8 +119,8 @@
       "entryTime": 1771588222169,
       "entryRate": -0.0004453211,
       "notionalSize": 1000,
-      "cumulativeFunding": 1.9114656,
-      "lastCollectedAt": 1771633812068,
+      "cumulativeFunding": 5.1884325,
+      "lastCollectedAt": 1771806611920,
       "isOpen": true,
       "fees": 0.25
     },
@@ -133,8 +133,10 @@
       "notionalSize": 1000,
       "cumulativeFunding": 0.8911739999999999,
       "lastCollectedAt": 1771633812068,
-      "isOpen": true,
-      "fees": 0.25
+      "isOpen": false,
+      "fees": 0.5,
+      "exitTime": 1771806611920,
+      "exitReason": "coin_dropped_from_scan"
     },
     {
       "id": "0G-1771588224599",
@@ -143,8 +145,8 @@
       "entryTime": 1771588224599,
       "entryRate": -0.0001513462,
       "notionalSize": 1000,
-      "cumulativeFunding": 7.0217124,
-      "lastCollectedAt": 1771633812068,
+      "cumulativeFunding": 12.9761236,
+      "lastCollectedAt": 1771806611920,
       "isOpen": true,
       "fees": 0.25
     },
@@ -169,8 +171,8 @@
       "entryTime": 1771588226773,
       "entryRate": -0.0000971425,
       "notionalSize": 1000,
-      "cumulativeFunding": 0.5170908,
-      "lastCollectedAt": 1771633812068,
+      "cumulativeFunding": 5.025923000000001,
+      "lastCollectedAt": 1771806611920,
       "isOpen": true,
       "fees": 0.25
     },
@@ -181,12 +183,24 @@
       "entryTime": 1771633812588,
       "entryRate": -0.000226416,
       "notionalSize": 1000,
+      "cumulativeFunding": 12.9424605,
+      "lastCollectedAt": 1771806611920,
+      "isOpen": true,
+      "fees": 0.25
+    },
+    {
+      "id": "AXS-1771806612514",
+      "coin": "AXS",
+      "direction": "SHORT_BASIS",
+      "entryTime": 1771806612514,
+      "entryRate": -0.0003921414,
+      "notionalSize": 1000,
       "cumulativeFunding": 0,
-      "lastCollectedAt": 1771633812588,
+      "lastCollectedAt": 1771806612514,
       "isOpen": true,
       "fees": 0.25
     }
   ],
-  "cumulativePnl": 102.14058740000003,
+  "cumulativePnl": 128.32325820000003,
   "lastScanAt": 0
 }

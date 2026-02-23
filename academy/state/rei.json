@@ -1,18 +1,46 @@
 {
   "agent": "REI",
   "team": "sentinel",
-  "lastUpdated": "2026-02-21T00:32:13.190Z",
-  "runNumber": 6,
+  "lastUpdated": "2026-02-23T00:32:27.216Z",
+  "runNumber": 7,
   "signals": {
-    "total": 3,
+    "total": 5,
     "correct": 0,
     "incorrect": 0,
-    "pending": 3,
+    "pending": 5,
     "accuracy": null,
-    "avgConfidence": 0.56,
+    "avgConfidence": 0.58,
     "calibrationScore": null
   },
   "recentSignals": [
+    {
+      "run": 7,
+      "asset": "JTO",
+      "direction": "flat",
+      "confidence": 0.5,
+      "kelly_size": 0,
+      "invalidation": "n/a",
+      "data_sources": [
+        "self-audit",
+        "funding-scanner"
+      ],
+      "timestamp": "2026-02-23T00:32:19.261Z",
+      "outcome": "pending"
+    },
+    {
+      "run": 7,
+      "asset": "JTO",
+      "direction": "short",
+      "confidence": 0.72,
+      "kelly_size": 0.12,
+      "invalidation": "JTO closes above -100% funding (mean-reversion trap suggests carry gets compressed faster than my model predicts)",
+      "data_sources": [
+        "funding-scanner",
+        "basis-decomposition"
+      ],
+      "timestamp": "2026-02-23T00:31:15.736Z",
+      "outcome": "pending"
+    },
     {
       "run": 6,
       "asset": "BTC",
@@ -67,20 +95,20 @@
   "recentDecisions": [],
   "toolPerformance": {
     "name": "Funding Rate Scanner",
-    "paperPnl": 102.14058740000003,
+    "paperPnl": 128.32325820000003,
     "openPaperTrades": 5,
     "bestTrade": null,
     "worstTrade": null,
-    "totalScans": 6
+    "totalScans": 7
   },
   "convergenceFlags": {
     "phrasesUsedByMultipleAgents": [
       "confidence kelly invalidation",
       "kelly invalidation sources",
+      "btc confidence kelly",
       "signal flat btc",
       "flat btc confidence",
-      "btc confidence kelly",
-      "invalidation sources correlationstresstest"
+      "eth confidence kelly"
     ],
     "bannedPhrases": [
       {
@@ -110,21 +138,21 @@
     ]
   },
   "fitness": {
-    "current": 74.498699627401,
+    "current": 72.498699627401,
     "trend": [
-      0,
       -2,
-      0
+      0,
+      -2
     ],
     "tier": "elite",
     "signalScore": 0
   },
   "karma": {
-    "current": 74.498699627401,
+    "current": 72.498699627401,
     "trend": [
-      0,
       -2,
-      0
+      0,
+      -2
     ],
     "tier": "elite",
     "locked": 0

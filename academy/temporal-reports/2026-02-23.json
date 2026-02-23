@@ -1,0 +1,56 @@
+{
+  "scannedAt": "2026-02-23T05:04:24.217Z",
+  "signals": [
+    {
+      "coin": "SOL",
+      "pattern": "funding_reset",
+      "direction": "long",
+      "confidence": 0.6826308896,
+      "kelly_size": 0.08,
+      "invalidation": "SOL breaks below 75.75 after reset (2% against)",
+      "reasoning": "SOL funding at -82% APR with 56min to hourly reset. Extreme negative funding suggests long bias post-reset as funding pressure releases. Premium: -0.110%. Regime: VOLATILE.",
+      "data": {
+        "fundingRate": -0.0000933264,
+        "annualizedRate": -81.7539264,
+        "minutesToReset": 56,
+        "regime": "VOLATILE",
+        "markPrice": 77.3,
+        "oraclePrice": 77.385,
+        "premium": -0.10984040834788131,
+        "priceChange24h": -9.164620030787678,
+        "session": "asian"
+      }
+    },
+    {
+      "coin": "ARB",
+      "pattern": "funding_reset",
+      "direction": "long",
+      "confidence": 0.6417967628000001,
+      "kelly_size": 0.08,
+      "invalidation": "ARB breaks below 0.09 after reset (2% against)",
+      "reasoning": "ARB funding at -55% APR with 56min to hourly reset. Extreme negative funding suggests long bias post-reset as funding pressure releases. Premium: -0.132%. Regime: VOLATILE.",
+      "data": {
+        "fundingRate": -0.0000622502,
+        "annualizedRate": -54.53117520000001,
+        "minutesToReset": 56,
+        "regime": "VOLATILE",
+        "markPrice": 0.09052,
+        "oraclePrice": 0.09064,
+        "premium": -0.1323918799646901,
+        "priceChange24h": -5.708333333333332,
+        "session": "asian"
+      }
+    }
+  ],
+  "regimes": {
+    "BTC": {
+      "regime": "VOLATILE",
+      "adx": 51.942603518520926,
+      "volatilityRatio": 1.9410427431137696,
+      "priceChange1h": 0.06482982171799027,
+      "priceChange24h": -4.589005813525645
+    }
+  },
+  "nextResetMinutes": 56,
+  "session": "asian"
+}

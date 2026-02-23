@@ -1,18 +1,46 @@
 {
   "agent": "JINX",
   "team": "sentinel",
-  "lastUpdated": "2026-02-21T00:32:13.191Z",
-  "runNumber": 6,
+  "lastUpdated": "2026-02-23T00:32:27.218Z",
+  "runNumber": 7,
   "signals": {
-    "total": 2,
+    "total": 4,
     "correct": 0,
     "incorrect": 0,
-    "pending": 2,
+    "pending": 4,
     "accuracy": null,
     "avgConfidence": 0.5,
     "calibrationScore": null
   },
   "recentSignals": [
+    {
+      "run": 7,
+      "asset": "ETH",
+      "direction": "flat",
+      "confidence": 0.5,
+      "kelly_size": 0,
+      "invalidation": "n/a",
+      "data_sources": [
+        "factor-model",
+        "data-insufficiency"
+      ],
+      "timestamp": "2026-02-23T00:32:26.863Z",
+      "outcome": "pending"
+    },
+    {
+      "run": 7,
+      "asset": "BTC",
+      "direction": "flat",
+      "confidence": 0.5,
+      "kelly_size": 0,
+      "invalidation": "n/a",
+      "data_sources": [
+        "factor-model",
+        "data-insufficiency"
+      ],
+      "timestamp": "2026-02-23T00:32:26.859Z",
+      "outcome": "pending"
+    },
     {
       "run": 6,
       "asset": "BTC",
@@ -56,10 +84,10 @@
     "phrasesUsedByMultipleAgents": [
       "confidence kelly invalidation",
       "kelly invalidation sources",
+      "btc confidence kelly",
       "signal flat btc",
       "flat btc confidence",
-      "btc confidence kelly",
-      "invalidation sources correlationstresstest"
+      "eth confidence kelly"
     ],
     "bannedPhrases": [
       {
@@ -145,13 +173,17 @@
       {
         "phrase": "btc confidence kelly",
         "bannedAtRun": 6
+      },
+      {
+        "phrase": "eth confidence kelly",
+        "bannedAtRun": 7
       }
     ]
   },
   "fitness": {
-    "current": 75.25868564609229,
+    "current": 73.25868564609229,
     "trend": [
-      0,
+      -2,
       -2,
       -2
     ],
@@ -159,9 +191,9 @@
     "signalScore": 0
   },
   "karma": {
-    "current": 75.25868564609229,
+    "current": 73.25868564609229,
     "trend": [
-      0,
+      -2,
       -2,
       -2
     ],

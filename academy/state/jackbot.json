@@ -1,18 +1,46 @@
 {
   "agent": "JACKBOT",
   "team": "scribe",
-  "lastUpdated": "2026-02-21T00:32:13.184Z",
-  "runNumber": 6,
+  "lastUpdated": "2026-02-23T00:32:27.208Z",
+  "runNumber": 7,
   "signals": {
-    "total": 1,
+    "total": 3,
     "correct": 0,
     "incorrect": 0,
-    "pending": 1,
+    "pending": 3,
     "accuracy": null,
     "avgConfidence": 0.5,
     "calibrationScore": null
   },
   "recentSignals": [
+    {
+      "run": 7,
+      "asset": "INJ",
+      "direction": "flat",
+      "confidence": 0.5,
+      "kelly_size": 0,
+      "invalidation": "n/a",
+      "data_sources": [
+        "temporal-edge",
+        "self-audit"
+      ],
+      "timestamp": "2026-02-23T00:31:32.286Z",
+      "outcome": "pending"
+    },
+    {
+      "run": 7,
+      "asset": "INJ",
+      "direction": "flat",
+      "confidence": 0.5,
+      "kelly_size": 0,
+      "invalidation": "n/a",
+      "data_sources": [
+        "temporal-edge",
+        "self-audit"
+      ],
+      "timestamp": "2026-02-23T00:30:31.673Z",
+      "outcome": "pending"
+    },
     {
       "run": 6,
       "asset": "OP",
@@ -42,10 +70,10 @@
     "phrasesUsedByMultipleAgents": [
       "confidence kelly invalidation",
       "kelly invalidation sources",
+      "btc confidence kelly",
       "signal flat btc",
       "flat btc confidence",
-      "btc confidence kelly",
-      "invalidation sources correlationstresstest"
+      "eth confidence kelly"
     ],
     "bannedPhrases": [
       {
@@ -99,9 +127,9 @@
     ]
   },
   "fitness": {
-    "current": 80.18569317267139,
+    "current": 78.18569317267139,
     "trend": [
-      0,
+      -2,
       -2,
       -2
     ],
@@ -109,9 +137,9 @@
     "signalScore": 0
   },
   "karma": {
-    "current": 80.18569317267139,
+    "current": 78.18569317267139,
     "trend": [
-      0,
+      -2,
       -2,
       -2
     ],

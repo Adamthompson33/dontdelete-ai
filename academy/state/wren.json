@@ -1,18 +1,76 @@
 {
   "agent": "WREN",
   "team": "architect",
-  "lastUpdated": "2026-02-21T00:32:13.189Z",
-  "runNumber": 6,
+  "lastUpdated": "2026-02-23T00:32:27.215Z",
+  "runNumber": 7,
   "signals": {
-    "total": 2,
+    "total": 6,
     "correct": 0,
     "incorrect": 0,
-    "pending": 2,
+    "pending": 6,
     "accuracy": null,
-    "avgConfidence": 0.575,
+    "avgConfidence": 0.5650000000000001,
     "calibrationScore": null
   },
   "recentSignals": [
+    {
+      "run": 7,
+      "asset": "BTC",
+      "direction": "flat",
+      "confidence": 0.5,
+      "kelly_size": 0,
+      "invalidation": "n/a",
+      "data_sources": [
+        "kelly-engine",
+        "survival-discipline"
+      ],
+      "timestamp": "2026-02-23T00:31:56.304Z",
+      "outcome": "pending"
+    },
+    {
+      "run": 7,
+      "asset": "ETH",
+      "direction": "long",
+      "confidence": 0.62,
+      "kelly_size": 0.08,
+      "invalidation": "ETH breaks below $1850 on volume",
+      "data_sources": [
+        "kelly-engine",
+        "spot-price",
+        "risk-audit"
+      ],
+      "timestamp": "2026-02-23T00:31:56.299Z",
+      "outcome": "pending"
+    },
+    {
+      "run": 7,
+      "asset": "ETH",
+      "direction": "long",
+      "confidence": 0.62,
+      "kelly_size": 0.08,
+      "invalidation": "ETH breaks below $1850 on volume",
+      "data_sources": [
+        "kelly-engine",
+        "spot-price",
+        "risk-audit"
+      ],
+      "timestamp": "2026-02-23T00:30:54.684Z",
+      "outcome": "pending"
+    },
+    {
+      "run": 7,
+      "asset": "BTC",
+      "direction": "flat",
+      "confidence": 0.5,
+      "kelly_size": 0,
+      "invalidation": "n/a",
+      "data_sources": [
+        "kelly-engine",
+        "survival-discipline"
+      ],
+      "timestamp": "2026-02-23T00:30:54.680Z",
+      "outcome": "pending"
+    },
     {
       "run": 6,
       "asset": "BTC",
@@ -26,21 +84,6 @@
         "survival-discipline"
       ],
       "timestamp": "2026-02-21T00:31:47.967Z",
-      "outcome": "pending"
-    },
-    {
-      "run": 6,
-      "asset": "BTC",
-      "direction": "long",
-      "confidence": 0.65,
-      "kelly_size": 0.08,
-      "invalidation": "Bitcoin breaks below $65K on volume spike",
-      "data_sources": [
-        "sakura-arb-scanner",
-        "kelly-engine",
-        "survival-discipline"
-      ],
-      "timestamp": "2026-02-21T00:30:49.905Z",
       "outcome": "pending"
     }
   ],
@@ -58,52 +101,12 @@
     "phrasesUsedByMultipleAgents": [
       "confidence kelly invalidation",
       "kelly invalidation sources",
+      "btc confidence kelly",
       "signal flat btc",
       "flat btc confidence",
-      "btc confidence kelly",
-      "invalidation sources correlationstresstest"
+      "eth confidence kelly"
     ],
     "bannedPhrases": [
-      {
-        "phrase": "jackbots right sometimes",
-        "bannedAtRun": 4
-      },
-      {
-        "phrase": "right sometimes the",
-        "bannedAtRun": 4
-      },
-      {
-        "phrase": "sometimes the most",
-        "bannedAtRun": 4
-      },
-      {
-        "phrase": "the most important",
-        "bannedAtRun": 4
-      },
-      {
-        "phrase": "most important trade",
-        "bannedAtRun": 4
-      },
-      {
-        "phrase": "important trade the",
-        "bannedAtRun": 4
-      },
-      {
-        "phrase": "trade the one",
-        "bannedAtRun": 4
-      },
-      {
-        "phrase": "the one you",
-        "bannedAtRun": 4
-      },
-      {
-        "phrase": "one you dont",
-        "bannedAtRun": 4
-      },
-      {
-        "phrase": "you dont make",
-        "bannedAtRun": 4
-      },
       {
         "phrase": "were all trading",
         "bannedAtRun": 5
@@ -171,13 +174,17 @@
       {
         "phrase": "btc confidence kelly",
         "bannedAtRun": 6
+      },
+      {
+        "phrase": "eth confidence kelly",
+        "bannedAtRun": 7
       }
     ]
   },
   "fitness": {
-    "current": 55.8466818929939,
+    "current": 53.8466818929939,
     "trend": [
-      0,
+      -2,
       -2,
       -2
     ],
@@ -185,9 +192,9 @@
     "signalScore": 0
   },
   "karma": {
-    "current": 55.8466818929939,
+    "current": 53.8466818929939,
     "trend": [
-      0,
+      -2,
       -2,
       -2
     ],

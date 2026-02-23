@@ -1,8 +1,8 @@
 {
   "agent": "PROPHET",
   "team": "architect",
-  "lastUpdated": "2026-02-21T00:32:13.187Z",
-  "runNumber": 6,
+  "lastUpdated": "2026-02-23T00:32:27.213Z",
+  "runNumber": 7,
   "signals": {
     "total": 4,
     "correct": 0,
@@ -84,10 +84,10 @@
     "phrasesUsedByMultipleAgents": [
       "confidence kelly invalidation",
       "kelly invalidation sources",
+      "btc confidence kelly",
       "signal flat btc",
       "flat btc confidence",
-      "btc confidence kelly",
-      "invalidation sources correlationstresstest"
+      "eth confidence kelly"
     ],
     "bannedPhrases": [
       {
@@ -129,21 +129,21 @@
     ]
   },
   "fitness": {
-    "current": 42.81690527585597,
+    "current": 40.81690527585597,
     "trend": [
-      0,
       -2,
-      0
+      0,
+      -2
     ],
     "tier": "unstable",
     "signalScore": 0
   },
   "karma": {
-    "current": 42.81690527585597,
+    "current": 40.81690527585597,
     "trend": [
-      0,
       -2,
-      0
+      0,
+      -2
     ],
     "tier": "unstable",
     "locked": 0

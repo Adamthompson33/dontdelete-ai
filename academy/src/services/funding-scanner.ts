@@ -69,6 +69,11 @@ export interface ScanResult {
 
 // ═══ Constants ═══
 
+// Blacklisted tokens — auto-exclude regardless of signal quality
+// OM (MANTRA): 90%+ crash, likely rug pull. Extreme funding is a trap.
+const BLACKLISTED_COINS = new Set(['OM']);
+const CATASTROPHIC_DROP_THRESHOLD = -0.50; // >50% 24h drop = auto-exclude
+
 const THRESHOLD_APR = 0.20;         // 20% annualized minimum to flag
 const MIN_VOLUME_USD = 100_000;     // $100K daily volume
 const MIN_OI_USD = 50_000;          // $50K open interest
@@ -131,6 +136,12 @@ export class FundingScanner {
       // Price change from previous day
       const priceChange24h = prevDayPx > 0 ? (markPx - prevDayPx) / prevDayPx : 0;
       const volatile = Math.abs(priceChange24h) > 0.20; // >20% move = death spiral or pump
+
+      // Filter: blacklisted coins
+      if (BLACKLISTED_COINS.has(coin)) continue;
+
+      // Filter: catastrophic movers (rug pulls, delistings, exploits)
+      if (priceChange24h < CATASTROPHIC_DROP_THRESHOLD) continue;
 
       // Filter: rate must be significant
       if (Math.abs(annualized) < THRESHOLD_APR) continue;

@@ -49,6 +49,10 @@ interface PaperLedgerEntry {
 const LEDGER_FILE = path.join(__dirname, '..', 'results', 'paper-ledger.json');
 const REPORT_DIR = path.join(__dirname, '..', 'reports');
 
+// ═══ Blacklist — tokens to auto-exclude regardless of funding/basis ═══
+// OM (MANTRA): 90%+ crash, likely rug pull. -2355% APR is a trap, not a signal.
+const BLACKLISTED_COINS = new Set(['OM']);
+
 // Tier thresholds
 const HIGH_MIN_APR = 1.00;       // 100% annualized
 const HIGH_MIN_PERSIST = 4;      // hours
@@ -159,7 +163,18 @@ async function main() {
   }
 
   // Filter to everything above LOW threshold (50% APR)
-  const candidates = opportunities.filter(o => Math.abs(o.annualizedRate) >= LOW_MIN_APR);
+  // Also exclude blacklisted coins and catastrophic movers (>50% drop in price — rug pulls, delistings, exploits)
+  const candidates = opportunities.filter(o => {
+    if (BLACKLISTED_COINS.has(o.coin)) {
+      console.log(`⛔ ${o.coin} — BLACKLISTED (skipped)`);
+      return false;
+    }
+    if (o.priceChange24h < -0.50) {
+      console.log(`💀 ${o.coin} — CATASTROPHIC MOVE (${(o.priceChange24h * 100).toFixed(1)}% 24h drop, auto-excluded)`);
+      return false;
+    }
+    return Math.abs(o.annualizedRate) >= LOW_MIN_APR;
+  });
 
   console.log(`Scanned ${opportunities.length} coins. ${candidates.length} above ${LOW_MIN_APR * 100}% APR threshold.\n`);
 

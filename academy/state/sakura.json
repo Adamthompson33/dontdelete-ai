@@ -1,18 +1,46 @@
 {
   "agent": "SAKURA",
   "team": "sentinel",
-  "lastUpdated": "2026-02-21T00:32:13.185Z",
-  "runNumber": 6,
+  "lastUpdated": "2026-02-23T00:32:27.211Z",
+  "runNumber": 7,
   "signals": {
-    "total": 5,
+    "total": 7,
     "correct": 0,
     "incorrect": 0,
-    "pending": 5,
+    "pending": 7,
     "accuracy": null,
-    "avgConfidence": 0.5760000000000001,
+    "avgConfidence": 0.6042857142857143,
     "calibrationScore": null
   },
   "recentSignals": [
+    {
+      "run": 7,
+      "asset": "BTC",
+      "direction": "flat",
+      "confidence": 0.5,
+      "kelly_size": 0,
+      "invalidation": "n/a",
+      "data_sources": [
+        "correlation-stress-test",
+        "execution-profile"
+      ],
+      "timestamp": "2026-02-23T00:31:39.303Z",
+      "outcome": "pending"
+    },
+    {
+      "run": 7,
+      "asset": "BTC",
+      "direction": "long",
+      "confidence": 0.85,
+      "kelly_size": 0.12,
+      "invalidation": "P(above $500K) no longer exceeds P(above $200K) on RylOpNQu/ARDYUYcv",
+      "data_sources": [
+        "arb-scanner",
+        "bounded-probability-constraint"
+      ],
+      "timestamp": "2026-02-23T00:30:39.112Z",
+      "outcome": "pending"
+    },
     {
       "run": 6,
       "asset": "BTC",
@@ -54,34 +82,6 @@
       ],
       "timestamp": "2026-02-20T11:58:57.502Z",
       "outcome": "pending"
-    },
-    {
-      "run": 6,
-      "asset": "BTC",
-      "direction": "flat",
-      "confidence": 0.6,
-      "kelly_size": 0,
-      "invalidation": "n/a",
-      "data_sources": [
-        "arb-scanner (violation exists but liquidity unconfirmed)",
-        "correlation-audit (65% correlation means directional thesis is phantom)"
-      ],
-      "timestamp": "2026-02-20T11:58:57.498Z",
-      "outcome": "pending"
-    },
-    {
-      "run": 6,
-      "asset": "BTC",
-      "direction": "flat",
-      "confidence": 0.6,
-      "kelly_size": 0,
-      "invalidation": "n/a",
-      "data_sources": [
-        "arb-scanner (flagged violation but need liquidity confirmation)",
-        "correlation-audit (65% means directional thesis is correlated risk)"
-      ],
-      "timestamp": "2026-02-20T11:57:58.007Z",
-      "outcome": "pending"
     }
   ],
   "record": {
@@ -98,52 +98,12 @@
     "phrasesUsedByMultipleAgents": [
       "confidence kelly invalidation",
       "kelly invalidation sources",
+      "btc confidence kelly",
       "signal flat btc",
       "flat btc confidence",
-      "btc confidence kelly",
-      "invalidation sources correlationstresstest"
+      "eth confidence kelly"
     ],
     "bannedPhrases": [
-      {
-        "phrase": "jackbots right sometimes",
-        "bannedAtRun": 4
-      },
-      {
-        "phrase": "right sometimes the",
-        "bannedAtRun": 4
-      },
-      {
-        "phrase": "sometimes the most",
-        "bannedAtRun": 4
-      },
-      {
-        "phrase": "the most important",
-        "bannedAtRun": 4
-      },
-      {
-        "phrase": "most important trade",
-        "bannedAtRun": 4
-      },
-      {
-        "phrase": "important trade the",
-        "bannedAtRun": 4
-      },
-      {
-        "phrase": "trade the one",
-        "bannedAtRun": 4
-      },
-      {
-        "phrase": "the one you",
-        "bannedAtRun": 4
-      },
-      {
-        "phrase": "one you dont",
-        "bannedAtRun": 4
-      },
-      {
-        "phrase": "you dont make",
-        "bannedAtRun": 4
-      },
       {
         "phrase": "consensus sitting flat",
         "bannedAtRun": 5
@@ -215,21 +175,21 @@
     ]
   },
   "fitness": {
-    "current": 60.13809505129274,
+    "current": 58.13809505129274,
     "trend": [
-      0,
       -2,
-      0
+      0,
+      -2
     ],
     "tier": "rising",
     "signalScore": 0
   },
   "karma": {
-    "current": 60.13809505129274,
+    "current": 58.13809505129274,
     "trend": [
-      0,
       -2,
-      0
+      0,
+      -2
     ],
     "tier": "rising",
     "locked": 0

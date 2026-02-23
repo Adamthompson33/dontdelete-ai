@@ -1,34 +1,13 @@
 {
-  "scannedAt": "2026-02-22T17:04:25.054Z",
-  "signals": [
-    {
-      "coin": "INJ",
-      "pattern": "funding_reset",
-      "direction": "long",
-      "confidence": 0.6619474783999999,
-      "kelly_size": 0.08,
-      "invalidation": "INJ breaks below 3.46 after reset (2% against)",
-      "reasoning": "INJ funding at -68% APR with 56min to hourly reset. Extreme negative funding suggests long bias post-reset as funding pressure releases. Premium: -0.158%. Regime: TRENDING.",
-      "data": {
-        "fundingRate": -0.0000775856,
-        "annualizedRate": -67.96498559999999,
-        "minutesToReset": 56,
-        "regime": "TRENDING",
-        "markPrice": 3.5299,
-        "oraclePrice": 3.5355,
-        "premium": -0.1583934379861357,
-        "priceChange24h": -8.061155388862842,
-        "session": "us"
-      }
-    }
-  ],
+  "scannedAt": "2026-02-22T21:04:24.694Z",
+  "signals": [],
   "regimes": {
     "BTC": {
       "regime": "TRENDING",
-      "adx": 25.371704576657923,
-      "volatilityRatio": 1.1883858595792727,
-      "priceChange1h": -0.050295857988165674,
-      "priceChange24h": -1.2178540621938916
+      "adx": 30.364262598851916,
+      "volatilityRatio": 0.6780652426037377,
+      "priceChange1h": 0.10985585130862072,
+      "priceChange24h": -1.3228171322378144
     }
   },
   "nextResetMinutes": 56,

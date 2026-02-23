@@ -1,0 +1,1184 @@
+{
+  "no_stop": {
+    "combined": {
+      "TRENDING_DOWN": {
+        "num_trades": 5,
+        "survival_rate": 100.0,
+        "win_rate": 60.0,
+        "avg_net_pnl_bps": 408.48435627525237,
+        "avg_funding_bps": 19.2382458,
+        "avg_price_pnl_bps": 389.24611047525246,
+        "avg_duration_hours": 12.6,
+        "total_net_pnl_bps": 2042.4217813762618
+      },
+      "VOLATILE": {
+        "num_trades": 2,
+        "survival_rate": 100.0,
+        "win_rate": 50.0,
+        "avg_net_pnl_bps": 391.2768860051388,
+        "avg_funding_bps": 23.246498499999994,
+        "avg_price_pnl_bps": 368.03038750513883,
+        "avg_duration_hours": 50.0,
+        "total_net_pnl_bps": 782.5537720102776
+      },
+      "CHOP": {
+        "num_trades": 8,
+        "survival_rate": 100.0,
+        "win_rate": 37.5,
+        "avg_net_pnl_bps": 407.42676030440975,
+        "avg_funding_bps": 80.70393237499998,
+        "avg_price_pnl_bps": 326.7228279294098,
+        "avg_duration_hours": 34.5,
+        "total_net_pnl_bps": 3259.414082435278
+      },
+      "ALL": {
+        "num_trades": 15,
+        "survival_rate": 100.0,
+        "win_rate": 46.666666666666664,
+        "avg_net_pnl_bps": 405.62597572145455,
+        "avg_funding_bps": 52.55437899999998,
+        "avg_price_pnl_bps": 353.07159672145457,
+        "avg_duration_hours": 29.266666666666666,
+        "total_net_pnl_bps": 6084.389635821819
+      }
+    },
+    "per_coin": {
+      "SOL": {
+        "TRENDING_DOWN": {
+          "num_trades": 2,
+          "survival_rate": 100.0,
+          "win_rate": 100.0,
+          "avg_net_pnl_bps": 373.85173500092696,
+          "avg_funding_bps": 38.361011500000004,
+          "avg_price_pnl_bps": 335.49072350092695,
+          "avg_duration_hours": 28.0,
+          "total_net_pnl_bps": 747.7034700018539
+        },
+        "VOLATILE": {
+          "num_trades": 2,
+          "survival_rate": 100.0,
+          "win_rate": 50.0,
+          "avg_net_pnl_bps": 391.2768860051388,
+          "avg_funding_bps": 23.246498499999994,
+          "avg_price_pnl_bps": 368.03038750513883,
+          "avg_duration_hours": 50.0,
+          "total_net_pnl_bps": 782.5537720102776
+        },
+        "ALL": {
+          "num_trades": 4,
+          "survival_rate": 100.0,
+          "win_rate": 75.0,
+          "avg_net_pnl_bps": 382.5643105030329,
+          "avg_funding_bps": 30.803755,
+          "avg_price_pnl_bps": 351.7605555030329,
+          "avg_duration_hours": 39.0,
+          "total_net_pnl_bps": 1530.2572420121317
+        }
+      },
+      "WIF": {
+        "TRENDING_DOWN": {
+          "num_trades": 1,
+          "survival_rate": 100.0,
+          "win_rate": 100.0,
+          "avg_net_pnl_bps": 1723.1111377683415,
+          "avg_funding_bps": 17.632324999999998,
+          "avg_price_pnl_bps": 1705.4788127683414,
+          "avg_duration_hours": 4.0,
+          "total_net_pnl_bps": 1723.1111377683415
+        },
+        "CHOP": {
+          "num_trades": 1,
+          "survival_rate": 100.0,
+          "win_rate": 0.0,
+          "avg_net_pnl_bps": -161.53709844527978,
+          "avg_funding_bps": 4.603577,
+          "avg_price_pnl_bps": -166.14067544527978,
+          "avg_duration_hours": 12.0,
+          "total_net_pnl_bps": -161.53709844527978
+        },
+        "ALL": {
+          "num_trades": 2,
+          "survival_rate": 100.0,
+          "win_rate": 50.0,
+          "avg_net_pnl_bps": 780.7870196615307,
+          "avg_funding_bps": 11.117950999999998,
+          "avg_price_pnl_bps": 769.6690686615308,
+          "avg_duration_hours": 8.0,
+          "total_net_pnl_bps": 1561.5740393230615
+        }
+      },
+      "INJ": {
+        "TRENDING_DOWN": {
+          "num_trades": 1,
+          "survival_rate": 100.0,
+          "win_rate": 0.0,
+          "avg_net_pnl_bps": -0.26005535906389177,
+          "avg_funding_bps": 1.961881,
+          "avg_price_pnl_bps": -2.221936359063892,
+          "avg_duration_hours": 2.0,
+          "total_net_pnl_bps": -0.26005535906389177
+        },
+        "CHOP": {
+          "num_trades": 1,
+          "survival_rate": 100.0,
+          "win_rate": 100.0,
+          "avg_net_pnl_bps": 1003.2417627183895,
+          "avg_funding_bps": 524.2127259999999,
+          "avg_price_pnl_bps": 479.0290367183897,
+          "avg_duration_hours": 100.0,
+          "total_net_pnl_bps": 1003.2417627183895
+        },
+        "ALL": {
+          "num_trades": 2,
+          "survival_rate": 100.0,
+          "win_rate": 50.0,
+          "avg_net_pnl_bps": 501.49085367966285,
+          "avg_funding_bps": 263.0873034999999,
+          "avg_price_pnl_bps": 238.4035501796629,
+          "avg_duration_hours": 51.0,
+          "total_net_pnl_bps": 1002.9817073593257
+        }
+      },
+      "OP": {
+        "TRENDING_DOWN": {
+          "num_trades": 1,
+          "survival_rate": 100.0,
+          "win_rate": 0.0,
+          "avg_net_pnl_bps": -428.1327710348695,
+          "avg_funding_bps": -0.125,
+          "avg_price_pnl_bps": -428.0077710348695,
+          "avg_duration_hours": 1.0,
+          "total_net_pnl_bps": -428.1327710348695
+        },
+        "CHOP": {
+          "num_trades": 5,
+          "survival_rate": 100.0,
+          "win_rate": 20.0,
+          "avg_net_pnl_bps": -236.35145811814377,
+          "avg_funding_bps": 18.412816999999997,
+          "avg_price_pnl_bps": -254.76427511814376,
+          "avg_duration_hours": 12.0,
+          "total_net_pnl_bps": -1181.7572905907189
+        },
+        "ALL": {
+          "num_trades": 6,
+          "survival_rate": 100.0,
+          "win_rate": 16.666666666666664,
+          "avg_net_pnl_bps": -268.3150102709314,
+          "avg_funding_bps": 15.32318083333333,
+          "avg_price_pnl_bps": -283.63819110426476,
+          "avg_duration_hours": 10.166666666666666,
+          "total_net_pnl_bps": -1609.8900616255883
+        }
+      },
+      "ARB": {
+        "CHOP": {
+          "num_trades": 1,
+          "survival_rate": 100.0,
+          "win_rate": 100.0,
+          "avg_net_pnl_bps": 3599.466708752887,
+          "avg_funding_bps": 24.751070999999946,
+          "avg_price_pnl_bps": 3574.7156377528872,
+          "avg_duration_hours": 104.0,
+          "total_net_pnl_bps": 3599.466708752887
+        },
+        "ALL": {
+          "num_trades": 1,
+          "survival_rate": 100.0,
+          "win_rate": 100.0,
+          "avg_net_pnl_bps": 3599.466708752887,
+          "avg_funding_bps": 24.751070999999946,
+          "avg_price_pnl_bps": 3574.7156377528872,
+          "avg_duration_hours": 104.0,
+          "total_net_pnl_bps": 3599.466708752887
+        }
+      }
+    },
+    "total_trades": 15
+  },
+  "1%": {
+    "combined": {
+      "TRENDING_DOWN": {
+        "num_trades": 14,
+        "survival_rate": 14.285714285714285,
+        "win_rate": 14.285714285714285,
+        "avg_net_pnl_bps": 37.123588333104884,
+        "avg_funding_bps": 6.7300735,
+        "avg_price_pnl_bps": 30.39351483310488,
+        "avg_duration_hours": 4.285714285714286,
+        "total_net_pnl_bps": 519.7302366634683
+      },
+      "VOLATILE": {
+        "num_trades": 3,
+        "survival_rate": 33.33333333333333,
+        "win_rate": 33.33333333333333,
+        "avg_net_pnl_bps": 276.7721431750321,
+        "avg_funding_bps": 14.115470000000002,
+        "avg_price_pnl_bps": 262.65667317503215,
+        "avg_duration_hours": 31.666666666666668,
+        "total_net_pnl_bps": 830.3164295250964
+      },
+      "CHOP": {
+        "num_trades": 31,
+        "survival_rate": 9.67741935483871,
+        "win_rate": 12.903225806451612,
+        "avg_net_pnl_bps": -27.478921346446505,
+        "avg_funding_bps": 19.76242393548387,
+        "avg_price_pnl_bps": -47.24134528193039,
+        "avg_duration_hours": 4.806451612903226,
+        "total_net_pnl_bps": -851.8465617398417
+      },
+      "ALL": {
+        "num_trades": 48,
+        "survival_rate": 12.5,
+        "win_rate": 14.583333333333334,
+        "avg_net_pnl_bps": 10.379168842681718,
+        "avg_funding_bps": 15.608387104166669,
+        "avg_price_pnl_bps": -5.229218261484936,
+        "avg_duration_hours": 6.333333333333333,
+        "total_net_pnl_bps": 498.20010444872247
+      }
+    },
+    "per_coin": {
+      "SOL": {
+        "TRENDING_DOWN": {
+          "num_trades": 8,
+          "survival_rate": 25.0,
+          "win_rate": 25.0,
+          "avg_net_pnl_bps": 137.52257545793387,
+          "avg_funding_bps": 9.3339245,
+          "avg_price_pnl_bps": 128.18865095793385,
+          "avg_duration_hours": 6.75,
+          "total_net_pnl_bps": 1100.180603663471
+        },
+        "VOLATILE": {
+          "num_trades": 3,
+          "survival_rate": 33.33333333333333,
+          "win_rate": 33.33333333333333,
+          "avg_net_pnl_bps": 276.7721431750321,
+          "avg_funding_bps": 14.115470000000002,
+          "avg_price_pnl_bps": 262.65667317503215,
+          "avg_duration_hours": 31.666666666666668,
+          "total_net_pnl_bps": 830.3164295250964
+        },
+        "ALL": {
+          "num_trades": 11,
+          "survival_rate": 27.27272727272727,
+          "win_rate": 27.27272727272727,
+          "avg_net_pnl_bps": 175.49973028986977,
+          "avg_funding_bps": 10.637982363636363,
+          "avg_price_pnl_bps": 164.86174792623342,
+          "avg_duration_hours": 13.545454545454545,
+          "total_net_pnl_bps": 1930.4970331885675
+        }
+      },
+      "WIF": {
+        "TRENDING_DOWN": {
+          "num_trades": 3,
+          "survival_rate": 0.0,
+          "win_rate": 0.0,
+          "avg_net_pnl_bps": -94.09574933333359,
+          "avg_funding_bps": 5.904250666666666,
+          "avg_price_pnl_bps": -100.00000000000026,
+          "avg_duration_hours": 1.0,
+          "total_net_pnl_bps": -282.2872480000008
+        },
+        "CHOP": {
+          "num_trades": 1,
+          "survival_rate": 0.0,
+          "win_rate": 0.0,
+          "avg_net_pnl_bps": -97.93809900000002,
+          "avg_funding_bps": 2.0619009999999998,
+          "avg_price_pnl_bps": -100.00000000000001,
+          "avg_duration_hours": 3.0,
+          "total_net_pnl_bps": -97.93809900000002
+        },
+        "ALL": {
+          "num_trades": 4,
+          "survival_rate": 0.0,
+          "win_rate": 0.0,
+          "avg_net_pnl_bps": -95.05633675000021,
+          "avg_funding_bps": 4.94366325,
+          "avg_price_pnl_bps": -100.0000000000002,
+          "avg_duration_hours": 1.5,
+          "total_net_pnl_bps": -380.22534700000085
+        }
+      },
+      "INJ": {
+        "TRENDING_DOWN": {
+          "num_trades": 2,
+          "survival_rate": 0.0,
+          "win_rate": 0.0,
+          "avg_net_pnl_bps": -99.01905950000068,
+          "avg_funding_bps": 0.9809405,
+          "avg_price_pnl_bps": -100.00000000000068,
+          "avg_duration_hours": 1.0,
+          "total_net_pnl_bps": -198.03811900000136
+        },
+        "CHOP": {
+          "num_trades": 11,
+          "survival_rate": 9.090909090909092,
+          "win_rate": 18.181818181818183,
+          "avg_net_pnl_bps": 25.68839522282748,
+          "avg_funding_bps": 47.65570236363636,
+          "avg_price_pnl_bps": -21.967307140808895,
+          "avg_duration_hours": 9.090909090909092,
+          "total_net_pnl_bps": 282.5723474511023
+        },
+        "ALL": {
+          "num_trades": 13,
+          "survival_rate": 7.6923076923076925,
+          "win_rate": 15.384615384615385,
+          "avg_net_pnl_bps": 6.502632957776986,
+          "avg_funding_bps": 40.47496976923077,
+          "avg_price_pnl_bps": -33.972336811453786,
+          "avg_duration_hours": 7.846153846153846,
+          "total_net_pnl_bps": 84.53422845110082
+        }
+      },
+      "OP": {
+        "TRENDING_DOWN": {
+          "num_trades": 1,
+          "survival_rate": 0.0,
+          "win_rate": 0.0,
+          "avg_net_pnl_bps": -100.12500000000045,
+          "avg_funding_bps": -0.125,
+          "avg_price_pnl_bps": -100.00000000000045,
+          "avg_duration_hours": 1.0,
+          "total_net_pnl_bps": -100.12500000000045
+        },
+        "CHOP": {
+          "num_trades": 18,
+          "survival_rate": 11.11111111111111,
+          "win_rate": 11.11111111111111,
+          "avg_net_pnl_bps": -52.14687528838574,
+          "avg_funding_bps": 4.677642777777778,
+          "avg_price_pnl_bps": -56.82451806616351,
+          "avg_duration_hours": 2.4444444444444446,
+          "total_net_pnl_bps": -938.6437551909434
+        },
+        "ALL": {
+          "num_trades": 19,
+          "survival_rate": 10.526315789473683,
+          "win_rate": 10.526315789473683,
+          "avg_net_pnl_bps": -54.67203974689178,
+          "avg_funding_bps": 4.424872105263159,
+          "avg_price_pnl_bps": -59.09691185215494,
+          "avg_duration_hours": 2.3684210526315788,
+          "total_net_pnl_bps": -1038.7687551909437
+        }
+      },
+      "ARB": {
+        "CHOP": {
+          "num_trades": 1,
+          "survival_rate": 0.0,
+          "win_rate": 0.0,
+          "avg_net_pnl_bps": -97.83705500000049,
+          "avg_funding_bps": 2.162945,
+          "avg_price_pnl_bps": -100.00000000000048,
+          "avg_duration_hours": 2.0,
+          "total_net_pnl_bps": -97.83705500000049
+        },
+        "ALL": {
+          "num_trades": 1,
+          "survival_rate": 0.0,
+          "win_rate": 0.0,
+          "avg_net_pnl_bps": -97.83705500000049,
+          "avg_funding_bps": 2.162945,
+          "avg_price_pnl_bps": -100.00000000000048,
+          "avg_duration_hours": 2.0,
+          "total_net_pnl_bps": -97.83705500000049
+        }
+      }
+    },
+    "total_trades": 48
+  },
+  "2%": {
+    "combined": {
+      "TRENDING_DOWN": {
+        "num_trades": 12,
+        "survival_rate": 16.666666666666664,
+        "win_rate": 16.666666666666664,
+        "avg_net_pnl_bps": -23.355813611377666,
+        "avg_funding_bps": 7.851752416666667,
+        "avg_price_pnl_bps": -31.207566028044337,
+        "avg_duration_hours": 5.0,
+        "total_net_pnl_bps": -280.269763336532
+      },
+      "VOLATILE": {
+        "num_trades": 3,
+        "survival_rate": 33.33333333333333,
+        "win_rate": 33.33333333333333,
+        "avg_net_pnl_bps": 210.12661450836623,
+        "avg_funding_bps": 14.136608000000003,
+        "avg_price_pnl_bps": 195.99000650836626,
+        "avg_duration_hours": 32.0,
+        "total_net_pnl_bps": 630.3798435250987
+      },
+      "CHOP": {
+        "num_trades": 21,
+        "survival_rate": 19.047619047619047,
+        "win_rate": 19.047619047619047,
+        "avg_net_pnl_bps": 95.8995624194051,
+        "avg_funding_bps": 30.462043428571434,
+        "avg_price_pnl_bps": 65.43751899083367,
+        "avg_duration_hours": 12.476190476190476,
+        "total_net_pnl_bps": 2013.8908108075068
+      },
+      "ALL": {
+        "num_trades": 36,
+        "survival_rate": 19.444444444444446,
+        "win_rate": 19.444444444444446,
+        "avg_net_pnl_bps": 65.6666914165576,
+        "avg_funding_bps": 21.56482680555556,
+        "avg_price_pnl_bps": 44.10186461100205,
+        "avg_duration_hours": 11.61111111111111,
+        "total_net_pnl_bps": 2364.0008909960734
+      }
+    },
+    "per_coin": {
+      "SOL": {
+        "TRENDING_DOWN": {
+          "num_trades": 6,
+          "survival_rate": 33.33333333333333,
+          "win_rate": 33.33333333333333,
+          "avg_net_pnl_bps": 150.03010061057813,
+          "avg_funding_bps": 12.445232666666667,
+          "avg_price_pnl_bps": 137.58486794391146,
+          "avg_duration_hours": 9.0,
+          "total_net_pnl_bps": 900.1806036634688
+        },
+        "VOLATILE": {
+          "num_trades": 3,
+          "survival_rate": 33.33333333333333,
+          "win_rate": 33.33333333333333,
+          "avg_net_pnl_bps": 210.12661450836623,
+          "avg_funding_bps": 14.136608000000003,
+          "avg_price_pnl_bps": 195.99000650836626,
+          "avg_duration_hours": 32.0,
+          "total_net_pnl_bps": 630.3798435250987
+        },
+        "ALL": {
+          "num_trades": 9,
+          "survival_rate": 33.33333333333333,
+          "win_rate": 33.33333333333333,
+          "avg_net_pnl_bps": 170.06227190984086,
+          "avg_funding_bps": 13.009024444444446,
+          "avg_price_pnl_bps": 157.05324746539642,
+          "avg_duration_hours": 16.666666666666668,
+          "total_net_pnl_bps": 1530.5604471885677
+        }
+      },
+      "WIF": {
+        "TRENDING_DOWN": {
+          "num_trades": 3,
+          "survival_rate": 0.0,
+          "win_rate": 0.0,
+          "avg_net_pnl_bps": -194.09574933333343,
+          "avg_funding_bps": 5.904250666666666,
+          "avg_price_pnl_bps": -200.00000000000014,
+          "avg_duration_hours": 1.0,
+          "total_net_pnl_bps": -582.2872480000003
+        },
+        "CHOP": {
+          "num_trades": 1,
+          "survival_rate": 0.0,
+          "win_rate": 0.0,
+          "avg_net_pnl_bps": -196.76915300000005,
+          "avg_funding_bps": 3.230847,
+          "avg_price_pnl_bps": -200.00000000000003,
+          "avg_duration_hours": 7.0,
+          "total_net_pnl_bps": -196.76915300000005
+        },
+        "ALL": {
+          "num_trades": 4,
+          "survival_rate": 0.0,
+          "win_rate": 0.0,
+          "avg_net_pnl_bps": -194.7641002500001,
+          "avg_funding_bps": 5.23589975,
+          "avg_price_pnl_bps": -200.0000000000001,
+          "avg_duration_hours": 2.5,
+          "total_net_pnl_bps": -779.0564010000004
+        }
+      },
+      "INJ": {
+        "TRENDING_DOWN": {
+          "num_trades": 2,
+          "survival_rate": 0.0,
+          "win_rate": 0.0,
+          "avg_net_pnl_bps": -199.0190595000003,
+          "avg_funding_bps": 0.9809405,
+          "avg_price_pnl_bps": -200.0000000000003,
+          "avg_duration_hours": 1.0,
+          "total_net_pnl_bps": -398.0381190000006
+        },
+        "CHOP": {
+          "num_trades": 6,
+          "survival_rate": 16.666666666666664,
+          "win_rate": 16.666666666666664,
+          "avg_net_pnl_bps": 24.421052040926963,
+          "avg_funding_bps": 87.36878766666669,
+          "avg_price_pnl_bps": -62.94773562573971,
+          "avg_duration_hours": 16.666666666666668,
+          "total_net_pnl_bps": 146.5263122455618
+        },
+        "ALL": {
+          "num_trades": 8,
+          "survival_rate": 12.5,
+          "win_rate": 12.5,
+          "avg_net_pnl_bps": -31.438975844304863,
+          "avg_funding_bps": 65.77182587500003,
+          "avg_price_pnl_bps": -97.21080171930487,
+          "avg_duration_hours": 12.75,
+          "total_net_pnl_bps": -251.5118067544389
+        }
+      },
+      "OP": {
+        "TRENDING_DOWN": {
+          "num_trades": 1,
+          "survival_rate": 0.0,
+          "win_rate": 0.0,
+          "avg_net_pnl_bps": -200.12499999999974,
+          "avg_funding_bps": -0.125,
+          "avg_price_pnl_bps": -199.99999999999977,
+          "avg_duration_hours": 1.0,
+          "total_net_pnl_bps": -200.12499999999974
+        },
+        "CHOP": {
+          "num_trades": 13,
+          "survival_rate": 15.384615384615385,
+          "win_rate": 15.384615384615385,
+          "avg_net_pnl_bps": -118.1025428608417,
+          "avg_funding_bps": 6.731405230769232,
+          "avg_price_pnl_bps": -124.83394809161092,
+          "avg_duration_hours": 3.923076923076923,
+          "total_net_pnl_bps": -1535.333057190942
+        },
+        "ALL": {
+          "num_trades": 14,
+          "survival_rate": 14.285714285714285,
+          "win_rate": 14.285714285714285,
+          "avg_net_pnl_bps": -123.96128979935295,
+          "avg_funding_bps": 6.241662,
+          "avg_price_pnl_bps": -130.20295179935297,
+          "avg_duration_hours": 3.7142857142857144,
+          "total_net_pnl_bps": -1735.4580571909414
+        }
+      },
+      "ARB": {
+        "CHOP": {
+          "num_trades": 1,
+          "survival_rate": 100.0,
+          "win_rate": 100.0,
+          "avg_net_pnl_bps": 3599.466708752887,
+          "avg_funding_bps": 24.751070999999946,
+          "avg_price_pnl_bps": 3574.7156377528872,
+          "avg_duration_hours": 104.0,
+          "total_net_pnl_bps": 3599.466708752887
+        },
+        "ALL": {
+          "num_trades": 1,
+          "survival_rate": 100.0,
+          "win_rate": 100.0,
+          "avg_net_pnl_bps": 3599.466708752887,
+          "avg_funding_bps": 24.751070999999946,
+          "avg_price_pnl_bps": 3574.7156377528872,
+          "avg_duration_hours": 104.0,
+          "total_net_pnl_bps": 3599.466708752887
+        }
+      }
+    },
+    "total_trades": 36
+  },
+  "3%": {
+    "combined": {
+      "TRENDING_DOWN": {
+        "num_trades": 9,
+        "survival_rate": 33.33333333333333,
+        "win_rate": 33.33333333333333,
+        "avg_net_pnl_bps": 57.165059625303314,
+        "avg_funding_bps": 10.460066888888887,
+        "avg_price_pnl_bps": 46.70499273641441,
+        "avg_duration_hours": 6.777777777777778,
+        "total_net_pnl_bps": 514.4855366277299
+      },
+      "VOLATILE": {
+        "num_trades": 3,
+        "survival_rate": 33.33333333333333,
+        "win_rate": 33.33333333333333,
+        "avg_net_pnl_bps": 143.45994784169915,
+        "avg_funding_bps": 14.136608000000003,
+        "avg_price_pnl_bps": 129.32333984169915,
+        "avg_duration_hours": 32.0,
+        "total_net_pnl_bps": 430.37984352509744
+      },
+      "CHOP": {
+        "num_trades": 15,
+        "survival_rate": 33.33333333333333,
+        "win_rate": 26.666666666666668,
+        "avg_net_pnl_bps": 156.9878414282433,
+        "avg_funding_bps": 42.93480193333333,
+        "avg_price_pnl_bps": 114.05303949491,
+        "avg_duration_hours": 17.866666666666667,
+        "total_net_pnl_bps": 2354.81762142365
+      },
+      "ALL": {
+        "num_trades": 27,
+        "survival_rate": 33.33333333333333,
+        "win_rate": 29.629629629629626,
+        "avg_net_pnl_bps": 122.21048153986953,
+        "avg_funding_bps": 28.910090925925925,
+        "avg_price_pnl_bps": 93.30039061394362,
+        "avg_duration_hours": 15.74074074074074,
+        "total_net_pnl_bps": 3299.683001576477
+      }
+    },
+    "per_coin": {
+      "SOL": {
+        "TRENDING_DOWN": {
+          "num_trades": 5,
+          "survival_rate": 40.0,
+          "win_rate": 40.0,
+          "avg_net_pnl_bps": 112.79720342583111,
+          "avg_funding_bps": 14.934279199999999,
+          "avg_price_pnl_bps": 97.86292422583112,
+          "avg_duration_hours": 10.8,
+          "total_net_pnl_bps": 563.9860171291556
+        },
+        "VOLATILE": {
+          "num_trades": 3,
+          "survival_rate": 33.33333333333333,
+          "win_rate": 33.33333333333333,
+          "avg_net_pnl_bps": 143.45994784169915,
+          "avg_funding_bps": 14.136608000000003,
+          "avg_price_pnl_bps": 129.32333984169915,
+          "avg_duration_hours": 32.0,
+          "total_net_pnl_bps": 430.37984352509744
+        },
+        "ALL": {
+          "num_trades": 8,
+          "survival_rate": 37.5,
+          "win_rate": 37.5,
+          "avg_net_pnl_bps": 124.29573258178164,
+          "avg_funding_bps": 14.6351525,
+          "avg_price_pnl_bps": 109.66058008178163,
+          "avg_duration_hours": 18.75,
+          "total_net_pnl_bps": 994.3658606542531
+        }
+      },
+      "WIF": {
+        "TRENDING_DOWN": {
+          "num_trades": 2,
+          "survival_rate": 50.0,
+          "win_rate": 50.0,
+          "avg_net_pnl_bps": 274.3313192492878,
+          "avg_funding_bps": 8.8161625,
+          "avg_price_pnl_bps": 265.51515674928777,
+          "avg_duration_hours": 2.0,
+          "total_net_pnl_bps": 548.6626384985756
+        },
+        "CHOP": {
+          "num_trades": 1,
+          "survival_rate": 0.0,
+          "win_rate": 0.0,
+          "avg_net_pnl_bps": -296.7691530000001,
+          "avg_funding_bps": 3.230847,
+          "avg_price_pnl_bps": -300.00000000000006,
+          "avg_duration_hours": 7.0,
+          "total_net_pnl_bps": -296.7691530000001
+        },
+        "ALL": {
+          "num_trades": 3,
+          "survival_rate": 33.33333333333333,
+          "win_rate": 33.33333333333333,
+          "avg_net_pnl_bps": 83.96449516619184,
+          "avg_funding_bps": 6.954390666666666,
+          "avg_price_pnl_bps": 77.01010449952517,
+          "avg_duration_hours": 3.6666666666666665,
+          "total_net_pnl_bps": 251.89348549857553
+        }
+      },
+      "INJ": {
+        "TRENDING_DOWN": {
+          "num_trades": 1,
+          "survival_rate": 0.0,
+          "win_rate": 0.0,
+          "avg_net_pnl_bps": -298.03811900000113,
+          "avg_funding_bps": 1.961881,
+          "avg_price_pnl_bps": -300.0000000000012,
+          "avg_duration_hours": 2.0,
+          "total_net_pnl_bps": -298.03811900000113
+        },
+        "CHOP": {
+          "num_trades": 4,
+          "survival_rate": 25.0,
+          "win_rate": 25.0,
+          "avg_net_pnl_bps": 70.67799007580405,
+          "avg_funding_bps": 131.05318150000002,
+          "avg_price_pnl_bps": -60.37519142419592,
+          "avg_duration_hours": 25.0,
+          "total_net_pnl_bps": 282.7119603032162
+        },
+        "ALL": {
+          "num_trades": 5,
+          "survival_rate": 20.0,
+          "win_rate": 20.0,
+          "avg_net_pnl_bps": -3.065231739356994,
+          "avg_funding_bps": 105.23492140000002,
+          "avg_price_pnl_bps": -108.300153139357,
+          "avg_duration_hours": 20.4,
+          "total_net_pnl_bps": -15.326158696784969
+        }
+      },
+      "OP": {
+        "TRENDING_DOWN": {
+          "num_trades": 1,
+          "survival_rate": 0.0,
+          "win_rate": 0.0,
+          "avg_net_pnl_bps": -300.1250000000002,
+          "avg_funding_bps": -0.125,
+          "avg_price_pnl_bps": -300.0000000000002,
+          "avg_duration_hours": 1.0,
+          "total_net_pnl_bps": -300.1250000000002
+        },
+        "CHOP": {
+          "num_trades": 9,
+          "survival_rate": 33.33333333333333,
+          "win_rate": 22.22222222222222,
+          "avg_net_pnl_bps": -136.73243273693924,
+          "avg_funding_bps": 10.203042777777778,
+          "avg_price_pnl_bps": -146.93547551471698,
+          "avg_duration_hours": 6.333333333333333,
+          "total_net_pnl_bps": -1230.591894632453
+        },
+        "ALL": {
+          "num_trades": 10,
+          "survival_rate": 30.0,
+          "win_rate": 20.0,
+          "avg_net_pnl_bps": -153.07168946324535,
+          "avg_funding_bps": 9.1702385,
+          "avg_price_pnl_bps": -162.24192796324536,
+          "avg_duration_hours": 5.8,
+          "total_net_pnl_bps": -1530.7168946324534
+        }
+      },
+      "ARB": {
+        "CHOP": {
+          "num_trades": 1,
+          "survival_rate": 100.0,
+          "win_rate": 100.0,
+          "avg_net_pnl_bps": 3599.466708752887,
+          "avg_funding_bps": 24.751070999999946,
+          "avg_price_pnl_bps": 3574.7156377528872,
+          "avg_duration_hours": 104.0,
+          "total_net_pnl_bps": 3599.466708752887
+        },
+        "ALL": {
+          "num_trades": 1,
+          "survival_rate": 100.0,
+          "win_rate": 100.0,
+          "avg_net_pnl_bps": 3599.466708752887,
+          "avg_funding_bps": 24.751070999999946,
+          "avg_price_pnl_bps": 3574.7156377528872,
+          "avg_duration_hours": 104.0,
+          "total_net_pnl_bps": 3599.466708752887
+        }
+      }
+    },
+    "total_trades": 27
+  },
+  "4%": {
+    "combined": {
+      "TRENDING_DOWN": {
+        "num_trades": 8,
+        "survival_rate": 37.5,
+        "win_rate": 37.5,
+        "avg_net_pnl_bps": 39.42191695346636,
+        "avg_funding_bps": 11.878800125,
+        "avg_price_pnl_bps": 27.543116828466356,
+        "avg_duration_hours": 7.75,
+        "total_net_pnl_bps": 315.37533562773086
+      },
+      "VOLATILE": {
+        "num_trades": 3,
+        "survival_rate": 66.66666666666666,
+        "win_rate": 33.33333333333333,
+        "avg_net_pnl_bps": 131.0869758324281,
+        "avg_funding_bps": 14.136608000000003,
+        "avg_price_pnl_bps": 116.9503678324281,
+        "avg_duration_hours": 32.0,
+        "total_net_pnl_bps": 393.26092749728423
+      },
+      "CHOP": {
+        "num_trades": 13,
+        "survival_rate": 46.15384615384615,
+        "win_rate": 30.76923076923077,
+        "avg_net_pnl_bps": 206.98929751768404,
+        "avg_funding_bps": 49.396869538461544,
+        "avg_price_pnl_bps": 157.5924279792225,
+        "avg_duration_hours": 20.76923076923077,
+        "total_net_pnl_bps": 2690.860867729892
+      },
+      "ALL": {
+        "num_trades": 24,
+        "survival_rate": 45.83333333333333,
+        "win_rate": 33.33333333333333,
+        "avg_net_pnl_bps": 141.64571378562115,
+        "avg_funding_bps": 32.48331370833333,
+        "avg_price_pnl_bps": 109.16240007728781,
+        "avg_duration_hours": 17.833333333333332,
+        "total_net_pnl_bps": 3399.4971308549075
+      }
+    },
+    "per_coin": {
+      "SOL": {
+        "TRENDING_DOWN": {
+          "num_trades": 4,
+          "survival_rate": 50.0,
+          "win_rate": 50.0,
+          "avg_net_pnl_bps": 166.21895403228885,
+          "avg_funding_bps": 18.89029875,
+          "avg_price_pnl_bps": 147.32865528228888,
+          "avg_duration_hours": 13.75,
+          "total_net_pnl_bps": 664.8758161291554
+        },
+        "VOLATILE": {
+          "num_trades": 3,
+          "survival_rate": 66.66666666666666,
+          "win_rate": 33.33333333333333,
+          "avg_net_pnl_bps": 131.0869758324281,
+          "avg_funding_bps": 14.136608000000003,
+          "avg_price_pnl_bps": 116.9503678324281,
+          "avg_duration_hours": 32.0,
+          "total_net_pnl_bps": 393.26092749728423
+        },
+        "ALL": {
+          "num_trades": 7,
+          "survival_rate": 57.14285714285714,
+          "win_rate": 42.857142857142854,
+          "avg_net_pnl_bps": 151.16239194663424,
+          "avg_funding_bps": 16.85300271428571,
+          "avg_price_pnl_bps": 134.30938923234854,
+          "avg_duration_hours": 21.571428571428573,
+          "total_net_pnl_bps": 1058.1367436264397
+        }
+      },
+      "WIF": {
+        "TRENDING_DOWN": {
+          "num_trades": 2,
+          "survival_rate": 50.0,
+          "win_rate": 50.0,
+          "avg_net_pnl_bps": 224.33131924928773,
+          "avg_funding_bps": 8.8161625,
+          "avg_price_pnl_bps": 215.51515674928774,
+          "avg_duration_hours": 2.0,
+          "total_net_pnl_bps": 448.66263849857546
+        },
+        "CHOP": {
+          "num_trades": 1,
+          "survival_rate": 0.0,
+          "win_rate": 0.0,
+          "avg_net_pnl_bps": -396.76915300000013,
+          "avg_funding_bps": 3.230847,
+          "avg_price_pnl_bps": -400.00000000000006,
+          "avg_duration_hours": 7.0,
+          "total_net_pnl_bps": -396.76915300000013
+        },
+        "ALL": {
+          "num_trades": 3,
+          "survival_rate": 33.33333333333333,
+          "win_rate": 33.33333333333333,
+          "avg_net_pnl_bps": 17.297828499525128,
+          "avg_funding_bps": 6.954390666666666,
+          "avg_price_pnl_bps": 10.34343783285846,
+          "avg_duration_hours": 3.6666666666666665,
+          "total_net_pnl_bps": 51.89348549857538
+        }
+      },
+      "INJ": {
+        "TRENDING_DOWN": {
+          "num_trades": 1,
+          "survival_rate": 0.0,
+          "win_rate": 0.0,
+          "avg_net_pnl_bps": -398.0381189999995,
+          "avg_funding_bps": 1.961881,
+          "avg_price_pnl_bps": -399.99999999999955,
+          "avg_duration_hours": 2.0,
+          "total_net_pnl_bps": -398.0381189999995
+        },
+        "CHOP": {
+          "num_trades": 2,
+          "survival_rate": 50.0,
+          "win_rate": 50.0,
+          "avg_net_pnl_bps": 490.0866272049971,
+          "avg_funding_bps": 262.10636300000004,
+          "avg_price_pnl_bps": 227.98026420499713,
+          "avg_duration_hours": 50.0,
+          "total_net_pnl_bps": 980.1732544099942
+        },
+        "ALL": {
+          "num_trades": 3,
+          "survival_rate": 33.33333333333333,
+          "win_rate": 33.33333333333333,
+          "avg_net_pnl_bps": 194.0450451366649,
+          "avg_funding_bps": 175.3915356666667,
+          "avg_price_pnl_bps": 18.65350946999823,
+          "avg_duration_hours": 34.0,
+          "total_net_pnl_bps": 582.1351354099947
+        }
+      },
+      "OP": {
+        "TRENDING_DOWN": {
+          "num_trades": 1,
+          "survival_rate": 0.0,
+          "win_rate": 0.0,
+          "avg_net_pnl_bps": -400.1250000000006,
+          "avg_funding_bps": -0.125,
+          "avg_price_pnl_bps": -400.0000000000006,
+          "avg_duration_hours": 1.0,
+          "total_net_pnl_bps": -400.1250000000006
+        },
+        "CHOP": {
+          "num_trades": 9,
+          "survival_rate": 44.44444444444444,
+          "win_rate": 22.22222222222222,
+          "avg_net_pnl_bps": -165.77888249255432,
+          "avg_funding_bps": 9.996073333333333,
+          "avg_price_pnl_bps": -175.77495582588767,
+          "avg_duration_hours": 6.555555555555555,
+          "total_net_pnl_bps": -1492.0099424329887
+        },
+        "ALL": {
+          "num_trades": 10,
+          "survival_rate": 40.0,
+          "win_rate": 20.0,
+          "avg_net_pnl_bps": -189.21349424329895,
+          "avg_funding_bps": 8.983966,
+          "avg_price_pnl_bps": -198.197460243299,
+          "avg_duration_hours": 6.0,
+          "total_net_pnl_bps": -1892.1349424329894
+        }
+      },
+      "ARB": {
+        "CHOP": {
+          "num_trades": 1,
+          "survival_rate": 100.0,
+          "win_rate": 100.0,
+          "avg_net_pnl_bps": 3599.466708752887,
+          "avg_funding_bps": 24.751070999999946,
+          "avg_price_pnl_bps": 3574.7156377528872,
+          "avg_duration_hours": 104.0,
+          "total_net_pnl_bps": 3599.466708752887
+        },
+        "ALL": {
+          "num_trades": 1,
+          "survival_rate": 100.0,
+          "win_rate": 100.0,
+          "avg_net_pnl_bps": 3599.466708752887,
+          "avg_funding_bps": 24.751070999999946,
+          "avg_price_pnl_bps": 3574.7156377528872,
+          "avg_duration_hours": 104.0,
+          "total_net_pnl_bps": 3599.466708752887
+        }
+      }
+    },
+    "total_trades": 24
+  },
+  "5%": {
+    "combined": {
+      "TRENDING_DOWN": {
+        "num_trades": 8,
+        "survival_rate": 37.5,
+        "win_rate": 37.5,
+        "avg_net_pnl_bps": -22.932979546533673,
+        "avg_funding_bps": 12.023903625,
+        "avg_price_pnl_bps": -34.9568831715337,
+        "avg_duration_hours": 7.875,
+        "total_net_pnl_bps": -183.46383637226938
+      },
+      "VOLATILE": {
+        "num_trades": 2,
+        "survival_rate": 100.0,
+        "win_rate": 50.0,
+        "avg_net_pnl_bps": 391.2768860051388,
+        "avg_funding_bps": 23.246498499999994,
+        "avg_price_pnl_bps": 368.03038750513883,
+        "avg_duration_hours": 50.0,
+        "total_net_pnl_bps": 782.5537720102776
+      },
+      "CHOP": {
+        "num_trades": 11,
+        "survival_rate": 72.72727272727273,
+        "win_rate": 36.36363636363637,
+        "avg_net_pnl_bps": 272.71568415216205,
+        "avg_funding_bps": 58.693769,
+        "avg_price_pnl_bps": 214.0219151521621,
+        "avg_duration_hours": 25.09090909090909,
+        "total_net_pnl_bps": 2999.872525673783
+      },
+      "ALL": {
+        "num_trades": 21,
+        "survival_rate": 61.904761904761905,
+        "win_rate": 38.095238095238095,
+        "avg_net_pnl_bps": 171.379164824371,
+        "avg_funding_bps": 37.53884214285714,
+        "avg_price_pnl_bps": 133.84032268151384,
+        "avg_duration_hours": 20.904761904761905,
+        "total_net_pnl_bps": 3598.962461311791
+      }
+    },
+    "per_coin": {
+      "SOL": {
+        "TRENDING_DOWN": {
+          "num_trades": 4,
+          "survival_rate": 50.0,
+          "win_rate": 50.0,
+          "avg_net_pnl_bps": 116.50916103228876,
+          "avg_funding_bps": 19.180505750000002,
+          "avg_price_pnl_bps": 97.32865528228872,
+          "avg_duration_hours": 14.0,
+          "total_net_pnl_bps": 466.03664412915504
+        },
+        "VOLATILE": {
+          "num_trades": 2,
+          "survival_rate": 100.0,
+          "win_rate": 50.0,
+          "avg_net_pnl_bps": 391.2768860051388,
+          "avg_funding_bps": 23.246498499999994,
+          "avg_price_pnl_bps": 368.03038750513883,
+          "avg_duration_hours": 50.0,
+          "total_net_pnl_bps": 782.5537720102776
+        },
+        "ALL": {
+          "num_trades": 6,
+          "survival_rate": 66.66666666666666,
+          "win_rate": 50.0,
+          "avg_net_pnl_bps": 208.09840268990544,
+          "avg_funding_bps": 20.53583666666666,
+          "avg_price_pnl_bps": 187.56256602323873,
+          "avg_duration_hours": 26.0,
+          "total_net_pnl_bps": 1248.5904161394326
+        }
+      },
+      "WIF": {
+        "TRENDING_DOWN": {
+          "num_trades": 2,
+          "survival_rate": 50.0,
+          "win_rate": 50.0,
+          "avg_net_pnl_bps": 174.33131924928773,
+          "avg_funding_bps": 8.8161625,
+          "avg_price_pnl_bps": 165.5151567492877,
+          "avg_duration_hours": 2.0,
+          "total_net_pnl_bps": 348.66263849857546
+        },
+        "CHOP": {
+          "num_trades": 1,
+          "survival_rate": 100.0,
+          "win_rate": 0.0,
+          "avg_net_pnl_bps": -161.53709844527978,
+          "avg_funding_bps": 4.603577,
+          "avg_price_pnl_bps": -166.14067544527978,
+          "avg_duration_hours": 12.0,
+          "total_net_pnl_bps": -161.53709844527978
+        },
+        "ALL": {
+          "num_trades": 3,
+          "survival_rate": 66.66666666666666,
+          "win_rate": 33.33333333333333,
+          "avg_net_pnl_bps": 62.37518001776523,
+          "avg_funding_bps": 7.411967333333334,
+          "avg_price_pnl_bps": 54.96321268443189,
+          "avg_duration_hours": 5.333333333333333,
+          "total_net_pnl_bps": 187.1255400532957
+        }
+      },
+      "INJ": {
+        "TRENDING_DOWN": {
+          "num_trades": 1,
+          "survival_rate": 0.0,
+          "win_rate": 0.0,
+          "avg_net_pnl_bps": -498.0381189999999,
+          "avg_funding_bps": 1.961881,
+          "avg_price_pnl_bps": -499.9999999999999,
+          "avg_duration_hours": 2.0,
+          "total_net_pnl_bps": -498.0381189999999
+        },
+        "CHOP": {
+          "num_trades": 2,
+          "survival_rate": 50.0,
+          "win_rate": 50.0,
+          "avg_net_pnl_bps": 341.35598015160815,
+          "avg_funding_bps": 262.10636300000004,
+          "avg_price_pnl_bps": 79.24961715160813,
+          "avg_duration_hours": 50.0,
+          "total_net_pnl_bps": 682.7119603032163
+        },
+        "ALL": {
+          "num_trades": 3,
+          "survival_rate": 33.33333333333333,
+          "win_rate": 33.33333333333333,
+          "avg_net_pnl_bps": 61.55794710107215,
+          "avg_funding_bps": 175.3915356666667,
+          "avg_price_pnl_bps": -113.83358856559454,
+          "avg_duration_hours": 34.0,
+          "total_net_pnl_bps": 184.67384130321645
+        }
+      },
+      "OP": {
+        "TRENDING_DOWN": {
+          "num_trades": 1,
+          "survival_rate": 0.0,
+          "win_rate": 0.0,
+          "avg_net_pnl_bps": -500.125,
+          "avg_funding_bps": -0.125,
+          "avg_price_pnl_bps": -500.0,
+          "avg_duration_hours": 1.0,
+          "total_net_pnl_bps": -500.125
+        },
+        "CHOP": {
+          "num_trades": 7,
+          "survival_rate": 71.42857142857143,
+          "win_rate": 28.57142857142857,
+          "avg_net_pnl_bps": -160.10986356243436,
+          "avg_funding_bps": 13.152012142857142,
+          "avg_price_pnl_bps": -173.2618757052915,
+          "avg_duration_hours": 8.571428571428571,
+          "total_net_pnl_bps": -1120.7690449370405
+        },
+        "ALL": {
+          "num_trades": 8,
+          "survival_rate": 62.5,
+          "win_rate": 25.0,
+          "avg_net_pnl_bps": -202.61175561713006,
+          "avg_funding_bps": 11.492385625,
+          "avg_price_pnl_bps": -214.1041412421301,
+          "avg_duration_hours": 7.625,
+          "total_net_pnl_bps": -1620.8940449370405
+        }
+      },
+      "ARB": {
+        "CHOP": {
+          "num_trades": 1,
+          "survival_rate": 100.0,
+          "win_rate": 100.0,
+          "avg_net_pnl_bps": 3599.466708752887,
+          "avg_funding_bps": 24.751070999999946,
+          "avg_price_pnl_bps": 3574.7156377528872,
+          "avg_duration_hours": 104.0,
+          "total_net_pnl_bps": 3599.466708752887
+        },
+        "ALL": {
+          "num_trades": 1,
+          "survival_rate": 100.0,
+          "win_rate": 100.0,
+          "avg_net_pnl_bps": 3599.466708752887,
+          "avg_funding_bps": 24.751070999999946,
+          "avg_price_pnl_bps": 3574.7156377528872,
+          "avg_duration_hours": 104.0,
+          "total_net_pnl_bps": 3599.466708752887
+        }
+      }
+    },
+    "total_trades": 21
+  }
+}

@@ -1,0 +1,302 @@
+{
+  "generated": "2026-02-23T06:47:23.686154+00:00",
+  "period": {
+    "start": "2025-11-25T06:46:33.093000+00:00",
+    "end": "2026-02-23T06:46:33.093000+00:00"
+  },
+  "coins": [
+    "SOL",
+    "DOGE",
+    "kPEPE",
+    "WIF",
+    "INJ",
+    "OP",
+    "ARB"
+  ],
+  "data_counts": {
+    "SOL": {
+      "funding": 2160,
+      "candles": 2165
+    },
+    "DOGE": {
+      "funding": 2160,
+      "candles": 2165
+    },
+    "kPEPE": {
+      "funding": 2160,
+      "candles": 2165
+    },
+    "WIF": {
+      "funding": 2160,
+      "candles": 2165
+    },
+    "INJ": {
+      "funding": 2160,
+      "candles": 2165
+    },
+    "OP": {
+      "funding": 2160,
+      "candles": 2165
+    },
+    "ARB": {
+      "funding": 2160,
+      "candles": 2165
+    }
+  },
+  "btc_candles": 2165,
+  "question_c_carry_thresholds": {
+    "20": {
+      "UPTREND": {
+        "count": 50,
+        "win_rate": 88.0,
+        "avg_pnl_bps": 2.54,
+        "total_pnl_bps": 126.95
+      },
+      "DOWNTREND": {
+        "count": 99,
+        "win_rate": 94.9,
+        "avg_pnl_bps": 2.57,
+        "total_pnl_bps": 254.82
+      },
+      "CHOP": {
+        "count": 112,
+        "win_rate": 92.0,
+        "avg_pnl_bps": 6.69,
+        "total_pnl_bps": 749.78
+      },
+      "UNKNOWN": {
+        "count": 3,
+        "win_rate": 66.7,
+        "avg_pnl_bps": 0.46,
+        "total_pnl_bps": 1.39
+      }
+    },
+    "50": {
+      "UPTREND": {
+        "count": 6,
+        "win_rate": 100.0,
+        "avg_pnl_bps": 8.29,
+        "total_pnl_bps": 49.73
+      },
+      "DOWNTREND": {
+        "count": 19,
+        "win_rate": 100.0,
+        "avg_pnl_bps": 3.37,
+        "total_pnl_bps": 64.11
+      },
+      "CHOP": {
+        "count": 20,
+        "win_rate": 100.0,
+        "avg_pnl_bps": 37.56,
+        "total_pnl_bps": 751.23
+      }
+    },
+    "100": {
+      "UPTREND": {
+        "count": 2,
+        "win_rate": 100.0,
+        "avg_pnl_bps": 5.11,
+        "total_pnl_bps": 10.22
+      },
+      "DOWNTREND": {
+        "count": 4,
+        "win_rate": 100.0,
+        "avg_pnl_bps": 6.97,
+        "total_pnl_bps": 27.9
+      },
+      "CHOP": {
+        "count": 6,
+        "win_rate": 100.0,
+        "avg_pnl_bps": 113.16,
+        "total_pnl_bps": 678.95
+      }
+    },
+    "200": {
+      "DOWNTREND": {
+        "count": 1,
+        "win_rate": 100.0,
+        "avg_pnl_bps": 67.23,
+        "total_pnl_bps": 67.23
+      },
+      "CHOP": {
+        "count": 1,
+        "win_rate": 100.0,
+        "avg_pnl_bps": 524.21,
+        "total_pnl_bps": 524.21
+      }
+    },
+    "500": {
+      "CHOP": {
+        "count": 1,
+        "win_rate": 100.0,
+        "avg_pnl_bps": 524.21,
+        "total_pnl_bps": 524.21
+      }
+    },
+    "1000": {
+      "CHOP": {
+        "count": 1,
+        "win_rate": 100.0,
+        "avg_pnl_bps": 524.21,
+        "total_pnl_bps": 524.21
+      }
+    }
+  },
+  "question_a_ma_convergence": {
+    "converged": {
+      "count": 10,
+      "win_rate": 100.0,
+      "avg_pnl_bps": 66.55
+    },
+    "diverged": {
+      "count": 2,
+      "win_rate": 100.0,
+      "avg_pnl_bps": 25.77
+    }
+  },
+  "question_b_basis": {
+    "SOL": {
+      "note": "fields_available",
+      "sample_keys": [
+        "t",
+        "T",
+        "s",
+        "i",
+        "o",
+        "c",
+        "h",
+        "l",
+        "v",
+        "n"
+      ]
+    },
+    "DOGE": {
+      "note": "fields_available",
+      "sample_keys": [
+        "t",
+        "T",
+        "s",
+        "i",
+        "o",
+        "c",
+        "h",
+        "l",
+        "v",
+        "n"
+      ]
+    },
+    "kPEPE": {
+      "note": "fields_available",
+      "sample_keys": [
+        "t",
+        "T",
+        "s",
+        "i",
+        "o",
+        "c",
+        "h",
+        "l",
+        "v",
+        "n"
+      ]
+    },
+    "WIF": {
+      "note": "fields_available",
+      "sample_keys": [
+        "t",
+        "T",
+        "s",
+        "i",
+        "o",
+        "c",
+        "h",
+        "l",
+        "v",
+        "n"
+      ]
+    },
+    "INJ": {
+      "note": "fields_available",
+      "sample_keys": [
+        "t",
+        "T",
+        "s",
+        "i",
+        "o",
+        "c",
+        "h",
+        "l",
+        "v",
+        "n"
+      ]
+    },
+    "OP": {
+      "note": "fields_available",
+      "sample_keys": [
+        "t",
+        "T",
+        "s",
+        "i",
+        "o",
+        "c",
+        "h",
+        "l",
+        "v",
+        "n"
+      ]
+    },
+    "ARB": {
+      "note": "fields_available",
+      "sample_keys": [
+        "t",
+        "T",
+        "s",
+        "i",
+        "o",
+        "c",
+        "h",
+        "l",
+        "v",
+        "n"
+      ]
+    }
+  },
+  "question_d_persistence": {
+    "UPTREND": {
+      "count": 8,
+      "avg_hours": 4.8,
+      "median_hours": 2,
+      "max_hours": 18
+    },
+    "DOWNTREND": {
+      "count": 6,
+      "avg_hours": 2.0,
+      "median_hours": 1,
+      "max_hours": 6
+    },
+    "CHOP": {
+      "count": 9,
+      "avg_hours": 9.4,
+      "median_hours": 3,
+      "max_hours": 42
+    }
+  },
+  "regime_distribution": {
+    "UNKNOWN": {
+      "hours": 33,
+      "pct": 1.5
+    },
+    "CHOP": {
+      "hours": 973,
+      "pct": 45.0
+    },
+    "UPTREND": {
+      "hours": 541,
+      "pct": 25.0
+    },
+    "DOWNTREND": {
+      "hours": 614,
+      "pct": 28.4
+    }
+  }
+}

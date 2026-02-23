@@ -1,0 +1,568 @@
+{
+  "BTC": {
+    "data_range": {
+      "start": "2025-08-27T07:00:00.078000+00:00",
+      "end": "2026-02-23T06:00:00.078000+00:00",
+      "funding_records": 4320,
+      "candle_records": 4322
+    },
+    "question_c_thresholds": {
+      "20": {
+        "uptrend": {
+          "trades": 7,
+          "win_rate": 0.0,
+          "avg_pnl": -0.092,
+          "total_pnl": -0.644
+        },
+        "downtrend": {
+          "trades": 8,
+          "win_rate": 0.0,
+          "avg_pnl": -0.0939,
+          "total_pnl": -0.7515
+        },
+        "chop": {
+          "trades": 12,
+          "win_rate": 0.0,
+          "avg_pnl": -0.0863,
+          "total_pnl": -1.0351
+        },
+        "unknown": {
+          "trades": 0,
+          "win_rate": 0,
+          "avg_pnl": 0,
+          "total_pnl": 0
+        }
+      },
+      "50": {
+        "uptrend": {
+          "trades": 1,
+          "win_rate": 0.0,
+          "avg_pnl": -0.0867,
+          "total_pnl": -0.0867
+        },
+        "downtrend": {
+          "trades": 1,
+          "win_rate": 0.0,
+          "avg_pnl": -0.0767,
+          "total_pnl": -0.0767
+        },
+        "chop": {
+          "trades": 0,
+          "win_rate": 0,
+          "avg_pnl": 0,
+          "total_pnl": 0
+        },
+        "unknown": {
+          "trades": 0,
+          "win_rate": 0,
+          "avg_pnl": 0,
+          "total_pnl": 0
+        }
+      },
+      "100": {
+        "uptrend": {
+          "trades": 0,
+          "win_rate": 0,
+          "avg_pnl": 0,
+          "total_pnl": 0
+        },
+        "downtrend": {
+          "trades": 1,
+          "win_rate": 0.0,
+          "avg_pnl": -0.0767,
+          "total_pnl": -0.0767
+        },
+        "chop": {
+          "trades": 0,
+          "win_rate": 0,
+          "avg_pnl": 0,
+          "total_pnl": 0
+        },
+        "unknown": {
+          "trades": 0,
+          "win_rate": 0,
+          "avg_pnl": 0,
+          "total_pnl": 0
+        }
+      },
+      "200": {
+        "uptrend": {
+          "trades": 0,
+          "win_rate": 0,
+          "avg_pnl": 0,
+          "total_pnl": 0
+        },
+        "downtrend": {
+          "trades": 1,
+          "win_rate": 0.0,
+          "avg_pnl": -0.0767,
+          "total_pnl": -0.0767
+        },
+        "chop": {
+          "trades": 0,
+          "win_rate": 0,
+          "avg_pnl": 0,
+          "total_pnl": 0
+        },
+        "unknown": {
+          "trades": 0,
+          "win_rate": 0,
+          "avg_pnl": 0,
+          "total_pnl": 0
+        }
+      },
+      "500": {
+        "uptrend": {
+          "trades": 0,
+          "win_rate": 0,
+          "avg_pnl": 0,
+          "total_pnl": 0
+        },
+        "downtrend": {
+          "trades": 0,
+          "win_rate": 0,
+          "avg_pnl": 0,
+          "total_pnl": 0
+        },
+        "chop": {
+          "trades": 0,
+          "win_rate": 0,
+          "avg_pnl": 0,
+          "total_pnl": 0
+        },
+        "unknown": {
+          "trades": 0,
+          "win_rate": 0,
+          "avg_pnl": 0,
+          "total_pnl": 0
+        }
+      },
+      "1000": {
+        "uptrend": {
+          "trades": 0,
+          "win_rate": 0,
+          "avg_pnl": 0,
+          "total_pnl": 0
+        },
+        "downtrend": {
+          "trades": 0,
+          "win_rate": 0,
+          "avg_pnl": 0,
+          "total_pnl": 0
+        },
+        "chop": {
+          "trades": 0,
+          "win_rate": 0,
+          "avg_pnl": 0,
+          "total_pnl": 0
+        },
+        "unknown": {
+          "trades": 0,
+          "win_rate": 0,
+          "avg_pnl": 0,
+          "total_pnl": 0
+        }
+      },
+      "2000": {
+        "uptrend": {
+          "trades": 0,
+          "win_rate": 0,
+          "avg_pnl": 0,
+          "total_pnl": 0
+        },
+        "downtrend": {
+          "trades": 0,
+          "win_rate": 0,
+          "avg_pnl": 0,
+          "total_pnl": 0
+        },
+        "chop": {
+          "trades": 0,
+          "win_rate": 0,
+          "avg_pnl": 0,
+          "total_pnl": 0
+        },
+        "unknown": {
+          "trades": 0,
+          "win_rate": 0,
+          "avg_pnl": 0,
+          "total_pnl": 0
+        }
+      }
+    },
+    "question_a_chop_metrics": {
+      "adx": {
+        "thresholds": {
+          "15": {
+            "filtered_signals": 0,
+            "kept_signals": 1,
+            "loss_avoided": 0,
+            "winners_filtered": 0
+          },
+          "20": {
+            "filtered_signals": 0,
+            "kept_signals": 1,
+            "loss_avoided": 0,
+            "winners_filtered": 0
+          },
+          "25": {
+            "filtered_signals": 0,
+            "kept_signals": 1,
+            "loss_avoided": 0,
+            "winners_filtered": 0
+          },
+          "30": {
+            "filtered_signals": 0,
+            "kept_signals": 1,
+            "loss_avoided": 0,
+            "winners_filtered": 0
+          }
+        }
+      },
+      "ma_conv": {
+        "thresholds": {
+          "0.5": {
+            "filtered_signals": 0,
+            "kept_signals": 1,
+            "chop_precision": 0
+          },
+          "1.0": {
+            "filtered_signals": 0,
+            "kept_signals": 1,
+            "chop_precision": 0
+          },
+          "1.5": {
+            "filtered_signals": 0,
+            "kept_signals": 1,
+            "chop_precision": 0
+          },
+          "2.0": {
+            "filtered_signals": 1,
+            "kept_signals": 0,
+            "chop_precision": 0.0
+          }
+        }
+      }
+    },
+    "question_b_basis": {
+      "uptrend": {
+        "total_hours": 901,
+        "negative_basis_hours": 709,
+        "negative_basis_pct": 78.7
+      },
+      "downtrend": {
+        "total_hours": 1143,
+        "negative_basis_hours": 945,
+        "negative_basis_pct": 82.7
+      },
+      "chop": {
+        "total_hours": 2245,
+        "negative_basis_hours": 1711,
+        "negative_basis_pct": 76.2
+      }
+    },
+    "question_d_duration": {
+      "uptrend": {
+        "count": 0,
+        "avg_hours": 0,
+        "median_hours": 0,
+        "max_hours": 0
+      },
+      "downtrend": {
+        "count": 1,
+        "avg_hours": 1.0,
+        "median_hours": 1.0,
+        "max_hours": 1.0
+      },
+      "chop": {
+        "count": 0,
+        "avg_hours": 0,
+        "median_hours": 0,
+        "max_hours": 0
+      }
+    }
+  },
+  "ETH": {
+    "data_range": {
+      "start": "2025-08-27T07:00:00.078000+00:00",
+      "end": "2026-02-23T06:00:00.078000+00:00",
+      "funding_records": 4320,
+      "candle_records": 4322
+    },
+    "question_c_thresholds": {
+      "20": {
+        "uptrend": {
+          "trades": 4,
+          "win_rate": 0.0,
+          "avg_pnl": -0.0957,
+          "total_pnl": -0.3826
+        },
+        "downtrend": {
+          "trades": 28,
+          "win_rate": 0.0,
+          "avg_pnl": -0.0892,
+          "total_pnl": -2.4965
+        },
+        "chop": {
+          "trades": 1,
+          "win_rate": 0.0,
+          "avg_pnl": -0.0962,
+          "total_pnl": -0.0962
+        },
+        "unknown": {
+          "trades": 0,
+          "win_rate": 0,
+          "avg_pnl": 0,
+          "total_pnl": 0
+        }
+      },
+      "50": {
+        "uptrend": {
+          "trades": 0,
+          "win_rate": 0,
+          "avg_pnl": 0,
+          "total_pnl": 0
+        },
+        "downtrend": {
+          "trades": 3,
+          "win_rate": 0.0,
+          "avg_pnl": -0.0721,
+          "total_pnl": -0.2164
+        },
+        "chop": {
+          "trades": 0,
+          "win_rate": 0,
+          "avg_pnl": 0,
+          "total_pnl": 0
+        },
+        "unknown": {
+          "trades": 0,
+          "win_rate": 0,
+          "avg_pnl": 0,
+          "total_pnl": 0
+        }
+      },
+      "100": {
+        "uptrend": {
+          "trades": 0,
+          "win_rate": 0,
+          "avg_pnl": 0,
+          "total_pnl": 0
+        },
+        "downtrend": {
+          "trades": 1,
+          "win_rate": 0.0,
+          "avg_pnl": -0.0385,
+          "total_pnl": -0.0385
+        },
+        "chop": {
+          "trades": 0,
+          "win_rate": 0,
+          "avg_pnl": 0,
+          "total_pnl": 0
+        },
+        "unknown": {
+          "trades": 0,
+          "win_rate": 0,
+          "avg_pnl": 0,
+          "total_pnl": 0
+        }
+      },
+      "200": {
+        "uptrend": {
+          "trades": 0,
+          "win_rate": 0,
+          "avg_pnl": 0,
+          "total_pnl": 0
+        },
+        "downtrend": {
+          "trades": 1,
+          "win_rate": 0.0,
+          "avg_pnl": -0.0385,
+          "total_pnl": -0.0385
+        },
+        "chop": {
+          "trades": 0,
+          "win_rate": 0,
+          "avg_pnl": 0,
+          "total_pnl": 0
+        },
+        "unknown": {
+          "trades": 0,
+          "win_rate": 0,
+          "avg_pnl": 0,
+          "total_pnl": 0
+        }
+      },
+      "500": {
+        "uptrend": {
+          "trades": 0,
+          "win_rate": 0,
+          "avg_pnl": 0,
+          "total_pnl": 0
+        },
+        "downtrend": {
+          "trades": 0,
+          "win_rate": 0,
+          "avg_pnl": 0,
+          "total_pnl": 0
+        },
+        "chop": {
+          "trades": 0,
+          "win_rate": 0,
+          "avg_pnl": 0,
+          "total_pnl": 0
+        },
+        "unknown": {
+          "trades": 0,
+          "win_rate": 0,
+          "avg_pnl": 0,
+          "total_pnl": 0
+        }
+      },
+      "1000": {
+        "uptrend": {
+          "trades": 0,
+          "win_rate": 0,
+          "avg_pnl": 0,
+          "total_pnl": 0
+        },
+        "downtrend": {
+          "trades": 0,
+          "win_rate": 0,
+          "avg_pnl": 0,
+          "total_pnl": 0
+        },
+        "chop": {
+          "trades": 0,
+          "win_rate": 0,
+          "avg_pnl": 0,
+          "total_pnl": 0
+        },
+        "unknown": {
+          "trades": 0,
+          "win_rate": 0,
+          "avg_pnl": 0,
+          "total_pnl": 0
+        }
+      },
+      "2000": {
+        "uptrend": {
+          "trades": 0,
+          "win_rate": 0,
+          "avg_pnl": 0,
+          "total_pnl": 0
+        },
+        "downtrend": {
+          "trades": 0,
+          "win_rate": 0,
+          "avg_pnl": 0,
+          "total_pnl": 0
+        },
+        "chop": {
+          "trades": 0,
+          "win_rate": 0,
+          "avg_pnl": 0,
+          "total_pnl": 0
+        },
+        "unknown": {
+          "trades": 0,
+          "win_rate": 0,
+          "avg_pnl": 0,
+          "total_pnl": 0
+        }
+      }
+    },
+    "question_a_chop_metrics": {
+      "adx": {
+        "thresholds": {
+          "15": {
+            "filtered_signals": 0,
+            "kept_signals": 2,
+            "loss_avoided": 0,
+            "winners_filtered": 0
+          },
+          "20": {
+            "filtered_signals": 0,
+            "kept_signals": 2,
+            "loss_avoided": 0,
+            "winners_filtered": 0
+          },
+          "25": {
+            "filtered_signals": 0,
+            "kept_signals": 2,
+            "loss_avoided": 0,
+            "winners_filtered": 0
+          },
+          "30": {
+            "filtered_signals": 0,
+            "kept_signals": 2,
+            "loss_avoided": 0,
+            "winners_filtered": 0
+          }
+        }
+      },
+      "ma_conv": {
+        "thresholds": {
+          "0.5": {
+            "filtered_signals": 0,
+            "kept_signals": 2,
+            "chop_precision": 0
+          },
+          "1.0": {
+            "filtered_signals": 0,
+            "kept_signals": 2,
+            "chop_precision": 0
+          },
+          "1.5": {
+            "filtered_signals": 0,
+            "kept_signals": 2,
+            "chop_precision": 0
+          },
+          "2.0": {
+            "filtered_signals": 0,
+            "kept_signals": 2,
+            "chop_precision": 0
+          }
+        }
+      }
+    },
+    "question_b_basis": {
+      "uptrend": {
+        "total_hours": 1112,
+        "negative_basis_hours": 835,
+        "negative_basis_pct": 75.1
+      },
+      "downtrend": {
+        "total_hours": 1393,
+        "negative_basis_hours": 1156,
+        "negative_basis_pct": 83.0
+      },
+      "chop": {
+        "total_hours": 1784,
+        "negative_basis_hours": 1361,
+        "negative_basis_pct": 76.3
+      }
+    },
+    "question_d_duration": {
+      "uptrend": {
+        "count": 0,
+        "avg_hours": 0,
+        "median_hours": 0,
+        "max_hours": 0
+      },
+      "downtrend": {
+        "count": 1,
+        "avg_hours": 2.0,
+        "median_hours": 2.0,
+        "max_hours": 2.0
+      },
+      "chop": {
+        "count": 0,
+        "avg_hours": 0,
+        "median_hours": 0,
+        "max_hours": 0
+      }
+    }
+  }
+}

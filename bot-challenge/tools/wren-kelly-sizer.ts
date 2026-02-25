@@ -106,11 +106,16 @@ async function main() {
     const confidence = signal.confidence || 'low';
     const result = computeKelly(confidence, signal.expectedEdge);
 
+    // Apply regime size multiplier if present (Stage 3)
+    const regimeMultiplier = signal.regimeSizeMultiplier || 1.0;
+    const regimeAdjustedKelly = result.cappedKelly * regimeMultiplier;
+    
     // Annotate signal
-    signal.kelly_size = result.cappedKelly;
+    signal.kelly_size = parseFloat(regimeAdjustedKelly.toFixed(6));
+    signal.kelly_size_pre_regime = result.cappedKelly;
     signal.kelly_raw = result.rawKelly;
     signal.kelly_action = result.action;
-    signal.kelly_reasoning = result.reasoning;
+    signal.kelly_reasoning = result.reasoning + (regimeMultiplier < 1.0 ? ` Regime-adjusted: ${regimeMultiplier}x.` : '');
     signal.kelly_sizedAt = new Date().toISOString();
 
     if (result.action === 'SIZE') {
@@ -155,12 +160,114 @@ async function main() {
     console.log('');
   }
 
-  // Aggregate stats
-  const totalAllocation = sizeSignals.reduce((sum, s) => sum + s.kelly, 0);
+  // ═══ Proportional Reduction ═══
+  // Only consider ACTIVE signals (within maxHold window, default 24h)
+  const MAX_SIGNAL_AGE_MS = 24 * 60 * 60 * 1000; // 24 hours
+  const now = Date.now();
+  
+  // Mark stale signals
+  for (const signal of ledger.signals) {
+    if (signal.kelly_action !== 'SIZE') continue;
+    const signalTime = new Date(signal.timestamp || signal.scannedAt || signal.kelly_sizedAt || 0).getTime();
+    const age = now - signalTime;
+    if (age > MAX_SIGNAL_AGE_MS) {
+      signal.kelly_status = 'STALE';
+      signal.kelly_size = 0;
+    } else {
+      signal.kelly_status = 'ACTIVE';
+    }
+  }
+  
+  const staleCount = ledger.signals.filter(s => s.kelly_status === 'STALE').length;
+  if (staleCount > 0) {
+    console.log(`🕐 Marked ${staleCount} signals as STALE (>24h old) — allocation zeroed\n`);
+  }
+  
+  // ═══ Deduplication (Oracle directive 2026-02-24) ═══
+  // One active signal per ticker per tool. Highest tier wins, then newest.
+  const TIER_RANK: Record<string, number> = { HIGH: 3, MEDIUM: 2, LOW: 1 };
+  const activeSignals = ledger.signals.filter((s: any) => s.kelly_status === 'ACTIVE' && s.kelly_action === 'SIZE' && s.kelly_size > 0);
+  
+  // Group by coin+tool+direction key
+  const bestByKey = new Map<string, any>();
+  let dedupCount = 0;
+  
+  for (const signal of activeSignals) {
+    const key = `${signal.coin}|${signal.tool}|${signal.direction}`;
+    const existing = bestByKey.get(key);
+    
+    if (!existing) {
+      bestByKey.set(key, signal);
+      continue;
+    }
+    
+    const newTierRank = TIER_RANK[signal.tier] || 0;
+    const existingTierRank = TIER_RANK[existing.tier] || 0;
+    
+    let replace = false;
+    if (newTierRank > existingTierRank) {
+      replace = true; // higher tier wins
+    } else if (newTierRank === existingTierRank && signal.unixMs > existing.unixMs) {
+      replace = true; // same tier, newer wins
+    }
+    
+    if (replace) {
+      // Mark old signal as superseded
+      existing.kelly_status = 'SUPERSEDED';
+      existing.kelly_size = 0;
+      existing.kelly_superseded_by = signal.timestamp;
+      existing.kelly_superseded_reason = `Replaced by ${signal.tier} signal at ${signal.timestamp}`;
+      bestByKey.set(key, signal);
+      dedupCount++;
+    } else {
+      // New signal is lower/equal-and-older — mark it as superseded
+      signal.kelly_status = 'SUPERSEDED';
+      signal.kelly_size = 0;
+      signal.kelly_superseded_by = existing.timestamp;
+      signal.kelly_superseded_reason = `Kept existing ${existing.tier} signal from ${existing.timestamp}`;
+      dedupCount++;
+    }
+  }
+  
+  if (dedupCount > 0) {
+    console.log(`🔄 Dedup: ${dedupCount} duplicate signals superseded → ${bestByKey.size} unique positions\n`);
+  }
+  
+  // Compute total allocation across ACTIVE (non-superseded) sized signals only
+  const allSizedSignals = ledger.signals.filter(s => s.kelly_action === 'SIZE' && s.kelly_status === 'ACTIVE' && s.kelly_size > 0);
+  const totalAllocation = allSizedSignals.reduce((sum, s) => sum + (s.kelly_size || 0), 0);
+  
   console.log(`Summary: ${sized} sized | ${skipped} skipped | Total allocation: ${(totalAllocation * 100).toFixed(1)}% of bankroll`);
   
   if (totalAllocation > 1.0) {
-    console.log(`⚠️ Total allocation exceeds 100%! Consider reducing positions proportionally.`);
+    const scaleFactor = 1.0 / totalAllocation;
+    console.log(`\n⚠️ Total allocation ${(totalAllocation * 100).toFixed(1)}% exceeds 100%!`);
+    console.log(`📉 Applying proportional reduction: scale factor = ${(scaleFactor * 100).toFixed(2)}%`);
+    
+    let reducedCount = 0;
+    for (const signal of allSizedSignals) {
+      const original = signal.kelly_size;
+      signal.kelly_size_unreduced = original; // preserve original for audit
+      signal.kelly_size = parseFloat((original * scaleFactor).toFixed(6));
+      signal.kelly_scale_factor = parseFloat(scaleFactor.toFixed(6));
+      signal.kelly_reduced_at = new Date().toISOString();
+      reducedCount++;
+    }
+    
+    const newTotal = allSizedSignals.reduce((sum, s) => sum + (s.kelly_size || 0), 0);
+    console.log(`✅ Reduced ${reducedCount} positions: ${(totalAllocation * 100).toFixed(1)}% → ${(newTotal * 100).toFixed(1)}%`);
+    console.log('');
+    
+    // Print top 10 positions after reduction
+    const top10 = [...allSizedSignals].sort((a, b) => (b.kelly_size || 0) - (a.kelly_size || 0)).slice(0, 10);
+    console.log('Top 10 positions after reduction:');
+    console.log('─'.repeat(70));
+    for (const s of top10) {
+      const pct = ((s.kelly_size || 0) * 100).toFixed(2);
+      const origPct = ((s.kelly_size_unreduced || s.kelly_size || 0) * 100).toFixed(1);
+      console.log(`  ${(s.coin || '?').slice(0,20).padEnd(20)} ${(s.direction || '?').padEnd(6)} ${pct.padStart(6)}% (was ${origPct}%)  [${s.tool || '?'}]`);
+    }
+    console.log('');
   }
 
   // Write back to ledger

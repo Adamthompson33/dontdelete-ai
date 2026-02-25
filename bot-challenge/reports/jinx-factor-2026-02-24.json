@@ -1,0 +1,360 @@
+{
+  "timestamp": "2026-02-24T21:08:04.695Z",
+  "regime": "TRENDING_DOWN",
+  "directional": {
+    "longCount": 224,
+    "shortCount": 54,
+    "longPct": 55,
+    "longAllocPct": 74,
+    "crowdingScore": 10,
+    "verdict": "LOW: Well-balanced directional exposure (55% long / 45% short)."
+  },
+  "sectors": [
+    {
+      "name": "New / Unclassified",
+      "code": "NEW",
+      "count": 314,
+      "allocPct": 68,
+      "coins": [
+        "STABLE",
+        "SOPH",
+        "ZORA",
+        "JTO",
+        "2Z",
+        "DASH",
+        "PROMPT",
+        "BIO",
+        "ANIME",
+        "SKR",
+        "VIRTUAL",
+        "GMX",
+        "GRASS",
+        "kNEIRO",
+        "0G",
+        "PENGU",
+        "BTC",
+        "TAO",
+        "XRP",
+        "AZTEC",
+        "AVNT",
+        "ACE",
+        "ICP",
+        "MEME",
+        "FET",
+        "POPCAT",
+        "MET",
+        "AERO",
+        "VVV",
+        "ENA",
+        "MOVE",
+        "Will Bitcoin be higher than $8",
+        "[@mattyb’s 500th market specta",
+        "Will Bitcoin (BTC) be below CH",
+        "Will Bitcoin (BTC) price first",
+        "Will a Republican President ch",
+        "Will a former US president acc",
+        "Will Quinn Ewers defeat Arch M",
+        "(1k subsidy) Will Connor McGre",
+        "Will Roger Goodell be replaced",
+        "Will Bitcoin Outperform Altcoi",
+        "More than 70% of U.S. populati",
+        "Bitcoin $120K in 2026?",
+        "Bitcoin $140K in 2026?",
+        "Carried Interest Repeal by End",
+        "PORTFOLIO",
+        "PURR",
+        "TNSR",
+        "BSV",
+        "W",
+        "RUNE",
+        "TRUMP",
+        "HYPER",
+        "AR",
+        "XLM",
+        "Will Bitcoin (BTC) close at $1",
+        "FOGO",
+        "ME",
+        "MOODENG",
+        "AIXBT",
+        "DYM",
+        "ZETA",
+        "EIGEN",
+        "STX",
+        "INIT",
+        "APE",
+        "POL",
+        "DYDX",
+        null,
+        "LAYER",
+        "KAS",
+        "BIGTIME",
+        "KAITO",
+        "HYPE",
+        "DOT"
+      ]
+    },
+    {
+      "name": "Layer 2 / Scaling",
+      "code": "L2",
+      "count": 10,
+      "allocPct": 10,
+      "coins": [
+        "OP",
+        "ARB"
+      ]
+    },
+    {
+      "name": "Layer 1",
+      "code": "L1",
+      "count": 30,
+      "allocPct": 9,
+      "coins": [
+        "SOL",
+        "ETH",
+        "INJ",
+        "BERA",
+        "AVAX",
+        "SUI",
+        "TIA",
+        "SEI"
+      ]
+    },
+    {
+      "name": "DeFi",
+      "code": "DEFI",
+      "count": 20,
+      "allocPct": 6,
+      "coins": [
+        "CELO",
+        "YGG",
+        "UMA",
+        "UNI",
+        "COMP",
+        "AAVE"
+      ]
+    },
+    {
+      "name": "Gaming / Metaverse",
+      "code": "GAMING",
+      "count": 15,
+      "allocPct": 4,
+      "coins": [
+        "AXS",
+        "SAND",
+        "IMX"
+      ]
+    },
+    {
+      "name": "Meme / Narrative",
+      "code": "MEME",
+      "count": 10,
+      "allocPct": 2,
+      "coins": [
+        "MON",
+        "GOAT"
+      ]
+    },
+    {
+      "name": "Infrastructure",
+      "code": "INFRA",
+      "count": 7,
+      "allocPct": 2,
+      "coins": [
+        "GAS",
+        "LINK"
+      ]
+    }
+  ],
+  "sectorHHI": 4865,
+  "sectorVerdict": "HIGH: HHI 4865 — concentrated in New / Unclassified and Layer 2 / Scaling. Consider sector caps.",
+  "btcBeta": {
+    "avgCorrelation": 4,
+    "highBetaCoins": [
+      "STABLE",
+      "AXS",
+      "SOPH",
+      "ZORA",
+      "GOAT",
+      "JTO",
+      "BIO",
+      "ANIME",
+      "YGG",
+      "VIRTUAL",
+      "GRASS",
+      "kNEIRO",
+      "0G",
+      "2Z",
+      "TAO",
+      "ACE",
+      "BERA",
+      "POPCAT",
+      "MET",
+      "AERO",
+      "MOVE",
+      "PURR",
+      "VVV",
+      "ME",
+      "MOODENG",
+      "AIXBT",
+      "ZETA",
+      "IMX",
+      "STX",
+      "EIGEN",
+      "SEI",
+      "INIT",
+      "APE",
+      "CELO",
+      "FET",
+      "POL",
+      "COMP",
+      "DYDX",
+      "AZTEC"
+    ],
+    "lowBetaCoins": [
+      "MON",
+      "CELO",
+      "PROMPT",
+      "SKR",
+      "OP",
+      "UMA",
+      "GAS",
+      "AVNT",
+      "STABLE",
+      "kNEIRO",
+      "0G",
+      "ICP",
+      "MEME",
+      "VVV",
+      "ENA",
+      "PENGU",
+      "AXS",
+      "TNSR",
+      "ZORA",
+      "2Z",
+      "BSV",
+      "W",
+      "SAND",
+      "RUNE",
+      "BERA",
+      "TRUMP",
+      "JTO",
+      "HYPER",
+      "DASH",
+      "AERO",
+      "AR",
+      "FET",
+      "XLM",
+      "FOGO",
+      "EIGEN",
+      "PURR",
+      "SOPH",
+      "LAYER",
+      "APE",
+      "BIGTIME",
+      "STX",
+      "ANIME",
+      "BTC",
+      "SOL",
+      "ETH",
+      "VIRTUAL",
+      "AVAX",
+      "UNI",
+      "KAITO",
+      "MOVE",
+      "HYPE",
+      "BIO"
+    ],
+    "btcExposurePct": 19,
+    "verdict": "LOW: Only 19% high-beta. Portfolio has meaningful independence from BTC moves."
+  },
+  "narrativeRisk": {
+    "clusters": [
+      {
+        "narrative": "New Token Hype",
+        "coins": [
+          "STABLE",
+          "MON",
+          "SOPH",
+          "ZORA",
+          "2Z",
+          "SKR",
+          "0G",
+          "AZTEC",
+          "ACE",
+          "BERA"
+        ],
+        "totalAlloc": 13
+      },
+      {
+        "narrative": "L2 Scaling",
+        "coins": [
+          "OP",
+          "ARB"
+        ],
+        "totalAlloc": 10
+      },
+      {
+        "narrative": "Alt L1 Recovery",
+        "coins": [
+          "SOL",
+          "INJ",
+          "BERA",
+          "AVAX",
+          "SUI",
+          "TIA",
+          "SEI"
+        ],
+        "totalAlloc": 6
+      },
+      {
+        "narrative": "DeFi Revival",
+        "coins": [
+          "CELO",
+          "YGG",
+          "UMA",
+          "UNI",
+          "COMP",
+          "AAVE"
+        ],
+        "totalAlloc": 6
+      },
+      {
+        "narrative": "Gaming Bounce",
+        "coins": [
+          "AXS",
+          "SAND",
+          "IMX"
+        ],
+        "totalAlloc": 4
+      },
+      {
+        "narrative": "Meme Momentum",
+        "coins": [
+          "MON",
+          "GOAT"
+        ],
+        "totalAlloc": 2
+      },
+      {
+        "narrative": "Infrastructure Demand",
+        "coins": [
+          "GAS",
+          "LINK"
+        ],
+        "totalAlloc": 2
+      }
+    ],
+    "maxClusterPct": 13,
+    "verdict": "LOW: No single narrative exceeds 25%. Good narrative diversification."
+  },
+  "overallRisk": {
+    "score": 27,
+    "grade": "LOW",
+    "factors": [
+      "Sector concentration (HHI 4865)",
+      "BTC beta exposure (19% high-beta)",
+      "Directional crowding (55% long)"
+    ],
+    "recommendation": "HEALTHY. Portfolio is well-diversified. Continue normal operations."
+  }
+}

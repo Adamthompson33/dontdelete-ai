@@ -1,0 +1,88 @@
+{
+  "timestamp": "2026-02-25T13:09:04.425Z",
+  "regime": "TRENDING_UP",
+  "previousRegime": "TRENDING_DOWN",
+  "regimeShifted": true,
+  "alerts": [
+    {
+      "type": "FUNDING_DECAY",
+      "severity": "WARNING",
+      "coin": "ZORA",
+      "direction": "LONG",
+      "message": "Funding decayed from -171% to -38% APR (78% decay). Carry thesis weakening.",
+      "action": "EXIT",
+      "details": {
+        "entryFunding": -171,
+        "currentFunding": -38,
+        "decayPct": 78
+      }
+    },
+    {
+      "type": "FUNDING_DECAY",
+      "severity": "WARNING",
+      "coin": "YGG",
+      "direction": "LONG",
+      "message": "Funding decayed from -139% to 11% APR (92% decay). Carry thesis weakening.",
+      "action": "EXIT",
+      "details": {
+        "entryFunding": -139,
+        "currentFunding": 11,
+        "decayPct": 92
+      }
+    },
+    {
+      "type": "FUNDING_DECAY",
+      "severity": "WARNING",
+      "coin": "GAS",
+      "direction": "LONG",
+      "message": "Funding decayed from -253% to -36% APR (86% decay). Carry thesis weakening.",
+      "action": "EXIT",
+      "details": {
+        "entryFunding": -253,
+        "currentFunding": -36,
+        "decayPct": 86
+      }
+    },
+    {
+      "type": "FUNDING_DECAY",
+      "severity": "WARNING",
+      "coin": "ALT",
+      "direction": "LONG",
+      "message": "Funding decayed from -103% to -13% APR (88% decay). Carry thesis weakening.",
+      "action": "EXIT",
+      "details": {
+        "entryFunding": -103,
+        "currentFunding": -13,
+        "decayPct": 88
+      }
+    },
+    {
+      "type": "PROFITABLE_HOLD",
+      "severity": "INFO",
+      "coin": "KAITO",
+      "direction": "LONG",
+      "message": "+9.2%, 1.9h remaining. Funding still at -71% APR. Trail stop to breakeven.",
+      "action": "EXTEND",
+      "details": {
+        "pnlPct": 9.18,
+        "remainingHours": 1.9,
+        "currentFunding": -71
+      }
+    }
+  ],
+  "summary": {
+    "totalPositions": 14,
+    "alertCount": 5,
+    "criticalCount": 0,
+    "warningCount": 4,
+    "recommendedExits": [
+      "ZORA",
+      "YGG",
+      "GAS",
+      "ALT"
+    ],
+    "recommendedExtensions": [
+      "KAITO"
+    ]
+  }
+}

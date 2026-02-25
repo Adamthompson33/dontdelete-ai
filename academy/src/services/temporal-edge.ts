@@ -44,7 +44,7 @@ export interface TemporalSignal {
 }
 
 export interface RegimeState {
-  regime: 'TRENDING' | 'CHOPPY' | 'VOLATILE';
+  regime: 'TRENDING_UP' | 'TRENDING_DOWN' | 'CHOPPY' | 'VOLATILE';
   adx: number;              // 0-100, >25 = trending
   volatilityRatio: number;  // current vol / avg vol
   priceChange1h: number;
@@ -55,9 +55,30 @@ export interface TemporalScanResult {
   scannedAt: string;
   signals: TemporalSignal[];
   regimes: Record<string, RegimeState>;
+  regimeParams: RegimeParams;  // Stage 2: risk params for current BTC regime
   nextResetMinutes: number;
   session: string;
 }
+
+// ═══ Regime Risk Parameters (Oracle directive 2026-02-24) ═══
+// Stop-loss, position size multiplier, and max hold time per regime.
+// These constrain downstream scanners (Rei, etc.) based on market conditions.
+
+export interface RegimeParams {
+  stop: number;      // stop-loss percentage (e.g., 0.02 = 2%)
+  size: number;      // position size multiplier (1.0 = full, 0.25 = quarter)
+  maxHold: number;   // max hold time in hours
+}
+
+export const REGIME_PARAMS: Record<string, RegimeParams> = {
+  CHOPPY:        { stop: 0.02, size: 0.25, maxHold: 4 },
+  TRENDING_DOWN: { stop: 0.03, size: 0.75, maxHold: 12 },
+  TRENDING_UP:   { stop: 0.04, size: 0.75, maxHold: 18 },
+  VOLATILE:      { stop: 0.03, size: 0.50, maxHold: 8 },
+};
+
+// Default params if regime unknown
+export const DEFAULT_REGIME_PARAMS: RegimeParams = { stop: 0.03, size: 0.50, maxHold: 8 };
 
 // ═══ Constants ═══
 
@@ -180,7 +201,7 @@ export class TemporalEdgeScanner {
       // When BTC regime shifts (e.g. CHOPPY → TRENDING), other coins often follow
       // with a lag. Detect regime + extreme funding = higher conviction
       if (coin !== 'BTC' && Math.abs(annualizedRate) > EXTREME_FUNDING_APR) {
-        if (btcRegime.regime === 'TRENDING' && Math.abs(btcRegime.priceChange24h) > 3) {
+        if ((btcRegime.regime === 'TRENDING_UP' || btcRegime.regime === 'TRENDING_DOWN') && Math.abs(btcRegime.priceChange24h) > 3) {
           // BTC trending + altcoin has extreme funding = directional edge
           const btcDirection = btcRegime.priceChange24h > 0 ? 'long' : 'short';
           const fundingAligned = (btcDirection === 'long' && hourlyRate < 0) ||
@@ -225,13 +246,18 @@ export class TemporalEdgeScanner {
       }
     }
 
+    // Compute regime params for current BTC regime (Stage 2)
+    const currentRegime = regimes['BTC']?.regime || 'VOLATILE';
+    const regimeParams = REGIME_PARAMS[currentRegime] || DEFAULT_REGIME_PARAMS;
+
     // Save report
-    this.saveReport({ scannedAt: now.toISOString(), signals, regimes, nextResetMinutes: minutesToReset, session: currentSession });
+    this.saveReport({ scannedAt: now.toISOString(), signals, regimes, regimeParams, nextResetMinutes: minutesToReset, session: currentSession });
 
     return {
       scannedAt: now.toISOString(),
       signals,
       regimes,
+      regimeParams,
       nextResetMinutes: minutesToReset,
       session: currentSession,
     };
@@ -340,10 +366,10 @@ export class TemporalEdgeScanner {
     const fullVol = Math.sqrt(returns.reduce((s, r) => s + r * r, 0) / returns.length);
     const volatilityRatio = fullVol > 0 ? recentVol / fullVol : 1.0;
 
-    // Classify regime
-    let regime: 'TRENDING' | 'CHOPPY' | 'VOLATILE';
+    // Classify regime (Oracle spec 2026-02-24: split TRENDING into UP/DOWN)
+    let regime: 'TRENDING_UP' | 'TRENDING_DOWN' | 'CHOPPY' | 'VOLATILE';
     if (adx > ADX_TRENDING && volatilityRatio < VOL_RATIO_HIGH) {
-      regime = 'TRENDING';
+      regime = priceChange24h >= 0 ? 'TRENDING_UP' : 'TRENDING_DOWN';
     } else if (volatilityRatio > VOL_RATIO_HIGH) {
       regime = 'VOLATILE';
     } else {

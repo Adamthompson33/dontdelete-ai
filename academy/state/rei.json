@@ -1,18 +1,74 @@
 {
   "agent": "REI",
   "team": "sentinel",
-  "lastUpdated": "2026-02-23T00:32:27.216Z",
-  "runNumber": 7,
+  "lastUpdated": "2026-02-25T00:32:27.917Z",
+  "runNumber": 9,
   "signals": {
-    "total": 5,
+    "total": 9,
     "correct": 0,
     "incorrect": 0,
-    "pending": 5,
+    "pending": 9,
     "accuracy": null,
-    "avgConfidence": 0.58,
+    "avgConfidence": 0.5644444444444444,
     "calibrationScore": null
   },
   "recentSignals": [
+    {
+      "run": 9,
+      "asset": "FOGO",
+      "direction": "short",
+      "confidence": 0.68,
+      "kelly_size": 0.08,
+      "invalidation": "FOGO funding mean-reverts above -200% APR (carry gets compressed faster than my model predicts)",
+      "data_sources": [
+        "funding-scanner",
+        "basis-decomposition"
+      ],
+      "timestamp": "2026-02-25T00:32:20.063Z",
+      "outcome": "pending"
+    },
+    {
+      "run": 9,
+      "asset": "BTC",
+      "direction": "flat",
+      "confidence": 0.5,
+      "kelly_size": 0,
+      "invalidation": "n/a",
+      "data_sources": [
+        "correlation-stress-test",
+        "self-audit"
+      ],
+      "timestamp": "2026-02-25T00:32:20.058Z",
+      "outcome": "pending"
+    },
+    {
+      "run": 9,
+      "asset": "BTC",
+      "direction": "flat",
+      "confidence": 0.5,
+      "kelly_size": 0,
+      "invalidation": "n/a",
+      "data_sources": [
+        "regime-chop-analysis",
+        "self-audit"
+      ],
+      "timestamp": "2026-02-25T00:31:15.059Z",
+      "outcome": "pending"
+    },
+    {
+      "run": 8,
+      "asset": "OP",
+      "direction": "flat",
+      "confidence": 0.5,
+      "kelly_size": 0,
+      "invalidation": "n/a",
+      "data_sources": [
+        "funding-extremes-unresolved",
+        "correlation-audit"
+      ],
+      "timestamp": "2026-02-24T00:31:16.476Z",
+      "outcome": "pending"
+    },
     {
       "run": 7,
       "asset": "JTO",
@@ -25,62 +81,6 @@
         "funding-scanner"
       ],
       "timestamp": "2026-02-23T00:32:19.261Z",
-      "outcome": "pending"
-    },
-    {
-      "run": 7,
-      "asset": "JTO",
-      "direction": "short",
-      "confidence": 0.72,
-      "kelly_size": 0.12,
-      "invalidation": "JTO closes above -100% funding (mean-reversion trap suggests carry gets compressed faster than my model predicts)",
-      "data_sources": [
-        "funding-scanner",
-        "basis-decomposition"
-      ],
-      "timestamp": "2026-02-23T00:31:15.736Z",
-      "outcome": "pending"
-    },
-    {
-      "run": 6,
-      "asset": "BTC",
-      "direction": "flat",
-      "confidence": 0.5,
-      "kelly_size": 0,
-      "invalidation": "n/a",
-      "data_sources": [
-        "self-audit",
-        "correlation-stress-test"
-      ],
-      "timestamp": "2026-02-21T00:32:05.068Z",
-      "outcome": "pending"
-    },
-    {
-      "run": 6,
-      "asset": "BTC",
-      "direction": "flat",
-      "confidence": 0.5,
-      "kelly_size": 0,
-      "invalidation": "n/a",
-      "data_sources": [
-        "correlation-stress-test",
-        "self-audit"
-      ],
-      "timestamp": "2026-02-21T00:31:06.494Z",
-      "outcome": "pending"
-    },
-    {
-      "run": 6,
-      "asset": "INJ",
-      "direction": "short",
-      "confidence": 0.68,
-      "kelly_size": 0.08,
-      "invalidation": "INJ closes below -200% funding (suggests short-squeeze risk, funding mean-reverts faster than I can collect carry)",
-      "data_sources": [
-        "funding-scanner",
-        "microstructure-analysis"
-      ],
-      "timestamp": "2026-02-20T11:59:32.529Z",
       "outcome": "pending"
     }
   ],
@@ -95,45 +95,45 @@
   "recentDecisions": [],
   "toolPerformance": {
     "name": "Funding Rate Scanner",
-    "paperPnl": 128.32325820000003,
+    "paperPnl": 209.91146820000003,
     "openPaperTrades": 5,
     "bestTrade": null,
     "worstTrade": null,
-    "totalScans": 7
+    "totalScans": 9
   },
   "convergenceFlags": {
     "phrasesUsedByMultipleAgents": [
-      "confidence kelly invalidation",
-      "kelly invalidation sources",
-      "btc confidence kelly",
       "signal flat btc",
       "flat btc confidence",
-      "eth confidence kelly"
+      "btc confidence kelly",
+      "confidence kelly invalidation",
+      "kelly invalidation sources",
+      "betting the same",
+      "the same macro",
+      "same macro narrative",
+      "macro narrative different",
+      "narrative different angles"
     ],
     "bannedPhrases": [
       {
-        "phrase": "confidence kelly invalidation",
-        "bannedAtRun": 6
-      },
-      {
-        "phrase": "kelly invalidation sources",
-        "bannedAtRun": 6
-      },
-      {
         "phrase": "signal flat btc",
-        "bannedAtRun": 6
+        "bannedAtRun": 9
       },
       {
         "phrase": "flat btc confidence",
-        "bannedAtRun": 6
+        "bannedAtRun": 9
       },
       {
         "phrase": "btc confidence kelly",
-        "bannedAtRun": 6
+        "bannedAtRun": 9
       },
       {
-        "phrase": "invalidation sources correlationstresstest",
-        "bannedAtRun": 6
+        "phrase": "confidence kelly invalidation",
+        "bannedAtRun": 9
+      },
+      {
+        "phrase": "kelly invalidation sources",
+        "bannedAtRun": 9
       }
     ]
   },
@@ -142,7 +142,7 @@
     "trend": [
       -2,
       0,
-      -2
+      0
     ],
     "tier": "elite",
     "signalScore": 0
@@ -152,7 +152,7 @@
     "trend": [
       -2,
       0,
-      -2
+      0
     ],
     "tier": "elite",
     "locked": 0

@@ -1,7 +1,50 @@
 {
   "date": "2026-02-23",
-  "scannedAt": "2026-02-23T09:01:04.012Z",
+  "scannedAt": "2026-02-23T21:01:05.541Z",
   "coinsScanned": 3,
-  "signalCount": 0,
-  "signals": []
+  "signalCount": 2,
+  "signals": [
+    {
+      "tool": "pixel-momentum",
+      "timestamp": "2026-02-23T21:01:04.769Z",
+      "unixMs": 1771880464770,
+      "coin": "BTC",
+      "direction": "SHORT",
+      "confidence": "low",
+      "confidenceScore": 42,
+      "entryPrice": 64450,
+      "regime": "TRENDING_SHORT",
+      "reasoning": "BTC in TRENDING_SHORT regime (ADX: 39.4, MA diff: -1.01%). SMA13 below SMA33. RSI: 32.4, BB position: 17%. Vol ratio: 0.58 (normal).",
+      "invalidation": "SMA13 crosses above SMA33 or RSI < 30",
+      "indicators": {
+        "smaFast": 65426.230769230766,
+        "smaSlow": 66091.63636363637,
+        "rsi": 32.365145228215766,
+        "adx": 39.38555736084569,
+        "volRatio": 0.580725163259424,
+        "bbPosition": 0.1677161631856858
+      }
+    },
+    {
+      "tool": "pixel-momentum",
+      "timestamp": "2026-02-23T21:01:05.322Z",
+      "unixMs": 1771880465322,
+      "coin": "SOL",
+      "direction": "SHORT",
+      "confidence": "low",
+      "confidenceScore": 51,
+      "entryPrice": 78.213,
+      "regime": "TRENDING_SHORT",
+      "reasoning": "SOL in TRENDING_SHORT regime (ADX: 36.6, MA diff: -1.36%). SMA13 below SMA33. RSI: 44.1, BB position: 32%. Vol ratio: 0.59 (normal).",
+      "invalidation": "SMA13 crosses above SMA33 or RSI < 30",
+      "indicators": {
+        "smaFast": 79.35692307692308,
+        "smaSlow": 80.4520909090909,
+        "rsi": 44.07520769567112,
+        "adx": 36.60949137239983,
+        "volRatio": 0.5874610776528023,
+        "bbPosition": 0.3186149740195781
+      }
+    }
+  ]
 }

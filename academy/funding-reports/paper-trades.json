@@ -121,8 +121,10 @@
       "notionalSize": 1000,
       "cumulativeFunding": 5.1884325,
       "lastCollectedAt": 1771806611920,
-      "isOpen": true,
-      "fees": 0.25
+      "isOpen": false,
+      "fees": 0.5,
+      "exitTime": 1771893010651,
+      "exitReason": "coin_dropped_from_scan"
     },
     {
       "id": "OP-1771588222878",
@@ -145,10 +147,12 @@
       "entryTime": 1771588224599,
       "entryRate": -0.0001513462,
       "notionalSize": 1000,
-      "cumulativeFunding": 12.9761236,
-      "lastCollectedAt": 1771806611920,
-      "isOpen": true,
-      "fees": 0.25
+      "cumulativeFunding": 13.569194699999999,
+      "lastCollectedAt": 1771893010651,
+      "isOpen": false,
+      "fees": 0.5,
+      "exitTime": 1771893010651,
+      "exitReason": "max_duration_72h"
     },
     {
       "id": "SEI-1771588226004",
@@ -171,10 +175,12 @@
       "entryTime": 1771588226773,
       "entryRate": -0.0000971425,
       "notionalSize": 1000,
-      "cumulativeFunding": 5.025923000000001,
-      "lastCollectedAt": 1771806611920,
-      "isOpen": true,
-      "fees": 0.25
+      "cumulativeFunding": 6.827057600000001,
+      "lastCollectedAt": 1771893010651,
+      "isOpen": false,
+      "fees": 0.5,
+      "exitTime": 1771893010651,
+      "exitReason": "max_duration_72h"
     },
     {
       "id": "BERA-1771633812588",
@@ -183,10 +189,12 @@
       "entryTime": 1771633812588,
       "entryRate": -0.000226416,
       "notionalSize": 1000,
-      "cumulativeFunding": 12.9424605,
-      "lastCollectedAt": 1771806611920,
-      "isOpen": true,
-      "fees": 0.25
+      "cumulativeFunding": 15.881526999999998,
+      "lastCollectedAt": 1771979410317,
+      "isOpen": false,
+      "fees": 0.5,
+      "exitTime": 1771979410317,
+      "exitReason": "max_duration_72h"
     },
     {
       "id": "AXS-1771806612514",
@@ -195,12 +203,60 @@
       "entryTime": 1771806612514,
       "entryRate": -0.0003921414,
       "notionalSize": 1000,
+      "cumulativeFunding": 8.3484411,
+      "lastCollectedAt": 1771979410317,
+      "isOpen": true,
+      "fees": 0.25
+    },
+    {
+      "id": "YGG-1771893011127",
+      "coin": "YGG",
+      "direction": "SHORT_BASIS",
+      "entryTime": 1771893011127,
+      "entryRate": -0.0002401866,
+      "notionalSize": 1000,
+      "cumulativeFunding": 3.3811978,
+      "lastCollectedAt": 1771979410317,
+      "isOpen": true,
+      "fees": 0.25
+    },
+    {
+      "id": "SKR-1771893012549",
+      "coin": "SKR",
+      "direction": "SHORT_BASIS",
+      "entryTime": 1771893012549,
+      "entryRate": -0.0001416465,
+      "notionalSize": 1000,
+      "cumulativeFunding": 62.897596300000004,
+      "lastCollectedAt": 1771979410317,
+      "isOpen": true,
+      "fees": 0.25
+    },
+    {
+      "id": "STABLE-1771893013240",
+      "coin": "STABLE",
+      "direction": "SHORT_BASIS",
+      "entryTime": 1771893013240,
+      "entryRate": -0.0001407917,
+      "notionalSize": 1000,
+      "cumulativeFunding": 3.6277026,
+      "lastCollectedAt": 1771979410317,
+      "isOpen": true,
+      "fees": 0.25
+    },
+    {
+      "id": "FOGO-1771979411113",
+      "coin": "FOGO",
+      "direction": "SHORT_BASIS",
+      "entryTime": 1771979411113,
+      "entryRate": -0.0004034187,
+      "notionalSize": 1000,
       "cumulativeFunding": 0,
-      "lastCollectedAt": 1771806612514,
+      "lastCollectedAt": 1771979411113,
       "isOpen": true,
       "fees": 0.25
     }
   ],
-  "cumulativePnl": 128.32325820000003,
+  "cumulativePnl": 209.91146820000003,
   "lastScanAt": 0
 }

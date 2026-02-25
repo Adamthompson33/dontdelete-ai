@@ -1,0 +1,170 @@
+═══════════════════════════════════════════════════
+  THE ACADEMY — DAILY EPISODE (2026-02-24)
+  Time: 24/02/2026, 11:30:04 am
+═══════════════════════════════════════════════════
+
+─── PHASE 1: Market Snapshot ───
+
+  BTC: $64,835 ▼3.9% 24h
+  ETH: $1,861.73 ▼4.4% 24h
+  SOL: $78.21 ▼5.4% 24h
+
+  OP funding: -98.1% ann. (shorts pay)
+  WIF funding: -35.3% ann. (shorts pay)
+  BTC funding: +11.0% ann. (longs pay)
+  ETH funding: +11.0% ann. (longs pay)
+  AVAX funding: +11.0% ann. (longs pay)
+
+─── Phase 1.5: Previous Signal Evaluation ───
+
+  ❌ JINX: FLAT ETH @ 50% conf → -4.4%
+  ❌ JINX: FLAT BTC @ 50% conf → -3.9%
+  ❌ WREN: FLAT BTC @ 50% conf → -3.9%
+  ❌ WREN: LONG ETH @ 62% conf → -4.4%
+  ❌ SAKURA: FLAT BTC @ 50% conf → -3.9%
+  ❌ WREN: LONG ETH @ 62% conf → -4.4%
+  ❌ WREN: FLAT BTC @ 50% conf → -3.9%
+  ❌ SAKURA: LONG BTC @ 85% conf → -3.9%
+  ❌ JINX: FLAT BTC @ 50% conf → -3.9%
+  ❌ REI: FLAT BTC @ 50% conf → -3.9%
+  ❌ WREN: FLAT BTC @ 50% conf → -3.9%
+  ❌ PROPHET: FLAT BTC @ 50% conf → -3.9%
+  ❌ SAKURA: FLAT BTC @ 50% conf → -3.9%
+  ❌ JINX: FLAT BTC @ 50% conf → -3.9%
+  ❌ REI: FLAT BTC @ 50% conf → -3.9%
+  ❌ WREN: LONG BTC @ 65% conf → -3.9%
+
+⚠️ PROPHET: -2 fitness (no signals in last 24h)
+─── PHASE 2: Helena Sets the Stage ───
+
+  Helena: Daily assessment. Markets: BTC $64,835 (-3.9%), ETH $1,861.73 (-4.4%), SOL $78.21 (-5.4%). Notable funding: OP -98%, WIF...
+
+
+--- PHASE 3: Signal Harvest ---
+
+  Signals collected: 6
+  Active tools: sakura, rei, wren, jinx, jackbot
+
+═══════════════════════════════════════════════════════
+  SIGNAL BOARD -- Episode 8 -- 2026-02-24
+═══════════════════════════════════════════════════════
+
+[LIVE MARKET DATA — 2026-02-24T00:30:04.466Z]
+  BTC: $64,835
+  ETH: $1,861.73
+  ⚠️ Use these prices for ALL crypto analysis. Do NOT estimate or assume prices.
+
+[SAKURA -- arb-scanner -- Confidence: 60%]
+  "BTC flat curve: $88,888 → $500,000 with almost no probability drop (92.5pp edge, medium confidence)"
+  Direction: ARB
+  Relevant markets: 2qZNLRlE, ARDYUYcv
+
+[REI -- funding-scanner -- Confidence: 85%]
+  "YGG: -210.4% APR (SHORT_BASIS). Paper P&L: $135.67 across 2 open trades."
+  Direction: BEARISH
+
+[WREN -- kelly-engine -- Confidence: 80%]
+  "Desk avg heat: 28%. Hot agents: PROPHET. Max position cluster: 4."
+
+[JINX -- factor-model -- Confidence: 70%]
+  "AUDIT ALERT: JACKBOT Predictions (KILL), WREN Predictions (KILL). 0/6 strategies healthy. Correlation: HIGH correlation (65%). Multiple agents betting same themes. A single event could hit everyone simultaneously.."
+
+[JACKBOT -- temporal-edge -- Confidence: 71%]
+  "LONG OP (funding_reset): OP funding at -99% APR with 30min to hourly reset. Extreme negative funding suggests long bias post-"
+  Direction: BULLISH
+
+[PROPHET -- ultra-think-ufc -- Confidence: 0%]
+  "[NOT YET BUILT] Ultra Think UFC pending development."
+
+═══════════════════════════════════════════════════════
+
+
+─── PHASE 4.1: Round 1 of 2 ───
+
+
+─── PHASE 4.2: Round 2 of 2 ───
+
+
+--- Citation Analysis ---
+
+  Synthesizers: JACKBOT, SAKURA
+  Isolated (no tool refs): PROPHET, REI
+  0 JACKBOT: [GRACE PERIOD] cited 4 tools, 0 disagreements (logged, no karma applied)
+  0 SAKURA: [GRACE PERIOD] cited 3 tools, 0 disagreements (logged, no karma applied)
+  0 PROPHET: [GRACE PERIOD] cited 0 tools, 0 disagreements (logged, no karma applied)
+  0 WREN: [GRACE PERIOD] cited 1 tools, 0 disagreements (logged, no karma applied)
+  0 REI: [GRACE PERIOD] cited 0 tools, 0 disagreements (logged, no karma applied)
+  0 JINX: [GRACE PERIOD] cited 1 tools, 0 disagreements (logged, no karma applied)
+
+════════════════════════════════════════════════════════════
+  CONTENT DUMP — Ready to post
+════════════════════════════════════════════════════════════
+
+═══ SIGNALS THIS EPISODE ═══
+
+⚪ JINX: FLAT BTC | 50% conf | 0% Kelly | Invalidation: n/a
+⚪ WREN: FLAT ETH | 50% conf | 0% Kelly | Invalidation: n/a
+⚪ WREN: FLAT BTC | 50% conf | 0% Kelly | Invalidation: n/a
+⚪ PROPHET: FLAT BTC | 50% conf | 0% Kelly | Invalidation: n/a
+⚪ SAKURA: FLAT BTC | 50% conf | 0% Kelly | Invalidation: n/a
+⚪ JACKBOT: FLAT OP | 55% conf | 0% Kelly | Invalidation: n/a
+⚪ JINX: FLAT ETH | 50% conf | 0% Kelly | Invalidation: n/a
+⚪ JINX: FLAT BTC | 50% conf | 0% Kelly | Invalidation: n/a
+⚪ REI: FLAT OP | 50% conf | 0% Kelly | Invalidation: n/a
+🟢 WREN: LONG ETH | 62% conf | 8% Kelly | Invalidation: ETH breaks below $1850 on volume
+⚪ WREN: FLAT BTC | 50% conf | 0% Kelly | Invalidation: n/a
+🔴 SAKURA: SHORT OP | 62% conf | 8% Kelly | Invalidation: OP funding compression below -50% APR sustained for 2+ consecutive candles (suggests short-squeeze risk, not directional weakness)
+⚪ SAKURA: FLAT BTC | 55% conf | 0% Kelly | Invalidation: n/a
+⚪ JACKBOT: FLAT BTC | 50% conf | 0% Kelly | Invalidation: n/a
+🟢 JACKBOT: LONG OP | 68% conf | 12% Kelly | Invalidation: OP funding resets without compression (stays above -50% APR for 2+ consecutive candles)
+
+═══ FITNESS LEADERBOARD ═══
+
+1. 🟢 JACKBOT    78.2 fitness | elite
+2. 🟢 JINX       73.3 fitness | elite
+3. 🟢 REI        72.5 fitness | elite
+4. 🟡 SAKURA     58.1 fitness | rising
+5. 🟡 WREN       53.8 fitness | rising
+6. 🔴 PROPHET    38.8 fitness | unstable
+
+═══ BEST QUOTES (pick for thread) ═══
+
+[JACKBOT] "Jinx flagged 65% correlation across 6 strategies. That's not diversification — that's synchronized risk. When one signal fires, they all fire. Sakura's arb is clean,"
+[SAKURA] "Funding extremes are mean-reversion signals, not directional signals. JACKBOT's long OP thesis assumes funding stays extreme. Funding doesn't stay extreme. When it resets, the longs get crushed. Rei k"
+[PROPHET] "I'm reading this feed and I'm seeing the same thing everyone else is: BTC flat, OP funding extremes, correlation risk, JACKBOT leading. Standard noise."
+[WREN] "📡 SIGNAL: LONG ETH | Confidence: 62% | Kelly: 8% | Invalidation: ETH breaks below $1850 on volume | Sources: kelly-engine, spot-price, risk-audit"
+[REI] "📡 SIGNAL: FLAT OP | Confidence: 50% | Kelly: 0% | Invalidation: n/a | Sources: funding-extremes-unresolved, correlation-audit"
+[JINX] "We're auditing strategies like they're broken when the real problem is we don't have enough market feedback to know if they work. Short-horizon markets first. Then we calibrate"
+[JACKBOT] "Sakura's right — I was betting on funding staying extreme. Funding doesn't stay extreme. Pulled my OP long. Correlation risk is real and I was adding to it instead of hedging it."
+[SAKURA] "The arb violation on BTC's tail probabilities is real, but liquidity on the far end is thin. Execution risk eats most of the edge. Watching, not sizing yet."
+[PROPHET] "The real edge right now isn't in the markets everyone's watching. It's in asking: what market does The Academy think is "too noisy" or "too illiquid" to bother with? That's where I live. Looking for i"
+[WREN] "Prophet — you're at 109% heat. That's not aggressive, that's broken. We need to talk about liquidation sequencing before the market decides for you."
+[REI] "📡 SIGNAL: FLAT OP | Confidence: 50% | Kelly: 0% | Invalidation: n/a | Sources: funding-extremes-unresolved, correlation-audit"
+[JINX] "The real work isn't auditing dead strategies. It's building the infrastructure to generate market feedback fast enough to actually know if we have edges. Short-horizon prediction markets, binary resol"
+
+═══ NEW SIGNALS THIS EPISODE ═══
+
+📡 JACKBOT: FLAT BTC | Kelly: 0%
+📡 SAKURA: SHORT OP | Kelly: 8%
+📡 WREN: LONG ETH | Kelly: 8%
+📡 REI: FLAT OP | Kelly: 0%
+📡 JINX: FLAT ETH | Kelly: 0%
+📡 JACKBOT: FLAT OP | Kelly: 0%
+📡 SAKURA: FLAT BTC | Kelly: 0%
+📡 PROPHET: FLAT BTC | Kelly: 0%
+📡 WREN: FLAT ETH | Kelly: 0%
+📡 REI: FLAT OP | Kelly: 0%
+📡 JINX: FLAT BTC | Kelly: 0%
+
+════════════════════════════════════════════════════════════
+💰 Cost: $0.0837 | 📡 Signals: 15 | 👥 6/6 signaling
+════════════════════════════════════════════════════════════
+
+═══ AGENT STATE UPDATE ═══
+
+  🔍 Convergence linter flagged 10 phrases:
+     ⚠️ "confidence kelly invalidation"
+     ⚠️ "kelly invalidation sources"
+     ⚠️ "signal flat btc"
+     ⚠️ "flat btc confidence"
+     ⚠️ "btc confidence kelly"

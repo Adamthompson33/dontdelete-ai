@@ -55,9 +55,11 @@ async function main() {
   
   console.log(`Session: ${result.session} | Next funding reset: ${result.nextResetMinutes}min`);
   const btc = result.regimes['BTC'];
+  const currentRegime = btc?.regime || 'UNKNOWN';
   if (btc) {
-    console.log(`BTC regime: ${btc.regime} (ADX: ${btc.adx.toFixed(1)}, Vol ratio: ${btc.volatilityRatio.toFixed(2)})`);
+    console.log(`BTC regime: ${btc.regime} (ADX: ${btc.adx.toFixed(1)}, Vol ratio: ${btc.volatilityRatio.toFixed(2)}, 24h: ${btc.priceChange24h >= 0 ? '+' : ''}${btc.priceChange24h.toFixed(1)}%)`);
   }
+  console.log(`Regime params: stop=${(result.regimeParams.stop * 100).toFixed(0)}%, size=${result.regimeParams.size}x, maxHold=${result.regimeParams.maxHold}h`);
   console.log(`Raw signals: ${result.signals.length}\n`);
   
   // Filter: confidence >= 0.6 and not distressed
@@ -74,7 +76,7 @@ async function main() {
     return true;
   });
   
-  // Convert to Bot Challenge signal format
+  // Convert to Bot Challenge signal format — regime-tagged (Stage 1, Oracle 2026-02-24)
   const signals: BotChallengeSignal[] = filtered.map(sig => ({
     tool: 'jackbot-temporal-edge',
     timestamp: new Date().toISOString(),
@@ -87,6 +89,9 @@ async function main() {
     pattern: sig.pattern,
     reasoning: sig.reasoning,
     invalidation: sig.invalidation,
+    regime: currentRegime,       // Stage 1: tag every signal with BTC regime
+    regimeAdx: btc?.adx || 0,
+    regimeVolRatio: btc?.volatilityRatio || 1.0,
   }));
   
   // Print signals

@@ -1,20 +1,63 @@
 {
   "agent": "JINX",
   "team": "sentinel",
-  "lastUpdated": "2026-02-23T00:32:27.218Z",
-  "runNumber": 7,
+  "lastUpdated": "2026-02-25T00:32:27.918Z",
+  "runNumber": 9,
   "signals": {
-    "total": 4,
+    "total": 9,
     "correct": 0,
     "incorrect": 0,
-    "pending": 4,
+    "pending": 9,
     "accuracy": null,
     "avgConfidence": 0.5,
     "calibrationScore": null
   },
   "recentSignals": [
     {
-      "run": 7,
+      "run": 9,
+      "asset": "BTC",
+      "direction": "flat",
+      "confidence": 0.5,
+      "kelly_size": 0,
+      "invalidation": "n/a",
+      "data_sources": [
+        "insufficient-regime-data",
+        "correlation-audit"
+      ],
+      "timestamp": "2026-02-25T00:32:27.570Z",
+      "outcome": "pending"
+    },
+    {
+      "run": 9,
+      "asset": "BTC",
+      "direction": "flat",
+      "confidence": 0.5,
+      "kelly_size": 0,
+      "invalidation": "n/a",
+      "data_sources": [
+        "insufficient-market-resolution",
+        "correlation-audit"
+      ],
+      "timestamp": "2026-02-25T00:31:23.986Z",
+      "outcome": "pending"
+    },
+    {
+      "run": 8,
+      "asset": "BTC",
+      "direction": "flat",
+      "confidence": 0.5,
+      "kelly_size": 0,
+      "invalidation": "n/a",
+      "data_sources": [
+        "insufficient-market-feedback",
+        "correlation-audit",
+        "monte-carlo-data-insufficiency"
+      ],
+      "timestamp": "2026-02-24T00:32:20.375Z",
+      "outcome": "pending"
+    },
+    {
+      "run": 8,
       "asset": "ETH",
       "direction": "flat",
       "confidence": 0.5,
@@ -22,13 +65,13 @@
       "invalidation": "n/a",
       "data_sources": [
         "factor-model",
-        "data-insufficiency"
+        "insufficient-trade-history"
       ],
-      "timestamp": "2026-02-23T00:32:26.863Z",
+      "timestamp": "2026-02-24T00:31:23.850Z",
       "outcome": "pending"
     },
     {
-      "run": 7,
+      "run": 8,
       "asset": "BTC",
       "direction": "flat",
       "confidence": 0.5,
@@ -36,37 +79,10 @@
       "invalidation": "n/a",
       "data_sources": [
         "factor-model",
-        "data-insufficiency"
-      ],
-      "timestamp": "2026-02-23T00:32:26.859Z",
-      "outcome": "pending"
-    },
-    {
-      "run": 6,
-      "asset": "BTC",
-      "direction": "flat",
-      "confidence": 0.5,
-      "kelly_size": 0,
-      "invalidation": "n/a",
-      "data_sources": [
         "insufficient-trade-history",
-        "correlation-audit"
+        "data-quality-crisis"
       ],
-      "timestamp": "2026-02-21T00:32:12.849Z",
-      "outcome": "pending"
-    },
-    {
-      "run": 6,
-      "asset": "BTC",
-      "direction": "flat",
-      "confidence": 0.5,
-      "kelly_size": 0,
-      "invalidation": "n/a",
-      "data_sources": [
-        "factor-model-audit",
-        "monte-carlo-insufficient-data"
-      ],
-      "timestamp": "2026-02-21T00:31:14.379Z",
+      "timestamp": "2026-02-24T00:31:23.846Z",
       "outcome": "pending"
     }
   ],
@@ -82,101 +98,41 @@
   "toolPerformance": null,
   "convergenceFlags": {
     "phrasesUsedByMultipleAgents": [
-      "confidence kelly invalidation",
-      "kelly invalidation sources",
-      "btc confidence kelly",
       "signal flat btc",
       "flat btc confidence",
-      "eth confidence kelly"
+      "btc confidence kelly",
+      "confidence kelly invalidation",
+      "kelly invalidation sources",
+      "betting the same",
+      "the same macro",
+      "same macro narrative",
+      "macro narrative different",
+      "narrative different angles"
     ],
     "bannedPhrases": [
       {
-        "phrase": "were all trading",
-        "bannedAtRun": 5
-      },
-      {
-        "phrase": "all trading the",
-        "bannedAtRun": 5
-      },
-      {
-        "phrase": "trading the same",
-        "bannedAtRun": 5
-      },
-      {
-        "phrase": "the same signal",
-        "bannedAtRun": 5
-      },
-      {
-        "phrase": "consensus sitting flat",
-        "bannedAtRun": 5
-      },
-      {
-        "phrase": "sitting flat until",
-        "bannedAtRun": 5
-      },
-      {
-        "phrase": "flat until see",
-        "bannedAtRun": 5
-      },
-      {
-        "phrase": "until see market",
-        "bannedAtRun": 5
-      },
-      {
-        "phrase": "see market that",
-        "bannedAtRun": 5
-      },
-      {
-        "phrase": "market that doesnt",
-        "bannedAtRun": 5
-      },
-      {
-        "phrase": "that doesnt price",
-        "bannedAtRun": 5
-      },
-      {
-        "phrase": "doesnt price like",
-        "bannedAtRun": 5
-      },
-      {
-        "phrase": "price like designed",
-        "bannedAtRun": 5
-      },
-      {
-        "phrase": "like designed cascade",
-        "bannedAtRun": 5
-      },
-      {
-        "phrase": "the arb violation",
-        "bannedAtRun": 6
-      },
-      {
-        "phrase": "before anyone sizes",
-        "bannedAtRun": 6
-      },
-      {
-        "phrase": "confidence kelly invalidation",
-        "bannedAtRun": 6
-      },
-      {
-        "phrase": "kelly invalidation sources",
-        "bannedAtRun": 6
+        "phrase": "eth confidence kelly",
+        "bannedAtRun": 7
       },
       {
         "phrase": "signal flat btc",
-        "bannedAtRun": 6
+        "bannedAtRun": 9
       },
       {
         "phrase": "flat btc confidence",
-        "bannedAtRun": 6
+        "bannedAtRun": 9
       },
       {
         "phrase": "btc confidence kelly",
-        "bannedAtRun": 6
+        "bannedAtRun": 9
       },
       {
-        "phrase": "eth confidence kelly",
-        "bannedAtRun": 7
+        "phrase": "confidence kelly invalidation",
+        "bannedAtRun": 9
+      },
+      {
+        "phrase": "kelly invalidation sources",
+        "bannedAtRun": 9
       }
     ]
   },
@@ -184,8 +140,8 @@
     "current": 73.25868564609229,
     "trend": [
       -2,
-      -2,
-      -2
+      0,
+      0
     ],
     "tier": "elite",
     "signalScore": 0
@@ -194,8 +150,8 @@
     "current": 73.25868564609229,
     "trend": [
       -2,
-      -2,
-      -2
+      0,
+      0
     ],
     "tier": "elite",
     "locked": 0

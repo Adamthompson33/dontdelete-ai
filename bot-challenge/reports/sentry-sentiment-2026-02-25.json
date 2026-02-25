@@ -1,0 +1,245 @@
+{
+  "date": "2026-02-25",
+  "scannedAt": "2026-02-25T13:02:03.462Z",
+  "mode": "heuristic",
+  "trendingCount": 15,
+  "tradeableCount": 6,
+  "signals": [
+    {
+      "tool": "sentry-sentiment-scanner",
+      "timestamp": "2026-02-25T13:02:03.449Z",
+      "unixMs": 1772024523450,
+      "coin": "BTC",
+      "direction": "LONG",
+      "confidence": 0.49743732221168807,
+      "entryPrice": 66039.94235735245,
+      "reasoning": "Trending #1 with moderate 4.7% gain. Positive attention.",
+      "invalidation": "Sentiment shifts or coin drops off trending within 12h.",
+      "sentimentScore": 49.743732221168806,
+      "trendingRank": 1,
+      "priceChange24h": 4.7437322211688056
+    },
+    {
+      "tool": "sentry-sentiment-scanner",
+      "timestamp": "2026-02-25T13:02:03.450Z",
+      "unixMs": 1772024523450,
+      "coin": "PENGU",
+      "direction": "LONG",
+      "confidence": 0.5401717272551156,
+      "entryPrice": 0.006869796233598676,
+      "reasoning": "Trending #2 with moderate 9.0% gain. Positive attention.",
+      "invalidation": "Sentiment shifts or coin drops off trending within 12h.",
+      "sentimentScore": 54.017172725511564,
+      "trendingRank": 2,
+      "priceChange24h": 9.017172725511566
+    },
+    {
+      "tool": "sentry-sentiment-scanner",
+      "timestamp": "2026-02-25T13:02:03.450Z",
+      "unixMs": 1772024523450,
+      "coin": "MORPHO",
+      "direction": "LONG",
+      "confidence": 0.6717435132747523,
+      "entryPrice": 1.8245247426172007,
+      "reasoning": "Trending #3 with 17.2% gain. Strong momentum.",
+      "invalidation": "Sentiment shifts or coin drops off trending within 12h.",
+      "sentimentScore": 67.17435132747524,
+      "trendingRank": 3,
+      "priceChange24h": 17.174351327475236
+    },
+    {
+      "tool": "sentry-sentiment-scanner",
+      "timestamp": "2026-02-25T13:02:03.450Z",
+      "unixMs": 1772024523450,
+      "coin": "VIRTUAL",
+      "direction": "LONG",
+      "confidence": 0.6792384196634883,
+      "entryPrice": 0.682428080383841,
+      "reasoning": "Trending #5 with 17.9% gain. Strong momentum.",
+      "invalidation": "Sentiment shifts or coin drops off trending within 12h.",
+      "sentimentScore": 67.92384196634883,
+      "trendingRank": 5,
+      "priceChange24h": 17.923841966348835
+    },
+    {
+      "tool": "sentry-sentiment-scanner",
+      "timestamp": "2026-02-25T13:02:03.450Z",
+      "unixMs": 1772024523450,
+      "coin": "ETH",
+      "direction": "LONG",
+      "confidence": 0.5156177195413354,
+      "entryPrice": 1946.0723891037765,
+      "reasoning": "Trending #14 with moderate 6.6% gain. Positive attention.",
+      "invalidation": "Sentiment shifts or coin drops off trending within 12h.",
+      "sentimentScore": 51.56177195413354,
+      "trendingRank": 14,
+      "priceChange24h": 6.561771954133539
+    },
+    {
+      "tool": "sentry-sentiment-scanner",
+      "timestamp": "2026-02-25T13:02:03.450Z",
+      "unixMs": 1772024523450,
+      "coin": "AAVE",
+      "direction": "LONG",
+      "confidence": 0.48940167486114666,
+      "entryPrice": 117.40090941108794,
+      "reasoning": "Trending #15 with moderate 3.9% gain. Positive attention.",
+      "invalidation": "Sentiment shifts or coin drops off trending within 12h.",
+      "sentimentScore": 48.94016748611467,
+      "trendingRank": 15,
+      "priceChange24h": 3.9401674861146665
+    }
+  ],
+  "allTrending": [
+    {
+      "id": "bitcoin",
+      "name": "Bitcoin",
+      "symbol": "BTC",
+      "rank": 1,
+      "price": 66039.94235735245,
+      "priceChange24h": 4.7437322211688056,
+      "marketCap": 1317732531350,
+      "volume24h": 42924234580
+    },
+    {
+      "id": "pudgy-penguins",
+      "name": "Pudgy Penguins",
+      "symbol": "PENGU",
+      "rank": 2,
+      "price": 0.006869796233598676,
+      "priceChange24h": 9.017172725511566,
+      "marketCap": 430674501,
+      "volume24h": 81678642
+    },
+    {
+      "id": "morpho",
+      "name": "Morpho",
+      "symbol": "MORPHO",
+      "rank": 3,
+      "price": 1.8245247426172007,
+      "priceChange24h": 17.174351327475236,
+      "marketCap": 650246337,
+      "volume24h": 39726424
+    },
+    {
+      "id": "dent",
+      "name": "Dent",
+      "symbol": "DENT",
+      "rank": 4,
+      "price": 0.00022087759725879452,
+      "priceChange24h": 80.03352507091968,
+      "marketCap": 21107764,
+      "volume24h": 78250374
+    },
+    {
+      "id": "virtual-protocol",
+      "name": "Virtuals Protocol",
+      "symbol": "VIRTUAL",
+      "rank": 5,
+      "price": 0.682428080383841,
+      "priceChange24h": 17.923841966348835,
+      "marketCap": 447811106,
+      "volume24h": 168166532
+    },
+    {
+      "id": "espresso",
+      "name": "Espresso",
+      "symbol": "ESP",
+      "rank": 6,
+      "price": 0.15454568018433698,
+      "priceChange24h": -17.254284988574845,
+      "marketCap": 80449070,
+      "volume24h": 185425812
+    },
+    {
+      "id": "venice-token",
+      "name": "Venice Token",
+      "symbol": "VVV",
+      "rank": 7,
+      "price": 4.120049076089571,
+      "priceChange24h": 27.319468950519067,
+      "marketCap": 182068328,
+      "volume24h": 19711825
+    },
+    {
+      "id": "pippin",
+      "name": "pippin",
+      "symbol": "PIPPIN",
+      "rank": 8,
+      "price": 0.7657810899569464,
+      "priceChange24h": 6.602311206882834,
+      "marketCap": 765045663,
+      "volume24h": 63467623
+    },
+    {
+      "id": "ai-rig-complex",
+      "name": "AI Rig Complex",
+      "symbol": "ARC",
+      "rank": 9,
+      "price": 0.12419577635634188,
+      "priceChange24h": 31.39145334357625,
+      "marketCap": 123851671,
+      "volume24h": 140357853
+    },
+    {
+      "id": "hyperliquid",
+      "name": "Hyperliquid",
+      "symbol": "HYPE",
+      "rank": 10,
+      "price": 27.447655704179343,
+      "priceChange24h": 3.9276599173034588,
+      "marketCap": 6534830930,
+      "volume24h": 229262733
+    },
+    {
+      "id": "monad",
+      "name": "Monad",
+      "symbol": "MON",
+      "rank": 11,
+      "price": 0.020229947626319154,
+      "priceChange24h": -0.5204113944152774,
+      "marketCap": 219041796,
+      "volume24h": 45607433
+    },
+    {
+      "id": "ondo-finance",
+      "name": "Ondo",
+      "symbol": "ONDO",
+      "rank": 12,
+      "price": 0.2614299953805923,
+      "priceChange24h": 6.945882552155387,
+      "marketCap": 1268342290,
+      "volume24h": 63391498
+    },
+    {
+      "id": "pi-network",
+      "name": "Pi Network",
+      "symbol": "PI",
+      "rank": 13,
+      "price": 0.1707738069024899,
+      "priceChange24h": 5.539831449574422,
+      "marketCap": 1577533651,
+      "volume24h": 16907159
+    },
+    {
+      "id": "ethereum",
+      "name": "Ethereum",
+      "symbol": "ETH",
+      "rank": 14,
+      "price": 1946.0723891037765,
+      "priceChange24h": 6.561771954133539,
+      "marketCap": 234368225477,
+      "volume24h": 22603202435
+    },
+    {
+      "id": "aave",
+      "name": "Aave",
+      "symbol": "AAVE",
+      "rank": 15,
+      "price": 117.40090941108794,
+      "priceChange24h": 3.9401674861146665,
+      "marketCap": 1779928478,
+      "volume24h": 331868460
+    }
+  ]
+}

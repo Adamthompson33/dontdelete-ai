@@ -1,0 +1,105 @@
+[
+  {
+    "timestamp": "2026-02-25T13:19:49.435Z",
+    "regime": "TRENDING_UP",
+    "coinCount": 12,
+    "spreads": [
+      {
+        "coin": "2Z",
+        "binance_rate_apr": -36.52,
+        "hyperliquid_rate_apr": -132.13,
+        "spread_apr": 95.62,
+        "binance_available": true,
+        "hyperliquid_available": true
+      },
+      {
+        "coin": "ALT",
+        "binance_rate_apr": 5.48,
+        "hyperliquid_rate_apr": -10.62,
+        "spread_apr": 16.09,
+        "binance_available": true,
+        "hyperliquid_available": true
+      },
+      {
+        "coin": "AXS",
+        "binance_rate_apr": -78.87,
+        "hyperliquid_rate_apr": -92.06,
+        "spread_apr": 13.19,
+        "binance_available": true,
+        "hyperliquid_available": true
+      },
+      {
+        "coin": "BTC",
+        "binance_rate_apr": -1.61,
+        "hyperliquid_rate_apr": 7.48,
+        "spread_apr": -9.1,
+        "binance_available": true,
+        "hyperliquid_available": true
+      },
+      {
+        "coin": "GAS",
+        "binance_rate_apr": -8.95,
+        "hyperliquid_rate_apr": -43.99,
+        "spread_apr": 35.04,
+        "binance_available": true,
+        "hyperliquid_available": true
+      },
+      {
+        "coin": "JTO",
+        "binance_rate_apr": -56.22,
+        "hyperliquid_rate_apr": -31.42,
+        "spread_apr": -24.81,
+        "binance_available": true,
+        "hyperliquid_available": true
+      },
+      {
+        "coin": "KAITO",
+        "binance_rate_apr": 5.48,
+        "hyperliquid_rate_apr": -60.51,
+        "spread_apr": 65.99,
+        "binance_available": true,
+        "hyperliquid_available": true
+      },
+      {
+        "coin": "MERL",
+        "binance_rate_apr": 0.45,
+        "hyperliquid_rate_apr": -85.21,
+        "spread_apr": 85.67,
+        "binance_available": true,
+        "hyperliquid_available": true
+      },
+      {
+        "coin": "SOPH",
+        "binance_rate_apr": -35.43,
+        "hyperliquid_rate_apr": -107.98,
+        "spread_apr": 72.55,
+        "binance_available": true,
+        "hyperliquid_available": true
+      },
+      {
+        "coin": "STABLE",
+        "binance_rate_apr": -31.38,
+        "hyperliquid_rate_apr": -168.43,
+        "spread_apr": 137.06,
+        "binance_available": true,
+        "hyperliquid_available": true
+      },
+      {
+        "coin": "YGG",
+        "binance_rate_apr": -25.43,
+        "hyperliquid_rate_apr": 10.95,
+        "spread_apr": -36.38,
+        "binance_available": true,
+        "hyperliquid_available": true
+      },
+      {
+        "coin": "ZORA",
+        "binance_rate_apr": -19.49,
+        "hyperliquid_rate_apr": -43.77,
+        "spread_apr": 24.29,
+        "binance_available": true,
+        "hyperliquid_available": true
+      }
+    ]
+  }
+]

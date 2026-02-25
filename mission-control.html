@@ -1,0 +1,1084 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>MISSION CONTROL — Academy Trading Desk</title>
+<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400;500;700&family=Orbitron:wght@400;500;700;900&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --bg-deep: #0a0b0f;
+    --bg-panel: #111318;
+    --bg-card: #161920;
+    --border: #1e222a;
+    --border-glow: #2a3040;
+    --text-primary: #e2e5eb;
+    --text-secondary: #6b7280;
+    --text-muted: #3d4452;
+    --regime-chop: #f59e0b;
+    --regime-down: #ef4444;
+    --regime-up: #10b981;
+    --regime-volatile: #a855f7;
+    --accent-cyan: #22d3ee;
+    --accent-red: #f87171;
+    --accent-green: #34d399;
+    --accent-amber: #fbbf24;
+    --sentry-block: #ef4444;
+    --high-signal: #22d3ee;
+    --medium-signal: #818cf8;
+    --low-signal: #6b7280;
+    --scanline: rgba(34, 211, 238, 0.03);
+  }
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  body {
+    background: var(--bg-deep);
+    color: var(--text-primary);
+    font-family: 'JetBrains Mono', monospace;
+    min-height: 100vh;
+    overflow-x: hidden;
+  }
+
+  /* Scanline overlay */
+  body::after {
+    content: '';
+    position: fixed;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background: repeating-linear-gradient(
+      0deg,
+      transparent,
+      transparent 2px,
+      var(--scanline) 2px,
+      var(--scanline) 4px
+    );
+    pointer-events: none;
+    z-index: 1000;
+  }
+
+  /* Subtle noise texture */
+  body::before {
+    content: '';
+    position: fixed;
+    top: 0; left: 0; right: 0; bottom: 0;
+    opacity: 0.015;
+    background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+    pointer-events: none;
+    z-index: 999;
+  }
+
+  .header {
+    padding: 20px 32px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid var(--border);
+    background: linear-gradient(180deg, rgba(17,19,24,1) 0%, rgba(10,11,15,0) 100%);
+    position: relative;
+  }
+
+  .header::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 1px;
+    background: linear-gradient(90deg, transparent, var(--accent-cyan), transparent);
+    opacity: 0.3;
+  }
+
+  .header-title {
+    font-family: 'Orbitron', sans-serif;
+    font-weight: 900;
+    font-size: 18px;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    color: var(--accent-cyan);
+    text-shadow: 0 0 20px rgba(34, 211, 238, 0.3);
+  }
+
+  .header-subtitle {
+    font-size: 10px;
+    color: var(--text-muted);
+    letter-spacing: 2px;
+    margin-top: 2px;
+  }
+
+  .header-time {
+    text-align: right;
+    font-size: 11px;
+    color: var(--text-secondary);
+  }
+
+  .header-time .clock {
+    font-size: 20px;
+    font-weight: 700;
+    color: var(--text-primary);
+    font-family: 'Orbitron', sans-serif;
+    letter-spacing: 2px;
+  }
+
+  .header-status {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 11px;
+    color: var(--accent-green);
+  }
+
+  .header-status .dot {
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background: var(--accent-green);
+    animation: pulse-dot 2s ease-in-out infinite;
+  }
+
+  @keyframes pulse-dot {
+    0%, 100% { opacity: 1; box-shadow: 0 0 4px var(--accent-green); }
+    50% { opacity: 0.4; box-shadow: none; }
+  }
+
+  .grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto auto auto;
+    gap: 1px;
+    padding: 1px;
+    background: var(--border);
+  }
+
+  .panel {
+    background: var(--bg-panel);
+    padding: 20px;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .panel-label {
+    font-family: 'Orbitron', sans-serif;
+    font-size: 9px;
+    font-weight: 700;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    color: var(--text-muted);
+    margin-bottom: 14px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+
+  .panel-label .indicator {
+    width: 4px;
+    height: 4px;
+    border-radius: 50%;
+  }
+
+  /* REGIME PANEL */
+  .regime-panel { grid-column: 1 / 4; }
+
+  .regime-bar {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+    padding: 16px 0;
+  }
+
+  .regime-badge {
+    font-family: 'Orbitron', sans-serif;
+    font-size: 28px;
+    font-weight: 900;
+    letter-spacing: 3px;
+    padding: 8px 24px;
+    border: 2px solid;
+    position: relative;
+  }
+
+  .regime-badge.trending-down {
+    color: var(--regime-down);
+    border-color: var(--regime-down);
+    text-shadow: 0 0 30px rgba(239, 68, 68, 0.4);
+    box-shadow: 0 0 30px rgba(239, 68, 68, 0.1), inset 0 0 30px rgba(239, 68, 68, 0.05);
+  }
+
+  .regime-badge.choppy {
+    color: var(--regime-chop);
+    border-color: var(--regime-chop);
+    text-shadow: 0 0 30px rgba(245, 158, 11, 0.4);
+    box-shadow: 0 0 30px rgba(245, 158, 11, 0.1), inset 0 0 30px rgba(245, 158, 11, 0.05);
+  }
+
+  .regime-badge.trending-up {
+    color: var(--regime-up);
+    border-color: var(--regime-up);
+    text-shadow: 0 0 30px rgba(16, 185, 129, 0.4);
+    box-shadow: 0 0 30px rgba(16, 185, 129, 0.1), inset 0 0 30px rgba(16, 185, 129, 0.05);
+  }
+
+  .regime-badge.volatile {
+    color: var(--regime-volatile);
+    border-color: var(--regime-volatile);
+    text-shadow: 0 0 30px rgba(168, 85, 247, 0.4);
+    box-shadow: 0 0 30px rgba(168, 85, 247, 0.1), inset 0 0 30px rgba(168, 85, 247, 0.05);
+  }
+
+  .regime-indicators {
+    display: flex;
+    gap: 32px;
+    flex: 1;
+  }
+
+  .regime-stat {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+  }
+
+  .regime-stat-label {
+    font-size: 9px;
+    color: var(--text-muted);
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+  }
+
+  .regime-stat-value {
+    font-size: 18px;
+    font-weight: 700;
+    color: var(--text-primary);
+  }
+
+  .regime-params {
+    display: flex;
+    gap: 20px;
+    margin-left: auto;
+  }
+
+  .param-chip {
+    background: var(--bg-card);
+    border: 1px solid var(--border);
+    padding: 6px 14px;
+    font-size: 11px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2px;
+  }
+
+  .param-chip .param-val {
+    font-weight: 700;
+    color: var(--accent-cyan);
+    font-size: 14px;
+  }
+
+  .param-chip .param-name {
+    font-size: 8px;
+    color: var(--text-muted);
+    letter-spacing: 1px;
+    text-transform: uppercase;
+  }
+
+  /* AGENT STATUS */
+  .agents-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 8px;
+  }
+
+  .agent-card {
+    background: var(--bg-card);
+    border: 1px solid var(--border);
+    padding: 12px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    transition: border-color 0.3s;
+  }
+
+  .agent-card:hover {
+    border-color: var(--border-glow);
+  }
+
+  .agent-avatar {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 14px;
+    font-weight: 700;
+    flex-shrink: 0;
+  }
+
+  .agent-avatar.rei { background: rgba(34, 211, 238, 0.15); color: var(--accent-cyan); }
+  .agent-avatar.sentry { background: rgba(239, 68, 68, 0.15); color: var(--accent-red); }
+  .agent-avatar.pixel { background: rgba(168, 85, 247, 0.15); color: var(--regime-volatile); }
+  .agent-avatar.jinx { background: rgba(251, 191, 36, 0.15); color: var(--accent-amber); }
+  .agent-avatar.wren { background: rgba(52, 211, 153, 0.15); color: var(--accent-green); }
+  .agent-avatar.te { background: rgba(129, 140, 248, 0.15); color: var(--medium-signal); }
+
+  .agent-info { flex: 1; min-width: 0; }
+
+  .agent-name {
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+  }
+
+  .agent-status-text {
+    font-size: 9px;
+    color: var(--text-secondary);
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  .agent-win {
+    font-size: 10px;
+    font-weight: 700;
+    text-align: right;
+  }
+
+  .agent-win.positive { color: var(--accent-green); }
+  .agent-win.negative { color: var(--accent-red); }
+  .agent-win.neutral { color: var(--text-secondary); }
+
+  /* SIGNALS TABLE */
+  .signals-panel { grid-column: 1 / 3; }
+
+  .signal-table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+
+  .signal-table th {
+    font-size: 8px;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    color: var(--text-muted);
+    text-align: left;
+    padding: 6px 8px;
+    border-bottom: 1px solid var(--border);
+  }
+
+  .signal-table td {
+    font-size: 11px;
+    padding: 8px;
+    border-bottom: 1px solid rgba(30, 34, 42, 0.5);
+    vertical-align: middle;
+  }
+
+  .signal-table tr {
+    transition: background 0.2s;
+  }
+
+  .signal-table tr:hover {
+    background: rgba(34, 211, 238, 0.03);
+  }
+
+  .tier-badge {
+    font-size: 9px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    padding: 2px 8px;
+    display: inline-block;
+  }
+
+  .tier-badge.high {
+    color: var(--high-signal);
+    background: rgba(34, 211, 238, 0.1);
+    border: 1px solid rgba(34, 211, 238, 0.2);
+  }
+
+  .tier-badge.medium {
+    color: var(--medium-signal);
+    background: rgba(129, 140, 248, 0.1);
+    border: 1px solid rgba(129, 140, 248, 0.2);
+  }
+
+  .tier-badge.low {
+    color: var(--low-signal);
+    background: rgba(107, 114, 128, 0.1);
+    border: 1px solid rgba(107, 114, 128, 0.2);
+  }
+
+  .direction-long { color: var(--accent-green); }
+  .direction-short { color: var(--accent-red); }
+
+  .funding-rate {
+    font-weight: 500;
+    color: var(--accent-cyan);
+  }
+
+  .blocked-row {
+    opacity: 0.4;
+    text-decoration: line-through;
+    text-decoration-color: var(--sentry-block);
+  }
+
+  .blocked-tag {
+    font-size: 8px;
+    color: var(--sentry-block);
+    font-weight: 700;
+    letter-spacing: 1px;
+  }
+
+  /* PORTFOLIO PANEL */
+  .allocation-bar {
+    height: 24px;
+    display: flex;
+    border: 1px solid var(--border);
+    margin-bottom: 12px;
+    overflow: hidden;
+  }
+
+  .alloc-segment {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 7px;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+    color: rgba(255,255,255,0.8);
+    white-space: nowrap;
+    overflow: hidden;
+    min-width: 2px;
+  }
+
+  .portfolio-stats {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 8px;
+  }
+
+  .port-stat {
+    background: var(--bg-card);
+    border: 1px solid var(--border);
+    padding: 10px 12px;
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+  }
+
+  .port-stat-label {
+    font-size: 8px;
+    color: var(--text-muted);
+    letter-spacing: 1px;
+    text-transform: uppercase;
+  }
+
+  .port-stat-value {
+    font-size: 16px;
+    font-weight: 700;
+  }
+
+  /* OUTCOMES PANEL */
+  .outcome-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 6px 0;
+    border-bottom: 1px solid rgba(30, 34, 42, 0.3);
+    font-size: 11px;
+  }
+
+  .outcome-coin { font-weight: 500; }
+  .outcome-pnl { font-weight: 700; }
+  .outcome-pnl.win { color: var(--accent-green); }
+  .outcome-pnl.loss { color: var(--accent-red); }
+
+  /* SENTRY LOG */
+  .sentry-log {
+    max-height: 200px;
+    overflow-y: auto;
+  }
+
+  .sentry-entry {
+    display: flex;
+    align-items: flex-start;
+    gap: 8px;
+    padding: 8px 0;
+    border-bottom: 1px solid rgba(30, 34, 42, 0.3);
+    font-size: 10px;
+  }
+
+  .sentry-icon {
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 10px;
+    flex-shrink: 0;
+    margin-top: 1px;
+  }
+
+  .sentry-icon.block { background: rgba(239, 68, 68, 0.15); color: var(--accent-red); }
+  .sentry-icon.pass { background: rgba(52, 211, 153, 0.15); color: var(--accent-green); }
+
+  .sentry-text { color: var(--text-secondary); line-height: 1.4; }
+  .sentry-text strong { color: var(--text-primary); font-weight: 500; }
+
+  .sentry-time {
+    color: var(--text-muted);
+    font-size: 9px;
+    margin-left: auto;
+    white-space: nowrap;
+  }
+
+  /* JINX PANEL */
+  .crowding-meter {
+    height: 8px;
+    background: var(--bg-card);
+    border: 1px solid var(--border);
+    margin: 8px 0;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .crowding-fill {
+    height: 100%;
+    transition: width 0.6s ease;
+  }
+
+  .crowding-labels {
+    display: flex;
+    justify-content: space-between;
+    font-size: 9px;
+    color: var(--text-muted);
+    margin-bottom: 4px;
+  }
+
+  .correlation-count {
+    font-size: 28px;
+    font-weight: 700;
+    color: var(--accent-amber);
+    margin: 8px 0;
+  }
+
+  .jinx-warning {
+    font-size: 10px;
+    color: var(--accent-amber);
+    padding: 8px;
+    background: rgba(251, 191, 36, 0.05);
+    border: 1px solid rgba(251, 191, 36, 0.15);
+    margin-top: 8px;
+    line-height: 1.5;
+  }
+
+  /* FOOTER */
+  .footer {
+    padding: 12px 32px;
+    border-top: 1px solid var(--border);
+    display: flex;
+    justify-content: space-between;
+    font-size: 9px;
+    color: var(--text-muted);
+    letter-spacing: 1px;
+  }
+
+  /* PRICE STRIP */
+  .price-strip {
+    display: flex;
+    gap: 24px;
+    padding: 10px 32px;
+    background: var(--bg-card);
+    border-bottom: 1px solid var(--border);
+    overflow-x: auto;
+  }
+
+  .price-item {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    white-space: nowrap;
+  }
+
+  .price-symbol {
+    font-size: 10px;
+    font-weight: 700;
+    color: var(--text-secondary);
+    letter-spacing: 1px;
+  }
+
+  .price-value {
+    font-size: 12px;
+    font-weight: 500;
+    color: var(--text-primary);
+  }
+
+  .price-change {
+    font-size: 10px;
+    font-weight: 700;
+  }
+
+  .price-change.down { color: var(--accent-red); }
+  .price-change.up { color: var(--accent-green); }
+
+  /* Staggered load animation */
+  .panel {
+    animation: panelReveal 0.4s ease forwards;
+    opacity: 0;
+    transform: translateY(6px);
+  }
+
+  @keyframes panelReveal {
+    to { opacity: 1; transform: translateY(0); }
+  }
+
+  .panel:nth-child(1) { animation-delay: 0.05s; }
+  .panel:nth-child(2) { animation-delay: 0.1s; }
+  .panel:nth-child(3) { animation-delay: 0.15s; }
+  .panel:nth-child(4) { animation-delay: 0.2s; }
+  .panel:nth-child(5) { animation-delay: 0.25s; }
+  .panel:nth-child(6) { animation-delay: 0.3s; }
+  .panel:nth-child(7) { animation-delay: 0.35s; }
+
+  /* Scrollbar styling */
+  ::-webkit-scrollbar { width: 4px; }
+  ::-webkit-scrollbar-track { background: var(--bg-deep); }
+  ::-webkit-scrollbar-thumb { background: var(--border-glow); }
+</style>
+</head>
+<body>
+
+<div class="header">
+  <div>
+    <div class="header-title">Mission Control</div>
+    <div class="header-subtitle">Academy Trading Desk — PRISM Class</div>
+  </div>
+  <div class="header-status">
+    <span class="dot"></span>
+    <span>ALL SYSTEMS OPERATIONAL</span>
+  </div>
+  <div class="header-time">
+    <div class="clock" id="clock">--:--:--</div>
+    <div>NEXT SCAN: <span id="next-scan">--:--</span></div>
+  </div>
+</div>
+
+<div class="price-strip">
+  <div class="price-item">
+    <span class="price-symbol">BTC</span>
+    <span class="price-value" id="btc-price">$62,983</span>
+    <span class="price-change down" id="btc-change">-5.0%</span>
+  </div>
+  <div class="price-item">
+    <span class="price-symbol">ETH</span>
+    <span class="price-value" id="eth-price">$1,824</span>
+    <span class="price-change down" id="eth-change">-5.2%</span>
+  </div>
+  <div class="price-item">
+    <span class="price-symbol">SOL</span>
+    <span class="price-value" id="sol-price">$76.62</span>
+    <span class="price-change down" id="sol-change">-5.1%</span>
+  </div>
+  <div class="price-item" style="margin-left: auto;">
+    <span class="price-symbol">SIGNALS</span>
+    <span class="price-value" id="total-signals">13</span>
+  </div>
+  <div class="price-item">
+    <span class="price-symbol">WIN RATE</span>
+    <span class="price-value" id="total-winrate">18%</span>
+  </div>
+  <div class="price-item">
+    <span class="price-symbol">AVG P&L</span>
+    <span class="price-value price-change down" id="total-pnl">-3.50%</span>
+  </div>
+</div>
+
+<div class="grid">
+
+  <!-- REGIME PANEL (full width) -->
+  <div class="panel regime-panel" style="animation-delay: 0.05s;">
+    <div class="panel-label">
+      <span class="indicator" style="background: var(--accent-cyan);"></span>
+      Temporal Edge — Regime
+    </div>
+    <div class="regime-bar">
+      <div class="regime-badge trending-down" id="regime-badge">TRENDING ↓</div>
+      <div class="regime-indicators">
+        <div class="regime-stat">
+          <span class="regime-stat-label">ADX</span>
+          <span class="regime-stat-value" id="adx-value">59.1</span>
+        </div>
+        <div class="regime-stat">
+          <span class="regime-stat-label">RSI</span>
+          <span class="regime-stat-value" id="rsi-value">22.5</span>
+        </div>
+        <div class="regime-stat">
+          <span class="regime-stat-label">MA Diff</span>
+          <span class="regime-stat-value" id="ma-diff">-2.4%</span>
+        </div>
+        <div class="regime-stat">
+          <span class="regime-stat-label">Vol Ratio</span>
+          <span class="regime-stat-value" id="vol-ratio">1.2</span>
+        </div>
+      </div>
+      <div class="regime-params">
+        <div class="param-chip">
+          <span class="param-val" id="param-stop">3%</span>
+          <span class="param-name">Stop</span>
+        </div>
+        <div class="param-chip">
+          <span class="param-val" id="param-size">0.75×</span>
+          <span class="param-name">Size</span>
+        </div>
+        <div class="param-chip">
+          <span class="param-val" id="param-hold">12h</span>
+          <span class="param-name">Max Hold</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- SIGNALS TABLE -->
+  <div class="panel signals-panel" style="animation-delay: 0.1s;">
+    <div class="panel-label">
+      <span class="indicator" style="background: var(--high-signal);"></span>
+      Active Signals — Rei Funding Scanner
+    </div>
+    <table class="signal-table">
+      <thead>
+        <tr>
+          <th>Coin</th>
+          <th>Tier</th>
+          <th>Direction</th>
+          <th>Funding APR</th>
+          <th>Basis</th>
+          <th>Persistence</th>
+          <th>Price Δ</th>
+          <th>Size</th>
+        </tr>
+      </thead>
+      <tbody id="signals-body">
+        <tr>
+          <td><strong>UMA</strong></td>
+          <td><span class="tier-badge high">HIGH</span></td>
+          <td class="direction-long">LONG</td>
+          <td class="funding-rate">-223%</td>
+          <td>-0.34%</td>
+          <td>8h</td>
+          <td style="color: var(--accent-green)">+2.1%</td>
+          <td>10.2%</td>
+        </tr>
+        <tr>
+          <td><strong>BERA</strong></td>
+          <td><span class="tier-badge high">HIGH</span></td>
+          <td class="direction-long">LONG</td>
+          <td class="funding-rate">-177%</td>
+          <td>-0.17%</td>
+          <td>8h</td>
+          <td style="color: var(--accent-green)">+3.7%</td>
+          <td>10.2%</td>
+        </tr>
+        <tr>
+          <td><strong>AXS</strong></td>
+          <td><span class="tier-badge high">HIGH</span></td>
+          <td class="direction-long">LONG</td>
+          <td class="funding-rate">-146%</td>
+          <td>-0.22%</td>
+          <td>8h</td>
+          <td style="color: var(--accent-red)">-3.9%</td>
+          <td>10.2%</td>
+        </tr>
+        <tr>
+          <td><strong>CELO</strong></td>
+          <td><span class="tier-badge medium">MED</span></td>
+          <td class="direction-long">LONG</td>
+          <td class="funding-rate">-89%</td>
+          <td>-0.11%</td>
+          <td>4h</td>
+          <td style="color: var(--accent-red)">-1.2%</td>
+          <td>5.1%</td>
+        </tr>
+        <tr>
+          <td><strong>MON</strong></td>
+          <td><span class="tier-badge medium">MED</span></td>
+          <td class="direction-long">LONG</td>
+          <td class="funding-rate">-76%</td>
+          <td>-0.09%</td>
+          <td>4h</td>
+          <td style="color: var(--accent-red)">-2.8%</td>
+          <td>5.1%</td>
+        </tr>
+        <tr class="blocked-row">
+          <td><strong>AZTEC</strong> <span class="blocked-tag">⛔ SENTRY</span></td>
+          <td><span class="tier-badge high">HIGH</span></td>
+          <td class="direction-long">LONG</td>
+          <td class="funding-rate">-312%</td>
+          <td>-0.28%</td>
+          <td>12h</td>
+          <td style="color: var(--accent-red)">-8.1%</td>
+          <td>—</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <!-- PORTFOLIO PANEL -->
+  <div class="panel" style="animation-delay: 0.15s;">
+    <div class="panel-label">
+      <span class="indicator" style="background: var(--accent-green);"></span>
+      Wren — Portfolio Allocation
+    </div>
+    <div style="font-size: 9px; color: var(--text-muted); margin-bottom: 6px; display: flex; justify-content: space-between;">
+      <span>TOTAL ALLOCATED</span>
+      <span style="color: var(--text-primary); font-weight: 700;" id="total-alloc">87.8%</span>
+    </div>
+    <div class="allocation-bar">
+      <div class="alloc-segment" style="width: 30.6%; background: rgba(34, 211, 238, 0.6);">UMA AXS BERA</div>
+      <div class="alloc-segment" style="width: 20.4%; background: rgba(129, 140, 248, 0.5);">CELO MON</div>
+      <div class="alloc-segment" style="width: 15.3%; background: rgba(168, 85, 247, 0.4);">SOPH 2Z</div>
+      <div class="alloc-segment" style="width: 10.2%; background: rgba(107, 114, 128, 0.3);">LOW</div>
+      <div class="alloc-segment" style="width: 11.3%; background: rgba(52, 211, 153, 0.3);">SENTRY</div>
+      <div class="alloc-segment" style="width: 12.2%; background: transparent; border-left: 1px dashed var(--border);">
+      </div>
+    </div>
+    <div class="portfolio-stats">
+      <div class="port-stat">
+        <span class="port-stat-label">Unique Positions</span>
+        <span class="port-stat-value" id="unique-pos" style="color: var(--accent-cyan);">13</span>
+      </div>
+      <div class="port-stat">
+        <span class="port-stat-label">Stale Expired</span>
+        <span class="port-stat-value" id="stale-count" style="color: var(--text-secondary);">274</span>
+      </div>
+      <div class="port-stat">
+        <span class="port-stat-label">Long Exposure</span>
+        <span class="port-stat-value" style="color: var(--accent-amber);" id="long-exp">78%</span>
+      </div>
+      <div class="port-stat">
+        <span class="port-stat-label">Short Exposure</span>
+        <span class="port-stat-value" style="color: var(--accent-green);" id="short-exp">22%</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- AGENT STATUS -->
+  <div class="panel" style="grid-column: 1 / 2; animation-delay: 0.2s;">
+    <div class="panel-label">
+      <span class="indicator" style="background: var(--accent-green);"></span>
+      Agent Status
+    </div>
+    <div class="agents-grid" style="grid-template-columns: 1fr;">
+      <div class="agent-card">
+        <div class="agent-avatar rei">R</div>
+        <div class="agent-info">
+          <div class="agent-name">Rei</div>
+          <div class="agent-status-text">3 HIGH signals · Surgeon active</div>
+        </div>
+        <div class="agent-win negative">15%</div>
+      </div>
+      <div class="agent-card">
+        <div class="agent-avatar sentry">S</div>
+        <div class="agent-info">
+          <div class="agent-name">Sentry</div>
+          <div class="agent-status-text">Bearish · 1 block this cycle</div>
+        </div>
+        <div class="agent-win positive">50%+</div>
+      </div>
+      <div class="agent-card">
+        <div class="agent-avatar pixel">P</div>
+        <div class="agent-info">
+          <div class="agent-name">Pixel</div>
+          <div class="agent-status-text">Standing down · RSI oversold</div>
+        </div>
+        <div class="agent-win positive">100%</div>
+      </div>
+      <div class="agent-card">
+        <div class="agent-avatar te">T</div>
+        <div class="agent-info">
+          <div class="agent-name">Temporal Edge</div>
+          <div class="agent-status-text">TRENDING_DOWN · ADX 59.1</div>
+        </div>
+        <div class="agent-win neutral">—</div>
+      </div>
+      <div class="agent-card">
+        <div class="agent-avatar jinx">J</div>
+        <div class="agent-info">
+          <div class="agent-name">Jinx</div>
+          <div class="agent-status-text">86% long crowding · 230+ pairs</div>
+        </div>
+        <div class="agent-win neutral">⚠</div>
+      </div>
+      <div class="agent-card">
+        <div class="agent-avatar wren">W</div>
+        <div class="agent-info">
+          <div class="agent-name">Wren</div>
+          <div class="agent-status-text">13 deduped · 87.8% allocated</div>
+        </div>
+        <div class="agent-win neutral">—</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- SENTRY LOG -->
+  <div class="panel" style="animation-delay: 0.25s;">
+    <div class="panel-label">
+      <span class="indicator" style="background: var(--sentry-block);"></span>
+      Sentry — Hard Gate Log
+    </div>
+    <div class="sentry-log">
+      <div class="sentry-entry">
+        <div class="sentry-icon block">✕</div>
+        <div class="sentry-text"><strong>AZTEC LONG</strong> blocked — Sentry reads SHORT (-8.1%). Counterfactual: would have lost -12.4%</div>
+        <div class="sentry-time">20:00</div>
+      </div>
+      <div class="sentry-entry">
+        <div class="sentry-icon pass">✓</div>
+        <div class="sentry-text"><strong>UMA LONG</strong> passed — no Sentry conflict. Price holding +2.1%</div>
+        <div class="sentry-time">20:00</div>
+      </div>
+      <div class="sentry-entry">
+        <div class="sentry-icon pass">✓</div>
+        <div class="sentry-text"><strong>BERA LONG</strong> passed — no conflict. Bouncing +3.7%</div>
+        <div class="sentry-time">20:00</div>
+      </div>
+      <div class="sentry-entry">
+        <div class="sentry-icon block">✕</div>
+        <div class="sentry-text"><strong>AZTEC LONG</strong> blocked — first hard gate activation. Score: 12/12</div>
+        <div class="sentry-time">16:00</div>
+      </div>
+      <div class="sentry-entry">
+        <div class="sentry-icon pass">✓</div>
+        <div class="sentry-text">Regime shift: CHOPPY → TRENDING_DOWN. Constraints tightened.</div>
+        <div class="sentry-time">16:00</div>
+      </div>
+      <div class="sentry-entry">
+        <div class="sentry-icon pass">✓</div>
+        <div class="sentry-text">Regime shift: TRENDING_DOWN → CHOPPY. ADX dropped to 6.8</div>
+        <div class="sentry-time">12:00</div>
+      </div>
+    </div>
+    <div style="margin-top: 12px; padding-top: 8px; border-top: 1px solid var(--border); display: flex; justify-content: space-between; font-size: 10px;">
+      <span style="color: var(--text-muted);">GATE ACCURACY</span>
+      <span style="color: var(--accent-green); font-weight: 700;">12/12 — 100%</span>
+    </div>
+  </div>
+
+  <!-- JINX + OUTCOMES -->
+  <div class="panel" style="animation-delay: 0.3s;">
+    <div class="panel-label">
+      <span class="indicator" style="background: var(--accent-amber);"></span>
+      Jinx — Risk Monitor
+    </div>
+    <div class="crowding-labels">
+      <span>SHORT BIAS</span>
+      <span>NEUTRAL</span>
+      <span>LONG BIAS</span>
+    </div>
+    <div class="crowding-meter">
+      <div class="crowding-fill" id="crowding-bar" style="width: 86%; background: linear-gradient(90deg, var(--accent-green), var(--accent-amber), var(--accent-red));"></div>
+    </div>
+    <div style="text-align: center; font-size: 10px; color: var(--text-secondary); margin-bottom: 12px;">
+      <span style="font-weight: 700; color: var(--accent-amber);" id="crowding-pct">86%</span> LONG CROWDING
+    </div>
+    <div class="correlation-count" id="corr-pairs">230+</div>
+    <div style="font-size: 10px; color: var(--text-secondary);">correlated pairs detected</div>
+    <div class="jinx-warning" id="jinx-warning">
+      ⚠ Directional concentration elevated. 86% of positions are LONG into a TRENDING_DOWN regime. Sentry hard gate is the primary mitigation. Factor decomposition pending.
+    </div>
+
+    <div style="margin-top: 16px; padding-top: 12px; border-top: 1px solid var(--border);">
+      <div class="panel-label" style="margin-bottom: 10px;">
+        <span class="indicator" style="background: var(--accent-green);"></span>
+        Recent Outcomes
+      </div>
+      <div class="outcome-row">
+        <span class="outcome-coin">SKR LONG</span>
+        <span style="font-size: 9px; color: var(--text-muted);">Rei</span>
+        <span class="outcome-pnl win">+38.2%</span>
+      </div>
+      <div class="outcome-row">
+        <span class="outcome-coin">AZTEC SHORT</span>
+        <span style="font-size: 9px; color: var(--text-muted);">Sentry</span>
+        <span class="outcome-pnl win">+26.1%</span>
+      </div>
+      <div class="outcome-row">
+        <span class="outcome-coin">FTT SHORT</span>
+        <span style="font-size: 9px; color: var(--text-muted);">Rei</span>
+        <span class="outcome-pnl win">+7.8%</span>
+      </div>
+      <div class="outcome-row">
+        <span class="outcome-coin">AZTEC LONG</span>
+        <span style="font-size: 9px; color: var(--text-muted);">Rei</span>
+        <span class="outcome-pnl loss">-21.3%</span>
+      </div>
+      <div class="outcome-row">
+        <span class="outcome-coin">SNX LONG</span>
+        <span style="font-size: 9px; color: var(--text-muted);">Rei</span>
+        <span class="outcome-pnl loss">-18.7%</span>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+<div class="footer">
+  <span>ACADEMY TRADING DESK v1.0 — PAPER MODE</span>
+  <span id="last-scan">LAST SCAN: 00:00 AEST · CYCLE 6/6</span>
+  <span>831 SIGNALS TRACKED · 6 AGENTS ACTIVE</span>
+</div>
+
+<script>
+  // Live clock
+  function updateClock() {
+    const now = new Date();
+    const aest = new Date(now.toLocaleString('en-US', { timeZone: 'Australia/Sydney' }));
+    const h = String(aest.getHours()).padStart(2, '0');
+    const m = String(aest.getMinutes()).padStart(2, '0');
+    const s = String(aest.getSeconds()).padStart(2, '0');
+    document.getElementById('clock').textContent = `${h}:${m}:${s}`;
+
+    // Calculate next scan (every 4 hours: 0, 4, 8, 12, 16, 20)
+    const currentHour = aest.getHours();
+    const nextScanHour = Math.ceil((currentHour + 1) / 4) * 4;
+    const nextScan = nextScanHour >= 24 ? '00:00' : `${String(nextScanHour).padStart(2, '0')}:00`;
+    document.getElementById('next-scan').textContent = nextScan + ' AEST';
+  }
+
+  setInterval(updateClock, 1000);
+  updateClock();
+
+  // ============================================================
+  // DATA INTEGRATION GUIDE
+  // ============================================================
+  // Taylor: To wire this to live data, have each cron cycle write
+  // a desk-state.json file, then either:
+  //
+  // Option A: Node script reads JSON and injects values into this
+  //           HTML template, saves as mission-control.html
+  //
+  // Option B: Convert to a local server (express) that serves
+  //           this page with live data via fetch('/api/state')
+  //
+  // The element IDs are labeled for easy targeting:
+  //   #regime-badge, #adx-value, #rsi-value, #param-stop, etc.
+  //   #signals-body (innerHTML for signal table rows)
+  //   #crowding-pct, #crowding-bar (style.width)
+  //   #total-alloc, #unique-pos, #stale-count
+  //   #btc-price, #eth-price, #sol-price
+  //   #total-signals, #total-winrate, #total-pnl
+  //
+  // Sample desk-state.json structure:
+  // {
+  //   "timestamp": "2026-02-25T00:00:00+11:00",
+  //   "regime": { "label": "TRENDING_DOWN", "adx": 59.1, "rsi": 22.5, "maDiff": -2.4, "volRatio": 1.2 },
+  //   "params": { "stop": 0.03, "size": 0.75, "maxHold": 12 },
+  //   "prices": { "BTC": { "price": 62983, "change": -5.0 }, "ETH": {...}, "SOL": {...} },
+  //   "signals": [ { "coin": "UMA", "tier": "HIGH", "dir": "LONG", "apr": -223, "basis": -0.34, "persist": "8h", "priceChange": 2.1, "size": 10.2, "blocked": false } ],
+  //   "portfolio": { "totalAlloc": 87.8, "uniquePositions": 13, "staleExpired": 274, "longPct": 78, "shortPct": 22 },
+  //   "jinx": { "crowdingPct": 86, "correlatedPairs": 230 },
+  //   "sentry": { "gateAccuracy": "12/12", "blocks": [...] },
+  //   "outcomes": { "total": 831, "winRate": 18, "avgPnl": -3.50, "recent": [...] }
+  // }
+  // ============================================================
+</script>
+
+</body>
+</html>

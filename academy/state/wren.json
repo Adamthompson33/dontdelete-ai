@@ -1,89 +1,87 @@
 {
   "agent": "WREN",
   "team": "architect",
-  "lastUpdated": "2026-02-23T00:32:27.215Z",
-  "runNumber": 7,
+  "lastUpdated": "2026-02-25T00:32:27.915Z",
+  "runNumber": 9,
   "signals": {
-    "total": 6,
+    "total": 13,
     "correct": 0,
     "incorrect": 0,
-    "pending": 6,
+    "pending": 13,
     "accuracy": null,
-    "avgConfidence": 0.5650000000000001,
+    "avgConfidence": 0.5453846153846155,
     "calibrationScore": null
   },
   "recentSignals": [
     {
-      "run": 7,
+      "run": 9,
       "asset": "BTC",
       "direction": "flat",
       "confidence": 0.5,
       "kelly_size": 0,
       "invalidation": "n/a",
       "data_sources": [
-        "kelly-engine",
-        "survival-discipline"
+        "survival-discipline",
+        "signal-audit"
       ],
-      "timestamp": "2026-02-23T00:31:56.304Z",
+      "timestamp": "2026-02-25T00:31:56.555Z",
       "outcome": "pending"
     },
     {
-      "run": 7,
-      "asset": "ETH",
+      "run": 9,
+      "asset": "SOL",
       "direction": "long",
-      "confidence": 0.62,
-      "kelly_size": 0.08,
-      "invalidation": "ETH breaks below $1850 on volume",
+      "confidence": 0.58,
+      "kelly_size": 0.06,
+      "invalidation": "SOL breaks below $76 on volume",
       "data_sources": [
-        "kelly-engine",
+        "funding-rates",
         "spot-price",
-        "risk-audit"
+        "kelly-engine"
       ],
-      "timestamp": "2026-02-23T00:31:56.299Z",
+      "timestamp": "2026-02-25T00:30:53.169Z",
       "outcome": "pending"
     },
     {
-      "run": 7,
+      "run": 9,
+      "asset": "BTC",
+      "direction": "flat",
+      "confidence": 0.5,
+      "kelly_size": 0,
+      "invalidation": "n/a",
+      "data_sources": [
+        "regime-chop-analysis",
+        "survival-discipline"
+      ],
+      "timestamp": "2026-02-25T00:30:53.165Z",
+      "outcome": "pending"
+    },
+    {
+      "run": 8,
       "asset": "ETH",
-      "direction": "long",
-      "confidence": 0.62,
-      "kelly_size": 0.08,
-      "invalidation": "ETH breaks below $1850 on volume",
+      "direction": "flat",
+      "confidence": 0.5,
+      "kelly_size": 0,
+      "invalidation": "n/a",
       "data_sources": [
-        "kelly-engine",
-        "spot-price",
-        "risk-audit"
+        "survival-discipline",
+        "correlation-audit"
       ],
-      "timestamp": "2026-02-23T00:30:54.684Z",
+      "timestamp": "2026-02-24T00:31:52.627Z",
       "outcome": "pending"
     },
     {
-      "run": 7,
+      "run": 8,
       "asset": "BTC",
       "direction": "flat",
       "confidence": 0.5,
       "kelly_size": 0,
       "invalidation": "n/a",
       "data_sources": [
-        "kelly-engine",
-        "survival-discipline"
+        "survival-discipline",
+        "correlation-audit"
       ],
-      "timestamp": "2026-02-23T00:30:54.680Z",
-      "outcome": "pending"
-    },
-    {
-      "run": 6,
-      "asset": "BTC",
-      "direction": "flat",
-      "confidence": 0.5,
-      "kelly_size": 0,
-      "invalidation": "n/a",
-      "data_sources": [
-        "kelly-engine",
-        "risk-audit",
-        "survival-discipline"
-      ],
-      "timestamp": "2026-02-21T00:31:47.967Z",
+      "timestamp": "2026-02-24T00:31:52.623Z",
       "outcome": "pending"
     }
   ],
@@ -99,85 +97,41 @@
   "toolPerformance": null,
   "convergenceFlags": {
     "phrasesUsedByMultipleAgents": [
-      "confidence kelly invalidation",
-      "kelly invalidation sources",
-      "btc confidence kelly",
       "signal flat btc",
       "flat btc confidence",
-      "eth confidence kelly"
+      "btc confidence kelly",
+      "confidence kelly invalidation",
+      "kelly invalidation sources",
+      "betting the same",
+      "the same macro",
+      "same macro narrative",
+      "macro narrative different",
+      "narrative different angles"
     ],
     "bannedPhrases": [
       {
-        "phrase": "were all trading",
-        "bannedAtRun": 5
-      },
-      {
-        "phrase": "all trading the",
-        "bannedAtRun": 5
-      },
-      {
-        "phrase": "trading the same",
-        "bannedAtRun": 5
-      },
-      {
-        "phrase": "the same signal",
-        "bannedAtRun": 5
-      },
-      {
-        "phrase": "can defend this",
-        "bannedAtRun": 5
-      },
-      {
-        "phrase": "defend this against",
-        "bannedAtRun": 5
-      },
-      {
-        "phrase": "this against external",
-        "bannedAtRun": 5
-      },
-      {
-        "phrase": "against external liquidity",
-        "bannedAtRun": 5
-      },
-      {
-        "phrase": "the market pricing",
-        "bannedAtRun": 5
-      },
-      {
-        "phrase": "before size anything",
-        "bannedAtRun": 6
-      },
-      {
-        "phrase": "those deployment logs",
-        "bannedAtRun": 6
-      },
-      {
-        "phrase": "parameters the last",
-        "bannedAtRun": 6
-      },
-      {
-        "phrase": "confidence kelly invalidation",
-        "bannedAtRun": 6
-      },
-      {
-        "phrase": "kelly invalidation sources",
-        "bannedAtRun": 6
+        "phrase": "eth confidence kelly",
+        "bannedAtRun": 7
       },
       {
         "phrase": "signal flat btc",
-        "bannedAtRun": 6
+        "bannedAtRun": 9
       },
       {
         "phrase": "flat btc confidence",
-        "bannedAtRun": 6
+        "bannedAtRun": 9
       },
       {
         "phrase": "btc confidence kelly",
-        "bannedAtRun": 6
+        "bannedAtRun": 9
       },
       {
-        "phrase": "eth confidence kelly",
-        "bannedAtRun": 7
+        "phrase": "confidence kelly invalidation",
+        "bannedAtRun": 9
+      },
+      {
+        "phrase": "kelly invalidation sources",
+        "bannedAtRun": 9
       }
     ]
   },
@@ -185,8 +139,8 @@
     "current": 53.8466818929939,
     "trend": [
       -2,
-      -2,
-      -2
+      0,
+      0
     ],
     "tier": "rising",
     "signalScore": 0
@@ -195,8 +149,8 @@
     "current": 53.8466818929939,
     "trend": [
       -2,
-      -2,
-      -2
+      0,
+      0
     ],
     "tier": "rising",
     "locked": 0

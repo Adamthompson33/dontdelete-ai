@@ -1,58 +1,87 @@
 {
   "agent": "JACKBOT",
   "team": "scribe",
-  "lastUpdated": "2026-02-23T00:32:27.208Z",
-  "runNumber": 7,
+  "lastUpdated": "2026-02-25T00:32:27.906Z",
+  "runNumber": 9,
   "signals": {
-    "total": 3,
+    "total": 8,
     "correct": 0,
     "incorrect": 0,
-    "pending": 3,
+    "pending": 8,
     "accuracy": null,
-    "avgConfidence": 0.5,
+    "avgConfidence": 0.52875,
     "calibrationScore": null
   },
   "recentSignals": [
     {
-      "run": 7,
-      "asset": "INJ",
+      "run": 9,
+      "asset": "BTC",
       "direction": "flat",
       "confidence": 0.5,
       "kelly_size": 0,
       "invalidation": "n/a",
       "data_sources": [
         "temporal-edge",
-        "self-audit"
+        "regime-audit",
+        "self-correction"
       ],
-      "timestamp": "2026-02-23T00:31:32.286Z",
+      "timestamp": "2026-02-25T00:31:32.281Z",
       "outcome": "pending"
     },
     {
-      "run": 7,
-      "asset": "INJ",
+      "run": 9,
+      "asset": "BTC",
       "direction": "flat",
       "confidence": 0.5,
       "kelly_size": 0,
       "invalidation": "n/a",
       "data_sources": [
         "temporal-edge",
-        "self-audit"
+        "regime-audit"
       ],
-      "timestamp": "2026-02-23T00:30:31.673Z",
+      "timestamp": "2026-02-25T00:30:31.562Z",
       "outcome": "pending"
     },
     {
-      "run": 6,
+      "run": 8,
       "asset": "OP",
       "direction": "flat",
+      "confidence": 0.55,
+      "kelly_size": 0,
+      "invalidation": "n/a",
+      "data_sources": [
+        "funding-extremes-unresolved",
+        "correlation-audit",
+        "self-correction"
+      ],
+      "timestamp": "2026-02-24T00:31:31.219Z",
+      "outcome": "pending"
+    },
+    {
+      "run": 8,
+      "asset": "BTC",
+      "direction": "flat",
       "confidence": 0.5,
       "kelly_size": 0,
       "invalidation": "n/a",
       "data_sources": [
-        "temporal-edge",
         "self-audit"
       ],
-      "timestamp": "2026-02-21T00:30:26.583Z",
+      "timestamp": "2026-02-24T00:30:30.094Z",
+      "outcome": "pending"
+    },
+    {
+      "run": 8,
+      "asset": "OP",
+      "direction": "long",
+      "confidence": 0.68,
+      "kelly_size": 0.12,
+      "invalidation": "OP funding resets without compression (stays above -50% APR for 2+ consecutive candles)",
+      "data_sources": [
+        "temporal-edge",
+        "funding-scanner"
+      ],
+      "timestamp": "2026-02-24T00:30:30.091Z",
       "outcome": "pending"
     }
   ],
@@ -68,61 +97,77 @@
   "toolPerformance": null,
   "convergenceFlags": {
     "phrasesUsedByMultipleAgents": [
-      "confidence kelly invalidation",
-      "kelly invalidation sources",
-      "btc confidence kelly",
       "signal flat btc",
       "flat btc confidence",
-      "eth confidence kelly"
+      "btc confidence kelly",
+      "confidence kelly invalidation",
+      "kelly invalidation sources",
+      "betting the same",
+      "the same macro",
+      "same macro narrative",
+      "macro narrative different",
+      "narrative different angles"
     ],
     "bannedPhrases": [
       {
-        "phrase": "until see market",
-        "bannedAtRun": 5
+        "phrase": "signal flat btc",
+        "bannedAtRun": 8
       },
       {
-        "phrase": "see market that",
-        "bannedAtRun": 5
+        "phrase": "flat btc confidence",
+        "bannedAtRun": 8
       },
       {
-        "phrase": "market that doesnt",
-        "bannedAtRun": 5
+        "phrase": "btc confidence kelly",
+        "bannedAtRun": 8
       },
       {
-        "phrase": "that doesnt price",
-        "bannedAtRun": 5
+        "phrase": "kelly invalidation funding",
+        "bannedAtRun": 8
       },
       {
-        "phrase": "doesnt price like",
-        "bannedAtRun": 5
+        "phrase": "for consecutive candles",
+        "bannedAtRun": 8
       },
       {
-        "phrase": "price like designed",
-        "bannedAtRun": 5
+        "phrase": "extreme funding doesnt",
+        "bannedAtRun": 8
       },
       {
-        "phrase": "like designed cascade",
-        "bannedAtRun": 5
+        "phrase": "funding doesnt stay",
+        "bannedAtRun": 8
       },
       {
-        "phrase": "before size anything",
-        "bannedAtRun": 6
-      },
-      {
-        "phrase": "those deployment logs",
-        "bannedAtRun": 6
-      },
-      {
-        "phrase": "parameters the last",
-        "bannedAtRun": 6
+        "phrase": "doesnt stay extreme",
+        "bannedAtRun": 8
       },
       {
         "phrase": "confidence kelly invalidation",
-        "bannedAtRun": 6
+        "bannedAtRun": 9
       },
       {
         "phrase": "kelly invalidation sources",
-        "bannedAtRun": 6
+        "bannedAtRun": 9
+      },
+      {
+        "phrase": "betting the same",
+        "bannedAtRun": 9
+      },
+      {
+        "phrase": "the same macro",
+        "bannedAtRun": 9
+      },
+      {
+        "phrase": "same macro narrative",
+        "bannedAtRun": 9
+      },
+      {
+        "phrase": "macro narrative different",
+        "bannedAtRun": 9
+      },
+      {
+        "phrase": "narrative different angles",
+        "bannedAtRun": 9
       }
     ]
   },
@@ -130,8 +175,8 @@
     "current": 78.18569317267139,
     "trend": [
       -2,
-      -2,
-      -2
+      0,
+      0
     ],
     "tier": "elite",
     "signalScore": 0
@@ -140,8 +185,8 @@
     "current": 78.18569317267139,
     "trend": [
       -2,
-      -2,
-      -2
+      0,
+      0
     ],
     "tier": "elite",
     "locked": 0

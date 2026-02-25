@@ -1,18 +1,47 @@
 {
   "agent": "PROPHET",
   "team": "architect",
-  "lastUpdated": "2026-02-23T00:32:27.213Z",
-  "runNumber": 7,
+  "lastUpdated": "2026-02-25T00:32:27.912Z",
+  "runNumber": 9,
   "signals": {
-    "total": 4,
+    "total": 6,
     "correct": 0,
     "incorrect": 0,
-    "pending": 4,
+    "pending": 6,
     "accuracy": null,
-    "avgConfidence": 0.525,
+    "avgConfidence": 0.5166666666666666,
     "calibrationScore": null
   },
   "recentSignals": [
+    {
+      "run": 9,
+      "asset": "BTC",
+      "direction": "flat",
+      "confidence": 0.5,
+      "kelly_size": 0,
+      "invalidation": "n/a",
+      "data_sources": [
+        "jackbot-temporal-audit",
+        "regime-chop-analysis"
+      ],
+      "timestamp": "2026-02-25T00:30:47.228Z",
+      "outcome": "pending"
+    },
+    {
+      "run": 8,
+      "asset": "BTC",
+      "direction": "flat",
+      "confidence": 0.5,
+      "kelly_size": 0,
+      "invalidation": "n/a",
+      "data_sources": [
+        "correlation-audit",
+        "data-quality-crisis",
+        "execution-risk"
+      ],
+      "timestamp": "2026-02-24T00:31:45.862Z",
+      "outcome": "pending"
+    },
     {
       "run": 6,
       "asset": "BTC",
@@ -54,20 +83,6 @@
       ],
       "timestamp": "2026-02-20T11:59:05.897Z",
       "outcome": "pending"
-    },
-    {
-      "run": 6,
-      "asset": "BTC",
-      "direction": "flat",
-      "confidence": 0.55,
-      "kelly_size": 0,
-      "invalidation": "n/a",
-      "data_sources": [
-        "correlation-audit",
-        "kelly-engine"
-      ],
-      "timestamp": "2026-02-20T11:58:05.891Z",
-      "outcome": "pending"
     }
   ],
   "record": {
@@ -82,68 +97,76 @@
   "toolPerformance": null,
   "convergenceFlags": {
     "phrasesUsedByMultipleAgents": [
-      "confidence kelly invalidation",
-      "kelly invalidation sources",
-      "btc confidence kelly",
       "signal flat btc",
       "flat btc confidence",
-      "eth confidence kelly"
+      "btc confidence kelly",
+      "confidence kelly invalidation",
+      "kelly invalidation sources",
+      "betting the same",
+      "the same macro",
+      "same macro narrative",
+      "macro narrative different",
+      "narrative different angles"
     ],
     "bannedPhrases": [
       {
-        "phrase": "too high for",
-        "bannedAtRun": 5
-      },
-      {
-        "phrase": "confidence kelly invalidation",
-        "bannedAtRun": 6
-      },
-      {
-        "phrase": "the arb violation",
-        "bannedAtRun": 6
-      },
-      {
-        "phrase": "before anyone sizes",
-        "bannedAtRun": 6
-      },
-      {
         "phrase": "signal flat btc",
-        "bannedAtRun": 6
+        "bannedAtRun": 9
       },
       {
         "phrase": "flat btc confidence",
-        "bannedAtRun": 6
+        "bannedAtRun": 9
       },
       {
         "phrase": "btc confidence kelly",
-        "bannedAtRun": 6
+        "bannedAtRun": 9
+      },
+      {
+        "phrase": "confidence kelly invalidation",
+        "bannedAtRun": 9
       },
       {
         "phrase": "kelly invalidation sources",
-        "bannedAtRun": 6
+        "bannedAtRun": 9
       },
       {
-        "phrase": "invalidation sources correlationstresstest",
-        "bannedAtRun": 6
+        "phrase": "betting the same",
+        "bannedAtRun": 9
+      },
+      {
+        "phrase": "the same macro",
+        "bannedAtRun": 9
+      },
+      {
+        "phrase": "same macro narrative",
+        "bannedAtRun": 9
+      },
+      {
+        "phrase": "macro narrative different",
+        "bannedAtRun": 9
+      },
+      {
+        "phrase": "narrative different angles",
+        "bannedAtRun": 9
       }
     ]
   },
   "fitness": {
-    "current": 40.81690527585597,
+    "current": 38.81690527585597,
     "trend": [
       -2,
-      0,
-      -2
+      -2,
+      0
     ],
     "tier": "unstable",
     "signalScore": 0
   },
   "karma": {
-    "current": 40.81690527585597,
+    "current": 38.81690527585597,
     "trend": [
       -2,
-      0,
-      -2
+      -2,
+      0
     ],
     "tier": "unstable",
     "locked": 0

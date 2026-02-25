@@ -16,6 +16,7 @@
 import * as fs from 'fs';
 import * as path from 'path';
 import { FundingScanner, FundingOpportunity } from '../../academy/src/services/funding-scanner';
+import { REGIME_PARAMS, DEFAULT_REGIME_PARAMS, RegimeParams } from '../../academy/src/services/temporal-edge';
 
 // ═══ Bot Challenge Signal Format ═══
 
@@ -65,6 +66,46 @@ const MED_MIN_PERSIST = 2;
 const MED_MAX_PRICE_MOVE = 0.15; // 15%
 
 const LOW_MIN_APR = 0.50;        // 50% annualized — log everything above this
+
+// ═══ Regime Reader (Stage 3 — Oracle 2026-02-24) ═══
+// Read latest BTC regime from Temporal Edge reports or paper ledger
+
+function getCurrentRegimeParams(): { regime: string; params: RegimeParams } {
+  const ledgerPath = LEDGER_FILE;
+  try {
+    const ledger: PaperLedgerEntry = JSON.parse(fs.readFileSync(ledgerPath, 'utf-8'));
+    const now = Date.now();
+    const lookback = 5 * 60 * 60 * 1000; // 5h — covers gap between cron cycles
+    
+    // Find most recent temporal-edge signal with regime tag
+    const recentTE = ledger.signals
+      .filter((s: any) => s.tool === 'jackbot-temporal-edge' && s.regime && (now - s.unixMs) < lookback)
+      .sort((a: any, b: any) => b.unixMs - a.unixMs);
+    
+    if (recentTE.length > 0) {
+      const regime = recentTE[0].regime;
+      const params = REGIME_PARAMS[regime] || DEFAULT_REGIME_PARAMS;
+      return { regime, params };
+    }
+  } catch {}
+  
+  // Also try reading temporal-edge report files
+  const reportsDir = path.join(__dirname, '..', 'reports');
+  try {
+    const today = new Date().toISOString().slice(0, 10);
+    const reportFile = path.join(reportsDir, `jackbot-temporal-${today}.json`);
+    if (fs.existsSync(reportFile)) {
+      const report = JSON.parse(fs.readFileSync(reportFile, 'utf-8'));
+      const regime = report.btcRegime?.regime;
+      if (regime) {
+        const params = REGIME_PARAMS[regime] || DEFAULT_REGIME_PARAMS;
+        return { regime, params };
+      }
+    }
+  } catch {}
+  
+  return { regime: 'UNKNOWN', params: DEFAULT_REGIME_PARAMS };
+}
 
 // ═══ Sentry Conflict Check ═══
 
@@ -247,30 +288,92 @@ async function main() {
     console.log(`   Tier reason: ${reason}\n`);
   }
 
-  // ═══ Sentry Soft Gate ═══
-  // When Sentry SHORT conflicts with Rei LONG on same coin, halve confidence.
-  // Oracle-approved architecture: don't suppress, reduce confidence + flag.
-  // Auto-escalation: if Sentry hits 25/25 on conflicts, promote to hard gate.
+  // ═══ Sentry HARD Gate (Oracle directive 2026-02-24) ═══
+  // When Sentry SHORT conflicts with Rei LONG on same coin: BLOCK the signal.
+  // Signal is NOT fired, NOT logged as active — but IS recorded as counterfactual.
+  // Auto-revert conditions:
+  //   - Sentry accuracy on conflicts drops below 70% (rolling 20 conflicts)
+  //   - Market regime shifts to TRENDING_UP (confirmed by Temporal Edge)
+  //   - Manual override by Oracle
   const sentryConflicts = getSentryConflicts(ledger, signals);
+  const blockedSignals: BotChallengeSignal[] = [];
+  
   if (sentryConflicts.size > 0) {
-    console.log(`🛡️ Sentry soft gate: ${sentryConflicts.size} conflicts detected\n`);
+    console.log(`🛡️ Sentry HARD gate: ${sentryConflicts.size} conflicts detected\n`);
+    
+    // Check auto-revert: compute Sentry accuracy on rolling 20 conflicts
+    const now = Date.now();
+    const recentConflicts = ledger.signals.filter((s: any) =>
+      s.sentryConflict === true && s.sentryBlockedOutcome !== undefined
+    ).slice(-20);
+    
+    const sentryCorrect = recentConflicts.filter((s: any) => s.sentryBlockedOutcome === 'sentry_correct').length;
+    const sentryAccuracy = recentConflicts.length >= 5 ? sentryCorrect / recentConflicts.length : 1.0; // assume accurate until enough data
+    
+    const hardGateActive = sentryAccuracy >= 0.70;
+    
+    if (!hardGateActive) {
+      console.log(`  ⚠️ HARD GATE AUTO-REVERTED: Sentry accuracy ${(sentryAccuracy * 100).toFixed(0)}% < 70% on rolling ${recentConflicts.length} conflicts`);
+      console.log(`  Falling back to soft gate (confidence halving)\n`);
+    }
+    
     for (const signal of signals) {
       if (sentryConflicts.has(signal.coin)) {
         signal.sentryConflict = true;
         signal.originalConfidence = signal.confidence;
-        // Halve confidence: HIGH → MEDIUM, MEDIUM → LOW, LOW stays LOW
-        if (signal.confidence === 'high') {
-          signal.confidence = 'medium';
-          signal.tier = 'MEDIUM';
-        } else if (signal.confidence === 'medium') {
+        
+        if (hardGateActive) {
+          // HARD GATE: Block signal entirely, log counterfactual
+          (signal as any).sentryBlocked = true;
+          (signal as any).sentryBlockedAt = new Date().toISOString();
+          (signal as any).sentryBlockedReason = `Sentry SHORT vs Rei LONG on ${signal.coin}. Hard gate active (accuracy ${(sentryAccuracy * 100).toFixed(0)}% on ${recentConflicts.length} conflicts).`;
+          (signal as any).kelly_action = 'BLOCKED';
+          (signal as any).kelly_size = 0;
           signal.confidence = 'low';
           signal.tier = 'LOW';
+          signal.tierReason = `🚫 SENTRY HARD GATE (BLOCKED): Sentry says SHORT, Rei says LONG. Signal recorded as counterfactual only. Original: ${signal.originalConfidence}. ${signal.tierReason}`;
+          blockedSignals.push(signal);
+          console.log(`  🚫 ${signal.coin} — BLOCKED by Sentry hard gate (was ${signal.originalConfidence}). Counterfactual logged.`);
+        } else {
+          // SOFT GATE FALLBACK: halve confidence
+          if (signal.confidence === 'high') {
+            signal.confidence = 'medium';
+            signal.tier = 'MEDIUM';
+          } else if (signal.confidence === 'medium') {
+            signal.confidence = 'low';
+            signal.tier = 'LOW';
+          }
+          signal.tierReason = `⚠️ SENTRY CONFLICT (soft gate — hard gate reverted): ${signal.tierReason}`;
+          console.log(`  ⚠️ ${signal.coin} — Sentry conflict, soft gate applied (${signal.originalConfidence} → ${signal.confidence})`);
         }
-        signal.tierReason = `⚠️ SENTRY CONFLICT (confidence halved): Sentry says SHORT, Rei says LONG. ${signal.tierReason}`;
-        console.log(`  ⚠️ ${signal.coin} — Sentry SHORT conflicts with Rei LONG → confidence halved (${signal.originalConfidence} → ${signal.confidence})`);
       }
     }
+    
+    if (blockedSignals.length > 0) {
+      console.log(`\n  📋 ${blockedSignals.length} signals BLOCKED. Counterfactual tracking active — outcomes will be compared against what would have happened.`);
+    }
     console.log('');
+  }
+
+  // ═══ Regime-Aware Constraints (Stage 3 — Oracle 2026-02-24) ═══
+  // Read current BTC regime from Temporal Edge and apply stop/size/maxHold
+  const { regime: currentRegime, params: regimeParams } = getCurrentRegimeParams();
+  console.log(`📊 BTC Regime: ${currentRegime} → stop=${(regimeParams.stop * 100).toFixed(0)}%, size=${regimeParams.size}x, maxHold=${regimeParams.maxHold}h\n`);
+  
+  for (const signal of signals) {
+    // Tag every signal with regime
+    (signal as any).regime = currentRegime;
+    (signal as any).regimeStop = regimeParams.stop;
+    (signal as any).regimeMaxHold = regimeParams.maxHold;
+    
+    // Apply size multiplier to kelly-eligible signals
+    if (signal.confidence === 'high') {
+      (signal as any).regimeSizeMultiplier = regimeParams.size;
+      // Note: actual kelly_size is computed by Wren, but we cap the confidence-based
+      // allocation here. The multiplier will be applied when Wren sizes positions.
+    } else if (signal.confidence === 'medium') {
+      (signal as any).regimeSizeMultiplier = regimeParams.size;
+    }
   }
 
   // Summary by tier

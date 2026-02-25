@@ -1,0 +1,45 @@
+{
+  "timestamp": "2026-02-24T23:13:27.858Z",
+  "regime": "TRENDING_DOWN",
+  "previousRegime": "TRENDING_DOWN",
+  "regimeShifted": false,
+  "alerts": [
+    {
+      "type": "PROFITABLE_HOLD",
+      "severity": "INFO",
+      "coin": "AXS",
+      "direction": "LONG",
+      "message": "+3.6%, 1.8h remaining. Funding still at -117% APR. Trail stop to breakeven.",
+      "action": "EXTEND",
+      "details": {
+        "pnlPct": 3.57,
+        "remainingHours": 1.8,
+        "currentFunding": -117
+      }
+    },
+    {
+      "type": "PROFITABLE_HOLD",
+      "severity": "INFO",
+      "coin": "VVV",
+      "direction": "LONG",
+      "message": "+13.9%, 1.8h remaining. Funding still at -100% APR. Trail stop to breakeven.",
+      "action": "EXTEND",
+      "details": {
+        "pnlPct": 13.93,
+        "remainingHours": 1.8,
+        "currentFunding": -100
+      }
+    }
+  ],
+  "summary": {
+    "totalPositions": 19,
+    "alertCount": 2,
+    "criticalCount": 0,
+    "warningCount": 0,
+    "recommendedExits": [],
+    "recommendedExtensions": [
+      "AXS",
+      "VVV"
+    ]
+  }
+}

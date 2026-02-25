@@ -1,0 +1,58 @@
+{
+  "scannedAt": "2026-02-25T13:04:25.336Z",
+  "signals": [
+    {
+      "coin": "OP",
+      "pattern": "funding_reset",
+      "direction": "long",
+      "confidence": 0.6536692784,
+      "kelly_size": 0.08,
+      "invalidation": "OP breaks below 0.12 after reset (2% against)",
+      "reasoning": "OP funding at -62% APR with 56min to hourly reset. Extreme negative funding suggests long bias post-reset as funding pressure releases. Premium: -0.175%. Regime: TRENDING_UP.",
+      "data": {
+        "fundingRate": -0.0000712856,
+        "annualizedRate": -62.44618559999999,
+        "minutesToReset": 56,
+        "regime": "TRENDING_UP",
+        "markPrice": 0.12004,
+        "oraclePrice": 0.12025,
+        "premium": -0.17463617463617617,
+        "priceChange24h": 2.7212048605168477,
+        "session": "european"
+      }
+    },
+    {
+      "coin": "OP",
+      "pattern": "regime_shift",
+      "direction": "long",
+      "confidence": 0.7,
+      "kelly_size": 0.1,
+      "invalidation": "BTC regime shifts to CHOPPY or OP funding normalizes below 20% APR",
+      "reasoning": "BTC trending long (5.1% 24h) while OP funding is -62% APR — you get PAID to ride the trend. Regime: TRENDING_UP, ADX: 48.",
+      "data": {
+        "fundingRate": -0.0000712856,
+        "annualizedRate": -62.44618559999999,
+        "regime": "TRENDING_UP",
+        "markPrice": 0.12004,
+        "priceChange24h": 2.7212048605168477,
+        "session": "european"
+      }
+    }
+  ],
+  "regimes": {
+    "BTC": {
+      "regime": "TRENDING_UP",
+      "adx": 47.73100137740159,
+      "volatilityRatio": 0.7290545373841271,
+      "priceChange1h": 0.07874015748031496,
+      "priceChange24h": 5.103128031423437
+    }
+  },
+  "regimeParams": {
+    "stop": 0.04,
+    "size": 0.75,
+    "maxHold": 18
+  },
+  "nextResetMinutes": 56,
+  "session": "european"
+}

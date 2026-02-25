@@ -1,0 +1,359 @@
+{
+  "date": "2026-02-25",
+  "sizedAt": "2026-02-25T13:06:03.099Z",
+  "totalSignals": 1493,
+  "newlySized": 43,
+  "alreadySized": 1450,
+  "sized": 11,
+  "skipped": 32,
+  "totalAllocation": 1.333588,
+  "maxKelly": 0.2,
+  "positions": [
+    {
+      "coin": "SKR",
+      "tool": "rei-funding-carry",
+      "direction": "LONG",
+      "confidence": "medium",
+      "kelly": 0.10000000000000009,
+      "action": "SIZE"
+    },
+    {
+      "coin": "AZTEC",
+      "tool": "rei-funding-carry",
+      "direction": "LONG",
+      "confidence": "high",
+      "kelly": 0.2,
+      "action": "SIZE"
+    },
+    {
+      "coin": "STABLE",
+      "tool": "rei-funding-carry",
+      "direction": "LONG",
+      "confidence": "high",
+      "kelly": 0.2,
+      "action": "SIZE"
+    },
+    {
+      "coin": "FOGO",
+      "tool": "rei-funding-carry",
+      "direction": "LONG",
+      "confidence": "medium",
+      "kelly": 0.10000000000000009,
+      "action": "SIZE"
+    },
+    {
+      "coin": "AXS",
+      "tool": "rei-funding-carry",
+      "direction": "LONG",
+      "confidence": "medium",
+      "kelly": 0.10000000000000009,
+      "action": "SIZE"
+    },
+    {
+      "coin": "SOPH",
+      "tool": "rei-funding-carry",
+      "direction": "LONG",
+      "confidence": "medium",
+      "kelly": 0.10000000000000009,
+      "action": "SIZE"
+    },
+    {
+      "coin": "MERL",
+      "tool": "rei-funding-carry",
+      "direction": "LONG",
+      "confidence": "high",
+      "kelly": 0.2,
+      "action": "SIZE"
+    },
+    {
+      "coin": "2Z",
+      "tool": "rei-funding-carry",
+      "direction": "LONG",
+      "confidence": "medium",
+      "kelly": 0.10000000000000009,
+      "action": "SIZE"
+    },
+    {
+      "coin": "Will Bitcoin be high",
+      "tool": "sakura-arb-scanner",
+      "direction": "ARB",
+      "confidence": "medium",
+      "kelly": 0.10000000000000009,
+      "action": "SIZE"
+    },
+    {
+      "coin": "Will Bitcoin be high",
+      "tool": "sakura-arb-scanner",
+      "direction": "ARB",
+      "confidence": "high",
+      "kelly": 0.2,
+      "action": "SIZE"
+    },
+    {
+      "coin": "Will Bitcoin be high",
+      "tool": "sakura-arb-scanner",
+      "direction": "ARB",
+      "confidence": "high",
+      "kelly": 0.2,
+      "action": "SIZE"
+    }
+  ],
+  "skippedPositions": [
+    {
+      "coin": "BTC",
+      "tool": "sentry-sentiment-scanner",
+      "direction": "LONG",
+      "confidence": 0.49743732221168807,
+      "kelly": 0,
+      "action": "SKIP"
+    },
+    {
+      "coin": "PENGU",
+      "tool": "sentry-sentiment-scanner",
+      "direction": "LONG",
+      "confidence": 0.5401717272551156,
+      "kelly": 0,
+      "action": "SKIP"
+    },
+    {
+      "coin": "MORPHO",
+      "tool": "sentry-sentiment-scanner",
+      "direction": "LONG",
+      "confidence": 0.6717435132747523,
+      "kelly": 0,
+      "action": "SKIP"
+    },
+    {
+      "coin": "VIRTUAL",
+      "tool": "sentry-sentiment-scanner",
+      "direction": "LONG",
+      "confidence": 0.6792384196634883,
+      "kelly": 0,
+      "action": "SKIP"
+    },
+    {
+      "coin": "ETH",
+      "tool": "sentry-sentiment-scanner",
+      "direction": "LONG",
+      "confidence": 0.5156177195413354,
+      "kelly": 0,
+      "action": "SKIP"
+    },
+    {
+      "coin": "AAVE",
+      "tool": "sentry-sentiment-scanner",
+      "direction": "LONG",
+      "confidence": 0.48940167486114666,
+      "kelly": 0,
+      "action": "SKIP"
+    },
+    {
+      "coin": "VVV",
+      "tool": "rei-funding-carry",
+      "direction": "LONG",
+      "confidence": "low",
+      "kelly": 0,
+      "action": "SKIP"
+    },
+    {
+      "coin": "MORPHO",
+      "tool": "rei-funding-carry",
+      "direction": "LONG",
+      "confidence": "low",
+      "kelly": 0,
+      "action": "SKIP"
+    },
+    {
+      "coin": "ICP",
+      "tool": "rei-funding-carry",
+      "direction": "LONG",
+      "confidence": "low",
+      "kelly": 0,
+      "action": "SKIP"
+    },
+    {
+      "coin": "APE",
+      "tool": "rei-funding-carry",
+      "direction": "LONG",
+      "confidence": "low",
+      "kelly": 0,
+      "action": "SKIP"
+    },
+    {
+      "coin": "AVNT",
+      "tool": "rei-funding-carry",
+      "direction": "LONG",
+      "confidence": "low",
+      "kelly": 0,
+      "action": "SKIP"
+    },
+    {
+      "coin": "NEO",
+      "tool": "rei-funding-carry",
+      "direction": "LONG",
+      "confidence": "low",
+      "kelly": 0,
+      "action": "SKIP"
+    },
+    {
+      "coin": "POPCAT",
+      "tool": "rei-funding-carry",
+      "direction": "LONG",
+      "confidence": "low",
+      "kelly": 0,
+      "action": "SKIP"
+    },
+    {
+      "coin": "KAITO",
+      "tool": "rei-funding-carry",
+      "direction": "LONG",
+      "confidence": "low",
+      "kelly": 0,
+      "action": "SKIP"
+    },
+    {
+      "coin": "OP",
+      "tool": "rei-funding-carry",
+      "direction": "LONG",
+      "confidence": "low",
+      "kelly": 0,
+      "action": "SKIP"
+    },
+    {
+      "coin": "BERA",
+      "tool": "rei-funding-carry",
+      "direction": "LONG",
+      "confidence": "low",
+      "kelly": 0,
+      "action": "SKIP"
+    },
+    {
+      "coin": "JTO",
+      "tool": "rei-funding-carry",
+      "direction": "LONG",
+      "confidence": "low",
+      "kelly": 0,
+      "action": "SKIP"
+    },
+    {
+      "coin": "ZEN",
+      "tool": "rei-funding-carry",
+      "direction": "LONG",
+      "confidence": "low",
+      "kelly": 0,
+      "action": "SKIP"
+    },
+    {
+      "coin": "[@mattyb’s 500th mar",
+      "tool": "sakura-arb-scanner",
+      "direction": "ARB",
+      "confidence": "low",
+      "kelly": 0,
+      "action": "SKIP"
+    },
+    {
+      "coin": "Will Bitcoin (BTC) b",
+      "tool": "sakura-arb-scanner",
+      "direction": "ARB",
+      "confidence": "low",
+      "kelly": 0,
+      "action": "SKIP"
+    },
+    {
+      "coin": "Will Bitcoin (BTC) p",
+      "tool": "sakura-arb-scanner",
+      "direction": "ARB",
+      "confidence": "low",
+      "kelly": 0,
+      "action": "SKIP"
+    },
+    {
+      "coin": "Will a Republican Pr",
+      "tool": "sakura-arb-scanner",
+      "direction": "ARB",
+      "confidence": "low",
+      "kelly": 0,
+      "action": "SKIP"
+    },
+    {
+      "coin": "Will a former US pre",
+      "tool": "sakura-arb-scanner",
+      "direction": "ARB",
+      "confidence": "low",
+      "kelly": 0,
+      "action": "SKIP"
+    },
+    {
+      "coin": "Will Quinn Ewers def",
+      "tool": "sakura-arb-scanner",
+      "direction": "ARB",
+      "confidence": "low",
+      "kelly": 0,
+      "action": "SKIP"
+    },
+    {
+      "coin": "(1k subsidy) Will Co",
+      "tool": "sakura-arb-scanner",
+      "direction": "ARB",
+      "confidence": "low",
+      "kelly": 0,
+      "action": "SKIP"
+    },
+    {
+      "coin": "Will Roger Goodell b",
+      "tool": "sakura-arb-scanner",
+      "direction": "ARB",
+      "confidence": "low",
+      "kelly": 0,
+      "action": "SKIP"
+    },
+    {
+      "coin": "Will Bitcoin Outperf",
+      "tool": "sakura-arb-scanner",
+      "direction": "ARB",
+      "confidence": "low",
+      "kelly": 0,
+      "action": "SKIP"
+    },
+    {
+      "coin": "More than 70% of U.S",
+      "tool": "sakura-arb-scanner",
+      "direction": "ARB",
+      "confidence": "low",
+      "kelly": 0,
+      "action": "SKIP"
+    },
+    {
+      "coin": "Bitcoin $120K in 202",
+      "tool": "sakura-arb-scanner",
+      "direction": "ARB",
+      "confidence": "low",
+      "kelly": 0,
+      "action": "SKIP"
+    },
+    {
+      "coin": "Bitcoin $140K in 202",
+      "tool": "sakura-arb-scanner",
+      "direction": "ARB",
+      "confidence": "low",
+      "kelly": 0,
+      "action": "SKIP"
+    },
+    {
+      "coin": "Carried Interest Rep",
+      "tool": "sakura-arb-scanner",
+      "direction": "ARB",
+      "confidence": "low",
+      "kelly": 0,
+      "action": "SKIP"
+    },
+    {
+      "coin": "PORTFOLIO",
+      "tool": "jinx-correlation-monitor",
+      "direction": "FLAT",
+      "confidence": 1,
+      "kelly": 0,
+      "action": "SKIP"
+    }
+  ]
+}

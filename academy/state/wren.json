@@ -1,18 +1,48 @@
 {
   "agent": "WREN",
   "team": "architect",
-  "lastUpdated": "2026-02-25T00:32:27.915Z",
-  "runNumber": 9,
+  "lastUpdated": "2026-02-26T00:32:33.999Z",
+  "runNumber": 10,
   "signals": {
-    "total": 13,
+    "total": 15,
     "correct": 0,
     "incorrect": 0,
-    "pending": 13,
+    "pending": 15,
     "accuracy": null,
-    "avgConfidence": 0.5453846153846155,
+    "avgConfidence": 0.5459999999999999,
     "calibrationScore": null
   },
   "recentSignals": [
+    {
+      "run": 10,
+      "asset": "BTC",
+      "direction": "short",
+      "confidence": 0.55,
+      "kelly_size": 0.04,
+      "invalidation": "BTC reclaims $69,500 on volume >$2.0B and funding rates flip positive",
+      "data_sources": [
+        "kelly-engine",
+        "survival-discipline",
+        "prophet-funding-scan"
+      ],
+      "timestamp": "2026-02-26T00:32:02.307Z",
+      "outcome": "pending"
+    },
+    {
+      "run": 10,
+      "asset": "BTC",
+      "direction": "short",
+      "confidence": 0.55,
+      "kelly_size": 0.04,
+      "invalidation": "BTC reclaims $69,500 on volume >$2.0B and funding rates flip positive",
+      "data_sources": [
+        "kelly-engine",
+        "correlation-audit",
+        "survival-discipline"
+      ],
+      "timestamp": "2026-02-26T00:31:03.630Z",
+      "outcome": "pending"
+    },
     {
       "run": 9,
       "asset": "BTC",
@@ -55,34 +85,6 @@
       ],
       "timestamp": "2026-02-25T00:30:53.165Z",
       "outcome": "pending"
-    },
-    {
-      "run": 8,
-      "asset": "ETH",
-      "direction": "flat",
-      "confidence": 0.5,
-      "kelly_size": 0,
-      "invalidation": "n/a",
-      "data_sources": [
-        "survival-discipline",
-        "correlation-audit"
-      ],
-      "timestamp": "2026-02-24T00:31:52.627Z",
-      "outcome": "pending"
-    },
-    {
-      "run": 8,
-      "asset": "BTC",
-      "direction": "flat",
-      "confidence": 0.5,
-      "kelly_size": 0,
-      "invalidation": "n/a",
-      "data_sources": [
-        "survival-discipline",
-        "correlation-audit"
-      ],
-      "timestamp": "2026-02-24T00:31:52.623Z",
-      "outcome": "pending"
     }
   ],
   "record": {
@@ -97,22 +99,18 @@
   "toolPerformance": null,
   "convergenceFlags": {
     "phrasesUsedByMultipleAgents": [
-      "signal flat btc",
-      "flat btc confidence",
-      "btc confidence kelly",
       "confidence kelly invalidation",
-      "kelly invalidation sources",
-      "betting the same",
-      "the same macro",
-      "same macro narrative",
-      "macro narrative different",
-      "narrative different angles"
+      "btc confidence kelly",
+      "kelly invalidation btc",
+      "signal short vvv",
+      "short vvv confidence",
+      "vvv confidence kelly",
+      "kelly invalidation vvv",
+      "invalidation vvv funding",
+      "vvv funding compresses",
+      "signal flat btc"
     ],
     "bannedPhrases": [
-      {
-        "phrase": "eth confidence kelly",
-        "bannedAtRun": 7
-      },
       {
         "phrase": "signal flat btc",
         "bannedAtRun": 9
@@ -132,13 +130,17 @@
       {
         "phrase": "kelly invalidation sources",
         "bannedAtRun": 9
+      },
+      {
+        "phrase": "kelly invalidation btc",
+        "bannedAtRun": 10
       }
     ]
   },
   "fitness": {
     "current": 53.8466818929939,
     "trend": [
-      -2,
+      0,
       0,
       0
     ],
@@ -148,7 +150,7 @@
   "karma": {
     "current": 53.8466818929939,
     "trend": [
-      -2,
+      0,
       0,
       0
     ],

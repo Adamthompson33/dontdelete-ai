@@ -20,6 +20,7 @@
 
 import * as fs from 'fs';
 import * as path from 'path';
+import { REGIME_PARAMS, DEFAULT_REGIME_PARAMS } from '../../academy/src/services/temporal-edge';
 
 // ═══ Config ═══
 
@@ -90,6 +91,17 @@ async function main() {
     return;
   }
 
+  // Detect current regime from most recent temporal-edge signal
+  const now = Date.now();
+  const recentTE = ledger.signals
+    .filter((s: any) => s.tool === 'jackbot-temporal-edge' && s.regime && (now - (s.unixMs || 0)) < 5 * 60 * 60 * 1000)
+    .sort((a: any, b: any) => (b.unixMs || 0) - (a.unixMs || 0));
+  const currentRegime = recentTE.length > 0 ? recentTE[0].regime : '';
+  if (currentRegime) {
+    const rp = REGIME_PARAMS[currentRegime] || DEFAULT_REGIME_PARAMS;
+    console.log(`Regime: ${currentRegime} | sizeLong=${rp.sizeLong ?? rp.size}x, sizeShort=${rp.sizeShort ?? rp.size}x`);
+  }
+
   // Process all signals that don't already have kelly_size
   let sized = 0;
   let skipped = 0;
@@ -106,8 +118,39 @@ async function main() {
     const confidence = signal.confidence || 'low';
     const result = computeKelly(confidence, signal.expectedEdge);
 
-    // Apply regime size multiplier if present (Stage 3)
-    const regimeMultiplier = signal.regimeSizeMultiplier || 1.0;
+    // Apply regime size multiplier (Stage 3) — asymmetric per direction (Oracle 2026-02-27)
+    let regimeMultiplier = signal.regimeSizeMultiplier || 1.0;
+    
+    // If signal has no explicit regimeSizeMultiplier, apply from global regime params
+    if (!signal.regimeSizeMultiplier && currentRegime) {
+      const rp = REGIME_PARAMS[currentRegime] || DEFAULT_REGIME_PARAMS;
+      const dir = (signal.direction || '').toUpperCase();
+      if (dir === 'LONG' && rp.sizeLong !== undefined) {
+        regimeMultiplier = rp.sizeLong;
+      } else if (dir === 'SHORT' && rp.sizeShort !== undefined) {
+        regimeMultiplier = rp.sizeShort;
+      } else {
+        regimeMultiplier = rp.size;
+      }
+      
+      // Sentry gate: in regimes requiring Sentry approval for longs, check for matching Sentry signal
+      if (dir === 'LONG' && rp.longRequiresSentry && signal.tool !== 'sentry-sentiment-scanner') {
+        const coin = signal.coin;
+        const hasSentryApproval = ledger.signals.some((s: any) =>
+          s.tool === 'sentry-sentiment-scanner' &&
+          s.coin === coin &&
+          (s.direction || '').toUpperCase() === 'LONG' &&
+          s.kelly_action !== 'SKIP' &&
+          (now - (s.unixMs || 0)) < 8 * 60 * 60 * 1000
+        );
+        if (!hasSentryApproval) {
+          regimeMultiplier = 0; // Block: no Sentry approval in adverse regime
+          signal.sentryBlocked = true;
+          signal.kelly_action = 'BLOCKED';
+          console.log(`🚫 ${coin} LONG blocked — ${currentRegime} requires Sentry approval for longs`);
+        }
+      }
+    }
     const regimeAdjustedKelly = result.cappedKelly * regimeMultiplier;
     
     // Annotate signal

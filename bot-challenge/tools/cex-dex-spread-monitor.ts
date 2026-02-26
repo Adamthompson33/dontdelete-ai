@@ -118,6 +118,48 @@ async function main() {
     fetchBinanceRates(),
   ]);
 
+  // ═══ Stale Data Check (Oracle directive 2026-02-27) ═══
+  // If 3+ coins show identical HL funding rate, flag as stale and skip cycle
+  const hlValues = Object.entries(hlRates)
+    .filter(([c]) => coins.includes(c))
+    .map(([c, r]) => ({ coin: c, rate: +r.toFixed(4) }));
+  
+  const rateCounts = new Map<number, string[]>();
+  for (const { coin: c, rate } of hlValues) {
+    const existing = rateCounts.get(rate) || [];
+    existing.push(c);
+    rateCounts.set(rate, existing);
+  }
+  
+  let staleDetected = false;
+  for (const [rate, staleCoins] of rateCounts) {
+    if (staleCoins.length >= 3) {
+      console.log(`⚠️ STALE DATA DETECTED: ${staleCoins.length} coins share identical HL rate ${rate}% — ${staleCoins.join(', ')}`);
+      console.log(`   Skipping cycle to avoid generating signals from bad data.\n`);
+      staleDetected = true;
+    }
+  }
+
+  if (staleDetected) {
+    const staleEntry = {
+      timestamp: new Date().toISOString(),
+      regime,
+      coinCount: 0,
+      spreads: [],
+      staleSkipped: true,
+      staleNote: 'Cycle skipped: 3+ coins had identical HL funding rate (likely stale/default data)',
+    };
+    let history: any[] = [];
+    try {
+      history = JSON.parse(fs.readFileSync(OUTPUT_FILE, 'utf-8'));
+      if (!Array.isArray(history)) history = [];
+    } catch {}
+    history.push(staleEntry);
+    fs.writeFileSync(OUTPUT_FILE, JSON.stringify(history, null, 2));
+    console.log('✅ Stale data logged. Cycle skipped.');
+    return;
+  }
+
   // Calculate spreads for active coins
   const spreads: any[] = [];
   for (const coin of coins.sort()) {

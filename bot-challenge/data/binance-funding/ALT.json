@@ -1,0 +1,1262 @@
+[
+  {
+    "t": 1769472000002,
+    "symbol": "ALTUSDT",
+    "rate": -0.00001296,
+    "rateBps": -0.1296,
+    "rateAPR": -1.41912
+  },
+  {
+    "t": 1769486400002,
+    "symbol": "ALTUSDT",
+    "rate": 0.00005,
+    "rateBps": 0.5,
+    "rateAPR": 5.4750000000000005
+  },
+  {
+    "t": 1769500800000,
+    "symbol": "ALTUSDT",
+    "rate": 0.00000378,
+    "rateBps": 0.0378,
+    "rateAPR": 0.41391
+  },
+  {
+    "t": 1769515200006,
+    "symbol": "ALTUSDT",
+    "rate": 0.00005,
+    "rateBps": 0.5,
+    "rateAPR": 5.4750000000000005
+  },
+  {
+    "t": 1769529600000,
+    "symbol": "ALTUSDT",
+    "rate": 0.00005,
+    "rateBps": 0.5,
+    "rateAPR": 5.4750000000000005
+  },
+  {
+    "t": 1769544000000,
+    "symbol": "ALTUSDT",
+    "rate": 0.00005,
+    "rateBps": 0.5,
+    "rateAPR": 5.4750000000000005
+  },
+  {
+    "t": 1769558400000,
+    "symbol": "ALTUSDT",
+    "rate": 0.00005,
+    "rateBps": 0.5,
+    "rateAPR": 5.4750000000000005
+  },
+  {
+    "t": 1769572800008,
+    "symbol": "ALTUSDT",
+    "rate": 0.00005,
+    "rateBps": 0.5,
+    "rateAPR": 5.4750000000000005
+  },
+  {
+    "t": 1769587200000,
+    "symbol": "ALTUSDT",
+    "rate": 0.00005,
+    "rateBps": 0.5,
+    "rateAPR": 5.4750000000000005
+  },
+  {
+    "t": 1769601600005,
+    "symbol": "ALTUSDT",
+    "rate": 0.00005,
+    "rateBps": 0.5,
+    "rateAPR": 5.4750000000000005
+  },
+  {
+    "t": 1769616000000,
+    "symbol": "ALTUSDT",
+    "rate": 0.00005,
+    "rateBps": 0.5,
+    "rateAPR": 5.4750000000000005
+  },
+  {
+    "t": 1769630400004,
+    "symbol": "ALTUSDT",
+    "rate": 0.00005,
+    "rateBps": 0.5,
+    "rateAPR": 5.4750000000000005
+  },
+  {
+    "t": 1769644800000,
+    "symbol": "ALTUSDT",
+    "rate": 0.00005,
+    "rateBps": 0.5,
+    "rateAPR": 5.4750000000000005
+  },
+  {
+    "t": 1769659200000,
+    "symbol": "ALTUSDT",
+    "rate": 0.00005,
+    "rateBps": 0.5,
+    "rateAPR": 5.4750000000000005
+  },
+  {
+    "t": 1769673600009,
+    "symbol": "ALTUSDT",
+    "rate": 0.00005,
+    "rateBps": 0.5,
+    "rateAPR": 5.4750000000000005
+  },
+  {
+    "t": 1769688000000,
+    "symbol": "ALTUSDT",
+    "rate": 0.00005,
+    "rateBps": 0.5,
+    "rateAPR": 5.4750000000000005
+  },
+  {
+    "t": 1769702400000,
+    "symbol": "ALTUSDT",
+    "rate": 0.00003768,
+    "rateBps": 0.37679999999999997,
+    "rateAPR": 4.125959999999999
+  },
+  {
+    "t": 1769716800004,
+    "symbol": "ALTUSDT",
+    "rate": 0.00002365,
+    "rateBps": 0.2365,
+    "rateAPR": 2.5896749999999997
+  },
+  {
+    "t": 1769731200008,
+    "symbol": "ALTUSDT",
+    "rate": -0.00002166,
+    "rateBps": -0.2166,
+    "rateAPR": -2.3717699999999997
+  },
+  {
+    "t": 1769745600005,
+    "symbol": "ALTUSDT",
+    "rate": -0.00006288,
+    "rateBps": -0.6287999999999999,
+    "rateAPR": -6.885359999999999
+  },
+  {
+    "t": 1769760000000,
+    "symbol": "ALTUSDT",
+    "rate": 0.00001279,
+    "rateBps": 0.12789999999999999,
+    "rateAPR": 1.4005049999999999
+  },
+  {
+    "t": 1769774400005,
+    "symbol": "ALTUSDT",
+    "rate": 0.0000399,
+    "rateBps": 0.399,
+    "rateAPR": 4.36905
+  },
+  {
+    "t": 1769788800001,
+    "symbol": "ALTUSDT",
+    "rate": -0.00001542,
+    "rateBps": -0.1542,
+    "rateAPR": -1.68849
+  },
+  {
+    "t": 1769803200004,
+    "symbol": "ALTUSDT",
+    "rate": 0.00003403,
+    "rateBps": 0.3403,
+    "rateAPR": 3.726285
+  },
+  {
+    "t": 1769817600000,
+    "symbol": "ALTUSDT",
+    "rate": 0.00005,
+    "rateBps": 0.5,
+    "rateAPR": 5.4750000000000005
+  },
+  {
+    "t": 1769832000002,
+    "symbol": "ALTUSDT",
+    "rate": -0.00010142,
+    "rateBps": -1.0142,
+    "rateAPR": -11.10549
+  },
+  {
+    "t": 1769846400001,
+    "symbol": "ALTUSDT",
+    "rate": -0.00002737,
+    "rateBps": -0.2737,
+    "rateAPR": -2.997015
+  },
+  {
+    "t": 1769860800010,
+    "symbol": "ALTUSDT",
+    "rate": 0.00002668,
+    "rateBps": 0.2668,
+    "rateAPR": 2.92146
+  },
+  {
+    "t": 1769875200009,
+    "symbol": "ALTUSDT",
+    "rate": -0.00009276,
+    "rateBps": -0.9276,
+    "rateAPR": -10.15722
+  },
+  {
+    "t": 1769889600012,
+    "symbol": "ALTUSDT",
+    "rate": 9.6e-7,
+    "rateBps": 0.0096,
+    "rateAPR": 0.10511999999999998
+  },
+  {
+    "t": 1769904000001,
+    "symbol": "ALTUSDT",
+    "rate": -0.00007466,
+    "rateBps": -0.7465999999999999,
+    "rateAPR": -8.17527
+  },
+  {
+    "t": 1769918400000,
+    "symbol": "ALTUSDT",
+    "rate": -0.00009045,
+    "rateBps": -0.9045000000000001,
+    "rateAPR": -9.904275
+  },
+  {
+    "t": 1769932800004,
+    "symbol": "ALTUSDT",
+    "rate": -0.00016038,
+    "rateBps": -1.6038000000000001,
+    "rateAPR": -17.561609999999998
+  },
+  {
+    "t": 1769947200004,
+    "symbol": "ALTUSDT",
+    "rate": -0.00011275,
+    "rateBps": -1.1275,
+    "rateAPR": -12.346125
+  },
+  {
+    "t": 1769961600000,
+    "symbol": "ALTUSDT",
+    "rate": 0.00003526,
+    "rateBps": 0.35259999999999997,
+    "rateAPR": 3.8609699999999996
+  },
+  {
+    "t": 1769976000004,
+    "symbol": "ALTUSDT",
+    "rate": -0.00010005,
+    "rateBps": -1.0005000000000002,
+    "rateAPR": -10.955475
+  },
+  {
+    "t": 1769990400000,
+    "symbol": "ALTUSDT",
+    "rate": -0.00004682,
+    "rateBps": -0.4682,
+    "rateAPR": -5.126790000000001
+  },
+  {
+    "t": 1770004800000,
+    "symbol": "ALTUSDT",
+    "rate": 0.00005,
+    "rateBps": 0.5,
+    "rateAPR": 5.4750000000000005
+  },
+  {
+    "t": 1770019200014,
+    "symbol": "ALTUSDT",
+    "rate": 0.00002625,
+    "rateBps": 0.2625,
+    "rateAPR": 2.874375
+  },
+  {
+    "t": 1770033600009,
+    "symbol": "ALTUSDT",
+    "rate": 0.00005,
+    "rateBps": 0.5,
+    "rateAPR": 5.4750000000000005
+  },
+  {
+    "t": 1770048000000,
+    "symbol": "ALTUSDT",
+    "rate": 0.00003081,
+    "rateBps": 0.3081,
+    "rateAPR": 3.3736949999999997
+  },
+  {
+    "t": 1770062400000,
+    "symbol": "ALTUSDT",
+    "rate": 0.00005,
+    "rateBps": 0.5,
+    "rateAPR": 5.4750000000000005
+  },
+  {
+    "t": 1770076800000,
+    "symbol": "ALTUSDT",
+    "rate": -0.00000786,
+    "rateBps": -0.07859999999999999,
+    "rateAPR": -0.8606699999999998
+  },
+  {
+    "t": 1770091200001,
+    "symbol": "ALTUSDT",
+    "rate": 0.00005,
+    "rateBps": 0.5,
+    "rateAPR": 5.4750000000000005
+  },
+  {
+    "t": 1770105600007,
+    "symbol": "ALTUSDT",
+    "rate": 0.00005,
+    "rateBps": 0.5,
+    "rateAPR": 5.4750000000000005
+  },
+  {
+    "t": 1770120000006,
+    "symbol": "ALTUSDT",
+    "rate": 0.00002333,
+    "rateBps": 0.23329999999999998,
+    "rateAPR": 2.5546349999999998
+  },
+  {
+    "t": 1770134400000,
+    "symbol": "ALTUSDT",
+    "rate": 0.00005,
+    "rateBps": 0.5,
+    "rateAPR": 5.4750000000000005
+  },
+  {
+    "t": 1770148800009,
+    "symbol": "ALTUSDT",
+    "rate": 0.00005,
+    "rateBps": 0.5,
+    "rateAPR": 5.4750000000000005
+  },
+  {
+    "t": 1770163200002,
+    "symbol": "ALTUSDT",
+    "rate": 0.00005,
+    "rateBps": 0.5,
+    "rateAPR": 5.4750000000000005
+  },
+  {
+    "t": 1770177600004,
+    "symbol": "ALTUSDT",
+    "rate": 0.00001133,
+    "rateBps": 0.1133,
+    "rateAPR": 1.240635
+  },
+  {
+    "t": 1770192000007,
+    "symbol": "ALTUSDT",
+    "rate": 0.00005,
+    "rateBps": 0.5,
+    "rateAPR": 5.4750000000000005
+  },
+  {
+    "t": 1770206400010,
+    "symbol": "ALTUSDT",
+    "rate": 0.00005,
+    "rateBps": 0.5,
+    "rateAPR": 5.4750000000000005
+  },
+  {
+    "t": 1770220800000,
+    "symbol": "ALTUSDT",
+    "rate": 0.00001618,
+    "rateBps": 0.1618,
+    "rateAPR": 1.7717100000000003
+  },
+  {
+    "t": 1770235200001,
+    "symbol": "ALTUSDT",
+    "rate": 0.00005,
+    "rateBps": 0.5,
+    "rateAPR": 5.4750000000000005
+  },
+  {
+    "t": 1770249600011,
+    "symbol": "ALTUSDT",
+    "rate": 0.00005,
+    "rateBps": 0.5,
+    "rateAPR": 5.4750000000000005
+  },
+  {
+    "t": 1770264000001,
+    "symbol": "ALTUSDT",
+    "rate": -0.00001353,
+    "rateBps": -0.1353,
+    "rateAPR": -1.4815349999999998
+  },
+  {
+    "t": 1770278400000,
+    "symbol": "ALTUSDT",
+    "rate": 0.00005,
+    "rateBps": 0.5,
+    "rateAPR": 5.4750000000000005
+  },
+  {
+    "t": 1770292800006,
+    "symbol": "ALTUSDT",
+    "rate": 0.00005,
+    "rateBps": 0.5,
+    "rateAPR": 5.4750000000000005
+  },
+  {
+    "t": 1770307200007,
+    "symbol": "ALTUSDT",
+    "rate": 0.00003682,
+    "rateBps": 0.3682,
+    "rateAPR": 4.03179
+  },
+  {
+    "t": 1770321600000,
+    "symbol": "ALTUSDT",
+    "rate": 0.00005,
+    "rateBps": 0.5,
+    "rateAPR": 5.4750000000000005
+  },
+  {
+    "t": 1770336000000,
+    "symbol": "ALTUSDT",
+    "rate": 0.00005,
+    "rateBps": 0.5,
+    "rateAPR": 5.4750000000000005
+  },
+  {
+    "t": 1770350400001,
+    "symbol": "ALTUSDT",
+    "rate": 0.00005,
+    "rateBps": 0.5,
+    "rateAPR": 5.4750000000000005
+  },
+  {
+    "t": 1770364800001,
+    "symbol": "ALTUSDT",
+    "rate": 0.00005,
+    "rateBps": 0.5,
+    "rateAPR": 5.4750000000000005
+  },
+  {
+    "t": 1770379200003,
+    "symbol": "ALTUSDT",
+    "rate": 0.00005,
+    "rateBps": 0.5,
+    "rateAPR": 5.4750000000000005
+  },
+  {
+    "t": 1770393600000,
+    "symbol": "ALTUSDT",
+    "rate": 0.00005,
+    "rateBps": 0.5,
+    "rateAPR": 5.4750000000000005
+  },
+  {
+    "t": 1770408000005,
+    "symbol": "ALTUSDT",
+    "rate": 0.0000264,
+    "rateBps": 0.264,
+    "rateAPR": 2.8908
+  },
+  {
+    "t": 1770422400003,
+    "symbol": "ALTUSDT",
+    "rate": -0.0000379,
+    "rateBps": -0.379,
+    "rateAPR": -4.15005
+  },
+  {
+    "t": 1770436800024,
+    "symbol": "ALTUSDT",
+    "rate": -0.00013885,
+    "rateBps": -1.3884999999999998,
+    "rateAPR": -15.204074999999998
+  },
+  {
+    "t": 1770451200000,
+    "symbol": "ALTUSDT",
+    "rate": 0.00004877,
+    "rateBps": 0.4877,
+    "rateAPR": 5.340315
+  },
+  {
+    "t": 1770465600007,
+    "symbol": "ALTUSDT",
+    "rate": 3e-7,
+    "rateBps": 0.003,
+    "rateAPR": 0.03285
+  },
+  {
+    "t": 1770480000010,
+    "symbol": "ALTUSDT",
+    "rate": 0.00005,
+    "rateBps": 0.5,
+    "rateAPR": 5.4750000000000005
+  },
+  {
+    "t": 1770494400000,
+    "symbol": "ALTUSDT",
+    "rate": 0.00005,
+    "rateBps": 0.5,
+    "rateAPR": 5.4750000000000005
+  },
+  {
+    "t": 1770508800003,
+    "symbol": "ALTUSDT",
+    "rate": 0.00005,
+    "rateBps": 0.5,
+    "rateAPR": 5.4750000000000005
+  },
+  {
+    "t": 1770523200002,
+    "symbol": "ALTUSDT",
+    "rate": -0.00007673,
+    "rateBps": -0.7673000000000001,
+    "rateAPR": -8.401935
+  },
+  {
+    "t": 1770537600000,
+    "symbol": "ALTUSDT",
+    "rate": 0.00005,
+    "rateBps": 0.5,
+    "rateAPR": 5.4750000000000005
+  },
+  {
+    "t": 1770552000005,
+    "symbol": "ALTUSDT",
+    "rate": 0.00005,
+    "rateBps": 0.5,
+    "rateAPR": 5.4750000000000005
+  },
+  {
+    "t": 1770566400000,
+    "symbol": "ALTUSDT",
+    "rate": 0.00002149,
+    "rateBps": 0.21489999999999998,
+    "rateAPR": 2.3531549999999997
+  },
+  {
+    "t": 1770580800000,
+    "symbol": "ALTUSDT",
+    "rate": 0.00005,
+    "rateBps": 0.5,
+    "rateAPR": 5.4750000000000005
+  },
+  {
+    "t": 1770595200002,
+    "symbol": "ALTUSDT",
+    "rate": 0.00003504,
+    "rateBps": 0.35040000000000004,
+    "rateAPR": 3.8368800000000003
+  },
+  {
+    "t": 1770609600012,
+    "symbol": "ALTUSDT",
+    "rate": -0.00004031,
+    "rateBps": -0.4031,
+    "rateAPR": -4.413945
+  },
+  {
+    "t": 1770624000001,
+    "symbol": "ALTUSDT",
+    "rate": 0.00005,
+    "rateBps": 0.5,
+    "rateAPR": 5.4750000000000005
+  },
+  {
+    "t": 1770638400003,
+    "symbol": "ALTUSDT",
+    "rate": -0.00001267,
+    "rateBps": -0.1267,
+    "rateAPR": -1.3873650000000002
+  },
+  {
+    "t": 1770652800007,
+    "symbol": "ALTUSDT",
+    "rate": -0.00001845,
+    "rateBps": -0.18450000000000003,
+    "rateAPR": -2.0202750000000003
+  },
+  {
+    "t": 1770667200006,
+    "symbol": "ALTUSDT",
+    "rate": 0.00003075,
+    "rateBps": 0.3075,
+    "rateAPR": 3.367125
+  },
+  {
+    "t": 1770681600000,
+    "symbol": "ALTUSDT",
+    "rate": 0.00000616,
+    "rateBps": 0.0616,
+    "rateAPR": 0.67452
+  },
+  {
+    "t": 1770696000000,
+    "symbol": "ALTUSDT",
+    "rate": 0.00002205,
+    "rateBps": 0.2205,
+    "rateAPR": 2.4144750000000004
+  },
+  {
+    "t": 1770710400007,
+    "symbol": "ALTUSDT",
+    "rate": 0.00005,
+    "rateBps": 0.5,
+    "rateAPR": 5.4750000000000005
+  },
+  {
+    "t": 1770724800000,
+    "symbol": "ALTUSDT",
+    "rate": 0.00005,
+    "rateBps": 0.5,
+    "rateAPR": 5.4750000000000005
+  },
+  {
+    "t": 1770739200000,
+    "symbol": "ALTUSDT",
+    "rate": 0.00002968,
+    "rateBps": 0.2968,
+    "rateAPR": 3.24996
+  },
+  {
+    "t": 1770753600007,
+    "symbol": "ALTUSDT",
+    "rate": -0.00004023,
+    "rateBps": -0.4023,
+    "rateAPR": -4.4051849999999995
+  },
+  {
+    "t": 1770768000000,
+    "symbol": "ALTUSDT",
+    "rate": 0.00003529,
+    "rateBps": 0.35290000000000005,
+    "rateAPR": 3.8642550000000004
+  },
+  {
+    "t": 1770782400000,
+    "symbol": "ALTUSDT",
+    "rate": 0.00005,
+    "rateBps": 0.5,
+    "rateAPR": 5.4750000000000005
+  },
+  {
+    "t": 1770796800006,
+    "symbol": "ALTUSDT",
+    "rate": 0.00005,
+    "rateBps": 0.5,
+    "rateAPR": 5.4750000000000005
+  },
+  {
+    "t": 1770811200000,
+    "symbol": "ALTUSDT",
+    "rate": 0.00005,
+    "rateBps": 0.5,
+    "rateAPR": 5.4750000000000005
+  },
+  {
+    "t": 1770825600000,
+    "symbol": "ALTUSDT",
+    "rate": -0.00004696,
+    "rateBps": -0.46959999999999996,
+    "rateAPR": -5.14212
+  },
+  {
+    "t": 1770840000003,
+    "symbol": "ALTUSDT",
+    "rate": 0.00005,
+    "rateBps": 0.5,
+    "rateAPR": 5.4750000000000005
+  },
+  {
+    "t": 1770854400000,
+    "symbol": "ALTUSDT",
+    "rate": -0.00010471,
+    "rateBps": -1.0471000000000001,
+    "rateAPR": -11.465745
+  },
+  {
+    "t": 1770868800000,
+    "symbol": "ALTUSDT",
+    "rate": 0.00005,
+    "rateBps": 0.5,
+    "rateAPR": 5.4750000000000005
+  },
+  {
+    "t": 1770883200001,
+    "symbol": "ALTUSDT",
+    "rate": 0.00005,
+    "rateBps": 0.5,
+    "rateAPR": 5.4750000000000005
+  },
+  {
+    "t": 1770897600002,
+    "symbol": "ALTUSDT",
+    "rate": 0.00003851,
+    "rateBps": 0.3851,
+    "rateAPR": 4.216845
+  },
+  {
+    "t": 1770912000001,
+    "symbol": "ALTUSDT",
+    "rate": 0.00002586,
+    "rateBps": 0.2586,
+    "rateAPR": 2.83167
+  },
+  {
+    "t": 1770926400006,
+    "symbol": "ALTUSDT",
+    "rate": 0.00005,
+    "rateBps": 0.5,
+    "rateAPR": 5.4750000000000005
+  },
+  {
+    "t": 1770940800007,
+    "symbol": "ALTUSDT",
+    "rate": 0.00005,
+    "rateBps": 0.5,
+    "rateAPR": 5.4750000000000005
+  },
+  {
+    "t": 1770955200000,
+    "symbol": "ALTUSDT",
+    "rate": 0.00005,
+    "rateBps": 0.5,
+    "rateAPR": 5.4750000000000005
+  },
+  {
+    "t": 1770969600003,
+    "symbol": "ALTUSDT",
+    "rate": 0.00005,
+    "rateBps": 0.5,
+    "rateAPR": 5.4750000000000005
+  },
+  {
+    "t": 1770984000000,
+    "symbol": "ALTUSDT",
+    "rate": 0.00005,
+    "rateBps": 0.5,
+    "rateAPR": 5.4750000000000005
+  },
+  {
+    "t": 1770998400005,
+    "symbol": "ALTUSDT",
+    "rate": 0.00005,
+    "rateBps": 0.5,
+    "rateAPR": 5.4750000000000005
+  },
+  {
+    "t": 1771012800006,
+    "symbol": "ALTUSDT",
+    "rate": 0.00005,
+    "rateBps": 0.5,
+    "rateAPR": 5.4750000000000005
+  },
+  {
+    "t": 1771027200002,
+    "symbol": "ALTUSDT",
+    "rate": 0.00005,
+    "rateBps": 0.5,
+    "rateAPR": 5.4750000000000005
+  },
+  {
+    "t": 1771041600007,
+    "symbol": "ALTUSDT",
+    "rate": 0.00005,
+    "rateBps": 0.5,
+    "rateAPR": 5.4750000000000005
+  },
+  {
+    "t": 1771056000004,
+    "symbol": "ALTUSDT",
+    "rate": 0.00005,
+    "rateBps": 0.5,
+    "rateAPR": 5.4750000000000005
+  },
+  {
+    "t": 1771070400000,
+    "symbol": "ALTUSDT",
+    "rate": 0.00005,
+    "rateBps": 0.5,
+    "rateAPR": 5.4750000000000005
+  },
+  {
+    "t": 1771084800002,
+    "symbol": "ALTUSDT",
+    "rate": 0.00005,
+    "rateBps": 0.5,
+    "rateAPR": 5.4750000000000005
+  },
+  {
+    "t": 1771099200000,
+    "symbol": "ALTUSDT",
+    "rate": 0.00005,
+    "rateBps": 0.5,
+    "rateAPR": 5.4750000000000005
+  },
+  {
+    "t": 1771113600000,
+    "symbol": "ALTUSDT",
+    "rate": 0.00005,
+    "rateBps": 0.5,
+    "rateAPR": 5.4750000000000005
+  },
+  {
+    "t": 1771128000000,
+    "symbol": "ALTUSDT",
+    "rate": 0.00000289,
+    "rateBps": 0.0289,
+    "rateAPR": 0.316455
+  },
+  {
+    "t": 1771142400002,
+    "symbol": "ALTUSDT",
+    "rate": 0.00005,
+    "rateBps": 0.5,
+    "rateAPR": 5.4750000000000005
+  },
+  {
+    "t": 1771156800005,
+    "symbol": "ALTUSDT",
+    "rate": 0.00005,
+    "rateBps": 0.5,
+    "rateAPR": 5.4750000000000005
+  },
+  {
+    "t": 1771171200000,
+    "symbol": "ALTUSDT",
+    "rate": 0.00004766,
+    "rateBps": 0.4766,
+    "rateAPR": 5.21877
+  },
+  {
+    "t": 1771185600009,
+    "symbol": "ALTUSDT",
+    "rate": 0.00000446,
+    "rateBps": 0.044599999999999994,
+    "rateAPR": 0.48836999999999997
+  },
+  {
+    "t": 1771200000001,
+    "symbol": "ALTUSDT",
+    "rate": 0.00005,
+    "rateBps": 0.5,
+    "rateAPR": 5.4750000000000005
+  },
+  {
+    "t": 1771214400004,
+    "symbol": "ALTUSDT",
+    "rate": -0.0000245,
+    "rateBps": -0.245,
+    "rateAPR": -2.68275
+  },
+  {
+    "t": 1771228800003,
+    "symbol": "ALTUSDT",
+    "rate": -0.0000363,
+    "rateBps": -0.363,
+    "rateAPR": -3.97485
+  },
+  {
+    "t": 1771243200000,
+    "symbol": "ALTUSDT",
+    "rate": 0.00005,
+    "rateBps": 0.5,
+    "rateAPR": 5.4750000000000005
+  },
+  {
+    "t": 1771257600000,
+    "symbol": "ALTUSDT",
+    "rate": 0.00005,
+    "rateBps": 0.5,
+    "rateAPR": 5.4750000000000005
+  },
+  {
+    "t": 1771272000009,
+    "symbol": "ALTUSDT",
+    "rate": 0.00002224,
+    "rateBps": 0.22240000000000001,
+    "rateAPR": 2.43528
+  },
+  {
+    "t": 1771286400008,
+    "symbol": "ALTUSDT",
+    "rate": 0.00005,
+    "rateBps": 0.5,
+    "rateAPR": 5.4750000000000005
+  },
+  {
+    "t": 1771300800003,
+    "symbol": "ALTUSDT",
+    "rate": 0.00005,
+    "rateBps": 0.5,
+    "rateAPR": 5.4750000000000005
+  },
+  {
+    "t": 1771315200001,
+    "symbol": "ALTUSDT",
+    "rate": 0.00005,
+    "rateBps": 0.5,
+    "rateAPR": 5.4750000000000005
+  },
+  {
+    "t": 1771329600000,
+    "symbol": "ALTUSDT",
+    "rate": -0.00008937,
+    "rateBps": -0.8937,
+    "rateAPR": -9.786015
+  },
+  {
+    "t": 1771344000002,
+    "symbol": "ALTUSDT",
+    "rate": -0.00005645,
+    "rateBps": -0.5645,
+    "rateAPR": -6.181275
+  },
+  {
+    "t": 1771358400002,
+    "symbol": "ALTUSDT",
+    "rate": 0.00000832,
+    "rateBps": 0.0832,
+    "rateAPR": 0.91104
+  },
+  {
+    "t": 1771372800000,
+    "symbol": "ALTUSDT",
+    "rate": -0.00007906,
+    "rateBps": -0.7906000000000001,
+    "rateAPR": -8.657070000000001
+  },
+  {
+    "t": 1771387200000,
+    "symbol": "ALTUSDT",
+    "rate": -0.00060617,
+    "rateBps": -6.061699999999999,
+    "rateAPR": -66.37561499999998
+  },
+  {
+    "t": 1771401600000,
+    "symbol": "ALTUSDT",
+    "rate": -0.00001577,
+    "rateBps": -0.1577,
+    "rateAPR": -1.726815
+  },
+  {
+    "t": 1771416000007,
+    "symbol": "ALTUSDT",
+    "rate": -0.00019412,
+    "rateBps": -1.9411999999999998,
+    "rateAPR": -21.25614
+  },
+  {
+    "t": 1771430400011,
+    "symbol": "ALTUSDT",
+    "rate": -0.00013869,
+    "rateBps": -1.3868999999999998,
+    "rateAPR": -15.186554999999998
+  },
+  {
+    "t": 1771444800004,
+    "symbol": "ALTUSDT",
+    "rate": -0.00010556,
+    "rateBps": -1.0556,
+    "rateAPR": -11.55882
+  },
+  {
+    "t": 1771459200013,
+    "symbol": "ALTUSDT",
+    "rate": -0.00012326,
+    "rateBps": -1.2326000000000001,
+    "rateAPR": -13.49697
+  },
+  {
+    "t": 1771473600003,
+    "symbol": "ALTUSDT",
+    "rate": -0.00004796,
+    "rateBps": -0.4796,
+    "rateAPR": -5.251620000000001
+  },
+  {
+    "t": 1771488000000,
+    "symbol": "ALTUSDT",
+    "rate": -0.00003496,
+    "rateBps": -0.34959999999999997,
+    "rateAPR": -3.8281199999999993
+  },
+  {
+    "t": 1771502400011,
+    "symbol": "ALTUSDT",
+    "rate": -0.00006819,
+    "rateBps": -0.6819,
+    "rateAPR": -7.466805
+  },
+  {
+    "t": 1771516800003,
+    "symbol": "ALTUSDT",
+    "rate": -0.00006069,
+    "rateBps": -0.6069,
+    "rateAPR": -6.645555
+  },
+  {
+    "t": 1771531200000,
+    "symbol": "ALTUSDT",
+    "rate": 0.00005,
+    "rateBps": 0.5,
+    "rateAPR": 5.4750000000000005
+  },
+  {
+    "t": 1771545600000,
+    "symbol": "ALTUSDT",
+    "rate": 0.00005,
+    "rateBps": 0.5,
+    "rateAPR": 5.4750000000000005
+  },
+  {
+    "t": 1771560000003,
+    "symbol": "ALTUSDT",
+    "rate": 0.00002269,
+    "rateBps": 0.22690000000000002,
+    "rateAPR": 2.4845550000000003
+  },
+  {
+    "t": 1771574400000,
+    "symbol": "ALTUSDT",
+    "rate": 0.00001239,
+    "rateBps": 0.1239,
+    "rateAPR": 1.3567049999999998
+  },
+  {
+    "t": 1771588800000,
+    "symbol": "ALTUSDT",
+    "rate": -0.0000429,
+    "rateBps": -0.429,
+    "rateAPR": -4.69755
+  },
+  {
+    "t": 1771603200000,
+    "symbol": "ALTUSDT",
+    "rate": -0.00000804,
+    "rateBps": -0.0804,
+    "rateAPR": -0.88038
+  },
+  {
+    "t": 1771617600000,
+    "symbol": "ALTUSDT",
+    "rate": -0.00016127,
+    "rateBps": -1.6127,
+    "rateAPR": -17.659065
+  },
+  {
+    "t": 1771632000004,
+    "symbol": "ALTUSDT",
+    "rate": -0.00012664,
+    "rateBps": -1.2664,
+    "rateAPR": -13.867079999999998
+  },
+  {
+    "t": 1771646400000,
+    "symbol": "ALTUSDT",
+    "rate": 0.00005,
+    "rateBps": 0.5,
+    "rateAPR": 5.4750000000000005
+  },
+  {
+    "t": 1771660800000,
+    "symbol": "ALTUSDT",
+    "rate": 0.00005,
+    "rateBps": 0.5,
+    "rateAPR": 5.4750000000000005
+  },
+  {
+    "t": 1771675200013,
+    "symbol": "ALTUSDT",
+    "rate": -0.00002467,
+    "rateBps": -0.2467,
+    "rateAPR": -2.701365
+  },
+  {
+    "t": 1771689600005,
+    "symbol": "ALTUSDT",
+    "rate": -0.00008394,
+    "rateBps": -0.8394,
+    "rateAPR": -9.191429999999999
+  },
+  {
+    "t": 1771704000000,
+    "symbol": "ALTUSDT",
+    "rate": 0.00000657,
+    "rateBps": 0.0657,
+    "rateAPR": 0.719415
+  },
+  {
+    "t": 1771718400001,
+    "symbol": "ALTUSDT",
+    "rate": -0.000289,
+    "rateBps": -2.8899999999999997,
+    "rateAPR": -31.6455
+  },
+  {
+    "t": 1771732800008,
+    "symbol": "ALTUSDT",
+    "rate": -0.00003828,
+    "rateBps": -0.3828,
+    "rateAPR": -4.191660000000001
+  },
+  {
+    "t": 1771747200004,
+    "symbol": "ALTUSDT",
+    "rate": -0.0000452,
+    "rateBps": -0.452,
+    "rateAPR": -4.9494
+  },
+  {
+    "t": 1771761600008,
+    "symbol": "ALTUSDT",
+    "rate": -0.00021678,
+    "rateBps": -2.1677999999999997,
+    "rateAPR": -23.73741
+  },
+  {
+    "t": 1771776000000,
+    "symbol": "ALTUSDT",
+    "rate": -0.0000448,
+    "rateBps": -0.44799999999999995,
+    "rateAPR": -4.9056
+  },
+  {
+    "t": 1771790400000,
+    "symbol": "ALTUSDT",
+    "rate": -0.00002579,
+    "rateBps": -0.25789999999999996,
+    "rateAPR": -2.824005
+  },
+  {
+    "t": 1771804800001,
+    "symbol": "ALTUSDT",
+    "rate": -1.7e-7,
+    "rateBps": -0.0017,
+    "rateAPR": -0.018615
+  },
+  {
+    "t": 1771819200000,
+    "symbol": "ALTUSDT",
+    "rate": 0.00005,
+    "rateBps": 0.5,
+    "rateAPR": 5.4750000000000005
+  },
+  {
+    "t": 1771833600000,
+    "symbol": "ALTUSDT",
+    "rate": 0.00005,
+    "rateBps": 0.5,
+    "rateAPR": 5.4750000000000005
+  },
+  {
+    "t": 1771848000003,
+    "symbol": "ALTUSDT",
+    "rate": 0.00001148,
+    "rateBps": 0.1148,
+    "rateAPR": 1.25706
+  },
+  {
+    "t": 1771862400000,
+    "symbol": "ALTUSDT",
+    "rate": 0.00005,
+    "rateBps": 0.5,
+    "rateAPR": 5.4750000000000005
+  },
+  {
+    "t": 1771876800000,
+    "symbol": "ALTUSDT",
+    "rate": -0.00007761,
+    "rateBps": -0.7761,
+    "rateAPR": -8.498295
+  },
+  {
+    "t": 1771891200007,
+    "symbol": "ALTUSDT",
+    "rate": 0.00005,
+    "rateBps": 0.5,
+    "rateAPR": 5.4750000000000005
+  },
+  {
+    "t": 1771905600000,
+    "symbol": "ALTUSDT",
+    "rate": 0.00000857,
+    "rateBps": 0.0857,
+    "rateAPR": 0.9384149999999999
+  },
+  {
+    "t": 1771920000000,
+    "symbol": "ALTUSDT",
+    "rate": 0.00005,
+    "rateBps": 0.5,
+    "rateAPR": 5.4750000000000005
+  },
+  {
+    "t": 1771934400000,
+    "symbol": "ALTUSDT",
+    "rate": 0.00005,
+    "rateBps": 0.5,
+    "rateAPR": 5.4750000000000005
+  },
+  {
+    "t": 1771948800001,
+    "symbol": "ALTUSDT",
+    "rate": -0.0000094,
+    "rateBps": -0.094,
+    "rateAPR": -1.0293
+  },
+  {
+    "t": 1771963200002,
+    "symbol": "ALTUSDT",
+    "rate": 0.00005,
+    "rateBps": 0.5,
+    "rateAPR": 5.4750000000000005
+  },
+  {
+    "t": 1771977600001,
+    "symbol": "ALTUSDT",
+    "rate": -0.0001157,
+    "rateBps": -1.157,
+    "rateAPR": -12.669149999999998
+  },
+  {
+    "t": 1771992000000,
+    "symbol": "ALTUSDT",
+    "rate": -0.00004964,
+    "rateBps": -0.4964,
+    "rateAPR": -5.43558
+  },
+  {
+    "t": 1772006400007,
+    "symbol": "ALTUSDT",
+    "rate": 0.00005,
+    "rateBps": 0.5,
+    "rateAPR": 5.4750000000000005
+  },
+  {
+    "t": 1772020800000,
+    "symbol": "ALTUSDT",
+    "rate": 0.00005,
+    "rateBps": 0.5,
+    "rateAPR": 5.4750000000000005
+  },
+  {
+    "t": 1772035200000,
+    "symbol": "ALTUSDT",
+    "rate": 0.00005,
+    "rateBps": 0.5,
+    "rateAPR": 5.4750000000000005
+  },
+  {
+    "t": 1772049600006,
+    "symbol": "ALTUSDT",
+    "rate": 0.00005,
+    "rateBps": 0.5,
+    "rateAPR": 5.4750000000000005
+  }
+]

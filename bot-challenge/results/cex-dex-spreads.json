@@ -101,5 +101,509 @@
         "hyperliquid_available": true
       }
     ]
+  },
+  {
+    "timestamp": "2026-02-25T17:03:04.190Z",
+    "regime": "TRENDING_UP",
+    "coinCount": 11,
+    "spreads": [
+      {
+        "coin": "2Z",
+        "binance_rate_apr": -21.22,
+        "hyperliquid_rate_apr": 10.95,
+        "spread_apr": -32.17,
+        "binance_available": true,
+        "hyperliquid_available": true
+      },
+      {
+        "coin": "ALT",
+        "binance_rate_apr": 5.48,
+        "hyperliquid_rate_apr": -19.41,
+        "spread_apr": 24.89,
+        "binance_available": true,
+        "hyperliquid_available": true
+      },
+      {
+        "coin": "AXS",
+        "binance_rate_apr": -91.4,
+        "hyperliquid_rate_apr": -136.91,
+        "spread_apr": 45.5,
+        "binance_available": true,
+        "hyperliquid_available": true
+      },
+      {
+        "coin": "GAS",
+        "binance_rate_apr": -34.65,
+        "hyperliquid_rate_apr": -50.76,
+        "spread_apr": 16.11,
+        "binance_available": true,
+        "hyperliquid_available": true
+      },
+      {
+        "coin": "JTO",
+        "binance_rate_apr": -56.15,
+        "hyperliquid_rate_apr": -74.35,
+        "spread_apr": 18.2,
+        "binance_available": true,
+        "hyperliquid_available": true
+      },
+      {
+        "coin": "KAITO",
+        "binance_rate_apr": 5.48,
+        "hyperliquid_rate_apr": 10.95,
+        "spread_apr": -5.48,
+        "binance_available": true,
+        "hyperliquid_available": true
+      },
+      {
+        "coin": "MERL",
+        "binance_rate_apr": -8.85,
+        "hyperliquid_rate_apr": -82.33,
+        "spread_apr": 73.48,
+        "binance_available": true,
+        "hyperliquid_available": true
+      },
+      {
+        "coin": "SOPH",
+        "binance_rate_apr": -28.89,
+        "hyperliquid_rate_apr": 10.95,
+        "spread_apr": -39.84,
+        "binance_available": true,
+        "hyperliquid_available": true
+      },
+      {
+        "coin": "STABLE",
+        "binance_rate_apr": -9.56,
+        "hyperliquid_rate_apr": -29.72,
+        "spread_apr": 20.15,
+        "binance_available": true,
+        "hyperliquid_available": true
+      },
+      {
+        "coin": "YGG",
+        "binance_rate_apr": -38.68,
+        "hyperliquid_rate_apr": 10.95,
+        "spread_apr": -49.63,
+        "binance_available": true,
+        "hyperliquid_available": true
+      },
+      {
+        "coin": "ZORA",
+        "binance_rate_apr": -27.43,
+        "hyperliquid_rate_apr": -8.61,
+        "spread_apr": -18.82,
+        "binance_available": true,
+        "hyperliquid_available": true
+      }
+    ]
+  },
+  {
+    "timestamp": "2026-02-25T21:03:04.907Z",
+    "regime": "UNKNOWN",
+    "coinCount": 11,
+    "spreads": [
+      {
+        "coin": "2Z",
+        "binance_rate_apr": -6.59,
+        "hyperliquid_rate_apr": -55.71,
+        "spread_apr": 49.12,
+        "binance_available": true,
+        "hyperliquid_available": true
+      },
+      {
+        "coin": "ALT",
+        "binance_rate_apr": 5.48,
+        "hyperliquid_rate_apr": 8.46,
+        "spread_apr": -2.98,
+        "binance_available": true,
+        "hyperliquid_available": true
+      },
+      {
+        "coin": "AXS",
+        "binance_rate_apr": -45.76,
+        "hyperliquid_rate_apr": -4.83,
+        "spread_apr": -40.94,
+        "binance_available": true,
+        "hyperliquid_available": true
+      },
+      {
+        "coin": "GAS",
+        "binance_rate_apr": -27.16,
+        "hyperliquid_rate_apr": -152.71,
+        "spread_apr": 125.56,
+        "binance_available": true,
+        "hyperliquid_available": true
+      },
+      {
+        "coin": "JTO",
+        "binance_rate_apr": -54.45,
+        "hyperliquid_rate_apr": -95,
+        "spread_apr": 40.54,
+        "binance_available": true,
+        "hyperliquid_available": true
+      },
+      {
+        "coin": "KAITO",
+        "binance_rate_apr": 5.48,
+        "hyperliquid_rate_apr": -26.32,
+        "spread_apr": 31.8,
+        "binance_available": true,
+        "hyperliquid_available": true
+      },
+      {
+        "coin": "MERL",
+        "binance_rate_apr": -20.46,
+        "hyperliquid_rate_apr": -46.03,
+        "spread_apr": 25.57,
+        "binance_available": true,
+        "hyperliquid_available": true
+      },
+      {
+        "coin": "SOPH",
+        "binance_rate_apr": -14.79,
+        "hyperliquid_rate_apr": -73.65,
+        "spread_apr": 58.86,
+        "binance_available": true,
+        "hyperliquid_available": true
+      },
+      {
+        "coin": "STABLE",
+        "binance_rate_apr": -26.14,
+        "hyperliquid_rate_apr": -31.01,
+        "spread_apr": 4.87,
+        "binance_available": true,
+        "hyperliquid_available": true
+      },
+      {
+        "coin": "YGG",
+        "binance_rate_apr": -9.74,
+        "hyperliquid_rate_apr": 10.95,
+        "spread_apr": -20.69,
+        "binance_available": true,
+        "hyperliquid_available": true
+      },
+      {
+        "coin": "ZORA",
+        "binance_rate_apr": -46.02,
+        "hyperliquid_rate_apr": -82.91,
+        "spread_apr": 36.89,
+        "binance_available": true,
+        "hyperliquid_available": true
+      }
+    ]
+  },
+  {
+    "timestamp": "2026-02-26T01:03:03.937Z",
+    "regime": "UNKNOWN",
+    "coinCount": 5,
+    "spreads": [
+      {
+        "coin": "HEMI",
+        "binance_rate_apr": 5.48,
+        "hyperliquid_rate_apr": 56.99,
+        "spread_apr": -51.51,
+        "binance_available": true,
+        "hyperliquid_available": true
+      },
+      {
+        "coin": "JTO",
+        "binance_rate_apr": -53.56,
+        "hyperliquid_rate_apr": -70.89,
+        "spread_apr": 17.33,
+        "binance_available": true,
+        "hyperliquid_available": true
+      },
+      {
+        "coin": "MERL",
+        "binance_rate_apr": -15.89,
+        "hyperliquid_rate_apr": -77.13,
+        "spread_apr": 61.25,
+        "binance_available": true,
+        "hyperliquid_available": true
+      },
+      {
+        "coin": "STABLE",
+        "binance_rate_apr": -50.78,
+        "hyperliquid_rate_apr": -170.96,
+        "spread_apr": 120.18,
+        "binance_available": true,
+        "hyperliquid_available": true
+      },
+      {
+        "coin": "XAI",
+        "binance_rate_apr": -5.61,
+        "hyperliquid_rate_apr": -45.29,
+        "spread_apr": 39.68,
+        "binance_available": true,
+        "hyperliquid_available": true
+      }
+    ]
+  },
+  {
+    "timestamp": "2026-02-26T05:03:04.803Z",
+    "regime": "UNKNOWN",
+    "coinCount": 5,
+    "spreads": [
+      {
+        "coin": "HEMI",
+        "binance_rate_apr": 5.48,
+        "hyperliquid_rate_apr": 10.95,
+        "spread_apr": -5.48,
+        "binance_available": true,
+        "hyperliquid_available": true
+      },
+      {
+        "coin": "JTO",
+        "binance_rate_apr": -37.03,
+        "hyperliquid_rate_apr": -91.51,
+        "spread_apr": 54.48,
+        "binance_available": true,
+        "hyperliquid_available": true
+      },
+      {
+        "coin": "MERL",
+        "binance_rate_apr": -18.64,
+        "hyperliquid_rate_apr": -123.85,
+        "spread_apr": 105.22,
+        "binance_available": true,
+        "hyperliquid_available": true
+      },
+      {
+        "coin": "STABLE",
+        "binance_rate_apr": -40.7,
+        "hyperliquid_rate_apr": -177.13,
+        "spread_apr": 136.43,
+        "binance_available": true,
+        "hyperliquid_available": true
+      },
+      {
+        "coin": "XAI",
+        "binance_rate_apr": 5.27,
+        "hyperliquid_rate_apr": 10.95,
+        "spread_apr": -5.68,
+        "binance_available": true,
+        "hyperliquid_available": true
+      }
+    ]
+  },
+  {
+    "timestamp": "2026-02-26T09:03:05.371Z",
+    "regime": "UNKNOWN",
+    "coinCount": 7,
+    "spreads": [
+      {
+        "coin": "ETH",
+        "binance_rate_apr": -2.46,
+        "hyperliquid_rate_apr": 10.95,
+        "spread_apr": -13.41,
+        "binance_available": true,
+        "hyperliquid_available": true
+      },
+      {
+        "coin": "HEMI",
+        "binance_rate_apr": 5.48,
+        "hyperliquid_rate_apr": 10.95,
+        "spread_apr": -5.48,
+        "binance_available": true,
+        "hyperliquid_available": true
+      },
+      {
+        "coin": "JTO",
+        "binance_rate_apr": -34.88,
+        "hyperliquid_rate_apr": -45.68,
+        "spread_apr": 10.8,
+        "binance_available": true,
+        "hyperliquid_available": true
+      },
+      {
+        "coin": "MERL",
+        "binance_rate_apr": -36.73,
+        "hyperliquid_rate_apr": -131.23,
+        "spread_apr": 94.49,
+        "binance_available": true,
+        "hyperliquid_available": true
+      },
+      {
+        "coin": "SOL",
+        "binance_rate_apr": 0.5,
+        "hyperliquid_rate_apr": 2.57,
+        "spread_apr": -2.07,
+        "binance_available": true,
+        "hyperliquid_available": true
+      },
+      {
+        "coin": "STABLE",
+        "binance_rate_apr": -55.6,
+        "hyperliquid_rate_apr": -241.63,
+        "spread_apr": 186.03,
+        "binance_available": true,
+        "hyperliquid_available": true
+      },
+      {
+        "coin": "XAI",
+        "binance_rate_apr": -1.09,
+        "hyperliquid_rate_apr": 10.95,
+        "spread_apr": -12.04,
+        "binance_available": true,
+        "hyperliquid_available": true
+      }
+    ]
+  },
+  {
+    "timestamp": "2026-02-26T13:03:04.722Z",
+    "regime": "UNKNOWN",
+    "coinCount": 7,
+    "spreads": [
+      {
+        "coin": "BTC",
+        "binance_rate_apr": 4.2,
+        "hyperliquid_rate_apr": -9.64,
+        "spread_apr": 13.84,
+        "binance_available": true,
+        "hyperliquid_available": true
+      },
+      {
+        "coin": "ETH",
+        "binance_rate_apr": 2.42,
+        "hyperliquid_rate_apr": -9.19,
+        "spread_apr": 11.61,
+        "binance_available": true,
+        "hyperliquid_available": true
+      },
+      {
+        "coin": "HEMI",
+        "binance_rate_apr": 5.48,
+        "hyperliquid_rate_apr": 32.17,
+        "spread_apr": -26.7,
+        "binance_available": true,
+        "hyperliquid_available": true
+      },
+      {
+        "coin": "MERL",
+        "binance_rate_apr": -38.5,
+        "hyperliquid_rate_apr": -122.21,
+        "spread_apr": 83.71,
+        "binance_available": true,
+        "hyperliquid_available": true
+      },
+      {
+        "coin": "SOL",
+        "binance_rate_apr": -9,
+        "hyperliquid_rate_apr": -9.82,
+        "spread_apr": 0.82,
+        "binance_available": true,
+        "hyperliquid_available": true
+      },
+      {
+        "coin": "STABLE",
+        "binance_rate_apr": -53.44,
+        "hyperliquid_rate_apr": -49.23,
+        "spread_apr": -4.21,
+        "binance_available": true,
+        "hyperliquid_available": true
+      },
+      {
+        "coin": "XAI",
+        "binance_rate_apr": -0.1,
+        "hyperliquid_rate_apr": 10.95,
+        "spread_apr": -11.05,
+        "binance_available": true,
+        "hyperliquid_available": true
+      }
+    ]
+  },
+  {
+    "timestamp": "2026-02-26T17:03:04.823Z",
+    "regime": "UNKNOWN",
+    "coinCount": 5,
+    "spreads": [
+      {
+        "coin": "BTC",
+        "binance_rate_apr": 3.9,
+        "hyperliquid_rate_apr": 10.95,
+        "spread_apr": -7.05,
+        "binance_available": true,
+        "hyperliquid_available": true
+      },
+      {
+        "coin": "ETH",
+        "binance_rate_apr": 2.54,
+        "hyperliquid_rate_apr": 0.56,
+        "spread_apr": 1.99,
+        "binance_available": true,
+        "hyperliquid_available": true
+      },
+      {
+        "coin": "HEMI",
+        "binance_rate_apr": 5.48,
+        "hyperliquid_rate_apr": 10.95,
+        "spread_apr": -5.48,
+        "binance_available": true,
+        "hyperliquid_available": true
+      },
+      {
+        "coin": "SOL",
+        "binance_rate_apr": -5.11,
+        "hyperliquid_rate_apr": -2.27,
+        "spread_apr": -2.84,
+        "binance_available": true,
+        "hyperliquid_available": true
+      },
+      {
+        "coin": "XAI",
+        "binance_rate_apr": -15.99,
+        "hyperliquid_rate_apr": 10.95,
+        "spread_apr": -26.94,
+        "binance_available": true,
+        "hyperliquid_available": true
+      }
+    ]
+  },
+  {
+    "timestamp": "2026-02-26T21:03:04.407Z",
+    "regime": "UNKNOWN",
+    "coinCount": 5,
+    "spreads": [
+      {
+        "coin": "BTC",
+        "binance_rate_apr": 1.6,
+        "hyperliquid_rate_apr": 10.95,
+        "spread_apr": -9.35,
+        "binance_available": true,
+        "hyperliquid_available": true
+      },
+      {
+        "coin": "ETH",
+        "binance_rate_apr": 2.23,
+        "hyperliquid_rate_apr": 10.95,
+        "spread_apr": -8.72,
+        "binance_available": true,
+        "hyperliquid_available": true
+      },
+      {
+        "coin": "HEMI",
+        "binance_rate_apr": 5.48,
+        "hyperliquid_rate_apr": 10.95,
+        "spread_apr": -5.48,
+        "binance_available": true,
+        "hyperliquid_available": true
+      },
+      {
+        "coin": "SOL",
+        "binance_rate_apr": -5.69,
+        "hyperliquid_rate_apr": 5.75,
+        "spread_apr": -11.44,
+        "binance_available": true,
+        "hyperliquid_available": true
+      },
+      {
+        "coin": "XAI",
+        "binance_rate_apr": 4.51,
+        "hyperliquid_rate_apr": 10.95,
+        "spread_apr": -6.44,
+        "binance_available": true,
+        "hyperliquid_available": true
+      }
+    ]
   }
 ]

@@ -66,13 +66,16 @@ export interface TemporalScanResult {
 
 export interface RegimeParams {
   stop: number;      // stop-loss percentage (e.g., 0.02 = 2%)
-  size: number;      // position size multiplier (1.0 = full, 0.25 = quarter)
+  size: number;      // position size multiplier (1.0 = full, 0.25 = quarter) — default for direction
+  sizeLong?: number;  // override size for LONG positions (Oracle directive 2026-02-27)
+  sizeShort?: number; // override size for SHORT positions
   maxHold: number;   // max hold time in hours
+  longRequiresSentry?: boolean; // if true, longs need Sentry approval (Oracle directive 2026-02-27)
 }
 
 export const REGIME_PARAMS: Record<string, RegimeParams> = {
   CHOPPY:        { stop: 0.02, size: 0.25, maxHold: 4 },
-  TRENDING_DOWN: { stop: 0.03, size: 0.75, maxHold: 12 },
+  TRENDING_DOWN: { stop: 0.03, size: 0.75, sizeLong: 0.25, sizeShort: 0.75, maxHold: 12, longRequiresSentry: true },
   TRENDING_UP:   { stop: 0.04, size: 0.75, maxHold: 18 },
   VOLATILE:      { stop: 0.03, size: 0.50, maxHold: 8 },
 };

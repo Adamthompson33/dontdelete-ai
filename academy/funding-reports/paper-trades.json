@@ -203,8 +203,8 @@
       "entryTime": 1771806612514,
       "entryRate": -0.0003921414,
       "notionalSize": 1000,
-      "cumulativeFunding": 8.3484411,
-      "lastCollectedAt": 1771979410317,
+      "cumulativeFunding": 11.795544300000001,
+      "lastCollectedAt": 1772065811382,
       "isOpen": true,
       "fees": 0.25
     },
@@ -217,8 +217,10 @@
       "notionalSize": 1000,
       "cumulativeFunding": 3.3811978,
       "lastCollectedAt": 1771979410317,
-      "isOpen": true,
-      "fees": 0.25
+      "isOpen": false,
+      "fees": 0.5,
+      "exitTime": 1772065811382,
+      "exitReason": "coin_dropped_from_scan"
     },
     {
       "id": "SKR-1771893012549",
@@ -227,8 +229,8 @@
       "entryTime": 1771893012549,
       "entryRate": -0.0001416465,
       "notionalSize": 1000,
-      "cumulativeFunding": 62.897596300000004,
-      "lastCollectedAt": 1771979410317,
+      "cumulativeFunding": 94.2419107,
+      "lastCollectedAt": 1772065811382,
       "isOpen": true,
       "fees": 0.25
     },
@@ -239,8 +241,8 @@
       "entryTime": 1771893013240,
       "entryRate": -0.0001407917,
       "notionalSize": 1000,
-      "cumulativeFunding": 3.6277026,
-      "lastCollectedAt": 1771979410317,
+      "cumulativeFunding": 7.9700586,
+      "lastCollectedAt": 1772065811382,
       "isOpen": true,
       "fees": 0.25
     },
@@ -253,10 +255,36 @@
       "notionalSize": 1000,
       "cumulativeFunding": 0,
       "lastCollectedAt": 1771979411113,
+      "isOpen": false,
+      "fees": 0.5,
+      "exitTime": 1772065811382,
+      "exitReason": "coin_dropped_from_scan"
+    },
+    {
+      "id": "VVV-1772065813125",
+      "coin": "VVV",
+      "direction": "SHORT_BASIS",
+      "entryTime": 1772065813125,
+      "entryRate": -0.000398678,
+      "notionalSize": 1000,
+      "cumulativeFunding": 0,
+      "lastCollectedAt": 1772065813125,
+      "isOpen": true,
+      "fees": 0.25
+    },
+    {
+      "id": "ATOM-1772065816051",
+      "coin": "ATOM",
+      "direction": "SHORT_BASIS",
+      "entryTime": 1772065816051,
+      "entryRate": -0.0002745473,
+      "notionalSize": 1000,
+      "cumulativeFunding": 0,
+      "lastCollectedAt": 1772065816051,
       "isOpen": true,
       "fees": 0.25
     }
   ],
-  "cumulativePnl": 209.91146820000003,
+  "cumulativePnl": 248.2952418,
   "lastScanAt": 0
 }

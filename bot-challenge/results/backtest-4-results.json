@@ -1,0 +1,797 @@
+{
+  "metadata": {
+    "period": "2026-02-01 to 2026-02-24",
+    "threshold_bps": 100,
+    "stops": {
+      "CHOPPY": 0.02,
+      "TRENDING_DOWN": 0.03,
+      "VOLATILE": 0.03,
+      "TRENDING_UP": 0.04,
+      "UNKNOWN": 0.03
+    },
+    "totalTrades": 11,
+    "totalTradesAll": 12
+  },
+  "regimeDistribution": {
+    "UNKNOWN": 32,
+    "TRENDING_UP": 159,
+    "CHOPPY": 60,
+    "TRENDING_DOWN": 202,
+    "VOLATILE": 267
+  },
+  "coinSignalCounts": {
+    "ACE": 1,
+    "AXS": 1,
+    "BERA": 1,
+    "GAS": 2,
+    "JTO": 3,
+    "ME": 2,
+    "SOPH": 1,
+    "UMA": 1
+  },
+  "trades": [
+    {
+      "coin": "ACE",
+      "fundingTime": 1771444800004,
+      "fundingBps": -113.11500000000001,
+      "regime": "VOLATILE",
+      "direction": "short",
+      "entryPrice": 0.175,
+      "stopPct": 0.03,
+      "results": {
+        "1h": {
+          "returnPct": 0.02857142857142844,
+          "stoppedOut": false
+        },
+        "2h": {
+          "returnPct": 0.03428571428571416,
+          "stoppedOut": false
+        },
+        "4h": {
+          "returnPct": 0.045714285714285596,
+          "stoppedOut": false
+        },
+        "6h": {
+          "returnPct": 0.05142857142857132,
+          "stoppedOut": false
+        },
+        "8h": {
+          "returnPct": 0.05142857142857132,
+          "stoppedOut": false
+        }
+      }
+    },
+    {
+      "coin": "BERA",
+      "fundingTime": 1770854400000,
+      "fundingBps": -120.6349,
+      "regime": "VOLATILE",
+      "direction": "short",
+      "entryPrice": 0.828,
+      "stopPct": 0.03,
+      "results": {
+        "1h": {
+          "returnPct": -0.03,
+          "stoppedOut": true,
+          "stoppedAtHour": 1
+        },
+        "2h": {
+          "returnPct": -0.03,
+          "stoppedOut": true,
+          "stoppedAtHour": 1
+        },
+        "4h": {
+          "returnPct": -0.03,
+          "stoppedOut": true,
+          "stoppedAtHour": 1
+        },
+        "6h": {
+          "returnPct": -0.03,
+          "stoppedOut": true,
+          "stoppedAtHour": 1
+        },
+        "8h": {
+          "returnPct": -0.03,
+          "stoppedOut": true,
+          "stoppedAtHour": 1
+        }
+      }
+    },
+    {
+      "coin": "GAS",
+      "fundingTime": 1769961600000,
+      "fundingBps": -137.5252,
+      "regime": "VOLATILE",
+      "direction": "short",
+      "entryPrice": 1.842,
+      "stopPct": 0.03,
+      "results": {
+        "1h": {
+          "returnPct": -0.007057546145493974,
+          "stoppedOut": false
+        },
+        "2h": {
+          "returnPct": -0.01628664495114008,
+          "stoppedOut": false
+        },
+        "4h": {
+          "returnPct": -0.013029315960912063,
+          "stoppedOut": false
+        },
+        "6h": {
+          "returnPct": -0.03,
+          "stoppedOut": true,
+          "stoppedAtHour": 6
+        },
+        "8h": {
+          "returnPct": -0.03,
+          "stoppedOut": true,
+          "stoppedAtHour": 6
+        }
+      }
+    },
+    {
+      "coin": "GAS",
+      "fundingTime": 1770004800000,
+      "fundingBps": -115.95070000000001,
+      "regime": "VOLATILE",
+      "direction": "short",
+      "entryPrice": 1.882,
+      "stopPct": 0.03,
+      "results": {
+        "1h": {
+          "returnPct": 0.031880977683315534,
+          "stoppedOut": false
+        },
+        "2h": {
+          "returnPct": 0.027630180658873446,
+          "stoppedOut": false
+        },
+        "4h": {
+          "returnPct": 0.02284803400637616,
+          "stoppedOut": false
+        },
+        "6h": {
+          "returnPct": 0.019128586609989274,
+          "stoppedOut": false
+        },
+        "8h": {
+          "returnPct": 0.02444208289054188,
+          "stoppedOut": false
+        }
+      }
+    },
+    {
+      "coin": "JTO",
+      "fundingTime": 1771329600000,
+      "fundingBps": -150.0455,
+      "regime": "CHOPPY",
+      "direction": "short",
+      "entryPrice": 0.342,
+      "stopPct": 0.02,
+      "results": {
+        "1h": {
+          "returnPct": -0.02,
+          "stoppedOut": true,
+          "stoppedAtHour": 1
+        },
+        "2h": {
+          "returnPct": -0.02,
+          "stoppedOut": true,
+          "stoppedAtHour": 1
+        },
+        "4h": {
+          "returnPct": -0.02,
+          "stoppedOut": true,
+          "stoppedAtHour": 1
+        },
+        "6h": {
+          "returnPct": -0.02,
+          "stoppedOut": true,
+          "stoppedAtHour": 1
+        },
+        "8h": {
+          "returnPct": -0.02,
+          "stoppedOut": true,
+          "stoppedAtHour": 1
+        }
+      }
+    },
+    {
+      "coin": "JTO",
+      "fundingTime": 1771344000002,
+      "fundingBps": -172.62779999999998,
+      "regime": "TRENDING_DOWN",
+      "direction": "short",
+      "entryPrice": 0.3205,
+      "stopPct": 0.03,
+      "results": {
+        "1h": {
+          "returnPct": 0.014664586583463281,
+          "stoppedOut": false
+        },
+        "2h": {
+          "returnPct": -0.012792511700467996,
+          "stoppedOut": false
+        },
+        "4h": {
+          "returnPct": -0.03,
+          "stoppedOut": true,
+          "stoppedAtHour": 3
+        },
+        "6h": {
+          "returnPct": -0.03,
+          "stoppedOut": true,
+          "stoppedAtHour": 3
+        },
+        "8h": {
+          "returnPct": -0.03,
+          "stoppedOut": true,
+          "stoppedAtHour": 3
+        }
+      }
+    },
+    {
+      "coin": "JTO",
+      "fundingTime": 1771416000007,
+      "fundingBps": -102.4224,
+      "regime": "CHOPPY",
+      "direction": "short",
+      "entryPrice": 0.3095,
+      "stopPct": 0.02,
+      "results": {
+        "1h": {
+          "returnPct": -0.008400646203554091,
+          "stoppedOut": false
+        },
+        "2h": {
+          "returnPct": 0.002907915993538003,
+          "stoppedOut": false
+        },
+        "4h": {
+          "returnPct": 0.011308562197092094,
+          "stoppedOut": false
+        },
+        "6h": {
+          "returnPct": 0.02907915993537967,
+          "stoppedOut": false
+        },
+        "8h": {
+          "returnPct": 0.023586429725363404,
+          "stoppedOut": false
+        }
+      }
+    },
+    {
+      "coin": "ME",
+      "fundingTime": 1770883200001,
+      "fundingBps": -171.2535,
+      "regime": "CHOPPY",
+      "direction": "short",
+      "entryPrice": 0.1888,
+      "stopPct": 0.02,
+      "results": {
+        "1h": {
+          "returnPct": -0.02,
+          "stoppedOut": true,
+          "stoppedAtHour": 1
+        },
+        "2h": {
+          "returnPct": -0.02,
+          "stoppedOut": true,
+          "stoppedAtHour": 1
+        },
+        "4h": {
+          "returnPct": -0.02,
+          "stoppedOut": true,
+          "stoppedAtHour": 1
+        },
+        "6h": {
+          "returnPct": -0.02,
+          "stoppedOut": true,
+          "stoppedAtHour": 1
+        },
+        "8h": {
+          "returnPct": -0.02,
+          "stoppedOut": true,
+          "stoppedAtHour": 1
+        }
+      }
+    },
+    {
+      "coin": "ME",
+      "fundingTime": 1770897600002,
+      "fundingBps": -200,
+      "regime": "TRENDING_UP",
+      "direction": "short",
+      "entryPrice": 0.1914,
+      "stopPct": 0.04,
+      "results": {
+        "1h": {
+          "returnPct": -0.003134796238244604,
+          "stoppedOut": false
+        },
+        "2h": {
+          "returnPct": -0.04,
+          "stoppedOut": true,
+          "stoppedAtHour": 2
+        },
+        "4h": {
+          "returnPct": -0.04,
+          "stoppedOut": true,
+          "stoppedAtHour": 2
+        },
+        "6h": {
+          "returnPct": -0.04,
+          "stoppedOut": true,
+          "stoppedAtHour": 2
+        },
+        "8h": {
+          "returnPct": -0.04,
+          "stoppedOut": true,
+          "stoppedAtHour": 2
+        }
+      }
+    },
+    {
+      "coin": "SOPH",
+      "fundingTime": 1769932800004,
+      "fundingBps": -104.6085,
+      "regime": "TRENDING_DOWN",
+      "direction": "short",
+      "entryPrice": 0.0125,
+      "stopPct": 0.03,
+      "results": {
+        "1h": {
+          "returnPct": 0.03360000000000002,
+          "stoppedOut": false
+        },
+        "2h": {
+          "returnPct": 0.054400000000000004,
+          "stoppedOut": false
+        },
+        "4h": {
+          "returnPct": 0.07440000000000002,
+          "stoppedOut": false
+        },
+        "6h": {
+          "returnPct": 0.0952,
+          "stoppedOut": false
+        },
+        "8h": {
+          "returnPct": 0.09760000000000005,
+          "stoppedOut": false
+        }
+      }
+    },
+    {
+      "coin": "UMA",
+      "fundingTime": 1771891200007,
+      "fundingBps": -127.84729999999999,
+      "regime": "TRENDING_DOWN",
+      "direction": "short",
+      "entryPrice": 0.493,
+      "stopPct": 0.03,
+      "results": {
+        "1h": {
+          "returnPct": 0.02231237322515215,
+          "stoppedOut": false
+        },
+        "2h": {
+          "returnPct": 0.026369168356997996,
+          "stoppedOut": false
+        },
+        "4h": {
+          "returnPct": 0.04868154158215014,
+          "stoppedOut": false
+        },
+        "6h": {
+          "returnPct": 0.08316430020283971,
+          "stoppedOut": false
+        },
+        "8h": {
+          "returnPct": 0.08519269776876265,
+          "stoppedOut": false
+        }
+      }
+    }
+  ],
+  "tradesAll": [
+    {
+      "coin": "ACE",
+      "fundingTime": 1771444800004,
+      "fundingBps": -113.11500000000001,
+      "regime": "VOLATILE",
+      "direction": "short",
+      "entryPrice": 0.175,
+      "stopPct": 0.03,
+      "results": {
+        "1h": {
+          "returnPct": 0.02857142857142844,
+          "stoppedOut": false
+        },
+        "2h": {
+          "returnPct": 0.03428571428571416,
+          "stoppedOut": false
+        },
+        "4h": {
+          "returnPct": 0.045714285714285596,
+          "stoppedOut": false
+        },
+        "6h": {
+          "returnPct": 0.05142857142857132,
+          "stoppedOut": false
+        },
+        "8h": {
+          "returnPct": 0.05142857142857132,
+          "stoppedOut": false
+        }
+      }
+    },
+    {
+      "coin": "AXS",
+      "fundingTime": 1771560000003,
+      "fundingBps": -117.8072,
+      "regime": "TRENDING_UP",
+      "direction": "short",
+      "entryPrice": 1.32,
+      "stopPct": 0.04,
+      "results": {
+        "1h": {
+          "returnPct": -0.010606060606060615,
+          "stoppedOut": false
+        },
+        "2h": {
+          "returnPct": -0.007575757575757582,
+          "stoppedOut": false
+        },
+        "4h": {
+          "returnPct": 0.024242424242424263,
+          "stoppedOut": false
+        },
+        "6h": {
+          "returnPct": 0.011363636363636458,
+          "stoppedOut": false
+        },
+        "8h": {
+          "returnPct": 0.021969696969697073,
+          "stoppedOut": false
+        }
+      }
+    },
+    {
+      "coin": "BERA",
+      "fundingTime": 1770854400000,
+      "fundingBps": -120.6349,
+      "regime": "VOLATILE",
+      "direction": "short",
+      "entryPrice": 0.828,
+      "stopPct": 0.03,
+      "results": {
+        "1h": {
+          "returnPct": -0.03,
+          "stoppedOut": true,
+          "stoppedAtHour": 1
+        },
+        "2h": {
+          "returnPct": -0.03,
+          "stoppedOut": true,
+          "stoppedAtHour": 1
+        },
+        "4h": {
+          "returnPct": -0.03,
+          "stoppedOut": true,
+          "stoppedAtHour": 1
+        },
+        "6h": {
+          "returnPct": -0.03,
+          "stoppedOut": true,
+          "stoppedAtHour": 1
+        },
+        "8h": {
+          "returnPct": -0.03,
+          "stoppedOut": true,
+          "stoppedAtHour": 1
+        }
+      }
+    },
+    {
+      "coin": "GAS",
+      "fundingTime": 1769961600000,
+      "fundingBps": -137.5252,
+      "regime": "VOLATILE",
+      "direction": "short",
+      "entryPrice": 1.842,
+      "stopPct": 0.03,
+      "results": {
+        "1h": {
+          "returnPct": -0.007057546145493974,
+          "stoppedOut": false
+        },
+        "2h": {
+          "returnPct": -0.01628664495114008,
+          "stoppedOut": false
+        },
+        "4h": {
+          "returnPct": -0.013029315960912063,
+          "stoppedOut": false
+        },
+        "6h": {
+          "returnPct": -0.03,
+          "stoppedOut": true,
+          "stoppedAtHour": 6
+        },
+        "8h": {
+          "returnPct": -0.03,
+          "stoppedOut": true,
+          "stoppedAtHour": 6
+        }
+      }
+    },
+    {
+      "coin": "GAS",
+      "fundingTime": 1770004800000,
+      "fundingBps": -115.95070000000001,
+      "regime": "VOLATILE",
+      "direction": "short",
+      "entryPrice": 1.882,
+      "stopPct": 0.03,
+      "results": {
+        "1h": {
+          "returnPct": 0.031880977683315534,
+          "stoppedOut": false
+        },
+        "2h": {
+          "returnPct": 0.027630180658873446,
+          "stoppedOut": false
+        },
+        "4h": {
+          "returnPct": 0.02284803400637616,
+          "stoppedOut": false
+        },
+        "6h": {
+          "returnPct": 0.019128586609989274,
+          "stoppedOut": false
+        },
+        "8h": {
+          "returnPct": 0.02444208289054188,
+          "stoppedOut": false
+        }
+      }
+    },
+    {
+      "coin": "JTO",
+      "fundingTime": 1771329600000,
+      "fundingBps": -150.0455,
+      "regime": "CHOPPY",
+      "direction": "short",
+      "entryPrice": 0.342,
+      "stopPct": 0.02,
+      "results": {
+        "1h": {
+          "returnPct": -0.02,
+          "stoppedOut": true,
+          "stoppedAtHour": 1
+        },
+        "2h": {
+          "returnPct": -0.02,
+          "stoppedOut": true,
+          "stoppedAtHour": 1
+        },
+        "4h": {
+          "returnPct": -0.02,
+          "stoppedOut": true,
+          "stoppedAtHour": 1
+        },
+        "6h": {
+          "returnPct": -0.02,
+          "stoppedOut": true,
+          "stoppedAtHour": 1
+        },
+        "8h": {
+          "returnPct": -0.02,
+          "stoppedOut": true,
+          "stoppedAtHour": 1
+        }
+      }
+    },
+    {
+      "coin": "JTO",
+      "fundingTime": 1771344000002,
+      "fundingBps": -172.62779999999998,
+      "regime": "TRENDING_DOWN",
+      "direction": "short",
+      "entryPrice": 0.3205,
+      "stopPct": 0.03,
+      "results": {
+        "1h": {
+          "returnPct": 0.014664586583463281,
+          "stoppedOut": false
+        },
+        "2h": {
+          "returnPct": -0.012792511700467996,
+          "stoppedOut": false
+        },
+        "4h": {
+          "returnPct": -0.03,
+          "stoppedOut": true,
+          "stoppedAtHour": 3
+        },
+        "6h": {
+          "returnPct": -0.03,
+          "stoppedOut": true,
+          "stoppedAtHour": 3
+        },
+        "8h": {
+          "returnPct": -0.03,
+          "stoppedOut": true,
+          "stoppedAtHour": 3
+        }
+      }
+    },
+    {
+      "coin": "JTO",
+      "fundingTime": 1771416000007,
+      "fundingBps": -102.4224,
+      "regime": "CHOPPY",
+      "direction": "short",
+      "entryPrice": 0.3095,
+      "stopPct": 0.02,
+      "results": {
+        "1h": {
+          "returnPct": -0.008400646203554091,
+          "stoppedOut": false
+        },
+        "2h": {
+          "returnPct": 0.002907915993538003,
+          "stoppedOut": false
+        },
+        "4h": {
+          "returnPct": 0.011308562197092094,
+          "stoppedOut": false
+        },
+        "6h": {
+          "returnPct": 0.02907915993537967,
+          "stoppedOut": false
+        },
+        "8h": {
+          "returnPct": 0.023586429725363404,
+          "stoppedOut": false
+        }
+      }
+    },
+    {
+      "coin": "ME",
+      "fundingTime": 1770883200001,
+      "fundingBps": -171.2535,
+      "regime": "CHOPPY",
+      "direction": "short",
+      "entryPrice": 0.1888,
+      "stopPct": 0.02,
+      "results": {
+        "1h": {
+          "returnPct": -0.02,
+          "stoppedOut": true,
+          "stoppedAtHour": 1
+        },
+        "2h": {
+          "returnPct": -0.02,
+          "stoppedOut": true,
+          "stoppedAtHour": 1
+        },
+        "4h": {
+          "returnPct": -0.02,
+          "stoppedOut": true,
+          "stoppedAtHour": 1
+        },
+        "6h": {
+          "returnPct": -0.02,
+          "stoppedOut": true,
+          "stoppedAtHour": 1
+        },
+        "8h": {
+          "returnPct": -0.02,
+          "stoppedOut": true,
+          "stoppedAtHour": 1
+        }
+      }
+    },
+    {
+      "coin": "ME",
+      "fundingTime": 1770897600002,
+      "fundingBps": -200,
+      "regime": "TRENDING_UP",
+      "direction": "short",
+      "entryPrice": 0.1914,
+      "stopPct": 0.04,
+      "results": {
+        "1h": {
+          "returnPct": -0.003134796238244604,
+          "stoppedOut": false
+        },
+        "2h": {
+          "returnPct": -0.04,
+          "stoppedOut": true,
+          "stoppedAtHour": 2
+        },
+        "4h": {
+          "returnPct": -0.04,
+          "stoppedOut": true,
+          "stoppedAtHour": 2
+        },
+        "6h": {
+          "returnPct": -0.04,
+          "stoppedOut": true,
+          "stoppedAtHour": 2
+        },
+        "8h": {
+          "returnPct": -0.04,
+          "stoppedOut": true,
+          "stoppedAtHour": 2
+        }
+      }
+    },
+    {
+      "coin": "SOPH",
+      "fundingTime": 1769932800004,
+      "fundingBps": -104.6085,
+      "regime": "TRENDING_DOWN",
+      "direction": "short",
+      "entryPrice": 0.0125,
+      "stopPct": 0.03,
+      "results": {
+        "1h": {
+          "returnPct": 0.03360000000000002,
+          "stoppedOut": false
+        },
+        "2h": {
+          "returnPct": 0.054400000000000004,
+          "stoppedOut": false
+        },
+        "4h": {
+          "returnPct": 0.07440000000000002,
+          "stoppedOut": false
+        },
+        "6h": {
+          "returnPct": 0.0952,
+          "stoppedOut": false
+        },
+        "8h": {
+          "returnPct": 0.09760000000000005,
+          "stoppedOut": false
+        }
+      }
+    },
+    {
+      "coin": "UMA",
+      "fundingTime": 1771891200007,
+      "fundingBps": -127.84729999999999,
+      "regime": "TRENDING_DOWN",
+      "direction": "short",
+      "entryPrice": 0.493,
+      "stopPct": 0.03,
+      "results": {
+        "1h": {
+          "returnPct": 0.02231237322515215,
+          "stoppedOut": false
+        },
+        "2h": {
+          "returnPct": 0.026369168356997996,
+          "stoppedOut": false
+        },
+        "4h": {
+          "returnPct": 0.04868154158215014,
+          "stoppedOut": false
+        },
+        "6h": {
+          "returnPct": 0.08316430020283971,
+          "stoppedOut": false
+        },
+        "8h": {
+          "returnPct": 0.08519269776876265,
+          "stoppedOut": false
+        }
+      }
+    }
+  ]
+}

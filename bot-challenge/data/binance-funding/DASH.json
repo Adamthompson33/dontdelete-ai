@@ -1,0 +1,632 @@
+[
+  {
+    "t": 1769472000002,
+    "symbol": "DASHUSDT",
+    "rate": 0.0001,
+    "rateBps": 1,
+    "rateAPR": 10.950000000000001
+  },
+  {
+    "t": 1769500800000,
+    "symbol": "DASHUSDT",
+    "rate": -0.00002498,
+    "rateBps": -0.24980000000000002,
+    "rateAPR": -2.7353100000000006
+  },
+  {
+    "t": 1769529600000,
+    "symbol": "DASHUSDT",
+    "rate": -0.00037477,
+    "rateBps": -3.7477,
+    "rateAPR": -41.037315
+  },
+  {
+    "t": 1769558400000,
+    "symbol": "DASHUSDT",
+    "rate": -0.00009566,
+    "rateBps": -0.9566,
+    "rateAPR": -10.47477
+  },
+  {
+    "t": 1769587200000,
+    "symbol": "DASHUSDT",
+    "rate": -0.0000215,
+    "rateBps": -0.215,
+    "rateAPR": -2.35425
+  },
+  {
+    "t": 1769616000000,
+    "symbol": "DASHUSDT",
+    "rate": -0.00052365,
+    "rateBps": -5.2364999999999995,
+    "rateAPR": -57.33967499999999
+  },
+  {
+    "t": 1769644800000,
+    "symbol": "DASHUSDT",
+    "rate": -0.00012605,
+    "rateBps": -1.2605,
+    "rateAPR": -13.802475
+  },
+  {
+    "t": 1769673600009,
+    "symbol": "DASHUSDT",
+    "rate": -0.00007059,
+    "rateBps": -0.7059,
+    "rateAPR": -7.729605
+  },
+  {
+    "t": 1769702400000,
+    "symbol": "DASHUSDT",
+    "rate": 0.00003648,
+    "rateBps": 0.3648,
+    "rateAPR": 3.9945600000000003
+  },
+  {
+    "t": 1769731200008,
+    "symbol": "DASHUSDT",
+    "rate": 0.000057,
+    "rateBps": 0.5700000000000001,
+    "rateAPR": 6.2415
+  },
+  {
+    "t": 1769760000000,
+    "symbol": "DASHUSDT",
+    "rate": 0.0001,
+    "rateBps": 1,
+    "rateAPR": 10.950000000000001
+  },
+  {
+    "t": 1769788800001,
+    "symbol": "DASHUSDT",
+    "rate": 0.0001,
+    "rateBps": 1,
+    "rateAPR": 10.950000000000001
+  },
+  {
+    "t": 1769817600000,
+    "symbol": "DASHUSDT",
+    "rate": 0.0001,
+    "rateBps": 1,
+    "rateAPR": 10.950000000000001
+  },
+  {
+    "t": 1769846400001,
+    "symbol": "DASHUSDT",
+    "rate": 0.0001,
+    "rateBps": 1,
+    "rateAPR": 10.950000000000001
+  },
+  {
+    "t": 1769875200009,
+    "symbol": "DASHUSDT",
+    "rate": 0.0001,
+    "rateBps": 1,
+    "rateAPR": 10.950000000000001
+  },
+  {
+    "t": 1769904000001,
+    "symbol": "DASHUSDT",
+    "rate": 0.00009037,
+    "rateBps": 0.9037000000000001,
+    "rateAPR": 9.895515000000001
+  },
+  {
+    "t": 1769932800004,
+    "symbol": "DASHUSDT",
+    "rate": 0.0001,
+    "rateBps": 1,
+    "rateAPR": 10.950000000000001
+  },
+  {
+    "t": 1769961600000,
+    "symbol": "DASHUSDT",
+    "rate": 0.0000794,
+    "rateBps": 0.794,
+    "rateAPR": 8.6943
+  },
+  {
+    "t": 1769990400000,
+    "symbol": "DASHUSDT",
+    "rate": 0.00004347,
+    "rateBps": 0.43470000000000003,
+    "rateAPR": 4.759965000000001
+  },
+  {
+    "t": 1770019200014,
+    "symbol": "DASHUSDT",
+    "rate": 0.0000451,
+    "rateBps": 0.451,
+    "rateAPR": 4.938449999999999
+  },
+  {
+    "t": 1770048000000,
+    "symbol": "DASHUSDT",
+    "rate": -0.00004818,
+    "rateBps": -0.4818,
+    "rateAPR": -5.275710000000001
+  },
+  {
+    "t": 1770076800000,
+    "symbol": "DASHUSDT",
+    "rate": -0.00005686,
+    "rateBps": -0.5686,
+    "rateAPR": -6.226170000000001
+  },
+  {
+    "t": 1770105600007,
+    "symbol": "DASHUSDT",
+    "rate": 0.00006433,
+    "rateBps": 0.6433,
+    "rateAPR": 7.044135
+  },
+  {
+    "t": 1770134400000,
+    "symbol": "DASHUSDT",
+    "rate": 0.00008393,
+    "rateBps": 0.8393,
+    "rateAPR": 9.190335
+  },
+  {
+    "t": 1770163200002,
+    "symbol": "DASHUSDT",
+    "rate": 0.0001,
+    "rateBps": 1,
+    "rateAPR": 10.950000000000001
+  },
+  {
+    "t": 1770192000007,
+    "symbol": "DASHUSDT",
+    "rate": 0.0000654,
+    "rateBps": 0.654,
+    "rateAPR": 7.1613
+  },
+  {
+    "t": 1770220800000,
+    "symbol": "DASHUSDT",
+    "rate": 0.00000865,
+    "rateBps": 0.08650000000000001,
+    "rateAPR": 0.9471750000000001
+  },
+  {
+    "t": 1770249600011,
+    "symbol": "DASHUSDT",
+    "rate": 0.00005166,
+    "rateBps": 0.5166,
+    "rateAPR": 5.656769999999999
+  },
+  {
+    "t": 1770278400000,
+    "symbol": "DASHUSDT",
+    "rate": 0.0001,
+    "rateBps": 1,
+    "rateAPR": 10.950000000000001
+  },
+  {
+    "t": 1770307200007,
+    "symbol": "DASHUSDT",
+    "rate": 0.0001,
+    "rateBps": 1,
+    "rateAPR": 10.950000000000001
+  },
+  {
+    "t": 1770336000000,
+    "symbol": "DASHUSDT",
+    "rate": 0.00006854,
+    "rateBps": 0.6854,
+    "rateAPR": 7.50513
+  },
+  {
+    "t": 1770364800001,
+    "symbol": "DASHUSDT",
+    "rate": 0.00002352,
+    "rateBps": 0.2352,
+    "rateAPR": 2.57544
+  },
+  {
+    "t": 1770393600000,
+    "symbol": "DASHUSDT",
+    "rate": -0.00019421,
+    "rateBps": -1.9421,
+    "rateAPR": -21.265995
+  },
+  {
+    "t": 1770422400003,
+    "symbol": "DASHUSDT",
+    "rate": 0.00009305,
+    "rateBps": 0.9305,
+    "rateAPR": 10.188975
+  },
+  {
+    "t": 1770451200000,
+    "symbol": "DASHUSDT",
+    "rate": -0.00007126,
+    "rateBps": -0.7126,
+    "rateAPR": -7.802970000000001
+  },
+  {
+    "t": 1770480000010,
+    "symbol": "DASHUSDT",
+    "rate": 0.0001,
+    "rateBps": 1,
+    "rateAPR": 10.950000000000001
+  },
+  {
+    "t": 1770508800003,
+    "symbol": "DASHUSDT",
+    "rate": 0.00007404,
+    "rateBps": 0.7404000000000001,
+    "rateAPR": 8.107380000000001
+  },
+  {
+    "t": 1770537600000,
+    "symbol": "DASHUSDT",
+    "rate": 0.00008206,
+    "rateBps": 0.8206,
+    "rateAPR": 8.98557
+  },
+  {
+    "t": 1770566400000,
+    "symbol": "DASHUSDT",
+    "rate": -0.00012561,
+    "rateBps": -1.2561000000000002,
+    "rateAPR": -13.754295000000003
+  },
+  {
+    "t": 1770595200002,
+    "symbol": "DASHUSDT",
+    "rate": -0.0001601,
+    "rateBps": -1.601,
+    "rateAPR": -17.530949999999997
+  },
+  {
+    "t": 1770624000001,
+    "symbol": "DASHUSDT",
+    "rate": 0.00002152,
+    "rateBps": 0.2152,
+    "rateAPR": 2.35644
+  },
+  {
+    "t": 1770652800007,
+    "symbol": "DASHUSDT",
+    "rate": -0.00003086,
+    "rateBps": -0.3086,
+    "rateAPR": -3.3791700000000002
+  },
+  {
+    "t": 1770681600000,
+    "symbol": "DASHUSDT",
+    "rate": 0.0001,
+    "rateBps": 1,
+    "rateAPR": 10.950000000000001
+  },
+  {
+    "t": 1770710400007,
+    "symbol": "DASHUSDT",
+    "rate": 0.0000676,
+    "rateBps": 0.676,
+    "rateAPR": 7.402200000000001
+  },
+  {
+    "t": 1770739200000,
+    "symbol": "DASHUSDT",
+    "rate": -0.00023601,
+    "rateBps": -2.3601,
+    "rateAPR": -25.843094999999998
+  },
+  {
+    "t": 1770768000000,
+    "symbol": "DASHUSDT",
+    "rate": 0.00008612,
+    "rateBps": 0.8612,
+    "rateAPR": 9.430140000000002
+  },
+  {
+    "t": 1770796800006,
+    "symbol": "DASHUSDT",
+    "rate": 0.00005359,
+    "rateBps": 0.5359,
+    "rateAPR": 5.868105
+  },
+  {
+    "t": 1770825600000,
+    "symbol": "DASHUSDT",
+    "rate": -0.00037779,
+    "rateBps": -3.7779000000000003,
+    "rateAPR": -41.368005000000004
+  },
+  {
+    "t": 1770854400000,
+    "symbol": "DASHUSDT",
+    "rate": 0.00006312,
+    "rateBps": 0.6312000000000001,
+    "rateAPR": 6.911640000000001
+  },
+  {
+    "t": 1770883200001,
+    "symbol": "DASHUSDT",
+    "rate": 0.0001,
+    "rateBps": 1,
+    "rateAPR": 10.950000000000001
+  },
+  {
+    "t": 1770912000001,
+    "symbol": "DASHUSDT",
+    "rate": 0.00003162,
+    "rateBps": 0.3162,
+    "rateAPR": 3.46239
+  },
+  {
+    "t": 1770940800007,
+    "symbol": "DASHUSDT",
+    "rate": 0.0001,
+    "rateBps": 1,
+    "rateAPR": 10.950000000000001
+  },
+  {
+    "t": 1770969600003,
+    "symbol": "DASHUSDT",
+    "rate": 0.0001,
+    "rateBps": 1,
+    "rateAPR": 10.950000000000001
+  },
+  {
+    "t": 1770998400005,
+    "symbol": "DASHUSDT",
+    "rate": -0.00003665,
+    "rateBps": -0.36650000000000005,
+    "rateAPR": -4.013175
+  },
+  {
+    "t": 1771027200002,
+    "symbol": "DASHUSDT",
+    "rate": -0.00005268,
+    "rateBps": -0.5267999999999999,
+    "rateAPR": -5.76846
+  },
+  {
+    "t": 1771056000004,
+    "symbol": "DASHUSDT",
+    "rate": -0.00038985,
+    "rateBps": -3.8985000000000003,
+    "rateAPR": -42.68857500000001
+  },
+  {
+    "t": 1771084800002,
+    "symbol": "DASHUSDT",
+    "rate": -0.00023748,
+    "rateBps": -2.3748,
+    "rateAPR": -26.004060000000003
+  },
+  {
+    "t": 1771113600000,
+    "symbol": "DASHUSDT",
+    "rate": -0.00030171,
+    "rateBps": -3.0171,
+    "rateAPR": -33.037245000000006
+  },
+  {
+    "t": 1771142400002,
+    "symbol": "DASHUSDT",
+    "rate": -0.00036829,
+    "rateBps": -3.6829,
+    "rateAPR": -40.327754999999996
+  },
+  {
+    "t": 1771171200000,
+    "symbol": "DASHUSDT",
+    "rate": -0.00001936,
+    "rateBps": -0.19360000000000002,
+    "rateAPR": -2.11992
+  },
+  {
+    "t": 1771200000001,
+    "symbol": "DASHUSDT",
+    "rate": -0.00012634,
+    "rateBps": -1.2634,
+    "rateAPR": -13.83423
+  },
+  {
+    "t": 1771228800003,
+    "symbol": "DASHUSDT",
+    "rate": -0.00005199,
+    "rateBps": -0.5199,
+    "rateAPR": -5.6929050000000005
+  },
+  {
+    "t": 1771257600000,
+    "symbol": "DASHUSDT",
+    "rate": -0.00014666,
+    "rateBps": -1.4666000000000001,
+    "rateAPR": -16.05927
+  },
+  {
+    "t": 1771286400008,
+    "symbol": "DASHUSDT",
+    "rate": -0.00012955,
+    "rateBps": -1.2955,
+    "rateAPR": -14.185725000000001
+  },
+  {
+    "t": 1771315200001,
+    "symbol": "DASHUSDT",
+    "rate": 0.00000568,
+    "rateBps": 0.056799999999999996,
+    "rateAPR": 0.62196
+  },
+  {
+    "t": 1771344000002,
+    "symbol": "DASHUSDT",
+    "rate": 0.00005077,
+    "rateBps": 0.5076999999999999,
+    "rateAPR": 5.559315
+  },
+  {
+    "t": 1771372800000,
+    "symbol": "DASHUSDT",
+    "rate": 0.0000417,
+    "rateBps": 0.417,
+    "rateAPR": 4.56615
+  },
+  {
+    "t": 1771401600000,
+    "symbol": "DASHUSDT",
+    "rate": 0.0001,
+    "rateBps": 1,
+    "rateAPR": 10.950000000000001
+  },
+  {
+    "t": 1771430400011,
+    "symbol": "DASHUSDT",
+    "rate": -0.00009408,
+    "rateBps": -0.9408,
+    "rateAPR": -10.30176
+  },
+  {
+    "t": 1771459200013,
+    "symbol": "DASHUSDT",
+    "rate": -0.00002894,
+    "rateBps": -0.2894,
+    "rateAPR": -3.1689299999999996
+  },
+  {
+    "t": 1771488000000,
+    "symbol": "DASHUSDT",
+    "rate": -0.00020252,
+    "rateBps": -2.0252,
+    "rateAPR": -22.17594
+  },
+  {
+    "t": 1771516800003,
+    "symbol": "DASHUSDT",
+    "rate": 0.00005827,
+    "rateBps": 0.5827,
+    "rateAPR": 6.380565000000001
+  },
+  {
+    "t": 1771545600000,
+    "symbol": "DASHUSDT",
+    "rate": 0.00001731,
+    "rateBps": 0.17309999999999998,
+    "rateAPR": 1.895445
+  },
+  {
+    "t": 1771574400000,
+    "symbol": "DASHUSDT",
+    "rate": -0.00003425,
+    "rateBps": -0.34249999999999997,
+    "rateAPR": -3.750375
+  },
+  {
+    "t": 1771603200000,
+    "symbol": "DASHUSDT",
+    "rate": -0.00021418,
+    "rateBps": -2.1418,
+    "rateAPR": -23.452710000000003
+  },
+  {
+    "t": 1771632000004,
+    "symbol": "DASHUSDT",
+    "rate": -0.00046555,
+    "rateBps": -4.6555,
+    "rateAPR": -50.97772500000001
+  },
+  {
+    "t": 1771660800000,
+    "symbol": "DASHUSDT",
+    "rate": 0.00002246,
+    "rateBps": 0.2246,
+    "rateAPR": 2.45937
+  },
+  {
+    "t": 1771689600005,
+    "symbol": "DASHUSDT",
+    "rate": -0.00018872,
+    "rateBps": -1.8872,
+    "rateAPR": -20.66484
+  },
+  {
+    "t": 1771718400001,
+    "symbol": "DASHUSDT",
+    "rate": 0.00001535,
+    "rateBps": 0.1535,
+    "rateAPR": 1.680825
+  },
+  {
+    "t": 1771747200004,
+    "symbol": "DASHUSDT",
+    "rate": -0.00035312,
+    "rateBps": -3.5312,
+    "rateAPR": -38.66664
+  },
+  {
+    "t": 1771776000000,
+    "symbol": "DASHUSDT",
+    "rate": -0.00012237,
+    "rateBps": -1.2237,
+    "rateAPR": -13.399515000000001
+  },
+  {
+    "t": 1771804800001,
+    "symbol": "DASHUSDT",
+    "rate": -0.00027718,
+    "rateBps": -2.7718000000000003,
+    "rateAPR": -30.351210000000002
+  },
+  {
+    "t": 1771833600000,
+    "symbol": "DASHUSDT",
+    "rate": -0.00114236,
+    "rateBps": -11.4236,
+    "rateAPR": -125.08842
+  },
+  {
+    "t": 1771862400000,
+    "symbol": "DASHUSDT",
+    "rate": -0.00152181,
+    "rateBps": -15.2181,
+    "rateAPR": -166.638195
+  },
+  {
+    "t": 1771891200007,
+    "symbol": "DASHUSDT",
+    "rate": -0.00027224,
+    "rateBps": -2.7224,
+    "rateAPR": -29.81028
+  },
+  {
+    "t": 1771920000000,
+    "symbol": "DASHUSDT",
+    "rate": -0.00022945,
+    "rateBps": -2.2944999999999998,
+    "rateAPR": -25.124775
+  },
+  {
+    "t": 1771948800001,
+    "symbol": "DASHUSDT",
+    "rate": -0.00026665,
+    "rateBps": -2.6665,
+    "rateAPR": -29.198175
+  },
+  {
+    "t": 1771977600001,
+    "symbol": "DASHUSDT",
+    "rate": -0.00003075,
+    "rateBps": -0.3075,
+    "rateAPR": -3.367125
+  },
+  {
+    "t": 1772006400007,
+    "symbol": "DASHUSDT",
+    "rate": 0.00001275,
+    "rateBps": 0.1275,
+    "rateAPR": 1.396125
+  },
+  {
+    "t": 1772035200000,
+    "symbol": "DASHUSDT",
+    "rate": 0.00005483,
+    "rateBps": 0.5483,
+    "rateAPR": 6.0038849999999995
+  }
+]

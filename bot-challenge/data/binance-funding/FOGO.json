@@ -1,0 +1,1262 @@
+[
+  {
+    "t": 1769472000002,
+    "symbol": "FOGOUSDT",
+    "rate": -0.00020802,
+    "rateBps": -2.0802,
+    "rateAPR": -22.778190000000002
+  },
+  {
+    "t": 1769486400002,
+    "symbol": "FOGOUSDT",
+    "rate": -0.00046953,
+    "rateBps": -4.6953000000000005,
+    "rateAPR": -51.413534999999996
+  },
+  {
+    "t": 1769500800000,
+    "symbol": "FOGOUSDT",
+    "rate": -0.00033087,
+    "rateBps": -3.3087,
+    "rateAPR": -36.230264999999996
+  },
+  {
+    "t": 1769515200006,
+    "symbol": "FOGOUSDT",
+    "rate": -0.00074218,
+    "rateBps": -7.4218,
+    "rateAPR": -81.26871
+  },
+  {
+    "t": 1769529600000,
+    "symbol": "FOGOUSDT",
+    "rate": -0.00003276,
+    "rateBps": -0.3276,
+    "rateAPR": -3.5872199999999994
+  },
+  {
+    "t": 1769544000000,
+    "symbol": "FOGOUSDT",
+    "rate": -0.00003399,
+    "rateBps": -0.3399,
+    "rateAPR": -3.7219050000000005
+  },
+  {
+    "t": 1769558400000,
+    "symbol": "FOGOUSDT",
+    "rate": -0.00017724,
+    "rateBps": -1.7724,
+    "rateAPR": -19.407780000000002
+  },
+  {
+    "t": 1769572800008,
+    "symbol": "FOGOUSDT",
+    "rate": -0.00119763,
+    "rateBps": -11.9763,
+    "rateAPR": -131.140485
+  },
+  {
+    "t": 1769587200000,
+    "symbol": "FOGOUSDT",
+    "rate": -0.00234949,
+    "rateBps": -23.4949,
+    "rateAPR": -257.269155
+  },
+  {
+    "t": 1769601600005,
+    "symbol": "FOGOUSDT",
+    "rate": -0.00139048,
+    "rateBps": -13.9048,
+    "rateAPR": -152.25756
+  },
+  {
+    "t": 1769616000000,
+    "symbol": "FOGOUSDT",
+    "rate": -0.00160375,
+    "rateBps": -16.037499999999998,
+    "rateAPR": -175.61062499999997
+  },
+  {
+    "t": 1769630400004,
+    "symbol": "FOGOUSDT",
+    "rate": -0.00173999,
+    "rateBps": -17.399900000000002,
+    "rateAPR": -190.52890499999998
+  },
+  {
+    "t": 1769644800000,
+    "symbol": "FOGOUSDT",
+    "rate": -0.00105625,
+    "rateBps": -10.562499999999998,
+    "rateAPR": -115.65937499999998
+  },
+  {
+    "t": 1769659200000,
+    "symbol": "FOGOUSDT",
+    "rate": -0.00004962,
+    "rateBps": -0.49620000000000003,
+    "rateAPR": -5.43339
+  },
+  {
+    "t": 1769673600009,
+    "symbol": "FOGOUSDT",
+    "rate": -0.00082433,
+    "rateBps": -8.2433,
+    "rateAPR": -90.264135
+  },
+  {
+    "t": 1769688000000,
+    "symbol": "FOGOUSDT",
+    "rate": -0.00144138,
+    "rateBps": -14.413799999999998,
+    "rateAPR": -157.83111
+  },
+  {
+    "t": 1769702400000,
+    "symbol": "FOGOUSDT",
+    "rate": -0.00033135,
+    "rateBps": -3.3135,
+    "rateAPR": -36.282825
+  },
+  {
+    "t": 1769716800004,
+    "symbol": "FOGOUSDT",
+    "rate": -0.00000727,
+    "rateBps": -0.0727,
+    "rateAPR": -0.796065
+  },
+  {
+    "t": 1769731200008,
+    "symbol": "FOGOUSDT",
+    "rate": -0.00012488,
+    "rateBps": -1.2488000000000001,
+    "rateAPR": -13.674360000000002
+  },
+  {
+    "t": 1769745600005,
+    "symbol": "FOGOUSDT",
+    "rate": -0.00010712,
+    "rateBps": -1.0712000000000002,
+    "rateAPR": -11.729640000000002
+  },
+  {
+    "t": 1769760000000,
+    "symbol": "FOGOUSDT",
+    "rate": -0.00036893,
+    "rateBps": -3.6893000000000002,
+    "rateAPR": -40.397835
+  },
+  {
+    "t": 1769774400005,
+    "symbol": "FOGOUSDT",
+    "rate": -0.00001182,
+    "rateBps": -0.1182,
+    "rateAPR": -1.29429
+  },
+  {
+    "t": 1769788800001,
+    "symbol": "FOGOUSDT",
+    "rate": 0.00003776,
+    "rateBps": 0.3776,
+    "rateAPR": 4.13472
+  },
+  {
+    "t": 1769803200004,
+    "symbol": "FOGOUSDT",
+    "rate": 0.00005,
+    "rateBps": 0.5,
+    "rateAPR": 5.4750000000000005
+  },
+  {
+    "t": 1769817600000,
+    "symbol": "FOGOUSDT",
+    "rate": 0.00004359,
+    "rateBps": 0.4359,
+    "rateAPR": 4.773104999999999
+  },
+  {
+    "t": 1769832000002,
+    "symbol": "FOGOUSDT",
+    "rate": -0.00002747,
+    "rateBps": -0.2747,
+    "rateAPR": -3.0079649999999996
+  },
+  {
+    "t": 1769846400001,
+    "symbol": "FOGOUSDT",
+    "rate": -0.00015388,
+    "rateBps": -1.5388000000000002,
+    "rateAPR": -16.84986
+  },
+  {
+    "t": 1769860800010,
+    "symbol": "FOGOUSDT",
+    "rate": -0.0000158,
+    "rateBps": -0.158,
+    "rateAPR": -1.7301
+  },
+  {
+    "t": 1769875200009,
+    "symbol": "FOGOUSDT",
+    "rate": -0.00031492,
+    "rateBps": -3.1492,
+    "rateAPR": -34.483740000000004
+  },
+  {
+    "t": 1769889600012,
+    "symbol": "FOGOUSDT",
+    "rate": 0.00005,
+    "rateBps": 0.5,
+    "rateAPR": 5.4750000000000005
+  },
+  {
+    "t": 1769904000001,
+    "symbol": "FOGOUSDT",
+    "rate": 0.00005,
+    "rateBps": 0.5,
+    "rateAPR": 5.4750000000000005
+  },
+  {
+    "t": 1769918400000,
+    "symbol": "FOGOUSDT",
+    "rate": 0.00005,
+    "rateBps": 0.5,
+    "rateAPR": 5.4750000000000005
+  },
+  {
+    "t": 1769932800004,
+    "symbol": "FOGOUSDT",
+    "rate": -0.00005668,
+    "rateBps": -0.5668,
+    "rateAPR": -6.20646
+  },
+  {
+    "t": 1769947200004,
+    "symbol": "FOGOUSDT",
+    "rate": 0.00000101,
+    "rateBps": 0.010100000000000001,
+    "rateAPR": 0.11059500000000001
+  },
+  {
+    "t": 1769961600000,
+    "symbol": "FOGOUSDT",
+    "rate": 0.00003951,
+    "rateBps": 0.3951,
+    "rateAPR": 4.326345
+  },
+  {
+    "t": 1769976000004,
+    "symbol": "FOGOUSDT",
+    "rate": 0.00005,
+    "rateBps": 0.5,
+    "rateAPR": 5.4750000000000005
+  },
+  {
+    "t": 1769990400000,
+    "symbol": "FOGOUSDT",
+    "rate": 0.00005,
+    "rateBps": 0.5,
+    "rateAPR": 5.4750000000000005
+  },
+  {
+    "t": 1770004800000,
+    "symbol": "FOGOUSDT",
+    "rate": 0.00005,
+    "rateBps": 0.5,
+    "rateAPR": 5.4750000000000005
+  },
+  {
+    "t": 1770019200014,
+    "symbol": "FOGOUSDT",
+    "rate": 0.00005,
+    "rateBps": 0.5,
+    "rateAPR": 5.4750000000000005
+  },
+  {
+    "t": 1770033600009,
+    "symbol": "FOGOUSDT",
+    "rate": 0.00005,
+    "rateBps": 0.5,
+    "rateAPR": 5.4750000000000005
+  },
+  {
+    "t": 1770048000000,
+    "symbol": "FOGOUSDT",
+    "rate": 0.00005,
+    "rateBps": 0.5,
+    "rateAPR": 5.4750000000000005
+  },
+  {
+    "t": 1770062400000,
+    "symbol": "FOGOUSDT",
+    "rate": 0.00005,
+    "rateBps": 0.5,
+    "rateAPR": 5.4750000000000005
+  },
+  {
+    "t": 1770076800000,
+    "symbol": "FOGOUSDT",
+    "rate": 0.00004854,
+    "rateBps": 0.4854,
+    "rateAPR": 5.31513
+  },
+  {
+    "t": 1770091200001,
+    "symbol": "FOGOUSDT",
+    "rate": 0.00003719,
+    "rateBps": 0.3719,
+    "rateAPR": 4.072305
+  },
+  {
+    "t": 1770105600007,
+    "symbol": "FOGOUSDT",
+    "rate": -0.00000345,
+    "rateBps": -0.0345,
+    "rateAPR": -0.377775
+  },
+  {
+    "t": 1770120000006,
+    "symbol": "FOGOUSDT",
+    "rate": 0.00002293,
+    "rateBps": 0.2293,
+    "rateAPR": 2.5108349999999997
+  },
+  {
+    "t": 1770134400000,
+    "symbol": "FOGOUSDT",
+    "rate": -0.0001392,
+    "rateBps": -1.392,
+    "rateAPR": -15.242399999999998
+  },
+  {
+    "t": 1770148800009,
+    "symbol": "FOGOUSDT",
+    "rate": -0.00027915,
+    "rateBps": -2.7914999999999996,
+    "rateAPR": -30.566925
+  },
+  {
+    "t": 1770163200002,
+    "symbol": "FOGOUSDT",
+    "rate": 0.00000271,
+    "rateBps": 0.0271,
+    "rateAPR": 0.296745
+  },
+  {
+    "t": 1770177600004,
+    "symbol": "FOGOUSDT",
+    "rate": 0.00001096,
+    "rateBps": 0.1096,
+    "rateAPR": 1.2001199999999999
+  },
+  {
+    "t": 1770192000007,
+    "symbol": "FOGOUSDT",
+    "rate": -0.00012704,
+    "rateBps": -1.2704,
+    "rateAPR": -13.91088
+  },
+  {
+    "t": 1770206400010,
+    "symbol": "FOGOUSDT",
+    "rate": -0.00001615,
+    "rateBps": -0.1615,
+    "rateAPR": -1.768425
+  },
+  {
+    "t": 1770220800000,
+    "symbol": "FOGOUSDT",
+    "rate": -0.0002525,
+    "rateBps": -2.525,
+    "rateAPR": -27.64875
+  },
+  {
+    "t": 1770235200001,
+    "symbol": "FOGOUSDT",
+    "rate": -0.00020946,
+    "rateBps": -2.0946,
+    "rateAPR": -22.93587
+  },
+  {
+    "t": 1770249600011,
+    "symbol": "FOGOUSDT",
+    "rate": 0.00005,
+    "rateBps": 0.5,
+    "rateAPR": 5.4750000000000005
+  },
+  {
+    "t": 1770264000001,
+    "symbol": "FOGOUSDT",
+    "rate": -0.00002027,
+    "rateBps": -0.20270000000000002,
+    "rateAPR": -2.2195650000000002
+  },
+  {
+    "t": 1770278400000,
+    "symbol": "FOGOUSDT",
+    "rate": 0.00005,
+    "rateBps": 0.5,
+    "rateAPR": 5.4750000000000005
+  },
+  {
+    "t": 1770292800006,
+    "symbol": "FOGOUSDT",
+    "rate": 0.00001786,
+    "rateBps": 0.17859999999999998,
+    "rateAPR": 1.95567
+  },
+  {
+    "t": 1770307200007,
+    "symbol": "FOGOUSDT",
+    "rate": 0.00005,
+    "rateBps": 0.5,
+    "rateAPR": 5.4750000000000005
+  },
+  {
+    "t": 1770321600000,
+    "symbol": "FOGOUSDT",
+    "rate": 0.00005,
+    "rateBps": 0.5,
+    "rateAPR": 5.4750000000000005
+  },
+  {
+    "t": 1770336000000,
+    "symbol": "FOGOUSDT",
+    "rate": 0.00005,
+    "rateBps": 0.5,
+    "rateAPR": 5.4750000000000005
+  },
+  {
+    "t": 1770350400001,
+    "symbol": "FOGOUSDT",
+    "rate": -0.00015581,
+    "rateBps": -1.5580999999999998,
+    "rateAPR": -17.061194999999998
+  },
+  {
+    "t": 1770364800001,
+    "symbol": "FOGOUSDT",
+    "rate": 0.00005,
+    "rateBps": 0.5,
+    "rateAPR": 5.4750000000000005
+  },
+  {
+    "t": 1770379200003,
+    "symbol": "FOGOUSDT",
+    "rate": 0.00000479,
+    "rateBps": 0.0479,
+    "rateAPR": 0.524505
+  },
+  {
+    "t": 1770393600000,
+    "symbol": "FOGOUSDT",
+    "rate": 0.00005,
+    "rateBps": 0.5,
+    "rateAPR": 5.4750000000000005
+  },
+  {
+    "t": 1770408000005,
+    "symbol": "FOGOUSDT",
+    "rate": 0.00005,
+    "rateBps": 0.5,
+    "rateAPR": 5.4750000000000005
+  },
+  {
+    "t": 1770422400003,
+    "symbol": "FOGOUSDT",
+    "rate": 0.00005,
+    "rateBps": 0.5,
+    "rateAPR": 5.4750000000000005
+  },
+  {
+    "t": 1770436800024,
+    "symbol": "FOGOUSDT",
+    "rate": 0.00005,
+    "rateBps": 0.5,
+    "rateAPR": 5.4750000000000005
+  },
+  {
+    "t": 1770451200000,
+    "symbol": "FOGOUSDT",
+    "rate": 0.00002297,
+    "rateBps": 0.2297,
+    "rateAPR": 2.5152149999999995
+  },
+  {
+    "t": 1770465600007,
+    "symbol": "FOGOUSDT",
+    "rate": -0.00016506,
+    "rateBps": -1.6505999999999998,
+    "rateAPR": -18.07407
+  },
+  {
+    "t": 1770480000010,
+    "symbol": "FOGOUSDT",
+    "rate": -0.00013961,
+    "rateBps": -1.3961,
+    "rateAPR": -15.287295
+  },
+  {
+    "t": 1770494400000,
+    "symbol": "FOGOUSDT",
+    "rate": -0.00035174,
+    "rateBps": -3.5174000000000003,
+    "rateAPR": -38.51553
+  },
+  {
+    "t": 1770508800003,
+    "symbol": "FOGOUSDT",
+    "rate": -0.00012722,
+    "rateBps": -1.2722,
+    "rateAPR": -13.930589999999999
+  },
+  {
+    "t": 1770523200002,
+    "symbol": "FOGOUSDT",
+    "rate": -0.00049373,
+    "rateBps": -4.9373,
+    "rateAPR": -54.06343499999999
+  },
+  {
+    "t": 1770537600000,
+    "symbol": "FOGOUSDT",
+    "rate": -0.00065078,
+    "rateBps": -6.5078,
+    "rateAPR": -71.26041
+  },
+  {
+    "t": 1770552000005,
+    "symbol": "FOGOUSDT",
+    "rate": -0.00029522,
+    "rateBps": -2.9522,
+    "rateAPR": -32.326589999999996
+  },
+  {
+    "t": 1770566400000,
+    "symbol": "FOGOUSDT",
+    "rate": -0.00032365,
+    "rateBps": -3.2365,
+    "rateAPR": -35.439675
+  },
+  {
+    "t": 1770580800000,
+    "symbol": "FOGOUSDT",
+    "rate": -0.00058128,
+    "rateBps": -5.8128,
+    "rateAPR": -63.65016
+  },
+  {
+    "t": 1770595200002,
+    "symbol": "FOGOUSDT",
+    "rate": -0.00054488,
+    "rateBps": -5.448799999999999,
+    "rateAPR": -59.664359999999995
+  },
+  {
+    "t": 1770609600012,
+    "symbol": "FOGOUSDT",
+    "rate": -0.00002808,
+    "rateBps": -0.2808,
+    "rateAPR": -3.0747599999999995
+  },
+  {
+    "t": 1770624000001,
+    "symbol": "FOGOUSDT",
+    "rate": -0.00055693,
+    "rateBps": -5.569299999999999,
+    "rateAPR": -60.983835
+  },
+  {
+    "t": 1770638400003,
+    "symbol": "FOGOUSDT",
+    "rate": -0.00025544,
+    "rateBps": -2.5544000000000002,
+    "rateAPR": -27.97068
+  },
+  {
+    "t": 1770652800007,
+    "symbol": "FOGOUSDT",
+    "rate": -0.0005165,
+    "rateBps": -5.165,
+    "rateAPR": -56.55675
+  },
+  {
+    "t": 1770667200006,
+    "symbol": "FOGOUSDT",
+    "rate": -0.00039662,
+    "rateBps": -3.9661999999999997,
+    "rateAPR": -43.42989000000001
+  },
+  {
+    "t": 1770681600000,
+    "symbol": "FOGOUSDT",
+    "rate": -0.00094515,
+    "rateBps": -9.4515,
+    "rateAPR": -103.49392499999999
+  },
+  {
+    "t": 1770696000000,
+    "symbol": "FOGOUSDT",
+    "rate": 0.0000201,
+    "rateBps": 0.201,
+    "rateAPR": 2.20095
+  },
+  {
+    "t": 1770710400007,
+    "symbol": "FOGOUSDT",
+    "rate": -0.00010155,
+    "rateBps": -1.0155,
+    "rateAPR": -11.119724999999999
+  },
+  {
+    "t": 1770724800000,
+    "symbol": "FOGOUSDT",
+    "rate": -0.00026879,
+    "rateBps": -2.6879,
+    "rateAPR": -29.432505
+  },
+  {
+    "t": 1770739200000,
+    "symbol": "FOGOUSDT",
+    "rate": -0.000472,
+    "rateBps": -4.72,
+    "rateAPR": -51.684
+  },
+  {
+    "t": 1770753600007,
+    "symbol": "FOGOUSDT",
+    "rate": -0.00034618,
+    "rateBps": -3.4618,
+    "rateAPR": -37.906710000000004
+  },
+  {
+    "t": 1770768000000,
+    "symbol": "FOGOUSDT",
+    "rate": -0.00021243,
+    "rateBps": -2.1243,
+    "rateAPR": -23.261085
+  },
+  {
+    "t": 1770782400000,
+    "symbol": "FOGOUSDT",
+    "rate": -0.00015917,
+    "rateBps": -1.5917000000000001,
+    "rateAPR": -17.429115
+  },
+  {
+    "t": 1770796800006,
+    "symbol": "FOGOUSDT",
+    "rate": -0.00010456,
+    "rateBps": -1.0456,
+    "rateAPR": -11.44932
+  },
+  {
+    "t": 1770811200000,
+    "symbol": "FOGOUSDT",
+    "rate": -0.0000455,
+    "rateBps": -0.455,
+    "rateAPR": -4.9822500000000005
+  },
+  {
+    "t": 1770825600000,
+    "symbol": "FOGOUSDT",
+    "rate": 0.0000021,
+    "rateBps": 0.020999999999999998,
+    "rateAPR": 0.22994999999999993
+  },
+  {
+    "t": 1770840000003,
+    "symbol": "FOGOUSDT",
+    "rate": 0.00002801,
+    "rateBps": 0.2801,
+    "rateAPR": 3.067095
+  },
+  {
+    "t": 1770854400000,
+    "symbol": "FOGOUSDT",
+    "rate": -0.0000224,
+    "rateBps": -0.22399999999999998,
+    "rateAPR": -2.4528
+  },
+  {
+    "t": 1770868800000,
+    "symbol": "FOGOUSDT",
+    "rate": 0.00005,
+    "rateBps": 0.5,
+    "rateAPR": 5.4750000000000005
+  },
+  {
+    "t": 1770883200001,
+    "symbol": "FOGOUSDT",
+    "rate": 0.00005,
+    "rateBps": 0.5,
+    "rateAPR": 5.4750000000000005
+  },
+  {
+    "t": 1770897600002,
+    "symbol": "FOGOUSDT",
+    "rate": 0.00005,
+    "rateBps": 0.5,
+    "rateAPR": 5.4750000000000005
+  },
+  {
+    "t": 1770912000001,
+    "symbol": "FOGOUSDT",
+    "rate": 0.00005,
+    "rateBps": 0.5,
+    "rateAPR": 5.4750000000000005
+  },
+  {
+    "t": 1770926400006,
+    "symbol": "FOGOUSDT",
+    "rate": 0.00005,
+    "rateBps": 0.5,
+    "rateAPR": 5.4750000000000005
+  },
+  {
+    "t": 1770940800007,
+    "symbol": "FOGOUSDT",
+    "rate": 0.00005,
+    "rateBps": 0.5,
+    "rateAPR": 5.4750000000000005
+  },
+  {
+    "t": 1770955200000,
+    "symbol": "FOGOUSDT",
+    "rate": 0.00005,
+    "rateBps": 0.5,
+    "rateAPR": 5.4750000000000005
+  },
+  {
+    "t": 1770969600003,
+    "symbol": "FOGOUSDT",
+    "rate": 0.00005,
+    "rateBps": 0.5,
+    "rateAPR": 5.4750000000000005
+  },
+  {
+    "t": 1770984000000,
+    "symbol": "FOGOUSDT",
+    "rate": 0.00005,
+    "rateBps": 0.5,
+    "rateAPR": 5.4750000000000005
+  },
+  {
+    "t": 1770998400005,
+    "symbol": "FOGOUSDT",
+    "rate": 0.00005,
+    "rateBps": 0.5,
+    "rateAPR": 5.4750000000000005
+  },
+  {
+    "t": 1771012800006,
+    "symbol": "FOGOUSDT",
+    "rate": 0.00005,
+    "rateBps": 0.5,
+    "rateAPR": 5.4750000000000005
+  },
+  {
+    "t": 1771027200002,
+    "symbol": "FOGOUSDT",
+    "rate": 0.00005,
+    "rateBps": 0.5,
+    "rateAPR": 5.4750000000000005
+  },
+  {
+    "t": 1771041600007,
+    "symbol": "FOGOUSDT",
+    "rate": 0.00005,
+    "rateBps": 0.5,
+    "rateAPR": 5.4750000000000005
+  },
+  {
+    "t": 1771056000004,
+    "symbol": "FOGOUSDT",
+    "rate": -0.00013429,
+    "rateBps": -1.3429,
+    "rateAPR": -14.704754999999997
+  },
+  {
+    "t": 1771070400000,
+    "symbol": "FOGOUSDT",
+    "rate": 0.00005,
+    "rateBps": 0.5,
+    "rateAPR": 5.4750000000000005
+  },
+  {
+    "t": 1771084800002,
+    "symbol": "FOGOUSDT",
+    "rate": 0.00004535,
+    "rateBps": 0.45349999999999996,
+    "rateAPR": 4.965825
+  },
+  {
+    "t": 1771099200000,
+    "symbol": "FOGOUSDT",
+    "rate": 0.00004426,
+    "rateBps": 0.4426,
+    "rateAPR": 4.846469999999999
+  },
+  {
+    "t": 1771113600000,
+    "symbol": "FOGOUSDT",
+    "rate": 0.00003377,
+    "rateBps": 0.33769999999999994,
+    "rateAPR": 3.6978149999999994
+  },
+  {
+    "t": 1771128000000,
+    "symbol": "FOGOUSDT",
+    "rate": 0.00005,
+    "rateBps": 0.5,
+    "rateAPR": 5.4750000000000005
+  },
+  {
+    "t": 1771142400002,
+    "symbol": "FOGOUSDT",
+    "rate": 0.00002532,
+    "rateBps": 0.25320000000000004,
+    "rateAPR": 2.7725400000000002
+  },
+  {
+    "t": 1771156800005,
+    "symbol": "FOGOUSDT",
+    "rate": 0.00005,
+    "rateBps": 0.5,
+    "rateAPR": 5.4750000000000005
+  },
+  {
+    "t": 1771171200000,
+    "symbol": "FOGOUSDT",
+    "rate": 0.00005,
+    "rateBps": 0.5,
+    "rateAPR": 5.4750000000000005
+  },
+  {
+    "t": 1771185600009,
+    "symbol": "FOGOUSDT",
+    "rate": 0.00005,
+    "rateBps": 0.5,
+    "rateAPR": 5.4750000000000005
+  },
+  {
+    "t": 1771200000001,
+    "symbol": "FOGOUSDT",
+    "rate": 0.00005,
+    "rateBps": 0.5,
+    "rateAPR": 5.4750000000000005
+  },
+  {
+    "t": 1771214400004,
+    "symbol": "FOGOUSDT",
+    "rate": 0.00005,
+    "rateBps": 0.5,
+    "rateAPR": 5.4750000000000005
+  },
+  {
+    "t": 1771228800003,
+    "symbol": "FOGOUSDT",
+    "rate": 0.00005,
+    "rateBps": 0.5,
+    "rateAPR": 5.4750000000000005
+  },
+  {
+    "t": 1771243200000,
+    "symbol": "FOGOUSDT",
+    "rate": 0.00005,
+    "rateBps": 0.5,
+    "rateAPR": 5.4750000000000005
+  },
+  {
+    "t": 1771257600000,
+    "symbol": "FOGOUSDT",
+    "rate": 0.00005,
+    "rateBps": 0.5,
+    "rateAPR": 5.4750000000000005
+  },
+  {
+    "t": 1771272000009,
+    "symbol": "FOGOUSDT",
+    "rate": 0.00000453,
+    "rateBps": 0.0453,
+    "rateAPR": 0.49603500000000006
+  },
+  {
+    "t": 1771286400008,
+    "symbol": "FOGOUSDT",
+    "rate": 0.00005,
+    "rateBps": 0.5,
+    "rateAPR": 5.4750000000000005
+  },
+  {
+    "t": 1771300800003,
+    "symbol": "FOGOUSDT",
+    "rate": 0.00000265,
+    "rateBps": 0.0265,
+    "rateAPR": 0.290175
+  },
+  {
+    "t": 1771315200001,
+    "symbol": "FOGOUSDT",
+    "rate": 0.00005,
+    "rateBps": 0.5,
+    "rateAPR": 5.4750000000000005
+  },
+  {
+    "t": 1771329600000,
+    "symbol": "FOGOUSDT",
+    "rate": 0.00004387,
+    "rateBps": 0.4387,
+    "rateAPR": 4.803765
+  },
+  {
+    "t": 1771344000002,
+    "symbol": "FOGOUSDT",
+    "rate": 0.00005,
+    "rateBps": 0.5,
+    "rateAPR": 5.4750000000000005
+  },
+  {
+    "t": 1771358400002,
+    "symbol": "FOGOUSDT",
+    "rate": 0.00005,
+    "rateBps": 0.5,
+    "rateAPR": 5.4750000000000005
+  },
+  {
+    "t": 1771372800000,
+    "symbol": "FOGOUSDT",
+    "rate": 0.00003283,
+    "rateBps": 0.32830000000000004,
+    "rateAPR": 3.5948850000000006
+  },
+  {
+    "t": 1771387200000,
+    "symbol": "FOGOUSDT",
+    "rate": 0.00005,
+    "rateBps": 0.5,
+    "rateAPR": 5.4750000000000005
+  },
+  {
+    "t": 1771401600000,
+    "symbol": "FOGOUSDT",
+    "rate": 0.00005,
+    "rateBps": 0.5,
+    "rateAPR": 5.4750000000000005
+  },
+  {
+    "t": 1771416000007,
+    "symbol": "FOGOUSDT",
+    "rate": 0.00005,
+    "rateBps": 0.5,
+    "rateAPR": 5.4750000000000005
+  },
+  {
+    "t": 1771430400011,
+    "symbol": "FOGOUSDT",
+    "rate": -0.00035835,
+    "rateBps": -3.5835,
+    "rateAPR": -39.239325
+  },
+  {
+    "t": 1771444800004,
+    "symbol": "FOGOUSDT",
+    "rate": -0.00007355,
+    "rateBps": -0.7355,
+    "rateAPR": -8.053725
+  },
+  {
+    "t": 1771459200013,
+    "symbol": "FOGOUSDT",
+    "rate": -0.00002799,
+    "rateBps": -0.27990000000000004,
+    "rateAPR": -3.064905
+  },
+  {
+    "t": 1771473600003,
+    "symbol": "FOGOUSDT",
+    "rate": -0.00002975,
+    "rateBps": -0.29750000000000004,
+    "rateAPR": -3.257625
+  },
+  {
+    "t": 1771488000000,
+    "symbol": "FOGOUSDT",
+    "rate": 0.00003855,
+    "rateBps": 0.3855,
+    "rateAPR": 4.221225
+  },
+  {
+    "t": 1771502400011,
+    "symbol": "FOGOUSDT",
+    "rate": 0.00005,
+    "rateBps": 0.5,
+    "rateAPR": 5.4750000000000005
+  },
+  {
+    "t": 1771516800003,
+    "symbol": "FOGOUSDT",
+    "rate": 0.00005,
+    "rateBps": 0.5,
+    "rateAPR": 5.4750000000000005
+  },
+  {
+    "t": 1771531200000,
+    "symbol": "FOGOUSDT",
+    "rate": 0.00005,
+    "rateBps": 0.5,
+    "rateAPR": 5.4750000000000005
+  },
+  {
+    "t": 1771545600000,
+    "symbol": "FOGOUSDT",
+    "rate": 0.00005,
+    "rateBps": 0.5,
+    "rateAPR": 5.4750000000000005
+  },
+  {
+    "t": 1771560000003,
+    "symbol": "FOGOUSDT",
+    "rate": 0.00005,
+    "rateBps": 0.5,
+    "rateAPR": 5.4750000000000005
+  },
+  {
+    "t": 1771574400000,
+    "symbol": "FOGOUSDT",
+    "rate": 0.00005,
+    "rateBps": 0.5,
+    "rateAPR": 5.4750000000000005
+  },
+  {
+    "t": 1771588800000,
+    "symbol": "FOGOUSDT",
+    "rate": 0.00005,
+    "rateBps": 0.5,
+    "rateAPR": 5.4750000000000005
+  },
+  {
+    "t": 1771603200000,
+    "symbol": "FOGOUSDT",
+    "rate": 0.00003996,
+    "rateBps": 0.39959999999999996,
+    "rateAPR": 4.3756200000000005
+  },
+  {
+    "t": 1771617600000,
+    "symbol": "FOGOUSDT",
+    "rate": 0.00005,
+    "rateBps": 0.5,
+    "rateAPR": 5.4750000000000005
+  },
+  {
+    "t": 1771632000004,
+    "symbol": "FOGOUSDT",
+    "rate": 0.00005,
+    "rateBps": 0.5,
+    "rateAPR": 5.4750000000000005
+  },
+  {
+    "t": 1771646400000,
+    "symbol": "FOGOUSDT",
+    "rate": 0.00005,
+    "rateBps": 0.5,
+    "rateAPR": 5.4750000000000005
+  },
+  {
+    "t": 1771660800000,
+    "symbol": "FOGOUSDT",
+    "rate": 0.00005,
+    "rateBps": 0.5,
+    "rateAPR": 5.4750000000000005
+  },
+  {
+    "t": 1771675200013,
+    "symbol": "FOGOUSDT",
+    "rate": 0.00005,
+    "rateBps": 0.5,
+    "rateAPR": 5.4750000000000005
+  },
+  {
+    "t": 1771689600005,
+    "symbol": "FOGOUSDT",
+    "rate": 0.00005,
+    "rateBps": 0.5,
+    "rateAPR": 5.4750000000000005
+  },
+  {
+    "t": 1771704000000,
+    "symbol": "FOGOUSDT",
+    "rate": 0.00005,
+    "rateBps": 0.5,
+    "rateAPR": 5.4750000000000005
+  },
+  {
+    "t": 1771718400001,
+    "symbol": "FOGOUSDT",
+    "rate": 0.00005,
+    "rateBps": 0.5,
+    "rateAPR": 5.4750000000000005
+  },
+  {
+    "t": 1771732800008,
+    "symbol": "FOGOUSDT",
+    "rate": 0.00005,
+    "rateBps": 0.5,
+    "rateAPR": 5.4750000000000005
+  },
+  {
+    "t": 1771747200004,
+    "symbol": "FOGOUSDT",
+    "rate": 0.00005,
+    "rateBps": 0.5,
+    "rateAPR": 5.4750000000000005
+  },
+  {
+    "t": 1771761600008,
+    "symbol": "FOGOUSDT",
+    "rate": 0.00005,
+    "rateBps": 0.5,
+    "rateAPR": 5.4750000000000005
+  },
+  {
+    "t": 1771776000000,
+    "symbol": "FOGOUSDT",
+    "rate": 0.00005,
+    "rateBps": 0.5,
+    "rateAPR": 5.4750000000000005
+  },
+  {
+    "t": 1771790400000,
+    "symbol": "FOGOUSDT",
+    "rate": 0.00005,
+    "rateBps": 0.5,
+    "rateAPR": 5.4750000000000005
+  },
+  {
+    "t": 1771804800001,
+    "symbol": "FOGOUSDT",
+    "rate": 0.00005,
+    "rateBps": 0.5,
+    "rateAPR": 5.4750000000000005
+  },
+  {
+    "t": 1771819200000,
+    "symbol": "FOGOUSDT",
+    "rate": 0.00005,
+    "rateBps": 0.5,
+    "rateAPR": 5.4750000000000005
+  },
+  {
+    "t": 1771833600000,
+    "symbol": "FOGOUSDT",
+    "rate": 0.00005,
+    "rateBps": 0.5,
+    "rateAPR": 5.4750000000000005
+  },
+  {
+    "t": 1771848000003,
+    "symbol": "FOGOUSDT",
+    "rate": 0.00005,
+    "rateBps": 0.5,
+    "rateAPR": 5.4750000000000005
+  },
+  {
+    "t": 1771862400000,
+    "symbol": "FOGOUSDT",
+    "rate": 0.00005,
+    "rateBps": 0.5,
+    "rateAPR": 5.4750000000000005
+  },
+  {
+    "t": 1771876800000,
+    "symbol": "FOGOUSDT",
+    "rate": 0.00002273,
+    "rateBps": 0.2273,
+    "rateAPR": 2.4889350000000006
+  },
+  {
+    "t": 1771891200007,
+    "symbol": "FOGOUSDT",
+    "rate": 0.00005,
+    "rateBps": 0.5,
+    "rateAPR": 5.4750000000000005
+  },
+  {
+    "t": 1771905600000,
+    "symbol": "FOGOUSDT",
+    "rate": -0.00014747,
+    "rateBps": -1.4747,
+    "rateAPR": -16.147965
+  },
+  {
+    "t": 1771920000000,
+    "symbol": "FOGOUSDT",
+    "rate": -0.00115986,
+    "rateBps": -11.5986,
+    "rateAPR": -127.00467
+  },
+  {
+    "t": 1771934400000,
+    "symbol": "FOGOUSDT",
+    "rate": -0.0075361,
+    "rateBps": -75.36099999999999,
+    "rateAPR": -825.2029499999999
+  },
+  {
+    "t": 1771948800001,
+    "symbol": "FOGOUSDT",
+    "rate": -0.00199625,
+    "rateBps": -19.962500000000002,
+    "rateAPR": -218.58937500000005
+  },
+  {
+    "t": 1771963200002,
+    "symbol": "FOGOUSDT",
+    "rate": -0.00082877,
+    "rateBps": -8.287700000000001,
+    "rateAPR": -90.75031500000001
+  },
+  {
+    "t": 1771977600001,
+    "symbol": "FOGOUSDT",
+    "rate": -0.00120377,
+    "rateBps": -12.037700000000001,
+    "rateAPR": -131.81281500000003
+  },
+  {
+    "t": 1771992000000,
+    "symbol": "FOGOUSDT",
+    "rate": -0.00029138,
+    "rateBps": -2.9137999999999997,
+    "rateAPR": -31.906109999999998
+  },
+  {
+    "t": 1772006400007,
+    "symbol": "FOGOUSDT",
+    "rate": -0.00036948,
+    "rateBps": -3.6948,
+    "rateAPR": -40.45806
+  },
+  {
+    "t": 1772020800000,
+    "symbol": "FOGOUSDT",
+    "rate": -0.00018931,
+    "rateBps": -1.8930999999999998,
+    "rateAPR": -20.729444999999995
+  },
+  {
+    "t": 1772035200000,
+    "symbol": "FOGOUSDT",
+    "rate": -0.00019708,
+    "rateBps": -1.9708,
+    "rateAPR": -21.580260000000003
+  },
+  {
+    "t": 1772049600006,
+    "symbol": "FOGOUSDT",
+    "rate": -0.00026486,
+    "rateBps": -2.6486,
+    "rateAPR": -29.00217
+  }
+]

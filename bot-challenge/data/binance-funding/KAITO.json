@@ -1,0 +1,1262 @@
+[
+  {
+    "t": 1769472000002,
+    "symbol": "KAITOUSDT",
+    "rate": 0.00005,
+    "rateBps": 0.5,
+    "rateAPR": 5.4750000000000005
+  },
+  {
+    "t": 1769486400002,
+    "symbol": "KAITOUSDT",
+    "rate": 0.00005,
+    "rateBps": 0.5,
+    "rateAPR": 5.4750000000000005
+  },
+  {
+    "t": 1769500800000,
+    "symbol": "KAITOUSDT",
+    "rate": 0.00005,
+    "rateBps": 0.5,
+    "rateAPR": 5.4750000000000005
+  },
+  {
+    "t": 1769515200006,
+    "symbol": "KAITOUSDT",
+    "rate": 0.00005,
+    "rateBps": 0.5,
+    "rateAPR": 5.4750000000000005
+  },
+  {
+    "t": 1769529600000,
+    "symbol": "KAITOUSDT",
+    "rate": 0.00005,
+    "rateBps": 0.5,
+    "rateAPR": 5.4750000000000005
+  },
+  {
+    "t": 1769544000000,
+    "symbol": "KAITOUSDT",
+    "rate": 0.00005,
+    "rateBps": 0.5,
+    "rateAPR": 5.4750000000000005
+  },
+  {
+    "t": 1769558400000,
+    "symbol": "KAITOUSDT",
+    "rate": 0.00005,
+    "rateBps": 0.5,
+    "rateAPR": 5.4750000000000005
+  },
+  {
+    "t": 1769572800008,
+    "symbol": "KAITOUSDT",
+    "rate": 0.00005,
+    "rateBps": 0.5,
+    "rateAPR": 5.4750000000000005
+  },
+  {
+    "t": 1769587200000,
+    "symbol": "KAITOUSDT",
+    "rate": 0.00005,
+    "rateBps": 0.5,
+    "rateAPR": 5.4750000000000005
+  },
+  {
+    "t": 1769601600005,
+    "symbol": "KAITOUSDT",
+    "rate": 0.00005,
+    "rateBps": 0.5,
+    "rateAPR": 5.4750000000000005
+  },
+  {
+    "t": 1769616000000,
+    "symbol": "KAITOUSDT",
+    "rate": 0.00003836,
+    "rateBps": 0.3836,
+    "rateAPR": 4.20042
+  },
+  {
+    "t": 1769630400004,
+    "symbol": "KAITOUSDT",
+    "rate": 0.00005,
+    "rateBps": 0.5,
+    "rateAPR": 5.4750000000000005
+  },
+  {
+    "t": 1769644800000,
+    "symbol": "KAITOUSDT",
+    "rate": 0.00003564,
+    "rateBps": 0.3564,
+    "rateAPR": 3.902579999999999
+  },
+  {
+    "t": 1769659200000,
+    "symbol": "KAITOUSDT",
+    "rate": 0.00005,
+    "rateBps": 0.5,
+    "rateAPR": 5.4750000000000005
+  },
+  {
+    "t": 1769673600009,
+    "symbol": "KAITOUSDT",
+    "rate": 0.00002342,
+    "rateBps": 0.2342,
+    "rateAPR": 2.5644899999999997
+  },
+  {
+    "t": 1769688000000,
+    "symbol": "KAITOUSDT",
+    "rate": 0.00005,
+    "rateBps": 0.5,
+    "rateAPR": 5.4750000000000005
+  },
+  {
+    "t": 1769702400000,
+    "symbol": "KAITOUSDT",
+    "rate": 0.00001017,
+    "rateBps": 0.1017,
+    "rateAPR": 1.113615
+  },
+  {
+    "t": 1769716800004,
+    "symbol": "KAITOUSDT",
+    "rate": -0.00002239,
+    "rateBps": -0.22390000000000002,
+    "rateAPR": -2.451705
+  },
+  {
+    "t": 1769731200008,
+    "symbol": "KAITOUSDT",
+    "rate": 0.00005,
+    "rateBps": 0.5,
+    "rateAPR": 5.4750000000000005
+  },
+  {
+    "t": 1769745600005,
+    "symbol": "KAITOUSDT",
+    "rate": -0.00000833,
+    "rateBps": -0.0833,
+    "rateAPR": -0.912135
+  },
+  {
+    "t": 1769760000000,
+    "symbol": "KAITOUSDT",
+    "rate": 0.00000867,
+    "rateBps": 0.0867,
+    "rateAPR": 0.9493649999999999
+  },
+  {
+    "t": 1769774400005,
+    "symbol": "KAITOUSDT",
+    "rate": 0.00005,
+    "rateBps": 0.5,
+    "rateAPR": 5.4750000000000005
+  },
+  {
+    "t": 1769788800001,
+    "symbol": "KAITOUSDT",
+    "rate": 0.00003199,
+    "rateBps": 0.31989999999999996,
+    "rateAPR": 3.5029049999999997
+  },
+  {
+    "t": 1769803200004,
+    "symbol": "KAITOUSDT",
+    "rate": 0.00003618,
+    "rateBps": 0.3618,
+    "rateAPR": 3.96171
+  },
+  {
+    "t": 1769817600000,
+    "symbol": "KAITOUSDT",
+    "rate": 0.00005,
+    "rateBps": 0.5,
+    "rateAPR": 5.4750000000000005
+  },
+  {
+    "t": 1769832000002,
+    "symbol": "KAITOUSDT",
+    "rate": 0.00002059,
+    "rateBps": 0.2059,
+    "rateAPR": 2.254605
+  },
+  {
+    "t": 1769846400001,
+    "symbol": "KAITOUSDT",
+    "rate": -0.00001302,
+    "rateBps": -0.1302,
+    "rateAPR": -1.4256900000000001
+  },
+  {
+    "t": 1769860800010,
+    "symbol": "KAITOUSDT",
+    "rate": -0.00000646,
+    "rateBps": -0.0646,
+    "rateAPR": -0.70737
+  },
+  {
+    "t": 1769875200009,
+    "symbol": "KAITOUSDT",
+    "rate": 0.00000741,
+    "rateBps": 0.0741,
+    "rateAPR": 0.811395
+  },
+  {
+    "t": 1769889600012,
+    "symbol": "KAITOUSDT",
+    "rate": 0.0000231,
+    "rateBps": 0.23099999999999998,
+    "rateAPR": 2.52945
+  },
+  {
+    "t": 1769904000001,
+    "symbol": "KAITOUSDT",
+    "rate": 0.00003484,
+    "rateBps": 0.3484,
+    "rateAPR": 3.81498
+  },
+  {
+    "t": 1769918400000,
+    "symbol": "KAITOUSDT",
+    "rate": 0.00003834,
+    "rateBps": 0.3834,
+    "rateAPR": 4.19823
+  },
+  {
+    "t": 1769932800004,
+    "symbol": "KAITOUSDT",
+    "rate": -0.00001623,
+    "rateBps": -0.1623,
+    "rateAPR": -1.7771849999999998
+  },
+  {
+    "t": 1769947200004,
+    "symbol": "KAITOUSDT",
+    "rate": 0.00000787,
+    "rateBps": 0.07869999999999999,
+    "rateAPR": 0.8617649999999999
+  },
+  {
+    "t": 1769961600000,
+    "symbol": "KAITOUSDT",
+    "rate": -0.00000412,
+    "rateBps": -0.0412,
+    "rateAPR": -0.45114000000000004
+  },
+  {
+    "t": 1769976000004,
+    "symbol": "KAITOUSDT",
+    "rate": 0.0000077,
+    "rateBps": 0.07700000000000001,
+    "rateAPR": 0.8431500000000002
+  },
+  {
+    "t": 1769990400000,
+    "symbol": "KAITOUSDT",
+    "rate": -0.00000887,
+    "rateBps": -0.0887,
+    "rateAPR": -0.9712649999999999
+  },
+  {
+    "t": 1770004800000,
+    "symbol": "KAITOUSDT",
+    "rate": 0.00000841,
+    "rateBps": 0.08410000000000001,
+    "rateAPR": 0.920895
+  },
+  {
+    "t": 1770019200014,
+    "symbol": "KAITOUSDT",
+    "rate": 0.00001627,
+    "rateBps": 0.16269999999999998,
+    "rateAPR": 1.7815649999999998
+  },
+  {
+    "t": 1770033600009,
+    "symbol": "KAITOUSDT",
+    "rate": -0.00001752,
+    "rateBps": -0.17520000000000002,
+    "rateAPR": -1.9184400000000001
+  },
+  {
+    "t": 1770048000000,
+    "symbol": "KAITOUSDT",
+    "rate": 0.00002838,
+    "rateBps": 0.2838,
+    "rateAPR": 3.1076099999999998
+  },
+  {
+    "t": 1770062400000,
+    "symbol": "KAITOUSDT",
+    "rate": 0.0000056,
+    "rateBps": 0.055999999999999994,
+    "rateAPR": 0.6132
+  },
+  {
+    "t": 1770076800000,
+    "symbol": "KAITOUSDT",
+    "rate": 0.00000196,
+    "rateBps": 0.0196,
+    "rateAPR": 0.21462
+  },
+  {
+    "t": 1770091200001,
+    "symbol": "KAITOUSDT",
+    "rate": 0.00001263,
+    "rateBps": 0.1263,
+    "rateAPR": 1.382985
+  },
+  {
+    "t": 1770105600007,
+    "symbol": "KAITOUSDT",
+    "rate": -0.00000261,
+    "rateBps": -0.0261,
+    "rateAPR": -0.28579499999999997
+  },
+  {
+    "t": 1770120000006,
+    "symbol": "KAITOUSDT",
+    "rate": -0.00001477,
+    "rateBps": -0.1477,
+    "rateAPR": -1.617315
+  },
+  {
+    "t": 1770134400000,
+    "symbol": "KAITOUSDT",
+    "rate": 0.00000126,
+    "rateBps": 0.0126,
+    "rateAPR": 0.13797
+  },
+  {
+    "t": 1770148800009,
+    "symbol": "KAITOUSDT",
+    "rate": 0.00002499,
+    "rateBps": 0.24989999999999998,
+    "rateAPR": 2.7364049999999995
+  },
+  {
+    "t": 1770163200002,
+    "symbol": "KAITOUSDT",
+    "rate": 0.00004354,
+    "rateBps": 0.4354,
+    "rateAPR": 4.76763
+  },
+  {
+    "t": 1770177600004,
+    "symbol": "KAITOUSDT",
+    "rate": 0.00002906,
+    "rateBps": 0.29059999999999997,
+    "rateAPR": 3.18207
+  },
+  {
+    "t": 1770192000007,
+    "symbol": "KAITOUSDT",
+    "rate": 0.00004189,
+    "rateBps": 0.4189,
+    "rateAPR": 4.586955000000001
+  },
+  {
+    "t": 1770206400010,
+    "symbol": "KAITOUSDT",
+    "rate": -0.00000599,
+    "rateBps": -0.0599,
+    "rateAPR": -0.655905
+  },
+  {
+    "t": 1770220800000,
+    "symbol": "KAITOUSDT",
+    "rate": 0.0000147,
+    "rateBps": 0.147,
+    "rateAPR": 1.60965
+  },
+  {
+    "t": 1770235200001,
+    "symbol": "KAITOUSDT",
+    "rate": 0.00002599,
+    "rateBps": 0.2599,
+    "rateAPR": 2.845905
+  },
+  {
+    "t": 1770249600011,
+    "symbol": "KAITOUSDT",
+    "rate": 0.00005,
+    "rateBps": 0.5,
+    "rateAPR": 5.4750000000000005
+  },
+  {
+    "t": 1770264000001,
+    "symbol": "KAITOUSDT",
+    "rate": -0.0000118,
+    "rateBps": -0.11800000000000001,
+    "rateAPR": -1.2921
+  },
+  {
+    "t": 1770278400000,
+    "symbol": "KAITOUSDT",
+    "rate": 0.00003477,
+    "rateBps": 0.3477,
+    "rateAPR": 3.807315
+  },
+  {
+    "t": 1770292800006,
+    "symbol": "KAITOUSDT",
+    "rate": -0.00000142,
+    "rateBps": -0.014199999999999999,
+    "rateAPR": -0.15549
+  },
+  {
+    "t": 1770307200007,
+    "symbol": "KAITOUSDT",
+    "rate": -0.00003726,
+    "rateBps": -0.3726,
+    "rateAPR": -4.079969999999999
+  },
+  {
+    "t": 1770321600000,
+    "symbol": "KAITOUSDT",
+    "rate": 0.00001191,
+    "rateBps": 0.1191,
+    "rateAPR": 1.3041449999999999
+  },
+  {
+    "t": 1770336000000,
+    "symbol": "KAITOUSDT",
+    "rate": 0.00002172,
+    "rateBps": 0.21719999999999998,
+    "rateAPR": 2.3783399999999997
+  },
+  {
+    "t": 1770350400001,
+    "symbol": "KAITOUSDT",
+    "rate": 0.00005,
+    "rateBps": 0.5,
+    "rateAPR": 5.4750000000000005
+  },
+  {
+    "t": 1770364800001,
+    "symbol": "KAITOUSDT",
+    "rate": 0.000019,
+    "rateBps": 0.19,
+    "rateAPR": 2.0805000000000002
+  },
+  {
+    "t": 1770379200003,
+    "symbol": "KAITOUSDT",
+    "rate": 0.00002851,
+    "rateBps": 0.2851,
+    "rateAPR": 3.121845
+  },
+  {
+    "t": 1770393600000,
+    "symbol": "KAITOUSDT",
+    "rate": 0.00005,
+    "rateBps": 0.5,
+    "rateAPR": 5.4750000000000005
+  },
+  {
+    "t": 1770408000005,
+    "symbol": "KAITOUSDT",
+    "rate": 0.00005,
+    "rateBps": 0.5,
+    "rateAPR": 5.4750000000000005
+  },
+  {
+    "t": 1770422400003,
+    "symbol": "KAITOUSDT",
+    "rate": 0.00005,
+    "rateBps": 0.5,
+    "rateAPR": 5.4750000000000005
+  },
+  {
+    "t": 1770436800024,
+    "symbol": "KAITOUSDT",
+    "rate": 0.00004256,
+    "rateBps": 0.4256,
+    "rateAPR": 4.66032
+  },
+  {
+    "t": 1770451200000,
+    "symbol": "KAITOUSDT",
+    "rate": 0.00004254,
+    "rateBps": 0.4254,
+    "rateAPR": 4.65813
+  },
+  {
+    "t": 1770465600007,
+    "symbol": "KAITOUSDT",
+    "rate": 0.00005,
+    "rateBps": 0.5,
+    "rateAPR": 5.4750000000000005
+  },
+  {
+    "t": 1770480000010,
+    "symbol": "KAITOUSDT",
+    "rate": 0.00005,
+    "rateBps": 0.5,
+    "rateAPR": 5.4750000000000005
+  },
+  {
+    "t": 1770494400000,
+    "symbol": "KAITOUSDT",
+    "rate": 0.00005,
+    "rateBps": 0.5,
+    "rateAPR": 5.4750000000000005
+  },
+  {
+    "t": 1770508800003,
+    "symbol": "KAITOUSDT",
+    "rate": -0.00003016,
+    "rateBps": -0.3016,
+    "rateAPR": -3.30252
+  },
+  {
+    "t": 1770523200002,
+    "symbol": "KAITOUSDT",
+    "rate": 0.00004269,
+    "rateBps": 0.4269,
+    "rateAPR": 4.674555
+  },
+  {
+    "t": 1770537600000,
+    "symbol": "KAITOUSDT",
+    "rate": 0.00005,
+    "rateBps": 0.5,
+    "rateAPR": 5.4750000000000005
+  },
+  {
+    "t": 1770552000005,
+    "symbol": "KAITOUSDT",
+    "rate": -0.0000199,
+    "rateBps": -0.19899999999999998,
+    "rateAPR": -2.17905
+  },
+  {
+    "t": 1770566400000,
+    "symbol": "KAITOUSDT",
+    "rate": -0.0000114,
+    "rateBps": -0.11399999999999999,
+    "rateAPR": -1.2483
+  },
+  {
+    "t": 1770580800000,
+    "symbol": "KAITOUSDT",
+    "rate": 0.00001904,
+    "rateBps": 0.1904,
+    "rateAPR": 2.08488
+  },
+  {
+    "t": 1770595200002,
+    "symbol": "KAITOUSDT",
+    "rate": -0.00001756,
+    "rateBps": -0.1756,
+    "rateAPR": -1.9228200000000002
+  },
+  {
+    "t": 1770609600012,
+    "symbol": "KAITOUSDT",
+    "rate": 0.00003062,
+    "rateBps": 0.3062,
+    "rateAPR": 3.35289
+  },
+  {
+    "t": 1770624000001,
+    "symbol": "KAITOUSDT",
+    "rate": 0.00005,
+    "rateBps": 0.5,
+    "rateAPR": 5.4750000000000005
+  },
+  {
+    "t": 1770638400003,
+    "symbol": "KAITOUSDT",
+    "rate": 0.00004503,
+    "rateBps": 0.45030000000000003,
+    "rateAPR": 4.930785
+  },
+  {
+    "t": 1770652800007,
+    "symbol": "KAITOUSDT",
+    "rate": 0.00001001,
+    "rateBps": 0.10010000000000001,
+    "rateAPR": 1.096095
+  },
+  {
+    "t": 1770667200006,
+    "symbol": "KAITOUSDT",
+    "rate": 0.00003311,
+    "rateBps": 0.3311,
+    "rateAPR": 3.6255450000000002
+  },
+  {
+    "t": 1770681600000,
+    "symbol": "KAITOUSDT",
+    "rate": 0.00003964,
+    "rateBps": 0.3964,
+    "rateAPR": 4.34058
+  },
+  {
+    "t": 1770696000000,
+    "symbol": "KAITOUSDT",
+    "rate": 0.00004472,
+    "rateBps": 0.4472,
+    "rateAPR": 4.89684
+  },
+  {
+    "t": 1770710400007,
+    "symbol": "KAITOUSDT",
+    "rate": 0.00002978,
+    "rateBps": 0.2978,
+    "rateAPR": 3.2609099999999995
+  },
+  {
+    "t": 1770724800000,
+    "symbol": "KAITOUSDT",
+    "rate": -0.00004186,
+    "rateBps": -0.4186,
+    "rateAPR": -4.58367
+  },
+  {
+    "t": 1770739200000,
+    "symbol": "KAITOUSDT",
+    "rate": -0.00071923,
+    "rateBps": -7.1922999999999995,
+    "rateAPR": -78.755685
+  },
+  {
+    "t": 1770753600007,
+    "symbol": "KAITOUSDT",
+    "rate": -0.00020301,
+    "rateBps": -2.0301,
+    "rateAPR": -22.229595
+  },
+  {
+    "t": 1770768000000,
+    "symbol": "KAITOUSDT",
+    "rate": -0.00009023,
+    "rateBps": -0.9023,
+    "rateAPR": -9.880184999999999
+  },
+  {
+    "t": 1770782400000,
+    "symbol": "KAITOUSDT",
+    "rate": -0.0000162,
+    "rateBps": -0.162,
+    "rateAPR": -1.7739
+  },
+  {
+    "t": 1770796800006,
+    "symbol": "KAITOUSDT",
+    "rate": -0.00010397,
+    "rateBps": -1.0396999999999998,
+    "rateAPR": -11.384715
+  },
+  {
+    "t": 1770811200000,
+    "symbol": "KAITOUSDT",
+    "rate": 0.00000435,
+    "rateBps": 0.0435,
+    "rateAPR": 0.47632499999999994
+  },
+  {
+    "t": 1770825600000,
+    "symbol": "KAITOUSDT",
+    "rate": 0.00000232,
+    "rateBps": 0.0232,
+    "rateAPR": 0.25404
+  },
+  {
+    "t": 1770840000003,
+    "symbol": "KAITOUSDT",
+    "rate": -0.00006492,
+    "rateBps": -0.6492,
+    "rateAPR": -7.108739999999999
+  },
+  {
+    "t": 1770854400000,
+    "symbol": "KAITOUSDT",
+    "rate": -0.00022642,
+    "rateBps": -2.2641999999999998,
+    "rateAPR": -24.79299
+  },
+  {
+    "t": 1770868800000,
+    "symbol": "KAITOUSDT",
+    "rate": 0.00003186,
+    "rateBps": 0.31860000000000005,
+    "rateAPR": 3.48867
+  },
+  {
+    "t": 1770883200001,
+    "symbol": "KAITOUSDT",
+    "rate": 0.00000978,
+    "rateBps": 0.0978,
+    "rateAPR": 1.07091
+  },
+  {
+    "t": 1770897600002,
+    "symbol": "KAITOUSDT",
+    "rate": 0.00000643,
+    "rateBps": 0.0643,
+    "rateAPR": 0.7040850000000001
+  },
+  {
+    "t": 1770912000001,
+    "symbol": "KAITOUSDT",
+    "rate": 0.00000669,
+    "rateBps": 0.0669,
+    "rateAPR": 0.7325550000000001
+  },
+  {
+    "t": 1770926400006,
+    "symbol": "KAITOUSDT",
+    "rate": 0.00005,
+    "rateBps": 0.5,
+    "rateAPR": 5.4750000000000005
+  },
+  {
+    "t": 1770940800007,
+    "symbol": "KAITOUSDT",
+    "rate": 0.00005,
+    "rateBps": 0.5,
+    "rateAPR": 5.4750000000000005
+  },
+  {
+    "t": 1770955200000,
+    "symbol": "KAITOUSDT",
+    "rate": 0.00005,
+    "rateBps": 0.5,
+    "rateAPR": 5.4750000000000005
+  },
+  {
+    "t": 1770969600003,
+    "symbol": "KAITOUSDT",
+    "rate": 0.00005,
+    "rateBps": 0.5,
+    "rateAPR": 5.4750000000000005
+  },
+  {
+    "t": 1770984000000,
+    "symbol": "KAITOUSDT",
+    "rate": 0.00005,
+    "rateBps": 0.5,
+    "rateAPR": 5.4750000000000005
+  },
+  {
+    "t": 1770998400005,
+    "symbol": "KAITOUSDT",
+    "rate": 0.00005,
+    "rateBps": 0.5,
+    "rateAPR": 5.4750000000000005
+  },
+  {
+    "t": 1771012800006,
+    "symbol": "KAITOUSDT",
+    "rate": 0.00002791,
+    "rateBps": 0.2791,
+    "rateAPR": 3.056145
+  },
+  {
+    "t": 1771027200002,
+    "symbol": "KAITOUSDT",
+    "rate": 0.00005,
+    "rateBps": 0.5,
+    "rateAPR": 5.4750000000000005
+  },
+  {
+    "t": 1771041600007,
+    "symbol": "KAITOUSDT",
+    "rate": 0.00005,
+    "rateBps": 0.5,
+    "rateAPR": 5.4750000000000005
+  },
+  {
+    "t": 1771056000004,
+    "symbol": "KAITOUSDT",
+    "rate": 0.00001717,
+    "rateBps": 0.1717,
+    "rateAPR": 1.880115
+  },
+  {
+    "t": 1771070400000,
+    "symbol": "KAITOUSDT",
+    "rate": -0.00003163,
+    "rateBps": -0.3163,
+    "rateAPR": -3.4634850000000004
+  },
+  {
+    "t": 1771084800002,
+    "symbol": "KAITOUSDT",
+    "rate": 0.00001024,
+    "rateBps": 0.1024,
+    "rateAPR": 1.1212800000000003
+  },
+  {
+    "t": 1771099200000,
+    "symbol": "KAITOUSDT",
+    "rate": 0.0000196,
+    "rateBps": 0.19599999999999998,
+    "rateAPR": 2.1462
+  },
+  {
+    "t": 1771113600000,
+    "symbol": "KAITOUSDT",
+    "rate": 0.00000962,
+    "rateBps": 0.0962,
+    "rateAPR": 1.0533899999999998
+  },
+  {
+    "t": 1771128000000,
+    "symbol": "KAITOUSDT",
+    "rate": 0.00003755,
+    "rateBps": 0.3755,
+    "rateAPR": 4.111725
+  },
+  {
+    "t": 1771142400002,
+    "symbol": "KAITOUSDT",
+    "rate": 0.00003603,
+    "rateBps": 0.3603,
+    "rateAPR": 3.9452850000000006
+  },
+  {
+    "t": 1771156800005,
+    "symbol": "KAITOUSDT",
+    "rate": 0.00005,
+    "rateBps": 0.5,
+    "rateAPR": 5.4750000000000005
+  },
+  {
+    "t": 1771171200000,
+    "symbol": "KAITOUSDT",
+    "rate": 0.00005,
+    "rateBps": 0.5,
+    "rateAPR": 5.4750000000000005
+  },
+  {
+    "t": 1771185600009,
+    "symbol": "KAITOUSDT",
+    "rate": 0.00000632,
+    "rateBps": 0.06319999999999999,
+    "rateAPR": 0.6920399999999999
+  },
+  {
+    "t": 1771200000001,
+    "symbol": "KAITOUSDT",
+    "rate": 0.00002722,
+    "rateBps": 0.2722,
+    "rateAPR": 2.98059
+  },
+  {
+    "t": 1771214400004,
+    "symbol": "KAITOUSDT",
+    "rate": 0.000025,
+    "rateBps": 0.25,
+    "rateAPR": 2.7375000000000003
+  },
+  {
+    "t": 1771228800003,
+    "symbol": "KAITOUSDT",
+    "rate": -0.00000498,
+    "rateBps": -0.0498,
+    "rateAPR": -0.54531
+  },
+  {
+    "t": 1771243200000,
+    "symbol": "KAITOUSDT",
+    "rate": 0.0000189,
+    "rateBps": 0.18899999999999997,
+    "rateAPR": 2.06955
+  },
+  {
+    "t": 1771257600000,
+    "symbol": "KAITOUSDT",
+    "rate": 0.00005,
+    "rateBps": 0.5,
+    "rateAPR": 5.4750000000000005
+  },
+  {
+    "t": 1771272000009,
+    "symbol": "KAITOUSDT",
+    "rate": 0.0000361,
+    "rateBps": 0.36100000000000004,
+    "rateAPR": 3.9529500000000004
+  },
+  {
+    "t": 1771286400008,
+    "symbol": "KAITOUSDT",
+    "rate": 0.00005,
+    "rateBps": 0.5,
+    "rateAPR": 5.4750000000000005
+  },
+  {
+    "t": 1771300800003,
+    "symbol": "KAITOUSDT",
+    "rate": 0.00005,
+    "rateBps": 0.5,
+    "rateAPR": 5.4750000000000005
+  },
+  {
+    "t": 1771315200001,
+    "symbol": "KAITOUSDT",
+    "rate": -0.00001561,
+    "rateBps": -0.15610000000000002,
+    "rateAPR": -1.7092950000000002
+  },
+  {
+    "t": 1771329600000,
+    "symbol": "KAITOUSDT",
+    "rate": 0.00005,
+    "rateBps": 0.5,
+    "rateAPR": 5.4750000000000005
+  },
+  {
+    "t": 1771344000002,
+    "symbol": "KAITOUSDT",
+    "rate": 0.00005,
+    "rateBps": 0.5,
+    "rateAPR": 5.4750000000000005
+  },
+  {
+    "t": 1771358400002,
+    "symbol": "KAITOUSDT",
+    "rate": 0.00002295,
+    "rateBps": 0.22949999999999998,
+    "rateAPR": 2.513025
+  },
+  {
+    "t": 1771372800000,
+    "symbol": "KAITOUSDT",
+    "rate": -0.00002462,
+    "rateBps": -0.2462,
+    "rateAPR": -2.69589
+  },
+  {
+    "t": 1771387200000,
+    "symbol": "KAITOUSDT",
+    "rate": 0.00002266,
+    "rateBps": 0.2266,
+    "rateAPR": 2.48127
+  },
+  {
+    "t": 1771401600000,
+    "symbol": "KAITOUSDT",
+    "rate": -0.00004249,
+    "rateBps": -0.4249,
+    "rateAPR": -4.652655
+  },
+  {
+    "t": 1771416000007,
+    "symbol": "KAITOUSDT",
+    "rate": 0.00005,
+    "rateBps": 0.5,
+    "rateAPR": 5.4750000000000005
+  },
+  {
+    "t": 1771430400011,
+    "symbol": "KAITOUSDT",
+    "rate": 0.00000129,
+    "rateBps": 0.0129,
+    "rateAPR": 0.141255
+  },
+  {
+    "t": 1771444800004,
+    "symbol": "KAITOUSDT",
+    "rate": -0.00001316,
+    "rateBps": -0.1316,
+    "rateAPR": -1.4410199999999997
+  },
+  {
+    "t": 1771459200013,
+    "symbol": "KAITOUSDT",
+    "rate": 0.0000135,
+    "rateBps": 0.13499999999999998,
+    "rateAPR": 1.4782499999999998
+  },
+  {
+    "t": 1771473600003,
+    "symbol": "KAITOUSDT",
+    "rate": -0.00001874,
+    "rateBps": -0.1874,
+    "rateAPR": -2.0520300000000002
+  },
+  {
+    "t": 1771488000000,
+    "symbol": "KAITOUSDT",
+    "rate": 0.00005,
+    "rateBps": 0.5,
+    "rateAPR": 5.4750000000000005
+  },
+  {
+    "t": 1771502400011,
+    "symbol": "KAITOUSDT",
+    "rate": 0.00005,
+    "rateBps": 0.5,
+    "rateAPR": 5.4750000000000005
+  },
+  {
+    "t": 1771516800003,
+    "symbol": "KAITOUSDT",
+    "rate": 0.0000302,
+    "rateBps": 0.302,
+    "rateAPR": 3.3068999999999993
+  },
+  {
+    "t": 1771531200000,
+    "symbol": "KAITOUSDT",
+    "rate": -0.0000155,
+    "rateBps": -0.155,
+    "rateAPR": -1.6972500000000001
+  },
+  {
+    "t": 1771545600000,
+    "symbol": "KAITOUSDT",
+    "rate": 0.00001026,
+    "rateBps": 0.1026,
+    "rateAPR": 1.12347
+  },
+  {
+    "t": 1771560000003,
+    "symbol": "KAITOUSDT",
+    "rate": -0.00004036,
+    "rateBps": -0.4036,
+    "rateAPR": -4.419420000000001
+  },
+  {
+    "t": 1771574400000,
+    "symbol": "KAITOUSDT",
+    "rate": 6.4e-7,
+    "rateBps": 0.0064,
+    "rateAPR": 0.07008000000000002
+  },
+  {
+    "t": 1771588800000,
+    "symbol": "KAITOUSDT",
+    "rate": -0.0000559,
+    "rateBps": -0.5589999999999999,
+    "rateAPR": -6.121049999999999
+  },
+  {
+    "t": 1771603200000,
+    "symbol": "KAITOUSDT",
+    "rate": 0.00004175,
+    "rateBps": 0.4175,
+    "rateAPR": 4.571624999999999
+  },
+  {
+    "t": 1771617600000,
+    "symbol": "KAITOUSDT",
+    "rate": 0.00000423,
+    "rateBps": 0.042300000000000004,
+    "rateAPR": 0.46318499999999996
+  },
+  {
+    "t": 1771632000004,
+    "symbol": "KAITOUSDT",
+    "rate": 0.00005,
+    "rateBps": 0.5,
+    "rateAPR": 5.4750000000000005
+  },
+  {
+    "t": 1771646400000,
+    "symbol": "KAITOUSDT",
+    "rate": 0.00005,
+    "rateBps": 0.5,
+    "rateAPR": 5.4750000000000005
+  },
+  {
+    "t": 1771660800000,
+    "symbol": "KAITOUSDT",
+    "rate": 0.00005,
+    "rateBps": 0.5,
+    "rateAPR": 5.4750000000000005
+  },
+  {
+    "t": 1771675200013,
+    "symbol": "KAITOUSDT",
+    "rate": -0.00003463,
+    "rateBps": -0.3463,
+    "rateAPR": -3.791985
+  },
+  {
+    "t": 1771689600005,
+    "symbol": "KAITOUSDT",
+    "rate": -0.00000571,
+    "rateBps": -0.057100000000000005,
+    "rateAPR": -0.625245
+  },
+  {
+    "t": 1771704000000,
+    "symbol": "KAITOUSDT",
+    "rate": -0.00009869,
+    "rateBps": -0.9869,
+    "rateAPR": -10.806555
+  },
+  {
+    "t": 1771718400001,
+    "symbol": "KAITOUSDT",
+    "rate": -0.00003852,
+    "rateBps": -0.3852,
+    "rateAPR": -4.21794
+  },
+  {
+    "t": 1771732800008,
+    "symbol": "KAITOUSDT",
+    "rate": -0.0000049,
+    "rateBps": -0.048999999999999995,
+    "rateAPR": -0.53655
+  },
+  {
+    "t": 1771747200004,
+    "symbol": "KAITOUSDT",
+    "rate": -0.00006614,
+    "rateBps": -0.6614,
+    "rateAPR": -7.24233
+  },
+  {
+    "t": 1771761600008,
+    "symbol": "KAITOUSDT",
+    "rate": 0.00005,
+    "rateBps": 0.5,
+    "rateAPR": 5.4750000000000005
+  },
+  {
+    "t": 1771776000000,
+    "symbol": "KAITOUSDT",
+    "rate": 0.00005,
+    "rateBps": 0.5,
+    "rateAPR": 5.4750000000000005
+  },
+  {
+    "t": 1771790400000,
+    "symbol": "KAITOUSDT",
+    "rate": 0.00000731,
+    "rateBps": 0.0731,
+    "rateAPR": 0.8004450000000002
+  },
+  {
+    "t": 1771804800001,
+    "symbol": "KAITOUSDT",
+    "rate": 0.00003403,
+    "rateBps": 0.3403,
+    "rateAPR": 3.726285
+  },
+  {
+    "t": 1771819200000,
+    "symbol": "KAITOUSDT",
+    "rate": -0.00003133,
+    "rateBps": -0.3133,
+    "rateAPR": -3.430635
+  },
+  {
+    "t": 1771833600000,
+    "symbol": "KAITOUSDT",
+    "rate": -0.00002245,
+    "rateBps": -0.2245,
+    "rateAPR": -2.458275
+  },
+  {
+    "t": 1771848000003,
+    "symbol": "KAITOUSDT",
+    "rate": -0.00007784,
+    "rateBps": -0.7784,
+    "rateAPR": -8.52348
+  },
+  {
+    "t": 1771862400000,
+    "symbol": "KAITOUSDT",
+    "rate": -0.00000311,
+    "rateBps": -0.0311,
+    "rateAPR": -0.340545
+  },
+  {
+    "t": 1771876800000,
+    "symbol": "KAITOUSDT",
+    "rate": 0.00004018,
+    "rateBps": 0.4018,
+    "rateAPR": 4.39971
+  },
+  {
+    "t": 1771891200007,
+    "symbol": "KAITOUSDT",
+    "rate": 0.00001634,
+    "rateBps": 0.1634,
+    "rateAPR": 1.7892299999999999
+  },
+  {
+    "t": 1771905600000,
+    "symbol": "KAITOUSDT",
+    "rate": 0.00004467,
+    "rateBps": 0.4467,
+    "rateAPR": 4.891365
+  },
+  {
+    "t": 1771920000000,
+    "symbol": "KAITOUSDT",
+    "rate": -0.0001139,
+    "rateBps": -1.139,
+    "rateAPR": -12.47205
+  },
+  {
+    "t": 1771934400000,
+    "symbol": "KAITOUSDT",
+    "rate": 0.00005,
+    "rateBps": 0.5,
+    "rateAPR": 5.4750000000000005
+  },
+  {
+    "t": 1771948800001,
+    "symbol": "KAITOUSDT",
+    "rate": 0.00002181,
+    "rateBps": 0.2181,
+    "rateAPR": 2.388195
+  },
+  {
+    "t": 1771963200002,
+    "symbol": "KAITOUSDT",
+    "rate": -0.00012583,
+    "rateBps": -1.2583,
+    "rateAPR": -13.778385000000002
+  },
+  {
+    "t": 1771977600001,
+    "symbol": "KAITOUSDT",
+    "rate": -0.00008375,
+    "rateBps": -0.8375,
+    "rateAPR": -9.170625000000001
+  },
+  {
+    "t": 1771992000000,
+    "symbol": "KAITOUSDT",
+    "rate": 0.00004132,
+    "rateBps": 0.41319999999999996,
+    "rateAPR": 4.52454
+  },
+  {
+    "t": 1772006400007,
+    "symbol": "KAITOUSDT",
+    "rate": 0.00005,
+    "rateBps": 0.5,
+    "rateAPR": 5.4750000000000005
+  },
+  {
+    "t": 1772020800000,
+    "symbol": "KAITOUSDT",
+    "rate": 0.00005,
+    "rateBps": 0.5,
+    "rateAPR": 5.4750000000000005
+  },
+  {
+    "t": 1772035200000,
+    "symbol": "KAITOUSDT",
+    "rate": 0.00005,
+    "rateBps": 0.5,
+    "rateAPR": 5.4750000000000005
+  },
+  {
+    "t": 1772049600006,
+    "symbol": "KAITOUSDT",
+    "rate": 0.00005,
+    "rateBps": 0.5,
+    "rateAPR": 5.4750000000000005
+  }
+]

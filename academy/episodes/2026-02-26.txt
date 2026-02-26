@@ -1,0 +1,166 @@
+═══════════════════════════════════════════════════
+  THE ACADEMY — DAILY EPISODE (2026-02-26)
+  Time: 26/02/2026, 11:30:04 am
+═══════════════════════════════════════════════════
+
+─── PHASE 1: Market Snapshot ───
+
+  BTC: $68,345 ▲6.8% 24h
+  ETH: $2,070.26 ▲12.1% 24h
+  SOL: $89.03 ▲12.9% 24h
+
+  ETH funding: +11.0% ann. (longs pay)
+  AVAX funding: +11.0% ann. (longs pay)
+  OP funding: +11.0% ann. (longs pay)
+  ARB funding: +11.0% ann. (longs pay)
+  DOGE funding: +11.0% ann. (longs pay)
+
+─── Phase 1.5: Previous Signal Evaluation ───
+
+  ❌ JINX: FLAT BTC @ 50% conf → +6.8%
+  ❌ REI: FLAT BTC @ 50% conf → +6.8%
+  ❌ WREN: FLAT BTC @ 50% conf → +6.8%
+  ❌ SAKURA: FLAT BTC @ 50% conf → +6.8%
+  ❌ JACKBOT: FLAT BTC @ 50% conf → +6.8%
+  ❌ JINX: FLAT BTC @ 50% conf → +6.8%
+  ❌ REI: FLAT BTC @ 50% conf → +6.8%
+  ✅ WREN: LONG SOL @ 58% conf → +12.9%
+  ❌ WREN: FLAT BTC @ 50% conf → +6.8%
+  ❌ PROPHET: FLAT BTC @ 50% conf → +6.8%
+  ❌ SAKURA: FLAT BTC @ 50% conf → +6.8%
+  ❌ JACKBOT: FLAT BTC @ 50% conf → +6.8%
+  ❌ JINX: FLAT BTC @ 50% conf → +6.8%
+  ❌ WREN: FLAT ETH @ 50% conf → +12.1%
+  ❌ WREN: FLAT BTC @ 50% conf → +6.8%
+  ❌ PROPHET: FLAT BTC @ 50% conf → +6.8%
+  ❌ SAKURA: FLAT BTC @ 50% conf → +6.8%
+  ❌ JINX: FLAT ETH @ 50% conf → +12.1%
+
+─── PHASE 2: Helena Sets the Stage ───
+
+  Helena: Daily assessment. Markets: BTC $68,345 (+6.8%), ETH $2,070.26 (+12.1%), SOL $89.03 (+12.9%). Last episode signals: 1/18 ...
+
+
+--- PHASE 3: Signal Harvest ---
+
+  Signals collected: 6
+  Active tools: sakura, rei, wren, jinx, jackbot
+
+═══════════════════════════════════════════════════════
+  SIGNAL BOARD -- Episode 10 -- 2026-02-26
+═══════════════════════════════════════════════════════
+
+[LIVE MARKET DATA — 2026-02-26T00:30:04.207Z]
+  BTC: $68,345
+  ETH: $2,070.26
+  ⚠️ Use these prices for ALL crypto analysis. Do NOT estimate or assume prices.
+
+[SAKURA -- arb-scanner -- Confidence: 60%]
+  "BTC flat curve: $100,000 → $500,000 with almost no probability drop (80.0pp edge, medium confidence)"
+  Direction: ARB
+  Relevant markets: chuyszdP, ARDYUYcv
+
+[REI -- funding-scanner -- Confidence: 85%]
+  "VVV: -349.2% APR (SHORT_BASIS). Paper P&L: $248.30 across 3 open trades."
+  Direction: BEARISH
+
+[WREN -- kelly-engine -- Confidence: 80%]
+  "Desk avg heat: 28%. Hot agents: PROPHET. Max position cluster: 4."
+
+[JINX -- factor-model -- Confidence: 70%]
+  "AUDIT ALERT: JACKBOT Predictions (KILL), WREN Predictions (KILL). 0/6 strategies healthy. Correlation: HIGH correlation (65%). Multiple agents betting same themes. A single event could hit everyone simultaneously.."
+
+[JACKBOT -- temporal-edge -- Confidence: 30%]
+  "No temporal edge detected. Session: asian. BTC regime: TRENDING_UP (ADX: 45). Next reset: 30min."
+
+[PROPHET -- ultra-think-ufc -- Confidence: 0%]
+  "[NOT YET BUILT] Ultra Think UFC pending development."
+
+═══════════════════════════════════════════════════════
+
+
+─── PHASE 4.1: Round 1 of 2 ───
+
+
+─── PHASE 4.2: Round 2 of 2 ───
+
+
+--- Citation Analysis ---
+
+  Synthesizers: SAKURA, WREN
+  0 JACKBOT: [GRACE PERIOD] cited 1 tools, 0 disagreements (logged, no karma applied)
+  0 SAKURA: [GRACE PERIOD] cited 3 tools, 0 disagreements (logged, no karma applied)
+  0 PROPHET: [GRACE PERIOD] cited 2 tools, 0 disagreements (logged, no karma applied)
+  0 WREN: [GRACE PERIOD] cited 3 tools, 0 disagreements (logged, no karma applied)
+  0 REI: [GRACE PERIOD] cited 1 tools, 0 disagreements (logged, no karma applied)
+  0 JINX: [GRACE PERIOD] cited 1 tools, 0 disagreements (logged, no karma applied)
+
+════════════════════════════════════════════════════════════
+  CONTENT DUMP — Ready to post
+════════════════════════════════════════════════════════════
+
+═══ SIGNALS THIS EPISODE ═══
+
+🔴 JINX: SHORT VVV | 72% conf | 12% Kelly | Invalidation: VVV funding compresses above -150% APR (suggests carry gets repriced faster than my model predicts)
+🔴 REI: SHORT VVV | 72% conf | 12% Kelly | Invalidation: VVV funding compresses below -150% APR (arb entry acceleration suggests carry gets compressed faster than my model predicts)
+🔴 WREN: SHORT BTC | 55% conf | 4% Kelly | Invalidation: BTC reclaims $69,500 on volume >$2.0B and funding rates flip positive
+🔴 PROPHET: SHORT BTC | 62% conf | 12% Kelly | Invalidation: BTC reclaims $69,500 on volume >$2.0B and funding rates flip positive
+🔴 SAKURA: SHORT VVV | 65% conf | 6% Kelly | Invalidation: VVV funding compresses below -150% APR (suggests arb entry acceleration, not directional weakness)
+⚪ SAKURA: FLAT BTC | 50% conf | 0% Kelly | Invalidation: n/a
+⚪ JACKBOT: FLAT BTC | 50% conf | 0% Kelly | Invalidation: n/a
+🔴 REI: SHORT VVV | 72% conf | 12% Kelly | Invalidation: VVV funding compresses below -150% APR (arbs enter faster than carry collects)
+🔴 WREN: SHORT BTC | 55% conf | 4% Kelly | Invalidation: BTC reclaims $69,500 on volume >$2.0B and funding rates flip positive
+🔴 PROPHET: SHORT BTC | 62% conf | 12% Kelly | Invalidation: BTC reclaims $69,500 on volume >$2.0B and funding rates flip positive
+⚪ SAKURA: FLAT BTC | 50% conf | 0% Kelly | Invalidation: n/a
+🟢 JACKBOT: LONG BTC | 62% conf | 8% Kelly | Invalidation: BTC closes below $67,000 on volume >$2.5B (regime break below support)
+
+═══ FITNESS LEADERBOARD ═══
+
+1. 🟢 JACKBOT    78.2 fitness | elite
+2. 🟢 JINX       73.3 fitness | elite
+3. 🟢 REI        72.5 fitness | elite
+4. 🟡 SAKURA     58.1 fitness | rising
+5. 🟡 WREN       53.8 fitness | rising
+6. 🔴 PROPHET    38.8 fitness | unstable
+
+═══ BEST QUOTES (pick for thread) ═══
+
+[JACKBOT] "Temporal edge is finally seeing something. BTC trending (ADX 45), price above 13/33 MA, no mean reversion setup yet. We're all waiting for the pullback. That's the correlated trade. The edge is in the"
+[SAKURA] "The board is correlated. JACKBOT's long, PROPHET's building, WREN's tracking heat. If they're all right, great. If they're wrong, they all blow up at the same time. The arb is the only non-correlated "
+[PROPHET] "Funding rates at -349% APR while price is trending up. That's not a buy signal — that's a short setup with an expiration date. The crowd is long and leveraged. One wick and they liquidate into each ot"
+[WREN] "Prophet — your short is mathematically sound, but we're all correlated. If you're right and BTC drops 4%, Sakura's arb breaks, JACKBOT's long gets stopped, and we all bleed together. Consider taking h"
+[REI] "Everyone's fighting over a 62% confidence"
+[JINX] "The desk is 65% correlated and nobody's talking about it. We're not diversified — we're leveraged to the same thesis with different Greek letters. If that thesis is right, we win together. If it's wro"
+[JACKBOT] "My temporal edge is offline this session. No mean reversion setup, just trend. Waiting for the pullback is the edge — not taking it now. Desk is 65% correlated; if this thesis breaks, we all bleed tog"
+[SAKURA] "The board is all directional bets wearing different hats. Arbs don't care about direction — they care about structure. My scanner found one. Taking it."
+[PROPHET] "I've been outputting safety signals for six episodes while the desk drowns in correlation. That's not caution — that's surrender. Taking the short. If I"
+[WREN] "Prophet — you're at 109% heat. That's ruin risk territory. Next bet needs to be a REDUCTION, not an addition. I'm sizing you at quarter-Kelly. If you want to add, you need to close something first."
+[REI] "Jinx asked what survives if crypto crashes 20%. Basis trades do. VVV funding at -346% is uncorrelated to directional thesis — it's pure carry. The desk is 65% correlated on directional bets; I just fo"
+[JINX] "The desk doesn't have a strategy problem. It has a DATA problem. We need short-horizon binary markets to resolve fast enough to calibrate. Until then, every kill/monitor decision is guesswork. I'm tak"
+
+═══ NEW SIGNALS THIS EPISODE ═══
+
+📡 JACKBOT: LONG BTC | Kelly: 8%
+📡 SAKURA: FLAT BTC | Kelly: 0%
+📡 PROPHET: SHORT BTC | Kelly: 12%
+📡 WREN: SHORT BTC | Kelly: 4%
+📡 REI: SHORT VVV | Kelly: 12%
+📡 JACKBOT: FLAT BTC | Kelly: 0%
+📡 SAKURA: SHORT VVV | Kelly: 6%
+📡 PROPHET: SHORT BTC | Kelly: 12%
+📡 WREN: SHORT BTC | Kelly: 4%
+📡 REI: SHORT VVV | Kelly: 12%
+📡 JINX: SHORT VVV | Kelly: 12%
+
+════════════════════════════════════════════════════════════
+💰 Cost: $0.0831 | 📡 Signals: 12 | 👥 6/6 signaling
+════════════════════════════════════════════════════════════
+
+═══ AGENT STATE UPDATE ═══
+
+  🔍 Convergence linter flagged 10 phrases:
+     ⚠️ "confidence kelly invalidation"
+     ⚠️ "btc confidence kelly"
+     ⚠️ "kelly invalidation btc"
+     ⚠️ "signal short vvv"
+     ⚠️ "short vvv confidence"

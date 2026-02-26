@@ -1,0 +1,1262 @@
+[
+  {
+    "t": 1769472000002,
+    "symbol": "TNSRUSDT",
+    "rate": 0.00005,
+    "rateBps": 0.5,
+    "rateAPR": 5.4750000000000005
+  },
+  {
+    "t": 1769486400002,
+    "symbol": "TNSRUSDT",
+    "rate": 0.00003352,
+    "rateBps": 0.3352,
+    "rateAPR": 3.6704399999999997
+  },
+  {
+    "t": 1769500800000,
+    "symbol": "TNSRUSDT",
+    "rate": 0.00005,
+    "rateBps": 0.5,
+    "rateAPR": 5.4750000000000005
+  },
+  {
+    "t": 1769515200006,
+    "symbol": "TNSRUSDT",
+    "rate": -0.00002033,
+    "rateBps": -0.2033,
+    "rateAPR": -2.2261349999999998
+  },
+  {
+    "t": 1769529600000,
+    "symbol": "TNSRUSDT",
+    "rate": 0.00003621,
+    "rateBps": 0.36210000000000003,
+    "rateAPR": 3.9649949999999996
+  },
+  {
+    "t": 1769544000000,
+    "symbol": "TNSRUSDT",
+    "rate": 0.00005,
+    "rateBps": 0.5,
+    "rateAPR": 5.4750000000000005
+  },
+  {
+    "t": 1769558400000,
+    "symbol": "TNSRUSDT",
+    "rate": 0.00005,
+    "rateBps": 0.5,
+    "rateAPR": 5.4750000000000005
+  },
+  {
+    "t": 1769572800008,
+    "symbol": "TNSRUSDT",
+    "rate": 0.00005,
+    "rateBps": 0.5,
+    "rateAPR": 5.4750000000000005
+  },
+  {
+    "t": 1769587200000,
+    "symbol": "TNSRUSDT",
+    "rate": 0.00005,
+    "rateBps": 0.5,
+    "rateAPR": 5.4750000000000005
+  },
+  {
+    "t": 1769601600005,
+    "symbol": "TNSRUSDT",
+    "rate": 0.00004708,
+    "rateBps": 0.47080000000000005,
+    "rateAPR": 5.155259999999999
+  },
+  {
+    "t": 1769616000000,
+    "symbol": "TNSRUSDT",
+    "rate": 0.00000274,
+    "rateBps": 0.0274,
+    "rateAPR": 0.30002999999999996
+  },
+  {
+    "t": 1769630400004,
+    "symbol": "TNSRUSDT",
+    "rate": -8.9e-7,
+    "rateBps": -0.0089,
+    "rateAPR": -0.09745499999999999
+  },
+  {
+    "t": 1769644800000,
+    "symbol": "TNSRUSDT",
+    "rate": 0.00005,
+    "rateBps": 0.5,
+    "rateAPR": 5.4750000000000005
+  },
+  {
+    "t": 1769659200000,
+    "symbol": "TNSRUSDT",
+    "rate": -0.00005915,
+    "rateBps": -0.5915,
+    "rateAPR": -6.476925
+  },
+  {
+    "t": 1769673600009,
+    "symbol": "TNSRUSDT",
+    "rate": 0.00005,
+    "rateBps": 0.5,
+    "rateAPR": 5.4750000000000005
+  },
+  {
+    "t": 1769688000000,
+    "symbol": "TNSRUSDT",
+    "rate": -0.00002021,
+    "rateBps": -0.2021,
+    "rateAPR": -2.2129950000000003
+  },
+  {
+    "t": 1769702400000,
+    "symbol": "TNSRUSDT",
+    "rate": 0.0000061,
+    "rateBps": 0.061,
+    "rateAPR": 0.66795
+  },
+  {
+    "t": 1769716800004,
+    "symbol": "TNSRUSDT",
+    "rate": 0.00004196,
+    "rateBps": 0.4196,
+    "rateAPR": 4.594619999999999
+  },
+  {
+    "t": 1769731200008,
+    "symbol": "TNSRUSDT",
+    "rate": 0.00000321,
+    "rateBps": 0.032100000000000004,
+    "rateAPR": 0.351495
+  },
+  {
+    "t": 1769745600005,
+    "symbol": "TNSRUSDT",
+    "rate": 0.00005,
+    "rateBps": 0.5,
+    "rateAPR": 5.4750000000000005
+  },
+  {
+    "t": 1769760000000,
+    "symbol": "TNSRUSDT",
+    "rate": 0.00005,
+    "rateBps": 0.5,
+    "rateAPR": 5.4750000000000005
+  },
+  {
+    "t": 1769774400005,
+    "symbol": "TNSRUSDT",
+    "rate": 0.00005,
+    "rateBps": 0.5,
+    "rateAPR": 5.4750000000000005
+  },
+  {
+    "t": 1769788800001,
+    "symbol": "TNSRUSDT",
+    "rate": 0.00001783,
+    "rateBps": 0.17830000000000001,
+    "rateAPR": 1.9523850000000003
+  },
+  {
+    "t": 1769803200004,
+    "symbol": "TNSRUSDT",
+    "rate": 0.00002427,
+    "rateBps": 0.2427,
+    "rateAPR": 2.657565
+  },
+  {
+    "t": 1769817600000,
+    "symbol": "TNSRUSDT",
+    "rate": 0.00005,
+    "rateBps": 0.5,
+    "rateAPR": 5.4750000000000005
+  },
+  {
+    "t": 1769832000002,
+    "symbol": "TNSRUSDT",
+    "rate": -0.00006952,
+    "rateBps": -0.6952,
+    "rateAPR": -7.612439999999999
+  },
+  {
+    "t": 1769846400001,
+    "symbol": "TNSRUSDT",
+    "rate": 0.00005,
+    "rateBps": 0.5,
+    "rateAPR": 5.4750000000000005
+  },
+  {
+    "t": 1769860800010,
+    "symbol": "TNSRUSDT",
+    "rate": 0.0000276,
+    "rateBps": 0.276,
+    "rateAPR": 3.0222
+  },
+  {
+    "t": 1769875200009,
+    "symbol": "TNSRUSDT",
+    "rate": -0.00000311,
+    "rateBps": -0.0311,
+    "rateAPR": -0.340545
+  },
+  {
+    "t": 1769889600012,
+    "symbol": "TNSRUSDT",
+    "rate": 0.00001726,
+    "rateBps": 0.1726,
+    "rateAPR": 1.8899700000000001
+  },
+  {
+    "t": 1769904000001,
+    "symbol": "TNSRUSDT",
+    "rate": 0.00005,
+    "rateBps": 0.5,
+    "rateAPR": 5.4750000000000005
+  },
+  {
+    "t": 1769918400000,
+    "symbol": "TNSRUSDT",
+    "rate": 0.00005,
+    "rateBps": 0.5,
+    "rateAPR": 5.4750000000000005
+  },
+  {
+    "t": 1769932800004,
+    "symbol": "TNSRUSDT",
+    "rate": 0.00005,
+    "rateBps": 0.5,
+    "rateAPR": 5.4750000000000005
+  },
+  {
+    "t": 1769947200004,
+    "symbol": "TNSRUSDT",
+    "rate": 0.00005,
+    "rateBps": 0.5,
+    "rateAPR": 5.4750000000000005
+  },
+  {
+    "t": 1769961600000,
+    "symbol": "TNSRUSDT",
+    "rate": 0.00005,
+    "rateBps": 0.5,
+    "rateAPR": 5.4750000000000005
+  },
+  {
+    "t": 1769976000004,
+    "symbol": "TNSRUSDT",
+    "rate": 0.00000429,
+    "rateBps": 0.042899999999999994,
+    "rateAPR": 0.4697549999999999
+  },
+  {
+    "t": 1769990400000,
+    "symbol": "TNSRUSDT",
+    "rate": 0.00002002,
+    "rateBps": 0.20020000000000002,
+    "rateAPR": 2.19219
+  },
+  {
+    "t": 1770004800000,
+    "symbol": "TNSRUSDT",
+    "rate": 0.00005,
+    "rateBps": 0.5,
+    "rateAPR": 5.4750000000000005
+  },
+  {
+    "t": 1770019200014,
+    "symbol": "TNSRUSDT",
+    "rate": 0.00005,
+    "rateBps": 0.5,
+    "rateAPR": 5.4750000000000005
+  },
+  {
+    "t": 1770033600009,
+    "symbol": "TNSRUSDT",
+    "rate": 0.00005,
+    "rateBps": 0.5,
+    "rateAPR": 5.4750000000000005
+  },
+  {
+    "t": 1770048000000,
+    "symbol": "TNSRUSDT",
+    "rate": 0.00005,
+    "rateBps": 0.5,
+    "rateAPR": 5.4750000000000005
+  },
+  {
+    "t": 1770062400000,
+    "symbol": "TNSRUSDT",
+    "rate": 0.00005,
+    "rateBps": 0.5,
+    "rateAPR": 5.4750000000000005
+  },
+  {
+    "t": 1770076800000,
+    "symbol": "TNSRUSDT",
+    "rate": 0.00005,
+    "rateBps": 0.5,
+    "rateAPR": 5.4750000000000005
+  },
+  {
+    "t": 1770091200001,
+    "symbol": "TNSRUSDT",
+    "rate": 0.00003956,
+    "rateBps": 0.3956,
+    "rateAPR": 4.3318200000000004
+  },
+  {
+    "t": 1770105600007,
+    "symbol": "TNSRUSDT",
+    "rate": 0.00005,
+    "rateBps": 0.5,
+    "rateAPR": 5.4750000000000005
+  },
+  {
+    "t": 1770120000006,
+    "symbol": "TNSRUSDT",
+    "rate": 0.00001324,
+    "rateBps": 0.1324,
+    "rateAPR": 1.44978
+  },
+  {
+    "t": 1770134400000,
+    "symbol": "TNSRUSDT",
+    "rate": 0.00000969,
+    "rateBps": 0.0969,
+    "rateAPR": 1.061055
+  },
+  {
+    "t": 1770148800009,
+    "symbol": "TNSRUSDT",
+    "rate": 0.00005,
+    "rateBps": 0.5,
+    "rateAPR": 5.4750000000000005
+  },
+  {
+    "t": 1770163200002,
+    "symbol": "TNSRUSDT",
+    "rate": 0.00005,
+    "rateBps": 0.5,
+    "rateAPR": 5.4750000000000005
+  },
+  {
+    "t": 1770177600004,
+    "symbol": "TNSRUSDT",
+    "rate": 0.00005,
+    "rateBps": 0.5,
+    "rateAPR": 5.4750000000000005
+  },
+  {
+    "t": 1770192000007,
+    "symbol": "TNSRUSDT",
+    "rate": 0.00004882,
+    "rateBps": 0.48819999999999997,
+    "rateAPR": 5.34579
+  },
+  {
+    "t": 1770206400010,
+    "symbol": "TNSRUSDT",
+    "rate": 0.00005,
+    "rateBps": 0.5,
+    "rateAPR": 5.4750000000000005
+  },
+  {
+    "t": 1770220800000,
+    "symbol": "TNSRUSDT",
+    "rate": -0.0000128,
+    "rateBps": -0.128,
+    "rateAPR": -1.4016
+  },
+  {
+    "t": 1770235200001,
+    "symbol": "TNSRUSDT",
+    "rate": 0.00005,
+    "rateBps": 0.5,
+    "rateAPR": 5.4750000000000005
+  },
+  {
+    "t": 1770249600011,
+    "symbol": "TNSRUSDT",
+    "rate": 0.00005,
+    "rateBps": 0.5,
+    "rateAPR": 5.4750000000000005
+  },
+  {
+    "t": 1770264000001,
+    "symbol": "TNSRUSDT",
+    "rate": 0.00005,
+    "rateBps": 0.5,
+    "rateAPR": 5.4750000000000005
+  },
+  {
+    "t": 1770278400000,
+    "symbol": "TNSRUSDT",
+    "rate": 0.00000571,
+    "rateBps": 0.057100000000000005,
+    "rateAPR": 0.625245
+  },
+  {
+    "t": 1770292800006,
+    "symbol": "TNSRUSDT",
+    "rate": 0.0000072,
+    "rateBps": 0.072,
+    "rateAPR": 0.7884
+  },
+  {
+    "t": 1770307200007,
+    "symbol": "TNSRUSDT",
+    "rate": 0.00002381,
+    "rateBps": 0.2381,
+    "rateAPR": 2.607195
+  },
+  {
+    "t": 1770321600000,
+    "symbol": "TNSRUSDT",
+    "rate": 0.00004943,
+    "rateBps": 0.4943,
+    "rateAPR": 5.412585
+  },
+  {
+    "t": 1770336000000,
+    "symbol": "TNSRUSDT",
+    "rate": 0.00005,
+    "rateBps": 0.5,
+    "rateAPR": 5.4750000000000005
+  },
+  {
+    "t": 1770350400001,
+    "symbol": "TNSRUSDT",
+    "rate": 0.00005,
+    "rateBps": 0.5,
+    "rateAPR": 5.4750000000000005
+  },
+  {
+    "t": 1770364800001,
+    "symbol": "TNSRUSDT",
+    "rate": 0.00005,
+    "rateBps": 0.5,
+    "rateAPR": 5.4750000000000005
+  },
+  {
+    "t": 1770379200003,
+    "symbol": "TNSRUSDT",
+    "rate": 0.00004583,
+    "rateBps": 0.4583,
+    "rateAPR": 5.018384999999999
+  },
+  {
+    "t": 1770393600000,
+    "symbol": "TNSRUSDT",
+    "rate": 0.00005,
+    "rateBps": 0.5,
+    "rateAPR": 5.4750000000000005
+  },
+  {
+    "t": 1770408000005,
+    "symbol": "TNSRUSDT",
+    "rate": 0.00005,
+    "rateBps": 0.5,
+    "rateAPR": 5.4750000000000005
+  },
+  {
+    "t": 1770422400003,
+    "symbol": "TNSRUSDT",
+    "rate": 0.00005,
+    "rateBps": 0.5,
+    "rateAPR": 5.4750000000000005
+  },
+  {
+    "t": 1770436800024,
+    "symbol": "TNSRUSDT",
+    "rate": 0.00005,
+    "rateBps": 0.5,
+    "rateAPR": 5.4750000000000005
+  },
+  {
+    "t": 1770451200000,
+    "symbol": "TNSRUSDT",
+    "rate": 0.00005,
+    "rateBps": 0.5,
+    "rateAPR": 5.4750000000000005
+  },
+  {
+    "t": 1770465600007,
+    "symbol": "TNSRUSDT",
+    "rate": 0.00005,
+    "rateBps": 0.5,
+    "rateAPR": 5.4750000000000005
+  },
+  {
+    "t": 1770480000010,
+    "symbol": "TNSRUSDT",
+    "rate": 0.00005,
+    "rateBps": 0.5,
+    "rateAPR": 5.4750000000000005
+  },
+  {
+    "t": 1770494400000,
+    "symbol": "TNSRUSDT",
+    "rate": 0.00003204,
+    "rateBps": 0.32039999999999996,
+    "rateAPR": 3.50838
+  },
+  {
+    "t": 1770508800003,
+    "symbol": "TNSRUSDT",
+    "rate": 0.00005,
+    "rateBps": 0.5,
+    "rateAPR": 5.4750000000000005
+  },
+  {
+    "t": 1770523200002,
+    "symbol": "TNSRUSDT",
+    "rate": 0.00005,
+    "rateBps": 0.5,
+    "rateAPR": 5.4750000000000005
+  },
+  {
+    "t": 1770537600000,
+    "symbol": "TNSRUSDT",
+    "rate": 0.00005,
+    "rateBps": 0.5,
+    "rateAPR": 5.4750000000000005
+  },
+  {
+    "t": 1770552000005,
+    "symbol": "TNSRUSDT",
+    "rate": 0.00005,
+    "rateBps": 0.5,
+    "rateAPR": 5.4750000000000005
+  },
+  {
+    "t": 1770566400000,
+    "symbol": "TNSRUSDT",
+    "rate": 0.00005,
+    "rateBps": 0.5,
+    "rateAPR": 5.4750000000000005
+  },
+  {
+    "t": 1770580800000,
+    "symbol": "TNSRUSDT",
+    "rate": 0.00005,
+    "rateBps": 0.5,
+    "rateAPR": 5.4750000000000005
+  },
+  {
+    "t": 1770595200002,
+    "symbol": "TNSRUSDT",
+    "rate": 0.00005,
+    "rateBps": 0.5,
+    "rateAPR": 5.4750000000000005
+  },
+  {
+    "t": 1770609600012,
+    "symbol": "TNSRUSDT",
+    "rate": 0.00005,
+    "rateBps": 0.5,
+    "rateAPR": 5.4750000000000005
+  },
+  {
+    "t": 1770624000001,
+    "symbol": "TNSRUSDT",
+    "rate": 0.00005,
+    "rateBps": 0.5,
+    "rateAPR": 5.4750000000000005
+  },
+  {
+    "t": 1770638400003,
+    "symbol": "TNSRUSDT",
+    "rate": 0.00005,
+    "rateBps": 0.5,
+    "rateAPR": 5.4750000000000005
+  },
+  {
+    "t": 1770652800007,
+    "symbol": "TNSRUSDT",
+    "rate": 0.00005,
+    "rateBps": 0.5,
+    "rateAPR": 5.4750000000000005
+  },
+  {
+    "t": 1770667200006,
+    "symbol": "TNSRUSDT",
+    "rate": 0.00004947,
+    "rateBps": 0.4947,
+    "rateAPR": 5.416965
+  },
+  {
+    "t": 1770681600000,
+    "symbol": "TNSRUSDT",
+    "rate": 0.00005,
+    "rateBps": 0.5,
+    "rateAPR": 5.4750000000000005
+  },
+  {
+    "t": 1770696000000,
+    "symbol": "TNSRUSDT",
+    "rate": 0.00004682,
+    "rateBps": 0.4682,
+    "rateAPR": 5.126790000000001
+  },
+  {
+    "t": 1770710400007,
+    "symbol": "TNSRUSDT",
+    "rate": 0.00003877,
+    "rateBps": 0.38770000000000004,
+    "rateAPR": 4.245315000000001
+  },
+  {
+    "t": 1770724800000,
+    "symbol": "TNSRUSDT",
+    "rate": 0.00005,
+    "rateBps": 0.5,
+    "rateAPR": 5.4750000000000005
+  },
+  {
+    "t": 1770739200000,
+    "symbol": "TNSRUSDT",
+    "rate": 0.00005,
+    "rateBps": 0.5,
+    "rateAPR": 5.4750000000000005
+  },
+  {
+    "t": 1770753600007,
+    "symbol": "TNSRUSDT",
+    "rate": 0.00005,
+    "rateBps": 0.5,
+    "rateAPR": 5.4750000000000005
+  },
+  {
+    "t": 1770768000000,
+    "symbol": "TNSRUSDT",
+    "rate": 0.00003942,
+    "rateBps": 0.3942,
+    "rateAPR": 4.31649
+  },
+  {
+    "t": 1770782400000,
+    "symbol": "TNSRUSDT",
+    "rate": 0.00005,
+    "rateBps": 0.5,
+    "rateAPR": 5.4750000000000005
+  },
+  {
+    "t": 1770796800006,
+    "symbol": "TNSRUSDT",
+    "rate": 0.00005,
+    "rateBps": 0.5,
+    "rateAPR": 5.4750000000000005
+  },
+  {
+    "t": 1770811200000,
+    "symbol": "TNSRUSDT",
+    "rate": 0.00005,
+    "rateBps": 0.5,
+    "rateAPR": 5.4750000000000005
+  },
+  {
+    "t": 1770825600000,
+    "symbol": "TNSRUSDT",
+    "rate": 0.00003908,
+    "rateBps": 0.3908,
+    "rateAPR": 4.27926
+  },
+  {
+    "t": 1770840000003,
+    "symbol": "TNSRUSDT",
+    "rate": 0.00005,
+    "rateBps": 0.5,
+    "rateAPR": 5.4750000000000005
+  },
+  {
+    "t": 1770854400000,
+    "symbol": "TNSRUSDT",
+    "rate": -0.0058403,
+    "rateBps": -58.403,
+    "rateAPR": -639.51285
+  },
+  {
+    "t": 1770868800000,
+    "symbol": "TNSRUSDT",
+    "rate": -0.00098172,
+    "rateBps": -9.8172,
+    "rateAPR": -107.49833999999998
+  },
+  {
+    "t": 1770883200001,
+    "symbol": "TNSRUSDT",
+    "rate": -0.0046632,
+    "rateBps": -46.632000000000005,
+    "rateAPR": -510.6204000000001
+  },
+  {
+    "t": 1770897600002,
+    "symbol": "TNSRUSDT",
+    "rate": -0.00160187,
+    "rateBps": -16.0187,
+    "rateAPR": -175.404765
+  },
+  {
+    "t": 1770912000001,
+    "symbol": "TNSRUSDT",
+    "rate": -0.00325417,
+    "rateBps": -32.5417,
+    "rateAPR": -356.33161499999994
+  },
+  {
+    "t": 1770926400006,
+    "symbol": "TNSRUSDT",
+    "rate": -0.00675472,
+    "rateBps": -67.54719999999999,
+    "rateAPR": -739.64184
+  },
+  {
+    "t": 1770940800007,
+    "symbol": "TNSRUSDT",
+    "rate": -0.00186048,
+    "rateBps": -18.6048,
+    "rateAPR": -203.72256000000002
+  },
+  {
+    "t": 1770955200000,
+    "symbol": "TNSRUSDT",
+    "rate": -0.00028466,
+    "rateBps": -2.8466,
+    "rateAPR": -31.17027
+  },
+  {
+    "t": 1770969600003,
+    "symbol": "TNSRUSDT",
+    "rate": -0.00021128,
+    "rateBps": -2.1128,
+    "rateAPR": -23.13516
+  },
+  {
+    "t": 1770984000000,
+    "symbol": "TNSRUSDT",
+    "rate": -0.00326982,
+    "rateBps": -32.6982,
+    "rateAPR": -358.04529
+  },
+  {
+    "t": 1770998400005,
+    "symbol": "TNSRUSDT",
+    "rate": -0.00170904,
+    "rateBps": -17.0904,
+    "rateAPR": -187.13988
+  },
+  {
+    "t": 1771012800006,
+    "symbol": "TNSRUSDT",
+    "rate": -0.00030577,
+    "rateBps": -3.0577,
+    "rateAPR": -33.481815000000005
+  },
+  {
+    "t": 1771027200002,
+    "symbol": "TNSRUSDT",
+    "rate": -0.00020247,
+    "rateBps": -2.0247,
+    "rateAPR": -22.170465000000004
+  },
+  {
+    "t": 1771041600007,
+    "symbol": "TNSRUSDT",
+    "rate": -0.00031293,
+    "rateBps": -3.1293,
+    "rateAPR": -34.265835
+  },
+  {
+    "t": 1771056000004,
+    "symbol": "TNSRUSDT",
+    "rate": -0.00042942,
+    "rateBps": -4.2942,
+    "rateAPR": -47.02149000000001
+  },
+  {
+    "t": 1771070400000,
+    "symbol": "TNSRUSDT",
+    "rate": -0.00062414,
+    "rateBps": -6.2414000000000005,
+    "rateAPR": -68.34333000000001
+  },
+  {
+    "t": 1771084800002,
+    "symbol": "TNSRUSDT",
+    "rate": -0.00009776,
+    "rateBps": -0.9776,
+    "rateAPR": -10.70472
+  },
+  {
+    "t": 1771099200000,
+    "symbol": "TNSRUSDT",
+    "rate": -0.00005484,
+    "rateBps": -0.5484,
+    "rateAPR": -6.00498
+  },
+  {
+    "t": 1771113600000,
+    "symbol": "TNSRUSDT",
+    "rate": -0.00013154,
+    "rateBps": -1.3154000000000001,
+    "rateAPR": -14.40363
+  },
+  {
+    "t": 1771128000000,
+    "symbol": "TNSRUSDT",
+    "rate": -0.00002671,
+    "rateBps": -0.2671,
+    "rateAPR": -2.924745
+  },
+  {
+    "t": 1771142400002,
+    "symbol": "TNSRUSDT",
+    "rate": -0.00005994,
+    "rateBps": -0.5993999999999999,
+    "rateAPR": -6.563429999999999
+  },
+  {
+    "t": 1771156800005,
+    "symbol": "TNSRUSDT",
+    "rate": -0.00012874,
+    "rateBps": -1.2873999999999999,
+    "rateAPR": -14.09703
+  },
+  {
+    "t": 1771171200000,
+    "symbol": "TNSRUSDT",
+    "rate": -0.00014547,
+    "rateBps": -1.4547,
+    "rateAPR": -15.928965
+  },
+  {
+    "t": 1771185600009,
+    "symbol": "TNSRUSDT",
+    "rate": -0.00002751,
+    "rateBps": -0.2751,
+    "rateAPR": -3.012345
+  },
+  {
+    "t": 1771200000001,
+    "symbol": "TNSRUSDT",
+    "rate": -0.00012653,
+    "rateBps": -1.2652999999999999,
+    "rateAPR": -13.855034999999999
+  },
+  {
+    "t": 1771214400004,
+    "symbol": "TNSRUSDT",
+    "rate": -0.0000752,
+    "rateBps": -0.752,
+    "rateAPR": -8.2344
+  },
+  {
+    "t": 1771228800003,
+    "symbol": "TNSRUSDT",
+    "rate": -0.00032199,
+    "rateBps": -3.2199000000000004,
+    "rateAPR": -35.257905
+  },
+  {
+    "t": 1771243200000,
+    "symbol": "TNSRUSDT",
+    "rate": -0.00132894,
+    "rateBps": -13.2894,
+    "rateAPR": -145.51893
+  },
+  {
+    "t": 1771257600000,
+    "symbol": "TNSRUSDT",
+    "rate": -0.00065607,
+    "rateBps": -6.560700000000001,
+    "rateAPR": -71.83966500000001
+  },
+  {
+    "t": 1771272000009,
+    "symbol": "TNSRUSDT",
+    "rate": -0.00025479,
+    "rateBps": -2.5479000000000003,
+    "rateAPR": -27.899505
+  },
+  {
+    "t": 1771286400008,
+    "symbol": "TNSRUSDT",
+    "rate": -0.00043702,
+    "rateBps": -4.3702,
+    "rateAPR": -47.85369
+  },
+  {
+    "t": 1771300800003,
+    "symbol": "TNSRUSDT",
+    "rate": -0.00076507,
+    "rateBps": -7.6507,
+    "rateAPR": -83.775165
+  },
+  {
+    "t": 1771315200001,
+    "symbol": "TNSRUSDT",
+    "rate": -0.00056837,
+    "rateBps": -5.6837,
+    "rateAPR": -62.236515000000004
+  },
+  {
+    "t": 1771329600000,
+    "symbol": "TNSRUSDT",
+    "rate": -0.00021262,
+    "rateBps": -2.1262,
+    "rateAPR": -23.28189
+  },
+  {
+    "t": 1771344000002,
+    "symbol": "TNSRUSDT",
+    "rate": -0.00006861,
+    "rateBps": -0.6860999999999999,
+    "rateAPR": -7.512795
+  },
+  {
+    "t": 1771358400002,
+    "symbol": "TNSRUSDT",
+    "rate": -0.00001156,
+    "rateBps": -0.1156,
+    "rateAPR": -1.26582
+  },
+  {
+    "t": 1771372800000,
+    "symbol": "TNSRUSDT",
+    "rate": 0.00000784,
+    "rateBps": 0.0784,
+    "rateAPR": 0.85848
+  },
+  {
+    "t": 1771387200000,
+    "symbol": "TNSRUSDT",
+    "rate": -0.00009881,
+    "rateBps": -0.9881,
+    "rateAPR": -10.819695
+  },
+  {
+    "t": 1771401600000,
+    "symbol": "TNSRUSDT",
+    "rate": -0.00006234,
+    "rateBps": -0.6234000000000001,
+    "rateAPR": -6.82623
+  },
+  {
+    "t": 1771416000007,
+    "symbol": "TNSRUSDT",
+    "rate": -0.00007884,
+    "rateBps": -0.7884,
+    "rateAPR": -8.63298
+  },
+  {
+    "t": 1771430400011,
+    "symbol": "TNSRUSDT",
+    "rate": -0.00010872,
+    "rateBps": -1.0872,
+    "rateAPR": -11.904840000000002
+  },
+  {
+    "t": 1771444800004,
+    "symbol": "TNSRUSDT",
+    "rate": -0.00000259,
+    "rateBps": -0.025900000000000003,
+    "rateAPR": -0.283605
+  },
+  {
+    "t": 1771459200013,
+    "symbol": "TNSRUSDT",
+    "rate": -0.00012179,
+    "rateBps": -1.2179,
+    "rateAPR": -13.336005
+  },
+  {
+    "t": 1771473600003,
+    "symbol": "TNSRUSDT",
+    "rate": 0.00001472,
+    "rateBps": 0.1472,
+    "rateAPR": 1.6118399999999997
+  },
+  {
+    "t": 1771488000000,
+    "symbol": "TNSRUSDT",
+    "rate": 0.0000239,
+    "rateBps": 0.23900000000000002,
+    "rateAPR": 2.6170500000000003
+  },
+  {
+    "t": 1771502400011,
+    "symbol": "TNSRUSDT",
+    "rate": 0.00003868,
+    "rateBps": 0.38680000000000003,
+    "rateAPR": 4.23546
+  },
+  {
+    "t": 1771516800003,
+    "symbol": "TNSRUSDT",
+    "rate": 0.00005,
+    "rateBps": 0.5,
+    "rateAPR": 5.4750000000000005
+  },
+  {
+    "t": 1771531200000,
+    "symbol": "TNSRUSDT",
+    "rate": 0.00005,
+    "rateBps": 0.5,
+    "rateAPR": 5.4750000000000005
+  },
+  {
+    "t": 1771545600000,
+    "symbol": "TNSRUSDT",
+    "rate": 0.00001952,
+    "rateBps": 0.19519999999999998,
+    "rateAPR": 2.13744
+  },
+  {
+    "t": 1771560000003,
+    "symbol": "TNSRUSDT",
+    "rate": 0.00002023,
+    "rateBps": 0.2023,
+    "rateAPR": 2.215185
+  },
+  {
+    "t": 1771574400000,
+    "symbol": "TNSRUSDT",
+    "rate": -0.00002856,
+    "rateBps": -0.2856,
+    "rateAPR": -3.12732
+  },
+  {
+    "t": 1771588800000,
+    "symbol": "TNSRUSDT",
+    "rate": -0.00007704,
+    "rateBps": -0.7704,
+    "rateAPR": -8.43588
+  },
+  {
+    "t": 1771603200000,
+    "symbol": "TNSRUSDT",
+    "rate": 0.00005,
+    "rateBps": 0.5,
+    "rateAPR": 5.4750000000000005
+  },
+  {
+    "t": 1771617600000,
+    "symbol": "TNSRUSDT",
+    "rate": -0.00003842,
+    "rateBps": -0.38420000000000004,
+    "rateAPR": -4.20699
+  },
+  {
+    "t": 1771632000004,
+    "symbol": "TNSRUSDT",
+    "rate": 0.00003318,
+    "rateBps": 0.3318,
+    "rateAPR": 3.633209999999999
+  },
+  {
+    "t": 1771646400000,
+    "symbol": "TNSRUSDT",
+    "rate": -0.00004023,
+    "rateBps": -0.4023,
+    "rateAPR": -4.4051849999999995
+  },
+  {
+    "t": 1771660800000,
+    "symbol": "TNSRUSDT",
+    "rate": -0.00004981,
+    "rateBps": -0.4981,
+    "rateAPR": -5.4541949999999995
+  },
+  {
+    "t": 1771675200013,
+    "symbol": "TNSRUSDT",
+    "rate": 0.00005,
+    "rateBps": 0.5,
+    "rateAPR": 5.4750000000000005
+  },
+  {
+    "t": 1771689600005,
+    "symbol": "TNSRUSDT",
+    "rate": 0.00002898,
+    "rateBps": 0.2898,
+    "rateAPR": 3.17331
+  },
+  {
+    "t": 1771704000000,
+    "symbol": "TNSRUSDT",
+    "rate": -0.00003398,
+    "rateBps": -0.33980000000000005,
+    "rateAPR": -3.7208100000000006
+  },
+  {
+    "t": 1771718400001,
+    "symbol": "TNSRUSDT",
+    "rate": -0.00016564,
+    "rateBps": -1.6563999999999999,
+    "rateAPR": -18.13758
+  },
+  {
+    "t": 1771732800008,
+    "symbol": "TNSRUSDT",
+    "rate": -0.00003139,
+    "rateBps": -0.3139,
+    "rateAPR": -3.437205
+  },
+  {
+    "t": 1771747200004,
+    "symbol": "TNSRUSDT",
+    "rate": 0.00003054,
+    "rateBps": 0.3054,
+    "rateAPR": 3.34413
+  },
+  {
+    "t": 1771761600008,
+    "symbol": "TNSRUSDT",
+    "rate": -0.00012929,
+    "rateBps": -1.2929,
+    "rateAPR": -14.157255
+  },
+  {
+    "t": 1771776000000,
+    "symbol": "TNSRUSDT",
+    "rate": 0.00004666,
+    "rateBps": 0.46659999999999996,
+    "rateAPR": 5.1092699999999995
+  },
+  {
+    "t": 1771790400000,
+    "symbol": "TNSRUSDT",
+    "rate": -0.00003208,
+    "rateBps": -0.3208,
+    "rateAPR": -3.5127599999999997
+  },
+  {
+    "t": 1771804800001,
+    "symbol": "TNSRUSDT",
+    "rate": -0.00008829,
+    "rateBps": -0.8829,
+    "rateAPR": -9.667755
+  },
+  {
+    "t": 1771819200000,
+    "symbol": "TNSRUSDT",
+    "rate": 0.00002619,
+    "rateBps": 0.2619,
+    "rateAPR": 2.867805
+  },
+  {
+    "t": 1771833600000,
+    "symbol": "TNSRUSDT",
+    "rate": -0.00008001,
+    "rateBps": -0.8001,
+    "rateAPR": -8.761095000000001
+  },
+  {
+    "t": 1771848000003,
+    "symbol": "TNSRUSDT",
+    "rate": -0.00041396,
+    "rateBps": -4.1396,
+    "rateAPR": -45.32862
+  },
+  {
+    "t": 1771862400000,
+    "symbol": "TNSRUSDT",
+    "rate": -0.00005073,
+    "rateBps": -0.5073,
+    "rateAPR": -5.5549349999999995
+  },
+  {
+    "t": 1771876800000,
+    "symbol": "TNSRUSDT",
+    "rate": -0.00004392,
+    "rateBps": -0.4392,
+    "rateAPR": -4.80924
+  },
+  {
+    "t": 1771891200007,
+    "symbol": "TNSRUSDT",
+    "rate": -0.00056136,
+    "rateBps": -5.6136,
+    "rateAPR": -61.468920000000004
+  },
+  {
+    "t": 1771905600000,
+    "symbol": "TNSRUSDT",
+    "rate": -0.00052994,
+    "rateBps": -5.2994,
+    "rateAPR": -58.02843
+  },
+  {
+    "t": 1771920000000,
+    "symbol": "TNSRUSDT",
+    "rate": -0.00027277,
+    "rateBps": -2.7276999999999996,
+    "rateAPR": -29.868314999999996
+  },
+  {
+    "t": 1771934400000,
+    "symbol": "TNSRUSDT",
+    "rate": -0.00018607,
+    "rateBps": -1.8607,
+    "rateAPR": -20.374665000000004
+  },
+  {
+    "t": 1771948800001,
+    "symbol": "TNSRUSDT",
+    "rate": -0.00011356,
+    "rateBps": -1.1356,
+    "rateAPR": -12.43482
+  },
+  {
+    "t": 1771963200002,
+    "symbol": "TNSRUSDT",
+    "rate": -0.00003269,
+    "rateBps": -0.3269,
+    "rateAPR": -3.579555
+  },
+  {
+    "t": 1771977600001,
+    "symbol": "TNSRUSDT",
+    "rate": -0.00004708,
+    "rateBps": -0.47080000000000005,
+    "rateAPR": -5.155259999999999
+  },
+  {
+    "t": 1771992000000,
+    "symbol": "TNSRUSDT",
+    "rate": 0.00001409,
+    "rateBps": 0.1409,
+    "rateAPR": 1.5428549999999999
+  },
+  {
+    "t": 1772006400007,
+    "symbol": "TNSRUSDT",
+    "rate": -0.00001075,
+    "rateBps": -0.1075,
+    "rateAPR": -1.177125
+  },
+  {
+    "t": 1772020800000,
+    "symbol": "TNSRUSDT",
+    "rate": -0.00000837,
+    "rateBps": -0.0837,
+    "rateAPR": -0.9165149999999999
+  },
+  {
+    "t": 1772035200000,
+    "symbol": "TNSRUSDT",
+    "rate": 0.00005,
+    "rateBps": 0.5,
+    "rateAPR": 5.4750000000000005
+  },
+  {
+    "t": 1772049600006,
+    "symbol": "TNSRUSDT",
+    "rate": 0.00005,
+    "rateBps": 0.5,
+    "rateAPR": 5.4750000000000005
+  }
+]

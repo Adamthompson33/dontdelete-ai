@@ -1,18 +1,60 @@
 {
   "agent": "SAKURA",
   "team": "sentinel",
-  "lastUpdated": "2026-02-25T00:32:27.909Z",
-  "runNumber": 9,
+  "lastUpdated": "2026-02-26T00:32:33.992Z",
+  "runNumber": 10,
   "signals": {
-    "total": 12,
+    "total": 15,
     "correct": 0,
     "incorrect": 0,
-    "pending": 12,
+    "pending": 15,
     "accuracy": null,
-    "avgConfidence": 0.5749999999999998,
+    "avgConfidence": 0.57,
     "calibrationScore": null
   },
   "recentSignals": [
+    {
+      "run": 10,
+      "asset": "VVV",
+      "direction": "short",
+      "confidence": 0.65,
+      "kelly_size": 0.06,
+      "invalidation": "VVV funding compresses below -150% APR (suggests arb entry acceleration, not directional weakness)",
+      "data_sources": [
+        "rei-funding-scanner",
+        "microstructure-rebuttal"
+      ],
+      "timestamp": "2026-02-26T00:31:44.803Z",
+      "outcome": "pending"
+    },
+    {
+      "run": 10,
+      "asset": "BTC",
+      "direction": "flat",
+      "confidence": 0.5,
+      "kelly_size": 0,
+      "invalidation": "n/a",
+      "data_sources": [
+        "correlation-audit",
+        "execution-profile"
+      ],
+      "timestamp": "2026-02-26T00:31:44.800Z",
+      "outcome": "pending"
+    },
+    {
+      "run": 10,
+      "asset": "BTC",
+      "direction": "flat",
+      "confidence": 0.5,
+      "kelly_size": 0,
+      "invalidation": "n/a",
+      "data_sources": [
+        "correlation-stress-test",
+        "execution-profile"
+      ],
+      "timestamp": "2026-02-26T00:30:46.430Z",
+      "outcome": "pending"
+    },
     {
       "run": 9,
       "asset": "BTC",
@@ -40,48 +82,6 @@
       ],
       "timestamp": "2026-02-25T00:30:38.521Z",
       "outcome": "pending"
-    },
-    {
-      "run": 8,
-      "asset": "BTC",
-      "direction": "flat",
-      "confidence": 0.5,
-      "kelly_size": 0,
-      "invalidation": "n/a",
-      "data_sources": [
-        "price-staleness",
-        "correlation-audit"
-      ],
-      "timestamp": "2026-02-24T00:31:37.569Z",
-      "outcome": "pending"
-    },
-    {
-      "run": 8,
-      "asset": "OP",
-      "direction": "short",
-      "confidence": 0.62,
-      "kelly_size": 0.08,
-      "invalidation": "OP funding compression below -50% APR sustained for 2+ consecutive candles (suggests short-squeeze risk, not directional weakness)",
-      "data_sources": [
-        "funding-scanner-rebuttal",
-        "microstructure-analysis"
-      ],
-      "timestamp": "2026-02-24T00:30:38.590Z",
-      "outcome": "pending"
-    },
-    {
-      "run": 8,
-      "asset": "BTC",
-      "direction": "flat",
-      "confidence": 0.55,
-      "kelly_size": 0,
-      "invalidation": "n/a",
-      "data_sources": [
-        "arb-scanner",
-        "correlation-audit"
-      ],
-      "timestamp": "2026-02-24T00:30:38.587Z",
-      "outcome": "pending"
     }
   ],
   "record": {
@@ -96,16 +96,16 @@
   "toolPerformance": null,
   "convergenceFlags": {
     "phrasesUsedByMultipleAgents": [
-      "signal flat btc",
-      "flat btc confidence",
-      "btc confidence kelly",
       "confidence kelly invalidation",
-      "kelly invalidation sources",
-      "betting the same",
-      "the same macro",
-      "same macro narrative",
-      "macro narrative different",
-      "narrative different angles"
+      "btc confidence kelly",
+      "kelly invalidation btc",
+      "signal short vvv",
+      "short vvv confidence",
+      "vvv confidence kelly",
+      "kelly invalidation vvv",
+      "invalidation vvv funding",
+      "vvv funding compresses",
+      "signal flat btc"
     ],
     "bannedPhrases": [
       {
@@ -167,13 +167,37 @@
       {
         "phrase": "narrative different angles",
         "bannedAtRun": 9
+      },
+      {
+        "phrase": "signal short vvv",
+        "bannedAtRun": 10
+      },
+      {
+        "phrase": "short vvv confidence",
+        "bannedAtRun": 10
+      },
+      {
+        "phrase": "vvv confidence kelly",
+        "bannedAtRun": 10
+      },
+      {
+        "phrase": "kelly invalidation vvv",
+        "bannedAtRun": 10
+      },
+      {
+        "phrase": "invalidation vvv funding",
+        "bannedAtRun": 10
+      },
+      {
+        "phrase": "vvv funding compresses",
+        "bannedAtRun": 10
       }
     ]
   },
   "fitness": {
     "current": 58.13809505129274,
     "trend": [
-      -2,
+      0,
       0,
       0
     ],
@@ -183,7 +207,7 @@
   "karma": {
     "current": 58.13809505129274,
     "trend": [
-      -2,
+      0,
       0,
       0
     ],

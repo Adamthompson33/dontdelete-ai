@@ -1,0 +1,632 @@
+[
+  {
+    "t": 1769472000002,
+    "symbol": "CELOUSDT",
+    "rate": 0.00001536,
+    "rateBps": 0.1536,
+    "rateAPR": 1.6819199999999996
+  },
+  {
+    "t": 1769500800000,
+    "symbol": "CELOUSDT",
+    "rate": 0.0001,
+    "rateBps": 1,
+    "rateAPR": 10.950000000000001
+  },
+  {
+    "t": 1769529600000,
+    "symbol": "CELOUSDT",
+    "rate": -0.00013737,
+    "rateBps": -1.3737,
+    "rateAPR": -15.042015000000001
+  },
+  {
+    "t": 1769558400000,
+    "symbol": "CELOUSDT",
+    "rate": -0.00030608,
+    "rateBps": -3.0608000000000004,
+    "rateAPR": -33.51576
+  },
+  {
+    "t": 1769587200000,
+    "symbol": "CELOUSDT",
+    "rate": 0.0001,
+    "rateBps": 1,
+    "rateAPR": 10.950000000000001
+  },
+  {
+    "t": 1769616000000,
+    "symbol": "CELOUSDT",
+    "rate": 0.0001,
+    "rateBps": 1,
+    "rateAPR": 10.950000000000001
+  },
+  {
+    "t": 1769644800000,
+    "symbol": "CELOUSDT",
+    "rate": -0.00001663,
+    "rateBps": -0.16629999999999998,
+    "rateAPR": -1.8209849999999999
+  },
+  {
+    "t": 1769673600009,
+    "symbol": "CELOUSDT",
+    "rate": 0.0001,
+    "rateBps": 1,
+    "rateAPR": 10.950000000000001
+  },
+  {
+    "t": 1769702400000,
+    "symbol": "CELOUSDT",
+    "rate": 0.0001,
+    "rateBps": 1,
+    "rateAPR": 10.950000000000001
+  },
+  {
+    "t": 1769731200008,
+    "symbol": "CELOUSDT",
+    "rate": -0.00004606,
+    "rateBps": -0.4606,
+    "rateAPR": -5.04357
+  },
+  {
+    "t": 1769760000000,
+    "symbol": "CELOUSDT",
+    "rate": -0.00042173,
+    "rateBps": -4.2173,
+    "rateAPR": -46.179435000000005
+  },
+  {
+    "t": 1769788800001,
+    "symbol": "CELOUSDT",
+    "rate": 0.0001,
+    "rateBps": 1,
+    "rateAPR": 10.950000000000001
+  },
+  {
+    "t": 1769817600000,
+    "symbol": "CELOUSDT",
+    "rate": -0.0000323,
+    "rateBps": -0.323,
+    "rateAPR": -3.53685
+  },
+  {
+    "t": 1769846400001,
+    "symbol": "CELOUSDT",
+    "rate": -0.00037407,
+    "rateBps": -3.7407,
+    "rateAPR": -40.960665
+  },
+  {
+    "t": 1769875200009,
+    "symbol": "CELOUSDT",
+    "rate": -0.00017145,
+    "rateBps": -1.7145,
+    "rateAPR": -18.773775
+  },
+  {
+    "t": 1769904000001,
+    "symbol": "CELOUSDT",
+    "rate": -0.00018723,
+    "rateBps": -1.8723,
+    "rateAPR": -20.501685
+  },
+  {
+    "t": 1769932800004,
+    "symbol": "CELOUSDT",
+    "rate": 0.00004517,
+    "rateBps": 0.45170000000000005,
+    "rateAPR": 4.946115
+  },
+  {
+    "t": 1769961600000,
+    "symbol": "CELOUSDT",
+    "rate": -0.00022535,
+    "rateBps": -2.2535,
+    "rateAPR": -24.675825
+  },
+  {
+    "t": 1769990400000,
+    "symbol": "CELOUSDT",
+    "rate": -0.00024285,
+    "rateBps": -2.4285,
+    "rateAPR": -26.592074999999998
+  },
+  {
+    "t": 1770019200014,
+    "symbol": "CELOUSDT",
+    "rate": -0.00002911,
+    "rateBps": -0.2911,
+    "rateAPR": -3.187545
+  },
+  {
+    "t": 1770048000000,
+    "symbol": "CELOUSDT",
+    "rate": -0.000322,
+    "rateBps": -3.22,
+    "rateAPR": -35.259
+  },
+  {
+    "t": 1770076800000,
+    "symbol": "CELOUSDT",
+    "rate": 0.0001,
+    "rateBps": 1,
+    "rateAPR": 10.950000000000001
+  },
+  {
+    "t": 1770105600007,
+    "symbol": "CELOUSDT",
+    "rate": -0.00011773,
+    "rateBps": -1.1773,
+    "rateAPR": -12.891434999999998
+  },
+  {
+    "t": 1770134400000,
+    "symbol": "CELOUSDT",
+    "rate": -0.00008095,
+    "rateBps": -0.8095,
+    "rateAPR": -8.864025
+  },
+  {
+    "t": 1770163200002,
+    "symbol": "CELOUSDT",
+    "rate": 0.0001,
+    "rateBps": 1,
+    "rateAPR": 10.950000000000001
+  },
+  {
+    "t": 1770192000007,
+    "symbol": "CELOUSDT",
+    "rate": 0.0001,
+    "rateBps": 1,
+    "rateAPR": 10.950000000000001
+  },
+  {
+    "t": 1770220800000,
+    "symbol": "CELOUSDT",
+    "rate": 0.0001,
+    "rateBps": 1,
+    "rateAPR": 10.950000000000001
+  },
+  {
+    "t": 1770249600011,
+    "symbol": "CELOUSDT",
+    "rate": -0.00018982,
+    "rateBps": -1.8981999999999999,
+    "rateAPR": -20.785289999999996
+  },
+  {
+    "t": 1770278400000,
+    "symbol": "CELOUSDT",
+    "rate": 0.0001,
+    "rateBps": 1,
+    "rateAPR": 10.950000000000001
+  },
+  {
+    "t": 1770307200007,
+    "symbol": "CELOUSDT",
+    "rate": 0.00006631,
+    "rateBps": 0.6630999999999999,
+    "rateAPR": 7.2609449999999995
+  },
+  {
+    "t": 1770336000000,
+    "symbol": "CELOUSDT",
+    "rate": 0.0001,
+    "rateBps": 1,
+    "rateAPR": 10.950000000000001
+  },
+  {
+    "t": 1770364800001,
+    "symbol": "CELOUSDT",
+    "rate": 0.0000745,
+    "rateBps": 0.745,
+    "rateAPR": 8.15775
+  },
+  {
+    "t": 1770393600000,
+    "symbol": "CELOUSDT",
+    "rate": -0.00014223,
+    "rateBps": -1.4223,
+    "rateAPR": -15.574184999999998
+  },
+  {
+    "t": 1770422400003,
+    "symbol": "CELOUSDT",
+    "rate": 0.00001046,
+    "rateBps": 0.1046,
+    "rateAPR": 1.14537
+  },
+  {
+    "t": 1770451200000,
+    "symbol": "CELOUSDT",
+    "rate": -0.00016383,
+    "rateBps": -1.6383,
+    "rateAPR": -17.939385
+  },
+  {
+    "t": 1770480000010,
+    "symbol": "CELOUSDT",
+    "rate": -0.00001579,
+    "rateBps": -0.15789999999999998,
+    "rateAPR": -1.7290050000000001
+  },
+  {
+    "t": 1770508800003,
+    "symbol": "CELOUSDT",
+    "rate": 0.0001,
+    "rateBps": 1,
+    "rateAPR": 10.950000000000001
+  },
+  {
+    "t": 1770537600000,
+    "symbol": "CELOUSDT",
+    "rate": 0.00005826,
+    "rateBps": 0.5826,
+    "rateAPR": 6.3794699999999995
+  },
+  {
+    "t": 1770566400000,
+    "symbol": "CELOUSDT",
+    "rate": 0.0001,
+    "rateBps": 1,
+    "rateAPR": 10.950000000000001
+  },
+  {
+    "t": 1770595200002,
+    "symbol": "CELOUSDT",
+    "rate": -0.00031717,
+    "rateBps": -3.1716999999999995,
+    "rateAPR": -34.730115
+  },
+  {
+    "t": 1770624000001,
+    "symbol": "CELOUSDT",
+    "rate": 0.0001,
+    "rateBps": 1,
+    "rateAPR": 10.950000000000001
+  },
+  {
+    "t": 1770652800007,
+    "symbol": "CELOUSDT",
+    "rate": 0.0001,
+    "rateBps": 1,
+    "rateAPR": 10.950000000000001
+  },
+  {
+    "t": 1770681600000,
+    "symbol": "CELOUSDT",
+    "rate": 0.0001,
+    "rateBps": 1,
+    "rateAPR": 10.950000000000001
+  },
+  {
+    "t": 1770710400007,
+    "symbol": "CELOUSDT",
+    "rate": 0.0001,
+    "rateBps": 1,
+    "rateAPR": 10.950000000000001
+  },
+  {
+    "t": 1770739200000,
+    "symbol": "CELOUSDT",
+    "rate": 0.00006668,
+    "rateBps": 0.6668000000000001,
+    "rateAPR": 7.30146
+  },
+  {
+    "t": 1770768000000,
+    "symbol": "CELOUSDT",
+    "rate": 0.0001,
+    "rateBps": 1,
+    "rateAPR": 10.950000000000001
+  },
+  {
+    "t": 1770796800006,
+    "symbol": "CELOUSDT",
+    "rate": 0.0001,
+    "rateBps": 1,
+    "rateAPR": 10.950000000000001
+  },
+  {
+    "t": 1770825600000,
+    "symbol": "CELOUSDT",
+    "rate": 0.0001,
+    "rateBps": 1,
+    "rateAPR": 10.950000000000001
+  },
+  {
+    "t": 1770854400000,
+    "symbol": "CELOUSDT",
+    "rate": 0.00008716,
+    "rateBps": 0.8716,
+    "rateAPR": 9.54402
+  },
+  {
+    "t": 1770883200001,
+    "symbol": "CELOUSDT",
+    "rate": -0.00004081,
+    "rateBps": -0.40809999999999996,
+    "rateAPR": -4.4686949999999985
+  },
+  {
+    "t": 1770912000001,
+    "symbol": "CELOUSDT",
+    "rate": -0.00029261,
+    "rateBps": -2.9261,
+    "rateAPR": -32.040795
+  },
+  {
+    "t": 1770940800007,
+    "symbol": "CELOUSDT",
+    "rate": 0.0001,
+    "rateBps": 1,
+    "rateAPR": 10.950000000000001
+  },
+  {
+    "t": 1770969600003,
+    "symbol": "CELOUSDT",
+    "rate": -0.00003027,
+    "rateBps": -0.3027,
+    "rateAPR": -3.3145650000000004
+  },
+  {
+    "t": 1770998400005,
+    "symbol": "CELOUSDT",
+    "rate": 0.0001,
+    "rateBps": 1,
+    "rateAPR": 10.950000000000001
+  },
+  {
+    "t": 1771027200002,
+    "symbol": "CELOUSDT",
+    "rate": 0.0001,
+    "rateBps": 1,
+    "rateAPR": 10.950000000000001
+  },
+  {
+    "t": 1771056000004,
+    "symbol": "CELOUSDT",
+    "rate": 0.0001,
+    "rateBps": 1,
+    "rateAPR": 10.950000000000001
+  },
+  {
+    "t": 1771084800002,
+    "symbol": "CELOUSDT",
+    "rate": 0.0001,
+    "rateBps": 1,
+    "rateAPR": 10.950000000000001
+  },
+  {
+    "t": 1771113600000,
+    "symbol": "CELOUSDT",
+    "rate": 0.0001,
+    "rateBps": 1,
+    "rateAPR": 10.950000000000001
+  },
+  {
+    "t": 1771142400002,
+    "symbol": "CELOUSDT",
+    "rate": 0.0001,
+    "rateBps": 1,
+    "rateAPR": 10.950000000000001
+  },
+  {
+    "t": 1771171200000,
+    "symbol": "CELOUSDT",
+    "rate": -0.00020681,
+    "rateBps": -2.0681000000000003,
+    "rateAPR": -22.645695000000003
+  },
+  {
+    "t": 1771200000001,
+    "symbol": "CELOUSDT",
+    "rate": 0.0001,
+    "rateBps": 1,
+    "rateAPR": 10.950000000000001
+  },
+  {
+    "t": 1771228800003,
+    "symbol": "CELOUSDT",
+    "rate": 0.0001,
+    "rateBps": 1,
+    "rateAPR": 10.950000000000001
+  },
+  {
+    "t": 1771257600000,
+    "symbol": "CELOUSDT",
+    "rate": 0.0001,
+    "rateBps": 1,
+    "rateAPR": 10.950000000000001
+  },
+  {
+    "t": 1771286400008,
+    "symbol": "CELOUSDT",
+    "rate": 0.0001,
+    "rateBps": 1,
+    "rateAPR": 10.950000000000001
+  },
+  {
+    "t": 1771315200001,
+    "symbol": "CELOUSDT",
+    "rate": 0.0001,
+    "rateBps": 1,
+    "rateAPR": 10.950000000000001
+  },
+  {
+    "t": 1771344000002,
+    "symbol": "CELOUSDT",
+    "rate": -0.00034218,
+    "rateBps": -3.4217999999999997,
+    "rateAPR": -37.468709999999994
+  },
+  {
+    "t": 1771372800000,
+    "symbol": "CELOUSDT",
+    "rate": 0.0001,
+    "rateBps": 1,
+    "rateAPR": 10.950000000000001
+  },
+  {
+    "t": 1771401600000,
+    "symbol": "CELOUSDT",
+    "rate": -0.0001543,
+    "rateBps": -1.5430000000000001,
+    "rateAPR": -16.895850000000003
+  },
+  {
+    "t": 1771430400011,
+    "symbol": "CELOUSDT",
+    "rate": 0.0001,
+    "rateBps": 1,
+    "rateAPR": 10.950000000000001
+  },
+  {
+    "t": 1771459200013,
+    "symbol": "CELOUSDT",
+    "rate": 0.0001,
+    "rateBps": 1,
+    "rateAPR": 10.950000000000001
+  },
+  {
+    "t": 1771488000000,
+    "symbol": "CELOUSDT",
+    "rate": 0.0001,
+    "rateBps": 1,
+    "rateAPR": 10.950000000000001
+  },
+  {
+    "t": 1771516800003,
+    "symbol": "CELOUSDT",
+    "rate": -2.2e-7,
+    "rateBps": -0.0022,
+    "rateAPR": -0.02409
+  },
+  {
+    "t": 1771545600000,
+    "symbol": "CELOUSDT",
+    "rate": 0.0001,
+    "rateBps": 1,
+    "rateAPR": 10.950000000000001
+  },
+  {
+    "t": 1771574400000,
+    "symbol": "CELOUSDT",
+    "rate": 0.0001,
+    "rateBps": 1,
+    "rateAPR": 10.950000000000001
+  },
+  {
+    "t": 1771603200000,
+    "symbol": "CELOUSDT",
+    "rate": 0.00003154,
+    "rateBps": 0.3154,
+    "rateAPR": 3.45363
+  },
+  {
+    "t": 1771632000004,
+    "symbol": "CELOUSDT",
+    "rate": -0.00136305,
+    "rateBps": -13.6305,
+    "rateAPR": -149.253975
+  },
+  {
+    "t": 1771660800000,
+    "symbol": "CELOUSDT",
+    "rate": -0.00063384,
+    "rateBps": -6.3384,
+    "rateAPR": -69.40548
+  },
+  {
+    "t": 1771689600005,
+    "symbol": "CELOUSDT",
+    "rate": 0.0001,
+    "rateBps": 1,
+    "rateAPR": 10.950000000000001
+  },
+  {
+    "t": 1771718400001,
+    "symbol": "CELOUSDT",
+    "rate": -0.00120147,
+    "rateBps": -12.014700000000001,
+    "rateAPR": -131.560965
+  },
+  {
+    "t": 1771747200004,
+    "symbol": "CELOUSDT",
+    "rate": 0.0001,
+    "rateBps": 1,
+    "rateAPR": 10.950000000000001
+  },
+  {
+    "t": 1771776000000,
+    "symbol": "CELOUSDT",
+    "rate": 0.0001,
+    "rateBps": 1,
+    "rateAPR": 10.950000000000001
+  },
+  {
+    "t": 1771804800001,
+    "symbol": "CELOUSDT",
+    "rate": 0.0001,
+    "rateBps": 1,
+    "rateAPR": 10.950000000000001
+  },
+  {
+    "t": 1771833600000,
+    "symbol": "CELOUSDT",
+    "rate": 0.00003677,
+    "rateBps": 0.3677,
+    "rateAPR": 4.026315
+  },
+  {
+    "t": 1771862400000,
+    "symbol": "CELOUSDT",
+    "rate": 0.0001,
+    "rateBps": 1,
+    "rateAPR": 10.950000000000001
+  },
+  {
+    "t": 1771891200007,
+    "symbol": "CELOUSDT",
+    "rate": -0.00006235,
+    "rateBps": -0.6234999999999999,
+    "rateAPR": -6.827324999999999
+  },
+  {
+    "t": 1771920000000,
+    "symbol": "CELOUSDT",
+    "rate": 0.0001,
+    "rateBps": 1,
+    "rateAPR": 10.950000000000001
+  },
+  {
+    "t": 1771948800001,
+    "symbol": "CELOUSDT",
+    "rate": 0.0001,
+    "rateBps": 1,
+    "rateAPR": 10.950000000000001
+  },
+  {
+    "t": 1771977600001,
+    "symbol": "CELOUSDT",
+    "rate": 0.0001,
+    "rateBps": 1,
+    "rateAPR": 10.950000000000001
+  },
+  {
+    "t": 1772006400007,
+    "symbol": "CELOUSDT",
+    "rate": 0.0001,
+    "rateBps": 1,
+    "rateAPR": 10.950000000000001
+  },
+  {
+    "t": 1772035200000,
+    "symbol": "CELOUSDT",
+    "rate": 0.0001,
+    "rateBps": 1,
+    "rateAPR": 10.950000000000001
+  }
+]

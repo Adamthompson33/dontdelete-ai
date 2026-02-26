@@ -1,39 +1,37 @@
 {
-  "timestamp": "2026-02-25T13:08:03.784Z",
-  "regime": "TRENDING_UP",
+  "timestamp": "2026-02-25T21:08:03.981Z",
+  "regime": "TRENDING_DOWN",
   "directional": {
-    "longCount": 150,
-    "shortCount": 43,
-    "longPct": 48,
-    "longAllocPct": 83,
-    "crowdingScore": 4,
-    "verdict": "LOW: Well-balanced directional exposure (48% long / 52% short)."
+    "longCount": 133,
+    "shortCount": 6,
+    "longPct": 54,
+    "longAllocPct": 80,
+    "crowdingScore": 8,
+    "verdict": "LOW: Well-balanced directional exposure (54% long / 46% short)."
   },
   "sectors": [
     {
       "name": "New / Unclassified",
       "code": "NEW",
-      "count": 260,
-      "allocPct": 78,
+      "count": 202,
+      "allocPct": 79,
       "coins": [
-        null,
         "BTC",
+        "XRP",
         "PENGU",
         "SKR",
-        "PURR",
         "AZTEC",
-        "SOPH",
-        "STABLE",
-        "LAYER",
         "FOGO",
-        "ICP",
-        "KAS",
-        "VVV",
-        "AERO",
-        "APE",
-        "BIGTIME",
-        "STX",
-        "ANIME",
+        "STABLE",
+        "SOPH",
+        "ZORA",
+        "KAITO",
+        "ME",
+        "2Z",
+        "JTO",
+        "MOVE",
+        "POL",
+        "ALT",
         "Will Bitcoin be higher than $8",
         "[@mattyb’s 500th market specta",
         "Will Bitcoin (BTC) be below CH",
@@ -49,39 +47,43 @@
         "Bitcoin $140K in 2026?",
         "Carried Interest Repeal by End",
         "PORTFOLIO",
-        "VIRTUAL",
-        "ZORA",
-        "2Z",
-        "KAITO",
-        "MOVE",
-        "HYPE",
-        "BIO",
-        "DOT",
-        "JTO",
-        "0G",
-        "XRP",
-        "ME",
-        "POL",
-        "ALT",
+        null,
         "GRIFFAIN",
         "AVNT",
         "ACE",
+        "LAYER",
         "SCR",
+        "ICP",
+        "APE",
+        "STX",
+        "BIO",
+        "MERL",
         "FET",
+        "BIGTIME",
         "BLUR",
         "Will Bitcoin (BTC) close at $1",
         "MORPHO",
-        "MERL",
+        "VIRTUAL",
+        "VVV",
         "NEO",
         "POPCAT",
-        "ZEN"
+        "ZEN",
+        "DOT",
+        "TAO",
+        "IO",
+        "HYPER",
+        "APEX",
+        "HEMI",
+        "XAI",
+        "ZETA",
+        "0G"
       ]
     },
     {
       "name": "Layer 2 / Scaling",
       "code": "L2",
       "count": 7,
-      "allocPct": 8,
+      "allocPct": 10,
       "coins": [
         "OP",
         "STRK"
@@ -90,26 +92,24 @@
     {
       "name": "Layer 1",
       "code": "L1",
-      "count": 21,
-      "allocPct": 6,
+      "count": 19,
+      "allocPct": 5,
       "coins": [
-        "ETH",
         "SOL",
-        "SUI",
+        "ETH",
         "BERA",
-        "AVAX",
-        "NEAR"
+        "NEAR",
+        "SUI",
+        "APT"
       ]
     },
     {
       "name": "DeFi",
       "code": "DEFI",
-      "count": 12,
-      "allocPct": 4,
+      "count": 8,
+      "allocPct": 3,
       "coins": [
         "AAVE",
-        "UNI",
-        "CELO",
         "YGG",
         "UMA"
       ]
@@ -117,90 +117,91 @@
     {
       "name": "Gaming / Metaverse",
       "code": "GAMING",
-      "count": 7,
+      "count": 6,
       "allocPct": 2,
       "coins": [
         "AXS",
-        "SAND",
         "IMX"
       ]
     },
     {
       "name": "Infrastructure",
       "code": "INFRA",
-      "count": 4,
+      "count": 3,
       "allocPct": 1,
       "coins": [
         "GAS"
       ]
     }
   ],
-  "sectorHHI": 6205,
-  "sectorVerdict": "CRITICAL: HHI 6205 — portfolio dominated by New / Unclassified (78%). A sector-wide event would be catastrophic.",
+  "sectorHHI": 6380,
+  "sectorVerdict": "CRITICAL: HHI 6380 — portfolio dominated by New / Unclassified (79%). A sector-wide event would be catastrophic.",
   "btcBeta": {
-    "avgCorrelation": 6.19,
+    "avgCorrelation": 17.84,
     "highBetaCoins": [
-      "AZTEC",
       "YGG",
-      "VVV"
+      "SKR",
+      "FOGO"
     ],
     "lowBetaCoins": [
+      "SOL",
       "PENGU",
       "SKR",
-      "PURR",
       "GAS",
-      "SOPH",
-      "AXS",
-      "BERA",
-      "STABLE",
-      "LAYER",
       "FOGO",
-      "ICP",
-      "VVV",
-      "AERO",
-      "APE",
-      "BIGTIME",
-      "STX",
-      "SAND",
-      "ANIME",
-      "BTC",
-      "SOL",
-      "ETH",
-      "VIRTUAL",
-      "AVAX",
-      "UNI",
-      "CELO",
-      "2Z",
-      "UMA",
-      "KAITO",
-      "MOVE",
-      "HYPE",
-      "BIO",
-      "JTO",
-      "0G",
+      "STABLE",
+      "SOPH",
       "ZORA",
+      "KAITO",
       "ME",
+      "AXS",
+      "2Z",
+      "JTO",
+      "BERA",
+      "MOVE",
       "POL",
       "ALT",
+      "BTC",
+      "ETH",
       "NEAR",
       "AZTEC",
       "GRIFFAIN",
       "OP",
       "AVNT",
       "ACE",
+      "LAYER",
       "SCR",
+      "ICP",
+      "APE",
       "STRK",
+      "STX",
       "YGG",
       "IMX",
+      "BIO",
       "SUI",
       "AAVE",
+      "UMA",
+      "MERL",
       "FET",
+      "BIGTIME",
       "BLUR",
       "MORPHO",
-      "MERL",
+      "VIRTUAL",
+      "VVV",
       "NEO",
       "POPCAT",
-      "ZEN"
+      "ZEN",
+      "DOT",
+      "TAO",
+      "IO",
+      "HYPER",
+      "APEX",
+      "XRP",
+      "APT",
+      "HEMI",
+      "XAI",
+      "ZETA",
+      "0G"
     ],
     "btcExposurePct": 1,
     "verdict": "LOW: Only 1% high-beta. Portfolio has meaningful independence from BTC moves."
@@ -212,15 +213,15 @@
         "coins": [
           "SKR",
           "AZTEC",
-          "SOPH",
-          "BERA",
           "STABLE",
+          "SOPH",
           "ZORA",
           "2Z",
-          "0G",
-          "ACE"
+          "BERA",
+          "ACE",
+          "0G"
         ],
-        "totalAlloc": 15
+        "totalAlloc": 17
       },
       {
         "narrative": "L2 Scaling",
@@ -228,16 +229,16 @@
           "OP",
           "STRK"
         ],
-        "totalAlloc": 8
+        "totalAlloc": 10
       },
       {
         "narrative": "Alt L1 Recovery",
         "coins": [
           "SOL",
-          "SUI",
           "BERA",
-          "AVAX",
-          "NEAR"
+          "NEAR",
+          "SUI",
+          "APT"
         ],
         "totalAlloc": 4
       },
@@ -245,18 +246,15 @@
         "narrative": "DeFi Revival",
         "coins": [
           "AAVE",
-          "UNI",
-          "CELO",
           "YGG",
           "UMA"
         ],
-        "totalAlloc": 4
+        "totalAlloc": 3
       },
       {
         "narrative": "Gaming Bounce",
         "coins": [
           "AXS",
-          "SAND",
           "IMX"
         ],
         "totalAlloc": 2
@@ -269,16 +267,16 @@
         "totalAlloc": 1
       }
     ],
-    "maxClusterPct": 15,
+    "maxClusterPct": 17,
     "verdict": "LOW: No single narrative exceeds 25%. Good narrative diversification."
   },
   "overallRisk": {
-    "score": 14,
+    "score": 25,
     "grade": "LOW",
     "factors": [
-      "Sector concentration (HHI 6205)",
-      "Narrative clustering (\"New Token Hype\" at 15%)",
-      "Directional crowding (48% long)"
+      "Sector concentration (HHI 6380)",
+      "Narrative clustering (\"New Token Hype\" at 17%)",
+      "Directional crowding (54% long)"
     ],
     "recommendation": "HEALTHY. Portfolio is well-diversified. Continue normal operations."
   }

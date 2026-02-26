@@ -1,0 +1,215 @@
+{
+  "date": "2026-02-26",
+  "sizedAt": "2026-02-26T21:06:03.343Z",
+  "totalSignals": 1732,
+  "newlySized": 25,
+  "alreadySized": 1707,
+  "sized": 5,
+  "skipped": 20,
+  "totalAllocation": 1.003711,
+  "maxKelly": 0.2,
+  "positions": [
+    {
+      "coin": "Will Bitcoin be high",
+      "tool": "sakura-arb-scanner",
+      "direction": "ARB",
+      "confidence": "medium",
+      "kelly": 0.10000000000000009,
+      "action": "SIZE"
+    },
+    {
+      "coin": "Will bitcoin's price",
+      "tool": "sakura-arb-scanner",
+      "direction": "ARB",
+      "confidence": "high",
+      "kelly": 0.2,
+      "action": "SIZE"
+    },
+    {
+      "coin": "Will bitcoin's price",
+      "tool": "sakura-arb-scanner",
+      "direction": "ARB",
+      "confidence": "high",
+      "kelly": 0.2,
+      "action": "SIZE"
+    },
+    {
+      "coin": "Will Bitcoin be high",
+      "tool": "sakura-arb-scanner",
+      "direction": "ARB",
+      "confidence": "high",
+      "kelly": 0.2,
+      "action": "SIZE"
+    },
+    {
+      "coin": "Will Bitcoin be high",
+      "tool": "sakura-arb-scanner",
+      "direction": "ARB",
+      "confidence": "high",
+      "kelly": 0.2,
+      "action": "SIZE"
+    }
+  ],
+  "skippedPositions": [
+    {
+      "coin": "BTC",
+      "tool": "sentry-sentiment-scanner",
+      "direction": "FLAT",
+      "confidence": 0.35,
+      "kelly": 0,
+      "action": "SKIP"
+    },
+    {
+      "coin": "PENGU",
+      "tool": "sentry-sentiment-scanner",
+      "direction": "SHORT",
+      "confidence": 0.482654180293277,
+      "kelly": 0,
+      "action": "SKIP"
+    },
+    {
+      "coin": "SUI",
+      "tool": "sentry-sentiment-scanner",
+      "direction": "SHORT",
+      "confidence": 0.48312551416911587,
+      "kelly": 0,
+      "action": "SKIP"
+    },
+    {
+      "coin": "TAO",
+      "tool": "sentry-sentiment-scanner",
+      "direction": "FLAT",
+      "confidence": 0.35,
+      "kelly": 0,
+      "action": "SKIP"
+    },
+    {
+      "coin": "ATOM",
+      "tool": "sentry-sentiment-scanner",
+      "direction": "SHORT",
+      "confidence": 0.6083518114010705,
+      "kelly": 0,
+      "action": "SKIP"
+    },
+    {
+      "coin": "AAVE",
+      "tool": "sentry-sentiment-scanner",
+      "direction": "SHORT",
+      "confidence": 0.57058044043756,
+      "kelly": 0,
+      "action": "SKIP"
+    },
+    {
+      "coin": "SOL",
+      "tool": "sentry-sentiment-scanner",
+      "direction": "SHORT",
+      "confidence": 0.4427090840988375,
+      "kelly": 0,
+      "action": "SKIP"
+    },
+    {
+      "coin": "NEAR",
+      "tool": "sentry-sentiment-scanner",
+      "direction": "SHORT",
+      "confidence": 0.6081831139739213,
+      "kelly": 0,
+      "action": "SKIP"
+    },
+    {
+      "coin": "[@mattyb’s 500th mar",
+      "tool": "sakura-arb-scanner",
+      "direction": "ARB",
+      "confidence": "low",
+      "kelly": 0,
+      "action": "SKIP"
+    },
+    {
+      "coin": "Will Bitcoin (BTC) b",
+      "tool": "sakura-arb-scanner",
+      "direction": "ARB",
+      "confidence": "low",
+      "kelly": 0,
+      "action": "SKIP"
+    },
+    {
+      "coin": "Will Bitcoin (BTC) p",
+      "tool": "sakura-arb-scanner",
+      "direction": "ARB",
+      "confidence": "low",
+      "kelly": 0,
+      "action": "SKIP"
+    },
+    {
+      "coin": "Will a Republican Pr",
+      "tool": "sakura-arb-scanner",
+      "direction": "ARB",
+      "confidence": "low",
+      "kelly": 0,
+      "action": "SKIP"
+    },
+    {
+      "coin": "Will a former US pre",
+      "tool": "sakura-arb-scanner",
+      "direction": "ARB",
+      "confidence": "low",
+      "kelly": 0,
+      "action": "SKIP"
+    },
+    {
+      "coin": "Will Quinn Ewers def",
+      "tool": "sakura-arb-scanner",
+      "direction": "ARB",
+      "confidence": "low",
+      "kelly": 0,
+      "action": "SKIP"
+    },
+    {
+      "coin": "(1k subsidy) Will Co",
+      "tool": "sakura-arb-scanner",
+      "direction": "ARB",
+      "confidence": "low",
+      "kelly": 0,
+      "action": "SKIP"
+    },
+    {
+      "coin": "Will Roger Goodell b",
+      "tool": "sakura-arb-scanner",
+      "direction": "ARB",
+      "confidence": "low",
+      "kelly": 0,
+      "action": "SKIP"
+    },
+    {
+      "coin": "Will Bitcoin Outperf",
+      "tool": "sakura-arb-scanner",
+      "direction": "ARB",
+      "confidence": "low",
+      "kelly": 0,
+      "action": "SKIP"
+    },
+    {
+      "coin": "More than 70% of U.S",
+      "tool": "sakura-arb-scanner",
+      "direction": "ARB",
+      "confidence": "low",
+      "kelly": 0,
+      "action": "SKIP"
+    },
+    {
+      "coin": "Carried Interest Rep",
+      "tool": "sakura-arb-scanner",
+      "direction": "ARB",
+      "confidence": "low",
+      "kelly": 0,
+      "action": "SKIP"
+    },
+    {
+      "coin": "PORTFOLIO",
+      "tool": "jinx-correlation-monitor",
+      "direction": "FLAT",
+      "confidence": 1,
+      "kelly": 0,
+      "action": "SKIP"
+    }
+  ]
+}

@@ -1,18 +1,46 @@
 {
   "agent": "REI",
   "team": "sentinel",
-  "lastUpdated": "2026-02-25T00:32:27.917Z",
-  "runNumber": 9,
+  "lastUpdated": "2026-02-26T00:32:34.001Z",
+  "runNumber": 10,
   "signals": {
-    "total": 9,
+    "total": 11,
     "correct": 0,
     "incorrect": 0,
-    "pending": 9,
+    "pending": 11,
     "accuracy": null,
-    "avgConfidence": 0.5644444444444444,
+    "avgConfidence": 0.5927272727272727,
     "calibrationScore": null
   },
   "recentSignals": [
+    {
+      "run": 10,
+      "asset": "VVV",
+      "direction": "short",
+      "confidence": 0.72,
+      "kelly_size": 0.12,
+      "invalidation": "VVV funding compresses below -150% APR (arb entry acceleration suggests carry gets compressed faster than my model predicts)",
+      "data_sources": [
+        "funding-scanner",
+        "basis-decomposition"
+      ],
+      "timestamp": "2026-02-26T00:32:24.223Z",
+      "outcome": "pending"
+    },
+    {
+      "run": 10,
+      "asset": "VVV",
+      "direction": "short",
+      "confidence": 0.72,
+      "kelly_size": 0.12,
+      "invalidation": "VVV funding compresses below -150% APR (arbs enter faster than carry collects)",
+      "data_sources": [
+        "funding-scanner",
+        "basis-decomposition"
+      ],
+      "timestamp": "2026-02-26T00:31:24.216Z",
+      "outcome": "pending"
+    },
     {
       "run": 9,
       "asset": "FOGO",
@@ -54,34 +82,6 @@
       ],
       "timestamp": "2026-02-25T00:31:15.059Z",
       "outcome": "pending"
-    },
-    {
-      "run": 8,
-      "asset": "OP",
-      "direction": "flat",
-      "confidence": 0.5,
-      "kelly_size": 0,
-      "invalidation": "n/a",
-      "data_sources": [
-        "funding-extremes-unresolved",
-        "correlation-audit"
-      ],
-      "timestamp": "2026-02-24T00:31:16.476Z",
-      "outcome": "pending"
-    },
-    {
-      "run": 7,
-      "asset": "JTO",
-      "direction": "flat",
-      "confidence": 0.5,
-      "kelly_size": 0,
-      "invalidation": "n/a",
-      "data_sources": [
-        "self-audit",
-        "funding-scanner"
-      ],
-      "timestamp": "2026-02-23T00:32:19.261Z",
-      "outcome": "pending"
     }
   ],
   "record": {
@@ -95,24 +95,24 @@
   "recentDecisions": [],
   "toolPerformance": {
     "name": "Funding Rate Scanner",
-    "paperPnl": 209.91146820000003,
+    "paperPnl": 248.2952418,
     "openPaperTrades": 5,
     "bestTrade": null,
     "worstTrade": null,
-    "totalScans": 9
+    "totalScans": 10
   },
   "convergenceFlags": {
     "phrasesUsedByMultipleAgents": [
-      "signal flat btc",
-      "flat btc confidence",
-      "btc confidence kelly",
       "confidence kelly invalidation",
-      "kelly invalidation sources",
-      "betting the same",
-      "the same macro",
-      "same macro narrative",
-      "macro narrative different",
-      "narrative different angles"
+      "btc confidence kelly",
+      "kelly invalidation btc",
+      "signal short vvv",
+      "short vvv confidence",
+      "vvv confidence kelly",
+      "kelly invalidation vvv",
+      "invalidation vvv funding",
+      "vvv funding compresses",
+      "signal flat btc"
     ],
     "bannedPhrases": [
       {
@@ -134,13 +134,37 @@
       {
         "phrase": "kelly invalidation sources",
         "bannedAtRun": 9
+      },
+      {
+        "phrase": "signal short vvv",
+        "bannedAtRun": 10
+      },
+      {
+        "phrase": "short vvv confidence",
+        "bannedAtRun": 10
+      },
+      {
+        "phrase": "vvv confidence kelly",
+        "bannedAtRun": 10
+      },
+      {
+        "phrase": "kelly invalidation vvv",
+        "bannedAtRun": 10
+      },
+      {
+        "phrase": "invalidation vvv funding",
+        "bannedAtRun": 10
+      },
+      {
+        "phrase": "vvv funding compresses",
+        "bannedAtRun": 10
       }
     ]
   },
   "fitness": {
     "current": 72.498699627401,
     "trend": [
-      -2,
+      0,
       0,
       0
     ],
@@ -150,7 +174,7 @@
   "karma": {
     "current": 72.498699627401,
     "trend": [
-      -2,
+      0,
       0,
       0
     ],

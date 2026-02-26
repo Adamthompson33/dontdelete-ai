@@ -1,18 +1,48 @@
 {
   "agent": "PROPHET",
   "team": "architect",
-  "lastUpdated": "2026-02-25T00:32:27.912Z",
-  "runNumber": 9,
+  "lastUpdated": "2026-02-26T00:32:33.995Z",
+  "runNumber": 10,
   "signals": {
-    "total": 6,
+    "total": 8,
     "correct": 0,
     "incorrect": 0,
-    "pending": 6,
+    "pending": 8,
     "accuracy": null,
-    "avgConfidence": 0.5166666666666666,
+    "avgConfidence": 0.5425,
     "calibrationScore": null
   },
   "recentSignals": [
+    {
+      "run": 10,
+      "asset": "BTC",
+      "direction": "short",
+      "confidence": 0.62,
+      "kelly_size": 0.12,
+      "invalidation": "BTC reclaims $69,500 on volume >$2.0B and funding rates flip positive",
+      "data_sources": [
+        "funding-scanner",
+        "temporal-regime-conflict",
+        "kelly-engine"
+      ],
+      "timestamp": "2026-02-26T00:31:54.016Z",
+      "outcome": "pending"
+    },
+    {
+      "run": 10,
+      "asset": "BTC",
+      "direction": "short",
+      "confidence": 0.62,
+      "kelly_size": 0.12,
+      "invalidation": "BTC reclaims $69,500 on volume >$2.0B and funding rates flip positive",
+      "data_sources": [
+        "funding-scanner",
+        "temporal-regime-conflict",
+        "kelly-engine"
+      ],
+      "timestamp": "2026-02-26T00:30:55.543Z",
+      "outcome": "pending"
+    },
     {
       "run": 9,
       "asset": "BTC",
@@ -55,34 +85,6 @@
       ],
       "timestamp": "2026-02-21T00:31:39.363Z",
       "outcome": "pending"
-    },
-    {
-      "run": 6,
-      "asset": "BTC",
-      "direction": "flat",
-      "confidence": 0.5,
-      "kelly_size": 0,
-      "invalidation": "n/a",
-      "data_sources": [
-        "portfolio-heat-audit",
-        "correlation-stress-test"
-      ],
-      "timestamp": "2026-02-21T00:30:41.210Z",
-      "outcome": "pending"
-    },
-    {
-      "run": 6,
-      "asset": "BTC",
-      "direction": "flat",
-      "confidence": 0.55,
-      "kelly_size": 0,
-      "invalidation": "n/a",
-      "data_sources": [
-        "correlation-audit",
-        "kelly-engine"
-      ],
-      "timestamp": "2026-02-20T11:59:05.897Z",
-      "outcome": "pending"
     }
   ],
   "record": {
@@ -97,16 +99,16 @@
   "toolPerformance": null,
   "convergenceFlags": {
     "phrasesUsedByMultipleAgents": [
-      "signal flat btc",
-      "flat btc confidence",
-      "btc confidence kelly",
       "confidence kelly invalidation",
-      "kelly invalidation sources",
-      "betting the same",
-      "the same macro",
-      "same macro narrative",
-      "macro narrative different",
-      "narrative different angles"
+      "btc confidence kelly",
+      "kelly invalidation btc",
+      "signal short vvv",
+      "short vvv confidence",
+      "vvv confidence kelly",
+      "kelly invalidation vvv",
+      "invalidation vvv funding",
+      "vvv funding compresses",
+      "signal flat btc"
     ],
     "bannedPhrases": [
       {
@@ -148,6 +150,10 @@
       {
         "phrase": "narrative different angles",
         "bannedAtRun": 9
+      },
+      {
+        "phrase": "kelly invalidation btc",
+        "bannedAtRun": 10
       }
     ]
   },
@@ -155,7 +161,7 @@
     "current": 38.81690527585597,
     "trend": [
       -2,
-      -2,
+      0,
       0
     ],
     "tier": "unstable",
@@ -165,7 +171,7 @@
     "current": 38.81690527585597,
     "trend": [
       -2,
-      -2,
+      0,
       0
     ],
     "tier": "unstable",

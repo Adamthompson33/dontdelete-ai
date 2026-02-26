@@ -17,6 +17,7 @@ import * as fs from 'fs';
 import * as path from 'path';
 import { FundingScanner, FundingOpportunity } from '../../academy/src/services/funding-scanner';
 import { REGIME_PARAMS, DEFAULT_REGIME_PARAMS, RegimeParams } from '../../academy/src/services/temporal-edge';
+import { isClosedPosition } from './lib/closed-position-gate';
 
 // ═══ Bot Challenge Signal Format ═══
 
@@ -51,21 +52,32 @@ interface PaperLedgerEntry {
 
 const LEDGER_FILE = path.join(__dirname, '..', 'results', 'paper-ledger.json');
 const REPORT_DIR = path.join(__dirname, '..', 'reports');
+const SIGNAL_LOG_DIR = path.join(__dirname, '..', 'data', 'live-signals');
+
+// ═══ MOMENTUM MODE (Backtest 2B validated) ═══
+// Direction: go WITH the crowd (momentum), not against (carry)
+// Threshold: 100 Loris bps = 0.01 hourly rate = 8760% APR
+// Size: 0.25x cautious rollout until 30+ days out-of-sample
+const MOMENTUM_MODE = true;
+const MOMENTUM_SIZE_MULTIPLIER = 0.25; // cautious rollout
 
 // ═══ Blacklist — tokens to auto-exclude regardless of funding/basis ═══
-// OM (MANTRA): 90%+ crash, likely rug pull. -2355% APR is a trap, not a signal.
-const BLACKLISTED_COINS = new Set(['OM']);
+// OM (MANTRA): 90%+ crash, likely rug pull.
+// AZTEC, AXS: concentration risk — dominated backtest results, excluding improves sharpe
+const BLACKLISTED_COINS = new Set(['OM', 'AZTEC', 'AXS']);
 
-// Tier thresholds
-const HIGH_MIN_APR = 1.00;       // 100% annualized
-const HIGH_MIN_PERSIST = 4;      // hours
-const HIGH_MAX_PRICE_MOVE = 0.05; // 5%
+// Tier thresholds — raised to match backtest-validated 100bps signal
+// 100 Loris bps = hourly rate 0.01 = annualized 87.6 (8760%)
+const MOMENTUM_MIN_RATE = 0.01;  // hourly rate threshold for momentum signals
+const HIGH_MIN_APR = 87.6;       // 8760% annualized (= 100bps hourly)
+const HIGH_MIN_PERSIST = 2;      // hours (lowered — momentum signals are faster)
+const HIGH_MAX_PRICE_MOVE = 0.15; // 15% (widened — momentum works WITH moves)
 
-const MED_MIN_APR = 1.00;
-const MED_MIN_PERSIST = 2;
-const MED_MAX_PRICE_MOVE = 0.15; // 15%
+const MED_MIN_APR = 43.8;        // 4380% annualized (= 50bps hourly)
+const MED_MIN_PERSIST = 1;
+const MED_MAX_PRICE_MOVE = 0.25; // 25%
 
-const LOW_MIN_APR = 0.50;        // 50% annualized — log everything above this
+const LOW_MIN_APR = 8.76;        // 876% annualized (= 10bps hourly) — log everything above this
 
 // ═══ Regime Reader (Stage 3 — Oracle 2026-02-24) ═══
 // Read latest BTC regime from Temporal Edge reports or paper ledger
@@ -219,7 +231,8 @@ function classifyTier(
 async function main() {
   const scanner = new FundingScanner();
 
-  console.log('🔍 Rei Funding Carry (3-Tier Model) — scanning HyperLiquid...\n');
+  const modeLabel = MOMENTUM_MODE ? '⚡ MOMENTUM MODE (0.25x)' : '💰 CARRY MODE';
+  console.log(`🔍 Rei Funding ${modeLabel} — scanning HyperLiquid...\n`);
 
   const opportunities = await scanner.scan();
 
@@ -231,8 +244,9 @@ async function main() {
     ledger = { signals: [], lastScanAt: '', totalScans: 0 };
   }
 
-  // Filter to everything above LOW threshold (50% APR)
-  // Also exclude blacklisted coins and catastrophic movers (>50% drop in price — rug pulls, delistings, exploits)
+  // Filter to everything above LOW threshold
+  // In MOMENTUM_MODE: use hourly rate thresholds aligned with backtest
+  // Also exclude blacklisted coins and catastrophic movers
   const candidates = opportunities.filter(o => {
     if (BLACKLISTED_COINS.has(o.coin)) {
       console.log(`⛔ ${o.coin} — BLACKLISTED (skipped)`);
@@ -251,6 +265,17 @@ async function main() {
   const signals: BotChallengeSignal[] = [];
 
   for (const opp of candidates) {
+    // Determine direction first for closed position check
+    const dir = MOMENTUM_MODE
+      ? (opp.direction === 'LONG_BASIS' ? 'LONG' : 'SHORT')
+      : (opp.direction === 'LONG_BASIS' ? 'SHORT' : 'LONG');
+    
+    // ═══ Closed Position Gate (Oracle directive 2026-02-26) ═══
+    if (isClosedPosition(opp.coin, dir)) {
+      console.log(`🚫 ${opp.coin} ${dir} — BLOCKED by closed position gate (zombie prevention)`);
+      continue;
+    }
+
     const persistenceHours = checkPersistence(opp.coin, ledger);
     const { tier, reason } = classifyTier(opp, persistenceHours);
 
@@ -261,7 +286,13 @@ async function main() {
       timestamp: new Date().toISOString(),
       unixMs: Date.now(),
       coin: opp.coin,
-      direction: opp.direction === 'LONG_BASIS' ? 'SHORT' as const : 'LONG' as const,
+      // MOMENTUM MODE: go WITH the crowd, not against
+      // Positive funding (longs pay shorts) = crowd is long → go LONG (momentum)
+      // Negative funding (shorts pay longs) = crowd is short → go SHORT (momentum)
+      // This is the INVERSE of carry. Backtest 2B validated: momentum sharpe 0.59-1.13
+      direction: MOMENTUM_MODE
+        ? (opp.direction === 'LONG_BASIS' ? 'LONG' as const : 'SHORT' as const)
+        : (opp.direction === 'LONG_BASIS' ? 'SHORT' as const : 'LONG' as const),
       confidence: tier === 'HIGH' ? 'high' : tier === 'MEDIUM' ? 'medium' : 'low',
       tier,
       tierReason: reason,
@@ -367,13 +398,45 @@ async function main() {
     (signal as any).regimeMaxHold = regimeParams.maxHold;
     
     // Apply size multiplier to kelly-eligible signals
-    if (signal.confidence === 'high') {
-      (signal as any).regimeSizeMultiplier = regimeParams.size;
-      // Note: actual kelly_size is computed by Wren, but we cap the confidence-based
-      // allocation here. The multiplier will be applied when Wren sizes positions.
-    } else if (signal.confidence === 'medium') {
-      (signal as any).regimeSizeMultiplier = regimeParams.size;
+    // In MOMENTUM_MODE: cap at 0.25x regime size (cautious rollout)
+    const sizeCap = MOMENTUM_MODE ? MOMENTUM_SIZE_MULTIPLIER : 1.0;
+    const effectiveSize = Math.min(regimeParams.size, sizeCap);
+    if (signal.confidence === 'high' || signal.confidence === 'medium') {
+      (signal as any).regimeSizeMultiplier = effectiveSize;
+      (signal as any).momentumMode = MOMENTUM_MODE;
     }
+  }
+
+  // ═══ Live Signal Collection (for out-of-sample tracking) ═══
+  // Log ALL HL funding events where |rate| >= 100bps, regardless of other filters
+  // This builds the out-of-sample dataset for the momentum signal
+  if (!fs.existsSync(SIGNAL_LOG_DIR)) {
+    fs.mkdirSync(SIGNAL_LOG_DIR, { recursive: true });
+  }
+  const extremeEvents = opportunities.filter(o => Math.abs(o.currentRate) >= MOMENTUM_MIN_RATE);
+  if (extremeEvents.length > 0) {
+    const logDate = new Date().toISOString().slice(0, 10);
+    const logFile = path.join(SIGNAL_LOG_DIR, `${logDate}.json`);
+    let existing: any[] = [];
+    try { existing = JSON.parse(fs.readFileSync(logFile, 'utf-8')); } catch {}
+    for (const e of extremeEvents) {
+      existing.push({
+        timestamp: new Date().toISOString(),
+        coin: e.coin,
+        rate: e.currentRate,
+        rateBps: Math.round(e.currentRate * 10000),
+        annualizedAPR: e.annualizedRate,
+        price: e.markPrice,
+        regime: currentRegime,
+        direction: e.currentRate > 0 ? 'LONG' : 'SHORT', // momentum direction
+        basis: e.basis,
+        priceChange24h: e.priceChange24h,
+      });
+    }
+    fs.writeFileSync(logFile, JSON.stringify(existing, null, 2), 'utf-8');
+    console.log(`📡 Live signal log: ${extremeEvents.length} events >= 100bps saved to data/live-signals/${logDate}.json`);
+  } else {
+    console.log(`📡 Live signal log: 0 events >= 100bps this scan (normal — signal fires during dislocations)`);
   }
 
   // Summary by tier

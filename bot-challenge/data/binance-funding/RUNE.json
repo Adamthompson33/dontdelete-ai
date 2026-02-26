@@ -1,0 +1,632 @@
+[
+  {
+    "t": 1769472000002,
+    "symbol": "RUNEUSDT",
+    "rate": 0.0001,
+    "rateBps": 1,
+    "rateAPR": 10.950000000000001
+  },
+  {
+    "t": 1769500800000,
+    "symbol": "RUNEUSDT",
+    "rate": 0.00008024,
+    "rateBps": 0.8024,
+    "rateAPR": 8.78628
+  },
+  {
+    "t": 1769529600000,
+    "symbol": "RUNEUSDT",
+    "rate": -0.00009064,
+    "rateBps": -0.9064,
+    "rateAPR": -9.92508
+  },
+  {
+    "t": 1769558400000,
+    "symbol": "RUNEUSDT",
+    "rate": 0.0001,
+    "rateBps": 1,
+    "rateAPR": 10.950000000000001
+  },
+  {
+    "t": 1769587200000,
+    "symbol": "RUNEUSDT",
+    "rate": 0.00006152,
+    "rateBps": 0.6152,
+    "rateAPR": 6.736439999999999
+  },
+  {
+    "t": 1769616000000,
+    "symbol": "RUNEUSDT",
+    "rate": 0.0001,
+    "rateBps": 1,
+    "rateAPR": 10.950000000000001
+  },
+  {
+    "t": 1769644800000,
+    "symbol": "RUNEUSDT",
+    "rate": 0.0001,
+    "rateBps": 1,
+    "rateAPR": 10.950000000000001
+  },
+  {
+    "t": 1769673600009,
+    "symbol": "RUNEUSDT",
+    "rate": -0.00009121,
+    "rateBps": -0.9121,
+    "rateAPR": -9.987495000000001
+  },
+  {
+    "t": 1769702400000,
+    "symbol": "RUNEUSDT",
+    "rate": -0.00007136,
+    "rateBps": -0.7135999999999999,
+    "rateAPR": -7.8139199999999995
+  },
+  {
+    "t": 1769731200008,
+    "symbol": "RUNEUSDT",
+    "rate": 0.0001,
+    "rateBps": 1,
+    "rateAPR": 10.950000000000001
+  },
+  {
+    "t": 1769760000000,
+    "symbol": "RUNEUSDT",
+    "rate": -0.00000229,
+    "rateBps": -0.0229,
+    "rateAPR": -0.250755
+  },
+  {
+    "t": 1769788800001,
+    "symbol": "RUNEUSDT",
+    "rate": 0.00007735,
+    "rateBps": 0.7735,
+    "rateAPR": 8.469824999999998
+  },
+  {
+    "t": 1769817600000,
+    "symbol": "RUNEUSDT",
+    "rate": -0.00000946,
+    "rateBps": -0.09459999999999999,
+    "rateAPR": -1.0358699999999998
+  },
+  {
+    "t": 1769846400001,
+    "symbol": "RUNEUSDT",
+    "rate": -0.00024031,
+    "rateBps": -2.4031000000000002,
+    "rateAPR": -26.313945
+  },
+  {
+    "t": 1769875200009,
+    "symbol": "RUNEUSDT",
+    "rate": -0.00029436,
+    "rateBps": -2.9436,
+    "rateAPR": -32.23242
+  },
+  {
+    "t": 1769904000001,
+    "symbol": "RUNEUSDT",
+    "rate": 0.00002296,
+    "rateBps": 0.2296,
+    "rateAPR": 2.51412
+  },
+  {
+    "t": 1769932800004,
+    "symbol": "RUNEUSDT",
+    "rate": -0.00029915,
+    "rateBps": -2.9915,
+    "rateAPR": -32.756924999999995
+  },
+  {
+    "t": 1769961600000,
+    "symbol": "RUNEUSDT",
+    "rate": -0.00040856,
+    "rateBps": -4.0855999999999995,
+    "rateAPR": -44.73731999999999
+  },
+  {
+    "t": 1769990400000,
+    "symbol": "RUNEUSDT",
+    "rate": -0.00001642,
+    "rateBps": -0.16419999999999998,
+    "rateAPR": -1.79799
+  },
+  {
+    "t": 1770019200014,
+    "symbol": "RUNEUSDT",
+    "rate": 0.0001,
+    "rateBps": 1,
+    "rateAPR": 10.950000000000001
+  },
+  {
+    "t": 1770048000000,
+    "symbol": "RUNEUSDT",
+    "rate": 0.0001,
+    "rateBps": 1,
+    "rateAPR": 10.950000000000001
+  },
+  {
+    "t": 1770076800000,
+    "symbol": "RUNEUSDT",
+    "rate": -0.00014841,
+    "rateBps": -1.4841,
+    "rateAPR": -16.250895
+  },
+  {
+    "t": 1770105600007,
+    "symbol": "RUNEUSDT",
+    "rate": 0.00008764,
+    "rateBps": 0.8764,
+    "rateAPR": 9.59658
+  },
+  {
+    "t": 1770134400000,
+    "symbol": "RUNEUSDT",
+    "rate": -0.00009213,
+    "rateBps": -0.9213,
+    "rateAPR": -10.088235
+  },
+  {
+    "t": 1770163200002,
+    "symbol": "RUNEUSDT",
+    "rate": -0.00004987,
+    "rateBps": -0.49870000000000003,
+    "rateAPR": -5.460765
+  },
+  {
+    "t": 1770192000007,
+    "symbol": "RUNEUSDT",
+    "rate": 0.0001,
+    "rateBps": 1,
+    "rateAPR": 10.950000000000001
+  },
+  {
+    "t": 1770220800000,
+    "symbol": "RUNEUSDT",
+    "rate": 0.0000145,
+    "rateBps": 0.145,
+    "rateAPR": 1.58775
+  },
+  {
+    "t": 1770249600011,
+    "symbol": "RUNEUSDT",
+    "rate": 0.00006934,
+    "rateBps": 0.6934,
+    "rateAPR": 7.59273
+  },
+  {
+    "t": 1770278400000,
+    "symbol": "RUNEUSDT",
+    "rate": 0.00009367,
+    "rateBps": 0.9367,
+    "rateAPR": 10.256865
+  },
+  {
+    "t": 1770307200007,
+    "symbol": "RUNEUSDT",
+    "rate": -0.00008773,
+    "rateBps": -0.8773,
+    "rateAPR": -9.606435000000001
+  },
+  {
+    "t": 1770336000000,
+    "symbol": "RUNEUSDT",
+    "rate": -0.00017135,
+    "rateBps": -1.7134999999999998,
+    "rateAPR": -18.762824999999996
+  },
+  {
+    "t": 1770364800001,
+    "symbol": "RUNEUSDT",
+    "rate": -0.00000592,
+    "rateBps": -0.0592,
+    "rateAPR": -0.64824
+  },
+  {
+    "t": 1770393600000,
+    "symbol": "RUNEUSDT",
+    "rate": 0.0001,
+    "rateBps": 1,
+    "rateAPR": 10.950000000000001
+  },
+  {
+    "t": 1770422400003,
+    "symbol": "RUNEUSDT",
+    "rate": 0.0001,
+    "rateBps": 1,
+    "rateAPR": 10.950000000000001
+  },
+  {
+    "t": 1770451200000,
+    "symbol": "RUNEUSDT",
+    "rate": 0.00007874,
+    "rateBps": 0.7874,
+    "rateAPR": 8.62203
+  },
+  {
+    "t": 1770480000010,
+    "symbol": "RUNEUSDT",
+    "rate": 0.00009937,
+    "rateBps": 0.9937,
+    "rateAPR": 10.881015000000001
+  },
+  {
+    "t": 1770508800003,
+    "symbol": "RUNEUSDT",
+    "rate": 0.00007683,
+    "rateBps": 0.7683,
+    "rateAPR": 8.412885
+  },
+  {
+    "t": 1770537600000,
+    "symbol": "RUNEUSDT",
+    "rate": 0.00006018,
+    "rateBps": 0.6018,
+    "rateAPR": 6.58971
+  },
+  {
+    "t": 1770566400000,
+    "symbol": "RUNEUSDT",
+    "rate": -0.00009871,
+    "rateBps": -0.9871,
+    "rateAPR": -10.808744999999998
+  },
+  {
+    "t": 1770595200002,
+    "symbol": "RUNEUSDT",
+    "rate": -0.00006204,
+    "rateBps": -0.6204,
+    "rateAPR": -6.793379999999999
+  },
+  {
+    "t": 1770624000001,
+    "symbol": "RUNEUSDT",
+    "rate": 0.0001,
+    "rateBps": 1,
+    "rateAPR": 10.950000000000001
+  },
+  {
+    "t": 1770652800007,
+    "symbol": "RUNEUSDT",
+    "rate": -0.0001638,
+    "rateBps": -1.638,
+    "rateAPR": -17.936100000000003
+  },
+  {
+    "t": 1770681600000,
+    "symbol": "RUNEUSDT",
+    "rate": -0.00017661,
+    "rateBps": -1.7661,
+    "rateAPR": -19.338795
+  },
+  {
+    "t": 1770710400007,
+    "symbol": "RUNEUSDT",
+    "rate": -0.00036653,
+    "rateBps": -3.6653000000000002,
+    "rateAPR": -40.135035
+  },
+  {
+    "t": 1770739200000,
+    "symbol": "RUNEUSDT",
+    "rate": -0.00038954,
+    "rateBps": -3.8954,
+    "rateAPR": -42.65463
+  },
+  {
+    "t": 1770768000000,
+    "symbol": "RUNEUSDT",
+    "rate": 0.00006135,
+    "rateBps": 0.6135,
+    "rateAPR": 6.7178249999999995
+  },
+  {
+    "t": 1770796800006,
+    "symbol": "RUNEUSDT",
+    "rate": -0.00008102,
+    "rateBps": -0.8101999999999999,
+    "rateAPR": -8.87169
+  },
+  {
+    "t": 1770825600000,
+    "symbol": "RUNEUSDT",
+    "rate": 0.00004775,
+    "rateBps": 0.47750000000000004,
+    "rateAPR": 5.228625000000001
+  },
+  {
+    "t": 1770854400000,
+    "symbol": "RUNEUSDT",
+    "rate": -0.00017181,
+    "rateBps": -1.7181,
+    "rateAPR": -18.813195
+  },
+  {
+    "t": 1770883200001,
+    "symbol": "RUNEUSDT",
+    "rate": 0.00001219,
+    "rateBps": 0.12190000000000001,
+    "rateAPR": 1.3348049999999998
+  },
+  {
+    "t": 1770912000001,
+    "symbol": "RUNEUSDT",
+    "rate": -0.000074,
+    "rateBps": -0.74,
+    "rateAPR": -8.103
+  },
+  {
+    "t": 1770940800007,
+    "symbol": "RUNEUSDT",
+    "rate": 0.0001,
+    "rateBps": 1,
+    "rateAPR": 10.950000000000001
+  },
+  {
+    "t": 1770969600003,
+    "symbol": "RUNEUSDT",
+    "rate": -0.00014033,
+    "rateBps": -1.4033,
+    "rateAPR": -15.366135
+  },
+  {
+    "t": 1770998400005,
+    "symbol": "RUNEUSDT",
+    "rate": -0.00023238,
+    "rateBps": -2.3238,
+    "rateAPR": -25.445609999999995
+  },
+  {
+    "t": 1771027200002,
+    "symbol": "RUNEUSDT",
+    "rate": 0.0001,
+    "rateBps": 1,
+    "rateAPR": 10.950000000000001
+  },
+  {
+    "t": 1771056000004,
+    "symbol": "RUNEUSDT",
+    "rate": 0.0001,
+    "rateBps": 1,
+    "rateAPR": 10.950000000000001
+  },
+  {
+    "t": 1771084800002,
+    "symbol": "RUNEUSDT",
+    "rate": 0.0001,
+    "rateBps": 1,
+    "rateAPR": 10.950000000000001
+  },
+  {
+    "t": 1771113600000,
+    "symbol": "RUNEUSDT",
+    "rate": 0.0001,
+    "rateBps": 1,
+    "rateAPR": 10.950000000000001
+  },
+  {
+    "t": 1771142400002,
+    "symbol": "RUNEUSDT",
+    "rate": 0.0001,
+    "rateBps": 1,
+    "rateAPR": 10.950000000000001
+  },
+  {
+    "t": 1771171200000,
+    "symbol": "RUNEUSDT",
+    "rate": 0.0001,
+    "rateBps": 1,
+    "rateAPR": 10.950000000000001
+  },
+  {
+    "t": 1771200000001,
+    "symbol": "RUNEUSDT",
+    "rate": 0.00000322,
+    "rateBps": 0.0322,
+    "rateAPR": 0.35259
+  },
+  {
+    "t": 1771228800003,
+    "symbol": "RUNEUSDT",
+    "rate": 0.00001421,
+    "rateBps": 0.1421,
+    "rateAPR": 1.555995
+  },
+  {
+    "t": 1771257600000,
+    "symbol": "RUNEUSDT",
+    "rate": -0.00020404,
+    "rateBps": -2.0404,
+    "rateAPR": -22.342380000000002
+  },
+  {
+    "t": 1771286400008,
+    "symbol": "RUNEUSDT",
+    "rate": 0.0001,
+    "rateBps": 1,
+    "rateAPR": 10.950000000000001
+  },
+  {
+    "t": 1771315200001,
+    "symbol": "RUNEUSDT",
+    "rate": 0.0001,
+    "rateBps": 1,
+    "rateAPR": 10.950000000000001
+  },
+  {
+    "t": 1771344000002,
+    "symbol": "RUNEUSDT",
+    "rate": 0.0001,
+    "rateBps": 1,
+    "rateAPR": 10.950000000000001
+  },
+  {
+    "t": 1771372800000,
+    "symbol": "RUNEUSDT",
+    "rate": -0.00002156,
+    "rateBps": -0.2156,
+    "rateAPR": -2.36082
+  },
+  {
+    "t": 1771401600000,
+    "symbol": "RUNEUSDT",
+    "rate": -0.00019244,
+    "rateBps": -1.9243999999999999,
+    "rateAPR": -21.07218
+  },
+  {
+    "t": 1771430400011,
+    "symbol": "RUNEUSDT",
+    "rate": -0.0001681,
+    "rateBps": -1.6809999999999998,
+    "rateAPR": -18.40695
+  },
+  {
+    "t": 1771459200013,
+    "symbol": "RUNEUSDT",
+    "rate": 0.00003407,
+    "rateBps": 0.34069999999999995,
+    "rateAPR": 3.7306649999999997
+  },
+  {
+    "t": 1771488000000,
+    "symbol": "RUNEUSDT",
+    "rate": -0.00005218,
+    "rateBps": -0.5217999999999999,
+    "rateAPR": -5.71371
+  },
+  {
+    "t": 1771516800003,
+    "symbol": "RUNEUSDT",
+    "rate": 0.00005295,
+    "rateBps": 0.5295,
+    "rateAPR": 5.798025
+  },
+  {
+    "t": 1771545600000,
+    "symbol": "RUNEUSDT",
+    "rate": -0.00001143,
+    "rateBps": -0.11430000000000001,
+    "rateAPR": -1.251585
+  },
+  {
+    "t": 1771574400000,
+    "symbol": "RUNEUSDT",
+    "rate": -0.00003184,
+    "rateBps": -0.3184,
+    "rateAPR": -3.4864800000000002
+  },
+  {
+    "t": 1771603200000,
+    "symbol": "RUNEUSDT",
+    "rate": 0.0000696,
+    "rateBps": 0.696,
+    "rateAPR": 7.621199999999999
+  },
+  {
+    "t": 1771632000004,
+    "symbol": "RUNEUSDT",
+    "rate": 0.0001,
+    "rateBps": 1,
+    "rateAPR": 10.950000000000001
+  },
+  {
+    "t": 1771660800000,
+    "symbol": "RUNEUSDT",
+    "rate": 0.0001,
+    "rateBps": 1,
+    "rateAPR": 10.950000000000001
+  },
+  {
+    "t": 1771689600005,
+    "symbol": "RUNEUSDT",
+    "rate": 0.00002333,
+    "rateBps": 0.23329999999999998,
+    "rateAPR": 2.5546349999999998
+  },
+  {
+    "t": 1771718400001,
+    "symbol": "RUNEUSDT",
+    "rate": -0.00030149,
+    "rateBps": -3.0149000000000004,
+    "rateAPR": -33.013155000000005
+  },
+  {
+    "t": 1771747200004,
+    "symbol": "RUNEUSDT",
+    "rate": 0.0001,
+    "rateBps": 1,
+    "rateAPR": 10.950000000000001
+  },
+  {
+    "t": 1771776000000,
+    "symbol": "RUNEUSDT",
+    "rate": -0.00023619,
+    "rateBps": -2.3619,
+    "rateAPR": -25.862805
+  },
+  {
+    "t": 1771804800001,
+    "symbol": "RUNEUSDT",
+    "rate": 0.00009319,
+    "rateBps": 0.9319,
+    "rateAPR": 10.204305
+  },
+  {
+    "t": 1771833600000,
+    "symbol": "RUNEUSDT",
+    "rate": -0.00016256,
+    "rateBps": -1.6256,
+    "rateAPR": -17.80032
+  },
+  {
+    "t": 1771862400000,
+    "symbol": "RUNEUSDT",
+    "rate": 0.0001,
+    "rateBps": 1,
+    "rateAPR": 10.950000000000001
+  },
+  {
+    "t": 1771891200007,
+    "symbol": "RUNEUSDT",
+    "rate": 0.0001,
+    "rateBps": 1,
+    "rateAPR": 10.950000000000001
+  },
+  {
+    "t": 1771920000000,
+    "symbol": "RUNEUSDT",
+    "rate": -0.00011597,
+    "rateBps": -1.1597,
+    "rateAPR": -12.698715
+  },
+  {
+    "t": 1771948800001,
+    "symbol": "RUNEUSDT",
+    "rate": 0.0001,
+    "rateBps": 1,
+    "rateAPR": 10.950000000000001
+  },
+  {
+    "t": 1771977600001,
+    "symbol": "RUNEUSDT",
+    "rate": 0.0001,
+    "rateBps": 1,
+    "rateAPR": 10.950000000000001
+  },
+  {
+    "t": 1772006400007,
+    "symbol": "RUNEUSDT",
+    "rate": 0.0001,
+    "rateBps": 1,
+    "rateAPR": 10.950000000000001
+  },
+  {
+    "t": 1772035200000,
+    "symbol": "RUNEUSDT",
+    "rate": 0.0001,
+    "rateBps": 1,
+    "rateAPR": 10.950000000000001
+  }
+]

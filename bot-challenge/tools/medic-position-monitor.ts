@@ -18,6 +18,7 @@
 import * as fs from 'fs';
 import * as path from 'path';
 import { REGIME_PARAMS, DEFAULT_REGIME_PARAMS, RegimeParams } from '../../academy/src/services/temporal-edge';
+import { isClosedPosition } from './lib/closed-position-gate';
 
 // ═══ Config ═══
 
@@ -381,6 +382,11 @@ async function main() {
   // Build/update position state
   const newPositions: Record<string, PositionState> = {};
   for (const sig of activeSignals) {
+    // Closed position gate (Oracle directive 2026-02-26)
+    if (isClosedPosition(sig.coin, sig.direction)) {
+      console.log(`🚫 ${sig.coin} ${sig.direction} — skipped (on closed position list)`);
+      continue;
+    }
     const key = `${sig.coin}_${sig.direction}_${sig.tool}`;
     if (prevState.positions[key]) {
       // Keep existing entry data
@@ -437,7 +443,10 @@ async function main() {
     }
   }
   
-  // ═══ Auto-Close: positions past stop for >1 cycle ═══
+  // ═══ Auto-Close: tiered stop logic (Oracle directive 2026-02-27) ═══
+  // - Breach >20% past stop → immediate close (no confirmation)
+  // - Breach within 20% of stop → 2-cycle confirmation (wick protection)
+  const IMMEDIATE_CLOSE_THRESHOLD = 0.20; // 20% past stop = instant close
   const currentStopBreaches: string[] = [];
   const autoClosedCoins: string[] = [];
   
@@ -446,8 +455,19 @@ async function main() {
       const breachKey = `${a.coin}_${a.direction}`;
       currentStopBreaches.push(breachKey);
       
-      // If this coin was also breached last cycle, auto-close it
-      if ((prevState.previousStopBreaches || []).includes(breachKey)) {
+      const pnlPct = Math.abs(a.details?.pnlPct || 0) / 100;
+      const stopLevel = currentParams.stop;
+      const breachExcess = (pnlPct - stopLevel) / stopLevel; // how far past stop as ratio
+      
+      const immediateClose = breachExcess > IMMEDIATE_CLOSE_THRESHOLD;
+      const confirmedClose = (prevState.previousStopBreaches || []).includes(breachKey);
+      
+      if (immediateClose) {
+        console.log(`⚡ IMMEDIATE CLOSE: ${a.coin} ${a.direction} — ${(breachExcess * 100).toFixed(0)}% past stop (>${(IMMEDIATE_CLOSE_THRESHOLD * 100)}% threshold)`);
+      }
+      
+      // Close if immediate (blowout) OR confirmed (2nd consecutive cycle)
+      if (immediateClose || confirmedClose) {
         // Find the signal in ledger and mark CLOSED
         const sigIndex = (ledger.signals || []).findIndex((s: any) => {
           const age = now - (s.unixMs || new Date(s.timestamp).getTime() || 0);

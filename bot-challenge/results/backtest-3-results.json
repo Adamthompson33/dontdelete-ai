@@ -1,0 +1,2377 @@
+{
+  "metadata": {
+    "source": "Backtest 2B momentum events, >=100bps, no AZTEC/AXS",
+    "stops": {
+      "CHOPPY": 0.02,
+      "TRENDING_DOWN": 0.03,
+      "TRENDING_UP": 0.04,
+      "VOLATILE": 0.03,
+      "UNKNOWN": 0.03
+    },
+    "totalTrades": 61
+  },
+  "trades": [
+    {
+      "coin": "ACE",
+      "timestamp": "2026-02-18T19:00:00Z",
+      "regime": "UNKNOWN",
+      "fundingRate": -297.875,
+      "momentumDir": "short",
+      "entryPrice": 0.1769,
+      "stopLevel": 0.182207,
+      "stopPct": 0.03,
+      "results": {
+        "1h": {
+          "exitPrice": 0.1716,
+          "returnPct": 0.02996042962125494,
+          "stoppedOut": false
+        },
+        "2h": {
+          "exitPrice": 0.1672,
+          "returnPct": 0.05483323911814592,
+          "stoppedOut": false
+        },
+        "4h": {
+          "exitPrice": 0.1686,
+          "returnPct": 0.04691916336913511,
+          "stoppedOut": false
+        },
+        "6h": {
+          "exitPrice": 0.1656,
+          "returnPct": 0.06387789711701529,
+          "stoppedOut": false
+        },
+        "8h": {
+          "exitPrice": 0.1667,
+          "returnPct": 0.05765969474279262,
+          "stoppedOut": false
+        }
+      }
+    },
+    {
+      "coin": "ACE",
+      "timestamp": "2026-02-18T20:00:00Z",
+      "regime": "UNKNOWN",
+      "fundingRate": -199.5833333333333,
+      "momentumDir": "short",
+      "entryPrice": 0.1716,
+      "stopLevel": 0.17674800000000002,
+      "stopPct": 0.03,
+      "results": {
+        "1h": {
+          "exitPrice": 0.1672,
+          "returnPct": 0.025641025641025727,
+          "stoppedOut": false
+        },
+        "2h": {
+          "exitPrice": 0.1672,
+          "returnPct": 0.025641025641025727,
+          "stoppedOut": false
+        },
+        "4h": {
+          "exitPrice": 0.1666,
+          "returnPct": 0.029137529137529164,
+          "stoppedOut": false
+        },
+        "6h": {
+          "exitPrice": 0.1662,
+          "returnPct": 0.03146853146853156,
+          "stoppedOut": false
+        },
+        "8h": {
+          "exitPrice": 0.1647,
+          "returnPct": 0.040209790209790146,
+          "stoppedOut": false
+        }
+      }
+    },
+    {
+      "coin": "ACE",
+      "timestamp": "2026-02-18T21:00:00Z",
+      "regime": "UNKNOWN",
+      "fundingRate": -181.21666666666667,
+      "momentumDir": "short",
+      "entryPrice": 0.1672,
+      "stopLevel": 0.17221599999999998,
+      "stopPct": 0.03,
+      "results": {
+        "1h": {
+          "exitPrice": 0.1672,
+          "returnPct": 0,
+          "stoppedOut": false
+        },
+        "2h": {
+          "exitPrice": 0.1686,
+          "returnPct": -0.00837320574162687,
+          "stoppedOut": false
+        },
+        "4h": {
+          "exitPrice": 0.1656,
+          "returnPct": 0.009569377990430564,
+          "stoppedOut": false
+        },
+        "6h": {
+          "exitPrice": 0.1667,
+          "returnPct": 0.0029904306220095724,
+          "stoppedOut": false
+        },
+        "8h": {
+          "exitPrice": 0.1661,
+          "returnPct": 0.006578947368420992,
+          "stoppedOut": false
+        }
+      }
+    },
+    {
+      "coin": "ACE",
+      "timestamp": "2026-02-18T22:00:00Z",
+      "regime": "UNKNOWN",
+      "fundingRate": -140.52499999999998,
+      "momentumDir": "short",
+      "entryPrice": 0.1672,
+      "stopLevel": 0.17221599999999998,
+      "stopPct": 0.03,
+      "results": {
+        "1h": {
+          "exitPrice": 0.1686,
+          "returnPct": -0.00837320574162687,
+          "stoppedOut": false
+        },
+        "2h": {
+          "exitPrice": 0.1666,
+          "returnPct": 0.0035885167464114204,
+          "stoppedOut": false
+        },
+        "4h": {
+          "exitPrice": 0.1662,
+          "returnPct": 0.005980861244019145,
+          "stoppedOut": false
+        },
+        "6h": {
+          "exitPrice": 0.1647,
+          "returnPct": 0.014952153110047696,
+          "stoppedOut": false
+        },
+        "8h": {
+          "exitPrice": 0.166,
+          "returnPct": 0.007177033492822841,
+          "stoppedOut": false
+        }
+      }
+    },
+    {
+      "coin": "ACE",
+      "timestamp": "2026-02-18T23:00:00Z",
+      "regime": "UNKNOWN",
+      "fundingRate": -101.70833333333331,
+      "momentumDir": "short",
+      "entryPrice": 0.1686,
+      "stopLevel": 0.173658,
+      "stopPct": 0.03,
+      "results": {
+        "1h": {
+          "exitPrice": 0.1666,
+          "returnPct": 0.011862396204033225,
+          "stoppedOut": false
+        },
+        "2h": {
+          "exitPrice": 0.1656,
+          "returnPct": 0.017793594306049838,
+          "stoppedOut": false
+        },
+        "4h": {
+          "exitPrice": 0.1667,
+          "returnPct": 0.01126927639383163,
+          "stoppedOut": false
+        },
+        "6h": {
+          "exitPrice": 0.1661,
+          "returnPct": 0.014827995255041531,
+          "stoppedOut": false
+        },
+        "8h": {
+          "exitPrice": 0.1654,
+          "returnPct": 0.018979833926453193,
+          "stoppedOut": false
+        }
+      }
+    },
+    {
+      "coin": "FOGO",
+      "timestamp": "2026-02-24T10:00:00Z",
+      "regime": "TRENDING_DOWN",
+      "fundingRate": -103.55833333333334,
+      "momentumDir": "short",
+      "entryPrice": 0.028577,
+      "stopLevel": 0.02943431,
+      "stopPct": 0.03,
+      "results": {
+        "1h": {
+          "exitPrice": 0.02943431,
+          "returnPct": -0.03,
+          "stoppedOut": true,
+          "stoppedAtHour": 1
+        },
+        "2h": {
+          "exitPrice": 0.02943431,
+          "returnPct": -0.03,
+          "stoppedOut": true,
+          "stoppedAtHour": 1
+        },
+        "4h": {
+          "exitPrice": 0.02943431,
+          "returnPct": -0.03,
+          "stoppedOut": true,
+          "stoppedAtHour": 1
+        },
+        "6h": {
+          "exitPrice": 0.02943431,
+          "returnPct": -0.03,
+          "stoppedOut": true,
+          "stoppedAtHour": 1
+        },
+        "8h": {
+          "exitPrice": 0.02943431,
+          "returnPct": -0.03,
+          "stoppedOut": true,
+          "stoppedAtHour": 1
+        }
+      }
+    },
+    {
+      "coin": "FOGO",
+      "timestamp": "2026-02-24T11:00:00Z",
+      "regime": "TRENDING_DOWN",
+      "fundingRate": -154.71666666666664,
+      "momentumDir": "short",
+      "entryPrice": 0.029596,
+      "stopLevel": 0.03048388,
+      "stopPct": 0.03,
+      "results": {
+        "1h": {
+          "exitPrice": 0.029513,
+          "returnPct": 0.002804433031490733,
+          "stoppedOut": false
+        },
+        "2h": {
+          "exitPrice": 0.028247,
+          "returnPct": 0.04558048384916879,
+          "stoppedOut": false
+        },
+        "4h": {
+          "exitPrice": 0.027319,
+          "returnPct": 0.07693607244222196,
+          "stoppedOut": false
+        },
+        "6h": {
+          "exitPrice": 0.026958,
+          "returnPct": 0.08913366671171785,
+          "stoppedOut": false
+        },
+        "8h": {
+          "exitPrice": 0.027415,
+          "returnPct": 0.0736923908636303,
+          "stoppedOut": false
+        }
+      }
+    },
+    {
+      "coin": "FOGO",
+      "timestamp": "2026-02-24T12:00:00Z",
+      "regime": "TRENDING_DOWN",
+      "fundingRate": -156.55,
+      "momentumDir": "short",
+      "entryPrice": 0.029513,
+      "stopLevel": 0.03039839,
+      "stopPct": 0.03,
+      "results": {
+        "1h": {
+          "exitPrice": 0.028247,
+          "returnPct": 0.042896350760681726,
+          "stoppedOut": false
+        },
+        "2h": {
+          "exitPrice": 0.028081,
+          "returnPct": 0.04852099074983914,
+          "stoppedOut": false
+        },
+        "4h": {
+          "exitPrice": 0.027869,
+          "returnPct": 0.05570426591671465,
+          "stoppedOut": false
+        },
+        "6h": {
+          "exitPrice": 0.027928,
+          "returnPct": 0.0537051468844238,
+          "stoppedOut": false
+        },
+        "8h": {
+          "exitPrice": 0.027325,
+          "returnPct": 0.074136821061905,
+          "stoppedOut": false
+        }
+      }
+    },
+    {
+      "coin": "FOGO",
+      "timestamp": "2026-02-24T13:00:00Z",
+      "regime": "TRENDING_DOWN",
+      "fundingRate": -126.125,
+      "momentumDir": "short",
+      "entryPrice": 0.028247,
+      "stopLevel": 0.02909441,
+      "stopPct": 0.03,
+      "results": {
+        "1h": {
+          "exitPrice": 0.028081,
+          "returnPct": 0.005876730272241404,
+          "stoppedOut": false
+        },
+        "2h": {
+          "exitPrice": 0.027319,
+          "returnPct": 0.03285304634120444,
+          "stoppedOut": false
+        },
+        "4h": {
+          "exitPrice": 0.026958,
+          "returnPct": 0.04563316458384968,
+          "stoppedOut": false
+        },
+        "6h": {
+          "exitPrice": 0.027415,
+          "returnPct": 0.02945445534039023,
+          "stoppedOut": false
+        },
+        "8h": {
+          "exitPrice": 0.026877,
+          "returnPct": 0.04850072574078662,
+          "stoppedOut": false
+        }
+      }
+    },
+    {
+      "coin": "JTO",
+      "timestamp": "2026-02-18T14:00:00Z",
+      "regime": "UNKNOWN",
+      "fundingRate": -112.65454545454546,
+      "momentumDir": "short",
+      "entryPrice": 0.30572,
+      "stopLevel": 0.3148916,
+      "stopPct": 0.03,
+      "results": {
+        "1h": {
+          "exitPrice": 0.30536,
+          "returnPct": 0.0011775480832133046,
+          "stoppedOut": false
+        },
+        "2h": {
+          "exitPrice": 0.30441,
+          "returnPct": 0.00428496663613757,
+          "stoppedOut": false
+        },
+        "4h": {
+          "exitPrice": 0.29906,
+          "returnPct": 0.02178463953944786,
+          "stoppedOut": false
+        },
+        "6h": {
+          "exitPrice": 0.30007,
+          "returnPct": 0.01848096297265468,
+          "stoppedOut": false
+        },
+        "8h": {
+          "exitPrice": 0.2992,
+          "returnPct": 0.021326704173753666,
+          "stoppedOut": false
+        }
+      }
+    },
+    {
+      "coin": "SKR",
+      "timestamp": "2026-02-24T05:00:00Z",
+      "regime": "VOLATILE",
+      "fundingRate": -766.6416666666668,
+      "momentumDir": "short",
+      "entryPrice": 0.025797,
+      "stopLevel": 0.02657091,
+      "stopPct": 0.03,
+      "results": {
+        "1h": {
+          "exitPrice": 0.02657091,
+          "returnPct": -0.03,
+          "stoppedOut": true,
+          "stoppedAtHour": 1
+        },
+        "2h": {
+          "exitPrice": 0.02657091,
+          "returnPct": -0.03,
+          "stoppedOut": true,
+          "stoppedAtHour": 1
+        },
+        "4h": {
+          "exitPrice": 0.02657091,
+          "returnPct": -0.03,
+          "stoppedOut": true,
+          "stoppedAtHour": 1
+        },
+        "6h": {
+          "exitPrice": 0.02657091,
+          "returnPct": -0.03,
+          "stoppedOut": true,
+          "stoppedAtHour": 1
+        },
+        "8h": {
+          "exitPrice": 0.02657091,
+          "returnPct": -0.03,
+          "stoppedOut": true,
+          "stoppedAtHour": 1
+        }
+      }
+    },
+    {
+      "coin": "SKR",
+      "timestamp": "2026-02-24T06:00:00Z",
+      "regime": "VOLATILE",
+      "fundingRate": -1437.875,
+      "momentumDir": "short",
+      "entryPrice": 0.026243,
+      "stopLevel": 0.02703029,
+      "stopPct": 0.03,
+      "results": {
+        "1h": {
+          "exitPrice": 0.024047,
+          "returnPct": 0.08367945737911063,
+          "stoppedOut": false
+        },
+        "2h": {
+          "exitPrice": 0.024598,
+          "returnPct": 0.06268338223526276,
+          "stoppedOut": false
+        },
+        "4h": {
+          "exitPrice": 0.024708,
+          "returnPct": 0.058491788286400115,
+          "stoppedOut": false
+        },
+        "6h": {
+          "exitPrice": 0.025835,
+          "returnPct": 0.015547003010326512,
+          "stoppedOut": false
+        },
+        "8h": {
+          "exitPrice": 0.023239,
+          "returnPct": 0.11446862020348282,
+          "stoppedOut": false
+        }
+      }
+    },
+    {
+      "coin": "SKR",
+      "timestamp": "2026-02-24T07:00:00Z",
+      "regime": "VOLATILE",
+      "fundingRate": -1506.2083333333333,
+      "momentumDir": "short",
+      "entryPrice": 0.024047,
+      "stopLevel": 0.02476841,
+      "stopPct": 0.03,
+      "results": {
+        "1h": {
+          "exitPrice": 0.02476841,
+          "returnPct": -0.03,
+          "stoppedOut": true,
+          "stoppedAtHour": 1
+        },
+        "2h": {
+          "exitPrice": 0.02476841,
+          "returnPct": -0.03,
+          "stoppedOut": true,
+          "stoppedAtHour": 1
+        },
+        "4h": {
+          "exitPrice": 0.02476841,
+          "returnPct": -0.03,
+          "stoppedOut": true,
+          "stoppedAtHour": 1
+        },
+        "6h": {
+          "exitPrice": 0.02476841,
+          "returnPct": -0.03,
+          "stoppedOut": true,
+          "stoppedAtHour": 1
+        },
+        "8h": {
+          "exitPrice": 0.02476841,
+          "returnPct": -0.03,
+          "stoppedOut": true,
+          "stoppedAtHour": 1
+        }
+      }
+    },
+    {
+      "coin": "SKR",
+      "timestamp": "2026-02-24T08:00:00Z",
+      "regime": "VOLATILE",
+      "fundingRate": -961.2333333333332,
+      "momentumDir": "short",
+      "entryPrice": 0.024598,
+      "stopLevel": 0.025335939999999998,
+      "stopPct": 0.03,
+      "results": {
+        "1h": {
+          "exitPrice": 0.025335939999999998,
+          "returnPct": -0.03,
+          "stoppedOut": true,
+          "stoppedAtHour": 1
+        },
+        "2h": {
+          "exitPrice": 0.025335939999999998,
+          "returnPct": -0.03,
+          "stoppedOut": true,
+          "stoppedAtHour": 1
+        },
+        "4h": {
+          "exitPrice": 0.025335939999999998,
+          "returnPct": -0.03,
+          "stoppedOut": true,
+          "stoppedAtHour": 1
+        },
+        "6h": {
+          "exitPrice": 0.025335939999999998,
+          "returnPct": -0.03,
+          "stoppedOut": true,
+          "stoppedAtHour": 1
+        },
+        "8h": {
+          "exitPrice": 0.025335939999999998,
+          "returnPct": -0.03,
+          "stoppedOut": true,
+          "stoppedAtHour": 1
+        }
+      }
+    },
+    {
+      "coin": "SKR",
+      "timestamp": "2026-02-24T09:00:00Z",
+      "regime": "TRENDING_DOWN",
+      "fundingRate": -713.4583333333334,
+      "momentumDir": "short",
+      "entryPrice": 0.024614,
+      "stopLevel": 0.02535242,
+      "stopPct": 0.03,
+      "results": {
+        "1h": {
+          "exitPrice": 0.02535242,
+          "returnPct": -0.03,
+          "stoppedOut": true,
+          "stoppedAtHour": 1
+        },
+        "2h": {
+          "exitPrice": 0.02535242,
+          "returnPct": -0.03,
+          "stoppedOut": true,
+          "stoppedAtHour": 1
+        },
+        "4h": {
+          "exitPrice": 0.02535242,
+          "returnPct": -0.03,
+          "stoppedOut": true,
+          "stoppedAtHour": 1
+        },
+        "6h": {
+          "exitPrice": 0.02535242,
+          "returnPct": -0.03,
+          "stoppedOut": true,
+          "stoppedAtHour": 1
+        },
+        "8h": {
+          "exitPrice": 0.02535242,
+          "returnPct": -0.03,
+          "stoppedOut": true,
+          "stoppedAtHour": 1
+        }
+      }
+    },
+    {
+      "coin": "SKR",
+      "timestamp": "2026-02-24T10:00:00Z",
+      "regime": "TRENDING_DOWN",
+      "fundingRate": -594.6333333333333,
+      "momentumDir": "short",
+      "entryPrice": 0.024708,
+      "stopLevel": 0.02544924,
+      "stopPct": 0.03,
+      "results": {
+        "1h": {
+          "exitPrice": 0.024924,
+          "returnPct": -0.008742107819329808,
+          "stoppedOut": false
+        },
+        "2h": {
+          "exitPrice": 0.02544924,
+          "returnPct": -0.03,
+          "stoppedOut": true,
+          "stoppedAtHour": 2
+        },
+        "4h": {
+          "exitPrice": 0.02544924,
+          "returnPct": -0.03,
+          "stoppedOut": true,
+          "stoppedAtHour": 2
+        },
+        "6h": {
+          "exitPrice": 0.02544924,
+          "returnPct": -0.03,
+          "stoppedOut": true,
+          "stoppedAtHour": 2
+        },
+        "8h": {
+          "exitPrice": 0.02544924,
+          "returnPct": -0.03,
+          "stoppedOut": true,
+          "stoppedAtHour": 2
+        }
+      }
+    },
+    {
+      "coin": "SKR",
+      "timestamp": "2026-02-24T11:00:00Z",
+      "regime": "TRENDING_DOWN",
+      "fundingRate": -456.4166666666667,
+      "momentumDir": "short",
+      "entryPrice": 0.024924,
+      "stopLevel": 0.025671720000000002,
+      "stopPct": 0.03,
+      "results": {
+        "1h": {
+          "exitPrice": 0.025671720000000002,
+          "returnPct": -0.03,
+          "stoppedOut": true,
+          "stoppedAtHour": 1
+        },
+        "2h": {
+          "exitPrice": 0.025671720000000002,
+          "returnPct": -0.03,
+          "stoppedOut": true,
+          "stoppedAtHour": 1
+        },
+        "4h": {
+          "exitPrice": 0.025671720000000002,
+          "returnPct": -0.03,
+          "stoppedOut": true,
+          "stoppedAtHour": 1
+        },
+        "6h": {
+          "exitPrice": 0.025671720000000002,
+          "returnPct": -0.03,
+          "stoppedOut": true,
+          "stoppedAtHour": 1
+        },
+        "8h": {
+          "exitPrice": 0.025671720000000002,
+          "returnPct": -0.03,
+          "stoppedOut": true,
+          "stoppedAtHour": 1
+        }
+      }
+    },
+    {
+      "coin": "SKR",
+      "timestamp": "2026-02-24T12:00:00Z",
+      "regime": "TRENDING_DOWN",
+      "fundingRate": -494.1666666666667,
+      "momentumDir": "short",
+      "entryPrice": 0.025835,
+      "stopLevel": 0.02661005,
+      "stopPct": 0.03,
+      "results": {
+        "1h": {
+          "exitPrice": 0.024211,
+          "returnPct": 0.06286046061544417,
+          "stoppedOut": false
+        },
+        "2h": {
+          "exitPrice": 0.023239,
+          "returnPct": 0.10048383975227408,
+          "stoppedOut": false
+        },
+        "4h": {
+          "exitPrice": 0.023669,
+          "returnPct": 0.08383975227404689,
+          "stoppedOut": false
+        },
+        "6h": {
+          "exitPrice": 0.024238,
+          "returnPct": 0.06181536675053227,
+          "stoppedOut": false
+        },
+        "8h": {
+          "exitPrice": 0.024499,
+          "returnPct": 0.05171279272305014,
+          "stoppedOut": false
+        }
+      }
+    },
+    {
+      "coin": "SKR",
+      "timestamp": "2026-02-24T13:00:00Z",
+      "regime": "TRENDING_DOWN",
+      "fundingRate": -367.7833333333333,
+      "momentumDir": "short",
+      "entryPrice": 0.024211,
+      "stopLevel": 0.02493733,
+      "stopPct": 0.03,
+      "results": {
+        "1h": {
+          "exitPrice": 0.023239,
+          "returnPct": 0.040147040601379566,
+          "stoppedOut": false
+        },
+        "2h": {
+          "exitPrice": 0.023659,
+          "returnPct": 0.02279955392177111,
+          "stoppedOut": false
+        },
+        "4h": {
+          "exitPrice": 0.023941,
+          "returnPct": 0.011151955722605402,
+          "stoppedOut": false
+        },
+        "6h": {
+          "exitPrice": 0.023842,
+          "returnPct": 0.01524100615422747,
+          "stoppedOut": false
+        },
+        "8h": {
+          "exitPrice": 0.02493733,
+          "returnPct": -0.03,
+          "stoppedOut": true,
+          "stoppedAtHour": 8
+        }
+      }
+    },
+    {
+      "coin": "SKR",
+      "timestamp": "2026-02-24T14:00:00Z",
+      "regime": "TRENDING_DOWN",
+      "fundingRate": -255.14999999999998,
+      "momentumDir": "short",
+      "entryPrice": 0.023239,
+      "stopLevel": 0.02393617,
+      "stopPct": 0.03,
+      "results": {
+        "1h": {
+          "exitPrice": 0.023659,
+          "returnPct": -0.01807306682731616,
+          "stoppedOut": false
+        },
+        "2h": {
+          "exitPrice": 0.02393617,
+          "returnPct": -0.03,
+          "stoppedOut": true,
+          "stoppedAtHour": 2
+        },
+        "4h": {
+          "exitPrice": 0.02393617,
+          "returnPct": -0.03,
+          "stoppedOut": true,
+          "stoppedAtHour": 2
+        },
+        "6h": {
+          "exitPrice": 0.02393617,
+          "returnPct": -0.03,
+          "stoppedOut": true,
+          "stoppedAtHour": 2
+        },
+        "8h": {
+          "exitPrice": 0.02393617,
+          "returnPct": -0.03,
+          "stoppedOut": true,
+          "stoppedAtHour": 2
+        }
+      }
+    },
+    {
+      "coin": "SKR",
+      "timestamp": "2026-02-24T15:00:00Z",
+      "regime": "TRENDING_DOWN",
+      "fundingRate": -242.3166666666667,
+      "momentumDir": "short",
+      "entryPrice": 0.023659,
+      "stopLevel": 0.02436877,
+      "stopPct": 0.03,
+      "results": {
+        "1h": {
+          "exitPrice": 0.023669,
+          "returnPct": -0.0004226721332262392,
+          "stoppedOut": false
+        },
+        "2h": {
+          "exitPrice": 0.023941,
+          "returnPct": -0.011919354156980472,
+          "stoppedOut": false
+        },
+        "4h": {
+          "exitPrice": 0.02436877,
+          "returnPct": -0.03,
+          "stoppedOut": true,
+          "stoppedAtHour": 3
+        },
+        "6h": {
+          "exitPrice": 0.02436877,
+          "returnPct": -0.03,
+          "stoppedOut": true,
+          "stoppedAtHour": 3
+        },
+        "8h": {
+          "exitPrice": 0.02436877,
+          "returnPct": -0.03,
+          "stoppedOut": true,
+          "stoppedAtHour": 3
+        }
+      }
+    },
+    {
+      "coin": "SKR",
+      "timestamp": "2026-02-24T16:00:00Z",
+      "regime": "VOLATILE",
+      "fundingRate": -205.00833333333333,
+      "momentumDir": "short",
+      "entryPrice": 0.023669,
+      "stopLevel": 0.02437907,
+      "stopPct": 0.03,
+      "results": {
+        "1h": {
+          "exitPrice": 0.023941,
+          "returnPct": -0.011491824749672627,
+          "stoppedOut": false
+        },
+        "2h": {
+          "exitPrice": 0.02437907,
+          "returnPct": -0.03,
+          "stoppedOut": true,
+          "stoppedAtHour": 2
+        },
+        "4h": {
+          "exitPrice": 0.02437907,
+          "returnPct": -0.03,
+          "stoppedOut": true,
+          "stoppedAtHour": 2
+        },
+        "6h": {
+          "exitPrice": 0.02437907,
+          "returnPct": -0.03,
+          "stoppedOut": true,
+          "stoppedAtHour": 2
+        },
+        "8h": {
+          "exitPrice": 0.02437907,
+          "returnPct": -0.03,
+          "stoppedOut": true,
+          "stoppedAtHour": 2
+        }
+      }
+    },
+    {
+      "coin": "SKR",
+      "timestamp": "2026-02-24T17:00:00Z",
+      "regime": "VOLATILE",
+      "fundingRate": -180.23333333333335,
+      "momentumDir": "short",
+      "entryPrice": 0.023941,
+      "stopLevel": 0.02465923,
+      "stopPct": 0.03,
+      "results": {
+        "1h": {
+          "exitPrice": 0.024238,
+          "returnPct": -0.012405496846414045,
+          "stoppedOut": false
+        },
+        "2h": {
+          "exitPrice": 0.023842,
+          "returnPct": 0.004135165615471445,
+          "stoppedOut": false
+        },
+        "4h": {
+          "exitPrice": 0.02465923,
+          "returnPct": -0.03,
+          "stoppedOut": true,
+          "stoppedAtHour": 4
+        },
+        "6h": {
+          "exitPrice": 0.02465923,
+          "returnPct": -0.03,
+          "stoppedOut": true,
+          "stoppedAtHour": 4
+        },
+        "8h": {
+          "exitPrice": 0.02465923,
+          "returnPct": -0.03,
+          "stoppedOut": true,
+          "stoppedAtHour": 4
+        }
+      }
+    },
+    {
+      "coin": "SKR",
+      "timestamp": "2026-02-24T18:00:00Z",
+      "regime": "VOLATILE",
+      "fundingRate": -208.3166666666667,
+      "momentumDir": "short",
+      "entryPrice": 0.024238,
+      "stopLevel": 0.02496514,
+      "stopPct": 0.03,
+      "results": {
+        "1h": {
+          "exitPrice": 0.023842,
+          "returnPct": 0.016337981681656923,
+          "stoppedOut": false
+        },
+        "2h": {
+          "exitPrice": 0.024499,
+          "returnPct": -0.010768215199273902,
+          "stoppedOut": false
+        },
+        "4h": {
+          "exitPrice": 0.02496514,
+          "returnPct": -0.03,
+          "stoppedOut": true,
+          "stoppedAtHour": 3
+        },
+        "6h": {
+          "exitPrice": 0.02496514,
+          "returnPct": -0.03,
+          "stoppedOut": true,
+          "stoppedAtHour": 3
+        },
+        "8h": {
+          "exitPrice": 0.02496514,
+          "returnPct": -0.03,
+          "stoppedOut": true,
+          "stoppedAtHour": 3
+        }
+      }
+    },
+    {
+      "coin": "SKR",
+      "timestamp": "2026-02-24T19:00:00Z",
+      "regime": "VOLATILE",
+      "fundingRate": -201.025,
+      "momentumDir": "short",
+      "entryPrice": 0.023842,
+      "stopLevel": 0.02455726,
+      "stopPct": 0.03,
+      "results": {
+        "1h": {
+          "exitPrice": 0.024499,
+          "returnPct": -0.027556413052596315,
+          "stoppedOut": false
+        },
+        "2h": {
+          "exitPrice": 0.02455726,
+          "returnPct": -0.03,
+          "stoppedOut": true,
+          "stoppedAtHour": 2
+        },
+        "4h": {
+          "exitPrice": 0.02455726,
+          "returnPct": -0.03,
+          "stoppedOut": true,
+          "stoppedAtHour": 2
+        },
+        "6h": {
+          "exitPrice": 0.02455726,
+          "returnPct": -0.03,
+          "stoppedOut": true,
+          "stoppedAtHour": 2
+        },
+        "8h": {
+          "exitPrice": 0.02455726,
+          "returnPct": -0.03,
+          "stoppedOut": true,
+          "stoppedAtHour": 2
+        }
+      }
+    },
+    {
+      "coin": "SKR",
+      "timestamp": "2026-02-24T20:00:00Z",
+      "regime": "VOLATILE",
+      "fundingRate": -207.525,
+      "momentumDir": "short",
+      "entryPrice": 0.024499,
+      "stopLevel": 0.02523397,
+      "stopPct": 0.03,
+      "results": {
+        "1h": {
+          "exitPrice": 0.02523397,
+          "returnPct": -0.03,
+          "stoppedOut": true,
+          "stoppedAtHour": 1
+        },
+        "2h": {
+          "exitPrice": 0.02523397,
+          "returnPct": -0.03,
+          "stoppedOut": true,
+          "stoppedAtHour": 1
+        },
+        "4h": {
+          "exitPrice": 0.02523397,
+          "returnPct": -0.03,
+          "stoppedOut": true,
+          "stoppedAtHour": 1
+        },
+        "6h": {
+          "exitPrice": 0.02523397,
+          "returnPct": -0.03,
+          "stoppedOut": true,
+          "stoppedAtHour": 1
+        },
+        "8h": {
+          "exitPrice": 0.02523397,
+          "returnPct": -0.03,
+          "stoppedOut": true,
+          "stoppedAtHour": 1
+        }
+      }
+    },
+    {
+      "coin": "SKR",
+      "timestamp": "2026-02-24T21:00:00Z",
+      "regime": "VOLATILE",
+      "fundingRate": -213.19166666666663,
+      "momentumDir": "short",
+      "entryPrice": 0.024408,
+      "stopLevel": 0.02514024,
+      "stopPct": 0.03,
+      "results": {
+        "1h": {
+          "exitPrice": 0.024792,
+          "returnPct": -0.01573254670599813,
+          "stoppedOut": false
+        },
+        "2h": {
+          "exitPrice": 0.02514024,
+          "returnPct": -0.03,
+          "stoppedOut": true,
+          "stoppedAtHour": 2
+        },
+        "4h": {
+          "exitPrice": 0.02514024,
+          "returnPct": -0.03,
+          "stoppedOut": true,
+          "stoppedAtHour": 2
+        },
+        "6h": {
+          "exitPrice": 0.02514024,
+          "returnPct": -0.03,
+          "stoppedOut": true,
+          "stoppedAtHour": 2
+        },
+        "8h": {
+          "exitPrice": 0.02514024,
+          "returnPct": -0.03,
+          "stoppedOut": true,
+          "stoppedAtHour": 2
+        }
+      }
+    },
+    {
+      "coin": "SKR",
+      "timestamp": "2026-02-24T22:00:00Z",
+      "regime": "TRENDING_DOWN",
+      "fundingRate": -155.34166666666667,
+      "momentumDir": "short",
+      "entryPrice": 0.024792,
+      "stopLevel": 0.02553576,
+      "stopPct": 0.03,
+      "results": {
+        "1h": {
+          "exitPrice": 0.02553576,
+          "returnPct": -0.03,
+          "stoppedOut": true,
+          "stoppedAtHour": 1
+        },
+        "2h": {
+          "exitPrice": 0.02553576,
+          "returnPct": -0.03,
+          "stoppedOut": true,
+          "stoppedAtHour": 1
+        },
+        "4h": {
+          "exitPrice": 0.02553576,
+          "returnPct": -0.03,
+          "stoppedOut": true,
+          "stoppedAtHour": 1
+        },
+        "6h": {
+          "exitPrice": 0.02553576,
+          "returnPct": -0.03,
+          "stoppedOut": true,
+          "stoppedAtHour": 1
+        },
+        "8h": {
+          "exitPrice": 0.02553576,
+          "returnPct": -0.03,
+          "stoppedOut": true,
+          "stoppedAtHour": 1
+        }
+      }
+    },
+    {
+      "coin": "SKR",
+      "timestamp": "2026-02-24T23:00:00Z",
+      "regime": "TRENDING_DOWN",
+      "fundingRate": -187.59166666666667,
+      "momentumDir": "short",
+      "entryPrice": 0.02545,
+      "stopLevel": 0.0262135,
+      "stopPct": 0.03,
+      "results": {
+        "1h": {
+          "exitPrice": 0.0262135,
+          "returnPct": -0.03,
+          "stoppedOut": true,
+          "stoppedAtHour": 1
+        },
+        "2h": {
+          "exitPrice": 0.0262135,
+          "returnPct": -0.03,
+          "stoppedOut": true,
+          "stoppedAtHour": 1
+        },
+        "4h": {
+          "exitPrice": 0.0262135,
+          "returnPct": -0.03,
+          "stoppedOut": true,
+          "stoppedAtHour": 1
+        },
+        "6h": {
+          "exitPrice": 0.0262135,
+          "returnPct": -0.03,
+          "stoppedOut": true,
+          "stoppedAtHour": 1
+        },
+        "8h": {
+          "exitPrice": 0.0262135,
+          "returnPct": -0.03,
+          "stoppedOut": true,
+          "stoppedAtHour": 1
+        }
+      }
+    },
+    {
+      "coin": "SKR",
+      "timestamp": "2026-02-25T00:00:00Z",
+      "regime": "CHOPPY",
+      "fundingRate": -219.25000000000003,
+      "momentumDir": "short",
+      "entryPrice": 0.025261,
+      "stopLevel": 0.02576622,
+      "stopPct": 0.02,
+      "results": {
+        "1h": {
+          "exitPrice": 0.024505,
+          "returnPct": 0.02992755631210165,
+          "stoppedOut": false
+        },
+        "2h": {
+          "exitPrice": 0.024386,
+          "returnPct": 0.034638375361228664,
+          "stoppedOut": false
+        },
+        "4h": {
+          "exitPrice": 0.02409,
+          "returnPct": 0.04635604291199867,
+          "stoppedOut": false
+        },
+        "6h": {
+          "exitPrice": 0.023581,
+          "returnPct": 0.06650568069355914,
+          "stoppedOut": false
+        },
+        "8h": {
+          "exitPrice": 0.022586,
+          "returnPct": 0.10589446181861369,
+          "stoppedOut": false
+        }
+      }
+    },
+    {
+      "coin": "SKR",
+      "timestamp": "2026-02-25T01:00:00Z",
+      "regime": "VOLATILE",
+      "fundingRate": -227.35,
+      "momentumDir": "short",
+      "entryPrice": 0.024505,
+      "stopLevel": 0.02524015,
+      "stopPct": 0.03,
+      "results": {
+        "1h": {
+          "exitPrice": 0.024386,
+          "returnPct": 0.0048561518057538295,
+          "stoppedOut": false
+        },
+        "2h": {
+          "exitPrice": 0.024164,
+          "returnPct": 0.013915527443378803,
+          "stoppedOut": false
+        },
+        "4h": {
+          "exitPrice": 0.023876,
+          "returnPct": 0.025668230973270666,
+          "stoppedOut": false
+        },
+        "6h": {
+          "exitPrice": 0.023,
+          "returnPct": 0.061416037543358476,
+          "stoppedOut": false
+        },
+        "8h": {
+          "exitPrice": 0.0229,
+          "returnPct": 0.06549683738012646,
+          "stoppedOut": false
+        }
+      }
+    },
+    {
+      "coin": "SKR",
+      "timestamp": "2026-02-25T02:00:00Z",
+      "regime": "VOLATILE",
+      "fundingRate": -162.64166666666668,
+      "momentumDir": "short",
+      "entryPrice": 0.024386,
+      "stopLevel": 0.02511758,
+      "stopPct": 0.03,
+      "results": {
+        "1h": {
+          "exitPrice": 0.024164,
+          "returnPct": 0.009103584023620109,
+          "stoppedOut": false
+        },
+        "2h": {
+          "exitPrice": 0.02409,
+          "returnPct": 0.012138112031493526,
+          "stoppedOut": false
+        },
+        "4h": {
+          "exitPrice": 0.023581,
+          "returnPct": 0.033010743869433284,
+          "stoppedOut": false
+        },
+        "6h": {
+          "exitPrice": 0.022586,
+          "returnPct": 0.07381284343475776,
+          "stoppedOut": false
+        },
+        "8h": {
+          "exitPrice": 0.022767,
+          "returnPct": 0.06639055195604045,
+          "stoppedOut": false
+        }
+      }
+    },
+    {
+      "coin": "SKR",
+      "timestamp": "2026-02-25T03:00:00Z",
+      "regime": "VOLATILE",
+      "fundingRate": -163.16666666666666,
+      "momentumDir": "short",
+      "entryPrice": 0.024164,
+      "stopLevel": 0.024888920000000002,
+      "stopPct": 0.03,
+      "results": {
+        "1h": {
+          "exitPrice": 0.02409,
+          "returnPct": 0.003062406886277154,
+          "stoppedOut": false
+        },
+        "2h": {
+          "exitPrice": 0.023876,
+          "returnPct": 0.011918556530375768,
+          "stoppedOut": false
+        },
+        "4h": {
+          "exitPrice": 0.023,
+          "returnPct": 0.04817083264360213,
+          "stoppedOut": false
+        },
+        "6h": {
+          "exitPrice": 0.0229,
+          "returnPct": 0.05230922032776035,
+          "stoppedOut": false
+        },
+        "8h": {
+          "exitPrice": 0.022875,
+          "returnPct": 0.05334381724879995,
+          "stoppedOut": false
+        }
+      }
+    },
+    {
+      "coin": "SKR",
+      "timestamp": "2026-02-25T04:00:00Z",
+      "regime": "VOLATILE",
+      "fundingRate": -157.9916666666667,
+      "momentumDir": "short",
+      "entryPrice": 0.02409,
+      "stopLevel": 0.0248127,
+      "stopPct": 0.03,
+      "results": {
+        "1h": {
+          "exitPrice": 0.023876,
+          "returnPct": 0.008883354088833496,
+          "stoppedOut": false
+        },
+        "2h": {
+          "exitPrice": 0.023581,
+          "returnPct": 0.021129099211290952,
+          "stoppedOut": false
+        },
+        "4h": {
+          "exitPrice": 0.022586,
+          "returnPct": 0.06243254462432552,
+          "stoppedOut": false
+        },
+        "6h": {
+          "exitPrice": 0.022767,
+          "returnPct": 0.054919053549190584,
+          "stoppedOut": false
+        },
+        "8h": {
+          "exitPrice": 0.022314,
+          "returnPct": 0.07372353673723536,
+          "stoppedOut": false
+        }
+      }
+    },
+    {
+      "coin": "SKR",
+      "timestamp": "2026-02-25T05:00:00Z",
+      "regime": "VOLATILE",
+      "fundingRate": -176.8083333333333,
+      "momentumDir": "short",
+      "entryPrice": 0.023876,
+      "stopLevel": 0.02459228,
+      "stopPct": 0.03,
+      "results": {
+        "1h": {
+          "exitPrice": 0.023581,
+          "returnPct": 0.012355503434411129,
+          "stoppedOut": false
+        },
+        "2h": {
+          "exitPrice": 0.023,
+          "returnPct": 0.03668956274082768,
+          "stoppedOut": false
+        },
+        "4h": {
+          "exitPrice": 0.0229,
+          "returnPct": 0.04087786898978058,
+          "stoppedOut": false
+        },
+        "6h": {
+          "exitPrice": 0.022875,
+          "returnPct": 0.04192494555201884,
+          "stoppedOut": false
+        },
+        "8h": {
+          "exitPrice": 0.021862,
+          "returnPct": 0.08435248785391196,
+          "stoppedOut": false
+        }
+      }
+    },
+    {
+      "coin": "SKR",
+      "timestamp": "2026-02-25T06:00:00Z",
+      "regime": "VOLATILE",
+      "fundingRate": -162.12499999999997,
+      "momentumDir": "short",
+      "entryPrice": 0.023581,
+      "stopLevel": 0.024288430000000003,
+      "stopPct": 0.03,
+      "results": {
+        "1h": {
+          "exitPrice": 0.023,
+          "returnPct": 0.02463848013230998,
+          "stoppedOut": false
+        },
+        "2h": {
+          "exitPrice": 0.022586,
+          "returnPct": 0.04219498748992845,
+          "stoppedOut": false
+        },
+        "4h": {
+          "exitPrice": 0.022767,
+          "returnPct": 0.034519316398795734,
+          "stoppedOut": false
+        },
+        "6h": {
+          "exitPrice": 0.022314,
+          "returnPct": 0.05372969763792887,
+          "stoppedOut": false
+        },
+        "8h": {
+          "exitPrice": 0.021817,
+          "returnPct": 0.07480598787159161,
+          "stoppedOut": false
+        }
+      }
+    },
+    {
+      "coin": "SKR",
+      "timestamp": "2026-02-25T07:00:00Z",
+      "regime": "VOLATILE",
+      "fundingRate": -149.89166666666665,
+      "momentumDir": "short",
+      "entryPrice": 0.023,
+      "stopLevel": 0.02369,
+      "stopPct": 0.03,
+      "results": {
+        "1h": {
+          "exitPrice": 0.022586,
+          "returnPct": 0.01800000000000005,
+          "stoppedOut": false
+        },
+        "2h": {
+          "exitPrice": 0.0229,
+          "returnPct": 0.004347826086956496,
+          "stoppedOut": false
+        },
+        "4h": {
+          "exitPrice": 0.022875,
+          "returnPct": 0.005434782608695657,
+          "stoppedOut": false
+        },
+        "6h": {
+          "exitPrice": 0.021862,
+          "returnPct": 0.04947826086956522,
+          "stoppedOut": false
+        },
+        "8h": {
+          "exitPrice": 0.023,
+          "returnPct": 0,
+          "stoppedOut": false
+        }
+      }
+    },
+    {
+      "coin": "SKR",
+      "timestamp": "2026-02-25T08:00:00Z",
+      "regime": "VOLATILE",
+      "fundingRate": -106.175,
+      "momentumDir": "short",
+      "entryPrice": 0.022586,
+      "stopLevel": 0.02326358,
+      "stopPct": 0.03,
+      "results": {
+        "1h": {
+          "exitPrice": 0.0229,
+          "returnPct": -0.013902417426724599,
+          "stoppedOut": false
+        },
+        "2h": {
+          "exitPrice": 0.022767,
+          "returnPct": -0.008013813866997283,
+          "stoppedOut": false
+        },
+        "4h": {
+          "exitPrice": 0.022314,
+          "returnPct": 0.012042858407863188,
+          "stoppedOut": false
+        },
+        "6h": {
+          "exitPrice": 0.021817,
+          "returnPct": 0.03404764013105459,
+          "stoppedOut": false
+        },
+        "8h": {
+          "exitPrice": 0.022586,
+          "returnPct": 0,
+          "stoppedOut": false
+        }
+      }
+    },
+    {
+      "coin": "UMA",
+      "timestamp": "2026-02-23T22:00:00Z",
+      "regime": "VOLATILE",
+      "fundingRate": -207.0666666666667,
+      "momentumDir": "short",
+      "entryPrice": 0.50724,
+      "stopLevel": 0.5224572000000001,
+      "stopPct": 0.03,
+      "results": {
+        "1h": {
+          "exitPrice": 0.48102,
+          "returnPct": 0.051691506978944916,
+          "stoppedOut": false
+        },
+        "2h": {
+          "exitPrice": 0.48304,
+          "returnPct": 0.04770917120100938,
+          "stoppedOut": false
+        },
+        "4h": {
+          "exitPrice": 0.47329,
+          "returnPct": 0.06693084141629216,
+          "stoppedOut": false
+        },
+        "6h": {
+          "exitPrice": 0.46677,
+          "returnPct": 0.07978471729358884,
+          "stoppedOut": false
+        },
+        "8h": {
+          "exitPrice": 0.45056,
+          "returnPct": 0.11174197618484348,
+          "stoppedOut": false
+        }
+      }
+    },
+    {
+      "coin": "UMA",
+      "timestamp": "2026-02-23T23:00:00Z",
+      "regime": "TRENDING_DOWN",
+      "fundingRate": -444.1500000000001,
+      "momentumDir": "short",
+      "entryPrice": 0.48102,
+      "stopLevel": 0.4954506,
+      "stopPct": 0.03,
+      "results": {
+        "1h": {
+          "exitPrice": 0.48304,
+          "returnPct": -0.004199409587958966,
+          "stoppedOut": false
+        },
+        "2h": {
+          "exitPrice": 0.47541,
+          "returnPct": 0.011662716726955229,
+          "stoppedOut": false
+        },
+        "4h": {
+          "exitPrice": 0.45801,
+          "returnPct": 0.0478358488212549,
+          "stoppedOut": false
+        },
+        "6h": {
+          "exitPrice": 0.46523,
+          "returnPct": 0.03282607791775815,
+          "stoppedOut": false
+        },
+        "8h": {
+          "exitPrice": 0.45804,
+          "returnPct": 0.04777348135212673,
+          "stoppedOut": false
+        }
+      }
+    },
+    {
+      "coin": "UMA",
+      "timestamp": "2026-02-24T00:00:00Z",
+      "regime": "TRENDING_DOWN",
+      "fundingRate": -144.5583333333333,
+      "momentumDir": "short",
+      "entryPrice": 0.48304,
+      "stopLevel": 0.49753120000000006,
+      "stopPct": 0.03,
+      "results": {
+        "1h": {
+          "exitPrice": 0.47541,
+          "returnPct": 0.015795793309042783,
+          "stoppedOut": false
+        },
+        "2h": {
+          "exitPrice": 0.47329,
+          "returnPct": 0.020184663795959002,
+          "stoppedOut": false
+        },
+        "4h": {
+          "exitPrice": 0.46677,
+          "returnPct": 0.033682510765154036,
+          "stoppedOut": false
+        },
+        "6h": {
+          "exitPrice": 0.45056,
+          "returnPct": 0.06724080821464062,
+          "stoppedOut": false
+        },
+        "8h": {
+          "exitPrice": 0.4496,
+          "returnPct": 0.06922822126531969,
+          "stoppedOut": false
+        }
+      }
+    },
+    {
+      "coin": "UMA",
+      "timestamp": "2026-02-24T01:00:00Z",
+      "regime": "TRENDING_DOWN",
+      "fundingRate": -212.50000000000003,
+      "momentumDir": "short",
+      "entryPrice": 0.47541,
+      "stopLevel": 0.4896723,
+      "stopPct": 0.03,
+      "results": {
+        "1h": {
+          "exitPrice": 0.47329,
+          "returnPct": 0.0044593088071349166,
+          "stoppedOut": false
+        },
+        "2h": {
+          "exitPrice": 0.45801,
+          "returnPct": 0.036599987379314754,
+          "stoppedOut": false
+        },
+        "4h": {
+          "exitPrice": 0.46523,
+          "returnPct": 0.02141309606444968,
+          "stoppedOut": false
+        },
+        "6h": {
+          "exitPrice": 0.45804,
+          "returnPct": 0.03653688395279863,
+          "stoppedOut": false
+        },
+        "8h": {
+          "exitPrice": 0.4537,
+          "returnPct": 0.04566584632212197,
+          "stoppedOut": false
+        }
+      }
+    },
+    {
+      "coin": "UMA",
+      "timestamp": "2026-02-24T02:00:00Z",
+      "regime": "TRENDING_DOWN",
+      "fundingRate": -162.1833333333333,
+      "momentumDir": "short",
+      "entryPrice": 0.47329,
+      "stopLevel": 0.4874887,
+      "stopPct": 0.03,
+      "results": {
+        "1h": {
+          "exitPrice": 0.45801,
+          "returnPct": 0.032284645777430364,
+          "stoppedOut": false
+        },
+        "2h": {
+          "exitPrice": 0.46677,
+          "returnPct": 0.013775909062097172,
+          "stoppedOut": false
+        },
+        "4h": {
+          "exitPrice": 0.45056,
+          "returnPct": 0.048025523463415605,
+          "stoppedOut": false
+        },
+        "6h": {
+          "exitPrice": 0.4496,
+          "returnPct": 0.050053878171945294,
+          "stoppedOut": false
+        },
+        "8h": {
+          "exitPrice": 0.45639,
+          "returnPct": 0.035707494348074055,
+          "stoppedOut": false
+        }
+      }
+    },
+    {
+      "coin": "YGG",
+      "timestamp": "2026-02-21T00:00:00Z",
+      "regime": "TRENDING_UP",
+      "fundingRate": -103.8,
+      "momentumDir": "short",
+      "entryPrice": 0.048743,
+      "stopLevel": 0.050692720000000004,
+      "stopPct": 0.04,
+      "results": {
+        "1h": {
+          "exitPrice": 0.04766,
+          "returnPct": 0.022218574974868198,
+          "stoppedOut": false
+        },
+        "2h": {
+          "exitPrice": 0.050202,
+          "returnPct": -0.029932503128654267,
+          "stoppedOut": false
+        },
+        "4h": {
+          "exitPrice": 0.050692720000000004,
+          "returnPct": -0.04,
+          "stoppedOut": true,
+          "stoppedAtHour": 3
+        },
+        "6h": {
+          "exitPrice": 0.050692720000000004,
+          "returnPct": -0.04,
+          "stoppedOut": true,
+          "stoppedAtHour": 3
+        },
+        "8h": {
+          "exitPrice": 0.050692720000000004,
+          "returnPct": -0.04,
+          "stoppedOut": true,
+          "stoppedAtHour": 3
+        }
+      }
+    },
+    {
+      "coin": "YGG",
+      "timestamp": "2026-02-21T02:00:00Z",
+      "regime": "TRENDING_UP",
+      "fundingRate": -110.50833333333334,
+      "momentumDir": "short",
+      "entryPrice": 0.050202,
+      "stopLevel": 0.05221008,
+      "stopPct": 0.04,
+      "results": {
+        "1h": {
+          "exitPrice": 0.050308,
+          "returnPct": -0.002111469662563283,
+          "stoppedOut": false
+        },
+        "2h": {
+          "exitPrice": 0.049865,
+          "returnPct": 0.006712879964941577,
+          "stoppedOut": false
+        },
+        "4h": {
+          "exitPrice": 0.048127,
+          "returnPct": 0.04133301462093131,
+          "stoppedOut": false
+        },
+        "6h": {
+          "exitPrice": 0.048105,
+          "returnPct": 0.0417712441735388,
+          "stoppedOut": false
+        },
+        "8h": {
+          "exitPrice": 0.047621,
+          "returnPct": 0.051412294330903156,
+          "stoppedOut": false
+        }
+      }
+    },
+    {
+      "coin": "YGG",
+      "timestamp": "2026-02-21T03:00:00Z",
+      "regime": "TRENDING_UP",
+      "fundingRate": -192,
+      "momentumDir": "short",
+      "entryPrice": 0.050308,
+      "stopLevel": 0.052320320000000003,
+      "stopPct": 0.04,
+      "results": {
+        "1h": {
+          "exitPrice": 0.049865,
+          "returnPct": 0.008805756539715333,
+          "stoppedOut": false
+        },
+        "2h": {
+          "exitPrice": 0.049977,
+          "returnPct": 0.006579470461954321,
+          "stoppedOut": false
+        },
+        "4h": {
+          "exitPrice": 0.050046,
+          "returnPct": 0.005207919217619431,
+          "stoppedOut": false
+        },
+        "6h": {
+          "exitPrice": 0.047773,
+          "returnPct": 0.05038960006360809,
+          "stoppedOut": false
+        },
+        "8h": {
+          "exitPrice": 0.048601,
+          "returnPct": 0.03393098513158942,
+          "stoppedOut": false
+        }
+      }
+    },
+    {
+      "coin": "YGG",
+      "timestamp": "2026-02-21T04:00:00Z",
+      "regime": "TRENDING_UP",
+      "fundingRate": -169.775,
+      "momentumDir": "short",
+      "entryPrice": 0.049865,
+      "stopLevel": 0.0518596,
+      "stopPct": 0.04,
+      "results": {
+        "1h": {
+          "exitPrice": 0.049977,
+          "returnPct": -0.002246064373809305,
+          "stoppedOut": false
+        },
+        "2h": {
+          "exitPrice": 0.048127,
+          "returnPct": 0.0348541060864333,
+          "stoppedOut": false
+        },
+        "4h": {
+          "exitPrice": 0.048105,
+          "returnPct": 0.03529529730271729,
+          "stoppedOut": false
+        },
+        "6h": {
+          "exitPrice": 0.047621,
+          "returnPct": 0.04500150406096466,
+          "stoppedOut": false
+        },
+        "8h": {
+          "exitPrice": 0.047025,
+          "returnPct": 0.0569537751930212,
+          "stoppedOut": false
+        }
+      }
+    },
+    {
+      "coin": "YGG",
+      "timestamp": "2026-02-21T05:00:00Z",
+      "regime": "TRENDING_UP",
+      "fundingRate": -191.4,
+      "momentumDir": "short",
+      "entryPrice": 0.049977,
+      "stopLevel": 0.05197608,
+      "stopPct": 0.04,
+      "results": {
+        "1h": {
+          "exitPrice": 0.048127,
+          "returnPct": 0.037017027832803036,
+          "stoppedOut": false
+        },
+        "2h": {
+          "exitPrice": 0.050046,
+          "returnPct": -0.0013806350921423778,
+          "stoppedOut": false
+        },
+        "4h": {
+          "exitPrice": 0.047773,
+          "returnPct": 0.044100286131620495,
+          "stoppedOut": false
+        },
+        "6h": {
+          "exitPrice": 0.048601,
+          "returnPct": 0.027532665025911965,
+          "stoppedOut": false
+        },
+        "8h": {
+          "exitPrice": 0.049212,
+          "returnPct": 0.015307041238969962,
+          "stoppedOut": false
+        }
+      }
+    },
+    {
+      "coin": "YGG",
+      "timestamp": "2026-02-21T06:00:00Z",
+      "regime": "TRENDING_UP",
+      "fundingRate": -214.26666666666665,
+      "momentumDir": "short",
+      "entryPrice": 0.048127,
+      "stopLevel": 0.050052080000000006,
+      "stopPct": 0.04,
+      "results": {
+        "1h": {
+          "exitPrice": 0.050052080000000006,
+          "returnPct": -0.04,
+          "stoppedOut": true,
+          "stoppedAtHour": 1
+        },
+        "2h": {
+          "exitPrice": 0.050052080000000006,
+          "returnPct": -0.04,
+          "stoppedOut": true,
+          "stoppedAtHour": 1
+        },
+        "4h": {
+          "exitPrice": 0.050052080000000006,
+          "returnPct": -0.04,
+          "stoppedOut": true,
+          "stoppedAtHour": 1
+        },
+        "6h": {
+          "exitPrice": 0.050052080000000006,
+          "returnPct": -0.04,
+          "stoppedOut": true,
+          "stoppedAtHour": 1
+        },
+        "8h": {
+          "exitPrice": 0.050052080000000006,
+          "returnPct": -0.04,
+          "stoppedOut": true,
+          "stoppedAtHour": 1
+        }
+      }
+    },
+    {
+      "coin": "YGG",
+      "timestamp": "2026-02-21T07:00:00Z",
+      "regime": "TRENDING_UP",
+      "fundingRate": -228.35,
+      "momentumDir": "short",
+      "entryPrice": 0.050046,
+      "stopLevel": 0.052047840000000005,
+      "stopPct": 0.04,
+      "results": {
+        "1h": {
+          "exitPrice": 0.048105,
+          "returnPct": 0.03878431842704708,
+          "stoppedOut": false
+        },
+        "2h": {
+          "exitPrice": 0.047773,
+          "returnPct": 0.045418215241977325,
+          "stoppedOut": false
+        },
+        "4h": {
+          "exitPrice": 0.048601,
+          "returnPct": 0.02887343643847664,
+          "stoppedOut": false
+        },
+        "6h": {
+          "exitPrice": 0.049212,
+          "returnPct": 0.01666466850497545,
+          "stoppedOut": false
+        },
+        "8h": {
+          "exitPrice": 0.04877,
+          "returnPct": 0.025496543180274136,
+          "stoppedOut": false
+        }
+      }
+    },
+    {
+      "coin": "YGG",
+      "timestamp": "2026-02-21T08:00:00Z",
+      "regime": "TRENDING_UP",
+      "fundingRate": -147.075,
+      "momentumDir": "short",
+      "entryPrice": 0.048105,
+      "stopLevel": 0.0500292,
+      "stopPct": 0.04,
+      "results": {
+        "1h": {
+          "exitPrice": 0.047773,
+          "returnPct": 0.00690156948342166,
+          "stoppedOut": false
+        },
+        "2h": {
+          "exitPrice": 0.047621,
+          "returnPct": 0.01006132418667509,
+          "stoppedOut": false
+        },
+        "4h": {
+          "exitPrice": 0.047025,
+          "returnPct": 0.022450888681010386,
+          "stoppedOut": false
+        },
+        "6h": {
+          "exitPrice": 0.0500292,
+          "returnPct": -0.04,
+          "stoppedOut": true,
+          "stoppedAtHour": 5
+        },
+        "8h": {
+          "exitPrice": 0.0500292,
+          "returnPct": -0.04,
+          "stoppedOut": true,
+          "stoppedAtHour": 5
+        }
+      }
+    },
+    {
+      "coin": "YGG",
+      "timestamp": "2026-02-21T09:00:00Z",
+      "regime": "TRENDING_UP",
+      "fundingRate": -113.17500000000001,
+      "momentumDir": "short",
+      "entryPrice": 0.047773,
+      "stopLevel": 0.049683920000000006,
+      "stopPct": 0.04,
+      "results": {
+        "1h": {
+          "exitPrice": 0.047621,
+          "returnPct": 0.00318171352018936,
+          "stoppedOut": false
+        },
+        "2h": {
+          "exitPrice": 0.048601,
+          "returnPct": -0.01733196575471491,
+          "stoppedOut": false
+        },
+        "4h": {
+          "exitPrice": 0.049683920000000006,
+          "returnPct": -0.04,
+          "stoppedOut": true,
+          "stoppedAtHour": 4
+        },
+        "6h": {
+          "exitPrice": 0.049683920000000006,
+          "returnPct": -0.04,
+          "stoppedOut": true,
+          "stoppedAtHour": 4
+        },
+        "8h": {
+          "exitPrice": 0.049683920000000006,
+          "returnPct": -0.04,
+          "stoppedOut": true,
+          "stoppedAtHour": 4
+        }
+      }
+    },
+    {
+      "coin": "YGG",
+      "timestamp": "2026-02-21T10:00:00Z",
+      "regime": "TRENDING_UP",
+      "fundingRate": -117.47499999999998,
+      "momentumDir": "short",
+      "entryPrice": 0.047621,
+      "stopLevel": 0.04952584,
+      "stopPct": 0.04,
+      "results": {
+        "1h": {
+          "exitPrice": 0.048601,
+          "returnPct": -0.020579156254593597,
+          "stoppedOut": false
+        },
+        "2h": {
+          "exitPrice": 0.047025,
+          "returnPct": 0.01251548686503852,
+          "stoppedOut": false
+        },
+        "4h": {
+          "exitPrice": 0.04952584,
+          "returnPct": -0.04,
+          "stoppedOut": true,
+          "stoppedAtHour": 3
+        },
+        "6h": {
+          "exitPrice": 0.04952584,
+          "returnPct": -0.04,
+          "stoppedOut": true,
+          "stoppedAtHour": 3
+        },
+        "8h": {
+          "exitPrice": 0.04952584,
+          "returnPct": -0.04,
+          "stoppedOut": true,
+          "stoppedAtHour": 3
+        }
+      }
+    },
+    {
+      "coin": "YGG",
+      "timestamp": "2026-02-21T11:00:00Z",
+      "regime": "TRENDING_UP",
+      "fundingRate": -119.80833333333334,
+      "momentumDir": "short",
+      "entryPrice": 0.048601,
+      "stopLevel": 0.05054504,
+      "stopPct": 0.04,
+      "results": {
+        "1h": {
+          "exitPrice": 0.047025,
+          "returnPct": 0.032427316310364,
+          "stoppedOut": false
+        },
+        "2h": {
+          "exitPrice": 0.05054504,
+          "returnPct": -0.04,
+          "stoppedOut": true,
+          "stoppedAtHour": 2
+        },
+        "4h": {
+          "exitPrice": 0.05054504,
+          "returnPct": -0.04,
+          "stoppedOut": true,
+          "stoppedAtHour": 2
+        },
+        "6h": {
+          "exitPrice": 0.05054504,
+          "returnPct": -0.04,
+          "stoppedOut": true,
+          "stoppedAtHour": 2
+        },
+        "8h": {
+          "exitPrice": 0.05054504,
+          "returnPct": -0.04,
+          "stoppedOut": true,
+          "stoppedAtHour": 2
+        }
+      }
+    },
+    {
+      "coin": "YGG",
+      "timestamp": "2026-02-21T12:00:00Z",
+      "regime": "TRENDING_UP",
+      "fundingRate": -101.68333333333334,
+      "momentumDir": "short",
+      "entryPrice": 0.047025,
+      "stopLevel": 0.048906,
+      "stopPct": 0.04,
+      "results": {
+        "1h": {
+          "exitPrice": 0.048906,
+          "returnPct": -0.04,
+          "stoppedOut": true,
+          "stoppedAtHour": 1
+        },
+        "2h": {
+          "exitPrice": 0.048906,
+          "returnPct": -0.04,
+          "stoppedOut": true,
+          "stoppedAtHour": 1
+        },
+        "4h": {
+          "exitPrice": 0.048906,
+          "returnPct": -0.04,
+          "stoppedOut": true,
+          "stoppedAtHour": 1
+        },
+        "6h": {
+          "exitPrice": 0.048906,
+          "returnPct": -0.04,
+          "stoppedOut": true,
+          "stoppedAtHour": 1
+        },
+        "8h": {
+          "exitPrice": 0.048906,
+          "returnPct": -0.04,
+          "stoppedOut": true,
+          "stoppedAtHour": 1
+        }
+      }
+    },
+    {
+      "coin": "YGG",
+      "timestamp": "2026-02-21T13:00:00Z",
+      "regime": "TRENDING_UP",
+      "fundingRate": -132.45833333333334,
+      "momentumDir": "short",
+      "entryPrice": 0.049212,
+      "stopLevel": 0.05118048,
+      "stopPct": 0.04,
+      "results": {
+        "1h": {
+          "exitPrice": 0.048419,
+          "returnPct": 0.01611395594570434,
+          "stoppedOut": false
+        },
+        "2h": {
+          "exitPrice": 0.04877,
+          "returnPct": 0.00898154921563842,
+          "stoppedOut": false
+        },
+        "4h": {
+          "exitPrice": 0.047783,
+          "returnPct": 0.029037633097618462,
+          "stoppedOut": false
+        },
+        "6h": {
+          "exitPrice": 0.048466,
+          "returnPct": 0.015158904332276613,
+          "stoppedOut": false
+        },
+        "8h": {
+          "exitPrice": 0.048001,
+          "returnPct": 0.024607819231081785,
+          "stoppedOut": false
+        }
+      }
+    },
+    {
+      "coin": "YGG",
+      "timestamp": "2026-02-21T14:00:00Z",
+      "regime": "TRENDING_UP",
+      "fundingRate": -165.75000000000003,
+      "momentumDir": "short",
+      "entryPrice": 0.048419,
+      "stopLevel": 0.05035576,
+      "stopPct": 0.04,
+      "results": {
+        "1h": {
+          "exitPrice": 0.04877,
+          "returnPct": -0.007249220347384376,
+          "stoppedOut": false
+        },
+        "2h": {
+          "exitPrice": 0.048378,
+          "returnPct": 0.000846775026332625,
+          "stoppedOut": false
+        },
+        "4h": {
+          "exitPrice": 0.048008,
+          "returnPct": 0.008488403312749018,
+          "stoppedOut": false
+        },
+        "6h": {
+          "exitPrice": 0.047757,
+          "returnPct": 0.013672318717858609,
+          "stoppedOut": false
+        },
+        "8h": {
+          "exitPrice": 0.047888,
+          "returnPct": 0.010966769243478733,
+          "stoppedOut": false
+        }
+      }
+    },
+    {
+      "coin": "YGG",
+      "timestamp": "2026-02-21T21:00:00Z",
+      "regime": "TRENDING_UP",
+      "fundingRate": -101.16666666666667,
+      "momentumDir": "short",
+      "entryPrice": 0.048001,
+      "stopLevel": 0.04992104000000001,
+      "stopPct": 0.04,
+      "results": {
+        "1h": {
+          "exitPrice": 0.047888,
+          "returnPct": 0.0023541176225495715,
+          "stoppedOut": false
+        },
+        "2h": {
+          "exitPrice": 0.047607,
+          "returnPct": 0.008208162329951573,
+          "stoppedOut": false
+        },
+        "4h": {
+          "exitPrice": 0.044427,
+          "returnPct": 0.07445678215037188,
+          "stoppedOut": false
+        },
+        "6h": {
+          "exitPrice": 0.044323,
+          "returnPct": 0.07662340367909003,
+          "stoppedOut": false
+        },
+        "8h": {
+          "exitPrice": 0.044446,
+          "returnPct": 0.07406095706339456,
+          "stoppedOut": false
+        }
+      }
+    },
+    {
+      "coin": "YGG",
+      "timestamp": "2026-02-21T22:00:00Z",
+      "regime": "TRENDING_UP",
+      "fundingRate": -120.875,
+      "momentumDir": "short",
+      "entryPrice": 0.047888,
+      "stopLevel": 0.049803520000000004,
+      "stopPct": 0.04,
+      "results": {
+        "1h": {
+          "exitPrice": 0.047607,
+          "returnPct": 0.00586785833611768,
+          "stoppedOut": false
+        },
+        "2h": {
+          "exitPrice": 0.044421,
+          "returnPct": 0.07239809555629799,
+          "stoppedOut": false
+        },
+        "4h": {
+          "exitPrice": 0.044036,
+          "returnPct": 0.08043768793852325,
+          "stoppedOut": false
+        },
+        "6h": {
+          "exitPrice": 0.044008,
+          "returnPct": 0.08102238556632145,
+          "stoppedOut": false
+        },
+        "8h": {
+          "exitPrice": 0.043806,
+          "returnPct": 0.08524056130972274,
+          "stoppedOut": false
+        }
+      }
+    },
+    {
+      "coin": "YGG",
+      "timestamp": "2026-02-21T23:00:00Z",
+      "regime": "TRENDING_UP",
+      "fundingRate": -118.74166666666667,
+      "momentumDir": "short",
+      "entryPrice": 0.047607,
+      "stopLevel": 0.04951128,
+      "stopPct": 0.04,
+      "results": {
+        "1h": {
+          "exitPrice": 0.044421,
+          "returnPct": 0.06692293150166981,
+          "stoppedOut": false
+        },
+        "2h": {
+          "exitPrice": 0.044427,
+          "returnPct": 0.06679689961560266,
+          "stoppedOut": false
+        },
+        "4h": {
+          "exitPrice": 0.044323,
+          "returnPct": 0.06898145230743369,
+          "stoppedOut": false
+        },
+        "6h": {
+          "exitPrice": 0.044446,
+          "returnPct": 0.06639779864305664,
+          "stoppedOut": false
+        },
+        "8h": {
+          "exitPrice": 0.04377,
+          "returnPct": 0.08059739113995827,
+          "stoppedOut": false
+        }
+      }
+    },
+    {
+      "coin": "YGG",
+      "timestamp": "2026-02-22T10:00:00Z",
+      "regime": "CHOPPY",
+      "fundingRate": -102.03333333333336,
+      "momentumDir": "short",
+      "entryPrice": 0.044826,
+      "stopLevel": 0.045722519999999996,
+      "stopPct": 0.02,
+      "results": {
+        "1h": {
+          "exitPrice": 0.045722519999999996,
+          "returnPct": -0.02,
+          "stoppedOut": true,
+          "stoppedAtHour": 1
+        },
+        "2h": {
+          "exitPrice": 0.045722519999999996,
+          "returnPct": -0.02,
+          "stoppedOut": true,
+          "stoppedAtHour": 1
+        },
+        "4h": {
+          "exitPrice": 0.045722519999999996,
+          "returnPct": -0.02,
+          "stoppedOut": true,
+          "stoppedAtHour": 1
+        },
+        "6h": {
+          "exitPrice": 0.045722519999999996,
+          "returnPct": -0.02,
+          "stoppedOut": true,
+          "stoppedAtHour": 1
+        },
+        "8h": {
+          "exitPrice": 0.045722519999999996,
+          "returnPct": -0.02,
+          "stoppedOut": true,
+          "stoppedAtHour": 1
+        }
+      }
+    }
+  ]
+}

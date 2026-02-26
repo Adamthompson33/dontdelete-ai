@@ -1,0 +1,64 @@
+{
+  "closedPositions": [
+    {
+      "coin": "HEMI",
+      "direction": "SHORT",
+      "closedAt": "2026-02-26T22:00:00Z",
+      "reason": "funding_decay"
+    },
+    {
+      "coin": "XAI",
+      "direction": "LONG",
+      "closedAt": "2026-02-26T22:00:00Z",
+      "reason": "funding_decay"
+    },
+    {
+      "coin": "SOPH",
+      "direction": "LONG",
+      "closedAt": "2026-02-26T08:00:00Z",
+      "reason": "funding_decay"
+    },
+    {
+      "coin": "YGG",
+      "direction": "LONG",
+      "closedAt": "2026-02-26T08:00:00Z",
+      "reason": "funding_decay"
+    },
+    {
+      "coin": "AXS",
+      "direction": "LONG",
+      "closedAt": "2026-02-26T08:00:00Z",
+      "reason": "funding_decay"
+    },
+    {
+      "coin": "ALT",
+      "direction": "LONG",
+      "closedAt": "2026-02-26T08:00:00Z",
+      "reason": "funding_decay"
+    },
+    {
+      "coin": "GAS",
+      "direction": "LONG",
+      "closedAt": "2026-02-26T10:00:00Z",
+      "reason": "funding_decay"
+    },
+    {
+      "coin": "2Z",
+      "direction": "LONG",
+      "closedAt": "2026-02-26T10:00:00Z",
+      "reason": "funding_decay"
+    },
+    {
+      "coin": "ETH",
+      "direction": "LONG",
+      "closedAt": "2026-02-27T00:00:00Z",
+      "reason": "oracle_stop_breach_4am"
+    },
+    {
+      "coin": "SOL",
+      "direction": "LONG",
+      "closedAt": "2026-02-27T00:00:00Z",
+      "reason": "oracle_stop_breach_4am"
+    }
+  ]
+}

@@ -1,18 +1,33 @@
 {
   "agent": "JINX",
   "team": "sentinel",
-  "lastUpdated": "2026-02-25T00:32:27.918Z",
-  "runNumber": 9,
+  "lastUpdated": "2026-02-26T00:32:34.003Z",
+  "runNumber": 10,
   "signals": {
-    "total": 9,
+    "total": 10,
     "correct": 0,
     "incorrect": 0,
-    "pending": 9,
+    "pending": 10,
     "accuracy": null,
-    "avgConfidence": 0.5,
+    "avgConfidence": 0.522,
     "calibrationScore": null
   },
   "recentSignals": [
+    {
+      "run": 10,
+      "asset": "VVV",
+      "direction": "short",
+      "confidence": 0.72,
+      "kelly_size": 0.12,
+      "invalidation": "VVV funding compresses above -150% APR (suggests carry gets repriced faster than my model predicts)",
+      "data_sources": [
+        "rei-funding-scanner",
+        "basis-decomposition",
+        "carry-theory"
+      ],
+      "timestamp": "2026-02-26T00:32:33.642Z",
+      "outcome": "pending"
+    },
     {
       "run": 9,
       "asset": "BTC",
@@ -69,21 +84,6 @@
       ],
       "timestamp": "2026-02-24T00:31:23.850Z",
       "outcome": "pending"
-    },
-    {
-      "run": 8,
-      "asset": "BTC",
-      "direction": "flat",
-      "confidence": 0.5,
-      "kelly_size": 0,
-      "invalidation": "n/a",
-      "data_sources": [
-        "factor-model",
-        "insufficient-trade-history",
-        "data-quality-crisis"
-      ],
-      "timestamp": "2026-02-24T00:31:23.846Z",
-      "outcome": "pending"
     }
   ],
   "record": {
@@ -98,22 +98,18 @@
   "toolPerformance": null,
   "convergenceFlags": {
     "phrasesUsedByMultipleAgents": [
-      "signal flat btc",
-      "flat btc confidence",
-      "btc confidence kelly",
       "confidence kelly invalidation",
-      "kelly invalidation sources",
-      "betting the same",
-      "the same macro",
-      "same macro narrative",
-      "macro narrative different",
-      "narrative different angles"
+      "btc confidence kelly",
+      "kelly invalidation btc",
+      "signal short vvv",
+      "short vvv confidence",
+      "vvv confidence kelly",
+      "kelly invalidation vvv",
+      "invalidation vvv funding",
+      "vvv funding compresses",
+      "signal flat btc"
     ],
     "bannedPhrases": [
-      {
-        "phrase": "eth confidence kelly",
-        "bannedAtRun": 7
-      },
       {
         "phrase": "signal flat btc",
         "bannedAtRun": 9
@@ -133,13 +129,37 @@
       {
         "phrase": "kelly invalidation sources",
         "bannedAtRun": 9
+      },
+      {
+        "phrase": "signal short vvv",
+        "bannedAtRun": 10
+      },
+      {
+        "phrase": "short vvv confidence",
+        "bannedAtRun": 10
+      },
+      {
+        "phrase": "vvv confidence kelly",
+        "bannedAtRun": 10
+      },
+      {
+        "phrase": "kelly invalidation vvv",
+        "bannedAtRun": 10
+      },
+      {
+        "phrase": "invalidation vvv funding",
+        "bannedAtRun": 10
+      },
+      {
+        "phrase": "vvv funding compresses",
+        "bannedAtRun": 10
       }
     ]
   },
   "fitness": {
     "current": 73.25868564609229,
     "trend": [
-      -2,
+      0,
       0,
       0
     ],
@@ -149,7 +169,7 @@
   "karma": {
     "current": 73.25868564609229,
     "trend": [
-      -2,
+      0,
       0,
       0
     ],

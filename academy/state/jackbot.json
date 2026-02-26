@@ -1,18 +1,48 @@
 {
   "agent": "JACKBOT",
   "team": "scribe",
-  "lastUpdated": "2026-02-25T00:32:27.906Z",
-  "runNumber": 9,
+  "lastUpdated": "2026-02-26T00:32:33.989Z",
+  "runNumber": 10,
   "signals": {
-    "total": 8,
+    "total": 10,
     "correct": 0,
     "incorrect": 0,
-    "pending": 8,
+    "pending": 10,
     "accuracy": null,
-    "avgConfidence": 0.52875,
+    "avgConfidence": 0.5349999999999999,
     "calibrationScore": null
   },
   "recentSignals": [
+    {
+      "run": 10,
+      "asset": "BTC",
+      "direction": "flat",
+      "confidence": 0.5,
+      "kelly_size": 0,
+      "invalidation": "n/a",
+      "data_sources": [
+        "temporal-edge",
+        "regime-audit",
+        "correlation-risk-assessment"
+      ],
+      "timestamp": "2026-02-26T00:31:38.550Z",
+      "outcome": "pending"
+    },
+    {
+      "run": 10,
+      "asset": "BTC",
+      "direction": "long",
+      "confidence": 0.62,
+      "kelly_size": 0.08,
+      "invalidation": "BTC closes below $67,000 on volume >$2.5B (regime break below support)",
+      "data_sources": [
+        "temporal-edge",
+        "regime-audit",
+        "contrarian-positioning"
+      ],
+      "timestamp": "2026-02-26T00:30:38.956Z",
+      "outcome": "pending"
+    },
     {
       "run": 9,
       "asset": "BTC",
@@ -56,33 +86,6 @@
       ],
       "timestamp": "2026-02-24T00:31:31.219Z",
       "outcome": "pending"
-    },
-    {
-      "run": 8,
-      "asset": "BTC",
-      "direction": "flat",
-      "confidence": 0.5,
-      "kelly_size": 0,
-      "invalidation": "n/a",
-      "data_sources": [
-        "self-audit"
-      ],
-      "timestamp": "2026-02-24T00:30:30.094Z",
-      "outcome": "pending"
-    },
-    {
-      "run": 8,
-      "asset": "OP",
-      "direction": "long",
-      "confidence": 0.68,
-      "kelly_size": 0.12,
-      "invalidation": "OP funding resets without compression (stays above -50% APR for 2+ consecutive candles)",
-      "data_sources": [
-        "temporal-edge",
-        "funding-scanner"
-      ],
-      "timestamp": "2026-02-24T00:30:30.091Z",
-      "outcome": "pending"
     }
   ],
   "record": {
@@ -97,16 +100,16 @@
   "toolPerformance": null,
   "convergenceFlags": {
     "phrasesUsedByMultipleAgents": [
-      "signal flat btc",
-      "flat btc confidence",
-      "btc confidence kelly",
       "confidence kelly invalidation",
-      "kelly invalidation sources",
-      "betting the same",
-      "the same macro",
-      "same macro narrative",
-      "macro narrative different",
-      "narrative different angles"
+      "btc confidence kelly",
+      "kelly invalidation btc",
+      "signal short vvv",
+      "short vvv confidence",
+      "vvv confidence kelly",
+      "kelly invalidation vvv",
+      "invalidation vvv funding",
+      "vvv funding compresses",
+      "signal flat btc"
     ],
     "bannedPhrases": [
       {
@@ -168,13 +171,17 @@
       {
         "phrase": "narrative different angles",
         "bannedAtRun": 9
+      },
+      {
+        "phrase": "kelly invalidation btc",
+        "bannedAtRun": 10
       }
     ]
   },
   "fitness": {
     "current": 78.18569317267139,
     "trend": [
-      -2,
+      0,
       0,
       0
     ],
@@ -184,7 +191,7 @@
   "karma": {
     "current": 78.18569317267139,
     "trend": [
-      -2,
+      0,
       0,
       0
     ],

@@ -1,0 +1,1262 @@
+[
+  {
+    "t": 1769472000002,
+    "symbol": "LAYERUSDT",
+    "rate": -0.00027983,
+    "rateBps": -2.7983000000000002,
+    "rateAPR": -30.641385
+  },
+  {
+    "t": 1769486400002,
+    "symbol": "LAYERUSDT",
+    "rate": -0.00026892,
+    "rateBps": -2.6892,
+    "rateAPR": -29.446740000000005
+  },
+  {
+    "t": 1769500800000,
+    "symbol": "LAYERUSDT",
+    "rate": -0.00025479,
+    "rateBps": -2.5479000000000003,
+    "rateAPR": -27.899505
+  },
+  {
+    "t": 1769515200006,
+    "symbol": "LAYERUSDT",
+    "rate": -0.0001857,
+    "rateBps": -1.8569999999999998,
+    "rateAPR": -20.334149999999998
+  },
+  {
+    "t": 1769529600000,
+    "symbol": "LAYERUSDT",
+    "rate": -0.000545,
+    "rateBps": -5.45,
+    "rateAPR": -59.67750000000001
+  },
+  {
+    "t": 1769544000000,
+    "symbol": "LAYERUSDT",
+    "rate": -0.00067291,
+    "rateBps": -6.7291,
+    "rateAPR": -73.683645
+  },
+  {
+    "t": 1769558400000,
+    "symbol": "LAYERUSDT",
+    "rate": -0.00059138,
+    "rateBps": -5.913799999999999,
+    "rateAPR": -64.75611
+  },
+  {
+    "t": 1769572800008,
+    "symbol": "LAYERUSDT",
+    "rate": -0.00056628,
+    "rateBps": -5.6628,
+    "rateAPR": -62.00766
+  },
+  {
+    "t": 1769587200000,
+    "symbol": "LAYERUSDT",
+    "rate": -0.00037792,
+    "rateBps": -3.7792000000000003,
+    "rateAPR": -41.38224
+  },
+  {
+    "t": 1769601600005,
+    "symbol": "LAYERUSDT",
+    "rate": -0.00014131,
+    "rateBps": -1.4130999999999998,
+    "rateAPR": -15.473445
+  },
+  {
+    "t": 1769616000000,
+    "symbol": "LAYERUSDT",
+    "rate": -0.00038734,
+    "rateBps": -3.8734,
+    "rateAPR": -42.41373000000001
+  },
+  {
+    "t": 1769630400004,
+    "symbol": "LAYERUSDT",
+    "rate": -0.00001208,
+    "rateBps": -0.12079999999999999,
+    "rateAPR": -1.32276
+  },
+  {
+    "t": 1769644800000,
+    "symbol": "LAYERUSDT",
+    "rate": -0.00008875,
+    "rateBps": -0.8875000000000001,
+    "rateAPR": -9.718125
+  },
+  {
+    "t": 1769659200000,
+    "symbol": "LAYERUSDT",
+    "rate": -0.00008166,
+    "rateBps": -0.8166,
+    "rateAPR": -8.94177
+  },
+  {
+    "t": 1769673600009,
+    "symbol": "LAYERUSDT",
+    "rate": -0.00021518,
+    "rateBps": -2.1518,
+    "rateAPR": -23.56221
+  },
+  {
+    "t": 1769688000000,
+    "symbol": "LAYERUSDT",
+    "rate": -0.00009132,
+    "rateBps": -0.9132,
+    "rateAPR": -9.99954
+  },
+  {
+    "t": 1769702400000,
+    "symbol": "LAYERUSDT",
+    "rate": -0.00028972,
+    "rateBps": -2.8971999999999998,
+    "rateAPR": -31.724339999999994
+  },
+  {
+    "t": 1769716800004,
+    "symbol": "LAYERUSDT",
+    "rate": -0.00017681,
+    "rateBps": -1.7681,
+    "rateAPR": -19.360695
+  },
+  {
+    "t": 1769731200008,
+    "symbol": "LAYERUSDT",
+    "rate": -0.00006606,
+    "rateBps": -0.6606,
+    "rateAPR": -7.23357
+  },
+  {
+    "t": 1769745600005,
+    "symbol": "LAYERUSDT",
+    "rate": -0.0001332,
+    "rateBps": -1.332,
+    "rateAPR": -14.585400000000002
+  },
+  {
+    "t": 1769760000000,
+    "symbol": "LAYERUSDT",
+    "rate": -0.00016946,
+    "rateBps": -1.6945999999999999,
+    "rateAPR": -18.55587
+  },
+  {
+    "t": 1769774400005,
+    "symbol": "LAYERUSDT",
+    "rate": 0.00005,
+    "rateBps": 0.5,
+    "rateAPR": 5.4750000000000005
+  },
+  {
+    "t": 1769788800001,
+    "symbol": "LAYERUSDT",
+    "rate": -0.00000302,
+    "rateBps": -0.030199999999999998,
+    "rateAPR": -0.33069
+  },
+  {
+    "t": 1769803200004,
+    "symbol": "LAYERUSDT",
+    "rate": 0.00005,
+    "rateBps": 0.5,
+    "rateAPR": 5.4750000000000005
+  },
+  {
+    "t": 1769817600000,
+    "symbol": "LAYERUSDT",
+    "rate": 0.00005,
+    "rateBps": 0.5,
+    "rateAPR": 5.4750000000000005
+  },
+  {
+    "t": 1769832000002,
+    "symbol": "LAYERUSDT",
+    "rate": -0.0001201,
+    "rateBps": -1.201,
+    "rateAPR": -13.15095
+  },
+  {
+    "t": 1769846400001,
+    "symbol": "LAYERUSDT",
+    "rate": -0.00001981,
+    "rateBps": -0.19809999999999997,
+    "rateAPR": -2.1691949999999998
+  },
+  {
+    "t": 1769860800010,
+    "symbol": "LAYERUSDT",
+    "rate": -0.0001744,
+    "rateBps": -1.7440000000000002,
+    "rateAPR": -19.096799999999998
+  },
+  {
+    "t": 1769875200009,
+    "symbol": "LAYERUSDT",
+    "rate": -0.00060129,
+    "rateBps": -6.0129,
+    "rateAPR": -65.841255
+  },
+  {
+    "t": 1769889600012,
+    "symbol": "LAYERUSDT",
+    "rate": -0.00026464,
+    "rateBps": -2.6464000000000003,
+    "rateAPR": -28.978080000000002
+  },
+  {
+    "t": 1769904000001,
+    "symbol": "LAYERUSDT",
+    "rate": -0.0000164,
+    "rateBps": -0.16399999999999998,
+    "rateAPR": -1.7957999999999998
+  },
+  {
+    "t": 1769918400000,
+    "symbol": "LAYERUSDT",
+    "rate": -0.00002312,
+    "rateBps": -0.2312,
+    "rateAPR": -2.53164
+  },
+  {
+    "t": 1769932800004,
+    "symbol": "LAYERUSDT",
+    "rate": -0.00010429,
+    "rateBps": -1.0429000000000002,
+    "rateAPR": -11.419755
+  },
+  {
+    "t": 1769947200004,
+    "symbol": "LAYERUSDT",
+    "rate": -0.00050535,
+    "rateBps": -5.0535,
+    "rateAPR": -55.33582500000001
+  },
+  {
+    "t": 1769961600000,
+    "symbol": "LAYERUSDT",
+    "rate": -0.00017082,
+    "rateBps": -1.7082,
+    "rateAPR": -18.70479
+  },
+  {
+    "t": 1769976000004,
+    "symbol": "LAYERUSDT",
+    "rate": 0.00005,
+    "rateBps": 0.5,
+    "rateAPR": 5.4750000000000005
+  },
+  {
+    "t": 1769990400000,
+    "symbol": "LAYERUSDT",
+    "rate": -0.00006893,
+    "rateBps": -0.6893,
+    "rateAPR": -7.547835
+  },
+  {
+    "t": 1770004800000,
+    "symbol": "LAYERUSDT",
+    "rate": 0.00000525,
+    "rateBps": 0.0525,
+    "rateAPR": 0.574875
+  },
+  {
+    "t": 1770019200014,
+    "symbol": "LAYERUSDT",
+    "rate": -0.00005266,
+    "rateBps": -0.5266,
+    "rateAPR": -5.76627
+  },
+  {
+    "t": 1770033600009,
+    "symbol": "LAYERUSDT",
+    "rate": 0.00005,
+    "rateBps": 0.5,
+    "rateAPR": 5.4750000000000005
+  },
+  {
+    "t": 1770048000000,
+    "symbol": "LAYERUSDT",
+    "rate": 0.00003278,
+    "rateBps": 0.32780000000000004,
+    "rateAPR": 3.5894100000000004
+  },
+  {
+    "t": 1770062400000,
+    "symbol": "LAYERUSDT",
+    "rate": 0.00005,
+    "rateBps": 0.5,
+    "rateAPR": 5.4750000000000005
+  },
+  {
+    "t": 1770076800000,
+    "symbol": "LAYERUSDT",
+    "rate": 0.00005,
+    "rateBps": 0.5,
+    "rateAPR": 5.4750000000000005
+  },
+  {
+    "t": 1770091200001,
+    "symbol": "LAYERUSDT",
+    "rate": 0.00005,
+    "rateBps": 0.5,
+    "rateAPR": 5.4750000000000005
+  },
+  {
+    "t": 1770105600007,
+    "symbol": "LAYERUSDT",
+    "rate": 0.00005,
+    "rateBps": 0.5,
+    "rateAPR": 5.4750000000000005
+  },
+  {
+    "t": 1770120000006,
+    "symbol": "LAYERUSDT",
+    "rate": 0.00004857,
+    "rateBps": 0.48569999999999997,
+    "rateAPR": 5.318414999999999
+  },
+  {
+    "t": 1770134400000,
+    "symbol": "LAYERUSDT",
+    "rate": -0.00000695,
+    "rateBps": -0.0695,
+    "rateAPR": -0.7610250000000001
+  },
+  {
+    "t": 1770148800009,
+    "symbol": "LAYERUSDT",
+    "rate": -0.00004456,
+    "rateBps": -0.4456,
+    "rateAPR": -4.87932
+  },
+  {
+    "t": 1770163200002,
+    "symbol": "LAYERUSDT",
+    "rate": 0.00005,
+    "rateBps": 0.5,
+    "rateAPR": 5.4750000000000005
+  },
+  {
+    "t": 1770177600004,
+    "symbol": "LAYERUSDT",
+    "rate": 0.00005,
+    "rateBps": 0.5,
+    "rateAPR": 5.4750000000000005
+  },
+  {
+    "t": 1770192000007,
+    "symbol": "LAYERUSDT",
+    "rate": 0.00005,
+    "rateBps": 0.5,
+    "rateAPR": 5.4750000000000005
+  },
+  {
+    "t": 1770206400010,
+    "symbol": "LAYERUSDT",
+    "rate": 0.00005,
+    "rateBps": 0.5,
+    "rateAPR": 5.4750000000000005
+  },
+  {
+    "t": 1770220800000,
+    "symbol": "LAYERUSDT",
+    "rate": -0.00004706,
+    "rateBps": -0.4706,
+    "rateAPR": -5.15307
+  },
+  {
+    "t": 1770235200001,
+    "symbol": "LAYERUSDT",
+    "rate": 0.00003994,
+    "rateBps": 0.3994,
+    "rateAPR": 4.373430000000001
+  },
+  {
+    "t": 1770249600011,
+    "symbol": "LAYERUSDT",
+    "rate": 0.00005,
+    "rateBps": 0.5,
+    "rateAPR": 5.4750000000000005
+  },
+  {
+    "t": 1770264000001,
+    "symbol": "LAYERUSDT",
+    "rate": 0.0000388,
+    "rateBps": 0.388,
+    "rateAPR": 4.248600000000001
+  },
+  {
+    "t": 1770278400000,
+    "symbol": "LAYERUSDT",
+    "rate": 0.00005,
+    "rateBps": 0.5,
+    "rateAPR": 5.4750000000000005
+  },
+  {
+    "t": 1770292800006,
+    "symbol": "LAYERUSDT",
+    "rate": 0.00005,
+    "rateBps": 0.5,
+    "rateAPR": 5.4750000000000005
+  },
+  {
+    "t": 1770307200007,
+    "symbol": "LAYERUSDT",
+    "rate": 0.00003741,
+    "rateBps": 0.37410000000000004,
+    "rateAPR": 4.096395
+  },
+  {
+    "t": 1770321600000,
+    "symbol": "LAYERUSDT",
+    "rate": 0.00005,
+    "rateBps": 0.5,
+    "rateAPR": 5.4750000000000005
+  },
+  {
+    "t": 1770336000000,
+    "symbol": "LAYERUSDT",
+    "rate": -0.00014702,
+    "rateBps": -1.4702000000000002,
+    "rateAPR": -16.09869
+  },
+  {
+    "t": 1770350400001,
+    "symbol": "LAYERUSDT",
+    "rate": -0.00003571,
+    "rateBps": -0.35710000000000003,
+    "rateAPR": -3.910245
+  },
+  {
+    "t": 1770364800001,
+    "symbol": "LAYERUSDT",
+    "rate": 0.00001734,
+    "rateBps": 0.1734,
+    "rateAPR": 1.8987299999999998
+  },
+  {
+    "t": 1770379200003,
+    "symbol": "LAYERUSDT",
+    "rate": 0.00005,
+    "rateBps": 0.5,
+    "rateAPR": 5.4750000000000005
+  },
+  {
+    "t": 1770393600000,
+    "symbol": "LAYERUSDT",
+    "rate": 0.00005,
+    "rateBps": 0.5,
+    "rateAPR": 5.4750000000000005
+  },
+  {
+    "t": 1770408000005,
+    "symbol": "LAYERUSDT",
+    "rate": 0.00005,
+    "rateBps": 0.5,
+    "rateAPR": 5.4750000000000005
+  },
+  {
+    "t": 1770422400003,
+    "symbol": "LAYERUSDT",
+    "rate": 0.00005,
+    "rateBps": 0.5,
+    "rateAPR": 5.4750000000000005
+  },
+  {
+    "t": 1770436800024,
+    "symbol": "LAYERUSDT",
+    "rate": 0.00001387,
+    "rateBps": 0.1387,
+    "rateAPR": 1.518765
+  },
+  {
+    "t": 1770451200000,
+    "symbol": "LAYERUSDT",
+    "rate": -0.00014193,
+    "rateBps": -1.4193,
+    "rateAPR": -15.541335
+  },
+  {
+    "t": 1770465600007,
+    "symbol": "LAYERUSDT",
+    "rate": 0.00005,
+    "rateBps": 0.5,
+    "rateAPR": 5.4750000000000005
+  },
+  {
+    "t": 1770480000010,
+    "symbol": "LAYERUSDT",
+    "rate": 0.00000865,
+    "rateBps": 0.08650000000000001,
+    "rateAPR": 0.9471750000000001
+  },
+  {
+    "t": 1770494400000,
+    "symbol": "LAYERUSDT",
+    "rate": 0.00005,
+    "rateBps": 0.5,
+    "rateAPR": 5.4750000000000005
+  },
+  {
+    "t": 1770508800003,
+    "symbol": "LAYERUSDT",
+    "rate": 0.00005,
+    "rateBps": 0.5,
+    "rateAPR": 5.4750000000000005
+  },
+  {
+    "t": 1770523200002,
+    "symbol": "LAYERUSDT",
+    "rate": -0.00000692,
+    "rateBps": -0.0692,
+    "rateAPR": -0.7577399999999999
+  },
+  {
+    "t": 1770537600000,
+    "symbol": "LAYERUSDT",
+    "rate": -0.00002183,
+    "rateBps": -0.2183,
+    "rateAPR": -2.390385
+  },
+  {
+    "t": 1770552000005,
+    "symbol": "LAYERUSDT",
+    "rate": -0.0000939,
+    "rateBps": -0.9390000000000001,
+    "rateAPR": -10.282050000000002
+  },
+  {
+    "t": 1770566400000,
+    "symbol": "LAYERUSDT",
+    "rate": -0.00014799,
+    "rateBps": -1.4799,
+    "rateAPR": -16.204905
+  },
+  {
+    "t": 1770580800000,
+    "symbol": "LAYERUSDT",
+    "rate": 0.00001052,
+    "rateBps": 0.10519999999999999,
+    "rateAPR": 1.15194
+  },
+  {
+    "t": 1770595200002,
+    "symbol": "LAYERUSDT",
+    "rate": 0.00005,
+    "rateBps": 0.5,
+    "rateAPR": 5.4750000000000005
+  },
+  {
+    "t": 1770609600012,
+    "symbol": "LAYERUSDT",
+    "rate": 0.00005,
+    "rateBps": 0.5,
+    "rateAPR": 5.4750000000000005
+  },
+  {
+    "t": 1770624000001,
+    "symbol": "LAYERUSDT",
+    "rate": 0.00005,
+    "rateBps": 0.5,
+    "rateAPR": 5.4750000000000005
+  },
+  {
+    "t": 1770638400003,
+    "symbol": "LAYERUSDT",
+    "rate": 0.00003909,
+    "rateBps": 0.3909,
+    "rateAPR": 4.280354999999999
+  },
+  {
+    "t": 1770652800007,
+    "symbol": "LAYERUSDT",
+    "rate": 0.00005,
+    "rateBps": 0.5,
+    "rateAPR": 5.4750000000000005
+  },
+  {
+    "t": 1770667200006,
+    "symbol": "LAYERUSDT",
+    "rate": 0.00005,
+    "rateBps": 0.5,
+    "rateAPR": 5.4750000000000005
+  },
+  {
+    "t": 1770681600000,
+    "symbol": "LAYERUSDT",
+    "rate": 0.00005,
+    "rateBps": 0.5,
+    "rateAPR": 5.4750000000000005
+  },
+  {
+    "t": 1770696000000,
+    "symbol": "LAYERUSDT",
+    "rate": 0.00005,
+    "rateBps": 0.5,
+    "rateAPR": 5.4750000000000005
+  },
+  {
+    "t": 1770710400007,
+    "symbol": "LAYERUSDT",
+    "rate": -0.00005442,
+    "rateBps": -0.5442,
+    "rateAPR": -5.958989999999999
+  },
+  {
+    "t": 1770724800000,
+    "symbol": "LAYERUSDT",
+    "rate": -0.00003928,
+    "rateBps": -0.3928,
+    "rateAPR": -4.301159999999999
+  },
+  {
+    "t": 1770739200000,
+    "symbol": "LAYERUSDT",
+    "rate": -0.00010848,
+    "rateBps": -1.0848,
+    "rateAPR": -11.87856
+  },
+  {
+    "t": 1770753600007,
+    "symbol": "LAYERUSDT",
+    "rate": 0.00001101,
+    "rateBps": 0.11009999999999999,
+    "rateAPR": 1.2055950000000002
+  },
+  {
+    "t": 1770768000000,
+    "symbol": "LAYERUSDT",
+    "rate": 0.00005,
+    "rateBps": 0.5,
+    "rateAPR": 5.4750000000000005
+  },
+  {
+    "t": 1770782400000,
+    "symbol": "LAYERUSDT",
+    "rate": -0.00007151,
+    "rateBps": -0.7151,
+    "rateAPR": -7.8303449999999994
+  },
+  {
+    "t": 1770796800006,
+    "symbol": "LAYERUSDT",
+    "rate": -0.00019827,
+    "rateBps": -1.9827000000000001,
+    "rateAPR": -21.710565000000003
+  },
+  {
+    "t": 1770811200000,
+    "symbol": "LAYERUSDT",
+    "rate": 0.0000118,
+    "rateBps": 0.11800000000000001,
+    "rateAPR": 1.2921
+  },
+  {
+    "t": 1770825600000,
+    "symbol": "LAYERUSDT",
+    "rate": -0.00002761,
+    "rateBps": -0.2761,
+    "rateAPR": -3.023295
+  },
+  {
+    "t": 1770840000003,
+    "symbol": "LAYERUSDT",
+    "rate": 0.00004877,
+    "rateBps": 0.4877,
+    "rateAPR": 5.340315
+  },
+  {
+    "t": 1770854400000,
+    "symbol": "LAYERUSDT",
+    "rate": -0.00011956,
+    "rateBps": -1.1956,
+    "rateAPR": -13.091820000000002
+  },
+  {
+    "t": 1770868800000,
+    "symbol": "LAYERUSDT",
+    "rate": 0.00002344,
+    "rateBps": 0.2344,
+    "rateAPR": 2.56668
+  },
+  {
+    "t": 1770883200001,
+    "symbol": "LAYERUSDT",
+    "rate": 0.00005,
+    "rateBps": 0.5,
+    "rateAPR": 5.4750000000000005
+  },
+  {
+    "t": 1770897600002,
+    "symbol": "LAYERUSDT",
+    "rate": -0.00037409,
+    "rateBps": -3.7409,
+    "rateAPR": -40.96285499999999
+  },
+  {
+    "t": 1770912000001,
+    "symbol": "LAYERUSDT",
+    "rate": -0.00006705,
+    "rateBps": -0.6705,
+    "rateAPR": -7.341975000000001
+  },
+  {
+    "t": 1770926400006,
+    "symbol": "LAYERUSDT",
+    "rate": -0.00006983,
+    "rateBps": -0.6983,
+    "rateAPR": -7.646385
+  },
+  {
+    "t": 1770940800007,
+    "symbol": "LAYERUSDT",
+    "rate": 0.00005,
+    "rateBps": 0.5,
+    "rateAPR": 5.4750000000000005
+  },
+  {
+    "t": 1770955200000,
+    "symbol": "LAYERUSDT",
+    "rate": -0.00019126,
+    "rateBps": -1.9126,
+    "rateAPR": -20.942970000000003
+  },
+  {
+    "t": 1770969600003,
+    "symbol": "LAYERUSDT",
+    "rate": -0.00016633,
+    "rateBps": -1.6632999999999998,
+    "rateAPR": -18.213134999999998
+  },
+  {
+    "t": 1770984000000,
+    "symbol": "LAYERUSDT",
+    "rate": -0.00025342,
+    "rateBps": -2.5342000000000002,
+    "rateAPR": -27.749489999999998
+  },
+  {
+    "t": 1770998400005,
+    "symbol": "LAYERUSDT",
+    "rate": -0.00104314,
+    "rateBps": -10.431399999999998,
+    "rateAPR": -114.22383
+  },
+  {
+    "t": 1771012800006,
+    "symbol": "LAYERUSDT",
+    "rate": -0.00056701,
+    "rateBps": -5.6701,
+    "rateAPR": -62.08759499999999
+  },
+  {
+    "t": 1771027200002,
+    "symbol": "LAYERUSDT",
+    "rate": -0.00025058,
+    "rateBps": -2.5058,
+    "rateAPR": -27.438509999999994
+  },
+  {
+    "t": 1771041600007,
+    "symbol": "LAYERUSDT",
+    "rate": -0.00026019,
+    "rateBps": -2.6018999999999997,
+    "rateAPR": -28.490804999999998
+  },
+  {
+    "t": 1771056000004,
+    "symbol": "LAYERUSDT",
+    "rate": -0.00032513,
+    "rateBps": -3.2513,
+    "rateAPR": -35.601735
+  },
+  {
+    "t": 1771070400000,
+    "symbol": "LAYERUSDT",
+    "rate": -0.00069958,
+    "rateBps": -6.9958,
+    "rateAPR": -76.60401
+  },
+  {
+    "t": 1771084800002,
+    "symbol": "LAYERUSDT",
+    "rate": -0.00022782,
+    "rateBps": -2.2782,
+    "rateAPR": -24.946289999999998
+  },
+  {
+    "t": 1771099200000,
+    "symbol": "LAYERUSDT",
+    "rate": -0.00004052,
+    "rateBps": -0.4052,
+    "rateAPR": -4.43694
+  },
+  {
+    "t": 1771113600000,
+    "symbol": "LAYERUSDT",
+    "rate": -0.00018135,
+    "rateBps": -1.8135,
+    "rateAPR": -19.857824999999995
+  },
+  {
+    "t": 1771128000000,
+    "symbol": "LAYERUSDT",
+    "rate": -0.00012203,
+    "rateBps": -1.2203,
+    "rateAPR": -13.362285000000002
+  },
+  {
+    "t": 1771142400002,
+    "symbol": "LAYERUSDT",
+    "rate": -0.00011413,
+    "rateBps": -1.1413,
+    "rateAPR": -12.497235000000002
+  },
+  {
+    "t": 1771156800005,
+    "symbol": "LAYERUSDT",
+    "rate": -0.00014052,
+    "rateBps": -1.4052,
+    "rateAPR": -15.38694
+  },
+  {
+    "t": 1771171200000,
+    "symbol": "LAYERUSDT",
+    "rate": -0.00009013,
+    "rateBps": -0.9013000000000001,
+    "rateAPR": -9.869235000000002
+  },
+  {
+    "t": 1771185600009,
+    "symbol": "LAYERUSDT",
+    "rate": 0.00001737,
+    "rateBps": 0.17370000000000002,
+    "rateAPR": 1.902015
+  },
+  {
+    "t": 1771200000001,
+    "symbol": "LAYERUSDT",
+    "rate": 0.00005,
+    "rateBps": 0.5,
+    "rateAPR": 5.4750000000000005
+  },
+  {
+    "t": 1771214400004,
+    "symbol": "LAYERUSDT",
+    "rate": 0.0000291,
+    "rateBps": 0.291,
+    "rateAPR": 3.18645
+  },
+  {
+    "t": 1771228800003,
+    "symbol": "LAYERUSDT",
+    "rate": 0.00002951,
+    "rateBps": 0.29510000000000003,
+    "rateAPR": 3.231345
+  },
+  {
+    "t": 1771243200000,
+    "symbol": "LAYERUSDT",
+    "rate": 0.00005,
+    "rateBps": 0.5,
+    "rateAPR": 5.4750000000000005
+  },
+  {
+    "t": 1771257600000,
+    "symbol": "LAYERUSDT",
+    "rate": -0.00006934,
+    "rateBps": -0.6934,
+    "rateAPR": -7.59273
+  },
+  {
+    "t": 1771272000009,
+    "symbol": "LAYERUSDT",
+    "rate": 0.00005,
+    "rateBps": 0.5,
+    "rateAPR": 5.4750000000000005
+  },
+  {
+    "t": 1771286400008,
+    "symbol": "LAYERUSDT",
+    "rate": 0.00005,
+    "rateBps": 0.5,
+    "rateAPR": 5.4750000000000005
+  },
+  {
+    "t": 1771300800003,
+    "symbol": "LAYERUSDT",
+    "rate": 0.00005,
+    "rateBps": 0.5,
+    "rateAPR": 5.4750000000000005
+  },
+  {
+    "t": 1771315200001,
+    "symbol": "LAYERUSDT",
+    "rate": 0.00001413,
+    "rateBps": 0.1413,
+    "rateAPR": 1.547235
+  },
+  {
+    "t": 1771329600000,
+    "symbol": "LAYERUSDT",
+    "rate": -0.00005976,
+    "rateBps": -0.5976,
+    "rateAPR": -6.543719999999999
+  },
+  {
+    "t": 1771344000002,
+    "symbol": "LAYERUSDT",
+    "rate": -0.00008794,
+    "rateBps": -0.8794000000000001,
+    "rateAPR": -9.62943
+  },
+  {
+    "t": 1771358400002,
+    "symbol": "LAYERUSDT",
+    "rate": 0.00000368,
+    "rateBps": 0.0368,
+    "rateAPR": 0.40295999999999993
+  },
+  {
+    "t": 1771372800000,
+    "symbol": "LAYERUSDT",
+    "rate": -0.00003598,
+    "rateBps": -0.35979999999999995,
+    "rateAPR": -3.93981
+  },
+  {
+    "t": 1771387200000,
+    "symbol": "LAYERUSDT",
+    "rate": -0.00009779,
+    "rateBps": -0.9779,
+    "rateAPR": -10.708005
+  },
+  {
+    "t": 1771401600000,
+    "symbol": "LAYERUSDT",
+    "rate": -0.00015667,
+    "rateBps": -1.5667,
+    "rateAPR": -17.155365
+  },
+  {
+    "t": 1771416000007,
+    "symbol": "LAYERUSDT",
+    "rate": 0.00001696,
+    "rateBps": 0.1696,
+    "rateAPR": 1.8571199999999999
+  },
+  {
+    "t": 1771430400011,
+    "symbol": "LAYERUSDT",
+    "rate": 5.1e-7,
+    "rateBps": 0.0050999999999999995,
+    "rateAPR": 0.05584499999999999
+  },
+  {
+    "t": 1771444800004,
+    "symbol": "LAYERUSDT",
+    "rate": -0.00005048,
+    "rateBps": -0.5048,
+    "rateAPR": -5.52756
+  },
+  {
+    "t": 1771459200013,
+    "symbol": "LAYERUSDT",
+    "rate": -0.00001532,
+    "rateBps": -0.1532,
+    "rateAPR": -1.67754
+  },
+  {
+    "t": 1771473600003,
+    "symbol": "LAYERUSDT",
+    "rate": -0.00001273,
+    "rateBps": -0.1273,
+    "rateAPR": -1.393935
+  },
+  {
+    "t": 1771488000000,
+    "symbol": "LAYERUSDT",
+    "rate": -0.00001883,
+    "rateBps": -0.18830000000000002,
+    "rateAPR": -2.061885
+  },
+  {
+    "t": 1771502400011,
+    "symbol": "LAYERUSDT",
+    "rate": 0.00005,
+    "rateBps": 0.5,
+    "rateAPR": 5.4750000000000005
+  },
+  {
+    "t": 1771516800003,
+    "symbol": "LAYERUSDT",
+    "rate": -0.00008087,
+    "rateBps": -0.8087000000000001,
+    "rateAPR": -8.855265000000001
+  },
+  {
+    "t": 1771531200000,
+    "symbol": "LAYERUSDT",
+    "rate": 0.00005,
+    "rateBps": 0.5,
+    "rateAPR": 5.4750000000000005
+  },
+  {
+    "t": 1771545600000,
+    "symbol": "LAYERUSDT",
+    "rate": 0.00005,
+    "rateBps": 0.5,
+    "rateAPR": 5.4750000000000005
+  },
+  {
+    "t": 1771560000003,
+    "symbol": "LAYERUSDT",
+    "rate": 0.00005,
+    "rateBps": 0.5,
+    "rateAPR": 5.4750000000000005
+  },
+  {
+    "t": 1771574400000,
+    "symbol": "LAYERUSDT",
+    "rate": 0.00004613,
+    "rateBps": 0.4613,
+    "rateAPR": 5.051235
+  },
+  {
+    "t": 1771588800000,
+    "symbol": "LAYERUSDT",
+    "rate": -0.00004864,
+    "rateBps": -0.4864,
+    "rateAPR": -5.32608
+  },
+  {
+    "t": 1771603200000,
+    "symbol": "LAYERUSDT",
+    "rate": 0.00003735,
+    "rateBps": 0.3735,
+    "rateAPR": 4.089824999999999
+  },
+  {
+    "t": 1771617600000,
+    "symbol": "LAYERUSDT",
+    "rate": 0.00003592,
+    "rateBps": 0.3592,
+    "rateAPR": 3.9332400000000005
+  },
+  {
+    "t": 1771632000004,
+    "symbol": "LAYERUSDT",
+    "rate": 0.00005,
+    "rateBps": 0.5,
+    "rateAPR": 5.4750000000000005
+  },
+  {
+    "t": 1771646400000,
+    "symbol": "LAYERUSDT",
+    "rate": -0.00005579,
+    "rateBps": -0.5579,
+    "rateAPR": -6.109005
+  },
+  {
+    "t": 1771660800000,
+    "symbol": "LAYERUSDT",
+    "rate": 0.00004209,
+    "rateBps": 0.4209,
+    "rateAPR": 4.608855
+  },
+  {
+    "t": 1771675200013,
+    "symbol": "LAYERUSDT",
+    "rate": -0.00019631,
+    "rateBps": -1.9631,
+    "rateAPR": -21.495945
+  },
+  {
+    "t": 1771689600005,
+    "symbol": "LAYERUSDT",
+    "rate": -0.00004019,
+    "rateBps": -0.4019,
+    "rateAPR": -4.400805
+  },
+  {
+    "t": 1771704000000,
+    "symbol": "LAYERUSDT",
+    "rate": -0.00003955,
+    "rateBps": -0.3955,
+    "rateAPR": -4.330725
+  },
+  {
+    "t": 1771718400001,
+    "symbol": "LAYERUSDT",
+    "rate": -0.0002394,
+    "rateBps": -2.394,
+    "rateAPR": -26.2143
+  },
+  {
+    "t": 1771732800008,
+    "symbol": "LAYERUSDT",
+    "rate": -0.0000872,
+    "rateBps": -0.8720000000000001,
+    "rateAPR": -9.548399999999999
+  },
+  {
+    "t": 1771747200004,
+    "symbol": "LAYERUSDT",
+    "rate": -0.0001819,
+    "rateBps": -1.819,
+    "rateAPR": -19.918049999999997
+  },
+  {
+    "t": 1771761600008,
+    "symbol": "LAYERUSDT",
+    "rate": -0.00006939,
+    "rateBps": -0.6939,
+    "rateAPR": -7.598204999999999
+  },
+  {
+    "t": 1771776000000,
+    "symbol": "LAYERUSDT",
+    "rate": 0.00002433,
+    "rateBps": 0.2433,
+    "rateAPR": 2.664135
+  },
+  {
+    "t": 1771790400000,
+    "symbol": "LAYERUSDT",
+    "rate": -0.00010359,
+    "rateBps": -1.0359,
+    "rateAPR": -11.343105000000001
+  },
+  {
+    "t": 1771804800001,
+    "symbol": "LAYERUSDT",
+    "rate": -0.00001815,
+    "rateBps": -0.1815,
+    "rateAPR": -1.987425
+  },
+  {
+    "t": 1771819200000,
+    "symbol": "LAYERUSDT",
+    "rate": -0.00025935,
+    "rateBps": -2.5934999999999997,
+    "rateAPR": -28.398825
+  },
+  {
+    "t": 1771833600000,
+    "symbol": "LAYERUSDT",
+    "rate": -0.00003988,
+    "rateBps": -0.3988,
+    "rateAPR": -4.366859999999999
+  },
+  {
+    "t": 1771848000003,
+    "symbol": "LAYERUSDT",
+    "rate": 0.00004931,
+    "rateBps": 0.4931,
+    "rateAPR": 5.399445
+  },
+  {
+    "t": 1771862400000,
+    "symbol": "LAYERUSDT",
+    "rate": -0.00033404,
+    "rateBps": -3.3404000000000003,
+    "rateAPR": -36.57738
+  },
+  {
+    "t": 1771876800000,
+    "symbol": "LAYERUSDT",
+    "rate": -0.00018275,
+    "rateBps": -1.8275,
+    "rateAPR": -20.011125000000003
+  },
+  {
+    "t": 1771891200007,
+    "symbol": "LAYERUSDT",
+    "rate": -0.00005451,
+    "rateBps": -0.5451,
+    "rateAPR": -5.968845
+  },
+  {
+    "t": 1771905600000,
+    "symbol": "LAYERUSDT",
+    "rate": -0.00026281,
+    "rateBps": -2.6281,
+    "rateAPR": -28.777694999999998
+  },
+  {
+    "t": 1771920000000,
+    "symbol": "LAYERUSDT",
+    "rate": -0.00021969,
+    "rateBps": -2.1969,
+    "rateAPR": -24.056054999999997
+  },
+  {
+    "t": 1771934400000,
+    "symbol": "LAYERUSDT",
+    "rate": -0.00024536,
+    "rateBps": -2.4536000000000002,
+    "rateAPR": -26.866920000000004
+  },
+  {
+    "t": 1771948800001,
+    "symbol": "LAYERUSDT",
+    "rate": -0.00025833,
+    "rateBps": -2.5833,
+    "rateAPR": -28.287134999999996
+  },
+  {
+    "t": 1771963200002,
+    "symbol": "LAYERUSDT",
+    "rate": -0.00019547,
+    "rateBps": -1.9546999999999999,
+    "rateAPR": -21.403965
+  },
+  {
+    "t": 1771977600001,
+    "symbol": "LAYERUSDT",
+    "rate": -0.00002866,
+    "rateBps": -0.2866,
+    "rateAPR": -3.13827
+  },
+  {
+    "t": 1771992000000,
+    "symbol": "LAYERUSDT",
+    "rate": -0.00024898,
+    "rateBps": -2.4898,
+    "rateAPR": -27.26331
+  },
+  {
+    "t": 1772006400007,
+    "symbol": "LAYERUSDT",
+    "rate": -0.00013019,
+    "rateBps": -1.3019,
+    "rateAPR": -14.255805000000002
+  },
+  {
+    "t": 1772020800000,
+    "symbol": "LAYERUSDT",
+    "rate": -0.0001327,
+    "rateBps": -1.327,
+    "rateAPR": -14.530649999999998
+  },
+  {
+    "t": 1772035200000,
+    "symbol": "LAYERUSDT",
+    "rate": -0.00008795,
+    "rateBps": -0.8795,
+    "rateAPR": -9.630524999999999
+  },
+  {
+    "t": 1772049600006,
+    "symbol": "LAYERUSDT",
+    "rate": -0.00021391,
+    "rateBps": -2.1391,
+    "rateAPR": -23.423144999999998
+  }
+]

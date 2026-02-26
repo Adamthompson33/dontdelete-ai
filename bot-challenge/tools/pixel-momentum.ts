@@ -19,6 +19,7 @@
 
 import * as fs from 'fs';
 import * as path from 'path';
+import { isClosedPosition } from './lib/closed-position-gate';
 
 const HL_API = 'https://api.hyperliquid.xyz/info';
 
@@ -458,6 +459,12 @@ async function main() {
 
       // Trending — determine direction
       const direction: 'LONG' | 'SHORT' = data.regime === 'TRENDING_LONG' ? 'LONG' : 'SHORT';
+
+      // Closed position gate (Oracle directive 2026-02-26)
+      if (isClosedPosition(coin, direction)) {
+        console.log(`   🚫 ${coin} ${direction} — BLOCKED by closed position gate\n`);
+        continue;
+      }
 
       // Entry filter
       const filter = shouldEnter(data, direction);

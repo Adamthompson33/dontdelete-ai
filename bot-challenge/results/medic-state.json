@@ -1,107 +1,8 @@
 {
-  "lastRegime": "TRENDING_UP",
-  "lastFactorScore": 14,
-  "lastFactorGrade": "LOW",
+  "lastRegime": "TRENDING_DOWN",
+  "lastFactorScore": 41,
+  "lastFactorGrade": "MODERATE",
   "positions": {
-    "BTC_SHORT_pixel-momentum": {
-      "entryRegime": "TRENDING_SHORT",
-      "entryTime": "2026-02-24T17:01:04.407Z",
-      "entryPrice": 64216,
-      "entryFundingAPR": 9.576519599999997,
-      "entryParams": {
-        "stop": 0.03,
-        "size": 0.5,
-        "maxHold": 8
-      }
-    },
-    "ZORA_LONG_rei-funding-carry": {
-      "entryRegime": "TRENDING_DOWN",
-      "entryTime": "2026-02-24T09:03:48.986Z",
-      "entryPrice": 0.018946,
-      "entryFundingAPR": -170.540556,
-      "entryParams": {
-        "stop": 0.03,
-        "size": 0.75,
-        "maxHold": 12
-      }
-    },
-    "KAITO_LONG_rei-funding-carry": {
-      "entryRegime": "CHOPPY",
-      "entryTime": "2026-02-24T21:03:48.484Z",
-      "entryPrice": 0.29859,
-      "entryFundingAPR": -117.73080839999999,
-      "entryParams": {
-        "stop": 0.02,
-        "size": 0.25,
-        "maxHold": 4
-      }
-    },
-    "SOPH_LONG_rei-funding-carry": {
-      "entryRegime": "UNKNOWN",
-      "entryTime": "2026-02-25T01:03:48.527Z",
-      "entryPrice": 0.009092,
-      "entryFundingAPR": -180.3778608,
-      "entryParams": {
-        "stop": 0.03,
-        "size": 0.5,
-        "maxHold": 8
-      }
-    },
-    "YGG_LONG_rei-funding-carry": {
-      "entryRegime": "CHOPPY",
-      "entryTime": "2026-02-24T21:03:48.484Z",
-      "entryPrice": 0.040663,
-      "entryFundingAPR": -139.21742400000002,
-      "entryParams": {
-        "stop": 0.02,
-        "size": 0.25,
-        "maxHold": 4
-      }
-    },
-    "AXS_LONG_rei-funding-carry": {
-      "entryRegime": "TRENDING_DOWN",
-      "entryTime": "2026-02-24T13:03:48.707Z",
-      "entryPrice": 1.2028,
-      "entryFundingAPR": -146.1169752,
-      "entryParams": {
-        "stop": 0.03,
-        "size": 0.75,
-        "maxHold": 12
-      }
-    },
-    "GAS_LONG_rei-funding-carry": {
-      "entryRegime": "TRENDING_DOWN",
-      "entryTime": "2026-02-24T09:03:48.986Z",
-      "entryPrice": 1.5099,
-      "entryFundingAPR": -253.0888392,
-      "entryParams": {
-        "stop": 0.03,
-        "size": 0.75,
-        "maxHold": 12
-      }
-    },
-    "ALT_LONG_rei-funding-carry": {
-      "entryRegime": "CHOPPY",
-      "entryTime": "2026-02-25T05:03:49.231Z",
-      "entryPrice": 0.007473,
-      "entryFundingAPR": -102.7710936,
-      "entryParams": {
-        "stop": 0.02,
-        "size": 0.25,
-        "maxHold": 4
-      }
-    },
-    "JTO_LONG_rei-funding-carry": {
-      "entryRegime": "CHOPPY",
-      "entryTime": "2026-02-25T05:03:49.230Z",
-      "entryPrice": 0.28348,
-      "entryFundingAPR": -102.97161,
-      "entryParams": {
-        "stop": 0.02,
-        "size": 0.25,
-        "maxHold": 4
-      }
-    },
     "Will Bitcoin (BTC) close at $1_ARB_sakura-arb-scanner": {
       "entryRegime": "VOLATILE",
       "entryTime": "2026-02-25T09:04:08.629Z",
@@ -113,33 +14,44 @@
         "maxHold": 8
       }
     },
-    "STABLE_LONG_rei-funding-carry": {
-      "entryRegime": "CHOPPY",
-      "entryTime": "2026-02-24T05:03:48.609Z",
-      "entryPrice": 0.028535,
-      "entryFundingAPR": -167.26457879999998,
+    "Will Bitcoin exceed $100,000 b_ARB_sakura-arb-scanner": {
+      "entryRegime": "TRENDING_DOWN",
+      "entryTime": "2026-02-26T09:04:09.384Z",
+      "entryPrice": 0.43999999999999984,
+      "entryFundingAPR": 0,
       "entryParams": {
-        "stop": 0.02,
-        "size": 0.25,
-        "maxHold": 4
+        "stop": 0.03,
+        "size": 0.75,
+        "maxHold": 12
       }
     },
-    "MERL_LONG_rei-funding-carry": {
-      "entryRegime": "VOLATILE",
-      "entryTime": "2026-02-25T09:03:48.398Z",
-      "entryPrice": 0.045285,
-      "entryFundingAPR": -102.47018760000002,
+    "BTC_LONG_pixel-momentum": {
+      "entryRegime": "TRENDING_LONG",
+      "entryTime": "2026-02-26T09:01:04.300Z",
+      "entryPrice": 67974,
+      "entryFundingAPR": 10.526891999999998,
       "entryParams": {
         "stop": 0.03,
         "size": 0.5,
         "maxHold": 8
       }
     },
-    "2Z_LONG_rei-funding-carry": {
-      "entryRegime": "VOLATILE",
-      "entryTime": "2026-02-25T09:03:48.398Z",
-      "entryPrice": 0.07512,
-      "entryFundingAPR": -138.4695828,
+    "ETH_LONG_pixel-momentum": {
+      "entryRegime": "TRENDING_LONG",
+      "entryTime": "2026-02-26T05:01:04.284Z",
+      "entryPrice": 2071.6,
+      "entryFundingAPR": 10.950000000000001,
+      "entryParams": {
+        "stop": 0.03,
+        "size": 0.5,
+        "maxHold": 8
+      }
+    },
+    "SOL_LONG_pixel-momentum": {
+      "entryRegime": "TRENDING_LONG",
+      "entryTime": "2026-02-26T05:01:04.679Z",
+      "entryPrice": 88.563,
+      "entryFundingAPR": 6.881418,
       "entryParams": {
         "stop": 0.03,
         "size": 0.5,
@@ -156,8 +68,19 @@
         "size": 0.75,
         "maxHold": 12
       }
+    },
+    "Will bitcoin's price go below _ARB_sakura-arb-scanner": {
+      "entryRegime": "TRENDING_DOWN",
+      "entryTime": "2026-02-26T21:04:08.932Z",
+      "entryPrice": 0.25000000000000006,
+      "entryFundingAPR": 0,
+      "entryParams": {
+        "stop": 0.03,
+        "size": 0.75,
+        "maxHold": 12
+      }
     }
   },
   "previousStopBreaches": [],
-  "lastRunAt": "2026-02-25T13:09:04.427Z"
+  "lastRunAt": "2026-02-26T21:09:05.770Z"
 }

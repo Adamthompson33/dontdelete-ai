@@ -1,0 +1,16 @@
+{
+  "date": "2026-02-27",
+  "scannedAt": "2026-02-27T05:04:26.058Z",
+  "session": "asian",
+  "nextResetMinutes": 56,
+  "btcRegime": {
+    "regime": "CHOPPY",
+    "adx": 9.969587486433305,
+    "volatilityRatio": 0.655292188796477,
+    "priceChange1h": 0.118140469017662,
+    "priceChange24h": -0.893183446138553
+  },
+  "signalCount": 0,
+  "signals": [],
+  "allRawSignals": []
+}

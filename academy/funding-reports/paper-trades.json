@@ -203,10 +203,12 @@
       "entryTime": 1771806612514,
       "entryRate": -0.0003921414,
       "notionalSize": 1000,
-      "cumulativeFunding": 11.795544300000001,
-      "lastCollectedAt": 1772065811382,
-      "isOpen": true,
-      "fees": 0.25
+      "cumulativeFunding": 15.261417900000001,
+      "lastCollectedAt": 1772152211393,
+      "isOpen": false,
+      "fees": 0.5,
+      "exitTime": 1772152211393,
+      "exitReason": "max_duration_72h"
     },
     {
       "id": "YGG-1771893011127",
@@ -229,8 +231,8 @@
       "entryTime": 1771893012549,
       "entryRate": -0.0001416465,
       "notionalSize": 1000,
-      "cumulativeFunding": 94.2419107,
-      "lastCollectedAt": 1772065811382,
+      "cumulativeFunding": 99.7507171,
+      "lastCollectedAt": 1772152211393,
       "isOpen": true,
       "fees": 0.25
     },
@@ -241,8 +243,8 @@
       "entryTime": 1771893013240,
       "entryRate": -0.0001407917,
       "notionalSize": 1000,
-      "cumulativeFunding": 7.9700586,
-      "lastCollectedAt": 1772065811382,
+      "cumulativeFunding": 9.369585,
+      "lastCollectedAt": 1772152211393,
       "isOpen": true,
       "fees": 0.25
     },
@@ -267,8 +269,8 @@
       "entryTime": 1772065813125,
       "entryRate": -0.000398678,
       "notionalSize": 1000,
-      "cumulativeFunding": 0,
-      "lastCollectedAt": 1772065813125,
+      "cumulativeFunding": 1.1784303,
+      "lastCollectedAt": 1772152211393,
       "isOpen": true,
       "fees": 0.25
     },
@@ -279,12 +281,24 @@
       "entryTime": 1772065816051,
       "entryRate": -0.0002745473,
       "notionalSize": 1000,
+      "cumulativeFunding": 1.2619778,
+      "lastCollectedAt": 1772152211393,
+      "isOpen": true,
+      "fees": 0.25
+    },
+    {
+      "id": "AXS-1772152213714",
+      "coin": "AXS",
+      "direction": "SHORT_BASIS",
+      "entryTime": 1772152213714,
+      "entryRate": -0.0001444114,
+      "notionalSize": 1000,
       "cumulativeFunding": 0,
-      "lastCollectedAt": 1772065816051,
+      "lastCollectedAt": 1772152213714,
       "isOpen": true,
       "fees": 0.25
     }
   ],
-  "cumulativePnl": 248.2952418,
+  "cumulativePnl": 260.35985630000005,
   "lastScanAt": 0
 }

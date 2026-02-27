@@ -1,18 +1,48 @@
 {
   "agent": "PROPHET",
   "team": "architect",
-  "lastUpdated": "2026-02-26T00:32:33.995Z",
-  "runNumber": 10,
+  "lastUpdated": "2026-02-27T00:32:13.454Z",
+  "runNumber": 11,
   "signals": {
-    "total": 8,
+    "total": 10,
     "correct": 0,
     "incorrect": 0,
-    "pending": 8,
+    "pending": 10,
     "accuracy": null,
-    "avgConfidence": 0.5425,
+    "avgConfidence": 0.549,
     "calibrationScore": null
   },
   "recentSignals": [
+    {
+      "run": 11,
+      "asset": "BTC",
+      "direction": "flat",
+      "confidence": 0.5,
+      "kelly_size": 0,
+      "invalidation": "n/a",
+      "data_sources": [
+        "regime-chop",
+        "heat-management",
+        "kelly-engine"
+      ],
+      "timestamp": "2026-02-27T00:31:38.494Z",
+      "outcome": "pending"
+    },
+    {
+      "run": 11,
+      "asset": "BTC",
+      "direction": "flat",
+      "confidence": 0.65,
+      "kelly_size": 0,
+      "invalidation": "n/a",
+      "data_sources": [
+        "regime-chop-analysis",
+        "correlation-audit",
+        "kelly-engine"
+      ],
+      "timestamp": "2026-02-27T00:30:43.602Z",
+      "outcome": "pending"
+    },
     {
       "run": 10,
       "asset": "BTC",
@@ -56,35 +86,6 @@
       ],
       "timestamp": "2026-02-25T00:30:47.228Z",
       "outcome": "pending"
-    },
-    {
-      "run": 8,
-      "asset": "BTC",
-      "direction": "flat",
-      "confidence": 0.5,
-      "kelly_size": 0,
-      "invalidation": "n/a",
-      "data_sources": [
-        "correlation-audit",
-        "data-quality-crisis",
-        "execution-risk"
-      ],
-      "timestamp": "2026-02-24T00:31:45.862Z",
-      "outcome": "pending"
-    },
-    {
-      "run": 6,
-      "asset": "BTC",
-      "direction": "flat",
-      "confidence": 0.5,
-      "kelly_size": 0,
-      "invalidation": "n/a",
-      "data_sources": [
-        "correlation-stress-test",
-        "meta-analysis"
-      ],
-      "timestamp": "2026-02-21T00:31:39.363Z",
-      "outcome": "pending"
     }
   ],
   "record": {
@@ -100,15 +101,15 @@
   "convergenceFlags": {
     "phrasesUsedByMultipleAgents": [
       "confidence kelly invalidation",
+      "signal flat btc",
+      "flat btc confidence",
       "btc confidence kelly",
-      "kelly invalidation btc",
-      "signal short vvv",
-      "short vvv confidence",
-      "vvv confidence kelly",
-      "kelly invalidation vvv",
-      "invalidation vvv funding",
-      "vvv funding compresses",
-      "signal flat btc"
+      "kelly invalidation sources",
+      "invalidation sources regimechopanalysis",
+      "invalidation sources regimechop",
+      "jinxs correlation audit",
+      "correlation not just",
+      "not just directional"
     ],
     "bannedPhrases": [
       {
@@ -154,13 +155,25 @@
       {
         "phrase": "kelly invalidation btc",
         "bannedAtRun": 10
+      },
+      {
+        "phrase": "invalidation sources regimechopanalysis",
+        "bannedAtRun": 11
+      },
+      {
+        "phrase": "invalidation sources regimechop",
+        "bannedAtRun": 11
+      },
+      {
+        "phrase": "jinxs correlation audit",
+        "bannedAtRun": 11
       }
     ]
   },
   "fitness": {
     "current": 38.81690527585597,
     "trend": [
-      -2,
+      0,
       0,
       0
     ],
@@ -170,7 +183,7 @@
   "karma": {
     "current": 38.81690527585597,
     "trend": [
-      -2,
+      0,
       0,
       0
     ],

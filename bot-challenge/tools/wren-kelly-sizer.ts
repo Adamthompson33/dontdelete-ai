@@ -206,8 +206,6 @@ async function main() {
   // ═══ Proportional Reduction ═══
   // Only consider ACTIVE signals (within maxHold window, default 24h)
   const MAX_SIGNAL_AGE_MS = 24 * 60 * 60 * 1000; // 24 hours
-  const now = Date.now();
-  
   // Mark stale signals
   for (const signal of ledger.signals) {
     if (signal.kelly_action !== 'SIZE') continue;

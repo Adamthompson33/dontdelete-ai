@@ -1,18 +1,47 @@
 {
   "agent": "SAKURA",
   "team": "sentinel",
-  "lastUpdated": "2026-02-26T00:32:33.992Z",
-  "runNumber": 10,
+  "lastUpdated": "2026-02-27T00:32:13.452Z",
+  "runNumber": 11,
   "signals": {
-    "total": 15,
+    "total": 17,
     "correct": 0,
     "incorrect": 0,
-    "pending": 15,
+    "pending": 17,
     "accuracy": null,
-    "avgConfidence": 0.57,
+    "avgConfidence": 0.5694117647058823,
     "calibrationScore": null
   },
   "recentSignals": [
+    {
+      "run": 11,
+      "asset": "BTC",
+      "direction": "flat",
+      "confidence": 0.55,
+      "kelly_size": 0,
+      "invalidation": "n/a",
+      "data_sources": [
+        "regime-chop",
+        "correlation-stress-test",
+        "execution-profile"
+      ],
+      "timestamp": "2026-02-27T00:31:29.505Z",
+      "outcome": "pending"
+    },
+    {
+      "run": 11,
+      "asset": "ETH",
+      "direction": "short",
+      "confidence": 0.58,
+      "kelly_size": 0.09,
+      "invalidation": "ETH reclaims $2100 on volume spike above 3M contracts",
+      "data_sources": [
+        "arb-scanner",
+        "microstructure-rebuttal"
+      ],
+      "timestamp": "2026-02-27T00:30:34.597Z",
+      "outcome": "pending"
+    },
     {
       "run": 10,
       "asset": "VVV",
@@ -54,34 +83,6 @@
       ],
       "timestamp": "2026-02-26T00:30:46.430Z",
       "outcome": "pending"
-    },
-    {
-      "run": 9,
-      "asset": "BTC",
-      "direction": "flat",
-      "confidence": 0.5,
-      "kelly_size": 0,
-      "invalidation": "n/a",
-      "data_sources": [
-        "correlation-audit",
-        "regime-analysis"
-      ],
-      "timestamp": "2026-02-25T00:31:41.188Z",
-      "outcome": "pending"
-    },
-    {
-      "run": 9,
-      "asset": "BTC",
-      "direction": "flat",
-      "confidence": 0.5,
-      "kelly_size": 0,
-      "invalidation": "n/a",
-      "data_sources": [
-        "correlation-stress-test",
-        "execution-profile"
-      ],
-      "timestamp": "2026-02-25T00:30:38.521Z",
-      "outcome": "pending"
     }
   ],
   "record": {
@@ -97,37 +98,17 @@
   "convergenceFlags": {
     "phrasesUsedByMultipleAgents": [
       "confidence kelly invalidation",
+      "signal flat btc",
+      "flat btc confidence",
       "btc confidence kelly",
-      "kelly invalidation btc",
-      "signal short vvv",
-      "short vvv confidence",
-      "vvv confidence kelly",
-      "kelly invalidation vvv",
-      "invalidation vvv funding",
-      "vvv funding compresses",
-      "signal flat btc"
+      "kelly invalidation sources",
+      "invalidation sources regimechopanalysis",
+      "invalidation sources regimechop",
+      "jinxs correlation audit",
+      "correlation not just",
+      "not just directional"
     ],
     "bannedPhrases": [
-      {
-        "phrase": "kelly invalidation funding",
-        "bannedAtRun": 8
-      },
-      {
-        "phrase": "for consecutive candles",
-        "bannedAtRun": 8
-      },
-      {
-        "phrase": "extreme funding doesnt",
-        "bannedAtRun": 8
-      },
-      {
-        "phrase": "funding doesnt stay",
-        "bannedAtRun": 8
-      },
-      {
-        "phrase": "doesnt stay extreme",
-        "bannedAtRun": 8
-      },
       {
         "phrase": "signal flat btc",
         "bannedAtRun": 9
@@ -191,6 +172,10 @@
       {
         "phrase": "vvv funding compresses",
         "bannedAtRun": 10
+      },
+      {
+        "phrase": "invalidation sources regimechop",
+        "bannedAtRun": 11
       }
     ]
   },

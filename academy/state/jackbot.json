@@ -1,18 +1,48 @@
 {
   "agent": "JACKBOT",
   "team": "scribe",
-  "lastUpdated": "2026-02-26T00:32:33.989Z",
-  "runNumber": 10,
+  "lastUpdated": "2026-02-27T00:32:13.449Z",
+  "runNumber": 11,
   "signals": {
-    "total": 10,
+    "total": 12,
     "correct": 0,
     "incorrect": 0,
-    "pending": 10,
+    "pending": 12,
     "accuracy": null,
-    "avgConfidence": 0.5349999999999999,
+    "avgConfidence": 0.5291666666666667,
     "calibrationScore": null
   },
   "recentSignals": [
+    {
+      "run": 11,
+      "asset": "BTC",
+      "direction": "flat",
+      "confidence": 0.5,
+      "kelly_size": 0,
+      "invalidation": "n/a",
+      "data_sources": [
+        "temporal-edge",
+        "regime-chop-analysis",
+        "kelly-engine"
+      ],
+      "timestamp": "2026-02-27T00:31:23.644Z",
+      "outcome": "pending"
+    },
+    {
+      "run": 11,
+      "asset": "BTC",
+      "direction": "flat",
+      "confidence": 0.5,
+      "kelly_size": 0,
+      "invalidation": "n/a",
+      "data_sources": [
+        "temporal-edge",
+        "regime-audit",
+        "self-correction"
+      ],
+      "timestamp": "2026-02-27T00:30:27.431Z",
+      "outcome": "pending"
+    },
     {
       "run": 10,
       "asset": "BTC",
@@ -57,35 +87,6 @@
       ],
       "timestamp": "2026-02-25T00:31:32.281Z",
       "outcome": "pending"
-    },
-    {
-      "run": 9,
-      "asset": "BTC",
-      "direction": "flat",
-      "confidence": 0.5,
-      "kelly_size": 0,
-      "invalidation": "n/a",
-      "data_sources": [
-        "temporal-edge",
-        "regime-audit"
-      ],
-      "timestamp": "2026-02-25T00:30:31.562Z",
-      "outcome": "pending"
-    },
-    {
-      "run": 8,
-      "asset": "OP",
-      "direction": "flat",
-      "confidence": 0.55,
-      "kelly_size": 0,
-      "invalidation": "n/a",
-      "data_sources": [
-        "funding-extremes-unresolved",
-        "correlation-audit",
-        "self-correction"
-      ],
-      "timestamp": "2026-02-24T00:31:31.219Z",
-      "outcome": "pending"
     }
   ],
   "record": {
@@ -101,49 +102,17 @@
   "convergenceFlags": {
     "phrasesUsedByMultipleAgents": [
       "confidence kelly invalidation",
+      "signal flat btc",
+      "flat btc confidence",
       "btc confidence kelly",
-      "kelly invalidation btc",
-      "signal short vvv",
-      "short vvv confidence",
-      "vvv confidence kelly",
-      "kelly invalidation vvv",
-      "invalidation vvv funding",
-      "vvv funding compresses",
-      "signal flat btc"
+      "kelly invalidation sources",
+      "invalidation sources regimechopanalysis",
+      "invalidation sources regimechop",
+      "jinxs correlation audit",
+      "correlation not just",
+      "not just directional"
     ],
     "bannedPhrases": [
-      {
-        "phrase": "signal flat btc",
-        "bannedAtRun": 8
-      },
-      {
-        "phrase": "flat btc confidence",
-        "bannedAtRun": 8
-      },
-      {
-        "phrase": "btc confidence kelly",
-        "bannedAtRun": 8
-      },
-      {
-        "phrase": "kelly invalidation funding",
-        "bannedAtRun": 8
-      },
-      {
-        "phrase": "for consecutive candles",
-        "bannedAtRun": 8
-      },
-      {
-        "phrase": "extreme funding doesnt",
-        "bannedAtRun": 8
-      },
-      {
-        "phrase": "funding doesnt stay",
-        "bannedAtRun": 8
-      },
-      {
-        "phrase": "doesnt stay extreme",
-        "bannedAtRun": 8
-      },
       {
         "phrase": "confidence kelly invalidation",
         "bannedAtRun": 9
@@ -175,6 +144,18 @@
       {
         "phrase": "kelly invalidation btc",
         "bannedAtRun": 10
+      },
+      {
+        "phrase": "signal flat btc",
+        "bannedAtRun": 11
+      },
+      {
+        "phrase": "flat btc confidence",
+        "bannedAtRun": 11
+      },
+      {
+        "phrase": "btc confidence kelly",
+        "bannedAtRun": 11
       }
     ]
   },

@@ -1,0 +1,273 @@
+{
+  "date": "2026-02-27",
+  "scannedAt": "2026-02-27T09:02:03.592Z",
+  "mode": "heuristic",
+  "trendingCount": 15,
+  "tradeableCount": 8,
+  "signals": [
+    {
+      "tool": "sentry-sentiment-scanner",
+      "timestamp": "2026-02-27T09:02:03.575Z",
+      "unixMs": 1772182923575,
+      "coin": "BTC",
+      "direction": "FLAT",
+      "confidence": 0.35,
+      "entryPrice": 67936.01766645472,
+      "reasoning": "Trending #1 with flat price action (-0.0%). Speculative interest only.",
+      "invalidation": "Sentiment shifts or coin drops off trending within 12h.",
+      "sentimentScore": 35,
+      "trendingRank": 1,
+      "priceChange24h": -0.03128552800598658
+    },
+    {
+      "tool": "sentry-sentiment-scanner",
+      "timestamp": "2026-02-27T09:02:03.575Z",
+      "unixMs": 1772182923575,
+      "coin": "PENGU",
+      "direction": "FLAT",
+      "confidence": 0.35,
+      "entryPrice": 0.007219422412734629,
+      "reasoning": "Trending #6 with flat price action (0.5%). Speculative interest only.",
+      "invalidation": "Sentiment shifts or coin drops off trending within 12h.",
+      "sentimentScore": 35,
+      "trendingRank": 6,
+      "priceChange24h": 0.45819196112570826
+    },
+    {
+      "tool": "sentry-sentiment-scanner",
+      "timestamp": "2026-02-27T09:02:03.575Z",
+      "unixMs": 1772182923575,
+      "coin": "VIRTUAL",
+      "direction": "FLAT",
+      "confidence": 0.35,
+      "entryPrice": 0.7260149648240954,
+      "reasoning": "Trending #7 with flat price action (1.3%). Speculative interest only.",
+      "invalidation": "Sentiment shifts or coin drops off trending within 12h.",
+      "sentimentScore": 35,
+      "trendingRank": 7,
+      "priceChange24h": 1.3467891625099613
+    },
+    {
+      "tool": "sentry-sentiment-scanner",
+      "timestamp": "2026-02-27T09:02:03.575Z",
+      "unixMs": 1772182923575,
+      "coin": "SOL",
+      "direction": "FLAT",
+      "confidence": 0.35,
+      "entryPrice": 87.53382439376585,
+      "reasoning": "Trending #8 with flat price action (0.2%). Speculative interest only.",
+      "invalidation": "Sentiment shifts or coin drops off trending within 12h.",
+      "sentimentScore": 35,
+      "trendingRank": 8,
+      "priceChange24h": 0.16112497843897453
+    },
+    {
+      "tool": "sentry-sentiment-scanner",
+      "timestamp": "2026-02-27T09:02:03.575Z",
+      "unixMs": 1772182923575,
+      "coin": "ETH",
+      "direction": "FLAT",
+      "confidence": 0.35,
+      "entryPrice": 2032.429002764551,
+      "reasoning": "Trending #9 with flat price action (-1.1%). Speculative interest only.",
+      "invalidation": "Sentiment shifts or coin drops off trending within 12h.",
+      "sentimentScore": 35,
+      "trendingRank": 9,
+      "priceChange24h": -1.0612803743106378
+    },
+    {
+      "tool": "sentry-sentiment-scanner",
+      "timestamp": "2026-02-27T09:02:03.575Z",
+      "unixMs": 1772182923575,
+      "coin": "SUI",
+      "direction": "FLAT",
+      "confidence": 0.35,
+      "entryPrice": 0.9574477237946346,
+      "reasoning": "Trending #11 with flat price action (0.4%). Speculative interest only.",
+      "invalidation": "Sentiment shifts or coin drops off trending within 12h.",
+      "sentimentScore": 35,
+      "trendingRank": 11,
+      "priceChange24h": 0.4480461454839967
+    },
+    {
+      "tool": "sentry-sentiment-scanner",
+      "timestamp": "2026-02-27T09:02:03.575Z",
+      "unixMs": 1772182923575,
+      "coin": "DOT",
+      "direction": "FLAT",
+      "confidence": 0.35,
+      "entryPrice": 1.616222257048277,
+      "reasoning": "Trending #13 with flat price action (1.1%). Speculative interest only.",
+      "invalidation": "Sentiment shifts or coin drops off trending within 12h.",
+      "sentimentScore": 35,
+      "trendingRank": 13,
+      "priceChange24h": 1.129923937781147
+    },
+    {
+      "tool": "sentry-sentiment-scanner",
+      "timestamp": "2026-02-27T09:02:03.575Z",
+      "unixMs": 1772182923575,
+      "coin": "UNI",
+      "direction": "SHORT",
+      "confidence": 0.4412086657906582,
+      "entryPrice": 3.881880689584139,
+      "reasoning": "Trending #15 with -4.1% decline. Fading momentum.",
+      "invalidation": "Sentiment shifts or coin drops off trending within 12h.",
+      "sentimentScore": 44.12086657906582,
+      "trendingRank": 15,
+      "priceChange24h": -4.1208665790658205
+    }
+  ],
+  "allTrending": [
+    {
+      "id": "bitcoin",
+      "name": "Bitcoin",
+      "symbol": "BTC",
+      "rank": 1,
+      "price": 67936.01766645472,
+      "priceChange24h": -0.03128552800598658,
+      "marketCap": 1358251644109,
+      "volume24h": 44216436857
+    },
+    {
+      "id": "venice-token",
+      "name": "Venice Token",
+      "symbol": "VVV",
+      "rank": 2,
+      "price": 5.165653436492306,
+      "priceChange24h": 22.07282867701871,
+      "marketCap": 228304137,
+      "volume24h": 24607027
+    },
+    {
+      "id": "robo-token-2",
+      "name": "Fabric Protocol",
+      "symbol": "ROBO",
+      "rank": 3,
+      "price": 0.03790645307814387,
+      "priceChange24h": 6.128196575789994,
+      "marketCap": 84113700,
+      "volume24h": 12330483
+    },
+    {
+      "id": "power-protocol",
+      "name": "Power Protocol",
+      "symbol": "POWER",
+      "rank": 4,
+      "price": 1.5017756113750973,
+      "priceChange24h": -1.7571724827347548,
+      "marketCap": 315373038,
+      "volume24h": 38681828
+    },
+    {
+      "id": "terra-luna",
+      "name": "Terra Luna Classic",
+      "symbol": "LUNC",
+      "rank": 5,
+      "price": 0.000041537291755214333,
+      "priceChange24h": 13.948366085016628,
+      "marketCap": 227066337,
+      "volume24h": 75158587
+    },
+    {
+      "id": "pudgy-penguins",
+      "name": "Pudgy Penguins",
+      "symbol": "PENGU",
+      "rank": 6,
+      "price": 0.007219422412734629,
+      "priceChange24h": 0.45819196112570826,
+      "marketCap": 453764152,
+      "volume24h": 106804424
+    },
+    {
+      "id": "virtual-protocol",
+      "name": "Virtuals Protocol",
+      "symbol": "VIRTUAL",
+      "rank": 7,
+      "price": 0.7260149648240954,
+      "priceChange24h": 1.3467891625099613,
+      "marketCap": 478016244,
+      "volume24h": 119270425
+    },
+    {
+      "id": "solana",
+      "name": "Solana",
+      "symbol": "SOL",
+      "rank": 8,
+      "price": 87.53382439376585,
+      "priceChange24h": 0.16112497843897453,
+      "marketCap": 49790344377,
+      "volume24h": 3973142013
+    },
+    {
+      "id": "ethereum",
+      "name": "Ethereum",
+      "symbol": "ETH",
+      "rank": 9,
+      "price": 2032.429002764551,
+      "priceChange24h": -1.0612803743106378,
+      "marketCap": 245229780086,
+      "volume24h": 21556073055
+    },
+    {
+      "id": "espresso",
+      "name": "Espresso",
+      "symbol": "ESP",
+      "rank": 10,
+      "price": 0.13850668152689188,
+      "priceChange24h": -1.69584819486388,
+      "marketCap": 72463603,
+      "volume24h": 62970777
+    },
+    {
+      "id": "sui",
+      "name": "Sui",
+      "symbol": "SUI",
+      "rank": 11,
+      "price": 0.9574477237946346,
+      "priceChange24h": 0.4480461454839967,
+      "marketCap": 3682118438,
+      "volume24h": 720752128
+    },
+    {
+      "id": "hedera-hashgraph",
+      "name": "Hedera",
+      "symbol": "HBAR",
+      "rank": 12,
+      "price": 0.10444255992301876,
+      "priceChange24h": 2.262044753151736,
+      "marketCap": 4490898845,
+      "volume24h": 121800480
+    },
+    {
+      "id": "polkadot",
+      "name": "Polkadot",
+      "symbol": "DOT",
+      "rank": 13,
+      "price": 1.616222257048277,
+      "priceChange24h": 1.129923937781147,
+      "marketCap": 2693566464,
+      "volume24h": 410774653
+    },
+    {
+      "id": "hyperliquid",
+      "name": "Hyperliquid",
+      "symbol": "HYPE",
+      "rank": 14,
+      "price": 29.500390292999334,
+      "priceChange24h": 4.51273931015502,
+      "marketCap": 7029940208,
+      "volume24h": 260662825
+    },
+    {
+      "id": "uniswap",
+      "name": "Uniswap",
+      "symbol": "UNI",
+      "rank": 15,
+      "price": 3.881880689584139,
+      "priceChange24h": -4.1208665790658205,
+      "marketCap": 2460777197,
+      "volume24h": 264749027
+    }
+  ]
+}

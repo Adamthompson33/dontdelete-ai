@@ -1,18 +1,48 @@
 {
   "agent": "JINX",
   "team": "sentinel",
-  "lastUpdated": "2026-02-26T00:32:34.003Z",
-  "runNumber": 10,
+  "lastUpdated": "2026-02-27T00:32:13.463Z",
+  "runNumber": 11,
   "signals": {
-    "total": 10,
+    "total": 12,
     "correct": 0,
     "incorrect": 0,
-    "pending": 10,
+    "pending": 12,
     "accuracy": null,
-    "avgConfidence": 0.522,
+    "avgConfidence": 0.5183333333333333,
     "calibrationScore": null
   },
   "recentSignals": [
+    {
+      "run": 11,
+      "asset": "BTC",
+      "direction": "flat",
+      "confidence": 0.5,
+      "kelly_size": 0,
+      "invalidation": "n/a",
+      "data_sources": [
+        "regime-chop-analysis",
+        "insufficient-resolution-data",
+        "heat-management"
+      ],
+      "timestamp": "2026-02-27T00:32:13.103Z",
+      "outcome": "pending"
+    },
+    {
+      "run": 11,
+      "asset": "BTC",
+      "direction": "flat",
+      "confidence": 0.5,
+      "kelly_size": 0,
+      "invalidation": "n/a",
+      "data_sources": [
+        "regime-chop",
+        "insufficient-edge-data",
+        "heat-management"
+      ],
+      "timestamp": "2026-02-27T00:31:15.758Z",
+      "outcome": "pending"
+    },
     {
       "run": 10,
       "asset": "VVV",
@@ -55,35 +85,6 @@
       ],
       "timestamp": "2026-02-25T00:31:23.986Z",
       "outcome": "pending"
-    },
-    {
-      "run": 8,
-      "asset": "BTC",
-      "direction": "flat",
-      "confidence": 0.5,
-      "kelly_size": 0,
-      "invalidation": "n/a",
-      "data_sources": [
-        "insufficient-market-feedback",
-        "correlation-audit",
-        "monte-carlo-data-insufficiency"
-      ],
-      "timestamp": "2026-02-24T00:32:20.375Z",
-      "outcome": "pending"
-    },
-    {
-      "run": 8,
-      "asset": "ETH",
-      "direction": "flat",
-      "confidence": 0.5,
-      "kelly_size": 0,
-      "invalidation": "n/a",
-      "data_sources": [
-        "factor-model",
-        "insufficient-trade-history"
-      ],
-      "timestamp": "2026-02-24T00:31:23.850Z",
-      "outcome": "pending"
     }
   ],
   "record": {
@@ -99,15 +100,15 @@
   "convergenceFlags": {
     "phrasesUsedByMultipleAgents": [
       "confidence kelly invalidation",
+      "signal flat btc",
+      "flat btc confidence",
       "btc confidence kelly",
-      "kelly invalidation btc",
-      "signal short vvv",
-      "short vvv confidence",
-      "vvv confidence kelly",
-      "kelly invalidation vvv",
-      "invalidation vvv funding",
-      "vvv funding compresses",
-      "signal flat btc"
+      "kelly invalidation sources",
+      "invalidation sources regimechopanalysis",
+      "invalidation sources regimechop",
+      "jinxs correlation audit",
+      "correlation not just",
+      "not just directional"
     ],
     "bannedPhrases": [
       {
@@ -153,6 +154,14 @@
       {
         "phrase": "vvv funding compresses",
         "bannedAtRun": 10
+      },
+      {
+        "phrase": "invalidation sources regimechopanalysis",
+        "bannedAtRun": 11
+      },
+      {
+        "phrase": "invalidation sources regimechop",
+        "bannedAtRun": 11
       }
     ]
   },

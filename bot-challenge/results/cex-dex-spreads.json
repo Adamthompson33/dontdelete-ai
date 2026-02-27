@@ -605,5 +605,50 @@
         "hyperliquid_available": true
       }
     ]
+  },
+  {
+    "timestamp": "2026-02-27T01:03:04.610Z",
+    "regime": "UNKNOWN",
+    "coinCount": 1,
+    "spreads": [
+      {
+        "coin": "BTC",
+        "binance_rate_apr": -2.31,
+        "hyperliquid_rate_apr": 3.08,
+        "spread_apr": -5.39,
+        "binance_available": true,
+        "hyperliquid_available": true
+      }
+    ]
+  },
+  {
+    "timestamp": "2026-02-27T05:03:04.796Z",
+    "regime": "UNKNOWN",
+    "coinCount": 1,
+    "spreads": [
+      {
+        "coin": "BTC",
+        "binance_rate_apr": -7.4,
+        "hyperliquid_rate_apr": 10.95,
+        "spread_apr": -18.35,
+        "binance_available": true,
+        "hyperliquid_available": true
+      }
+    ]
+  },
+  {
+    "timestamp": "2026-02-27T09:03:04.378Z",
+    "regime": "UNKNOWN",
+    "coinCount": 1,
+    "spreads": [
+      {
+        "coin": "BTC",
+        "binance_rate_apr": -9.24,
+        "hyperliquid_rate_apr": 10.95,
+        "spread_apr": -20.19,
+        "binance_available": true,
+        "hyperliquid_available": true
+      }
+    ]
   }
 ]

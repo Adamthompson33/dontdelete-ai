@@ -1,18 +1,47 @@
 {
   "agent": "WREN",
   "team": "architect",
-  "lastUpdated": "2026-02-26T00:32:33.999Z",
-  "runNumber": 10,
+  "lastUpdated": "2026-02-27T00:32:13.458Z",
+  "runNumber": 11,
   "signals": {
-    "total": 15,
+    "total": 17,
     "correct": 0,
     "incorrect": 0,
-    "pending": 15,
+    "pending": 17,
     "accuracy": null,
-    "avgConfidence": 0.5459999999999999,
+    "avgConfidence": 0.5405882352941176,
     "calibrationScore": null
   },
   "recentSignals": [
+    {
+      "run": 11,
+      "asset": "BTC",
+      "direction": "flat",
+      "confidence": 0.5,
+      "kelly_size": 0,
+      "invalidation": "n/a",
+      "data_sources": [
+        "regime-chop-analysis",
+        "heat-management",
+        "kelly-engine"
+      ],
+      "timestamp": "2026-02-27T00:31:48.217Z",
+      "outcome": "pending"
+    },
+    {
+      "run": 11,
+      "asset": "BTC",
+      "direction": "flat",
+      "confidence": 0.5,
+      "kelly_size": 0,
+      "invalidation": "n/a",
+      "data_sources": [
+        "survival-discipline",
+        "heat-audit"
+      ],
+      "timestamp": "2026-02-27T00:30:50.669Z",
+      "outcome": "pending"
+    },
     {
       "run": 10,
       "asset": "BTC",
@@ -56,35 +85,6 @@
       ],
       "timestamp": "2026-02-25T00:31:56.555Z",
       "outcome": "pending"
-    },
-    {
-      "run": 9,
-      "asset": "SOL",
-      "direction": "long",
-      "confidence": 0.58,
-      "kelly_size": 0.06,
-      "invalidation": "SOL breaks below $76 on volume",
-      "data_sources": [
-        "funding-rates",
-        "spot-price",
-        "kelly-engine"
-      ],
-      "timestamp": "2026-02-25T00:30:53.169Z",
-      "outcome": "pending"
-    },
-    {
-      "run": 9,
-      "asset": "BTC",
-      "direction": "flat",
-      "confidence": 0.5,
-      "kelly_size": 0,
-      "invalidation": "n/a",
-      "data_sources": [
-        "regime-chop-analysis",
-        "survival-discipline"
-      ],
-      "timestamp": "2026-02-25T00:30:53.165Z",
-      "outcome": "pending"
     }
   ],
   "record": {
@@ -100,15 +100,15 @@
   "convergenceFlags": {
     "phrasesUsedByMultipleAgents": [
       "confidence kelly invalidation",
+      "signal flat btc",
+      "flat btc confidence",
       "btc confidence kelly",
-      "kelly invalidation btc",
-      "signal short vvv",
-      "short vvv confidence",
-      "vvv confidence kelly",
-      "kelly invalidation vvv",
-      "invalidation vvv funding",
-      "vvv funding compresses",
-      "signal flat btc"
+      "kelly invalidation sources",
+      "invalidation sources regimechopanalysis",
+      "invalidation sources regimechop",
+      "jinxs correlation audit",
+      "correlation not just",
+      "not just directional"
     ],
     "bannedPhrases": [
       {
@@ -134,6 +134,18 @@
       {
         "phrase": "kelly invalidation btc",
         "bannedAtRun": 10
+      },
+      {
+        "phrase": "invalidation sources regimechopanalysis",
+        "bannedAtRun": 11
+      },
+      {
+        "phrase": "correlation not just",
+        "bannedAtRun": 11
+      },
+      {
+        "phrase": "not just directional",
+        "bannedAtRun": 11
       }
     ]
   },

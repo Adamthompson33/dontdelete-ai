@@ -131,11 +131,23 @@ async function main() {
     rateCounts.set(rate, existing);
   }
   
+  // Known default/stale HL rates (observed 2026-02-27)
+  const KNOWN_STALE_RATES = [10.95, -10.95];
+  const STALE_TOLERANCE = 0.01; // match within 0.01%
+  
   let staleDetected = false;
   for (const [rate, staleCoins] of rateCounts) {
     if (staleCoins.length >= 3) {
       console.log(`⚠️ STALE DATA DETECTED: ${staleCoins.length} coins share identical HL rate ${rate}% — ${staleCoins.join(', ')}`);
       console.log(`   Skipping cycle to avoid generating signals from bad data.\n`);
+      staleDetected = true;
+    }
+  }
+  
+  // Secondary check: flag individual coins matching known default rates
+  for (const { coin: c, rate } of hlValues) {
+    if (KNOWN_STALE_RATES.some(sr => Math.abs(rate - sr) < STALE_TOLERANCE)) {
+      console.log(`⚠️ STALE DATA: ${c} HL rate ${rate}% matches known default. Excluding from spreads.`);
       staleDetected = true;
     }
   }

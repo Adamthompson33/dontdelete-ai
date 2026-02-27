@@ -1,19 +1,8 @@
 {
   "lastRegime": "TRENDING_DOWN",
-  "lastFactorScore": 41,
+  "lastFactorScore": 51,
   "lastFactorGrade": "MODERATE",
   "positions": {
-    "Will Bitcoin (BTC) close at $1_ARB_sakura-arb-scanner": {
-      "entryRegime": "VOLATILE",
-      "entryTime": "2026-02-25T09:04:08.629Z",
-      "entryPrice": 0.3497158854954914,
-      "entryFundingAPR": 0,
-      "entryParams": {
-        "stop": 0.03,
-        "size": 0.5,
-        "maxHold": 8
-      }
-    },
     "Will Bitcoin exceed $100,000 b_ARB_sakura-arb-scanner": {
       "entryRegime": "TRENDING_DOWN",
       "entryTime": "2026-02-26T09:04:09.384Z",
@@ -36,22 +25,22 @@
         "maxHold": 8
       }
     },
-    "ETH_LONG_pixel-momentum": {
-      "entryRegime": "TRENDING_LONG",
-      "entryTime": "2026-02-26T05:01:04.284Z",
-      "entryPrice": 2071.6,
-      "entryFundingAPR": 10.950000000000001,
+    "Will bitcoin's price go below _ARB_sakura-arb-scanner": {
+      "entryRegime": "TRENDING_DOWN",
+      "entryTime": "2026-02-26T21:04:08.932Z",
+      "entryPrice": 0.25000000000000006,
+      "entryFundingAPR": 0,
       "entryParams": {
         "stop": 0.03,
-        "size": 0.5,
-        "maxHold": 8
+        "size": 0.75,
+        "maxHold": 12
       }
     },
-    "SOL_LONG_pixel-momentum": {
-      "entryRegime": "TRENDING_LONG",
-      "entryTime": "2026-02-26T05:01:04.679Z",
-      "entryPrice": 88.563,
-      "entryFundingAPR": 6.881418,
+    "Will Bitcoin (BTC) close at $1_ARB_sakura-arb-scanner": {
+      "entryRegime": "VOLATILE",
+      "entryTime": "2026-02-25T09:04:08.629Z",
+      "entryPrice": 0.3497158854954914,
+      "entryFundingAPR": 0,
       "entryParams": {
         "stop": 0.03,
         "size": 0.5,
@@ -68,19 +57,8 @@
         "size": 0.75,
         "maxHold": 12
       }
-    },
-    "Will bitcoin's price go below _ARB_sakura-arb-scanner": {
-      "entryRegime": "TRENDING_DOWN",
-      "entryTime": "2026-02-26T21:04:08.932Z",
-      "entryPrice": 0.25000000000000006,
-      "entryFundingAPR": 0,
-      "entryParams": {
-        "stop": 0.03,
-        "size": 0.75,
-        "maxHold": 12
-      }
     }
   },
   "previousStopBreaches": [],
-  "lastRunAt": "2026-02-26T21:09:05.770Z"
+  "lastRunAt": "2026-02-27T05:09:04.527Z"
 }

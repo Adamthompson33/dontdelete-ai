@@ -19,6 +19,7 @@ import * as fs from 'fs';
 import * as path from 'path';
 import { REGIME_PARAMS, DEFAULT_REGIME_PARAMS, RegimeParams } from '../../academy/src/services/temporal-edge';
 import { isClosedPosition } from './lib/closed-position-gate';
+import { checkHLStale } from './lib/hl-stale-check';
 
 // ═══ Config ═══
 
@@ -379,6 +380,13 @@ async function main() {
   // Fetch current prices and funding
   const [prices, funding] = await Promise.all([getCurrentPrices(), getCurrentFunding()]);
   
+  // ═══ Stale HL Data Check (Oracle directive 2026-02-27) ═══
+  const fundingStale = checkHLStale(funding);
+  if (fundingStale.isStale) {
+    console.log(`⚠️ STALE HL FUNDING DATA: ${fundingStale.reason}`);
+    console.log(`   Funding-dependent checks (decay, carry) will use stale flag. Stop checks still use price data.\n`);
+  }
+  
   // Build/update position state
   const newPositions: Record<string, PositionState> = {};
   for (const sig of activeSignals) {
@@ -421,6 +429,33 @@ async function main() {
     const currentPrice = prices[sig.coin] || 0;
     const currentFundingAPR = funding[sig.coin] || 0;
     const holdHours = (now - new Date(pos.entryTime).getTime()) / (1000 * 60 * 60);
+    
+    // Grandfathering check (Oracle directive 2026-02-27): flag positions sized under old regime rules
+    const dir = (sig.direction || '').toUpperCase();
+    const currentMaxSize = dir === 'LONG' && currentParams.sizeLong !== undefined
+      ? currentParams.sizeLong
+      : dir === 'SHORT' && currentParams.sizeShort !== undefined
+      ? currentParams.sizeShort
+      : currentParams.size;
+    const positionSize = sig.kelly_size || 0;
+    const maxAllowedSize = (sig.kelly_size_pre_regime || positionSize) * currentMaxSize;
+    
+    if (positionSize > 0 && maxAllowedSize > 0 && positionSize > maxAllowedSize * 2) {
+      alerts.push({
+        type: 'REGIME_SHIFT',
+        severity: 'WARNING',
+        coin: sig.coin,
+        direction: dir,
+        message: `GRANDFATHERED: sized at ${(positionSize * 100).toFixed(1)}% under ${pos.entryRegime}, current regime ${currentRegime} allows max ${(maxAllowedSize * 100).toFixed(1)}%. Oversized by ${(positionSize / maxAllowedSize).toFixed(1)}x. Manual trim recommended.`,
+        action: 'TRIM',
+        details: {
+          currentSize: +(positionSize * 100).toFixed(2),
+          allowedSize: +(maxAllowedSize * 100).toFixed(2),
+          oversizeRatio: +(positionSize / maxAllowedSize).toFixed(2),
+          entryRegime: pos.entryRegime,
+        },
+      });
+    }
     
     // Regime shift
     const regimeAlert = checkRegimeShift(key, pos, currentRegime);

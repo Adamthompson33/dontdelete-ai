@@ -18,6 +18,7 @@ import * as path from 'path';
 import { FundingScanner, FundingOpportunity } from '../../academy/src/services/funding-scanner';
 import { REGIME_PARAMS, DEFAULT_REGIME_PARAMS, RegimeParams } from '../../academy/src/services/temporal-edge';
 import { isClosedPosition } from './lib/closed-position-gate';
+import { checkHLStale } from './lib/hl-stale-check';
 
 // ═══ Bot Challenge Signal Format ═══
 
@@ -235,6 +236,18 @@ async function main() {
   console.log(`🔍 Rei Funding ${modeLabel} — scanning HyperLiquid...\n`);
 
   const opportunities = await scanner.scan();
+
+  // ═══ Stale HL Data Check (Oracle directive 2026-02-27) ═══
+  const hlRatesMap: Record<string, number> = {};
+  for (const o of opportunities) {
+    hlRatesMap[o.coin] = o.annualizedRate * 100; // convert to % for stale check
+  }
+  const staleResult = checkHLStale(hlRatesMap);
+  if (staleResult.isStale) {
+    console.log(`⚠️ STALE HL DATA DETECTED: ${staleResult.reason}`);
+    console.log(`   Skipping cycle to avoid generating signals from stale funding data.\n`);
+    process.exit(0);
+  }
 
   // Load existing ledger for persistence check
   let ledger: PaperLedgerEntry;

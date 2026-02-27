@@ -1,26 +1,27 @@
 {
-  "timestamp": "2026-02-27T05:08:04.904Z",
+  "timestamp": "2026-02-27T09:08:03.995Z",
   "regime": "TRENDING_DOWN",
   "directional": {
-    "longCount": 23,
-    "shortCount": 18,
-    "longPct": 15,
-    "longAllocPct": 48,
-    "crowdingScore": 70,
-    "verdict": "HIGH: Short-biased at 15%. Regime-aware stops are the primary mitigation."
+    "longCount": 14,
+    "shortCount": 17,
+    "longPct": 10,
+    "longAllocPct": 55,
+    "crowdingScore": 80,
+    "verdict": "CRITICAL: 10% SHORT — portfolio is a directional bet, not diversified carry"
   },
   "sectors": [
     {
       "name": "New / Unclassified",
       "code": "NEW",
-      "count": 122,
-      "allocPct": 73,
+      "count": 118,
+      "allocPct": 72,
       "coins": [
+        null,
         "BTC",
-        "PENGU",
         "DOT",
-        "MORPHO",
-        "Will Bitcoin exceed $100,000 b",
+        "TAO",
+        "PENGU",
+        "Will Bitcoin be higher than $8",
         "[@mattyb’s 500th market specta",
         "Will Bitcoin (BTC) be below CH",
         "Will Bitcoin (BTC) price first",
@@ -29,25 +30,23 @@
         "Will Quinn Ewers defeat Arch M",
         "(1k subsidy) Will Connor McGre",
         "Will Roger Goodell be replaced",
-        "Will Bitcoin be higher than $8",
         "Will Bitcoin Outperform Altcoi",
         "More than 70% of U.S. populati",
         "Carried Interest Repeal by End",
         "PORTFOLIO",
-        null,
-        "TAO",
         "ATOM",
         "Will bitcoin's price go below ",
         "JUP",
         "MAVIA",
-        "Will Bitcoin (BTC) close at $1"
+        "Will Bitcoin (BTC) close at $1",
+        "VIRTUAL"
       ]
     },
     {
       "name": "Layer 1",
       "code": "L1",
-      "count": 20,
-      "allocPct": 23,
+      "count": 19,
+      "allocPct": 24,
       "coins": [
         "ETH",
         "SOL",
@@ -68,31 +67,32 @@
     {
       "name": "Layer 2 / Scaling",
       "code": "L2",
-      "count": 3,
+      "count": 2,
       "allocPct": 1,
       "coins": [
         "BLAST"
       ]
     }
   ],
-  "sectorHHI": 5868,
-  "sectorVerdict": "CRITICAL: HHI 5868 — portfolio dominated by New / Unclassified (73%). A sector-wide event would be catastrophic.",
+  "sectorHHI": 5770,
+  "sectorVerdict": "CRITICAL: HHI 5770 — portfolio dominated by New / Unclassified (72%). A sector-wide event would be catastrophic.",
   "btcBeta": {
-    "avgCorrelation": 34.48,
+    "avgCorrelation": 28.14,
     "highBetaCoins": [
-      "DOT"
+      "DOT",
+      "BTC"
     ],
     "lowBetaCoins": [
       "BTC",
-      "PENGU",
-      "DOT",
       "ETH",
-      "SUI",
-      "MORPHO",
-      "BLAST",
       "SOL",
+      "DOT",
       "TAO",
-      "MAVIA"
+      "PENGU",
+      "BLAST",
+      "MAVIA",
+      "VIRTUAL",
+      "SUI"
     ],
     "btcExposurePct": 1,
     "verdict": "LOW: Only 1% high-beta. Portfolio has meaningful independence from BTC moves."
@@ -106,7 +106,7 @@
           "SUI",
           "NEAR"
         ],
-        "totalAlloc": 12
+        "totalAlloc": 13
       },
       {
         "narrative": "DeFi Revival",
@@ -124,16 +124,16 @@
         "totalAlloc": 1
       }
     ],
-    "maxClusterPct": 12,
+    "maxClusterPct": 13,
     "verdict": "LOW: No single narrative exceeds 25%. Good narrative diversification."
   },
   "overallRisk": {
-    "score": 51,
+    "score": 55,
     "grade": "MODERATE",
     "factors": [
-      "Directional crowding (15% long)",
-      "Sector concentration (HHI 5868)",
-      "Narrative clustering (\"Alt L1 Recovery\" at 12%)"
+      "Directional crowding (10% long)",
+      "Sector concentration (HHI 5770)",
+      "Narrative clustering (\"Alt L1 Recovery\" at 13%)"
     ],
     "recommendation": "ACCEPTABLE. Current risk controls (regime params, Sentry gate, Kelly sizing) are adequate. Monitor for crowding increases."
   }

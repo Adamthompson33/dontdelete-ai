@@ -13,6 +13,7 @@
 
 import * as fs from 'fs';
 import * as path from 'path';
+import { checkHLStale } from './lib/hl-stale-check';
 
 const RESULTS_DIR = path.join(__dirname, '..', 'results');
 const LEDGER_FILE = path.join(RESULTS_DIR, 'paper-ledger.json');
@@ -118,38 +119,12 @@ async function main() {
     fetchBinanceRates(),
   ]);
 
-  // ═══ Stale Data Check (Oracle directive 2026-02-27) ═══
-  // If 3+ coins show identical HL funding rate, flag as stale and skip cycle
-  const hlValues = Object.entries(hlRates)
-    .filter(([c]) => coins.includes(c))
-    .map(([c, r]) => ({ coin: c, rate: +r.toFixed(4) }));
-  
-  const rateCounts = new Map<number, string[]>();
-  for (const { coin: c, rate } of hlValues) {
-    const existing = rateCounts.get(rate) || [];
-    existing.push(c);
-    rateCounts.set(rate, existing);
-  }
-  
-  // Known default/stale HL rates (observed 2026-02-27)
-  const KNOWN_STALE_RATES = [10.95, -10.95];
-  const STALE_TOLERANCE = 0.01; // match within 0.01%
-  
-  let staleDetected = false;
-  for (const [rate, staleCoins] of rateCounts) {
-    if (staleCoins.length >= 3) {
-      console.log(`⚠️ STALE DATA DETECTED: ${staleCoins.length} coins share identical HL rate ${rate}% — ${staleCoins.join(', ')}`);
-      console.log(`   Skipping cycle to avoid generating signals from bad data.\n`);
-      staleDetected = true;
-    }
-  }
-  
-  // Secondary check: flag individual coins matching known default rates
-  for (const { coin: c, rate } of hlValues) {
-    if (KNOWN_STALE_RATES.some(sr => Math.abs(rate - sr) < STALE_TOLERANCE)) {
-      console.log(`⚠️ STALE DATA: ${c} HL rate ${rate}% matches known default. Excluding from spreads.`);
-      staleDetected = true;
-    }
+  // ═══ Stale Data Check (Oracle directive 2026-02-27) — shared utility ═══
+  const staleResult = checkHLStale(hlRates, coins);
+  const staleDetected = staleResult.isStale;
+  if (staleDetected) {
+    console.log(`⚠️ STALE DATA DETECTED: ${staleResult.reason}`);
+    console.log(`   Skipping cycle to avoid generating signals from bad data.\n`);
   }
 
   if (staleDetected) {

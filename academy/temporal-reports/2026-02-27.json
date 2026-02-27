@@ -1,13 +1,13 @@
 {
-  "scannedAt": "2026-02-27T05:04:25.352Z",
+  "scannedAt": "2026-02-27T09:04:25.176Z",
   "signals": [],
   "regimes": {
     "BTC": {
       "regime": "CHOPPY",
-      "adx": 9.969587486433305,
-      "volatilityRatio": 0.655292188796477,
-      "priceChange1h": 0.118140469017662,
-      "priceChange24h": -0.893183446138553
+      "adx": 14.407136304787615,
+      "volatilityRatio": 0.49261431280580453,
+      "priceChange1h": -0.11780297452510675,
+      "priceChange24h": -1.0647607934655776
     }
   },
   "regimeParams": {
@@ -16,5 +16,5 @@
     "maxHold": 4
   },
   "nextResetMinutes": 56,
-  "session": "asian"
+  "session": "european"
 }

@@ -1,19 +1,8 @@
 {
   "lastRegime": "TRENDING_DOWN",
-  "lastFactorScore": 51,
+  "lastFactorScore": 55,
   "lastFactorGrade": "MODERATE",
   "positions": {
-    "Will Bitcoin exceed $100,000 b_ARB_sakura-arb-scanner": {
-      "entryRegime": "TRENDING_DOWN",
-      "entryTime": "2026-02-26T09:04:09.384Z",
-      "entryPrice": 0.43999999999999984,
-      "entryFundingAPR": 0,
-      "entryParams": {
-        "stop": 0.03,
-        "size": 0.75,
-        "maxHold": 12
-      }
-    },
     "BTC_LONG_pixel-momentum": {
       "entryRegime": "TRENDING_LONG",
       "entryTime": "2026-02-26T09:01:04.300Z",
@@ -60,5 +49,5 @@
     }
   },
   "previousStopBreaches": [],
-  "lastRunAt": "2026-02-27T05:09:04.527Z"
+  "lastRunAt": "2026-02-27T09:09:04.565Z"
 }

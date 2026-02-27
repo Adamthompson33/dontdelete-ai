@@ -1,13 +1,13 @@
 {
   "date": "2026-02-27",
-  "scannedAt": "2026-02-27T05:04:08.880Z",
-  "marketsScanned": 43,
+  "scannedAt": "2026-02-27T09:04:09.691Z",
+  "marketsScanned": 42,
   "opportunitiesFound": 14,
   "signals": [
     {
       "tool": "sakura-arb-scanner",
-      "timestamp": "2026-02-27T05:04:08.514Z",
-      "unixMs": 1772168648514,
+      "timestamp": "2026-02-27T09:04:09.420Z",
+      "unixMs": 1772183049420,
       "coin": "Will Bitcoin be higher than $8",
       "direction": "ARB",
       "confidence": "medium",
@@ -30,8 +30,8 @@
     },
     {
       "tool": "sakura-arb-scanner",
-      "timestamp": "2026-02-27T05:04:08.514Z",
-      "unixMs": 1772168648514,
+      "timestamp": "2026-02-27T09:04:09.420Z",
+      "unixMs": 1772183049420,
       "coin": "Will Bitcoin be higher than $8",
       "direction": "ARB",
       "confidence": "high",
@@ -54,8 +54,8 @@
     },
     {
       "tool": "sakura-arb-scanner",
-      "timestamp": "2026-02-27T05:04:08.514Z",
-      "unixMs": 1772168648514,
+      "timestamp": "2026-02-27T09:04:09.420Z",
+      "unixMs": 1772183049420,
       "coin": "Will Bitcoin be higher than $8",
       "direction": "ARB",
       "confidence": "high",
@@ -78,8 +78,8 @@
     },
     {
       "tool": "sakura-arb-scanner",
-      "timestamp": "2026-02-27T05:04:08.514Z",
-      "unixMs": 1772168648514,
+      "timestamp": "2026-02-27T09:04:09.420Z",
+      "unixMs": 1772183049420,
       "coin": "[@mattyb’s 500th market specta",
       "direction": "ARB",
       "confidence": "low",
@@ -97,8 +97,8 @@
     },
     {
       "tool": "sakura-arb-scanner",
-      "timestamp": "2026-02-27T05:04:08.514Z",
-      "unixMs": 1772168648514,
+      "timestamp": "2026-02-27T09:04:09.420Z",
+      "unixMs": 1772183049420,
       "coin": "Will Bitcoin (BTC) be below CH",
       "direction": "ARB",
       "confidence": "low",
@@ -116,8 +116,8 @@
     },
     {
       "tool": "sakura-arb-scanner",
-      "timestamp": "2026-02-27T05:04:08.514Z",
-      "unixMs": 1772168648514,
+      "timestamp": "2026-02-27T09:04:09.420Z",
+      "unixMs": 1772183049420,
       "coin": "Will Bitcoin (BTC) price first",
       "direction": "ARB",
       "confidence": "low",
@@ -135,8 +135,8 @@
     },
     {
       "tool": "sakura-arb-scanner",
-      "timestamp": "2026-02-27T05:04:08.514Z",
-      "unixMs": 1772168648514,
+      "timestamp": "2026-02-27T09:04:09.420Z",
+      "unixMs": 1772183049420,
       "coin": "Will a Republican President ch",
       "direction": "ARB",
       "confidence": "low",
@@ -154,8 +154,8 @@
     },
     {
       "tool": "sakura-arb-scanner",
-      "timestamp": "2026-02-27T05:04:08.514Z",
-      "unixMs": 1772168648514,
+      "timestamp": "2026-02-27T09:04:09.420Z",
+      "unixMs": 1772183049420,
       "coin": "Will a former US president acc",
       "direction": "ARB",
       "confidence": "low",
@@ -173,8 +173,8 @@
     },
     {
       "tool": "sakura-arb-scanner",
-      "timestamp": "2026-02-27T05:04:08.514Z",
-      "unixMs": 1772168648514,
+      "timestamp": "2026-02-27T09:04:09.420Z",
+      "unixMs": 1772183049420,
       "coin": "Will Quinn Ewers defeat Arch M",
       "direction": "ARB",
       "confidence": "low",
@@ -192,8 +192,8 @@
     },
     {
       "tool": "sakura-arb-scanner",
-      "timestamp": "2026-02-27T05:04:08.514Z",
-      "unixMs": 1772168648514,
+      "timestamp": "2026-02-27T09:04:09.420Z",
+      "unixMs": 1772183049420,
       "coin": "(1k subsidy) Will Connor McGre",
       "direction": "ARB",
       "confidence": "low",
@@ -211,8 +211,8 @@
     },
     {
       "tool": "sakura-arb-scanner",
-      "timestamp": "2026-02-27T05:04:08.514Z",
-      "unixMs": 1772168648514,
+      "timestamp": "2026-02-27T09:04:09.420Z",
+      "unixMs": 1772183049420,
       "coin": "Will Roger Goodell be replaced",
       "direction": "ARB",
       "confidence": "low",
@@ -230,8 +230,8 @@
     },
     {
       "tool": "sakura-arb-scanner",
-      "timestamp": "2026-02-27T05:04:08.514Z",
-      "unixMs": 1772168648514,
+      "timestamp": "2026-02-27T09:04:09.420Z",
+      "unixMs": 1772183049420,
       "coin": "Will Bitcoin Outperform Altcoi",
       "direction": "ARB",
       "confidence": "low",
@@ -249,8 +249,8 @@
     },
     {
       "tool": "sakura-arb-scanner",
-      "timestamp": "2026-02-27T05:04:08.514Z",
-      "unixMs": 1772168648514,
+      "timestamp": "2026-02-27T09:04:09.420Z",
+      "unixMs": 1772183049420,
       "coin": "More than 70% of U.S. populati",
       "direction": "ARB",
       "confidence": "low",
@@ -268,14 +268,14 @@
     },
     {
       "tool": "sakura-arb-scanner",
-      "timestamp": "2026-02-27T05:04:08.514Z",
-      "unixMs": 1772168648514,
+      "timestamp": "2026-02-27T09:04:09.420Z",
+      "unixMs": 1772183049420,
       "coin": "Carried Interest Repeal by End",
       "direction": "ARB",
       "confidence": "low",
       "entryPrice": 0.12644364775382597,
-      "expectedEdge": 4.5,
-      "reasoning": "No bets in 9 days despite $10000 liquidity and $16278 volume. Price at 13% may not reflect current information. Research needed.",
+      "expectedEdge": 5,
+      "reasoning": "No bets in 10 days despite $10000 liquidity and $16278 volume. Price at 13% may not reflect current information. Research needed.",
       "invalidation": "Edge drops below 3pp or markets resolve.",
       "markets": [
         {
@@ -534,7 +534,7 @@
     },
     {
       "type": "stale",
-      "description": "Stale price: \"Carried Interest Repeal by End of 2026...\" (9 days, $10000 liq)",
+      "description": "Stale price: \"Carried Interest Repeal by End of 2026...\" (10 days, $10000 liq)",
       "markets": [
         {
           "id": "l59l9SI5zt",
@@ -545,9 +545,9 @@
           "url": "https://manifold.markets/CarsonGale/carried-interest-repeal-by-end-of-2"
         }
       ],
-      "expectedEdge": 4.5,
+      "expectedEdge": 5,
       "confidence": "low",
-      "reasoning": "No bets in 9 days despite $10000 liquidity and $16278 volume. Price at 13% may not reflect current information. Research needed."
+      "reasoning": "No bets in 10 days despite $10000 liquidity and $16278 volume. Price at 13% may not reflect current information. Research needed."
     },
     {
       "type": "stale",

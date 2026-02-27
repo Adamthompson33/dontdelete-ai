@@ -1,12 +1,12 @@
 {
   "date": "2026-02-27",
-  "sizedAt": "2026-02-27T05:06:03.586Z",
-  "totalSignals": 1780,
+  "sizedAt": "2026-02-27T09:06:03.950Z",
+  "totalSignals": 1803,
   "newlySized": 23,
-  "alreadySized": 1757,
+  "alreadySized": 1780,
   "sized": 3,
   "skipped": 20,
-  "totalAllocation": 1.0037390000000002,
+  "totalAllocation": 0.867586,
   "maxKelly": 0.2,
   "positions": [
     {
@@ -52,6 +52,30 @@
       "action": "SKIP"
     },
     {
+      "coin": "VIRTUAL",
+      "tool": "sentry-sentiment-scanner",
+      "direction": "FLAT",
+      "confidence": 0.35,
+      "kelly": 0,
+      "action": "SKIP"
+    },
+    {
+      "coin": "SOL",
+      "tool": "sentry-sentiment-scanner",
+      "direction": "FLAT",
+      "confidence": 0.35,
+      "kelly": 0,
+      "action": "SKIP"
+    },
+    {
+      "coin": "ETH",
+      "tool": "sentry-sentiment-scanner",
+      "direction": "FLAT",
+      "confidence": 0.35,
+      "kelly": 0,
+      "action": "SKIP"
+    },
+    {
       "coin": "SUI",
       "tool": "sentry-sentiment-scanner",
       "direction": "FLAT",
@@ -68,34 +92,10 @@
       "action": "SKIP"
     },
     {
-      "coin": "AAVE",
-      "tool": "sentry-sentiment-scanner",
-      "direction": "FLAT",
-      "confidence": 0.35,
-      "kelly": 0,
-      "action": "SKIP"
-    },
-    {
       "coin": "UNI",
       "tool": "sentry-sentiment-scanner",
       "direction": "SHORT",
-      "confidence": 0.43705131299437944,
-      "kelly": 0,
-      "action": "SKIP"
-    },
-    {
-      "coin": "ETH",
-      "tool": "sentry-sentiment-scanner",
-      "direction": "FLAT",
-      "confidence": 0.35,
-      "kelly": 0,
-      "action": "SKIP"
-    },
-    {
-      "coin": "SOL",
-      "tool": "sentry-sentiment-scanner",
-      "direction": "FLAT",
-      "confidence": 0.35,
+      "confidence": 0.4412086657906582,
       "kelly": 0,
       "action": "SKIP"
     },

@@ -1,11 +1,11 @@
 {
-  "timestamp": "2026-02-27T05:09:04.525Z",
+  "timestamp": "2026-02-27T09:09:04.563Z",
   "regime": "TRENDING_DOWN",
   "previousRegime": "TRENDING_DOWN",
   "regimeShifted": false,
   "alerts": [],
   "summary": {
-    "totalPositions": 5,
+    "totalPositions": 4,
     "alertCount": 0,
     "criticalCount": 0,
     "warningCount": 0,

@@ -219,6 +219,35 @@ function analyzeSentryV3Trial(): SentryV3TrialResult {
   return { lockedDirectional: locked.length, lockedWR, liveWR };
 }
 
+function analyzeReiV2Trial(): { lockedHigh: number; lockedWR: number | null; liveHigh: number; liveWR: number | null } {
+  const ledger = loadJSON(LEDGER_FILE);
+  if (!ledger?.signals) return { lockedHigh: 0, lockedWR: null, liveHigh: 0, liveWR: null };
+
+  const V2_CUTOFF = '2026-03-02T00:00:00Z';
+
+  // v2 trial signals: either reiVersion=2 OR from Mar 2 onwards, HIGH confidence only, not EXPIRED
+  const v2High = ledger.signals.filter((s: any) =>
+    s.tool === 'rei-funding-carry' &&
+    (s.reiVersion === 2 || s.timestamp >= V2_CUTOFF) &&
+    (s.confidence === 'high' || s.tier === 'HIGH') &&
+    s.outcome?.lockReason !== 'non-evaluatable' &&
+    s.outcome?.lockReason !== 'migration'  // exclude migration-locked — imperfect timestamps
+  );
+
+  const lockedHigh = v2High.filter((s: any) => s.outcome?.locked === true);
+  const liveHigh = v2High.filter((s: any) => s.outcome && !s.outcome.locked);
+
+  const lockedWinners = lockedHigh.filter((s: any) => s.outcome?.pnlPercent > 0);
+  const liveWinners = liveHigh.filter((s: any) => s.outcome?.pnlPercent > 0);
+
+  return {
+    lockedHigh: lockedHigh.length,
+    lockedWR: lockedHigh.length > 0 ? lockedWinners.length / lockedHigh.length : null,
+    liveHigh: liveHigh.length,
+    liveWR: liveHigh.length > 0 ? liveWinners.length / liveHigh.length : null,
+  };
+}
+
 function identifyWeakestPositions(count: number): string[] {
   const medic = loadJSON(MEDIC_STATE);
   const ledger = loadJSON(LEDGER_FILE);
@@ -322,10 +351,11 @@ function generateDirectives(): HelenaDirective[] {
     });
   }
   
-  // ═══ Rule 6: Agent WR < 40% over 50+ signals → FLAG (sentry + non-evaluatable handled separately) ═══
+  // ═══ Rule 6: Agent WR < 40% over 50+ signals → FLAG (sentry + rei + non-evaluatable handled separately) ═══
   const flaggedAgents: string[] = [];
   for (const [agent, perf] of Object.entries(agentPerf)) {
     if (NON_EVALUATABLE_TOOLS.has(agent)) continue;
+    if (agent === 'rei-funding-carry') continue; // v2 trial logic in Rule 8
     if (perf.signals >= AGENT_WR_MIN_SIGNALS && perf.wr < AGENT_WR_MIN) {
       flaggedAgents.push(agent);
       directives.push({
@@ -350,6 +380,18 @@ function generateDirectives(): HelenaDirective[] {
     });
   }
   
+  // ═══ Rule 8: Rei v2 Trial — FLAG only when 50+ locked HIGH with WR < 55% ═══
+  const reiTrial = analyzeReiV2Trial();
+  if (reiTrial.lockedHigh >= 50 && reiTrial.lockedWR !== null && reiTrial.lockedWR < 0.55) {
+    directives.push({
+      action: 'FLAG_AGENT',
+      severity: 'HIGH',
+      reason: `rei-funding-carry v2: ${(reiTrial.lockedWR * 100).toFixed(1)}% WR over ${reiTrial.lockedHigh} locked HIGH signals (below 55% Oracle trial threshold). Consider permanent disable.`,
+      agentFlags: ['rei-funding-carry'],
+      timestamp: now,
+    });
+  }
+
   // ═══ All Clear ═══
   if (directives.length === 0) {
     directives.push({
@@ -505,6 +547,7 @@ async function main() {
   const sat = analyzeSaturation();
   const agentPerf = analyzeAgentPerformance();
   const sentryTrial = analyzeSentryV3Trial();
+  const reiTrial = analyzeReiV2Trial();
   const maxJinx = Math.max(jinx.factorScore, jinx.correlationScore);
   const totalPositions = jinx.directional.long + jinx.directional.short;
   const pctShort = totalPositions > 0 ? jinx.directional.short / totalPositions : 0;
@@ -521,9 +564,10 @@ async function main() {
   console.log('🎯 AGENT PERFORMANCE');
   for (const [agent, perf] of Object.entries(agentPerf)) {
     const isSentry = agent === 'sentry-sentiment-scanner';
+    const isRei = agent === 'rei-funding-carry';
     const isNonEval = NON_EVALUATABLE_TOOLS.has(agent);
-    const flag = !isNonEval && perf.signals >= AGENT_WR_MIN_SIGNALS && perf.wr < AGENT_WR_MIN ? ' ⚠️ UNDERPERFORMING' : '';
-    const note = isSentry ? ' [v3 trial — see below]' : isNonEval ? ' [non-evaluatable]' : '';
+    const flag = !isNonEval && !isRei && perf.signals >= AGENT_WR_MIN_SIGNALS && perf.wr < AGENT_WR_MIN ? ' ⚠️ UNDERPERFORMING' : '';
+    const note = isSentry ? ' [v3 trial — see below]' : isRei ? ' [v2 trial — see below]' : isNonEval ? ' [non-evaluatable]' : '';
     console.log(`   ${agent}: ${(perf.wr * 100).toFixed(1)}% WR (${perf.signals} signals, ${perf.pnl >= 0 ? '+' : ''}${perf.pnl.toFixed(1)}% P&L)${flag}${note}`);
   }
   console.log();
@@ -541,6 +585,21 @@ async function main() {
     console.log(`   Current WR (live):     No live data yet`);
   }
   console.log(`   Verdict due: ~Mar 9 AEDT`);
+  console.log();
+
+  console.log('═══ REI v2 TRIAL (HIGH confidence only) ═══');
+  console.log(`   Locked HIGH outcomes: ${reiTrial.lockedHigh} / 50`);
+  if (reiTrial.lockedHigh > 0 && reiTrial.lockedWR !== null) {
+    console.log(`   Current WR (locked): ${(reiTrial.lockedWR * 100).toFixed(1)}%`);
+  } else {
+    console.log(`   Current WR (locked): Pending first locks (~8h)`);
+  }
+  if (reiTrial.liveWR !== null) {
+    console.log(`   Current WR (live):   ${(reiTrial.liveWR * 100).toFixed(1)}%`);
+  } else {
+    console.log(`   Current WR (live):   No live outcomes yet`);
+  }
+  console.log(`   Threshold: >55% to confirm edge | <55% to disable permanently`);
   console.log();
   
   // Generate directives
@@ -583,9 +642,10 @@ async function main() {
   state.haltActive = directives.some(d => d.action === 'HALT');
   state.activeDirectives = directives;
   
-  // Update agent watchlist (sentry handled separately via v3 trial)
+  // Update agent watchlist (sentry + rei handled separately via their trial logic)
   for (const [agent, perf] of Object.entries(agentPerf)) {
     if (agent === 'sentry-sentiment-scanner') continue;
+    if (agent === 'rei-funding-carry') continue;
     if (perf.signals >= AGENT_WR_MIN_SIGNALS && perf.wr < AGENT_WR_MIN) {
       state.agentWatchlist[agent] = {
         wr: perf.wr,
@@ -607,6 +667,19 @@ async function main() {
       };
     } else {
       delete state.agentWatchlist['sentry-sentiment-scanner'];
+    }
+  }
+
+  // Rei watchlist: only based on v2 trial verdict (50+ locked HIGH)
+  if (reiTrial.lockedHigh >= 50 && reiTrial.lockedWR !== null) {
+    if (reiTrial.lockedWR < 0.55) {
+      state.agentWatchlist['rei-funding-carry'] = {
+        wr: reiTrial.lockedWR,
+        signals: reiTrial.lockedHigh,
+        flaggedAt: report.timestamp,
+      };
+    } else {
+      delete state.agentWatchlist['rei-funding-carry'];
     }
   }
   

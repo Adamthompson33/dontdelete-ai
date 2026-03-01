@@ -460,8 +460,17 @@ async function main() {
   const lowCount = signals.filter(s => s.tier === 'LOW').length;
   console.log(`Tiers: ${highCount} HIGH | ${medCount} MEDIUM | ${lowCount} LOW (log only)\n`);
 
-  // Append to paper ledger
-  ledger.signals.push(...signals);
+  // Tag every signal with v2 trial metadata
+  for (const signal of signals) {
+    (signal as any).reiVersion = 2;
+    (signal as any).reiTrial = true;
+    (signal as any).reiTrialStarted = '2026-03-02T00:00:00Z';
+  }
+
+  // Trial mode: only append HIGH confidence signals to ledger
+  // MEDIUM and LOW are console-logged above (informational) but not written to ledger
+  const trialSignals = signals.filter(s => s.tier === 'HIGH');
+  ledger.signals.push(...trialSignals);
   ledger.lastScanAt = new Date().toISOString();
   ledger.totalScans++;
 
@@ -471,7 +480,7 @@ async function main() {
   }
 
   fs.writeFileSync(LEDGER_FILE, JSON.stringify(ledger, null, 2), 'utf-8');
-  console.log(`✅ Logged ${signals.length} signals to paper-ledger.json (total: ${ledger.signals.length} signals, ${ledger.totalScans} scans)`);
+  console.log(`✅ Logged ${trialSignals.length} HIGH signals to ledger (${signals.length - trialSignals.length} MEDIUM/LOW filtered — trial mode). Total: ${ledger.signals.length}`);
 
   // Save daily report
   if (!fs.existsSync(REPORT_DIR)) {

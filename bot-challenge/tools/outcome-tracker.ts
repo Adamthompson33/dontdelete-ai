@@ -1,10 +1,12 @@
 #!/usr/bin/env npx tsx
 /**
  * Outcome Tracker — Bot Challenge Tool
- * 
+ *
  * Checks current prices against paper ledger signals to calculate P&L.
  * For funding carry signals: checks if the funding rate is still extreme.
  * For arb signals: checks if the edge still exists.
+ *
+ * Locked-outcome system: P&L is frozen at maxHold expiry to stop WR drift.
  */
 
 import * as fs from 'fs';
@@ -13,6 +15,9 @@ import * as path from 'path';
 const HL_API = 'https://api.hyperliquid.xyz/info';
 const LEDGER_FILE = path.join(__dirname, '..', 'results', 'paper-ledger.json');
 const REPORT_DIR = path.join(__dirname, '..', 'reports');
+
+const MAX_HOLD_HOURS = 72; // fallback when signal has no regimeMaxHold
+const MIGRATION_CUTOFF_HOURS = 72;
 
 interface Signal {
   tool: string;
@@ -31,6 +36,9 @@ interface Signal {
     priceChange?: number;
     pnlPercent?: number;
     status: string;
+    locked?: boolean;       // true = P&L is permanently frozen
+    lockedAt?: string;      // ISO timestamp when it was locked
+    lockReason?: string;    // "maxHold" | "stopLoss" | "migration"
   };
 }
 
@@ -71,7 +79,27 @@ async function main() {
   const now = Date.now();
   let updated = 0;
 
+  // MIGRATION: lock all signals past 72h that have outcomes but aren't locked yet
+  let migrated = 0;
   for (const signal of ledger.signals as Signal[]) {
+    if (signal.outcome && !signal.outcome.locked) {
+      const hoursOld = (now - signal.unixMs) / (1000 * 60 * 60);
+      if (hoursOld >= MIGRATION_CUTOFF_HOURS) {
+        signal.outcome.locked = true;
+        signal.outcome.lockedAt = new Date().toISOString();
+        signal.outcome.lockReason = 'migration';
+        migrated++;
+      }
+    }
+  }
+  if (migrated > 0) {
+    console.log(`🔒 MIGRATION: Locked ${migrated} stale outcomes (>72h old)\n`);
+  }
+
+  for (const signal of ledger.signals as Signal[]) {
+    // Skip already-locked outcomes - never recalculate
+    if (signal.outcome?.locked === true) continue;
+
     // Skip arb signals (no HL price to check)
     if (signal.tool === 'sakura-arb-scanner') continue;
     // Skip if no entry price
@@ -108,8 +136,18 @@ async function main() {
       status: pnl > 0 ? 'WINNING' : 'LOSING',
     };
 
+    // Lock on maxHold expiry
+    const signalMaxHold = (signal as any).regimeMaxHold ?? MAX_HOLD_HOURS;
+    const hoursHeld = (now - signal.unixMs) / (1000 * 60 * 60);
+    if (hoursHeld >= signalMaxHold) {
+      signal.outcome.locked = true;
+      signal.outcome.lockedAt = new Date().toISOString();
+      signal.outcome.lockReason = 'maxHold';
+    }
+
     const icon = pnl > 0 ? '✅' : '❌';
-    console.log(`${icon} ${signal.tool} | ${coin} ${signal.direction} | ${hoursAgo}h ago`);
+    const lockTag = signal.outcome.locked ? ' 🔒' : '';
+    console.log(`${icon} ${signal.tool} | ${coin} ${signal.direction} | ${hoursAgo}h ago${lockTag}`);
     console.log(`   Entry: $${signal.entryPrice.toFixed(4)} → Now: $${current.markPx.toFixed(4)} (${priceChange >= 0 ? '+' : ''}${priceChange.toFixed(2)}%)`);
     if (signal.annualizedRate) {
       console.log(`   Funding: ${(signal.annualizedRate * 100).toFixed(1)}% → ${(current.annualized * 100).toFixed(1)}% APR`);
@@ -120,12 +158,26 @@ async function main() {
 
   // Summary
   const tracked = (ledger.signals as Signal[]).filter(s => s.outcome);
+  const lockedOutcomes = tracked.filter(s => s.outcome!.locked === true);
+  const liveOutcomes = tracked.filter(s => !s.outcome!.locked);
+
   const winning = tracked.filter(s => s.outcome!.pnlPercent! > 0);
+  const winningLocked = lockedOutcomes.filter(s => s.outcome!.pnlPercent! > 0);
+  const winningLive = liveOutcomes.filter(s => s.outcome!.pnlPercent! > 0);
+
   const totalPnl = tracked.reduce((sum, s) => sum + (s.outcome!.pnlPercent || 0), 0);
 
+  const wrAll = tracked.length > 0 ? ((winning.length / tracked.length) * 100).toFixed(1) : '0.0';
+  const wrLocked = lockedOutcomes.length > 0 ? ((winningLocked.length / lockedOutcomes.length) * 100).toFixed(1) : 'N/A';
+  const wrLive = liveOutcomes.length > 0 ? ((winningLive.length / liveOutcomes.length) * 100).toFixed(1) : 'N/A';
+
   console.log(`\n═══ SUMMARY ═══`);
-  console.log(`Tracked: ${tracked.length} signals`);
-  console.log(`Winning: ${winning.length}/${tracked.length} (${tracked.length > 0 ? ((winning.length / tracked.length) * 100).toFixed(0) : 0}%)`);
+  console.log(`Locked outcomes: ${lockedOutcomes.length} (frozen P&L)`);
+  console.log(`Live outcomes:   ${liveOutcomes.length} (recalculated this scan)`);
+  console.log(`Total signals:   ${tracked.length}`);
+  console.log(`Win rate (all):    ${wrAll}%`);
+  console.log(`Win rate (locked): ${wrLocked}%`);
+  console.log(`Win rate (live):   ${wrLive}%`);
   console.log(`Total P&L: ${totalPnl >= 0 ? '+' : ''}${totalPnl.toFixed(2)}%`);
   console.log(`Avg P&L: ${tracked.length > 0 ? (totalPnl / tracked.length).toFixed(2) : 0}%\n`);
 
@@ -140,7 +192,14 @@ async function main() {
     date,
     checkedAt: new Date().toISOString(),
     tracked: tracked.length,
+    lockedOutcomes: lockedOutcomes.length,
+    liveOutcomes: liveOutcomes.length,
     winning: winning.length,
+    winningLocked: winningLocked.length,
+    winningLive: winningLive.length,
+    winRate: wrAll,
+    winRateLocked: wrLocked,
+    winRateLive: wrLive,
     totalPnl,
     avgPnl: tracked.length > 0 ? totalPnl / tracked.length : 0,
     signals: tracked,

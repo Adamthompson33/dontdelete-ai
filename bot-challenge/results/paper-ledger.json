@@ -62249,8 +62249,306 @@
       "direction": "LONG",
       "confidence": 0.6368675475346439,
       "reasoning": "betfair_ex_eu moved Manchester City line: 970 → 5.8 (+7.9% implied). Polymarket may lag 2-3h."
+    },
+    {
+      "tool": "sentry-sentiment-scanner",
+      "timestamp": "2026-03-01T10:47:29.409Z",
+      "unixMs": 1772362049411,
+      "coin": "PENGU",
+      "direction": "LONG",
+      "confidence": 0.85,
+      "entryPrice": 0.006834774924827563,
+      "reasoning": "[X] X posts highlight bullish technical setups like Wyckoff springs, volume accumulation, EMA stacks, and long entries targeting higher levels around $0.008-$0.01. (news: no clear catalyst)",
+      "invalidation": "News/X sentiment shifts within 8h.",
+      "sentimentScore": 85,
+      "trendingRank": 1,
+      "priceChange24h": 7.859617084723279,
+      "headlines": [],
+      "fearGreedValue": 14,
+      "fearGreedLabel": "Extreme Fear",
+      "xSentiment": {
+        "direction": "LONG",
+        "confidence": 85,
+        "reasoning": "X posts highlight bullish technical setups like Wyckoff springs, volume accumulation, EMA stacks, and long entries targeting higher levels around $0.008-$0.01."
+      },
+      "newsSentiment": {
+        "direction": "FLAT",
+        "confidence": 30
+      },
+      "dataSource": "news+rss+x"
+    },
+    {
+      "tool": "sentry-sentiment-scanner",
+      "timestamp": "2026-03-01T10:47:32.583Z",
+      "unixMs": 1772362052583,
+      "coin": "BTC",
+      "direction": "FLAT",
+      "confidence": 0.6,
+      "entryPrice": 66528.09937231697,
+      "reasoning": "⚡ DIVERGENCE — News: LONG (75%) | X: SHORT (70%)",
+      "invalidation": "News/X sentiment shifts within 8h.",
+      "sentimentScore": 60,
+      "trendingRank": 2,
+      "priceChange24h": 4.016572862134118,
+      "headlines": [
+        "Bitcoin recovers to $68K following death of Iranian Supreme Leader",
+        "Bitcoin bottom fractal calls for 130% rally, but is the model valid in 2026?",
+        "Buying Bitcoin? Hold for at least three years to avoid losses, data says"
+      ],
+      "fearGreedValue": 14,
+      "fearGreedLabel": "Extreme Fear",
+      "xSentiment": {
+        "direction": "SHORT",
+        "confidence": 70,
+        "reasoning": "Sentiment scans show 64-70% bearish signals with extreme fear, price action bearish, and traders leaning towards dumps to $55K amid ETF outflows."
+      },
+      "newsSentiment": {
+        "direction": "LONG",
+        "confidence": 75
+      },
+      "dataSource": "news+rss+x"
+    },
+    {
+      "tool": "sentry-sentiment-scanner",
+      "timestamp": "2026-03-01T10:47:34.411Z",
+      "unixMs": 1772362054411,
+      "coin": "SOL",
+      "direction": "FLAT",
+      "confidence": 0.65,
+      "entryPrice": 85.43290021894202,
+      "reasoning": "⚡ DIVERGENCE — News: LONG (80%) | X: SHORT (75%)",
+      "invalidation": "News/X sentiment shifts within 8h.",
+      "sentimentScore": 65,
+      "trendingRank": 5,
+      "priceChange24h": 8.214901770059395,
+      "headlines": [
+        "Ether’s 60% down from its 2025 high, but TradFi keeps betting on ETH: Here’s why",
+        "Why institutions still prefer Ethereum despite faster blockchains",
+        "Three Solana data points highlight resilience, but is SOL undervalued?"
+      ],
+      "fearGreedValue": 14,
+      "fearGreedLabel": "Extreme Fear",
+      "xSentiment": {
+        "direction": "SHORT",
+        "confidence": 75,
+        "reasoning": "Posts indicate bearish structure breaks, rejection at resistance, bear flags, high long/short ratios signaling traps, and downside targets to $74."
+      },
+      "newsSentiment": {
+        "direction": "LONG",
+        "confidence": 80
+      },
+      "dataSource": "news+rss+x"
+    },
+    {
+      "tool": "sentry-sentiment-scanner",
+      "timestamp": "2026-03-01T10:47:36.281Z",
+      "unixMs": 1772362056281,
+      "coin": "ETH",
+      "direction": "FLAT",
+      "confidence": 0.7,
+      "entryPrice": 1985.353290275541,
+      "reasoning": "⚡ DIVERGENCE — News: LONG (80%) | X: SHORT (80%)",
+      "invalidation": "News/X sentiment shifts within 8h.",
+      "sentimentScore": 70,
+      "trendingRank": 7,
+      "priceChange24h": 6.494859621335282,
+      "headlines": [
+        "Ethereum smart accounts are finally coming 'within a year' — Vitalik Buterin",
+        "Ether’s 60% down from its 2025 high, but TradFi keeps betting on ETH: Here’s why",
+        "Why institutions still prefer Ethereum despite faster blockchains"
+      ],
+      "fearGreedValue": 14,
+      "fearGreedLabel": "Extreme Fear",
+      "xSentiment": {
+        "direction": "SHORT",
+        "confidence": 80,
+        "reasoning": "Bearish summaries cite support breaks to resistance, declining premiums, capitulation, high retail longs, and persistent sell pressure with ETF outflows."
+      },
+      "newsSentiment": {
+        "direction": "LONG",
+        "confidence": 80
+      },
+      "dataSource": "news+rss+x"
+    },
+    {
+      "tool": "sentry-sentiment-scanner",
+      "timestamp": "2026-03-01T10:47:39.656Z",
+      "unixMs": 1772362059656,
+      "coin": "NEAR",
+      "direction": "FLAT",
+      "confidence": 0.65,
+      "entryPrice": 1.1541741109396177,
+      "reasoning": "⚡ DIVERGENCE — News: LONG (80%) | X: SHORT (75%)",
+      "invalidation": "News/X sentiment shifts within 8h.",
+      "sentimentScore": 65,
+      "trendingRank": 8,
+      "priceChange24h": 9.077138547838787,
+      "headlines": [
+        "Grayscale files to convert NEAR Protocol Trust into ETF on NYSE Arca",
+        "The 5 busiest blockchains of 2025 and what powered their growth",
+        "OceanPal raises $120M to build NEAR token treasury company"
+      ],
+      "fearGreedValue": 14,
+      "fearGreedLabel": "Extreme Fear",
+      "xSentiment": {
+        "direction": "SHORT",
+        "confidence": 75,
+        "reasoning": "Rejections from resistance, failure to breach descending trendlines, bearish structure with lower highs, and downside continuation noted across analyses."
+      },
+      "newsSentiment": {
+        "direction": "LONG",
+        "confidence": 80
+      },
+      "dataSource": "news+rss+x"
+    },
+    {
+      "tool": "sentry-sentiment-scanner",
+      "timestamp": "2026-03-01T10:47:42.416Z",
+      "unixMs": 1772362062417,
+      "coin": "XRP",
+      "direction": "LONG",
+      "confidence": 0.78,
+      "entryPrice": 1.3775378634662174,
+      "reasoning": "[NEWS] The news about Ripple expanding its institutional custody and staking offerings suggests increased adoption and growth potential for XRP. [X] Mixed but positive on ETF inflows without outflows, rising sentiment to 5-week highs, institutional accumulation, and rotation from BTC/ETH.",
+      "invalidation": "News/X sentiment shifts within 8h.",
+      "sentimentScore": 78,
+      "trendingRank": 10,
+      "priceChange24h": 6.626332573718281,
+      "headlines": [
+        "XRPL Foundation patches ‘critical’ flaw that almost made it to mainnet",
+        "White House floats limited stablecoin rewards in third crypto, bank meeting",
+        "Ripple CEO confirms White House meeting between crypto, banking reps"
+      ],
+      "fearGreedValue": 14,
+      "fearGreedLabel": "Extreme Fear",
+      "xSentiment": {
+        "direction": "LONG",
+        "confidence": 65,
+        "reasoning": "Mixed but positive on ETF inflows without outflows, rising sentiment to 5-week highs, institutional accumulation, and rotation from BTC/ETH."
+      },
+      "newsSentiment": {
+        "direction": "LONG",
+        "confidence": 70
+      },
+      "dataSource": "news+rss+x"
+    },
+    {
+      "tool": "sentry-sentiment-scanner",
+      "timestamp": "2026-03-01T10:47:45.573Z",
+      "unixMs": 1772362065573,
+      "coin": "SUI",
+      "direction": "SHORT",
+      "confidence": 0.7,
+      "entryPrice": 0.9053692287115758,
+      "reasoning": "[X] Sentiment at lows, price sucking with plunges, heavy supply overhang, dilution pressure, and bearish trends dominating discussions. (news: no clear catalyst)",
+      "invalidation": "News/X sentiment shifts within 8h.",
+      "sentimentScore": 70,
+      "trendingRank": 12,
+      "priceChange24h": 8.544389508316884,
+      "headlines": [
+        "ProShares seeks stablecoin reserves with GENIUS Act-compliant Treasury ETF",
+        "Crypto investment outflows ease after three weeks of heavy selling",
+        "Crypto funds post second week of outflows at $1.7B: CoinShares"
+      ],
+      "fearGreedValue": 14,
+      "fearGreedLabel": "Extreme Fear",
+      "xSentiment": {
+        "direction": "SHORT",
+        "confidence": 70,
+        "reasoning": "Sentiment at lows, price sucking with plunges, heavy supply overhang, dilution pressure, and bearish trends dominating discussions."
+      },
+      "newsSentiment": {
+        "direction": "FLAT",
+        "confidence": 60
+      },
+      "dataSource": "news+rss+x"
+    },
+    {
+      "tool": "sentry-sentiment-scanner",
+      "timestamp": "2026-03-01T10:47:48.958Z",
+      "unixMs": 1772362068958,
+      "coin": "AVAX",
+      "direction": "LONG",
+      "confidence": 0.88,
+      "entryPrice": 9.166732268981592,
+      "reasoning": "[NEWS] Avalanche tokenization hit a Q4 high, and BlackRock's BUIDL expanded on-chain, indicating increased institutional adoption of AVAX. [X] Bullish divergences, structural bottoms at key supports, reversal setups, and targets to $12-$15+ with treasury lockups reducing supply.",
+      "invalidation": "News/X sentiment shifts within 8h.",
+      "sentimentScore": 88,
+      "trendingRank": 15,
+      "priceChange24h": 7.320331219500534,
+      "headlines": [
+        "Bitcoin dips to $60K, TRM Labs becomes crypto unicorn: Finance Redefined",
+        "ING Germany expands crypto ETP and ETN offerings with Bitwise, VanEck",
+        "VC Roundup: Crypto funding rebounds as institutions test onchain finance"
+      ],
+      "fearGreedValue": 14,
+      "fearGreedLabel": "Extreme Fear",
+      "xSentiment": {
+        "direction": "LONG",
+        "confidence": 80,
+        "reasoning": "Bullish divergences, structural bottoms at key supports, reversal setups, and targets to $12-$15+ with treasury lockups reducing supply."
+      },
+      "newsSentiment": {
+        "direction": "LONG",
+        "confidence": 75
+      },
+      "dataSource": "news+rss+x"
+    },
+    {
+      "tool": "sentry-sentiment-scanner",
+      "timestamp": "2026-03-01T10:47:51.934Z",
+      "unixMs": 1772362071934,
+      "coin": "LINK",
+      "direction": "FLAT",
+      "confidence": 0.5,
+      "entryPrice": 0,
+      "reasoning": "The news headlines do not provide a clear bullish or bearish catalyst for the short-term LINK price, indicating uncertainty in the market.",
+      "invalidation": "News/X sentiment shifts within 8h.",
+      "sentimentScore": 50,
+      "trendingRank": null,
+      "priceChange24h": 0,
+      "headlines": [
+        "Price predictions 2/27: BTC, ETH, XRP, BNB, SOL, DOGE, BCH, ADA, HYPE, LINK",
+        "Ex-Chainlink exec joins SEC’s crypto task force as new legal chief",
+        "Kraken integrates with ICE Chat to expand institutional OTC access"
+      ],
+      "fearGreedValue": 14,
+      "fearGreedLabel": "Extreme Fear",
+      "xSentiment": null,
+      "newsSentiment": {
+        "direction": "FLAT",
+        "confidence": 50
+      },
+      "dataSource": "news+rss"
+    },
+    {
+      "tool": "sentry-sentiment-scanner",
+      "timestamp": "2026-03-01T10:47:53.596Z",
+      "unixMs": 1772362073596,
+      "coin": "DOGE",
+      "direction": "FLAT",
+      "confidence": 0.7,
+      "entryPrice": 0,
+      "reasoning": "The recent news headlines are mostly focused on price predictions and do not provide a clear directional catalyst for DOGE in the short-term.",
+      "invalidation": "News/X sentiment shifts within 8h.",
+      "sentimentScore": 70,
+      "trendingRank": null,
+      "priceChange24h": 0,
+      "headlines": [
+        "Price predictions 2/27: BTC, ETH, XRP, BNB, SOL, DOGE, BCH, ADA, HYPE, LINK",
+        "Price predictions 2/25: BTC, ETH, XRP, BNB, SOL, DOGE, BCH, ADA, HYPE, XMR",
+        "Price predictions 2/23: SPX, DXY, BTC, ETH, XRP, BNB, SOL, DOGE, BCH, ADA"
+      ],
+      "fearGreedValue": 14,
+      "fearGreedLabel": "Extreme Fear",
+      "xSentiment": null,
+      "newsSentiment": {
+        "direction": "FLAT",
+        "confidence": 70
+      },
+      "dataSource": "news+rss"
     }
   ],
-  "lastScanAt": "2026-03-01T09:07:06.972Z",
-  "totalScans": 279
+  "lastScanAt": "2026-03-01T10:47:53.627Z",
+  "totalScans": 280
 }

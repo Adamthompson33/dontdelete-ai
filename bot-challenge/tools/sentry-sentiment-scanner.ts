@@ -53,14 +53,15 @@ interface PaperLedgerEntry {
 const LEDGER_FILE   = path.join(__dirname, '..', 'results', 'paper-ledger.json');
 const REPORT_DIR    = path.join(__dirname, '..', 'reports');
 // Try env first, then openclaw config
-function getAnthropicKey(): string {
-  if (process.env.ANTHROPIC_API_KEY) return process.env.ANTHROPIC_API_KEY;
+function getKey(envVar: string): string {
+  if (process.env[envVar]) return process.env[envVar]!;
   try {
     const cfg = JSON.parse(fs.readFileSync(path.join(process.env.HOME || '', '.openclaw', 'openclaw.json'), 'utf-8'));
-    return cfg?.env?.ANTHROPIC_API_KEY || '';
+    return cfg?.env?.[envVar] || '';
   } catch { return ''; }
 }
-const ANTHROPIC_KEY = getAnthropicKey();
+const ANTHROPIC_KEY = getKey('ANTHROPIC_API_KEY');
+const XAI_KEY       = getKey('XAI_API_KEY');
 
 const COINGECKO_TRENDING = 'https://api.coingecko.com/api/v3/search/trending';
 const FEAR_GREED_API     = 'https://api.alternative.me/fng/?limit=1';
@@ -292,6 +293,61 @@ Rules:
   }
 }
 
+// ═══ Grok X Search Sentiment ═══
+
+async function getXSentimentFromGrok(coins: string[]): Promise<Map<string, { direction: 'LONG' | 'SHORT' | 'FLAT'; confidence: number; reasoning: string }>> {
+  const results = new Map();
+  if (!XAI_KEY || coins.length === 0) return results;
+
+  const coinList = coins.slice(0, 8).join(', ');
+  try {
+    const res = await fetch('https://api.x.ai/v1/responses', {
+      method: 'POST',
+      headers: {
+        'Authorization': `Bearer ${XAI_KEY}`,
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify({
+        model: 'grok-4-1-fast-non-reasoning',
+        input: [{
+          role: 'user',
+          content: `Search X right now for crypto sentiment on these coins: ${coinList}. For each coin respond ONLY in valid JSON array: [{"coin":"SYMBOL","direction":"LONG|SHORT|FLAT","confidence":0-100,"reasoning":"one sentence based on what X is saying"}]. Cover every coin listed.`,
+        }],
+        tools: [{ type: 'x_search' }],
+        max_output_tokens: 600,
+      }),
+      signal: AbortSignal.timeout(30000),
+    });
+
+    if (!res.ok) return results;
+    const data = await res.json() as any;
+
+    for (const item of (data.output || [])) {
+      if (item.type !== 'message') continue;
+      for (const c of (item.content || [])) {
+        if (c.type !== 'output_text') continue;
+        const text = c.text || '';
+        const match = text.match(/\[[\s\S]*\]/);
+        if (!match) continue;
+        const parsed = JSON.parse(match[0]) as any[];
+        for (const entry of parsed) {
+          if (!entry.coin || !entry.direction) continue;
+          const direction: 'LONG' | 'SHORT' | 'FLAT' =
+            ['LONG', 'SHORT', 'FLAT'].includes(entry.direction) ? entry.direction : 'FLAT';
+          results.set(entry.coin.toUpperCase(), {
+            direction,
+            confidence: Math.max(0, Math.min(100, parseInt(entry.confidence) || 40)),
+            reasoning: entry.reasoning || '',
+          });
+        }
+      }
+    }
+  } catch (e: any) {
+    console.error(`  ⚠️ Grok X search failed: ${e.message?.slice(0, 80)}`);
+  }
+  return results;
+}
+
 function fallbackSentiment(
   coin: CoinData,
   fearGreed: { value: number; label: string }
@@ -348,6 +404,16 @@ async function main() {
   const coinsToScan = Array.from(coinMap.values());
   console.log(`Scanning ${coinsToScan.length} coins: ${coinsToScan.map(c => c.symbol).join(', ')}\n`);
 
+  // Fetch X sentiment from Grok for all coins in one call
+  let xSentiment = new Map<string, { direction: 'LONG' | 'SHORT' | 'FLAT'; confidence: number; reasoning: string }>();
+  if (XAI_KEY) {
+    console.log('🐦 Fetching live X sentiment via Grok...');
+    xSentiment = await getXSentimentFromGrok(coinsToScan.map(c => c.symbol));
+    console.log(`✓ X sentiment: ${xSentiment.size}/${coinsToScan.length} coins covered\n`);
+  } else {
+    console.log('⚠️  No XAI_API_KEY — skipping X sentiment layer\n');
+  }
+
   // Process each coin
   const signals: any[] = [];
   const nonTradeableInfo: string[] = [];
@@ -365,39 +431,70 @@ async function main() {
       continue;
     }
 
-    // Get coin-specific headlines
+    // Get coin-specific news headlines + Claude classification
     const headlines = await getNewsForCoin(coin.symbol, allGeneralNews);
-    const result = await classifyWithClaude(coin, headlines, fearGreed);
+    const newsResult = await classifyWithClaude(coin, headlines, fearGreed);
 
-    const icon = result.direction === 'LONG' ? '🟢' : result.direction === 'SHORT' ? '🔴' : '⚪';
+    // Get X sentiment from Grok (already fetched in batch)
+    const xResult = xSentiment.get(coin.symbol);
+
+    // Combine: if both agree → boost confidence; if diverge → note it, use X as tiebreaker
+    let finalDirection = newsResult.direction;
+    let finalConfidence = newsResult.confidence;
+    let combinedReasoning = newsResult.reasoning;
+    let dataSource = 'news+rss';
+
+    if (xResult) {
+      dataSource = 'news+rss+x';
+      if (xResult.direction === newsResult.direction) {
+        // Agreement → confidence boost (average + 10)
+        finalConfidence = Math.min(95, Math.round((newsResult.confidence + xResult.confidence) / 2) + 10);
+        combinedReasoning = `[NEWS] ${newsResult.reasoning} [X] ${xResult.reasoning}`;
+      } else if (newsResult.direction === 'FLAT') {
+        // News has no catalyst → defer to X
+        finalDirection = xResult.direction;
+        finalConfidence = xResult.confidence;
+        combinedReasoning = `[X] ${xResult.reasoning} (news: no clear catalyst)`;
+      } else {
+        // Disagreement → flag divergence, lower confidence
+        finalDirection = 'FLAT';
+        finalConfidence = Math.min(newsResult.confidence, xResult.confidence) - 10;
+        combinedReasoning = `⚡ DIVERGENCE — News: ${newsResult.direction} (${newsResult.confidence}%) | X: ${xResult.direction} (${xResult.confidence}%)`;
+      }
+    }
+
+    const icon = finalDirection === 'LONG' ? '🟢' : finalDirection === 'SHORT' ? '🔴' : '⚪';
     console.log(`${icon} ${coin.symbol}${coin.trendingRank ? ` (#${coin.trendingRank} trending)` : ''}`);
     console.log(`   Price: $${coin.price > 0 ? coin.price.toFixed(4) : 'n/a'} | 24h: ${coin.priceChange24h > 0 ? '+' : ''}${coin.priceChange24h.toFixed(1)}%`);
-    console.log(`   Signal: ${result.direction} (${result.confidence}% conf)`);
-    console.log(`   ${result.reasoning}`);
-    if (result.headlines.length > 0) {
-      console.log(`   Headlines: "${result.headlines[0].slice(0, 70)}..."`);
+    if (xResult) console.log(`   News: ${newsResult.direction} ${newsResult.confidence}% | X: ${xResult.direction} ${xResult.confidence}%`);
+    console.log(`   Final: ${finalDirection} (${finalConfidence}% conf)`);
+    console.log(`   ${combinedReasoning.slice(0, 120)}`);
+    if (newsResult.headlines.length > 0) {
+      console.log(`   Headlines: "${newsResult.headlines[0].slice(0, 70)}..."`);
     }
     console.log('');
 
     // Only log signals with meaningful confidence
-    if (result.confidence >= 30) {
+    if (finalConfidence >= 30) {
       signals.push({
         tool: 'sentry-sentiment-scanner',
         timestamp: new Date().toISOString(),
         unixMs: Date.now(),
         coin: coin.symbol,
-        direction: result.direction,
-        confidence: result.confidence / 100,
+        direction: finalDirection,
+        confidence: finalConfidence / 100,
         entryPrice: coin.price,
-        reasoning: result.reasoning,
-        invalidation: 'News catalyst reverses or sentiment shifts within 8h.',
-        sentimentScore: result.confidence,
+        reasoning: combinedReasoning,
+        invalidation: 'News/X sentiment shifts within 8h.',
+        sentimentScore: finalConfidence,
         trendingRank: coin.trendingRank ?? null,
         priceChange24h: coin.priceChange24h,
-        headlines: result.headlines,
+        headlines: newsResult.headlines,
         fearGreedValue: fearGreed.value,
         fearGreedLabel: fearGreed.label,
-        dataSource: 'news+rss',  // distinguishes v2 from v1 heuristic signals
+        xSentiment: xResult ? { direction: xResult.direction, confidence: xResult.confidence, reasoning: xResult.reasoning } : null,
+        newsSentiment: { direction: newsResult.direction, confidence: newsResult.confidence },
+        dataSource,
       });
     }
   }
@@ -429,8 +526,8 @@ async function main() {
     JSON.stringify({
       date,
       scannedAt: new Date().toISOString(),
-      version: 2,
-      dataSource: 'cointelegraph-rss+decrypt-rss+fear-greed',
+      version: 3,
+      dataSource: XAI_KEY ? 'cointelegraph-rss+decrypt-rss+fear-greed+grok-x' : 'cointelegraph-rss+decrypt-rss+fear-greed',
       fearGreed,
       generalHeadlineCount: allGeneralNews.length,
       coinsScanned: coinsToScan.length,

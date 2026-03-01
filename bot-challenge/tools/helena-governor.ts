@@ -182,6 +182,35 @@ function analyzeAgentPerformance(): Record<string, { wr: number; signals: number
   return result;
 }
 
+interface SentryV3TrialResult {
+  lockedDirectional: number;
+  lockedWR: number | null;
+  liveWR: number | null;
+}
+
+function analyzeSentryV3Trial(): SentryV3TrialResult {
+  const ledger = loadJSON(LEDGER_FILE);
+  if (!ledger?.signals) return { lockedDirectional: 0, lockedWR: null, liveWR: null };
+
+  const v3Start = new Date('2026-03-01T00:00:00Z').getTime();
+
+  const v3Directional = (ledger.signals as any[]).filter((s: any) =>
+    s.tool === 'sentry-sentiment-scanner' &&
+    (s.sentryVersion === 3 || new Date(s.timestamp).getTime() >= v3Start) &&
+    (s.direction === 'LONG' || s.direction === 'SHORT')
+  );
+
+  const locked = v3Directional.filter((s: any) => s.outcome?.locked === true && s.outcome?.status);
+  const lockedWins = locked.filter((s: any) => s.outcome.status === 'WINNING').length;
+  const lockedWR = locked.length > 0 ? lockedWins / locked.length : null;
+
+  const live = v3Directional.filter((s: any) => s.outcome?.status && s.outcome?.locked !== true);
+  const liveWins = live.filter((s: any) => s.outcome.status === 'WINNING').length;
+  const liveWR = live.length > 0 ? liveWins / live.length : null;
+
+  return { lockedDirectional: locked.length, lockedWR, liveWR };
+}
+
 function identifyWeakestPositions(count: number): string[] {
   const medic = loadJSON(MEDIC_STATE);
   const ledger = loadJSON(LEDGER_FILE);
@@ -285,9 +314,10 @@ function generateDirectives(): HelenaDirective[] {
     });
   }
   
-  // ═══ Rule 6: Agent WR < 40% over 50+ signals → FLAG ═══
+  // ═══ Rule 6: Agent WR < 40% over 50+ signals → FLAG (sentry handled separately) ═══
   const flaggedAgents: string[] = [];
   for (const [agent, perf] of Object.entries(agentPerf)) {
+    if (agent === 'sentry-sentiment-scanner') continue; // v3 trial logic below
     if (perf.signals >= AGENT_WR_MIN_SIGNALS && perf.wr < AGENT_WR_MIN) {
       flaggedAgents.push(agent);
       directives.push({
@@ -298,6 +328,18 @@ function generateDirectives(): HelenaDirective[] {
         timestamp: now,
       });
     }
+  }
+
+  // ═══ Rule 7: Sentry v3 Trial — FLAG only when 50+ locked directional with WR < 30% ═══
+  const sentryTrial = analyzeSentryV3Trial();
+  if (sentryTrial.lockedDirectional >= 50 && sentryTrial.lockedWR !== null && sentryTrial.lockedWR < 0.30) {
+    directives.push({
+      action: 'FLAG_AGENT',
+      severity: 'MODERATE',
+      reason: `sentry-sentiment-scanner v3: ${(sentryTrial.lockedWR * 100).toFixed(1)}% WR over ${sentryTrial.lockedDirectional} locked directional signals (below 30% Oracle trial threshold).`,
+      agentFlags: ['sentry-sentiment-scanner'],
+      timestamp: now,
+    });
   }
   
   // ═══ All Clear ═══
@@ -454,6 +496,7 @@ async function main() {
   const jinx = analyzeJinx();
   const sat = analyzeSaturation();
   const agentPerf = analyzeAgentPerformance();
+  const sentryTrial = analyzeSentryV3Trial();
   const maxJinx = Math.max(jinx.factorScore, jinx.correlationScore);
   const totalPositions = jinx.directional.long + jinx.directional.short;
   const pctShort = totalPositions > 0 ? jinx.directional.short / totalPositions : 0;
@@ -469,9 +512,26 @@ async function main() {
   
   console.log('🎯 AGENT PERFORMANCE');
   for (const [agent, perf] of Object.entries(agentPerf)) {
-    const flag = perf.signals >= AGENT_WR_MIN_SIGNALS && perf.wr < AGENT_WR_MIN ? ' ⚠️ UNDERPERFORMING' : '';
-    console.log(`   ${agent}: ${(perf.wr * 100).toFixed(1)}% WR (${perf.signals} signals, ${perf.pnl >= 0 ? '+' : ''}${perf.pnl.toFixed(1)}% P&L)${flag}`);
+    const isSentry = agent === 'sentry-sentiment-scanner';
+    const flag = !isSentry && perf.signals >= AGENT_WR_MIN_SIGNALS && perf.wr < AGENT_WR_MIN ? ' ⚠️ UNDERPERFORMING' : '';
+    const note = isSentry ? ' [v3 trial — see below]' : '';
+    console.log(`   ${agent}: ${(perf.wr * 100).toFixed(1)}% WR (${perf.signals} signals, ${perf.pnl >= 0 ? '+' : ''}${perf.pnl.toFixed(1)}% P&L)${flag}${note}`);
   }
+  console.log();
+
+  console.log('═══ SENTRY v3 TRIAL ═══');
+  console.log(`   Locked directional outcomes: ${sentryTrial.lockedDirectional} / 50`);
+  if (sentryTrial.lockedDirectional > 0 && sentryTrial.lockedWR !== null) {
+    console.log(`   Current WR (locked):   ${(sentryTrial.lockedWR * 100).toFixed(1)}%`);
+  } else {
+    console.log(`   Current WR (locked):   Pending first locks (Mar 4)`);
+  }
+  if (sentryTrial.liveWR !== null) {
+    console.log(`   Current WR (live):     ${(sentryTrial.liveWR * 100).toFixed(1)}%`);
+  } else {
+    console.log(`   Current WR (live):     No live data yet`);
+  }
+  console.log(`   Verdict due: ~Mar 9 AEDT`);
   console.log();
   
   // Generate directives
@@ -514,8 +574,9 @@ async function main() {
   state.haltActive = directives.some(d => d.action === 'HALT');
   state.activeDirectives = directives;
   
-  // Update agent watchlist
+  // Update agent watchlist (sentry handled separately via v3 trial)
   for (const [agent, perf] of Object.entries(agentPerf)) {
+    if (agent === 'sentry-sentiment-scanner') continue;
     if (perf.signals >= AGENT_WR_MIN_SIGNALS && perf.wr < AGENT_WR_MIN) {
       state.agentWatchlist[agent] = {
         wr: perf.wr,
@@ -524,6 +585,19 @@ async function main() {
       };
     } else {
       delete state.agentWatchlist[agent];
+    }
+  }
+
+  // Sentry watchlist: only based on v3 trial verdict (50+ locked directional)
+  if (sentryTrial.lockedDirectional >= 50 && sentryTrial.lockedWR !== null) {
+    if (sentryTrial.lockedWR < 0.30) {
+      state.agentWatchlist['sentry-sentiment-scanner'] = {
+        wr: sentryTrial.lockedWR,
+        signals: sentryTrial.lockedDirectional,
+        flaggedAt: report.timestamp,
+      };
+    } else {
+      delete state.agentWatchlist['sentry-sentiment-scanner'];
     }
   }
   

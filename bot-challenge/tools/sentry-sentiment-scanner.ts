@@ -365,7 +365,7 @@ function fallbackSentiment(
 // ═══ Main ═══
 
 async function main() {
-  console.log('📡 Sentry Sentiment Scanner v2 — Real News Edition\n');
+  console.log('📡 Sentry Sentiment Scanner v3 — News + X/Twitter Edition\n');
 
   if (!ANTHROPIC_KEY) {
     console.warn('⚠️  No ANTHROPIC_API_KEY — will use fallback mode (limited accuracy)');
@@ -467,7 +467,7 @@ async function main() {
     console.log(`${icon} ${coin.symbol}${coin.trendingRank ? ` (#${coin.trendingRank} trending)` : ''}`);
     console.log(`   Price: $${coin.price > 0 ? coin.price.toFixed(4) : 'n/a'} | 24h: ${coin.priceChange24h > 0 ? '+' : ''}${coin.priceChange24h.toFixed(1)}%`);
     if (xResult) console.log(`   News: ${newsResult.direction} ${newsResult.confidence}% | X: ${xResult.direction} ${xResult.confidence}%`);
-    console.log(`   Final: ${finalDirection} (${finalConfidence}% conf)`);
+    console.log(`   Final: ${finalDirection} (${finalConfidence}% conf) [sentry:v3]`);
     console.log(`   ${combinedReasoning.slice(0, 120)}`);
     if (newsResult.headlines.length > 0) {
       console.log(`   Headlines: "${newsResult.headlines[0].slice(0, 70)}..."`);
@@ -478,6 +478,7 @@ async function main() {
     if (finalConfidence >= 30) {
       signals.push({
         tool: 'sentry-sentiment-scanner',
+        sentryVersion: 3,
         timestamp: new Date().toISOString(),
         unixMs: Date.now(),
         coin: coin.symbol,

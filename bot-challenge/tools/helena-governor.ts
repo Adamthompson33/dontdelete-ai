@@ -43,6 +43,14 @@ const CORRELATION_CLUSTER_MAX = 30;   // Max correlated pairs at 70%+
 const AGENT_WR_MIN = 0.40;            // Minimum win rate
 const AGENT_WR_MIN_SIGNALS = 50;      // Minimum signals before WR review
 const DIRECTIONAL_CROWDING_MAX = 0.85; // 85% in one direction = crowded
+// Tools whose signals have no HL price outcome — excluded from WR evaluation
+const NON_EVALUATABLE_TOOLS = new Set([
+  'sentry-sentiment-scanner',   // v3 trial logic handled separately
+  'sakura-arb-scanner',         // arb signals — different exchanges, not HL price
+  'prophet-lead-lag',           // sports betting / Polymarket — not crypto price
+  'jinx-correlation-monitor',   // correlation data — not a tradeable signal
+  'medic-position-monitor',     // monitor alerts — not trades
+]);
 
 // ═══ Types ═══
 interface HelenaDirective {
@@ -314,10 +322,10 @@ function generateDirectives(): HelenaDirective[] {
     });
   }
   
-  // ═══ Rule 6: Agent WR < 40% over 50+ signals → FLAG (sentry handled separately) ═══
+  // ═══ Rule 6: Agent WR < 40% over 50+ signals → FLAG (sentry + non-evaluatable handled separately) ═══
   const flaggedAgents: string[] = [];
   for (const [agent, perf] of Object.entries(agentPerf)) {
-    if (agent === 'sentry-sentiment-scanner') continue; // v3 trial logic below
+    if (NON_EVALUATABLE_TOOLS.has(agent)) continue;
     if (perf.signals >= AGENT_WR_MIN_SIGNALS && perf.wr < AGENT_WR_MIN) {
       flaggedAgents.push(agent);
       directives.push({
@@ -513,8 +521,9 @@ async function main() {
   console.log('🎯 AGENT PERFORMANCE');
   for (const [agent, perf] of Object.entries(agentPerf)) {
     const isSentry = agent === 'sentry-sentiment-scanner';
-    const flag = !isSentry && perf.signals >= AGENT_WR_MIN_SIGNALS && perf.wr < AGENT_WR_MIN ? ' ⚠️ UNDERPERFORMING' : '';
-    const note = isSentry ? ' [v3 trial — see below]' : '';
+    const isNonEval = NON_EVALUATABLE_TOOLS.has(agent);
+    const flag = !isNonEval && perf.signals >= AGENT_WR_MIN_SIGNALS && perf.wr < AGENT_WR_MIN ? ' ⚠️ UNDERPERFORMING' : '';
+    const note = isSentry ? ' [v3 trial — see below]' : isNonEval ? ' [non-evaluatable]' : '';
     console.log(`   ${agent}: ${(perf.wr * 100).toFixed(1)}% WR (${perf.signals} signals, ${perf.pnl >= 0 ? '+' : ''}${perf.pnl.toFixed(1)}% P&L)${flag}${note}`);
   }
   console.log();

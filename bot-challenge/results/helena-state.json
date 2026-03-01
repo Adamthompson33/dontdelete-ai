@@ -1,17 +1,14 @@
 {
-  "lastRunAt": "2026-03-01T13:20:02.690Z",
+  "lastRunAt": "2026-03-01T16:00:30.792Z",
   "lastJinxScore": 50,
   "lastSaturation": 0.5235320000000001,
   "haltActive": false,
   "activeDirectives": [
     {
-      "action": "FLAG_AGENT",
-      "severity": "MODERATE",
-      "reason": "sentry-sentiment-scanner: 13.6% WR over 295 signals (below 40% threshold). Kelly multiplier should be reduced 50%.",
-      "agentFlags": [
-        "sentry-sentiment-scanner"
-      ],
-      "timestamp": "2026-03-01T13:20:02.678Z"
+      "action": "ALL_CLEAR",
+      "severity": "INFO",
+      "reason": "Portfolio within all risk parameters. Jinx: 50/100, Saturation: 52.4%, Positions: 8.",
+      "timestamp": "2026-03-01T16:00:30.773Z"
     }
   ],
   "agentWatchlist": {
@@ -19,6 +16,16 @@
       "wr": 0.13559322033898305,
       "signals": 295,
       "flaggedAt": "2026-03-01T13:20:02.690Z"
+    },
+    "sakura-arb-scanner": {
+      "wr": 0,
+      "signals": 702,
+      "flaggedAt": "2026-03-01T16:00:30.792Z"
+    },
+    "prophet-lead-lag": {
+      "wr": 0,
+      "signals": 129,
+      "flaggedAt": "2026-03-01T16:00:30.792Z"
     }
   }
 }

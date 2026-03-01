@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-03-01T13:20:02.690Z",
+  "timestamp": "2026-03-01T16:00:30.792Z",
   "jinxScore": 45,
   "jinxCorrelation": 50,
   "saturation": 0.5235320000000001,
@@ -11,36 +11,53 @@
   "activePositions": 8,
   "directives": [
     {
-      "action": "FLAG_AGENT",
-      "severity": "MODERATE",
-      "reason": "sentry-sentiment-scanner: 13.6% WR over 295 signals (below 40% threshold). Kelly multiplier should be reduced 50%.",
-      "agentFlags": [
-        "sentry-sentiment-scanner"
-      ],
-      "timestamp": "2026-03-01T13:20:02.678Z"
+      "action": "ALL_CLEAR",
+      "severity": "INFO",
+      "reason": "Portfolio within all risk parameters. Jinx: 50/100, Saturation: 52.4%, Positions: 8.",
+      "timestamp": "2026-03-01T16:00:30.773Z"
     }
   ],
   "agentPerformance": {
     "rei-funding-carry": {
-      "wr": 0.6530849825378346,
+      "wr": 0.5227008149010477,
       "signals": 859,
-      "pnl": 4316.216871407003
+      "pnl": 2172.188115855969
+    },
+    "sakura-arb-scanner": {
+      "wr": 0,
+      "signals": 702,
+      "pnl": 0
     },
     "jackbot-temporal-edge": {
       "wr": 0.4074074074074074,
       "signals": 27,
-      "pnl": -82.44312564259931
+      "pnl": -153.95843586457525
+    },
+    "jinx-correlation-monitor": {
+      "wr": 0,
+      "signals": 47,
+      "pnl": 0
     },
     "sentry-sentiment-scanner": {
-      "wr": 0.13559322033898305,
-      "signals": 295,
-      "pnl": -527.8620442669022
+      "wr": 0.15170278637770898,
+      "signals": 323,
+      "pnl": -483.3134378614735
     },
     "pixel-momentum": {
-      "wr": 0.07894736842105263,
-      "signals": 38,
-      "pnl": -205.92755004622165
+      "wr": 0.05,
+      "signals": 40,
+      "pnl": -185.4654960509585
+    },
+    "prophet-lead-lag": {
+      "wr": 0,
+      "signals": 129,
+      "pnl": 0
+    },
+    "medic-position-monitor": {
+      "wr": 0,
+      "signals": 2,
+      "pnl": 0
     }
   },
-  "summary": "⚠️ FLAGGED: sentry-sentiment-scanner — underperforming"
+  "summary": "✅ ALL CLEAR: Portfolio within all risk parameters. Jinx: 50/100, Saturation: 52.4%, Positions: 8."
 }

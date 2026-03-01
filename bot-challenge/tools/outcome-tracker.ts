@@ -157,7 +157,10 @@ async function main() {
   }
 
   // Summary
-  const tracked = (ledger.signals as Signal[]).filter(s => s.outcome);
+  // Exclude non-evaluatable signals (arb, sports, correlation) from WR stats
+  // They have no HL price outcome and would skew win rates if counted
+  const allTracked = (ledger.signals as Signal[]).filter(s => s.outcome);
+  const tracked = allTracked.filter(s => s.outcome!.lockReason !== 'non-evaluatable');
   const lockedOutcomes = tracked.filter(s => s.outcome!.locked === true);
   const liveOutcomes = tracked.filter(s => !s.outcome!.locked);
 
@@ -171,7 +174,10 @@ async function main() {
   const wrLocked = lockedOutcomes.length > 0 ? ((winningLocked.length / lockedOutcomes.length) * 100).toFixed(1) : 'N/A';
   const wrLive = liveOutcomes.length > 0 ? ((winningLive.length / liveOutcomes.length) * 100).toFixed(1) : 'N/A';
 
+  const nonEval = allTracked.filter(s => s.outcome!.lockReason === 'non-evaluatable');
+
   console.log(`\n═══ SUMMARY ═══`);
+  console.log(`Excluded (non-evaluatable): ${nonEval.length} (arb/sports/correlation — not counted in WR)`);
   console.log(`Locked outcomes: ${lockedOutcomes.length} (frozen P&L)`);
   console.log(`Live outcomes:   ${liveOutcomes.length} (recalculated this scan)`);
   console.log(`Total signals:   ${tracked.length}`);

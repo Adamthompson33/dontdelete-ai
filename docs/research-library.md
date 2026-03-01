@@ -38,3 +38,34 @@ Per Bridgewater paper results:
 ---
 
 *Created 2026-02-28. Source: Jackbot research email.*
+
+## ElizaOS Testing Framework (2026-03-01)
+**Source:** elizaOS docs analysis by Jackbot
+**Relevance:** HIGH — Academy has zero automated tests, ships directly to production
+
+**Recommended test structure:**
+- `npm run test:signals` — validate signal schema (direction, confidence, asset fields)
+- `npm run test:pipeline` — mock full cycle (market state → signal → sizing → ledger)
+- `npm run test:risk` — verify Jinx/Wren/Helena logic (Platt scaling 0-1, Kelly returns 0 below threshold, Jinx score 0-100)
+
+**Bugs this would have caught:**
+- Helena's [object Object] Jinx parsing bug
+- Medic's "undefined LONG at 13.1%" ledger entry
+- jackbot-temporal-edge's 11.1% WR (backtest against historical data pre-deploy)
+
+**Timeline:** Next week task, after Helena stabilizes as Portfolio Risk Governor.
+
+## Prophet Remodel — Bill Benter Architecture (2026-03-01)
+**Source:** Jackbot analysis + Prophet soul file
+**Key insight:** Don't predict from scratch. Start from market-implied probability, adjust for systematic bias factors.
+
+**Benter principles applied:**
+- Market is 90% correct — find the 10% where it's wrong
+- ~20 variables carry weight, not 200 (Wang et al. noise finding = same conclusion)
+- Kelly criterion as important as the model itself
+- Edge is 2-4% EV per bet — compounds through volume and discipline
+- Quarter-Kelly default (0.25x) for survival
+
+**SportRadar integration:** Win probabilities built into the API = Prophet's market baseline for sports domain. Prophet's job: find where SportRadar's market consensus is systematically wrong.
+
+**Files:** `academy/souls/PROPHET.soul.md`

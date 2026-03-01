@@ -14,6 +14,7 @@
 import * as fs from 'fs';
 import * as path from 'path';
 import { TemporalEdgeScanner, TemporalSignal } from '../../academy/src/services/temporal-edge';
+import { isBlocked } from './lib/blocklist';
 
 // ═══ Bot Challenge Signal Format ═══
 
@@ -63,7 +64,7 @@ async function main() {
   console.log(`Raw signals: ${result.signals.length}\n`);
   
   // Filter: confidence >= 0.6 and not distressed
-  const filtered = result.signals.filter(sig => {
+  const filteredByConfidence = result.signals.filter(sig => {
     if (sig.confidence < MIN_CONFIDENCE) {
       console.log(`SKIP ${sig.coin}: low confidence (${(sig.confidence * 100).toFixed(0)}%)`);
       return false;
@@ -77,7 +78,7 @@ async function main() {
   });
   
   // Convert to Bot Challenge signal format — regime-tagged (Stage 1, Oracle 2026-02-24)
-  const signals: BotChallengeSignal[] = filtered.map(sig => ({
+  const signals: BotChallengeSignal[] = filteredByConfidence.map(sig => ({
     tool: 'jackbot-temporal-edge',
     timestamp: new Date().toISOString(),
     unixMs: Date.now(),
@@ -118,7 +119,17 @@ async function main() {
     ledger = { signals: [], lastScanAt: '', totalScans: 0 };
   }
   
-  ledger.signals.push(...signals);
+  // Filter out blocked/cooldown coins
+  const filtered = signals.filter(s => {
+    const check = isBlocked(s.coin);
+    if (check.blocked) {
+      console.log(`🚫 ${s.coin} — ${check.reason}`);
+      return false;
+    }
+    return true;
+  });
+
+  ledger.signals.push(...filtered);
   ledger.lastScanAt = new Date().toISOString();
   ledger.totalScans++;
   
@@ -128,7 +139,7 @@ async function main() {
   }
   
   fs.writeFileSync(LEDGER_FILE, JSON.stringify(ledger, null, 2), 'utf-8');
-  console.log(`✅ Logged ${signals.length} signals to paper-ledger.json (total: ${ledger.signals.length} signals, ${ledger.totalScans} scans)`);
+  console.log(`✅ Logged ${filtered.length} signals to paper-ledger.json (${signals.length - filtered.length} blocked) (total: ${ledger.signals.length} signals, ${ledger.totalScans} scans)`);
   
   // Save daily report
   if (!fs.existsSync(REPORT_DIR)) {

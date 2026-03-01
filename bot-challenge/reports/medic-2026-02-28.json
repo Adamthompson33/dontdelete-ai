@@ -1,0 +1,82 @@
+{
+  "timestamp": "2026-02-28T21:09:03.198Z",
+  "regime": "TRENDING_DOWN",
+  "previousRegime": "TRENDING_DOWN",
+  "regimeShifted": false,
+  "alerts": [
+    {
+      "type": "STOP_BREACH",
+      "severity": "CRITICAL",
+      "coin": "SUI",
+      "direction": "SHORT",
+      "message": "Price at -6.4%, PAST 3% stop. Immediate exit.",
+      "action": "EXIT_NOW",
+      "details": {
+        "pnlPct": -6.44,
+        "stopLevel": 3
+      }
+    },
+    {
+      "type": "STOP_BREACH",
+      "severity": "CRITICAL",
+      "coin": "PENGU",
+      "direction": "SHORT",
+      "message": "Price at -9.5%, PAST 3% stop. Immediate exit.",
+      "action": "EXIT_NOW",
+      "details": {
+        "pnlPct": -9.49,
+        "stopLevel": 3
+      }
+    },
+    {
+      "type": "STOP_BREACH",
+      "severity": "CRITICAL",
+      "coin": "ARB",
+      "direction": "SHORT",
+      "message": "Price at -6.3%, PAST 3% stop. Immediate exit.",
+      "action": "EXIT_NOW",
+      "details": {
+        "pnlPct": -6.3,
+        "stopLevel": 3
+      }
+    },
+    {
+      "type": "STOP_BREACH",
+      "severity": "CRITICAL",
+      "coin": "BTC",
+      "direction": "SHORT",
+      "message": "Price at -3.7%, PAST 3% stop. Immediate exit.",
+      "action": "EXIT_NOW",
+      "details": {
+        "pnlPct": -3.74,
+        "stopLevel": 3
+      }
+    },
+    {
+      "type": "REGIME_SHIFT",
+      "severity": "WARNING",
+      "direction": "LONG",
+      "message": "GRANDFATHERED: sized at 15.3% under TRENDING_DOWN, current regime TRENDING_DOWN allows max 5.0%. Oversized by 3.1x. Manual trim recommended.",
+      "action": "TRIM",
+      "details": {
+        "currentSize": 15.27,
+        "allowedSize": 5,
+        "oversizeRatio": 3.05,
+        "entryRegime": "TRENDING_DOWN"
+      }
+    }
+  ],
+  "summary": {
+    "totalPositions": 9,
+    "alertCount": 5,
+    "criticalCount": 4,
+    "warningCount": 1,
+    "recommendedExits": [
+      "SUI",
+      "PENGU",
+      "ARB",
+      "BTC"
+    ],
+    "recommendedExtensions": []
+  }
+}

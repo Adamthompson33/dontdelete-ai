@@ -1,26 +1,28 @@
 {
-  "timestamp": "2026-03-01T09:08:03.596Z",
+  "timestamp": "2026-02-28T21:08:02.509Z",
   "regime": "TRENDING_DOWN",
   "directional": {
-    "longCount": 33,
-    "shortCount": 32,
-    "longPct": 21,
-    "longAllocPct": 46,
-    "crowdingScore": 58,
-    "verdict": "MODERATE: Slight short bias (21%). Acceptable for carry strategy."
+    "longCount": 17,
+    "shortCount": 54,
+    "longPct": 10,
+    "longAllocPct": 22,
+    "crowdingScore": 80,
+    "verdict": "CRITICAL: 10% SHORT — portfolio is a directional bet, not diversified carry"
   },
   "sectors": [
     {
       "name": "New / Unclassified",
       "code": "NEW",
-      "count": 137,
+      "count": 148,
       "allocPct": 78,
       "coins": [
         "BTC",
         "PENGU",
+        "XRP",
+        "DOT",
         "TAO",
+        "ANIME",
         "SOPH",
-        "LAYER",
         "Will Bitcoin be higher than $8",
         "[@mattyb’s 500th market specta",
         "Will Bitcoin (BTC) be below CH",
@@ -36,50 +38,49 @@
         "Same city wins 2+ major sports",
         "PORTFOLIO",
         null,
-        "XRP",
-        "DOT",
-        "ADA",
-        "Will Bitcoin hit $100.000 agai"
+        "ATOM",
+        "LAYER"
       ]
     },
     {
       "name": "Layer 1",
       "code": "L1",
-      "count": 18,
-      "allocPct": 16,
+      "count": 23,
+      "allocPct": 15,
       "coins": [
-        "ETH",
         "SOL",
+        "ETH",
         "SUI",
-        "NEAR",
-        "APT"
-      ]
-    },
-    {
-      "name": "Infrastructure",
-      "code": "INFRA",
-      "count": 2,
-      "allocPct": 3,
-      "coins": [
-        "LINK"
-      ]
-    },
-    {
-      "name": "Meme / Narrative",
-      "code": "MEME",
-      "count": 1,
-      "allocPct": 3,
-      "coins": [
-        "DOGE"
+        "NEAR"
       ]
     },
     {
       "name": "Layer 2 / Scaling",
       "code": "L2",
-      "count": 1,
-      "allocPct": 1,
+      "count": 2,
+      "allocPct": 5,
       "coins": [
+        "OP",
         "ARB"
+      ]
+    },
+    {
+      "name": "Meme / Narrative",
+      "code": "MEME",
+      "count": 2,
+      "allocPct": 2,
+      "coins": [
+        "DOGE",
+        "PEPE"
+      ]
+    },
+    {
+      "name": "Infrastructure",
+      "code": "INFRA",
+      "count": 1,
+      "allocPct": 0,
+      "coins": [
+        "LINK"
       ]
     },
     {
@@ -92,12 +93,13 @@
       ]
     }
   ],
-  "sectorHHI": 6359,
-  "sectorVerdict": "CRITICAL: HHI 6359 — portfolio dominated by New / Unclassified (78%). A sector-wide event would be catastrophic.",
+  "sectorHHI": 6338,
+  "sectorVerdict": "CRITICAL: HHI 6338 — portfolio dominated by New / Unclassified (78%). A sector-wide event would be catastrophic.",
   "btcBeta": {
-    "avgCorrelation": 34.95,
+    "avgCorrelation": 41.05,
     "highBetaCoins": [],
     "lowBetaCoins": [
+      "ANIME",
       "SOPH",
       "LAYER",
       "BTC",
@@ -107,9 +109,7 @@
       "SUI",
       "ETH",
       "XRP",
-      "NEAR",
-      "ADA",
-      "APT"
+      "NEAR"
     ],
     "btcExposurePct": 0,
     "verdict": "LOW: Only 0% high-beta. Portfolio has meaningful independence from BTC moves."
@@ -121,29 +121,30 @@
         "coins": [
           "SOL",
           "SUI",
-          "NEAR",
-          "APT"
+          "NEAR"
         ],
         "totalAlloc": 10
       },
       {
-        "narrative": "Meme Momentum",
-        "coins": [
-          "DOGE"
-        ],
-        "totalAlloc": 3
-      },
-      {
-        "narrative": "Infrastructure Demand",
-        "coins": [
-          "LINK"
-        ],
-        "totalAlloc": 3
-      },
-      {
         "narrative": "L2 Scaling",
         "coins": [
+          "OP",
           "ARB"
+        ],
+        "totalAlloc": 5
+      },
+      {
+        "narrative": "Meme Momentum",
+        "coins": [
+          "DOGE",
+          "PEPE"
+        ],
+        "totalAlloc": 2
+      },
+      {
+        "narrative": "New Token Hype",
+        "coins": [
+          "SOPH"
         ],
         "totalAlloc": 1
       },
@@ -155,9 +156,9 @@
         "totalAlloc": 0
       },
       {
-        "narrative": "New Token Hype",
+        "narrative": "Infrastructure Demand",
         "coins": [
-          "SOPH"
+          "LINK"
         ],
         "totalAlloc": 0
       }
@@ -166,11 +167,11 @@
     "verdict": "LOW: No single narrative exceeds 25%. Good narrative diversification."
   },
   "overallRisk": {
-    "score": 46,
+    "score": 55,
     "grade": "MODERATE",
     "factors": [
-      "Directional crowding (21% long)",
-      "Sector concentration (HHI 6359)",
+      "Directional crowding (10% long)",
+      "Sector concentration (HHI 6338)",
       "Narrative clustering (\"Alt L1 Recovery\" at 10%)"
     ],
     "recommendation": "ACCEPTABLE. Current risk controls (regime params, Sentry gate, Kelly sizing) are adequate. Monitor for crowding increases."

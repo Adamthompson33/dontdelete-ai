@@ -1,1037 +1,5 @@
 {
   "snapshots": {
-    "b9ade3f715e4c344543f672014bc2188": {
-      "eventId": "b9ade3f715e4c344543f672014bc2188",
-      "sport": "Premier League",
-      "homeTeam": "Wolverhampton Wanderers",
-      "awayTeam": "Aston Villa",
-      "commenceTime": "2026-02-27T20:00:00Z",
-      "sharpLines": [
-        {
-          "bookmaker": "betfair_ex_eu",
-          "market": "h2h",
-          "outcomes": [
-            {
-              "name": "Aston Villa",
-              "price": 1.89
-            },
-            {
-              "name": "Wolverhampton Wanderers",
-              "price": 4.7
-            },
-            {
-              "name": "Draw",
-              "price": 3.85
-            }
-          ],
-          "impliedProbs": {
-            "Aston Villa": 0.5291005291005292,
-            "Wolverhampton Wanderers": 0.2127659574468085,
-            "Draw": 0.2597402597402597
-          },
-          "lastUpdate": "2026-02-27T09:06:38Z"
-        },
-        {
-          "bookmaker": "betfair_ex_eu",
-          "market": "h2h_lay",
-          "outcomes": [
-            {
-              "name": "Aston Villa",
-              "price": 1.9
-            },
-            {
-              "name": "Wolverhampton Wanderers",
-              "price": 4.8
-            },
-            {
-              "name": "Draw",
-              "price": 3.9
-            }
-          ],
-          "impliedProbs": {
-            "Aston Villa": 0.5263157894736842,
-            "Wolverhampton Wanderers": 0.20833333333333334,
-            "Draw": 0.25641025641025644
-          },
-          "lastUpdate": "2026-02-27T09:06:38Z"
-        },
-        {
-          "bookmaker": "pinnacle",
-          "market": "h2h",
-          "outcomes": [
-            {
-              "name": "Aston Villa",
-              "price": 1.85
-            },
-            {
-              "name": "Wolverhampton Wanderers",
-              "price": 4.39
-            },
-            {
-              "name": "Draw",
-              "price": 3.73
-            }
-          ],
-          "impliedProbs": {
-            "Aston Villa": 0.5405405405405405,
-            "Wolverhampton Wanderers": 0.22779043280182235,
-            "Draw": 0.2680965147453083
-          },
-          "lastUpdate": "2026-02-27T09:06:49Z"
-        },
-        {
-          "bookmaker": "pinnacle",
-          "market": "spreads",
-          "outcomes": [
-            {
-              "name": "Aston Villa",
-              "price": 1.86,
-              "point": -0.5
-            },
-            {
-              "name": "Wolverhampton Wanderers",
-              "price": 2.05,
-              "point": 0.5
-            }
-          ],
-          "impliedProbs": {
-            "Aston Villa": 0.5376344086021505,
-            "Wolverhampton Wanderers": 0.48780487804878053
-          },
-          "lastUpdate": "2026-02-27T09:06:49Z"
-        },
-        {
-          "bookmaker": "matchbook",
-          "market": "h2h",
-          "outcomes": [
-            {
-              "name": "Aston Villa",
-              "price": 1.89
-            },
-            {
-              "name": "Wolverhampton Wanderers",
-              "price": 4.7
-            },
-            {
-              "name": "Draw",
-              "price": 3.85
-            }
-          ],
-          "impliedProbs": {
-            "Aston Villa": 0.5291005291005292,
-            "Wolverhampton Wanderers": 0.2127659574468085,
-            "Draw": 0.2597402597402597
-          },
-          "lastUpdate": "2026-02-27T09:06:49Z"
-        },
-        {
-          "bookmaker": "matchbook",
-          "market": "h2h_lay",
-          "outcomes": [
-            {
-              "name": "Aston Villa",
-              "price": 1.9
-            },
-            {
-              "name": "Wolverhampton Wanderers",
-              "price": 4.8
-            },
-            {
-              "name": "Draw",
-              "price": 3.9
-            }
-          ],
-          "impliedProbs": {
-            "Aston Villa": 0.5263157894736842,
-            "Wolverhampton Wanderers": 0.20833333333333334,
-            "Draw": 0.25641025641025644
-          },
-          "lastUpdate": "2026-02-27T09:06:49Z"
-        },
-        {
-          "bookmaker": "matchbook",
-          "market": "spreads",
-          "outcomes": [
-            {
-              "name": "Aston Villa",
-              "price": 1.89,
-              "point": -0.5
-            },
-            {
-              "name": "Wolverhampton Wanderers",
-              "price": 2.1,
-              "point": 0.5
-            }
-          ],
-          "impliedProbs": {
-            "Aston Villa": 0.5291005291005292,
-            "Wolverhampton Wanderers": 0.47619047619047616
-          },
-          "lastUpdate": "2026-02-27T09:06:49Z"
-        }
-      ],
-      "scannedAt": "2026-02-27T09:07:06.464Z"
-    },
-    "621cff11a60f850184fc515327f29a11": {
-      "eventId": "621cff11a60f850184fc515327f29a11",
-      "sport": "Premier League",
-      "homeTeam": "Bournemouth",
-      "awayTeam": "Sunderland",
-      "commenceTime": "2026-02-28T12:30:00Z",
-      "sharpLines": [
-        {
-          "bookmaker": "betfair_ex_eu",
-          "market": "h2h",
-          "outcomes": [
-            {
-              "name": "Bournemouth",
-              "price": 1.83
-            },
-            {
-              "name": "Sunderland",
-              "price": 4.7
-            },
-            {
-              "name": "Draw",
-              "price": 3.95
-            }
-          ],
-          "impliedProbs": {
-            "Bournemouth": 0.5464480874316939,
-            "Sunderland": 0.2127659574468085,
-            "Draw": 0.2531645569620253
-          },
-          "lastUpdate": "2026-02-27T09:06:38Z"
-        },
-        {
-          "bookmaker": "betfair_ex_eu",
-          "market": "h2h_lay",
-          "outcomes": [
-            {
-              "name": "Bournemouth",
-              "price": 1.84
-            },
-            {
-              "name": "Sunderland",
-              "price": 4.9
-            },
-            {
-              "name": "Draw",
-              "price": 4.1
-            }
-          ],
-          "impliedProbs": {
-            "Bournemouth": 0.5434782608695652,
-            "Sunderland": 0.2040816326530612,
-            "Draw": 0.24390243902439027
-          },
-          "lastUpdate": "2026-02-27T09:06:38Z"
-        },
-        {
-          "bookmaker": "pinnacle",
-          "market": "h2h",
-          "outcomes": [
-            {
-              "name": "Bournemouth",
-              "price": 1.78
-            },
-            {
-              "name": "Sunderland",
-              "price": 4.55
-            },
-            {
-              "name": "Draw",
-              "price": 3.93
-            }
-          ],
-          "impliedProbs": {
-            "Bournemouth": 0.5617977528089888,
-            "Sunderland": 0.21978021978021978,
-            "Draw": 0.2544529262086514
-          },
-          "lastUpdate": "2026-02-27T09:06:49Z"
-        },
-        {
-          "bookmaker": "pinnacle",
-          "market": "spreads",
-          "outcomes": [
-            {
-              "name": "Bournemouth",
-              "price": 2.02,
-              "point": -0.75
-            },
-            {
-              "name": "Sunderland",
-              "price": 1.88,
-              "point": 0.75
-            }
-          ],
-          "impliedProbs": {
-            "Bournemouth": 0.49504950495049505,
-            "Sunderland": 0.5319148936170213
-          },
-          "lastUpdate": "2026-02-27T09:06:49Z"
-        },
-        {
-          "bookmaker": "matchbook",
-          "market": "h2h",
-          "outcomes": [
-            {
-              "name": "Bournemouth",
-              "price": 1.83
-            },
-            {
-              "name": "Sunderland",
-              "price": 4.7
-            },
-            {
-              "name": "Draw",
-              "price": 4
-            }
-          ],
-          "impliedProbs": {
-            "Bournemouth": 0.5464480874316939,
-            "Sunderland": 0.2127659574468085,
-            "Draw": 0.25
-          },
-          "lastUpdate": "2026-02-27T09:06:49Z"
-        },
-        {
-          "bookmaker": "matchbook",
-          "market": "h2h_lay",
-          "outcomes": [
-            {
-              "name": "Bournemouth",
-              "price": 1.84
-            },
-            {
-              "name": "Sunderland",
-              "price": 4.9
-            },
-            {
-              "name": "Draw",
-              "price": 4.1
-            }
-          ],
-          "impliedProbs": {
-            "Bournemouth": 0.5434782608695652,
-            "Sunderland": 0.2040816326530612,
-            "Draw": 0.24390243902439027
-          },
-          "lastUpdate": "2026-02-27T09:06:49Z"
-        },
-        {
-          "bookmaker": "matchbook",
-          "market": "spreads",
-          "outcomes": [
-            {
-              "name": "Bournemouth",
-              "price": 2.06,
-              "point": -0.75
-            },
-            {
-              "name": "Sunderland",
-              "price": 1.91,
-              "point": 0.75
-            }
-          ],
-          "impliedProbs": {
-            "Bournemouth": 0.4854368932038835,
-            "Sunderland": 0.5235602094240838
-          },
-          "lastUpdate": "2026-02-27T09:06:49Z"
-        }
-      ],
-      "scannedAt": "2026-02-27T09:07:06.465Z"
-    },
-    "c31face07c72bd0418f18dc032764cea": {
-      "eventId": "c31face07c72bd0418f18dc032764cea",
-      "sport": "Premier League",
-      "homeTeam": "Burnley",
-      "awayTeam": "Brentford",
-      "commenceTime": "2026-02-28T15:00:00Z",
-      "sharpLines": [
-        {
-          "bookmaker": "betfair_ex_eu",
-          "market": "h2h",
-          "outcomes": [
-            {
-              "name": "Brentford",
-              "price": 1.78
-            },
-            {
-              "name": "Burnley",
-              "price": 5.1
-            },
-            {
-              "name": "Draw",
-              "price": 4
-            }
-          ],
-          "impliedProbs": {
-            "Brentford": 0.5617977528089888,
-            "Burnley": 0.19607843137254904,
-            "Draw": 0.25
-          },
-          "lastUpdate": "2026-02-27T09:06:38Z"
-        },
-        {
-          "bookmaker": "betfair_ex_eu",
-          "market": "h2h_lay",
-          "outcomes": [
-            {
-              "name": "Brentford",
-              "price": 1.79
-            },
-            {
-              "name": "Burnley",
-              "price": 5.2
-            },
-            {
-              "name": "Draw",
-              "price": 4.1
-            }
-          ],
-          "impliedProbs": {
-            "Brentford": 0.5586592178770949,
-            "Burnley": 0.1923076923076923,
-            "Draw": 0.24390243902439027
-          },
-          "lastUpdate": "2026-02-27T09:06:38Z"
-        },
-        {
-          "bookmaker": "pinnacle",
-          "market": "h2h",
-          "outcomes": [
-            {
-              "name": "Brentford",
-              "price": 1.74
-            },
-            {
-              "name": "Burnley",
-              "price": 4.7
-            },
-            {
-              "name": "Draw",
-              "price": 4.01
-            }
-          ],
-          "impliedProbs": {
-            "Brentford": 0.5747126436781609,
-            "Burnley": 0.2127659574468085,
-            "Draw": 0.24937655860349128
-          },
-          "lastUpdate": "2026-02-27T09:06:49Z"
-        },
-        {
-          "bookmaker": "pinnacle",
-          "market": "spreads",
-          "outcomes": [
-            {
-              "name": "Brentford",
-              "price": 1.98,
-              "point": -0.75
-            },
-            {
-              "name": "Burnley",
-              "price": 1.93,
-              "point": 0.75
-            }
-          ],
-          "impliedProbs": {
-            "Brentford": 0.5050505050505051,
-            "Burnley": 0.5181347150259068
-          },
-          "lastUpdate": "2026-02-27T09:06:49Z"
-        },
-        {
-          "bookmaker": "matchbook",
-          "market": "h2h",
-          "outcomes": [
-            {
-              "name": "Brentford",
-              "price": 1.78
-            },
-            {
-              "name": "Burnley",
-              "price": 5.1
-            },
-            {
-              "name": "Draw",
-              "price": 4
-            }
-          ],
-          "impliedProbs": {
-            "Brentford": 0.5617977528089888,
-            "Burnley": 0.19607843137254904,
-            "Draw": 0.25
-          },
-          "lastUpdate": "2026-02-27T09:06:49Z"
-        },
-        {
-          "bookmaker": "matchbook",
-          "market": "h2h_lay",
-          "outcomes": [
-            {
-              "name": "Brentford",
-              "price": 1.79
-            },
-            {
-              "name": "Burnley",
-              "price": 5.2
-            },
-            {
-              "name": "Draw",
-              "price": 4.1
-            }
-          ],
-          "impliedProbs": {
-            "Brentford": 0.5586592178770949,
-            "Burnley": 0.1923076923076923,
-            "Draw": 0.24390243902439027
-          },
-          "lastUpdate": "2026-02-27T09:06:49Z"
-        },
-        {
-          "bookmaker": "matchbook",
-          "market": "spreads",
-          "outcomes": [
-            {
-              "name": "Brentford",
-              "price": 2,
-              "point": -0.75
-            },
-            {
-              "name": "Burnley",
-              "price": 1.97,
-              "point": 0.75
-            }
-          ],
-          "impliedProbs": {
-            "Brentford": 0.5,
-            "Burnley": 0.5076142131979695
-          },
-          "lastUpdate": "2026-02-27T09:06:49Z"
-        }
-      ],
-      "scannedAt": "2026-02-27T09:07:06.465Z"
-    },
-    "5eeaa47bfb416d8b2a5f25cf16731cb2": {
-      "eventId": "5eeaa47bfb416d8b2a5f25cf16731cb2",
-      "sport": "Premier League",
-      "homeTeam": "Newcastle United",
-      "awayTeam": "Everton",
-      "commenceTime": "2026-02-28T15:00:00Z",
-      "sharpLines": [
-        {
-          "bookmaker": "betfair_ex_eu",
-          "market": "h2h",
-          "outcomes": [
-            {
-              "name": "Everton",
-              "price": 5.1
-            },
-            {
-              "name": "Newcastle United",
-              "price": 1.74
-            },
-            {
-              "name": "Draw",
-              "price": 4.1
-            }
-          ],
-          "impliedProbs": {
-            "Everton": 0.19607843137254904,
-            "Newcastle United": 0.5747126436781609,
-            "Draw": 0.24390243902439027
-          },
-          "lastUpdate": "2026-02-27T09:06:38Z"
-        },
-        {
-          "bookmaker": "betfair_ex_eu",
-          "market": "h2h_lay",
-          "outcomes": [
-            {
-              "name": "Everton",
-              "price": 5.3
-            },
-            {
-              "name": "Newcastle United",
-              "price": 1.75
-            },
-            {
-              "name": "Draw",
-              "price": 4.3
-            }
-          ],
-          "impliedProbs": {
-            "Everton": 0.18867924528301888,
-            "Newcastle United": 0.5714285714285714,
-            "Draw": 0.23255813953488372
-          },
-          "lastUpdate": "2026-02-27T09:06:38Z"
-        },
-        {
-          "bookmaker": "pinnacle",
-          "market": "h2h",
-          "outcomes": [
-            {
-              "name": "Everton",
-              "price": 4.7
-            },
-            {
-              "name": "Newcastle United",
-              "price": 1.71
-            },
-            {
-              "name": "Draw",
-              "price": 4.15
-            }
-          ],
-          "impliedProbs": {
-            "Everton": 0.2127659574468085,
-            "Newcastle United": 0.5847953216374269,
-            "Draw": 0.24096385542168672
-          },
-          "lastUpdate": "2026-02-27T09:06:49Z"
-        },
-        {
-          "bookmaker": "pinnacle",
-          "market": "spreads",
-          "outcomes": [
-            {
-              "name": "Everton",
-              "price": 1.98,
-              "point": 0.75
-            },
-            {
-              "name": "Newcastle United",
-              "price": 1.93,
-              "point": -0.75
-            }
-          ],
-          "impliedProbs": {
-            "Everton": 0.5050505050505051,
-            "Newcastle United": 0.5181347150259068
-          },
-          "lastUpdate": "2026-02-27T09:06:49Z"
-        },
-        {
-          "bookmaker": "matchbook",
-          "market": "h2h",
-          "outcomes": [
-            {
-              "name": "Everton",
-              "price": 5.1
-            },
-            {
-              "name": "Newcastle United",
-              "price": 1.74
-            },
-            {
-              "name": "Draw",
-              "price": 4.1
-            }
-          ],
-          "impliedProbs": {
-            "Everton": 0.19607843137254904,
-            "Newcastle United": 0.5747126436781609,
-            "Draw": 0.24390243902439027
-          },
-          "lastUpdate": "2026-02-27T09:06:49Z"
-        },
-        {
-          "bookmaker": "matchbook",
-          "market": "h2h_lay",
-          "outcomes": [
-            {
-              "name": "Everton",
-              "price": 5.3
-            },
-            {
-              "name": "Newcastle United",
-              "price": 1.76
-            },
-            {
-              "name": "Draw",
-              "price": 4.3
-            }
-          ],
-          "impliedProbs": {
-            "Everton": 0.18867924528301888,
-            "Newcastle United": 0.5681818181818182,
-            "Draw": 0.23255813953488372
-          },
-          "lastUpdate": "2026-02-27T09:06:49Z"
-        },
-        {
-          "bookmaker": "matchbook",
-          "market": "spreads",
-          "outcomes": [
-            {
-              "name": "Everton",
-              "price": 2.02,
-              "point": 0.75
-            },
-            {
-              "name": "Newcastle United",
-              "price": 1.95,
-              "point": -0.75
-            }
-          ],
-          "impliedProbs": {
-            "Everton": 0.49504950495049505,
-            "Newcastle United": 0.5128205128205129
-          },
-          "lastUpdate": "2026-02-27T09:06:49Z"
-        }
-      ],
-      "scannedAt": "2026-02-27T09:07:06.465Z"
-    },
-    "466f3df43a6647947e4fb9cab6657d80": {
-      "eventId": "466f3df43a6647947e4fb9cab6657d80",
-      "sport": "Premier League",
-      "homeTeam": "Liverpool",
-      "awayTeam": "West Ham United",
-      "commenceTime": "2026-02-28T15:00:00Z",
-      "sharpLines": [
-        {
-          "bookmaker": "betfair_ex_eu",
-          "market": "h2h",
-          "outcomes": [
-            {
-              "name": "Liverpool",
-              "price": 1.44
-            },
-            {
-              "name": "West Ham United",
-              "price": 7.6
-            },
-            {
-              "name": "Draw",
-              "price": 5.6
-            }
-          ],
-          "impliedProbs": {
-            "Liverpool": 0.6944444444444444,
-            "West Ham United": 0.13157894736842105,
-            "Draw": 0.17857142857142858
-          },
-          "lastUpdate": "2026-02-27T09:06:38Z"
-        },
-        {
-          "bookmaker": "betfair_ex_eu",
-          "market": "h2h_lay",
-          "outcomes": [
-            {
-              "name": "Liverpool",
-              "price": 1.45
-            },
-            {
-              "name": "West Ham United",
-              "price": 8
-            },
-            {
-              "name": "Draw",
-              "price": 5.7
-            }
-          ],
-          "impliedProbs": {
-            "Liverpool": 0.6896551724137931,
-            "West Ham United": 0.125,
-            "Draw": 0.17543859649122806
-          },
-          "lastUpdate": "2026-02-27T09:06:38Z"
-        },
-        {
-          "bookmaker": "pinnacle",
-          "market": "h2h",
-          "outcomes": [
-            {
-              "name": "Liverpool",
-              "price": 1.4
-            },
-            {
-              "name": "West Ham United",
-              "price": 7.43
-            },
-            {
-              "name": "Draw",
-              "price": 5.24
-            }
-          ],
-          "impliedProbs": {
-            "Liverpool": 0.7142857142857143,
-            "West Ham United": 0.13458950201884254,
-            "Draw": 0.19083969465648853
-          },
-          "lastUpdate": "2026-02-27T09:06:49Z"
-        },
-        {
-          "bookmaker": "pinnacle",
-          "market": "spreads",
-          "outcomes": [
-            {
-              "name": "Liverpool",
-              "price": 1.89,
-              "point": -1.25
-            },
-            {
-              "name": "West Ham United",
-              "price": 2.02,
-              "point": 1.25
-            }
-          ],
-          "impliedProbs": {
-            "Liverpool": 0.5291005291005292,
-            "West Ham United": 0.49504950495049505
-          },
-          "lastUpdate": "2026-02-27T09:06:49Z"
-        },
-        {
-          "bookmaker": "matchbook",
-          "market": "h2h",
-          "outcomes": [
-            {
-              "name": "Liverpool",
-              "price": 1.46
-            },
-            {
-              "name": "West Ham United",
-              "price": 7.4
-            },
-            {
-              "name": "Draw",
-              "price": 5.5
-            }
-          ],
-          "impliedProbs": {
-            "Liverpool": 0.684931506849315,
-            "West Ham United": 0.13513513513513511,
-            "Draw": 0.18181818181818182
-          },
-          "lastUpdate": "2026-02-27T09:06:49Z"
-        },
-        {
-          "bookmaker": "matchbook",
-          "market": "h2h_lay",
-          "outcomes": [
-            {
-              "name": "Liverpool",
-              "price": 1.47
-            },
-            {
-              "name": "West Ham United",
-              "price": 7.6
-            },
-            {
-              "name": "Draw",
-              "price": 5.6
-            }
-          ],
-          "impliedProbs": {
-            "Liverpool": 0.6802721088435374,
-            "West Ham United": 0.13157894736842105,
-            "Draw": 0.17857142857142858
-          },
-          "lastUpdate": "2026-02-27T09:06:49Z"
-        },
-        {
-          "bookmaker": "matchbook",
-          "market": "spreads",
-          "outcomes": [
-            {
-              "name": "Liverpool",
-              "price": 1.95,
-              "point": -1.25
-            },
-            {
-              "name": "West Ham United",
-              "price": 2,
-              "point": 1.25
-            }
-          ],
-          "impliedProbs": {
-            "Liverpool": 0.5128205128205129,
-            "West Ham United": 0.5
-          },
-          "lastUpdate": "2026-02-27T09:06:49Z"
-        }
-      ],
-      "scannedAt": "2026-02-27T09:07:06.465Z"
-    },
-    "300862b165c77b6fe6c3fccf717aba1e": {
-      "eventId": "300862b165c77b6fe6c3fccf717aba1e",
-      "sport": "Premier League",
-      "homeTeam": "Leeds United",
-      "awayTeam": "Manchester City",
-      "commenceTime": "2026-02-28T17:30:00Z",
-      "sharpLines": [
-        {
-          "bookmaker": "betfair_ex_eu",
-          "market": "h2h",
-          "outcomes": [
-            {
-              "name": "Leeds United",
-              "price": 5.6
-            },
-            {
-              "name": "Manchester City",
-              "price": 1.64
-            },
-            {
-              "name": "Draw",
-              "price": 4.6
-            }
-          ],
-          "impliedProbs": {
-            "Leeds United": 0.17857142857142858,
-            "Manchester City": 0.6097560975609756,
-            "Draw": 0.2173913043478261
-          },
-          "lastUpdate": "2026-02-27T09:06:38Z"
-        },
-        {
-          "bookmaker": "betfair_ex_eu",
-          "market": "h2h_lay",
-          "outcomes": [
-            {
-              "name": "Leeds United",
-              "price": 5.7
-            },
-            {
-              "name": "Manchester City",
-              "price": 1.65
-            },
-            {
-              "name": "Draw",
-              "price": 4.7
-            }
-          ],
-          "impliedProbs": {
-            "Leeds United": 0.17543859649122806,
-            "Manchester City": 0.6060606060606061,
-            "Draw": 0.2127659574468085
-          },
-          "lastUpdate": "2026-02-27T09:06:38Z"
-        },
-        {
-          "bookmaker": "pinnacle",
-          "market": "h2h",
-          "outcomes": [
-            {
-              "name": "Leeds United",
-              "price": 5.37
-            },
-            {
-              "name": "Manchester City",
-              "price": 1.59
-            },
-            {
-              "name": "Draw",
-              "price": 4.5
-            }
-          ],
-          "impliedProbs": {
-            "Leeds United": 0.186219739292365,
-            "Manchester City": 0.6289308176100629,
-            "Draw": 0.2222222222222222
-          },
-          "lastUpdate": "2026-02-27T09:06:49Z"
-        },
-        {
-          "bookmaker": "pinnacle",
-          "market": "spreads",
-          "outcomes": [
-            {
-              "name": "Leeds United",
-              "price": 1.85,
-              "point": 1
-            },
-            {
-              "name": "Manchester City",
-              "price": 2.06,
-              "point": -1
-            }
-          ],
-          "impliedProbs": {
-            "Leeds United": 0.5405405405405405,
-            "Manchester City": 0.4854368932038835
-          },
-          "lastUpdate": "2026-02-27T09:06:49Z"
-        },
-        {
-          "bookmaker": "matchbook",
-          "market": "h2h",
-          "outcomes": [
-            {
-              "name": "Leeds United",
-              "price": 5.6
-            },
-            {
-              "name": "Manchester City",
-              "price": 1.64
-            },
-            {
-              "name": "Draw",
-              "price": 4.6
-            }
-          ],
-          "impliedProbs": {
-            "Leeds United": 0.17857142857142858,
-            "Manchester City": 0.6097560975609756,
-            "Draw": 0.2173913043478261
-          },
-          "lastUpdate": "2026-02-27T09:06:49Z"
-        },
-        {
-          "bookmaker": "matchbook",
-          "market": "h2h_lay",
-          "outcomes": [
-            {
-              "name": "Leeds United",
-              "price": 5.8
-            },
-            {
-              "name": "Manchester City",
-              "price": 1.65
-            },
-            {
-              "name": "Draw",
-              "price": 4.7
-            }
-          ],
-          "impliedProbs": {
-            "Leeds United": 0.1724137931034483,
-            "Manchester City": 0.6060606060606061,
-            "Draw": 0.2127659574468085
-          },
-          "lastUpdate": "2026-02-27T09:06:49Z"
-        },
-        {
-          "bookmaker": "matchbook",
-          "market": "spreads",
-          "outcomes": [
-            {
-              "name": "Leeds United",
-              "price": 1.89,
-              "point": 1
-            },
-            {
-              "name": "Manchester City",
-              "price": 2.08,
-              "point": -1
-            }
-          ],
-          "impliedProbs": {
-            "Leeds United": 0.5291005291005292,
-            "Manchester City": 0.4807692307692307
-          },
-          "lastUpdate": "2026-02-27T09:06:49Z"
-        }
-      ],
-      "scannedAt": "2026-02-27T09:07:06.465Z"
-    },
     "b0e5c780eac6e73974f5d023b9a7f17b": {
       "eventId": "b0e5c780eac6e73974f5d023b9a7f17b",
       "sport": "Premier League",
@@ -1045,23 +13,23 @@
           "outcomes": [
             {
               "name": "Brighton and Hove Albion",
-              "price": 2.16
+              "price": 2.28
             },
             {
               "name": "Nottingham Forest",
-              "price": 3.6
+              "price": 3.5
             },
             {
               "name": "Draw",
-              "price": 3.7
+              "price": 3.55
             }
           ],
           "impliedProbs": {
-            "Brighton and Hove Albion": 0.4629629629629629,
-            "Nottingham Forest": 0.2777777777777778,
-            "Draw": 0.27027027027027023
+            "Brighton and Hove Albion": 0.4385964912280702,
+            "Nottingham Forest": 0.2857142857142857,
+            "Draw": 0.28169014084507044
           },
-          "lastUpdate": "2026-02-27T09:06:38Z"
+          "lastUpdate": "2026-03-01T09:06:43Z"
         },
         {
           "bookmaker": "betfair_ex_eu",
@@ -1069,35 +37,11 @@
           "outcomes": [
             {
               "name": "Brighton and Hove Albion",
-              "price": 2.2
+              "price": 2.3
             },
             {
               "name": "Nottingham Forest",
-              "price": 3.7
-            },
-            {
-              "name": "Draw",
-              "price": 3.75
-            }
-          ],
-          "impliedProbs": {
-            "Brighton and Hove Albion": 0.45454545454545453,
-            "Nottingham Forest": 0.27027027027027023,
-            "Draw": 0.26666666666666666
-          },
-          "lastUpdate": "2026-02-27T09:06:38Z"
-        },
-        {
-          "bookmaker": "pinnacle",
-          "market": "h2h",
-          "outcomes": [
-            {
-              "name": "Brighton and Hove Albion",
-              "price": 2.11
-            },
-            {
-              "name": "Nottingham Forest",
-              "price": 3.53
+              "price": 3.55
             },
             {
               "name": "Draw",
@@ -1105,11 +49,35 @@
             }
           ],
           "impliedProbs": {
-            "Brighton and Hove Albion": 0.47393364928909953,
-            "Nottingham Forest": 0.28328611898017,
+            "Brighton and Hove Albion": 0.4347826086956522,
+            "Nottingham Forest": 0.28169014084507044,
             "Draw": 0.2777777777777778
           },
-          "lastUpdate": "2026-02-27T09:06:49Z"
+          "lastUpdate": "2026-03-01T09:06:43Z"
+        },
+        {
+          "bookmaker": "pinnacle",
+          "market": "h2h",
+          "outcomes": [
+            {
+              "name": "Brighton and Hove Albion",
+              "price": 2.25
+            },
+            {
+              "name": "Nottingham Forest",
+              "price": 3.43
+            },
+            {
+              "name": "Draw",
+              "price": 3.41
+            }
+          ],
+          "impliedProbs": {
+            "Brighton and Hove Albion": 0.4444444444444444,
+            "Nottingham Forest": 0.29154518950437314,
+            "Draw": 0.29325513196480935
+          },
+          "lastUpdate": "2026-03-01T09:06:58Z"
         },
         {
           "bookmaker": "pinnacle",
@@ -1117,20 +85,20 @@
           "outcomes": [
             {
               "name": "Brighton and Hove Albion",
-              "price": 1.84,
+              "price": 1.94,
               "point": -0.25
             },
             {
               "name": "Nottingham Forest",
-              "price": 2.08,
+              "price": 1.98,
               "point": 0.25
             }
           ],
           "impliedProbs": {
-            "Brighton and Hove Albion": 0.5434782608695652,
-            "Nottingham Forest": 0.4807692307692307
+            "Brighton and Hove Albion": 0.5154639175257733,
+            "Nottingham Forest": 0.5050505050505051
           },
-          "lastUpdate": "2026-02-27T09:06:49Z"
+          "lastUpdate": "2026-03-01T09:06:58Z"
         },
         {
           "bookmaker": "matchbook",
@@ -1138,23 +106,23 @@
           "outcomes": [
             {
               "name": "Brighton and Hove Albion",
-              "price": 2.16
+              "price": 2.28
             },
             {
               "name": "Nottingham Forest",
-              "price": 3.6
+              "price": 3.5
             },
             {
               "name": "Draw",
-              "price": 3.7
+              "price": 3.55
             }
           ],
           "impliedProbs": {
-            "Brighton and Hove Albion": 0.4629629629629629,
-            "Nottingham Forest": 0.2777777777777778,
-            "Draw": 0.27027027027027023
+            "Brighton and Hove Albion": 0.4385964912280702,
+            "Nottingham Forest": 0.2857142857142857,
+            "Draw": 0.28169014084507044
           },
-          "lastUpdate": "2026-02-27T09:06:49Z"
+          "lastUpdate": "2026-03-01T09:06:56Z"
         },
         {
           "bookmaker": "matchbook",
@@ -1162,23 +130,23 @@
           "outcomes": [
             {
               "name": "Brighton and Hove Albion",
-              "price": 2.2
+              "price": 2.3
             },
             {
               "name": "Nottingham Forest",
-              "price": 3.7
+              "price": 3.55
             },
             {
               "name": "Draw",
-              "price": 3.75
+              "price": 3.6
             }
           ],
           "impliedProbs": {
-            "Brighton and Hove Albion": 0.45454545454545453,
-            "Nottingham Forest": 0.27027027027027023,
-            "Draw": 0.26666666666666666
+            "Brighton and Hove Albion": 0.4347826086956522,
+            "Nottingham Forest": 0.28169014084507044,
+            "Draw": 0.2777777777777778
           },
-          "lastUpdate": "2026-02-27T09:06:49Z"
+          "lastUpdate": "2026-03-01T09:06:56Z"
         },
         {
           "bookmaker": "matchbook",
@@ -1186,23 +154,23 @@
           "outcomes": [
             {
               "name": "Brighton and Hove Albion",
-              "price": 1.87,
+              "price": 1.96,
               "point": -0.25
             },
             {
               "name": "Nottingham Forest",
-              "price": 2.1,
+              "price": 2.02,
               "point": 0.25
             }
           ],
           "impliedProbs": {
-            "Brighton and Hove Albion": 0.53475935828877,
-            "Nottingham Forest": 0.47619047619047616
+            "Brighton and Hove Albion": 0.5102040816326531,
+            "Nottingham Forest": 0.49504950495049505
           },
-          "lastUpdate": "2026-02-27T09:06:49Z"
+          "lastUpdate": "2026-03-01T09:06:56Z"
         }
       ],
-      "scannedAt": "2026-02-27T09:07:06.465Z"
+      "scannedAt": "2026-03-01T09:07:05.942Z"
     },
     "17717f1dec1142342e08b89ec57dafa8": {
       "eventId": "17717f1dec1142342e08b89ec57dafa8",
@@ -1217,7 +185,7 @@
           "outcomes": [
             {
               "name": "Crystal Palace",
-              "price": 6.4
+              "price": 6.6
             },
             {
               "name": "Manchester United",
@@ -1229,11 +197,11 @@
             }
           ],
           "impliedProbs": {
-            "Crystal Palace": 0.15625,
+            "Crystal Palace": 0.15151515151515152,
             "Manchester United": 0.6369426751592356,
             "Draw": 0.2173913043478261
           },
-          "lastUpdate": "2026-02-27T09:06:38Z"
+          "lastUpdate": "2026-03-01T09:06:43Z"
         },
         {
           "bookmaker": "betfair_ex_eu",
@@ -1257,7 +225,7 @@
             "Manchester United": 0.6329113924050632,
             "Draw": 0.2127659574468085
           },
-          "lastUpdate": "2026-02-27T09:06:38Z"
+          "lastUpdate": "2026-03-01T09:06:43Z"
         },
         {
           "bookmaker": "pinnacle",
@@ -1265,23 +233,23 @@
           "outcomes": [
             {
               "name": "Crystal Palace",
-              "price": 5.82
+              "price": 6.19
             },
             {
               "name": "Manchester United",
-              "price": 1.56
+              "price": 1.55
             },
             {
               "name": "Draw",
-              "price": 4.44
+              "price": 4.43
             }
           ],
           "impliedProbs": {
-            "Crystal Palace": 0.1718213058419244,
-            "Manchester United": 0.641025641025641,
-            "Draw": 0.2252252252252252
+            "Crystal Palace": 0.16155088852988692,
+            "Manchester United": 0.6451612903225806,
+            "Draw": 0.22573363431151244
           },
-          "lastUpdate": "2026-02-27T09:06:49Z"
+          "lastUpdate": "2026-03-01T09:06:58Z"
         },
         {
           "bookmaker": "pinnacle",
@@ -1289,7 +257,76 @@
           "outcomes": [
             {
               "name": "Crystal Palace",
-              "price": 1.97,
+              "price": 2.02,
+              "point": 1
+            },
+            {
+              "name": "Manchester United",
+              "price": 1.91,
+              "point": -1
+            }
+          ],
+          "impliedProbs": {
+            "Crystal Palace": 0.49504950495049505,
+            "Manchester United": 0.5235602094240838
+          },
+          "lastUpdate": "2026-03-01T09:06:58Z"
+        },
+        {
+          "bookmaker": "matchbook",
+          "market": "h2h",
+          "outcomes": [
+            {
+              "name": "Crystal Palace",
+              "price": 6.6
+            },
+            {
+              "name": "Manchester United",
+              "price": 1.57
+            },
+            {
+              "name": "Draw",
+              "price": 4.6
+            }
+          ],
+          "impliedProbs": {
+            "Crystal Palace": 0.15151515151515152,
+            "Manchester United": 0.6369426751592356,
+            "Draw": 0.2173913043478261
+          },
+          "lastUpdate": "2026-03-01T09:06:56Z"
+        },
+        {
+          "bookmaker": "matchbook",
+          "market": "h2h_lay",
+          "outcomes": [
+            {
+              "name": "Crystal Palace",
+              "price": 7
+            },
+            {
+              "name": "Manchester United",
+              "price": 1.58
+            },
+            {
+              "name": "Draw",
+              "price": 4.7
+            }
+          ],
+          "impliedProbs": {
+            "Crystal Palace": 0.14285714285714285,
+            "Manchester United": 0.6329113924050632,
+            "Draw": 0.2127659574468085
+          },
+          "lastUpdate": "2026-03-01T09:06:56Z"
+        },
+        {
+          "bookmaker": "matchbook",
+          "market": "spreads",
+          "outcomes": [
+            {
+              "name": "Crystal Palace",
+              "price": 2.04,
               "point": 1
             },
             {
@@ -1299,13 +336,13 @@
             }
           ],
           "impliedProbs": {
-            "Crystal Palace": 0.5076142131979695,
+            "Crystal Palace": 0.49019607843137253,
             "Manchester United": 0.5181347150259068
           },
-          "lastUpdate": "2026-02-27T09:06:49Z"
+          "lastUpdate": "2026-03-01T09:06:56Z"
         }
       ],
-      "scannedAt": "2026-02-27T09:07:06.465Z"
+      "scannedAt": "2026-03-01T09:07:05.943Z"
     },
     "c9a6fecd9a75e1db00f4a2aa82e0b69e": {
       "eventId": "c9a6fecd9a75e1db00f4a2aa82e0b69e",
@@ -1320,23 +357,23 @@
           "outcomes": [
             {
               "name": "Fulham",
-              "price": 2.16
+              "price": 1.99
             },
             {
               "name": "Tottenham Hotspur",
-              "price": 3.55
+              "price": 4
             },
             {
               "name": "Draw",
-              "price": 3.75
+              "price": 3.95
             }
           ],
           "impliedProbs": {
-            "Fulham": 0.4629629629629629,
-            "Tottenham Hotspur": 0.28169014084507044,
-            "Draw": 0.26666666666666666
+            "Fulham": 0.5025125628140703,
+            "Tottenham Hotspur": 0.25,
+            "Draw": 0.2531645569620253
           },
-          "lastUpdate": "2026-02-27T09:06:38Z"
+          "lastUpdate": "2026-03-01T09:06:43Z"
         },
         {
           "bookmaker": "betfair_ex_eu",
@@ -1344,23 +381,23 @@
           "outcomes": [
             {
               "name": "Fulham",
-              "price": 2.2
+              "price": 2
             },
             {
               "name": "Tottenham Hotspur",
-              "price": 3.6
+              "price": 4.1
             },
             {
               "name": "Draw",
-              "price": 3.8
+              "price": 4
             }
           ],
           "impliedProbs": {
-            "Fulham": 0.45454545454545453,
-            "Tottenham Hotspur": 0.2777777777777778,
-            "Draw": 0.2631578947368421
+            "Fulham": 0.5,
+            "Tottenham Hotspur": 0.24390243902439027,
+            "Draw": 0.25
           },
-          "lastUpdate": "2026-02-27T09:06:38Z"
+          "lastUpdate": "2026-03-01T09:06:43Z"
         },
         {
           "bookmaker": "pinnacle",
@@ -1368,23 +405,23 @@
           "outcomes": [
             {
               "name": "Fulham",
-              "price": 2.13
+              "price": 1.95
             },
             {
               "name": "Tottenham Hotspur",
-              "price": 3.43
+              "price": 3.9
             },
             {
               "name": "Draw",
-              "price": 3.65
+              "price": 3.84
             }
           ],
           "impliedProbs": {
-            "Fulham": 0.4694835680751174,
-            "Tottenham Hotspur": 0.29154518950437314,
-            "Draw": 0.273972602739726
+            "Fulham": 0.5128205128205129,
+            "Tottenham Hotspur": 0.25641025641025644,
+            "Draw": 0.2604166666666667
           },
-          "lastUpdate": "2026-02-27T09:06:49Z"
+          "lastUpdate": "2026-03-01T09:06:58Z"
         },
         {
           "bookmaker": "pinnacle",
@@ -1392,20 +429,20 @@
           "outcomes": [
             {
               "name": "Fulham",
-              "price": 1.86,
-              "point": -0.25
+              "price": 1.96,
+              "point": -0.5
             },
             {
               "name": "Tottenham Hotspur",
-              "price": 2.05,
-              "point": 0.25
+              "price": 1.96,
+              "point": 0.5
             }
           ],
           "impliedProbs": {
-            "Fulham": 0.5376344086021505,
-            "Tottenham Hotspur": 0.48780487804878053
+            "Fulham": 0.5102040816326531,
+            "Tottenham Hotspur": 0.5102040816326531
           },
-          "lastUpdate": "2026-02-27T09:06:49Z"
+          "lastUpdate": "2026-03-01T09:06:58Z"
         },
         {
           "bookmaker": "matchbook",
@@ -1413,23 +450,23 @@
           "outcomes": [
             {
               "name": "Fulham",
-              "price": 2.18
+              "price": 1.99
             },
             {
               "name": "Tottenham Hotspur",
-              "price": 3.55
+              "price": 4
             },
             {
               "name": "Draw",
-              "price": 3.75
+              "price": 3.95
             }
           ],
           "impliedProbs": {
-            "Fulham": 0.4587155963302752,
-            "Tottenham Hotspur": 0.28169014084507044,
-            "Draw": 0.26666666666666666
+            "Fulham": 0.5025125628140703,
+            "Tottenham Hotspur": 0.25,
+            "Draw": 0.2531645569620253
           },
-          "lastUpdate": "2026-02-27T09:06:49Z"
+          "lastUpdate": "2026-03-01T09:06:56Z"
         },
         {
           "bookmaker": "matchbook",
@@ -1437,23 +474,23 @@
           "outcomes": [
             {
               "name": "Fulham",
-              "price": 2.2
+              "price": 2
             },
             {
               "name": "Tottenham Hotspur",
-              "price": 3.6
+              "price": 4.1
             },
             {
               "name": "Draw",
-              "price": 3.8
+              "price": 4
             }
           ],
           "impliedProbs": {
-            "Fulham": 0.45454545454545453,
-            "Tottenham Hotspur": 0.2777777777777778,
-            "Draw": 0.2631578947368421
+            "Fulham": 0.5,
+            "Tottenham Hotspur": 0.24390243902439027,
+            "Draw": 0.25
           },
-          "lastUpdate": "2026-02-27T09:06:49Z"
+          "lastUpdate": "2026-03-01T09:06:56Z"
         },
         {
           "bookmaker": "matchbook",
@@ -1461,23 +498,23 @@
           "outcomes": [
             {
               "name": "Fulham",
-              "price": 1.89,
-              "point": -0.25
+              "price": 1.99,
+              "point": -0.5
             },
             {
               "name": "Tottenham Hotspur",
-              "price": 2.1,
-              "point": 0.25
+              "price": 2,
+              "point": 0.5
             }
           ],
           "impliedProbs": {
-            "Fulham": 0.5291005291005292,
-            "Tottenham Hotspur": 0.47619047619047616
+            "Fulham": 0.5025125628140703,
+            "Tottenham Hotspur": 0.5
           },
-          "lastUpdate": "2026-02-27T09:06:49Z"
+          "lastUpdate": "2026-03-01T09:06:56Z"
         }
       ],
-      "scannedAt": "2026-02-27T09:07:06.465Z"
+      "scannedAt": "2026-03-01T09:07:05.943Z"
     },
     "9471be41334d79e0e85fda9feb065bfa": {
       "eventId": "9471be41334d79e0e85fda9feb065bfa",
@@ -1492,23 +529,23 @@
           "outcomes": [
             {
               "name": "Arsenal",
-              "price": 1.66
+              "price": 1.6
             },
             {
               "name": "Chelsea",
-              "price": 5.8
+              "price": 6.2
             },
             {
               "name": "Draw",
-              "price": 4.3
+              "price": 4.5
             }
           ],
           "impliedProbs": {
-            "Arsenal": 0.6024096385542169,
-            "Chelsea": 0.1724137931034483,
-            "Draw": 0.23255813953488372
+            "Arsenal": 0.625,
+            "Chelsea": 0.16129032258064516,
+            "Draw": 0.2222222222222222
           },
-          "lastUpdate": "2026-02-27T09:06:38Z"
+          "lastUpdate": "2026-03-01T09:06:43Z"
         },
         {
           "bookmaker": "betfair_ex_eu",
@@ -1516,23 +553,23 @@
           "outcomes": [
             {
               "name": "Arsenal",
-              "price": 1.67
+              "price": 1.61
             },
             {
               "name": "Chelsea",
-              "price": 6
+              "price": 6.4
             },
             {
               "name": "Draw",
-              "price": 4.4
+              "price": 4.6
             }
           ],
           "impliedProbs": {
-            "Arsenal": 0.5988023952095809,
-            "Chelsea": 0.16666666666666666,
-            "Draw": 0.22727272727272727
+            "Arsenal": 0.6211180124223602,
+            "Chelsea": 0.15625,
+            "Draw": 0.2173913043478261
           },
-          "lastUpdate": "2026-02-27T09:06:38Z"
+          "lastUpdate": "2026-03-01T09:06:43Z"
         },
         {
           "bookmaker": "pinnacle",
@@ -1540,23 +577,23 @@
           "outcomes": [
             {
               "name": "Arsenal",
-              "price": 1.62
+              "price": 1.58
             },
             {
               "name": "Chelsea",
-              "price": 5.44
+              "price": 5.88
             },
             {
               "name": "Draw",
-              "price": 4.2
+              "price": 4.32
             }
           ],
           "impliedProbs": {
-            "Arsenal": 0.6172839506172839,
-            "Chelsea": 0.1838235294117647,
-            "Draw": 0.23809523809523808
+            "Arsenal": 0.6329113924050632,
+            "Chelsea": 0.17006802721088435,
+            "Draw": 0.23148148148148145
           },
-          "lastUpdate": "2026-02-27T09:06:49Z"
+          "lastUpdate": "2026-03-01T09:06:58Z"
         },
         {
           "bookmaker": "pinnacle",
@@ -1564,23 +601,92 @@
           "outcomes": [
             {
               "name": "Arsenal",
-              "price": 2.07,
+              "price": 1.99,
               "point": -1
             },
             {
               "name": "Chelsea",
-              "price": 1.85,
+              "price": 1.93,
               "point": 1
             }
           ],
           "impliedProbs": {
-            "Arsenal": 0.48309178743961356,
-            "Chelsea": 0.5405405405405405
+            "Arsenal": 0.5025125628140703,
+            "Chelsea": 0.5181347150259068
           },
-          "lastUpdate": "2026-02-27T09:06:49Z"
+          "lastUpdate": "2026-03-01T09:06:58Z"
+        },
+        {
+          "bookmaker": "matchbook",
+          "market": "h2h",
+          "outcomes": [
+            {
+              "name": "Arsenal",
+              "price": 1.6
+            },
+            {
+              "name": "Chelsea",
+              "price": 6.4
+            },
+            {
+              "name": "Draw",
+              "price": 4.5
+            }
+          ],
+          "impliedProbs": {
+            "Arsenal": 0.625,
+            "Chelsea": 0.15625,
+            "Draw": 0.2222222222222222
+          },
+          "lastUpdate": "2026-03-01T09:06:56Z"
+        },
+        {
+          "bookmaker": "matchbook",
+          "market": "h2h_lay",
+          "outcomes": [
+            {
+              "name": "Arsenal",
+              "price": 1.61
+            },
+            {
+              "name": "Chelsea",
+              "price": 6.6
+            },
+            {
+              "name": "Draw",
+              "price": 4.6
+            }
+          ],
+          "impliedProbs": {
+            "Arsenal": 0.6211180124223602,
+            "Chelsea": 0.15151515151515152,
+            "Draw": 0.2173913043478261
+          },
+          "lastUpdate": "2026-03-01T09:06:56Z"
+        },
+        {
+          "bookmaker": "matchbook",
+          "market": "spreads",
+          "outcomes": [
+            {
+              "name": "Arsenal",
+              "price": 1.99,
+              "point": -1
+            },
+            {
+              "name": "Chelsea",
+              "price": 1.97,
+              "point": 1
+            }
+          ],
+          "impliedProbs": {
+            "Arsenal": 0.5025125628140703,
+            "Chelsea": 0.5076142131979695
+          },
+          "lastUpdate": "2026-03-01T09:06:56Z"
         }
       ],
-      "scannedAt": "2026-02-27T09:07:06.465Z"
+      "scannedAt": "2026-03-01T09:07:05.943Z"
     },
     "0514ff63edc959b9fedb8a345a5417a6": {
       "eventId": "0514ff63edc959b9fedb8a345a5417a6",
@@ -1595,35 +701,11 @@
           "outcomes": [
             {
               "name": "Bournemouth",
-              "price": 2.44
+              "price": 2.46
             },
             {
               "name": "Brentford",
-              "price": 2.84
-            },
-            {
-              "name": "Draw",
-              "price": 3.55
-            }
-          ],
-          "impliedProbs": {
-            "Bournemouth": 0.4098360655737705,
-            "Brentford": 0.35211267605633806,
-            "Draw": 0.28169014084507044
-          },
-          "lastUpdate": "2026-02-27T09:06:38Z"
-        },
-        {
-          "bookmaker": "betfair_ex_eu",
-          "market": "h2h_lay",
-          "outcomes": [
-            {
-              "name": "Bournemouth",
-              "price": 2.64
-            },
-            {
-              "name": "Brentford",
-              "price": 3.1
+              "price": 3
             },
             {
               "name": "Draw",
@@ -1631,11 +713,35 @@
             }
           ],
           "impliedProbs": {
-            "Bournemouth": 0.3787878787878788,
-            "Brentford": 0.3225806451612903,
+            "Bournemouth": 0.4065040650406504,
+            "Brentford": 0.3333333333333333,
             "Draw": 0.26666666666666666
           },
-          "lastUpdate": "2026-02-27T09:06:38Z"
+          "lastUpdate": "2026-03-01T09:06:43Z"
+        },
+        {
+          "bookmaker": "betfair_ex_eu",
+          "market": "h2h_lay",
+          "outcomes": [
+            {
+              "name": "Bournemouth",
+              "price": 2.5
+            },
+            {
+              "name": "Brentford",
+              "price": 3.1
+            },
+            {
+              "name": "Draw",
+              "price": 3.8
+            }
+          ],
+          "impliedProbs": {
+            "Bournemouth": 0.4,
+            "Brentford": 0.3225806451612903,
+            "Draw": 0.2631578947368421
+          },
+          "lastUpdate": "2026-03-01T09:06:43Z"
         },
         {
           "bookmaker": "pinnacle",
@@ -1643,11 +749,11 @@
           "outcomes": [
             {
               "name": "Bournemouth",
-              "price": 2.4
+              "price": 2.32
             },
             {
               "name": "Brentford",
-              "price": 2.82
+              "price": 2.94
             },
             {
               "name": "Draw",
@@ -1655,11 +761,11 @@
             }
           ],
           "impliedProbs": {
-            "Bournemouth": 0.4166666666666667,
-            "Brentford": 0.3546099290780142,
+            "Bournemouth": 0.4310344827586207,
+            "Brentford": 0.3401360544217687,
             "Draw": 0.2777777777777778
           },
-          "lastUpdate": "2026-02-27T09:06:49Z"
+          "lastUpdate": "2026-03-01T09:06:58Z"
         },
         {
           "bookmaker": "pinnacle",
@@ -1667,23 +773,92 @@
           "outcomes": [
             {
               "name": "Bournemouth",
-              "price": 2.1,
+              "price": 2.02,
               "point": -0.25
             },
             {
               "name": "Brentford",
-              "price": 1.78,
+              "price": 1.84,
               "point": 0.25
             }
           ],
           "impliedProbs": {
-            "Bournemouth": 0.47619047619047616,
-            "Brentford": 0.5617977528089888
+            "Bournemouth": 0.49504950495049505,
+            "Brentford": 0.5434782608695652
           },
-          "lastUpdate": "2026-02-27T09:06:49Z"
+          "lastUpdate": "2026-03-01T09:06:58Z"
+        },
+        {
+          "bookmaker": "matchbook",
+          "market": "h2h",
+          "outcomes": [
+            {
+              "name": "Bournemouth",
+              "price": 2.46
+            },
+            {
+              "name": "Brentford",
+              "price": 3
+            },
+            {
+              "name": "Draw",
+              "price": 3.75
+            }
+          ],
+          "impliedProbs": {
+            "Bournemouth": 0.4065040650406504,
+            "Brentford": 0.3333333333333333,
+            "Draw": 0.26666666666666666
+          },
+          "lastUpdate": "2026-03-01T09:06:56Z"
+        },
+        {
+          "bookmaker": "matchbook",
+          "market": "h2h_lay",
+          "outcomes": [
+            {
+              "name": "Bournemouth",
+              "price": 2.5
+            },
+            {
+              "name": "Brentford",
+              "price": 3.05
+            },
+            {
+              "name": "Draw",
+              "price": 3.8
+            }
+          ],
+          "impliedProbs": {
+            "Bournemouth": 0.4,
+            "Brentford": 0.3278688524590164,
+            "Draw": 0.2631578947368421
+          },
+          "lastUpdate": "2026-03-01T09:06:56Z"
+        },
+        {
+          "bookmaker": "matchbook",
+          "market": "spreads",
+          "outcomes": [
+            {
+              "name": "Bournemouth",
+              "price": 2.12,
+              "point": -0.25
+            },
+            {
+              "name": "Brentford",
+              "price": 1.85,
+              "point": 0.25
+            }
+          ],
+          "impliedProbs": {
+            "Bournemouth": 0.4716981132075471,
+            "Brentford": 0.5405405405405405
+          },
+          "lastUpdate": "2026-03-01T09:06:56Z"
         }
       ],
-      "scannedAt": "2026-02-27T09:07:06.465Z"
+      "scannedAt": "2026-03-01T09:07:05.943Z"
     },
     "2e1d2217ad447314a64b383883f80929": {
       "eventId": "2e1d2217ad447314a64b383883f80929",
@@ -1698,35 +873,11 @@
           "outcomes": [
             {
               "name": "Burnley",
-              "price": 5.7
+              "price": 5.9
             },
             {
               "name": "Everton",
-              "price": 1.69
-            },
-            {
-              "name": "Draw",
-              "price": 3.8
-            }
-          ],
-          "impliedProbs": {
-            "Burnley": 0.17543859649122806,
-            "Everton": 0.591715976331361,
-            "Draw": 0.2631578947368421
-          },
-          "lastUpdate": "2026-02-27T09:06:38Z"
-        },
-        {
-          "bookmaker": "betfair_ex_eu",
-          "market": "h2h_lay",
-          "outcomes": [
-            {
-              "name": "Burnley",
-              "price": 6.4
-            },
-            {
-              "name": "Everton",
-              "price": 1.72
+              "price": 1.67
             },
             {
               "name": "Draw",
@@ -1734,11 +885,35 @@
             }
           ],
           "impliedProbs": {
-            "Burnley": 0.15625,
-            "Everton": 0.5813953488372093,
+            "Burnley": 0.1694915254237288,
+            "Everton": 0.5988023952095809,
             "Draw": 0.24390243902439027
           },
-          "lastUpdate": "2026-02-27T09:06:38Z"
+          "lastUpdate": "2026-03-01T09:06:43Z"
+        },
+        {
+          "bookmaker": "betfair_ex_eu",
+          "market": "h2h_lay",
+          "outcomes": [
+            {
+              "name": "Burnley",
+              "price": 6.2
+            },
+            {
+              "name": "Everton",
+              "price": 1.69
+            },
+            {
+              "name": "Draw",
+              "price": 4.3
+            }
+          ],
+          "impliedProbs": {
+            "Burnley": 0.16129032258064516,
+            "Everton": 0.591715976331361,
+            "Draw": 0.23255813953488372
+          },
+          "lastUpdate": "2026-03-01T09:06:43Z"
         },
         {
           "bookmaker": "pinnacle",
@@ -1746,23 +921,23 @@
           "outcomes": [
             {
               "name": "Burnley",
-              "price": 5.37
+              "price": 5.42
             },
             {
               "name": "Everton",
-              "price": 1.66
+              "price": 1.65
             },
             {
               "name": "Draw",
-              "price": 3.77
+              "price": 3.81
             }
           ],
           "impliedProbs": {
-            "Burnley": 0.186219739292365,
-            "Everton": 0.6024096385542169,
-            "Draw": 0.26525198938992045
+            "Burnley": 0.18450184501845018,
+            "Everton": 0.6060606060606061,
+            "Draw": 0.26246719160104987
           },
-          "lastUpdate": "2026-02-27T09:06:49Z"
+          "lastUpdate": "2026-03-01T09:06:58Z"
         },
         {
           "bookmaker": "pinnacle",
@@ -1770,7 +945,76 @@
           "outcomes": [
             {
               "name": "Burnley",
-              "price": 2.01,
+              "price": 2.03,
+              "point": 0.75
+            },
+            {
+              "name": "Everton",
+              "price": 1.83,
+              "point": -0.75
+            }
+          ],
+          "impliedProbs": {
+            "Burnley": 0.4926108374384237,
+            "Everton": 0.5464480874316939
+          },
+          "lastUpdate": "2026-03-01T09:06:58Z"
+        },
+        {
+          "bookmaker": "matchbook",
+          "market": "h2h",
+          "outcomes": [
+            {
+              "name": "Burnley",
+              "price": 5.9
+            },
+            {
+              "name": "Everton",
+              "price": 1.67
+            },
+            {
+              "name": "Draw",
+              "price": 4.1
+            }
+          ],
+          "impliedProbs": {
+            "Burnley": 0.1694915254237288,
+            "Everton": 0.5988023952095809,
+            "Draw": 0.24390243902439027
+          },
+          "lastUpdate": "2026-03-01T09:06:56Z"
+        },
+        {
+          "bookmaker": "matchbook",
+          "market": "h2h_lay",
+          "outcomes": [
+            {
+              "name": "Burnley",
+              "price": 6.2
+            },
+            {
+              "name": "Everton",
+              "price": 1.69
+            },
+            {
+              "name": "Draw",
+              "price": 4.2
+            }
+          ],
+          "impliedProbs": {
+            "Burnley": 0.16129032258064516,
+            "Everton": 0.591715976331361,
+            "Draw": 0.23809523809523808
+          },
+          "lastUpdate": "2026-03-01T09:06:56Z"
+        },
+        {
+          "bookmaker": "matchbook",
+          "market": "spreads",
+          "outcomes": [
+            {
+              "name": "Burnley",
+              "price": 2.12,
               "point": 0.75
             },
             {
@@ -1780,13 +1024,13 @@
             }
           ],
           "impliedProbs": {
-            "Burnley": 0.49751243781094534,
+            "Burnley": 0.4716981132075471,
             "Everton": 0.5405405405405405
           },
-          "lastUpdate": "2026-02-27T09:06:49Z"
+          "lastUpdate": "2026-03-01T09:06:56Z"
         }
       ],
-      "scannedAt": "2026-02-27T09:07:06.465Z"
+      "scannedAt": "2026-03-01T09:07:05.943Z"
     },
     "c70d3c7df4d50c7e0edbf4faa36f9aa6": {
       "eventId": "c70d3c7df4d50c7e0edbf4faa36f9aa6",
@@ -1801,7 +1045,7 @@
           "outcomes": [
             {
               "name": "Leeds United",
-              "price": 1.93
+              "price": 1.98
             },
             {
               "name": "Sunderland",
@@ -1809,15 +1053,15 @@
             },
             {
               "name": "Draw",
-              "price": 3.5
+              "price": 3.65
             }
           ],
           "impliedProbs": {
-            "Leeds United": 0.5181347150259068,
+            "Leeds United": 0.5050505050505051,
             "Sunderland": 0.23809523809523808,
-            "Draw": 0.2857142857142857
+            "Draw": 0.273972602739726
           },
-          "lastUpdate": "2026-02-27T09:06:38Z"
+          "lastUpdate": "2026-03-01T09:06:43Z"
         },
         {
           "bookmaker": "betfair_ex_eu",
@@ -1829,19 +1073,19 @@
             },
             {
               "name": "Sunderland",
-              "price": 5.1
+              "price": 4.4
             },
             {
               "name": "Draw",
-              "price": 3.9
+              "price": 3.75
             }
           ],
           "impliedProbs": {
             "Leeds United": 0.5,
-            "Sunderland": 0.19607843137254904,
-            "Draw": 0.25641025641025644
+            "Sunderland": 0.22727272727272727,
+            "Draw": 0.26666666666666666
           },
-          "lastUpdate": "2026-02-27T09:06:38Z"
+          "lastUpdate": "2026-03-01T09:06:43Z"
         },
         {
           "bookmaker": "pinnacle",
@@ -1849,23 +1093,23 @@
           "outcomes": [
             {
               "name": "Leeds United",
-              "price": 1.83
+              "price": 1.94
             },
             {
               "name": "Sunderland",
-              "price": 4.23
+              "price": 4.01
             },
             {
               "name": "Draw",
-              "price": 3.68
+              "price": 3.48
             }
           ],
           "impliedProbs": {
-            "Leeds United": 0.5464480874316939,
-            "Sunderland": 0.23640661938534277,
-            "Draw": 0.2717391304347826
+            "Leeds United": 0.5154639175257733,
+            "Sunderland": 0.24937655860349128,
+            "Draw": 0.28735632183908044
           },
-          "lastUpdate": "2026-02-27T09:06:49Z"
+          "lastUpdate": "2026-03-01T09:06:58Z"
         },
         {
           "bookmaker": "pinnacle",
@@ -1873,23 +1117,92 @@
           "outcomes": [
             {
               "name": "Leeds United",
-              "price": 1.85,
+              "price": 1.95,
               "point": -0.5
             },
             {
               "name": "Sunderland",
-              "price": 2.01,
+              "price": 1.9,
               "point": 0.5
             }
           ],
           "impliedProbs": {
-            "Leeds United": 0.5405405405405405,
-            "Sunderland": 0.49751243781094534
+            "Leeds United": 0.5128205128205129,
+            "Sunderland": 0.5263157894736842
           },
-          "lastUpdate": "2026-02-27T09:06:49Z"
+          "lastUpdate": "2026-03-01T09:06:58Z"
+        },
+        {
+          "bookmaker": "matchbook",
+          "market": "h2h",
+          "outcomes": [
+            {
+              "name": "Leeds United",
+              "price": 1.98
+            },
+            {
+              "name": "Sunderland",
+              "price": 4.3
+            },
+            {
+              "name": "Draw",
+              "price": 3.65
+            }
+          ],
+          "impliedProbs": {
+            "Leeds United": 0.5050505050505051,
+            "Sunderland": 0.23255813953488372,
+            "Draw": 0.273972602739726
+          },
+          "lastUpdate": "2026-03-01T09:06:56Z"
+        },
+        {
+          "bookmaker": "matchbook",
+          "market": "h2h_lay",
+          "outcomes": [
+            {
+              "name": "Leeds United",
+              "price": 2
+            },
+            {
+              "name": "Sunderland",
+              "price": 4.4
+            },
+            {
+              "name": "Draw",
+              "price": 3.75
+            }
+          ],
+          "impliedProbs": {
+            "Leeds United": 0.5,
+            "Sunderland": 0.22727272727272727,
+            "Draw": 0.26666666666666666
+          },
+          "lastUpdate": "2026-03-01T09:06:56Z"
+        },
+        {
+          "bookmaker": "matchbook",
+          "market": "spreads",
+          "outcomes": [
+            {
+              "name": "Leeds United",
+              "price": 1.98,
+              "point": -0.5
+            },
+            {
+              "name": "Sunderland",
+              "price": 2,
+              "point": 0.5
+            }
+          ],
+          "impliedProbs": {
+            "Leeds United": 0.5050505050505051,
+            "Sunderland": 0.5
+          },
+          "lastUpdate": "2026-03-01T09:06:56Z"
         }
       ],
-      "scannedAt": "2026-02-27T09:07:06.465Z"
+      "scannedAt": "2026-03-01T09:07:05.943Z"
     },
     "d558849331cb2c112e9cce7219e46efd": {
       "eventId": "d558849331cb2c112e9cce7219e46efd",
@@ -1904,35 +1217,11 @@
           "outcomes": [
             {
               "name": "Liverpool",
-              "price": 1.48
+              "price": 1.44
             },
             {
               "name": "Wolverhampton Wanderers",
-              "price": 7.2
-            },
-            {
-              "name": "Draw",
-              "price": 4.8
-            }
-          ],
-          "impliedProbs": {
-            "Liverpool": 0.6756756756756757,
-            "Wolverhampton Wanderers": 0.1388888888888889,
-            "Draw": 0.20833333333333334
-          },
-          "lastUpdate": "2026-02-27T09:06:38Z"
-        },
-        {
-          "bookmaker": "betfair_ex_eu",
-          "market": "h2h_lay",
-          "outcomes": [
-            {
-              "name": "Liverpool",
-              "price": 1.51
-            },
-            {
-              "name": "Wolverhampton Wanderers",
-              "price": 8.2
+              "price": 8
             },
             {
               "name": "Draw",
@@ -1940,11 +1229,35 @@
             }
           ],
           "impliedProbs": {
-            "Liverpool": 0.6622516556291391,
-            "Wolverhampton Wanderers": 0.12195121951219513,
+            "Liverpool": 0.6944444444444444,
+            "Wolverhampton Wanderers": 0.125,
             "Draw": 0.18867924528301888
           },
-          "lastUpdate": "2026-02-27T09:06:38Z"
+          "lastUpdate": "2026-03-01T09:06:43Z"
+        },
+        {
+          "bookmaker": "betfair_ex_eu",
+          "market": "h2h_lay",
+          "outcomes": [
+            {
+              "name": "Liverpool",
+              "price": 1.45
+            },
+            {
+              "name": "Wolverhampton Wanderers",
+              "price": 8.4
+            },
+            {
+              "name": "Draw",
+              "price": 5.5
+            }
+          ],
+          "impliedProbs": {
+            "Liverpool": 0.6896551724137931,
+            "Wolverhampton Wanderers": 0.11904761904761904,
+            "Draw": 0.18181818181818182
+          },
+          "lastUpdate": "2026-03-01T09:06:43Z"
         },
         {
           "bookmaker": "pinnacle",
@@ -1952,23 +1265,23 @@
           "outcomes": [
             {
               "name": "Liverpool",
-              "price": 1.47
+              "price": 1.41
             },
             {
               "name": "Wolverhampton Wanderers",
-              "price": 5.79
+              "price": 6.24
             },
             {
               "name": "Draw",
-              "price": 4.93
+              "price": 5.32
             }
           ],
           "impliedProbs": {
-            "Liverpool": 0.6802721088435374,
-            "Wolverhampton Wanderers": 0.17271157167530224,
-            "Draw": 0.20283975659229211
+            "Liverpool": 0.7092198581560284,
+            "Wolverhampton Wanderers": 0.16025641025641024,
+            "Draw": 0.18796992481203006
           },
-          "lastUpdate": "2026-02-27T09:06:49Z"
+          "lastUpdate": "2026-03-01T09:06:58Z"
         },
         {
           "bookmaker": "pinnacle",
@@ -1976,23 +1289,92 @@
           "outcomes": [
             {
               "name": "Liverpool",
-              "price": 1.93,
+              "price": 1.85,
               "point": -1.25
             },
             {
               "name": "Wolverhampton Wanderers",
-              "price": 1.93,
+              "price": 2.01,
               "point": 1.25
             }
           ],
           "impliedProbs": {
-            "Liverpool": 0.5181347150259068,
-            "Wolverhampton Wanderers": 0.5181347150259068
+            "Liverpool": 0.5405405405405405,
+            "Wolverhampton Wanderers": 0.49751243781094534
           },
-          "lastUpdate": "2026-02-27T09:06:49Z"
+          "lastUpdate": "2026-03-01T09:06:58Z"
+        },
+        {
+          "bookmaker": "matchbook",
+          "market": "h2h",
+          "outcomes": [
+            {
+              "name": "Liverpool",
+              "price": 1.44
+            },
+            {
+              "name": "Wolverhampton Wanderers",
+              "price": 8
+            },
+            {
+              "name": "Draw",
+              "price": 5.3
+            }
+          ],
+          "impliedProbs": {
+            "Liverpool": 0.6944444444444444,
+            "Wolverhampton Wanderers": 0.125,
+            "Draw": 0.18867924528301888
+          },
+          "lastUpdate": "2026-03-01T09:06:56Z"
+        },
+        {
+          "bookmaker": "matchbook",
+          "market": "h2h_lay",
+          "outcomes": [
+            {
+              "name": "Liverpool",
+              "price": 1.45
+            },
+            {
+              "name": "Wolverhampton Wanderers",
+              "price": 8.2
+            },
+            {
+              "name": "Draw",
+              "price": 5.5
+            }
+          ],
+          "impliedProbs": {
+            "Liverpool": 0.6896551724137931,
+            "Wolverhampton Wanderers": 0.12195121951219513,
+            "Draw": 0.18181818181818182
+          },
+          "lastUpdate": "2026-03-01T09:06:56Z"
+        },
+        {
+          "bookmaker": "matchbook",
+          "market": "spreads",
+          "outcomes": [
+            {
+              "name": "Liverpool",
+              "price": 1.92,
+              "point": -1.25
+            },
+            {
+              "name": "Wolverhampton Wanderers",
+              "price": 2,
+              "point": 1.25
+            }
+          ],
+          "impliedProbs": {
+            "Liverpool": 0.5208333333333334,
+            "Wolverhampton Wanderers": 0.5
+          },
+          "lastUpdate": "2026-03-01T09:06:56Z"
         }
       ],
-      "scannedAt": "2026-02-27T09:07:06.465Z"
+      "scannedAt": "2026-03-01T09:07:05.943Z"
     },
     "4671b2f61a9077cd741ca08032cc7f86": {
       "eventId": "4671b2f61a9077cd741ca08032cc7f86",
@@ -2007,7 +1389,7 @@
           "outcomes": [
             {
               "name": "Arsenal",
-              "price": 1.66
+              "price": 1.65
             },
             {
               "name": "Brighton and Hove Albion",
@@ -2015,15 +1397,15 @@
             },
             {
               "name": "Draw",
-              "price": 4.1
+              "price": 4.3
             }
           ],
           "impliedProbs": {
-            "Arsenal": 0.6024096385542169,
+            "Arsenal": 0.6060606060606061,
             "Brighton and Hove Albion": 0.18181818181818182,
-            "Draw": 0.24390243902439027
+            "Draw": 0.23255813953488372
           },
-          "lastUpdate": "2026-02-27T09:06:38Z"
+          "lastUpdate": "2026-03-01T09:06:43Z"
         },
         {
           "bookmaker": "betfair_ex_eu",
@@ -2031,11 +1413,11 @@
           "outcomes": [
             {
               "name": "Arsenal",
-              "price": 1.72
+              "price": 1.68
             },
             {
               "name": "Brighton and Hove Albion",
-              "price": 6.4
+              "price": 6
             },
             {
               "name": "Draw",
@@ -2043,11 +1425,11 @@
             }
           ],
           "impliedProbs": {
-            "Arsenal": 0.5813953488372093,
-            "Brighton and Hove Albion": 0.15625,
+            "Arsenal": 0.5952380952380952,
+            "Brighton and Hove Albion": 0.16666666666666666,
             "Draw": 0.2222222222222222
           },
-          "lastUpdate": "2026-02-27T09:06:38Z"
+          "lastUpdate": "2026-03-01T09:06:43Z"
         },
         {
           "bookmaker": "pinnacle",
@@ -2055,23 +1437,23 @@
           "outcomes": [
             {
               "name": "Arsenal",
-              "price": 1.63
+              "price": 1.62
             },
             {
               "name": "Brighton and Hove Albion",
-              "price": 4.71
+              "price": 4.73
             },
             {
               "name": "Draw",
-              "price": 4.36
+              "price": 4.38
             }
           ],
           "impliedProbs": {
-            "Arsenal": 0.6134969325153374,
-            "Brighton and Hove Albion": 0.21231422505307856,
-            "Draw": 0.2293577981651376
+            "Arsenal": 0.6172839506172839,
+            "Brighton and Hove Albion": 0.2114164904862579,
+            "Draw": 0.22831050228310504
           },
-          "lastUpdate": "2026-02-27T09:06:49Z"
+          "lastUpdate": "2026-03-01T09:06:58Z"
         },
         {
           "bookmaker": "pinnacle",
@@ -2079,23 +1461,23 @@
           "outcomes": [
             {
               "name": "Arsenal",
-              "price": 1.83,
+              "price": 1.82,
               "point": -0.75
             },
             {
               "name": "Brighton and Hove Albion",
-              "price": 2.04,
+              "price": 2.05,
               "point": 0.75
             }
           ],
           "impliedProbs": {
-            "Arsenal": 0.5464480874316939,
-            "Brighton and Hove Albion": 0.49019607843137253
+            "Arsenal": 0.5494505494505494,
+            "Brighton and Hove Albion": 0.48780487804878053
           },
-          "lastUpdate": "2026-02-27T09:06:49Z"
+          "lastUpdate": "2026-03-01T09:06:58Z"
         }
       ],
-      "scannedAt": "2026-02-27T09:07:06.465Z"
+      "scannedAt": "2026-03-01T09:07:05.943Z"
     },
     "d65b11b8411415cf9d8744dfdfa5d638": {
       "eventId": "d65b11b8411415cf9d8744dfdfa5d638",
@@ -2110,23 +1492,23 @@
           "outcomes": [
             {
               "name": "Aston Villa",
-              "price": 2.7
+              "price": 2.9
             },
             {
               "name": "Chelsea",
-              "price": 2.5
+              "price": 2.46
             },
             {
               "name": "Draw",
-              "price": 3.65
+              "price": 3.8
             }
           ],
           "impliedProbs": {
-            "Aston Villa": 0.37037037037037035,
-            "Chelsea": 0.4,
-            "Draw": 0.273972602739726
+            "Aston Villa": 0.3448275862068966,
+            "Chelsea": 0.4065040650406504,
+            "Draw": 0.2631578947368421
           },
-          "lastUpdate": "2026-02-27T09:06:38Z"
+          "lastUpdate": "2026-03-01T09:06:43Z"
         },
         {
           "bookmaker": "betfair_ex_eu",
@@ -2138,19 +1520,19 @@
             },
             {
               "name": "Chelsea",
-              "price": 2.72
+              "price": 2.5
             },
             {
               "name": "Draw",
-              "price": 3.85
+              "price": 3.9
             }
           ],
           "impliedProbs": {
             "Aston Villa": 0.33783783783783783,
-            "Chelsea": 0.3676470588235294,
-            "Draw": 0.2597402597402597
+            "Chelsea": 0.4,
+            "Draw": 0.25641025641025644
           },
-          "lastUpdate": "2026-02-27T09:06:38Z"
+          "lastUpdate": "2026-03-01T09:06:43Z"
         },
         {
           "bookmaker": "pinnacle",
@@ -2158,11 +1540,11 @@
           "outcomes": [
             {
               "name": "Aston Villa",
-              "price": 2.68
+              "price": 2.74
             },
             {
               "name": "Chelsea",
-              "price": 2.45
+              "price": 2.4
             },
             {
               "name": "Draw",
@@ -2170,11 +1552,11 @@
             }
           ],
           "impliedProbs": {
-            "Aston Villa": 0.3731343283582089,
-            "Chelsea": 0.4081632653061224,
+            "Aston Villa": 0.36496350364963503,
+            "Chelsea": 0.4166666666666667,
             "Draw": 0.2680965147453083
           },
-          "lastUpdate": "2026-02-27T09:06:49Z"
+          "lastUpdate": "2026-03-01T09:06:58Z"
         },
         {
           "bookmaker": "pinnacle",
@@ -2182,23 +1564,23 @@
           "outcomes": [
             {
               "name": "Aston Villa",
-              "price": 2.02,
+              "price": 2.06,
               "point": 0
             },
             {
               "name": "Chelsea",
-              "price": 1.84,
+              "price": 1.81,
               "point": 0
             }
           ],
           "impliedProbs": {
-            "Aston Villa": 0.49504950495049505,
-            "Chelsea": 0.5434782608695652
+            "Aston Villa": 0.4854368932038835,
+            "Chelsea": 0.5524861878453039
           },
-          "lastUpdate": "2026-02-27T09:06:49Z"
+          "lastUpdate": "2026-03-01T09:06:58Z"
         }
       ],
-      "scannedAt": "2026-02-27T09:07:06.465Z"
+      "scannedAt": "2026-03-01T09:07:05.943Z"
     },
     "9248a6d3c2f3ff9fd57020fe390c4bc8": {
       "eventId": "9248a6d3c2f3ff9fd57020fe390c4bc8",
@@ -2213,23 +1595,23 @@
           "outcomes": [
             {
               "name": "Fulham",
-              "price": 2.06
+              "price": 2.08
             },
             {
               "name": "West Ham United",
-              "price": 3.6
+              "price": 3.7
             },
             {
               "name": "Draw",
-              "price": 3.6
+              "price": 3.75
             }
           ],
           "impliedProbs": {
-            "Fulham": 0.4854368932038835,
-            "West Ham United": 0.2777777777777778,
-            "Draw": 0.2777777777777778
+            "Fulham": 0.4807692307692307,
+            "West Ham United": 0.27027027027027023,
+            "Draw": 0.26666666666666666
           },
-          "lastUpdate": "2026-02-27T09:06:38Z"
+          "lastUpdate": "2026-03-01T09:06:43Z"
         },
         {
           "bookmaker": "betfair_ex_eu",
@@ -2237,23 +1619,23 @@
           "outcomes": [
             {
               "name": "Fulham",
-              "price": 2.2
+              "price": 2.12
             },
             {
               "name": "West Ham United",
-              "price": 3.95
+              "price": 3.8
             },
             {
               "name": "Draw",
-              "price": 3.95
+              "price": 3.9
             }
           ],
           "impliedProbs": {
-            "Fulham": 0.45454545454545453,
-            "West Ham United": 0.2531645569620253,
-            "Draw": 0.2531645569620253
+            "Fulham": 0.4716981132075471,
+            "West Ham United": 0.2631578947368421,
+            "Draw": 0.25641025641025644
           },
-          "lastUpdate": "2026-02-27T09:06:38Z"
+          "lastUpdate": "2026-03-01T09:06:43Z"
         },
         {
           "bookmaker": "pinnacle",
@@ -2261,23 +1643,23 @@
           "outcomes": [
             {
               "name": "Fulham",
-              "price": 2.03
+              "price": 1.98
             },
             {
               "name": "West Ham United",
-              "price": 3.68
+              "price": 3.75
             },
             {
               "name": "Draw",
-              "price": 3.5
+              "price": 3.56
             }
           ],
           "impliedProbs": {
-            "Fulham": 0.4926108374384237,
-            "West Ham United": 0.2717391304347826,
-            "Draw": 0.2857142857142857
+            "Fulham": 0.5050505050505051,
+            "West Ham United": 0.26666666666666666,
+            "Draw": 0.2808988764044944
           },
-          "lastUpdate": "2026-02-27T09:06:49Z"
+          "lastUpdate": "2026-03-01T09:06:58Z"
         },
         {
           "bookmaker": "pinnacle",
@@ -2285,23 +1667,23 @@
           "outcomes": [
             {
               "name": "Fulham",
-              "price": 2.04,
+              "price": 1.99,
               "point": -0.5
             },
             {
               "name": "West Ham United",
-              "price": 1.83,
+              "price": 1.86,
               "point": 0.5
             }
           ],
           "impliedProbs": {
-            "Fulham": 0.49019607843137253,
-            "West Ham United": 0.5464480874316939
+            "Fulham": 0.5025125628140703,
+            "West Ham United": 0.5376344086021505
           },
-          "lastUpdate": "2026-02-27T09:06:49Z"
+          "lastUpdate": "2026-03-01T09:06:58Z"
         }
       ],
-      "scannedAt": "2026-02-27T09:07:06.465Z"
+      "scannedAt": "2026-03-01T09:07:05.944Z"
     },
     "803910799e5169211e1a8c4be9b3acc7": {
       "eventId": "803910799e5169211e1a8c4be9b3acc7",
@@ -2320,19 +1702,19 @@
             },
             {
               "name": "Nottingham Forest",
-              "price": 9.2
+              "price": 9
             },
             {
               "name": "Draw",
-              "price": 5.5
+              "price": 5.6
             }
           ],
           "impliedProbs": {
             "Manchester City": 0.7194244604316548,
-            "Nottingham Forest": 0.10869565217391305,
-            "Draw": 0.18181818181818182
+            "Nottingham Forest": 0.1111111111111111,
+            "Draw": 0.17857142857142858
           },
-          "lastUpdate": "2026-02-27T09:06:38Z"
+          "lastUpdate": "2026-03-01T09:06:43Z"
         },
         {
           "bookmaker": "betfair_ex_eu",
@@ -2348,15 +1730,15 @@
             },
             {
               "name": "Draw",
-              "price": 5.9
+              "price": 5.8
             }
           ],
           "impliedProbs": {
             "Manchester City": 0.7092198581560284,
             "Nottingham Forest": 0.1020408163265306,
-            "Draw": 0.1694915254237288
+            "Draw": 0.1724137931034483
           },
-          "lastUpdate": "2026-02-27T09:06:38Z"
+          "lastUpdate": "2026-03-01T09:06:43Z"
         },
         {
           "bookmaker": "pinnacle",
@@ -2380,7 +1762,7 @@
             "Nottingham Forest": 0.1295336787564767,
             "Draw": 0.19157088122605365
           },
-          "lastUpdate": "2026-02-27T09:06:49Z"
+          "lastUpdate": "2026-03-01T09:06:58Z"
         },
         {
           "bookmaker": "pinnacle",
@@ -2401,10 +1783,10 @@
             "Manchester City": 0.5494505494505494,
             "Nottingham Forest": 0.48780487804878053
           },
-          "lastUpdate": "2026-02-27T09:06:49Z"
+          "lastUpdate": "2026-03-01T09:06:58Z"
         }
       ],
-      "scannedAt": "2026-02-27T09:07:06.465Z"
+      "scannedAt": "2026-03-01T09:07:05.944Z"
     },
     "42162a7ac543e7a9853e4d1459e4e5f2": {
       "eventId": "42162a7ac543e7a9853e4d1459e4e5f2",
@@ -2419,11 +1801,11 @@
           "outcomes": [
             {
               "name": "Manchester United",
-              "price": 2.68
+              "price": 2.64
             },
             {
               "name": "Newcastle United",
-              "price": 2.54
+              "price": 2.7
             },
             {
               "name": "Draw",
@@ -2431,11 +1813,11 @@
             }
           ],
           "impliedProbs": {
-            "Manchester United": 0.3731343283582089,
-            "Newcastle United": 0.39370078740157477,
+            "Manchester United": 0.3787878787878788,
+            "Newcastle United": 0.37037037037037035,
             "Draw": 0.2597402597402597
           },
-          "lastUpdate": "2026-02-27T09:06:38Z"
+          "lastUpdate": "2026-03-01T09:06:43Z"
         },
         {
           "bookmaker": "betfair_ex_eu",
@@ -2443,11 +1825,11 @@
           "outcomes": [
             {
               "name": "Manchester United",
-              "price": 2.84
+              "price": 2.7
             },
             {
               "name": "Newcastle United",
-              "price": 2.68
+              "price": 2.72
             },
             {
               "name": "Draw",
@@ -2455,11 +1837,11 @@
             }
           ],
           "impliedProbs": {
-            "Manchester United": 0.35211267605633806,
-            "Newcastle United": 0.3731343283582089,
+            "Manchester United": 0.37037037037037035,
+            "Newcastle United": 0.3676470588235294,
             "Draw": 0.25641025641025644
           },
-          "lastUpdate": "2026-02-27T09:06:38Z"
+          "lastUpdate": "2026-03-01T09:06:43Z"
         },
         {
           "bookmaker": "pinnacle",
@@ -2467,11 +1849,11 @@
           "outcomes": [
             {
               "name": "Manchester United",
-              "price": 2.65
+              "price": 2.63
             },
             {
               "name": "Newcastle United",
-              "price": 2.47
+              "price": 2.49
             },
             {
               "name": "Draw",
@@ -2479,11 +1861,11 @@
             }
           ],
           "impliedProbs": {
-            "Manchester United": 0.37735849056603776,
-            "Newcastle United": 0.4048582995951417,
+            "Manchester United": 0.3802281368821293,
+            "Newcastle United": 0.4016064257028112,
             "Draw": 0.2680965147453083
           },
-          "lastUpdate": "2026-02-27T09:06:49Z"
+          "lastUpdate": "2026-03-01T09:06:58Z"
         },
         {
           "bookmaker": "pinnacle",
@@ -2491,23 +1873,23 @@
           "outcomes": [
             {
               "name": "Manchester United",
-              "price": 2,
+              "price": 1.98,
               "point": 0
             },
             {
               "name": "Newcastle United",
-              "price": 1.86,
+              "price": 1.87,
               "point": 0
             }
           ],
           "impliedProbs": {
-            "Manchester United": 0.5,
-            "Newcastle United": 0.5376344086021505
+            "Manchester United": 0.5050505050505051,
+            "Newcastle United": 0.53475935828877
           },
-          "lastUpdate": "2026-02-27T09:06:49Z"
+          "lastUpdate": "2026-03-01T09:06:58Z"
         }
       ],
-      "scannedAt": "2026-02-27T09:07:06.465Z"
+      "scannedAt": "2026-03-01T09:07:05.944Z"
     },
     "304cb79a7a4330490cd74a6784a516aa": {
       "eventId": "304cb79a7a4330490cd74a6784a516aa",
@@ -2522,23 +1904,23 @@
           "outcomes": [
             {
               "name": "Crystal Palace",
-              "price": 3
+              "price": 2.8
             },
             {
               "name": "Tottenham Hotspur",
-              "price": 2.4
+              "price": 2.44
             },
             {
               "name": "Draw",
-              "price": 3.25
+              "price": 3.4
             }
           ],
           "impliedProbs": {
-            "Crystal Palace": 0.3333333333333333,
-            "Tottenham Hotspur": 0.4166666666666667,
-            "Draw": 0.3076923076923077
+            "Crystal Palace": 0.35714285714285715,
+            "Tottenham Hotspur": 0.4098360655737705,
+            "Draw": 0.29411764705882354
           },
-          "lastUpdate": "2026-02-27T09:06:38Z"
+          "lastUpdate": "2026-03-01T09:06:43Z"
         },
         {
           "bookmaker": "betfair_ex_eu",
@@ -2550,19 +1932,19 @@
             },
             {
               "name": "Tottenham Hotspur",
-              "price": 2.72
+              "price": 2.86
             },
             {
               "name": "Draw",
-              "price": 3.65
+              "price": 3.5
             }
           ],
           "impliedProbs": {
             "Crystal Palace": 0.29850746268656714,
-            "Tottenham Hotspur": 0.3676470588235294,
-            "Draw": 0.273972602739726
+            "Tottenham Hotspur": 0.3496503496503497,
+            "Draw": 0.2857142857142857
           },
-          "lastUpdate": "2026-02-27T09:06:38Z"
+          "lastUpdate": "2026-03-01T09:06:43Z"
         },
         {
           "bookmaker": "pinnacle",
@@ -2570,23 +1952,23 @@
           "outcomes": [
             {
               "name": "Crystal Palace",
-              "price": 3.14
+              "price": 3.15
             },
             {
               "name": "Tottenham Hotspur",
-              "price": 2.36
+              "price": 2.35
             },
             {
               "name": "Draw",
-              "price": 3.25
+              "price": 3.26
             }
           ],
           "impliedProbs": {
-            "Crystal Palace": 0.3184713375796178,
-            "Tottenham Hotspur": 0.42372881355932207,
-            "Draw": 0.3076923076923077
+            "Crystal Palace": 0.31746031746031744,
+            "Tottenham Hotspur": 0.425531914893617,
+            "Draw": 0.3067484662576687
           },
-          "lastUpdate": "2026-02-27T09:06:49Z"
+          "lastUpdate": "2026-03-01T09:06:58Z"
         },
         {
           "bookmaker": "pinnacle",
@@ -2594,25 +1976,605 @@
           "outcomes": [
             {
               "name": "Crystal Palace",
-              "price": 1.83,
+              "price": 1.84,
               "point": 0.25
             },
             {
               "name": "Tottenham Hotspur",
-              "price": 2.03,
+              "price": 2.02,
               "point": -0.25
             }
           ],
           "impliedProbs": {
-            "Crystal Palace": 0.5464480874316939,
-            "Tottenham Hotspur": 0.4926108374384237
+            "Crystal Palace": 0.5434782608695652,
+            "Tottenham Hotspur": 0.49504950495049505
           },
-          "lastUpdate": "2026-02-27T09:06:49Z"
+          "lastUpdate": "2026-03-01T09:06:58Z"
         }
       ],
-      "scannedAt": "2026-02-27T09:07:06.465Z"
+      "scannedAt": "2026-03-01T09:07:05.944Z"
+    },
+    "07e3e6c1966c98bce260a6608d692f73": {
+      "eventId": "07e3e6c1966c98bce260a6608d692f73",
+      "sport": "Premier League",
+      "homeTeam": "Burnley",
+      "awayTeam": "Bournemouth",
+      "commenceTime": "2026-03-14T15:00:00Z",
+      "sharpLines": [
+        {
+          "bookmaker": "betfair_ex_eu",
+          "market": "h2h",
+          "outcomes": [
+            {
+              "name": "Bournemouth",
+              "price": 1.06
+            },
+            {
+              "name": "Burnley",
+              "price": 1.06
+            },
+            {
+              "name": "Draw",
+              "price": 1.09
+            }
+          ],
+          "impliedProbs": {
+            "Bournemouth": 0.9433962264150942,
+            "Burnley": 0.9433962264150942,
+            "Draw": 0.9174311926605504
+          },
+          "lastUpdate": "2026-03-01T09:06:43Z"
+        },
+        {
+          "bookmaker": "betfair_ex_eu",
+          "market": "h2h_lay",
+          "outcomes": [
+            {
+              "name": "Bournemouth",
+              "price": 970
+            },
+            {
+              "name": "Burnley",
+              "price": 970
+            },
+            {
+              "name": "Draw",
+              "price": 4.7
+            }
+          ],
+          "impliedProbs": {
+            "Bournemouth": 0.09345794392523364,
+            "Burnley": 0.09345794392523364,
+            "Draw": 0.2127659574468085
+          },
+          "lastUpdate": "2026-03-01T09:06:43Z"
+        }
+      ],
+      "scannedAt": "2026-03-01T09:07:05.944Z"
+    },
+    "9c44263754509bd50f8db5429ca3d264": {
+      "eventId": "9c44263754509bd50f8db5429ca3d264",
+      "sport": "Premier League",
+      "homeTeam": "Sunderland",
+      "awayTeam": "Brighton and Hove Albion",
+      "commenceTime": "2026-03-14T15:00:00Z",
+      "sharpLines": [
+        {
+          "bookmaker": "betfair_ex_eu",
+          "market": "h2h",
+          "outcomes": [
+            {
+              "name": "Brighton and Hove Albion",
+              "price": 1.06
+            },
+            {
+              "name": "Sunderland",
+              "price": 1.06
+            },
+            {
+              "name": "Draw",
+              "price": 1.09
+            }
+          ],
+          "impliedProbs": {
+            "Brighton and Hove Albion": 0.9433962264150942,
+            "Sunderland": 0.9433962264150942,
+            "Draw": 0.9174311926605504
+          },
+          "lastUpdate": "2026-03-01T09:06:43Z"
+        },
+        {
+          "bookmaker": "betfair_ex_eu",
+          "market": "h2h_lay",
+          "outcomes": [
+            {
+              "name": "Brighton and Hove Albion",
+              "price": 970
+            },
+            {
+              "name": "Sunderland",
+              "price": 970
+            },
+            {
+              "name": "Draw",
+              "price": 3.95
+            }
+          ],
+          "impliedProbs": {
+            "Brighton and Hove Albion": 0.09345794392523364,
+            "Sunderland": 0.09345794392523364,
+            "Draw": 0.2531645569620253
+          },
+          "lastUpdate": "2026-03-01T09:06:43Z"
+        }
+      ],
+      "scannedAt": "2026-03-01T09:07:05.944Z"
+    },
+    "0962092236bc521dd9eb0ea41ef8b8c0": {
+      "eventId": "0962092236bc521dd9eb0ea41ef8b8c0",
+      "sport": "Premier League",
+      "homeTeam": "Arsenal",
+      "awayTeam": "Everton",
+      "commenceTime": "2026-03-14T17:30:00Z",
+      "sharpLines": [
+        {
+          "bookmaker": "betfair_ex_eu",
+          "market": "h2h",
+          "outcomes": [
+            {
+              "name": "Arsenal",
+              "price": 1.26
+            },
+            {
+              "name": "Everton",
+              "price": 1.31
+            },
+            {
+              "name": "Draw",
+              "price": 1.75
+            }
+          ],
+          "impliedProbs": {
+            "Arsenal": 0.7936507936507936,
+            "Everton": 0.7633587786259541,
+            "Draw": 0.5714285714285714
+          },
+          "lastUpdate": "2026-03-01T09:06:43Z"
+        },
+        {
+          "bookmaker": "betfair_ex_eu",
+          "market": "h2h_lay",
+          "outcomes": [
+            {
+              "name": "Arsenal",
+              "price": 12.5
+            },
+            {
+              "name": "Everton",
+              "price": 19.5
+            },
+            {
+              "name": "Draw",
+              "price": 8.6
+            }
+          ],
+          "impliedProbs": {
+            "Arsenal": 0.08,
+            "Everton": 0.05128205128205128,
+            "Draw": 0.11627906976744186
+          },
+          "lastUpdate": "2026-03-01T09:06:43Z"
+        }
+      ],
+      "scannedAt": "2026-03-01T09:07:05.944Z"
+    },
+    "2beaea2705eda4c075d7aa55a068d5ab": {
+      "eventId": "2beaea2705eda4c075d7aa55a068d5ab",
+      "sport": "Premier League",
+      "homeTeam": "Chelsea",
+      "awayTeam": "Newcastle United",
+      "commenceTime": "2026-03-14T17:30:00Z",
+      "sharpLines": [
+        {
+          "bookmaker": "betfair_ex_eu",
+          "market": "h2h",
+          "outcomes": [
+            {
+              "name": "Chelsea",
+              "price": 1.06
+            },
+            {
+              "name": "Newcastle United",
+              "price": 1.06
+            },
+            {
+              "name": "Draw",
+              "price": 1.09
+            }
+          ],
+          "impliedProbs": {
+            "Chelsea": 0.9433962264150942,
+            "Newcastle United": 0.9433962264150942,
+            "Draw": 0.9174311926605504
+          },
+          "lastUpdate": "2026-03-01T09:06:43Z"
+        },
+        {
+          "bookmaker": "betfair_ex_eu",
+          "market": "h2h_lay",
+          "outcomes": [
+            {
+              "name": "Chelsea",
+              "price": 970
+            },
+            {
+              "name": "Newcastle United",
+              "price": 970
+            },
+            {
+              "name": "Draw",
+              "price": 4.8
+            }
+          ],
+          "impliedProbs": {
+            "Chelsea": 0.09345794392523364,
+            "Newcastle United": 0.09345794392523364,
+            "Draw": 0.20833333333333334
+          },
+          "lastUpdate": "2026-03-01T09:06:43Z"
+        }
+      ],
+      "scannedAt": "2026-03-01T09:07:05.944Z"
+    },
+    "da5bec9f0dc4903170736d22277ee47e": {
+      "eventId": "da5bec9f0dc4903170736d22277ee47e",
+      "sport": "Premier League",
+      "homeTeam": "West Ham United",
+      "awayTeam": "Manchester City",
+      "commenceTime": "2026-03-14T20:00:00Z",
+      "sharpLines": [
+        {
+          "bookmaker": "betfair_ex_eu",
+          "market": "h2h",
+          "outcomes": [
+            {
+              "name": "Manchester City",
+              "price": 1.53
+            },
+            {
+              "name": "West Ham United",
+              "price": 1.65
+            },
+            {
+              "name": "Draw",
+              "price": 1.45
+            }
+          ],
+          "impliedProbs": {
+            "Manchester City": 0.6535947712418301,
+            "West Ham United": 0.6060606060606061,
+            "Draw": 0.6896551724137931
+          },
+          "lastUpdate": "2026-03-01T09:06:43Z"
+        },
+        {
+          "bookmaker": "betfair_ex_eu",
+          "market": "h2h_lay",
+          "outcomes": [
+            {
+              "name": "Manchester City",
+              "price": 5.8
+            },
+            {
+              "name": "West Ham United",
+              "price": 14.5
+            },
+            {
+              "name": "Draw",
+              "price": 5.8
+            }
+          ],
+          "impliedProbs": {
+            "Manchester City": 0.1724137931034483,
+            "West Ham United": 0.06896551724137931,
+            "Draw": 0.1724137931034483
+          },
+          "lastUpdate": "2026-03-01T09:06:43Z"
+        }
+      ],
+      "scannedAt": "2026-03-01T09:07:05.944Z"
+    },
+    "18e2b8ff6e7459881bc8ea82284bfa81": {
+      "eventId": "18e2b8ff6e7459881bc8ea82284bfa81",
+      "sport": "Premier League",
+      "homeTeam": "Manchester United",
+      "awayTeam": "Aston Villa",
+      "commenceTime": "2026-03-15T14:00:00Z",
+      "sharpLines": [
+        {
+          "bookmaker": "betfair_ex_eu",
+          "market": "h2h",
+          "outcomes": [
+            {
+              "name": "Aston Villa",
+              "price": 1.06
+            },
+            {
+              "name": "Manchester United",
+              "price": 1.06
+            },
+            {
+              "name": "Draw",
+              "price": 1.09
+            }
+          ],
+          "impliedProbs": {
+            "Aston Villa": 0.9433962264150942,
+            "Manchester United": 0.9433962264150942,
+            "Draw": 0.9174311926605504
+          },
+          "lastUpdate": "2026-03-01T09:06:43Z"
+        },
+        {
+          "bookmaker": "betfair_ex_eu",
+          "market": "h2h_lay",
+          "outcomes": [
+            {
+              "name": "Aston Villa",
+              "price": 970
+            },
+            {
+              "name": "Manchester United",
+              "price": 970
+            },
+            {
+              "name": "Draw",
+              "price": 5
+            }
+          ],
+          "impliedProbs": {
+            "Aston Villa": 0.09345794392523364,
+            "Manchester United": 0.09345794392523364,
+            "Draw": 0.2
+          },
+          "lastUpdate": "2026-03-01T09:06:43Z"
+        }
+      ],
+      "scannedAt": "2026-03-01T09:07:05.944Z"
+    },
+    "44df3d0dc87a1d7970d9ec5f2bf03c25": {
+      "eventId": "44df3d0dc87a1d7970d9ec5f2bf03c25",
+      "sport": "Premier League",
+      "homeTeam": "Crystal Palace",
+      "awayTeam": "Leeds United",
+      "commenceTime": "2026-03-15T14:00:00Z",
+      "sharpLines": [
+        {
+          "bookmaker": "betfair_ex_eu",
+          "market": "h2h",
+          "outcomes": [
+            {
+              "name": "Crystal Palace",
+              "price": 1.38
+            },
+            {
+              "name": "Leeds United",
+              "price": 1.38
+            },
+            {
+              "name": "Draw",
+              "price": 1.09
+            }
+          ],
+          "impliedProbs": {
+            "Crystal Palace": 0.7246376811594204,
+            "Leeds United": 0.7246376811594204,
+            "Draw": 0.9174311926605504
+          },
+          "lastUpdate": "2026-03-01T09:06:43Z"
+        },
+        {
+          "bookmaker": "betfair_ex_eu",
+          "market": "h2h_lay",
+          "outcomes": [
+            {
+              "name": "Crystal Palace",
+              "price": 970
+            },
+            {
+              "name": "Leeds United",
+              "price": 970
+            },
+            {
+              "name": "Draw",
+              "price": 3.7
+            }
+          ],
+          "impliedProbs": {
+            "Crystal Palace": 0.09345794392523364,
+            "Leeds United": 0.09345794392523364,
+            "Draw": 0.27027027027027023
+          },
+          "lastUpdate": "2026-03-01T09:06:43Z"
+        }
+      ],
+      "scannedAt": "2026-03-01T09:07:05.944Z"
+    },
+    "1b704b460cca3f7bf6cc31f0a7ef5d22": {
+      "eventId": "1b704b460cca3f7bf6cc31f0a7ef5d22",
+      "sport": "Premier League",
+      "homeTeam": "Nottingham Forest",
+      "awayTeam": "Fulham",
+      "commenceTime": "2026-03-15T14:00:00Z",
+      "sharpLines": [
+        {
+          "bookmaker": "betfair_ex_eu",
+          "market": "h2h",
+          "outcomes": [
+            {
+              "name": "Fulham",
+              "price": 1.38
+            },
+            {
+              "name": "Nottingham Forest",
+              "price": 2.1
+            },
+            {
+              "name": "Draw",
+              "price": 1.09
+            }
+          ],
+          "impliedProbs": {
+            "Fulham": 0.7246376811594204,
+            "Nottingham Forest": 0.47619047619047616,
+            "Draw": 0.9174311926605504
+          },
+          "lastUpdate": "2026-03-01T09:06:43Z"
+        },
+        {
+          "bookmaker": "betfair_ex_eu",
+          "market": "h2h_lay",
+          "outcomes": [
+            {
+              "name": "Fulham",
+              "price": 970
+            },
+            {
+              "name": "Nottingham Forest",
+              "price": 970
+            },
+            {
+              "name": "Draw",
+              "price": 3.7
+            }
+          ],
+          "impliedProbs": {
+            "Fulham": 0.09345794392523364,
+            "Nottingham Forest": 0.09345794392523364,
+            "Draw": 0.27027027027027023
+          },
+          "lastUpdate": "2026-03-01T09:06:43Z"
+        }
+      ],
+      "scannedAt": "2026-03-01T09:07:05.944Z"
+    },
+    "0ca99a22a42a6d974f58b6de06c2617f": {
+      "eventId": "0ca99a22a42a6d974f58b6de06c2617f",
+      "sport": "Premier League",
+      "homeTeam": "Liverpool",
+      "awayTeam": "Tottenham Hotspur",
+      "commenceTime": "2026-03-15T16:30:00Z",
+      "sharpLines": [
+        {
+          "bookmaker": "betfair_ex_eu",
+          "market": "h2h",
+          "outcomes": [
+            {
+              "name": "Liverpool",
+              "price": 1.38
+            },
+            {
+              "name": "Tottenham Hotspur",
+              "price": 6.6
+            },
+            {
+              "name": "Draw",
+              "price": 4.7
+            }
+          ],
+          "impliedProbs": {
+            "Liverpool": 0.7246376811594204,
+            "Tottenham Hotspur": 0.15151515151515152,
+            "Draw": 0.2127659574468085
+          },
+          "lastUpdate": "2026-03-01T09:06:43Z"
+        },
+        {
+          "bookmaker": "betfair_ex_eu",
+          "market": "h2h_lay",
+          "outcomes": [
+            {
+              "name": "Liverpool",
+              "price": 1.52
+            },
+            {
+              "name": "Tottenham Hotspur",
+              "price": 17.5
+            },
+            {
+              "name": "Draw",
+              "price": 7.8
+            }
+          ],
+          "impliedProbs": {
+            "Liverpool": 0.6578947368421053,
+            "Tottenham Hotspur": 0.05714285714285714,
+            "Draw": 0.12820512820512822
+          },
+          "lastUpdate": "2026-03-01T09:06:43Z"
+        }
+      ],
+      "scannedAt": "2026-03-01T09:07:05.944Z"
+    },
+    "5d742adbd3eb4cc8128387cc6353e1fe": {
+      "eventId": "5d742adbd3eb4cc8128387cc6353e1fe",
+      "sport": "Premier League",
+      "homeTeam": "Brentford",
+      "awayTeam": "Wolverhampton Wanderers",
+      "commenceTime": "2026-03-16T20:00:00Z",
+      "sharpLines": [
+        {
+          "bookmaker": "betfair_ex_eu",
+          "market": "h2h",
+          "outcomes": [
+            {
+              "name": "Brentford",
+              "price": 1.47
+            },
+            {
+              "name": "Wolverhampton Wanderers",
+              "price": 1.06
+            },
+            {
+              "name": "Draw",
+              "price": 1.14
+            }
+          ],
+          "impliedProbs": {
+            "Brentford": 0.6802721088435374,
+            "Wolverhampton Wanderers": 0.9433962264150942,
+            "Draw": 0.8771929824561404
+          },
+          "lastUpdate": "2026-03-01T09:06:43Z"
+        },
+        {
+          "bookmaker": "betfair_ex_eu",
+          "market": "h2h_lay",
+          "outcomes": [
+            {
+              "name": "Brentford",
+              "price": 970
+            },
+            {
+              "name": "Wolverhampton Wanderers",
+              "price": 970
+            },
+            {
+              "name": "Draw",
+              "price": 8.8
+            }
+          ],
+          "impliedProbs": {
+            "Brentford": 0.09345794392523364,
+            "Wolverhampton Wanderers": 0.09345794392523364,
+            "Draw": 0.11363636363636363
+          },
+          "lastUpdate": "2026-03-01T09:06:43Z"
+        }
+      ],
+      "scannedAt": "2026-03-01T09:07:05.944Z"
     }
   },
-  "lastScanAt": "2026-02-27T09:07:07.466Z",
-  "requestsUsed": 38
+  "lastScanAt": "2026-03-01T09:07:06.945Z",
+  "requestsUsed": 56
 }

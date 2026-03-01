@@ -1,0 +1,52 @@
+{
+  "timestamp": "2026-02-28T21:20:02.742Z",
+  "jinxScore": 55,
+  "jinxCorrelation": 50,
+  "saturation": 0.5520639999999999,
+  "directionalExposure": {
+    "long": 1,
+    "short": 6,
+    "pctShort": 85.71428571428571
+  },
+  "activePositions": 7,
+  "directives": [
+    {
+      "action": "WARN",
+      "severity": "MODERATE",
+      "reason": "Directional crowding: 86% SHORT (6/7). Portfolio is a leveraged directional bet.",
+      "timestamp": "2026-02-28T21:20:02.731Z"
+    },
+    {
+      "action": "FLAG_AGENT",
+      "severity": "MODERATE",
+      "reason": "sentry-sentiment-scanner: 21.5% WR over 279 signals (below 40% threshold). Kelly multiplier should be reduced 50%.",
+      "agentFlags": [
+        "sentry-sentiment-scanner"
+      ],
+      "timestamp": "2026-02-28T21:20:02.731Z"
+    }
+  ],
+  "agentPerformance": {
+    "rei-funding-carry": {
+      "wr": 0.40046565774155995,
+      "signals": 859,
+      "pnl": -1061.0967432989517
+    },
+    "jackbot-temporal-edge": {
+      "wr": 0.1111111111111111,
+      "signals": 27,
+      "pnl": -289.3459532174316
+    },
+    "sentry-sentiment-scanner": {
+      "wr": 0.21505376344086022,
+      "signals": 279,
+      "pnl": -193.87764714810487
+    },
+    "pixel-momentum": {
+      "wr": 0.21052631578947367,
+      "signals": 38,
+      "pnl": -116.72292975609419
+    }
+  },
+  "summary": "⚠️ WARN: Directional crowding: 86% SHORT (6/7). Portfolio is a leveraged directional bet.\n⚠️ FLAGGED: sentry-sentiment-scanner — underperforming"
+}

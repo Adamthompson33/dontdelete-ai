@@ -1,0 +1,383 @@
+{
+  "date": "2026-03-01",
+  "sizedAt": "2026-03-01T09:06:02.351Z",
+  "totalSignals": 2097,
+  "newlySized": 46,
+  "alreadySized": 2051,
+  "sized": 30,
+  "skipped": 16,
+  "totalAllocation": 2.9836650000000007,
+  "maxKelly": 0.2,
+  "positions": [
+    {
+      "coin": "UNKNOWN",
+      "tool": "prophet-lead-lag",
+      "direction": "SHORT",
+      "confidence": 0.6180034517213191,
+      "kelly": 0.2,
+      "action": "SIZE"
+    },
+    {
+      "coin": "UNKNOWN",
+      "tool": "prophet-lead-lag",
+      "direction": "SHORT",
+      "confidence": 0.6180034517213191,
+      "kelly": 0.2,
+      "action": "SIZE"
+    },
+    {
+      "coin": "UNKNOWN",
+      "tool": "prophet-lead-lag",
+      "direction": "LONG",
+      "confidence": 0.5862527716186253,
+      "kelly": 0.2,
+      "action": "SIZE"
+    },
+    {
+      "coin": "UNKNOWN",
+      "tool": "prophet-lead-lag",
+      "direction": "SHORT",
+      "confidence": 0.6180034517213191,
+      "kelly": 0.2,
+      "action": "SIZE"
+    },
+    {
+      "coin": "UNKNOWN",
+      "tool": "prophet-lead-lag",
+      "direction": "SHORT",
+      "confidence": 0.6180034517213191,
+      "kelly": 0.2,
+      "action": "SIZE"
+    },
+    {
+      "coin": "UNKNOWN",
+      "tool": "prophet-lead-lag",
+      "direction": "SHORT",
+      "confidence": 0.85,
+      "kelly": 0.2,
+      "action": "SIZE"
+    },
+    {
+      "coin": "UNKNOWN",
+      "tool": "prophet-lead-lag",
+      "direction": "SHORT",
+      "confidence": 0.761601377529057,
+      "kelly": 0.2,
+      "action": "SIZE"
+    },
+    {
+      "coin": "UNKNOWN",
+      "tool": "prophet-lead-lag",
+      "direction": "SHORT",
+      "confidence": 0.6180034517213191,
+      "kelly": 0.2,
+      "action": "SIZE"
+    },
+    {
+      "coin": "UNKNOWN",
+      "tool": "prophet-lead-lag",
+      "direction": "SHORT",
+      "confidence": 0.6180034517213191,
+      "kelly": 0.2,
+      "action": "SIZE"
+    },
+    {
+      "coin": "UNKNOWN",
+      "tool": "prophet-lead-lag",
+      "direction": "SHORT",
+      "confidence": 0.6180034517213191,
+      "kelly": 0.2,
+      "action": "SIZE"
+    },
+    {
+      "coin": "UNKNOWN",
+      "tool": "prophet-lead-lag",
+      "direction": "SHORT",
+      "confidence": 0.738718082334549,
+      "kelly": 0.2,
+      "action": "SIZE"
+    },
+    {
+      "coin": "SOL",
+      "tool": "sentry-sentiment-scanner",
+      "direction": "LONG",
+      "confidence": 0.7,
+      "kelly": 0.2,
+      "action": "SIZE"
+    },
+    {
+      "coin": "BTC",
+      "tool": "sentry-sentiment-scanner",
+      "direction": "LONG",
+      "confidence": 0.75,
+      "kelly": 0.2,
+      "action": "SIZE"
+    },
+    {
+      "coin": "NEAR",
+      "tool": "sentry-sentiment-scanner",
+      "direction": "LONG",
+      "confidence": 0.8,
+      "kelly": 0.2,
+      "action": "SIZE"
+    },
+    {
+      "coin": "ETH",
+      "tool": "sentry-sentiment-scanner",
+      "direction": "LONG",
+      "confidence": 0.7,
+      "kelly": 0.2,
+      "action": "SIZE"
+    },
+    {
+      "coin": "XRP",
+      "tool": "sentry-sentiment-scanner",
+      "direction": "LONG",
+      "confidence": 0.8,
+      "kelly": 0.2,
+      "action": "SIZE"
+    },
+    {
+      "coin": "LINK",
+      "tool": "sentry-sentiment-scanner",
+      "direction": "FLAT",
+      "confidence": 0.6,
+      "kelly": 0.2,
+      "action": "SIZE"
+    },
+    {
+      "coin": "DOGE",
+      "tool": "sentry-sentiment-scanner",
+      "direction": "FLAT",
+      "confidence": 0.6,
+      "kelly": 0.2,
+      "action": "SIZE"
+    },
+    {
+      "coin": "BTC",
+      "tool": "pixel-momentum",
+      "direction": "LONG",
+      "confidence": "medium",
+      "kelly": 0.1720572657915318,
+      "action": "SIZE"
+    },
+    {
+      "coin": "SOL",
+      "tool": "sentry-sentiment-scanner",
+      "direction": "LONG",
+      "confidence": 0.7,
+      "kelly": 0.2,
+      "action": "SIZE"
+    },
+    {
+      "coin": "BTC",
+      "tool": "sentry-sentiment-scanner",
+      "direction": "FLAT",
+      "confidence": 0.7,
+      "kelly": 0.2,
+      "action": "SIZE"
+    },
+    {
+      "coin": "NEAR",
+      "tool": "sentry-sentiment-scanner",
+      "direction": "LONG",
+      "confidence": 0.8,
+      "kelly": 0.2,
+      "action": "SIZE"
+    },
+    {
+      "coin": "ETH",
+      "tool": "sentry-sentiment-scanner",
+      "direction": "LONG",
+      "confidence": 0.8,
+      "kelly": 0.2,
+      "action": "SIZE"
+    },
+    {
+      "coin": "XRP",
+      "tool": "sentry-sentiment-scanner",
+      "direction": "LONG",
+      "confidence": 0.7,
+      "kelly": 0.2,
+      "action": "SIZE"
+    },
+    {
+      "coin": "LINK",
+      "tool": "sentry-sentiment-scanner",
+      "direction": "FLAT",
+      "confidence": 0.7,
+      "kelly": 0.2,
+      "action": "SIZE"
+    },
+    {
+      "coin": "DOGE",
+      "tool": "sentry-sentiment-scanner",
+      "direction": "FLAT",
+      "confidence": 0.7,
+      "kelly": 0.2,
+      "action": "SIZE"
+    },
+    {
+      "coin": "Will Bitcoin hit $10",
+      "tool": "sakura-arb-scanner",
+      "direction": "ARB",
+      "confidence": "medium",
+      "kelly": 0.1720572657915318,
+      "action": "SIZE"
+    },
+    {
+      "coin": "Will Bitcoin hit $10",
+      "tool": "sakura-arb-scanner",
+      "direction": "ARB",
+      "confidence": "high",
+      "kelly": 0.2,
+      "action": "SIZE"
+    },
+    {
+      "coin": "Will Bitcoin be high",
+      "tool": "sakura-arb-scanner",
+      "direction": "ARB",
+      "confidence": "high",
+      "kelly": 0.2,
+      "action": "SIZE"
+    },
+    {
+      "coin": "PORTFOLIO",
+      "tool": "jinx-correlation-monitor",
+      "direction": "FLAT",
+      "confidence": 1,
+      "kelly": 0.2,
+      "action": "SIZE"
+    }
+  ],
+  "skippedPositions": [
+    {
+      "coin": "PENGU",
+      "tool": "sentry-sentiment-scanner",
+      "direction": "FLAT",
+      "confidence": 0.3,
+      "kelly": 0,
+      "action": "SKIP"
+    },
+    {
+      "coin": "TAO",
+      "tool": "sentry-sentiment-scanner",
+      "direction": "FLAT",
+      "confidence": 0.3,
+      "kelly": 0,
+      "action": "SKIP"
+    },
+    {
+      "coin": "PENGU",
+      "tool": "sentry-sentiment-scanner",
+      "direction": "FLAT",
+      "confidence": 0.3,
+      "kelly": 0,
+      "action": "SKIP"
+    },
+    {
+      "coin": "TAO",
+      "tool": "sentry-sentiment-scanner",
+      "direction": "FLAT",
+      "confidence": 0.3,
+      "kelly": 0,
+      "action": "SKIP"
+    },
+    {
+      "coin": "[@mattyb’s 500th mar",
+      "tool": "sakura-arb-scanner",
+      "direction": "ARB",
+      "confidence": "low",
+      "kelly": 0,
+      "action": "SKIP"
+    },
+    {
+      "coin": "Will Bitcoin (BTC) b",
+      "tool": "sakura-arb-scanner",
+      "direction": "ARB",
+      "confidence": "low",
+      "kelly": 0,
+      "action": "SKIP"
+    },
+    {
+      "coin": "Will Bitcoin (BTC) p",
+      "tool": "sakura-arb-scanner",
+      "direction": "ARB",
+      "confidence": "low",
+      "kelly": 0,
+      "action": "SKIP"
+    },
+    {
+      "coin": "Will a Republican Pr",
+      "tool": "sakura-arb-scanner",
+      "direction": "ARB",
+      "confidence": "low",
+      "kelly": 0,
+      "action": "SKIP"
+    },
+    {
+      "coin": "Will a former US pre",
+      "tool": "sakura-arb-scanner",
+      "direction": "ARB",
+      "confidence": "low",
+      "kelly": 0,
+      "action": "SKIP"
+    },
+    {
+      "coin": "Will Quinn Ewers def",
+      "tool": "sakura-arb-scanner",
+      "direction": "ARB",
+      "confidence": "low",
+      "kelly": 0,
+      "action": "SKIP"
+    },
+    {
+      "coin": "(1k subsidy) Will Co",
+      "tool": "sakura-arb-scanner",
+      "direction": "ARB",
+      "confidence": "low",
+      "kelly": 0,
+      "action": "SKIP"
+    },
+    {
+      "coin": "Will Roger Goodell b",
+      "tool": "sakura-arb-scanner",
+      "direction": "ARB",
+      "confidence": "low",
+      "kelly": 0,
+      "action": "SKIP"
+    },
+    {
+      "coin": "Will Bitcoin Outperf",
+      "tool": "sakura-arb-scanner",
+      "direction": "ARB",
+      "confidence": "low",
+      "kelly": 0,
+      "action": "SKIP"
+    },
+    {
+      "coin": "More than 70% of U.S",
+      "tool": "sakura-arb-scanner",
+      "direction": "ARB",
+      "confidence": "low",
+      "kelly": 0,
+      "action": "SKIP"
+    },
+    {
+      "coin": "Carried Interest Rep",
+      "tool": "sakura-arb-scanner",
+      "direction": "ARB",
+      "confidence": "low",
+      "kelly": 0,
+      "action": "SKIP"
+    },
+    {
+      "coin": "Same city wins 2+ ma",
+      "tool": "sakura-arb-scanner",
+      "direction": "ARB",
+      "confidence": "low",
+      "kelly": 0,
+      "action": "SKIP"
+    }
+  ]
+}

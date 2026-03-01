@@ -1,26 +1,23 @@
 {
-  "timestamp": "2026-02-27T09:08:03.995Z",
+  "timestamp": "2026-02-27T13:08:04.229Z",
   "regime": "TRENDING_DOWN",
   "directional": {
-    "longCount": 14,
-    "shortCount": 17,
-    "longPct": 10,
+    "longCount": 7,
+    "shortCount": 23,
+    "longPct": 5,
     "longAllocPct": 55,
-    "crowdingScore": 80,
-    "verdict": "CRITICAL: 10% SHORT — portfolio is a directional bet, not diversified carry"
+    "crowdingScore": 90,
+    "verdict": "CRITICAL: 5% SHORT — portfolio is a directional bet, not diversified carry"
   },
   "sectors": [
     {
       "name": "New / Unclassified",
       "code": "NEW",
-      "count": 118,
-      "allocPct": 72,
+      "count": 121,
+      "allocPct": 73,
       "coins": [
-        null,
         "BTC",
         "DOT",
-        "TAO",
-        "PENGU",
         "Will Bitcoin be higher than $8",
         "[@mattyb’s 500th market specta",
         "Will Bitcoin (BTC) be below CH",
@@ -34,18 +31,23 @@
         "More than 70% of U.S. populati",
         "Carried Interest Repeal by End",
         "PORTFOLIO",
+        "PENGU",
+        "TAO",
         "ATOM",
         "Will bitcoin's price go below ",
+        null,
         "JUP",
         "MAVIA",
         "Will Bitcoin (BTC) close at $1",
-        "VIRTUAL"
+        "VIRTUAL",
+        "MORPHO",
+        "LAYER"
       ]
     },
     {
       "name": "Layer 1",
       "code": "L1",
-      "count": 19,
+      "count": 18,
       "allocPct": 24,
       "coins": [
         "ETH",
@@ -57,7 +59,7 @@
     {
       "name": "DeFi",
       "code": "DEFI",
-      "count": 7,
+      "count": 6,
       "allocPct": 3,
       "coins": [
         "AAVE",
@@ -67,32 +69,29 @@
     {
       "name": "Layer 2 / Scaling",
       "code": "L2",
-      "count": 2,
-      "allocPct": 1,
+      "count": 1,
+      "allocPct": 0,
       "coins": [
         "BLAST"
       ]
     }
   ],
-  "sectorHHI": 5770,
-  "sectorVerdict": "CRITICAL: HHI 5770 — portfolio dominated by New / Unclassified (72%). A sector-wide event would be catastrophic.",
+  "sectorHHI": 5914,
+  "sectorVerdict": "CRITICAL: HHI 5914 — portfolio dominated by New / Unclassified (73%). A sector-wide event would be catastrophic.",
   "btcBeta": {
-    "avgCorrelation": 28.14,
+    "avgCorrelation": 28.62,
     "highBetaCoins": [
       "DOT",
       "BTC"
     ],
     "lowBetaCoins": [
-      "BTC",
-      "ETH",
-      "SOL",
       "DOT",
-      "TAO",
-      "PENGU",
-      "BLAST",
       "MAVIA",
+      "PENGU",
       "VIRTUAL",
-      "SUI"
+      "SOL",
+      "SUI",
+      "LAYER"
     ],
     "btcExposurePct": 1,
     "verdict": "LOW: Only 1% high-beta. Portfolio has meaningful independence from BTC moves."
@@ -121,20 +120,20 @@
         "coins": [
           "BLAST"
         ],
-        "totalAlloc": 1
+        "totalAlloc": 0
       }
     ],
     "maxClusterPct": 13,
     "verdict": "LOW: No single narrative exceeds 25%. Good narrative diversification."
   },
   "overallRisk": {
-    "score": 55,
-    "grade": "MODERATE",
+    "score": 60,
+    "grade": "HIGH",
     "factors": [
-      "Directional crowding (10% long)",
-      "Sector concentration (HHI 5770)",
+      "Directional crowding (5% long)",
+      "Sector concentration (HHI 5914)",
       "Narrative clustering (\"Alt L1 Recovery\" at 13%)"
     ],
-    "recommendation": "ACCEPTABLE. Current risk controls (regime params, Sentry gate, Kelly sizing) are adequate. Monitor for crowding increases."
+    "recommendation": "CAUTION. Regime-aware stops are essential. Do not add new positions in concentrated sectors. Sentry hard gate is the primary defense."
   }
 }

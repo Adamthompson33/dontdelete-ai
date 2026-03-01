@@ -1,14 +1,55 @@
 {
-  "timestamp": "2026-02-27T09:09:04.563Z",
+  "timestamp": "2026-02-27T13:09:04.804Z",
   "regime": "TRENDING_DOWN",
   "previousRegime": "TRENDING_DOWN",
   "regimeShifted": false,
-  "alerts": [],
+  "alerts": [
+    {
+      "type": "JINX_ESCALATION",
+      "severity": "WARNING",
+      "coin": "PORTFOLIO",
+      "direction": "-",
+      "message": "Risk score jumped 55 → 60 (MODERATE → HIGH). Do not add new longs. Consider closing weakest position.",
+      "action": "REVIEW_ALL",
+      "details": {
+        "previousScore": 55,
+        "currentScore": 60,
+        "previousGrade": "MODERATE",
+        "currentGrade": "HIGH"
+      }
+    },
+    {
+      "type": "REGIME_SHIFT",
+      "severity": "WARNING",
+      "coin": "BTC",
+      "direction": "LONG",
+      "message": "GRANDFATHERED: sized at 9.6% under TRENDING_LONG, current regime TRENDING_DOWN allows max 2.5%. Oversized by 3.8x. Manual trim recommended.",
+      "action": "TRIM",
+      "details": {
+        "currentSize": 9.59,
+        "allowedSize": 2.5,
+        "oversizeRatio": 3.84,
+        "entryRegime": "TRENDING_LONG"
+      }
+    },
+    {
+      "type": "STOP_APPROACHING",
+      "severity": "WARNING",
+      "coin": "BTC",
+      "direction": "LONG",
+      "message": "Price at -2.9%, approaching 3% stop (0.1% away).",
+      "action": "MONITOR",
+      "details": {
+        "pnlPct": -2.89,
+        "distanceToStop": 0.11
+      }
+    }
+  ],
   "summary": {
     "totalPositions": 4,
-    "alertCount": 0,
+    "alertCount": 3,
     "criticalCount": 0,
-    "warningCount": 0,
+    "warningCount": 3,
     "recommendedExits": [],
     "recommendedExtensions": []
   }

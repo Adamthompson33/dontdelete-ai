@@ -160,7 +160,21 @@ export class TemporalEdgeScanner {
 
         // Extreme positive funding (longs pay) → price tends to dip after reset → short bias
         // Extreme negative funding (shorts pay) → price tends to pop after reset → long bias
-        const direction: 'long' | 'short' = hourlyRate > 0 ? 'short' : 'long';
+        const rawDirection: 'long' | 'short' = hourlyRate > 0 ? 'short' : 'long';
+
+        // ═══ REGIME GATE (2026-02-28) ═══
+        // Don't generate signals that fight the regime. 
+        // LONG in TRENDING_DOWN or SHORT in TRENDING_UP = skip.
+        const regimeConflict = 
+          (rawDirection === 'long' && btcRegime.regime === 'TRENDING_DOWN') ||
+          (rawDirection === 'short' && btcRegime.regime === 'TRENDING_UP');
+        
+        if (regimeConflict) {
+          console.log(`  ⛔ ${coin} ${rawDirection.toUpperCase()} skipped — conflicts with ${btcRegime.regime} regime`);
+          continue;
+        }
+        
+        const direction = rawDirection;
 
         // Confidence scales with how extreme the funding is
         const fundingMagnitude = Math.min(Math.abs(annualizedRate) / 200, 1); // 0-1 scale

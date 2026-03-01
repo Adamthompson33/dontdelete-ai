@@ -1,0 +1,24 @@
+{
+  "lastRunAt": "2026-03-01T09:20:02.435Z",
+  "lastJinxScore": 50,
+  "lastSaturation": 0.592826,
+  "haltActive": false,
+  "activeDirectives": [
+    {
+      "action": "FLAG_AGENT",
+      "severity": "MODERATE",
+      "reason": "sentry-sentiment-scanner: 13.6% WR over 295 signals (below 40% threshold). Kelly multiplier should be reduced 50%.",
+      "agentFlags": [
+        "sentry-sentiment-scanner"
+      ],
+      "timestamp": "2026-03-01T09:20:02.424Z"
+    }
+  ],
+  "agentWatchlist": {
+    "sentry-sentiment-scanner": {
+      "wr": 0.13559322033898305,
+      "signals": 295,
+      "flaggedAt": "2026-03-01T09:20:02.435Z"
+    }
+  }
+}

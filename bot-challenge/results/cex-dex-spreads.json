@@ -650,5 +650,170 @@
         "hyperliquid_available": true
       }
     ]
+  },
+  {
+    "timestamp": "2026-02-27T13:03:04.506Z",
+    "regime": "UNKNOWN",
+    "coinCount": 0,
+    "spreads": [],
+    "staleSkipped": true,
+    "staleNote": "Cycle skipped: 3+ coins had identical HL funding rate (likely stale/default data)"
+  },
+  {
+    "timestamp": "2026-02-28T01:03:03.006Z",
+    "regime": "UNKNOWN",
+    "coinCount": 0,
+    "spreads": []
+  },
+  {
+    "timestamp": "2026-02-28T05:03:02.968Z",
+    "regime": "UNKNOWN",
+    "coinCount": 1,
+    "spreads": [
+      {
+        "coin": "BTC",
+        "binance_rate_apr": 2.75,
+        "hyperliquid_rate_apr": 1.29,
+        "spread_apr": 1.47,
+        "binance_available": true,
+        "hyperliquid_available": true
+      }
+    ]
+  },
+  {
+    "timestamp": "2026-02-28T09:03:03.431Z",
+    "regime": "TRENDING_DOWN",
+    "coinCount": 1,
+    "spreads": [
+      {
+        "coin": "BTC",
+        "binance_rate_apr": -4.71,
+        "hyperliquid_rate_apr": -27.39,
+        "spread_apr": 22.69,
+        "binance_available": true,
+        "hyperliquid_available": true
+      }
+    ]
+  },
+  {
+    "timestamp": "2026-02-28T13:03:03.404Z",
+    "regime": "UNKNOWN",
+    "coinCount": 3,
+    "spreads": [
+      {
+        "coin": "BTC",
+        "binance_rate_apr": -8.69,
+        "hyperliquid_rate_apr": -26.89,
+        "spread_apr": 18.2,
+        "binance_available": true,
+        "hyperliquid_available": true
+      },
+      {
+        "coin": "PENGU",
+        "binance_rate_apr": -3.4,
+        "hyperliquid_rate_apr": -8.04,
+        "spread_apr": 4.64,
+        "binance_available": true,
+        "hyperliquid_available": true
+      },
+      {
+        "coin": "SUI",
+        "binance_rate_apr": -6.89,
+        "hyperliquid_rate_apr": 5.81,
+        "spread_apr": -12.7,
+        "binance_available": true,
+        "hyperliquid_available": true
+      }
+    ]
+  },
+  {
+    "timestamp": "2026-02-28T17:03:03.331Z",
+    "regime": "UNKNOWN",
+    "coinCount": 4,
+    "spreads": [
+      {
+        "coin": "ARB",
+        "binance_rate_apr": -15.99,
+        "hyperliquid_rate_apr": -26.55,
+        "spread_apr": 10.56,
+        "binance_available": true,
+        "hyperliquid_available": true
+      },
+      {
+        "coin": "BTC",
+        "binance_rate_apr": -5.24,
+        "hyperliquid_rate_apr": -0.99,
+        "spread_apr": -4.25,
+        "binance_available": true,
+        "hyperliquid_available": true
+      },
+      {
+        "coin": "PENGU",
+        "binance_rate_apr": -1.84,
+        "hyperliquid_rate_apr": -8.86,
+        "spread_apr": 7.02,
+        "binance_available": true,
+        "hyperliquid_available": true
+      },
+      {
+        "coin": "SUI",
+        "binance_rate_apr": -10.06,
+        "hyperliquid_rate_apr": 4.07,
+        "spread_apr": -14.13,
+        "binance_available": true,
+        "hyperliquid_available": true
+      }
+    ]
+  },
+  {
+    "timestamp": "2026-02-28T21:03:03.986Z",
+    "regime": "UNKNOWN",
+    "coinCount": 4,
+    "spreads": [
+      {
+        "coin": "ARB",
+        "binance_rate_apr": 1.77,
+        "hyperliquid_rate_apr": -19.14,
+        "spread_apr": 20.91,
+        "binance_available": true,
+        "hyperliquid_available": true
+      },
+      {
+        "coin": "BTC",
+        "binance_rate_apr": -3.55,
+        "hyperliquid_rate_apr": 0.12,
+        "spread_apr": -3.67,
+        "binance_available": true,
+        "hyperliquid_available": true
+      },
+      {
+        "coin": "PENGU",
+        "binance_rate_apr": 0.31,
+        "hyperliquid_rate_apr": -22.21,
+        "spread_apr": 22.52,
+        "binance_available": true,
+        "hyperliquid_available": true
+      },
+      {
+        "coin": "SUI",
+        "binance_rate_apr": -12.13,
+        "hyperliquid_rate_apr": -27.18,
+        "spread_apr": 15.05,
+        "binance_available": true,
+        "hyperliquid_available": true
+      }
+    ]
+  },
+  {
+    "timestamp": "2026-03-01T05:03:03.005Z",
+    "regime": "UNKNOWN",
+    "coinCount": 0,
+    "spreads": []
+  },
+  {
+    "timestamp": "2026-03-01T09:03:03.182Z",
+    "regime": "UNKNOWN",
+    "coinCount": 0,
+    "spreads": []
   }
 ]

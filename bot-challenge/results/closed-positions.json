@@ -59,6 +59,51 @@
       "direction": "LONG",
       "closedAt": "2026-02-27T00:00:00Z",
       "reason": "oracle_stop_breach_4am"
+    },
+    {
+      "key": "BTC_SHORT_pixel-momentum",
+      "closedAt": "2026-02-28T09:40:55.970040Z",
+      "closedBy": "oracle-directive",
+      "reason": "Trim weakest shorts \u2014 Jinx 82 EXTREME, oversold market, Oracle directive 2026-02-28",
+      "entryPrice": 65910,
+      "entryTime": "2026-02-28T01:01:03.797Z",
+      "entryRegime": "TRENDING_SHORT"
+    },
+    {
+      "key": "PEPE_SHORT_sentry-sentiment-scanner",
+      "closedAt": "2026-02-28T09:40:55.970040Z",
+      "closedBy": "oracle-directive",
+      "reason": "Trim weakest shorts \u2014 Jinx 82 EXTREME, oversold market, Oracle directive 2026-02-28",
+      "entryPrice": 3.459449724725982e-06,
+      "entryTime": "2026-02-28T09:02:02.435Z",
+      "entryRegime": "TRENDING_DOWN"
+    },
+    {
+      "key": "PENGU_SHORT_sentry-sentiment-scanner",
+      "closedAt": "2026-02-28T09:40:55.970040Z",
+      "closedBy": "oracle-directive",
+      "reason": "Trim weakest shorts \u2014 Jinx 82 EXTREME, oversold market, Oracle directive 2026-02-28",
+      "entryPrice": 0.006321872939777454,
+      "entryTime": "2026-02-28T09:02:02.435Z",
+      "entryRegime": "TRENDING_DOWN"
+    },
+    {
+      "key": "PORTFOLIO_FLAT_jinx-correlation-monitor",
+      "closedAt": "2026-02-28T09:40:55.970040Z",
+      "closedBy": "oracle-directive",
+      "reason": "Trim weakest shorts \u2014 Jinx 82 EXTREME, oversold market, Oracle directive 2026-02-28",
+      "entryPrice": 0,
+      "entryTime": "2026-02-28T09:05:09.799Z",
+      "entryRegime": "TRENDING_DOWN"
+    },
+    {
+      "key": "Will Bitcoin be higher than $8_ARB_sakura-arb-scanner",
+      "closedAt": "2026-02-28T09:40:55.970040Z",
+      "closedBy": "oracle-directive",
+      "reason": "Trim weakest shorts \u2014 Jinx 82 EXTREME, oversold market, Oracle directive 2026-02-28",
+      "entryPrice": 0.3359433268007785,
+      "entryTime": "2026-02-24T13:04:09.289Z",
+      "entryRegime": "TRENDING_DOWN"
     }
   ]
 }

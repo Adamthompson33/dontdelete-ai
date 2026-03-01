@@ -1,53 +1,174 @@
 {
   "lastRegime": "TRENDING_DOWN",
-  "lastFactorScore": 55,
+  "lastFactorScore": 46,
   "lastFactorGrade": "MODERATE",
   "positions": {
-    "BTC_LONG_pixel-momentum": {
-      "entryRegime": "TRENDING_LONG",
-      "entryTime": "2026-02-26T09:01:04.300Z",
-      "entryPrice": 67974,
-      "entryFundingAPR": 10.526891999999998,
-      "entryParams": {
-        "stop": 0.03,
-        "size": 0.5,
-        "maxHold": 8
-      }
-    },
-    "Will bitcoin's price go below _ARB_sakura-arb-scanner": {
+    "undefined_LONG_prophet-lead-lag": {
       "entryRegime": "TRENDING_DOWN",
-      "entryTime": "2026-02-26T21:04:08.932Z",
-      "entryPrice": 0.25000000000000006,
+      "entryTime": "2026-02-28T09:07:05.154Z",
+      "entryPrice": 0,
       "entryFundingAPR": 0,
       "entryParams": {
         "stop": 0.03,
         "size": 0.75,
-        "maxHold": 12
+        "sizeLong": 0.25,
+        "sizeShort": 0.75,
+        "maxHold": 12,
+        "longRequiresSentry": true
       }
     },
-    "Will Bitcoin (BTC) close at $1_ARB_sakura-arb-scanner": {
-      "entryRegime": "VOLATILE",
-      "entryTime": "2026-02-25T09:04:08.629Z",
-      "entryPrice": 0.3497158854954914,
+    "undefined_SHORT_prophet-lead-lag": {
+      "entryRegime": "TRENDING_DOWN",
+      "entryTime": "2026-02-28T09:07:05.153Z",
+      "entryPrice": 0,
       "entryFundingAPR": 0,
+      "entryParams": {
+        "stop": 0.03,
+        "size": 0.75,
+        "sizeLong": 0.25,
+        "sizeShort": 0.75,
+        "maxHold": 12,
+        "longRequiresSentry": true
+      }
+    },
+    "BTC_LONG_sentry-sentiment-scanner": {
+      "entryRegime": "TRENDING_DOWN",
+      "entryTime": "2026-03-01T09:00:45.746Z",
+      "entryPrice": 66673.05676127215,
+      "entryFundingAPR": -1.0532148,
+      "entryParams": {
+        "stop": 0.03,
+        "size": 0.75,
+        "sizeLong": 0.25,
+        "sizeShort": 0.75,
+        "maxHold": 12,
+        "longRequiresSentry": true
+      }
+    },
+    "BTC_LONG_pixel-momentum": {
+      "entryRegime": "TRENDING_LONG",
+      "entryTime": "2026-03-01T09:01:02.608Z",
+      "entryPrice": 66496,
+      "entryFundingAPR": -1.0532148,
       "entryParams": {
         "stop": 0.03,
         "size": 0.5,
         "maxHold": 8
+      }
+    },
+    "BTC_FLAT_sentry-sentiment-scanner": {
+      "entryRegime": "TRENDING_DOWN",
+      "entryTime": "2026-03-01T09:02:16.060Z",
+      "entryPrice": 66673.05676127215,
+      "entryFundingAPR": -1.0532148,
+      "entryParams": {
+        "stop": 0.03,
+        "size": 0.75,
+        "sizeLong": 0.25,
+        "sizeShort": 0.75,
+        "maxHold": 12,
+        "longRequiresSentry": true
+      }
+    },
+    "NEAR_LONG_sentry-sentiment-scanner": {
+      "entryRegime": "TRENDING_DOWN",
+      "entryTime": "2026-03-01T09:02:19.846Z",
+      "entryPrice": 1.1768318908767255,
+      "entryFundingAPR": 10.950000000000001,
+      "entryParams": {
+        "stop": 0.03,
+        "size": 0.75,
+        "sizeLong": 0.25,
+        "sizeShort": 0.75,
+        "maxHold": 12,
+        "longRequiresSentry": true
+      }
+    },
+    "XRP_LONG_sentry-sentiment-scanner": {
+      "entryRegime": "TRENDING_DOWN",
+      "entryTime": "2026-03-01T09:02:27.084Z",
+      "entryPrice": 1.3799799610659444,
+      "entryFundingAPR": 10.950000000000001,
+      "entryParams": {
+        "stop": 0.03,
+        "size": 0.75,
+        "sizeLong": 0.25,
+        "sizeShort": 0.75,
+        "maxHold": 12,
+        "longRequiresSentry": true
+      }
+    },
+    "LINK_FLAT_sentry-sentiment-scanner": {
+      "entryRegime": "TRENDING_DOWN",
+      "entryTime": "2026-03-01T09:02:31.069Z",
+      "entryPrice": 8.9091,
+      "entryFundingAPR": 10.950000000000001,
+      "entryParams": {
+        "stop": 0.03,
+        "size": 0.75,
+        "sizeLong": 0.25,
+        "sizeShort": 0.75,
+        "maxHold": 12,
+        "longRequiresSentry": true
+      }
+    },
+    "DOGE_FLAT_sentry-sentiment-scanner": {
+      "entryRegime": "TRENDING_DOWN",
+      "entryTime": "2026-03-01T09:02:33.742Z",
+      "entryPrice": 0.093895,
+      "entryFundingAPR": 10.950000000000001,
+      "entryParams": {
+        "stop": 0.03,
+        "size": 0.75,
+        "sizeLong": 0.25,
+        "sizeShort": 0.75,
+        "maxHold": 12,
+        "longRequiresSentry": true
+      }
+    },
+    "Will Bitcoin hit $100.000 agai_ARB_sakura-arb-scanner": {
+      "entryRegime": "TRENDING_DOWN",
+      "entryTime": "2026-03-01T09:04:07.084Z",
+      "entryPrice": 0.18846395799666354,
+      "entryFundingAPR": 0,
+      "entryParams": {
+        "stop": 0.03,
+        "size": 0.75,
+        "sizeLong": 0.25,
+        "sizeShort": 0.75,
+        "maxHold": 12,
+        "longRequiresSentry": true
       }
     },
     "Will Bitcoin be higher than $8_ARB_sakura-arb-scanner": {
       "entryRegime": "TRENDING_DOWN",
-      "entryTime": "2026-02-24T13:04:09.289Z",
-      "entryPrice": 0.3359433268007785,
+      "entryTime": "2026-02-28T13:04:07.606Z",
+      "entryPrice": 0.34486557768449133,
       "entryFundingAPR": 0,
       "entryParams": {
         "stop": 0.03,
         "size": 0.75,
-        "maxHold": 12
+        "sizeLong": 0.25,
+        "sizeShort": 0.75,
+        "maxHold": 12,
+        "longRequiresSentry": true
+      }
+    },
+    "PORTFOLIO_FLAT_jinx-correlation-monitor": {
+      "entryRegime": "TRENDING_DOWN",
+      "entryTime": "2026-02-28T13:05:09.029Z",
+      "entryPrice": 0,
+      "entryFundingAPR": 0,
+      "entryParams": {
+        "stop": 0.03,
+        "size": 0.75,
+        "sizeLong": 0.25,
+        "sizeShort": 0.75,
+        "maxHold": 12,
+        "longRequiresSentry": true
       }
     }
   },
   "previousStopBreaches": [],
-  "lastRunAt": "2026-02-27T09:09:04.565Z"
+  "lastRunAt": "2026-03-01T09:09:03.071Z"
 }

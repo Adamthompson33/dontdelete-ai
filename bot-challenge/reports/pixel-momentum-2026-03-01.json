@@ -1,0 +1,29 @@
+{
+  "date": "2026-03-01",
+  "scannedAt": "2026-03-01T09:01:03.277Z",
+  "coinsScanned": 3,
+  "signalCount": 1,
+  "signals": [
+    {
+      "tool": "pixel-momentum",
+      "timestamp": "2026-03-01T09:01:02.608Z",
+      "unixMs": 1772355662609,
+      "coin": "BTC",
+      "direction": "LONG",
+      "confidence": "medium",
+      "confidenceScore": 58,
+      "entryPrice": 66496,
+      "regime": "TRENDING_LONG",
+      "reasoning": "BTC in TRENDING_LONG regime (ADX: 35.1, MA diff: 1.96%). SMA13 above SMA33. RSI: 57.1, BB position: 50%. Vol ratio: 0.59 (normal).",
+      "invalidation": "SMA13 crosses below SMA33 or RSI > 70",
+      "indicators": {
+        "smaFast": 67035.23076923077,
+        "smaSlow": 65746.33333333333,
+        "rsi": 57.08159829892797,
+        "adx": 35.06520015590342,
+        "volRatio": 0.5943255765019505,
+        "bbPosition": 0.4954144064640593
+      }
+    }
+  ]
+}

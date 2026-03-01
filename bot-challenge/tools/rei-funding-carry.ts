@@ -18,6 +18,7 @@ import * as path from 'path';
 import { FundingScanner, FundingOpportunity } from '../../academy/src/services/funding-scanner';
 import { REGIME_PARAMS, DEFAULT_REGIME_PARAMS, RegimeParams } from '../../academy/src/services/temporal-edge';
 import { isClosedPosition } from './lib/closed-position-gate';
+import { isBlocked, PERMANENT_BLOCK } from './lib/blocklist';
 import { checkHLStale } from './lib/hl-stale-check';
 
 // ═══ Bot Challenge Signal Format ═══
@@ -65,7 +66,8 @@ const MOMENTUM_SIZE_MULTIPLIER = 0.25; // cautious rollout
 // ═══ Blacklist — tokens to auto-exclude regardless of funding/basis ═══
 // OM (MANTRA): 90%+ crash, likely rug pull.
 // AZTEC, AXS: concentration risk — dominated backtest results, excluding improves sharpe
-const BLACKLISTED_COINS = new Set(['OM', 'AZTEC', 'AXS']);
+// Local blacklist merged with shared blocklist
+const BLACKLISTED_COINS = new Set(['AXS', ...PERMANENT_BLOCK]);
 
 // Tier thresholds — raised to match backtest-validated 100bps signal
 // 100 Loris bps = hourly rate 0.01 = annualized 87.6 (8760%)

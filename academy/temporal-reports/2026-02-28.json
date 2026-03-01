@@ -1,13 +1,13 @@
 {
-  "scannedAt": "2026-02-27T13:04:25.309Z",
+  "scannedAt": "2026-02-28T13:04:23.816Z",
   "signals": [],
   "regimes": {
     "BTC": {
       "regime": "TRENDING_DOWN",
-      "adx": 28.326718593092675,
-      "volatilityRatio": 1.4065048817207302,
-      "priceChange1h": 0.32017723555029515,
-      "priceChange24h": -2.5916812777180236
+      "adx": 30.471602000596743,
+      "volatilityRatio": 0.4516732430355156,
+      "priceChange1h": -0.17195291616513733,
+      "priceChange24h": -3.60021737161489
     }
   },
   "regimeParams": {

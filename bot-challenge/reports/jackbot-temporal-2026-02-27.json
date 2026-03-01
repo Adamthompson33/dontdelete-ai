@@ -1,14 +1,14 @@
 {
   "date": "2026-02-27",
-  "scannedAt": "2026-02-27T09:04:26.139Z",
+  "scannedAt": "2026-02-27T13:04:25.789Z",
   "session": "european",
   "nextResetMinutes": 56,
   "btcRegime": {
-    "regime": "CHOPPY",
-    "adx": 14.407136304787615,
-    "volatilityRatio": 0.49261431280580453,
-    "priceChange1h": -0.11780297452510675,
-    "priceChange24h": -1.0647607934655776
+    "regime": "TRENDING_DOWN",
+    "adx": 28.326718593092675,
+    "volatilityRatio": 1.4065048817207302,
+    "priceChange1h": 0.32017723555029515,
+    "priceChange24h": -2.5916812777180236
   },
   "signalCount": 0,
   "signals": [],

@@ -1,25 +1,25 @@
 {
-  "date": "2026-02-27",
-  "scannedAt": "2026-02-27T13:04:09.383Z",
-  "marketsScanned": 42,
-  "opportunitiesFound": 14,
+  "date": "2026-03-01",
+  "scannedAt": "2026-03-01T09:04:07.288Z",
+  "marketsScanned": 41,
+  "opportunitiesFound": 15,
   "signals": [
     {
       "tool": "sakura-arb-scanner",
-      "timestamp": "2026-02-27T13:04:09.173Z",
-      "unixMs": 1772197449173,
-      "coin": "Will Bitcoin be higher than $8",
+      "timestamp": "2026-03-01T09:04:07.084Z",
+      "unixMs": 1772355847084,
+      "coin": "Will Bitcoin hit $100.000 agai",
       "direction": "ARB",
       "confidence": "medium",
-      "entryPrice": 0.368072341396328,
-      "expectedEdge": 92.50112501125011,
-      "reasoning": "463% price increase but only -17.9pp probability drop. Curve should be steeper. One market is mispriced.",
+      "entryPrice": 0.18846395799666354,
+      "expectedEdge": 80,
+      "reasoning": "400% price increase but only -35.9pp probability drop. Curve should be steeper. One market is mispriced.",
       "invalidation": "Edge drops below 3pp or markets resolve.",
       "markets": [
         {
-          "question": "Will Bitcoin be higher than $88,888 at the end of 2026?",
-          "prob": 0.368072341396328,
-          "url": "https://manifold.markets/Shrill/will-bitcoin-be-higher-than-88888-a-QuIt5ELnLR"
+          "question": "Will Bitcoin hit $100.000 again before July 1, 2026?",
+          "prob": 0.18846395799666354,
+          "url": "https://manifold.markets/BasicCat/will-bitcoin-hit-100000-again-befor"
         },
         {
           "question": "[@mattyb’s 500th market spectacular] Will Bitcoin reach $500k before this market reaches 5k traders?",
@@ -30,19 +30,43 @@
     },
     {
       "tool": "sakura-arb-scanner",
-      "timestamp": "2026-02-27T13:04:09.173Z",
-      "unixMs": 1772197449173,
+      "timestamp": "2026-03-01T09:04:07.084Z",
+      "unixMs": 1772355847084,
+      "coin": "Will Bitcoin hit $100.000 agai",
+      "direction": "ARB",
+      "confidence": "high",
+      "entryPrice": 0.18846395799666354,
+      "expectedEdge": 35.89259417233837,
+      "reasoning": "P(above $500,000) = 54.7% but P(above $100,000) = 18.8%. Higher target can't have higher probability. Trade: YES on lower, NO on higher.",
+      "invalidation": "Edge drops below 3pp or markets resolve.",
+      "markets": [
+        {
+          "question": "Will Bitcoin hit $100.000 again before July 1, 2026?",
+          "prob": 0.18846395799666354,
+          "url": "https://manifold.markets/BasicCat/will-bitcoin-hit-100000-again-befor"
+        },
+        {
+          "question": "[@mattyb’s 500th market spectacular] Will Bitcoin reach $500k before this market reaches 5k traders?",
+          "prob": 0.5473898997200473,
+          "url": "https://manifold.markets/mattyb/mattybs-500th-market-spectacular-wi"
+        }
+      ]
+    },
+    {
+      "tool": "sakura-arb-scanner",
+      "timestamp": "2026-03-01T09:04:07.084Z",
+      "unixMs": 1772355847084,
       "coin": "Will Bitcoin be higher than $8",
       "direction": "ARB",
       "confidence": "high",
-      "entryPrice": 0.368072341396328,
-      "expectedEdge": 17.931755832371927,
-      "reasoning": "P(above $500,000) = 54.7% should be ≤ P(above $88,888) = 36.8%. Spread: 17.9pp.",
+      "entryPrice": 0.3668054106579803,
+      "expectedEdge": 18.0584489062067,
+      "reasoning": "P(above $500,000) = 54.7% should be ≤ P(above $88,888) = 36.7%. Spread: 18.1pp.",
       "invalidation": "Edge drops below 3pp or markets resolve.",
       "markets": [
         {
           "question": "Will Bitcoin be higher than $88,888 at the end of 2026?",
-          "prob": 0.368072341396328,
+          "prob": 0.3668054106579803,
           "url": "https://manifold.markets/Shrill/will-bitcoin-be-higher-than-88888-a-QuIt5ELnLR"
         },
         {
@@ -54,38 +78,14 @@
     },
     {
       "tool": "sakura-arb-scanner",
-      "timestamp": "2026-02-27T13:04:09.173Z",
-      "unixMs": 1772197449173,
-      "coin": "Will Bitcoin be higher than $8",
-      "direction": "ARB",
-      "confidence": "high",
-      "entryPrice": 0.368072341396328,
-      "expectedEdge": 17.931755832371927,
-      "reasoning": "P(above $500,000) = 54.7% but P(above $88,888) = 36.8%. Higher target can't have higher probability. Trade: YES on lower, NO on higher.",
-      "invalidation": "Edge drops below 3pp or markets resolve.",
-      "markets": [
-        {
-          "question": "Will Bitcoin be higher than $88,888 at the end of 2026?",
-          "prob": 0.368072341396328,
-          "url": "https://manifold.markets/Shrill/will-bitcoin-be-higher-than-88888-a-QuIt5ELnLR"
-        },
-        {
-          "question": "[@mattyb’s 500th market spectacular] Will Bitcoin reach $500k before this market reaches 5k traders?",
-          "prob": 0.5473898997200473,
-          "url": "https://manifold.markets/mattyb/mattybs-500th-market-spectacular-wi"
-        }
-      ]
-    },
-    {
-      "tool": "sakura-arb-scanner",
-      "timestamp": "2026-02-27T13:04:09.173Z",
-      "unixMs": 1772197449173,
+      "timestamp": "2026-03-01T09:04:07.084Z",
+      "unixMs": 1772355847084,
       "coin": "[@mattyb’s 500th market specta",
       "direction": "ARB",
       "confidence": "low",
       "entryPrice": 0.5473898997200473,
       "expectedEdge": 10,
-      "reasoning": "No bets in 114 days despite $1000 liquidity and $733 volume. Price at 55% may not reflect current information. Research needed.",
+      "reasoning": "No bets in 116 days despite $1000 liquidity and $733 volume. Price at 55% may not reflect current information. Research needed.",
       "invalidation": "Edge drops below 3pp or markets resolve.",
       "markets": [
         {
@@ -97,14 +97,14 @@
     },
     {
       "tool": "sakura-arb-scanner",
-      "timestamp": "2026-02-27T13:04:09.173Z",
-      "unixMs": 1772197449173,
+      "timestamp": "2026-03-01T09:04:07.084Z",
+      "unixMs": 1772355847084,
       "coin": "Will Bitcoin (BTC) be below CH",
       "direction": "ARB",
       "confidence": "low",
       "entryPrice": 0.1767572328922678,
       "expectedEdge": 10,
-      "reasoning": "No bets in 327 days despite $1000 liquidity and $738 volume. Price at 18% may not reflect current information. Research needed.",
+      "reasoning": "No bets in 329 days despite $1000 liquidity and $738 volume. Price at 18% may not reflect current information. Research needed.",
       "invalidation": "Edge drops below 3pp or markets resolve.",
       "markets": [
         {
@@ -116,14 +116,14 @@
     },
     {
       "tool": "sakura-arb-scanner",
-      "timestamp": "2026-02-27T13:04:09.173Z",
-      "unixMs": 1772197449173,
+      "timestamp": "2026-03-01T09:04:07.084Z",
+      "unixMs": 1772355847084,
       "coin": "Will Bitcoin (BTC) price first",
       "direction": "ARB",
       "confidence": "low",
       "entryPrice": 0.15660108896446878,
       "expectedEdge": 10,
-      "reasoning": "No bets in 178 days despite $1000 liquidity and $7989 volume. Price at 16% may not reflect current information. Research needed.",
+      "reasoning": "No bets in 179 days despite $1000 liquidity and $7989 volume. Price at 16% may not reflect current information. Research needed.",
       "invalidation": "Edge drops below 3pp or markets resolve.",
       "markets": [
         {
@@ -135,14 +135,14 @@
     },
     {
       "tool": "sakura-arb-scanner",
-      "timestamp": "2026-02-27T13:04:09.173Z",
-      "unixMs": 1772197449173,
+      "timestamp": "2026-03-01T09:04:07.084Z",
+      "unixMs": 1772355847084,
       "coin": "Will a Republican President ch",
       "direction": "ARB",
       "confidence": "low",
       "entryPrice": 0.5664964857599937,
       "expectedEdge": 10,
-      "reasoning": "No bets in 42 days despite $10000 liquidity and $40216 volume. Price at 57% may not reflect current information. Research needed.",
+      "reasoning": "No bets in 43 days despite $10000 liquidity and $40216 volume. Price at 57% may not reflect current information. Research needed.",
       "invalidation": "Edge drops below 3pp or markets resolve.",
       "markets": [
         {
@@ -154,14 +154,14 @@
     },
     {
       "tool": "sakura-arb-scanner",
-      "timestamp": "2026-02-27T13:04:09.173Z",
-      "unixMs": 1772197449173,
+      "timestamp": "2026-03-01T09:04:07.084Z",
+      "unixMs": 1772355847084,
       "coin": "Will a former US president acc",
       "direction": "ARB",
       "confidence": "low",
       "entryPrice": 0.2991313832845691,
       "expectedEdge": 10,
-      "reasoning": "No bets in 192 days despite $2000 liquidity and $1470 volume. Price at 30% may not reflect current information. Research needed.",
+      "reasoning": "No bets in 194 days despite $2000 liquidity and $1470 volume. Price at 30% may not reflect current information. Research needed.",
       "invalidation": "Edge drops below 3pp or markets resolve.",
       "markets": [
         {
@@ -173,14 +173,14 @@
     },
     {
       "tool": "sakura-arb-scanner",
-      "timestamp": "2026-02-27T13:04:09.173Z",
-      "unixMs": 1772197449173,
+      "timestamp": "2026-03-01T09:04:07.084Z",
+      "unixMs": 1772355847084,
       "coin": "Will Quinn Ewers defeat Arch M",
       "direction": "ARB",
       "confidence": "low",
       "entryPrice": 0.2461538446031391,
       "expectedEdge": 10,
-      "reasoning": "No bets in 75 days despite $1000 liquidity and $770 volume. Price at 25% may not reflect current information. Research needed.",
+      "reasoning": "No bets in 77 days despite $1000 liquidity and $770 volume. Price at 25% may not reflect current information. Research needed.",
       "invalidation": "Edge drops below 3pp or markets resolve.",
       "markets": [
         {
@@ -192,14 +192,14 @@
     },
     {
       "tool": "sakura-arb-scanner",
-      "timestamp": "2026-02-27T13:04:09.173Z",
-      "unixMs": 1772197449173,
+      "timestamp": "2026-03-01T09:04:07.084Z",
+      "unixMs": 1772355847084,
       "coin": "(1k subsidy) Will Connor McGre",
       "direction": "ARB",
       "confidence": "low",
       "entryPrice": 0.3772719468964154,
       "expectedEdge": 10,
-      "reasoning": "No bets in 31 days despite $1000 liquidity and $940 volume. Price at 38% may not reflect current information. Research needed.",
+      "reasoning": "No bets in 33 days despite $1000 liquidity and $940 volume. Price at 38% may not reflect current information. Research needed.",
       "invalidation": "Edge drops below 3pp or markets resolve.",
       "markets": [
         {
@@ -211,14 +211,14 @@
     },
     {
       "tool": "sakura-arb-scanner",
-      "timestamp": "2026-02-27T13:04:09.173Z",
-      "unixMs": 1772197449173,
+      "timestamp": "2026-03-01T09:04:07.084Z",
+      "unixMs": 1772355847084,
       "coin": "Will Roger Goodell be replaced",
       "direction": "ARB",
       "confidence": "low",
       "entryPrice": 0.554555818774804,
-      "expectedEdge": 8,
-      "reasoning": "No bets in 16 days despite $1000 liquidity and $2830 volume. Price at 55% may not reflect current information. Research needed.",
+      "expectedEdge": 9,
+      "reasoning": "No bets in 18 days despite $1000 liquidity and $2830 volume. Price at 55% may not reflect current information. Research needed.",
       "invalidation": "Edge drops below 3pp or markets resolve.",
       "markets": [
         {
@@ -230,14 +230,14 @@
     },
     {
       "tool": "sakura-arb-scanner",
-      "timestamp": "2026-02-27T13:04:09.173Z",
-      "unixMs": 1772197449173,
+      "timestamp": "2026-03-01T09:04:07.084Z",
+      "unixMs": 1772355847084,
       "coin": "Will Bitcoin Outperform Altcoi",
       "direction": "ARB",
       "confidence": "low",
       "entryPrice": 0.6126680811948579,
-      "expectedEdge": 6.5,
-      "reasoning": "No bets in 13 days despite $10000 liquidity and $7757 volume. Price at 61% may not reflect current information. Research needed.",
+      "expectedEdge": 7.5,
+      "reasoning": "No bets in 15 days despite $10000 liquidity and $7757 volume. Price at 61% may not reflect current information. Research needed.",
       "invalidation": "Edge drops below 3pp or markets resolve.",
       "markets": [
         {
@@ -249,14 +249,14 @@
     },
     {
       "tool": "sakura-arb-scanner",
-      "timestamp": "2026-02-27T13:04:09.173Z",
-      "unixMs": 1772197449173,
+      "timestamp": "2026-03-01T09:04:07.084Z",
+      "unixMs": 1772355847084,
       "coin": "More than 70% of U.S. populati",
       "direction": "ARB",
       "confidence": "low",
       "entryPrice": 0.3805523712130128,
-      "expectedEdge": 6.5,
-      "reasoning": "No bets in 13 days despite $1000 liquidity and $1922 volume. Price at 38% may not reflect current information. Research needed.",
+      "expectedEdge": 7,
+      "reasoning": "No bets in 14 days despite $1000 liquidity and $1922 volume. Price at 38% may not reflect current information. Research needed.",
       "invalidation": "Edge drops below 3pp or markets resolve.",
       "markets": [
         {
@@ -268,14 +268,14 @@
     },
     {
       "tool": "sakura-arb-scanner",
-      "timestamp": "2026-02-27T13:04:09.173Z",
-      "unixMs": 1772197449173,
+      "timestamp": "2026-03-01T09:04:07.084Z",
+      "unixMs": 1772355847084,
       "coin": "Carried Interest Repeal by End",
       "direction": "ARB",
       "confidence": "low",
       "entryPrice": 0.12644364775382597,
-      "expectedEdge": 5,
-      "reasoning": "No bets in 10 days despite $10000 liquidity and $16278 volume. Price at 13% may not reflect current information. Research needed.",
+      "expectedEdge": 6,
+      "reasoning": "No bets in 12 days despite $10000 liquidity and $16278 volume. Price at 13% may not reflect current information. Research needed.",
       "invalidation": "Edge drops below 3pp or markets resolve.",
       "markets": [
         {
@@ -284,20 +284,39 @@
           "url": "https://manifold.markets/CarsonGale/carried-interest-repeal-by-end-of-2"
         }
       ]
+    },
+    {
+      "tool": "sakura-arb-scanner",
+      "timestamp": "2026-03-01T09:04:07.084Z",
+      "unixMs": 1772355847084,
+      "coin": "Same city wins 2+ major sports",
+      "direction": "ARB",
+      "confidence": "low",
+      "entryPrice": 0.13430453984158872,
+      "expectedEdge": 3.5,
+      "reasoning": "No bets in 7 days despite $1000 liquidity and $2958 volume. Price at 13% may not reflect current information. Research needed.",
+      "invalidation": "Edge drops below 3pp or markets resolve.",
+      "markets": [
+        {
+          "question": "Same city wins 2+ major sports championships (2025-2026)?",
+          "prob": 0.13430453984158872,
+          "url": "https://manifold.markets/LBeesley/same-city-wins-2-major-sports-champ"
+        }
+      ]
     }
   ],
   "allOpportunities": [
     {
       "type": "spread",
-      "description": "BTC flat curve: $88,888 → $500,000 with almost no probability drop",
+      "description": "BTC flat curve: $100,000 → $500,000 with almost no probability drop",
       "markets": [
         {
-          "id": "2q2qZNLRlE",
-          "question": "Will Bitcoin be higher than $88,888 at the end of 2026?",
-          "prob": 0.368072341396328,
-          "volume": 2229.1411610473338,
-          "liquidity": 1000,
-          "url": "https://manifold.markets/Shrill/will-bitcoin-be-higher-than-88888-a-QuIt5ELnLR"
+          "id": "IpAQLZIqqO",
+          "question": "Will Bitcoin hit $100.000 again before July 1, 2026?",
+          "prob": 0.18846395799666354,
+          "volume": 637.4376723531161,
+          "liquidity": 100,
+          "url": "https://manifold.markets/BasicCat/will-bitcoin-hit-100000-again-befor"
         },
         {
           "id": "IfK6UgTwkDL0ARDYUYcv",
@@ -308,9 +327,34 @@
           "url": "https://manifold.markets/mattyb/mattybs-500th-market-spectacular-wi"
         }
       ],
-      "expectedEdge": 92.50112501125011,
+      "expectedEdge": 80,
       "confidence": "medium",
-      "reasoning": "463% price increase but only -17.9pp probability drop. Curve should be steeper. One market is mispriced."
+      "reasoning": "400% price increase but only -35.9pp probability drop. Curve should be steeper. One market is mispriced."
+    },
+    {
+      "type": "bounded",
+      "description": "BTC curve violation: P(above $500,000) > P(above $100,000)",
+      "markets": [
+        {
+          "id": "IpAQLZIqqO",
+          "question": "Will Bitcoin hit $100.000 again before July 1, 2026?",
+          "prob": 0.18846395799666354,
+          "volume": 637.4376723531161,
+          "liquidity": 100,
+          "url": "https://manifold.markets/BasicCat/will-bitcoin-hit-100000-again-befor"
+        },
+        {
+          "id": "IfK6UgTwkDL0ARDYUYcv",
+          "question": "[@mattyb’s 500th market spectacular] Will Bitcoin reach $500k before this market reaches 5k traders?",
+          "prob": 0.5473898997200473,
+          "volume": 732.8393053255282,
+          "liquidity": 1000,
+          "url": "https://manifold.markets/mattyb/mattybs-500th-market-spectacular-wi"
+        }
+      ],
+      "expectedEdge": 35.89259417233837,
+      "confidence": "high",
+      "reasoning": "P(above $500,000) = 54.7% but P(above $100,000) = 18.8%. Higher target can't have higher probability. Trade: YES on lower, NO on higher."
     },
     {
       "type": "bounded",
@@ -319,8 +363,8 @@
         {
           "id": "2q2qZNLRlE",
           "question": "Will Bitcoin be higher than $88,888 at the end of 2026?",
-          "prob": 0.368072341396328,
-          "volume": 2229.1411610473338,
+          "prob": 0.3668054106579803,
+          "volume": 2361.5651846256424,
           "liquidity": 1000,
           "url": "https://manifold.markets/Shrill/will-bitcoin-be-higher-than-88888-a-QuIt5ELnLR"
         },
@@ -333,38 +377,13 @@
           "url": "https://manifold.markets/mattyb/mattybs-500th-market-spectacular-wi"
         }
       ],
-      "expectedEdge": 17.931755832371927,
+      "expectedEdge": 18.0584489062067,
       "confidence": "high",
-      "reasoning": "P(above $500,000) = 54.7% should be ≤ P(above $88,888) = 36.8%. Spread: 17.9pp."
-    },
-    {
-      "type": "bounded",
-      "description": "BTC curve violation: P(above $500,000) > P(above $88,888)",
-      "markets": [
-        {
-          "id": "2q2qZNLRlE",
-          "question": "Will Bitcoin be higher than $88,888 at the end of 2026?",
-          "prob": 0.368072341396328,
-          "volume": 2229.1411610473338,
-          "liquidity": 1000,
-          "url": "https://manifold.markets/Shrill/will-bitcoin-be-higher-than-88888-a-QuIt5ELnLR"
-        },
-        {
-          "id": "IfK6UgTwkDL0ARDYUYcv",
-          "question": "[@mattyb’s 500th market spectacular] Will Bitcoin reach $500k before this market reaches 5k traders?",
-          "prob": 0.5473898997200473,
-          "volume": 732.8393053255282,
-          "liquidity": 1000,
-          "url": "https://manifold.markets/mattyb/mattybs-500th-market-spectacular-wi"
-        }
-      ],
-      "expectedEdge": 17.931755832371927,
-      "confidence": "high",
-      "reasoning": "P(above $500,000) = 54.7% but P(above $88,888) = 36.8%. Higher target can't have higher probability. Trade: YES on lower, NO on higher."
+      "reasoning": "P(above $500,000) = 54.7% should be ≤ P(above $88,888) = 36.7%. Spread: 18.1pp."
     },
     {
       "type": "stale",
-      "description": "Stale price: \"[@mattyb’s 500th market spectacular] Will Bitcoin reach $500...\" (114 days, $1000 liq)",
+      "description": "Stale price: \"[@mattyb’s 500th market spectacular] Will Bitcoin reach $500...\" (116 days, $1000 liq)",
       "markets": [
         {
           "id": "IfK6UgTwkDL0ARDYUYcv",
@@ -377,11 +396,11 @@
       ],
       "expectedEdge": 10,
       "confidence": "low",
-      "reasoning": "No bets in 114 days despite $1000 liquidity and $733 volume. Price at 55% may not reflect current information. Research needed."
+      "reasoning": "No bets in 116 days despite $1000 liquidity and $733 volume. Price at 55% may not reflect current information. Research needed."
     },
     {
       "type": "stale",
-      "description": "Stale price: \"Will Bitcoin (BTC) be below CHF1000 or gone Jan 14th 2033 ?...\" (327 days, $1000 liq)",
+      "description": "Stale price: \"Will Bitcoin (BTC) be below CHF1000 or gone Jan 14th 2033 ?...\" (329 days, $1000 liq)",
       "markets": [
         {
           "id": "SYnEFmv2RlabwFQcZTKG",
@@ -394,11 +413,11 @@
       ],
       "expectedEdge": 10,
       "confidence": "low",
-      "reasoning": "No bets in 327 days despite $1000 liquidity and $738 volume. Price at 18% may not reflect current information. Research needed."
+      "reasoning": "No bets in 329 days despite $1000 liquidity and $738 volume. Price at 18% may not reflect current information. Research needed."
     },
     {
       "type": "stale",
-      "description": "Stale price: \"Will Bitcoin (BTC) price first go below $30,000 and then abo...\" (178 days, $1000 liq)",
+      "description": "Stale price: \"Will Bitcoin (BTC) price first go below $30,000 and then abo...\" (179 days, $1000 liq)",
       "markets": [
         {
           "id": "mBzJrGRHbW0LCIORXneM",
@@ -411,11 +430,11 @@
       ],
       "expectedEdge": 10,
       "confidence": "low",
-      "reasoning": "No bets in 178 days despite $1000 liquidity and $7989 volume. Price at 16% may not reflect current information. Research needed."
+      "reasoning": "No bets in 179 days despite $1000 liquidity and $7989 volume. Price at 16% may not reflect current information. Research needed."
     },
     {
       "type": "stale",
-      "description": "Stale price: \"Will a Republican President choose Sonia Sotomayor's replace...\" (42 days, $10000 liq)",
+      "description": "Stale price: \"Will a Republican President choose Sonia Sotomayor's replace...\" (43 days, $10000 liq)",
       "markets": [
         {
           "id": "ez07523nwa",
@@ -428,11 +447,11 @@
       ],
       "expectedEdge": 10,
       "confidence": "low",
-      "reasoning": "No bets in 42 days despite $10000 liquidity and $40216 volume. Price at 57% may not reflect current information. Research needed."
+      "reasoning": "No bets in 43 days despite $10000 liquidity and $40216 volume. Price at 57% may not reflect current information. Research needed."
     },
     {
       "type": "stale",
-      "description": "Stale price: \"Will a former US president accuse Trump of interfering with ...\" (192 days, $2000 liq)",
+      "description": "Stale price: \"Will a former US president accuse Trump of interfering with ...\" (194 days, $2000 liq)",
       "markets": [
         {
           "id": "2LtyUUZdPq",
@@ -445,11 +464,11 @@
       ],
       "expectedEdge": 10,
       "confidence": "low",
-      "reasoning": "No bets in 192 days despite $2000 liquidity and $1470 volume. Price at 30% may not reflect current information. Research needed."
+      "reasoning": "No bets in 194 days despite $2000 liquidity and $1470 volume. Price at 30% may not reflect current information. Research needed."
     },
     {
       "type": "stale",
-      "description": "Stale price: \"Will Quinn Ewers defeat Arch Manning's NFL team in a confere...\" (75 days, $1000 liq)",
+      "description": "Stale price: \"Will Quinn Ewers defeat Arch Manning's NFL team in a confere...\" (77 days, $1000 liq)",
       "markets": [
         {
           "id": "qy1brrofmc",
@@ -462,11 +481,11 @@
       ],
       "expectedEdge": 10,
       "confidence": "low",
-      "reasoning": "No bets in 75 days despite $1000 liquidity and $770 volume. Price at 25% may not reflect current information. Research needed."
+      "reasoning": "No bets in 77 days despite $1000 liquidity and $770 volume. Price at 25% may not reflect current information. Research needed."
     },
     {
       "type": "stale",
-      "description": "Stale price: \"(1k subsidy) Will Connor McGregor fight at UFC White House?...\" (31 days, $1000 liq)",
+      "description": "Stale price: \"(1k subsidy) Will Connor McGregor fight at UFC White House?...\" (33 days, $1000 liq)",
       "markets": [
         {
           "id": "C0zIqc8tdN",
@@ -479,11 +498,11 @@
       ],
       "expectedEdge": 10,
       "confidence": "low",
-      "reasoning": "No bets in 31 days despite $1000 liquidity and $940 volume. Price at 38% may not reflect current information. Research needed."
+      "reasoning": "No bets in 33 days despite $1000 liquidity and $940 volume. Price at 38% may not reflect current information. Research needed."
     },
     {
       "type": "stale",
-      "description": "Stale price: \"Will Roger Goodell be replaced as commissioner of the NFL be...\" (16 days, $1000 liq)",
+      "description": "Stale price: \"Will Roger Goodell be replaced as commissioner of the NFL be...\" (18 days, $1000 liq)",
       "markets": [
         {
           "id": "oyapnVL3kBXZdKi1mesu",
@@ -494,13 +513,13 @@
           "url": "https://manifold.markets/10thOfficial/will-roger-goodell-be-replaced-as-c"
         }
       ],
-      "expectedEdge": 8,
+      "expectedEdge": 9,
       "confidence": "low",
-      "reasoning": "No bets in 16 days despite $1000 liquidity and $2830 volume. Price at 55% may not reflect current information. Research needed."
+      "reasoning": "No bets in 18 days despite $1000 liquidity and $2830 volume. Price at 55% may not reflect current information. Research needed."
     },
     {
       "type": "stale",
-      "description": "Stale price: \"Will Bitcoin Outperform Altcoins in 2026?...\" (13 days, $10000 liq)",
+      "description": "Stale price: \"Will Bitcoin Outperform Altcoins in 2026?...\" (15 days, $10000 liq)",
       "markets": [
         {
           "id": "268sIPs8ZA",
@@ -511,13 +530,13 @@
           "url": "https://manifold.markets/Putcallparity/will-bitcoin-outperform-altcoins-in-quUc0gps9I"
         }
       ],
-      "expectedEdge": 6.5,
+      "expectedEdge": 7.5,
       "confidence": "low",
-      "reasoning": "No bets in 13 days despite $10000 liquidity and $7757 volume. Price at 61% may not reflect current information. Research needed."
+      "reasoning": "No bets in 15 days despite $10000 liquidity and $7757 volume. Price at 61% may not reflect current information. Research needed."
     },
     {
       "type": "stale",
-      "description": "Stale price: \"More than 70% of U.S. population believe Trump is too old to...\" (13 days, $1000 liq)",
+      "description": "Stale price: \"More than 70% of U.S. population believe Trump is too old to...\" (14 days, $1000 liq)",
       "markets": [
         {
           "id": "20RSRtSsPS",
@@ -528,13 +547,13 @@
           "url": "https://manifold.markets/TheWabiSabi/more-than-70-of-us-population-belie"
         }
       ],
-      "expectedEdge": 6.5,
+      "expectedEdge": 7,
       "confidence": "low",
-      "reasoning": "No bets in 13 days despite $1000 liquidity and $1922 volume. Price at 38% may not reflect current information. Research needed."
+      "reasoning": "No bets in 14 days despite $1000 liquidity and $1922 volume. Price at 38% may not reflect current information. Research needed."
     },
     {
       "type": "stale",
-      "description": "Stale price: \"Carried Interest Repeal by End of 2026...\" (10 days, $10000 liq)",
+      "description": "Stale price: \"Carried Interest Repeal by End of 2026...\" (12 days, $10000 liq)",
       "markets": [
         {
           "id": "l59l9SI5zt",
@@ -545,13 +564,13 @@
           "url": "https://manifold.markets/CarsonGale/carried-interest-repeal-by-end-of-2"
         }
       ],
-      "expectedEdge": 5,
+      "expectedEdge": 6,
       "confidence": "low",
-      "reasoning": "No bets in 10 days despite $10000 liquidity and $16278 volume. Price at 13% may not reflect current information. Research needed."
+      "reasoning": "No bets in 12 days despite $10000 liquidity and $16278 volume. Price at 13% may not reflect current information. Research needed."
     },
     {
       "type": "stale",
-      "description": "Stale price: \"Same city wins 2+ major sports championships (2025-2026)?...\" (5 days, $1000 liq)",
+      "description": "Stale price: \"Same city wins 2+ major sports championships (2025-2026)?...\" (7 days, $1000 liq)",
       "markets": [
         {
           "id": "nuchc9hQPz",
@@ -562,13 +581,13 @@
           "url": "https://manifold.markets/LBeesley/same-city-wins-2-major-sports-champ"
         }
       ],
-      "expectedEdge": 2.5,
+      "expectedEdge": 3.5,
       "confidence": "low",
-      "reasoning": "No bets in 5 days despite $1000 liquidity and $2958 volume. Price at 13% may not reflect current information. Research needed."
+      "reasoning": "No bets in 7 days despite $1000 liquidity and $2958 volume. Price at 13% may not reflect current information. Research needed."
     },
     {
       "type": "stale",
-      "description": "Stale price: \"Bitcoin $45K before $100K?...\" (3 days, $1000 liq)",
+      "description": "Stale price: \"Bitcoin $45K before $100K?...\" (5 days, $1000 liq)",
       "markets": [
         {
           "id": "l5AQ8y6usC",
@@ -579,26 +598,77 @@
           "url": "https://manifold.markets/predyx_markets/bitcoin-45k-before-100k"
         }
       ],
-      "expectedEdge": 1.5,
+      "expectedEdge": 2.5,
       "confidence": "low",
-      "reasoning": "No bets in 3 days despite $1000 liquidity and $550 volume. Price at 33% may not reflect current information. Research needed."
+      "reasoning": "No bets in 5 days despite $1000 liquidity and $550 volume. Price at 33% may not reflect current information. Research needed."
     },
     {
       "type": "stale",
-      "description": "Stale price: \"Bitcoin $100K in Feburary?...\" (3 days, $1000 liq)",
+      "description": "Stale price: \"Bitcoin $55K before $85K?...\" (4 days, $1000 liq)",
       "markets": [
         {
-          "id": "ICsqI52gsA",
-          "question": "Bitcoin $100K in Feburary?",
-          "prob": 0.010000000000000007,
-          "volume": 61664.906314803644,
+          "id": "Ou0NcNpcEP",
+          "question": "Bitcoin $55K before $85K?",
+          "prob": 0.4768319519468617,
+          "volume": 678.4223068546901,
           "liquidity": 1000,
-          "url": "https://manifold.markets/predyx_markets/bitcoin-100k-in-feburary"
+          "url": "https://manifold.markets/predyx_markets/bitcoin-55k-before-85k"
+        }
+      ],
+      "expectedEdge": 2,
+      "confidence": "low",
+      "reasoning": "No bets in 4 days despite $1000 liquidity and $678 volume. Price at 48% may not reflect current information. Research needed."
+    },
+    {
+      "type": "stale",
+      "description": "Stale price: \"Bitcoin $170K by mid 2026?...\" (3 days, $1000 liq)",
+      "markets": [
+        {
+          "id": "dyZ9cLhCpg",
+          "question": "Bitcoin $170K by mid 2026?",
+          "prob": 0.03000000000000003,
+          "volume": 10090.258472005564,
+          "liquidity": 1000,
+          "url": "https://manifold.markets/Ernie/bitcoin-170k-by-mid-2026"
         }
       ],
       "expectedEdge": 1.5,
       "confidence": "low",
-      "reasoning": "No bets in 3 days despite $1000 liquidity and $61665 volume. Price at 1% may not reflect current information. Research needed."
+      "reasoning": "No bets in 3 days despite $1000 liquidity and $10090 volume. Price at 3% may not reflect current information. Research needed."
+    },
+    {
+      "type": "stale",
+      "description": "Stale price: \"Bitcoin $55K before $75K?...\" (3 days, $1000 liq)",
+      "markets": [
+        {
+          "id": "5UPL6PuAgI",
+          "question": "Bitcoin $55K before $75K?",
+          "prob": 0.3700000000000001,
+          "volume": 992.5673933853363,
+          "liquidity": 1000,
+          "url": "https://manifold.markets/predyx_markets/bitcoin-55k-before-75k"
+        }
+      ],
+      "expectedEdge": 1.5,
+      "confidence": "low",
+      "reasoning": "No bets in 3 days despite $1000 liquidity and $993 volume. Price at 37% may not reflect current information. Research needed."
+    },
+    {
+      "type": "stale",
+      "description": "Stale price: \"Will the US attack Cuba before China attacks Taiwan?...\" (3 days, $10000 liq)",
+      "markets": [
+        {
+          "id": "l0Pl20OS5C",
+          "question": "Will the US attack Cuba before China attacks Taiwan?",
+          "prob": 0.6075396079674575,
+          "volume": 9091.251315958358,
+          "liquidity": 10000,
+          "url": "https://manifold.markets/PGdCIN9/will-cuba-be-attacked-before-taiwan"
+        }
+      ],
+      "expectedEdge": 1.5,
+      "confidence": "low",
+      "reasoning": "No bets in 3 days despite $10000 liquidity and $9091 volume. Price at 61% may not reflect current information. Research needed."
     }
   ]
 }

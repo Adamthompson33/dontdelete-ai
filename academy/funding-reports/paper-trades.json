@@ -231,10 +231,12 @@
       "entryTime": 1771893012549,
       "entryRate": -0.0001416465,
       "notionalSize": 1000,
-      "cumulativeFunding": 99.7507171,
-      "lastCollectedAt": 1772152211393,
-      "isOpen": true,
-      "fees": 0.25
+      "cumulativeFunding": 117.0246211,
+      "lastCollectedAt": 1772325692809,
+      "isOpen": false,
+      "fees": 0.5,
+      "exitTime": 1772325692809,
+      "exitReason": "max_duration_72h"
     },
     {
       "id": "STABLE-1771893013240",
@@ -243,10 +245,12 @@
       "entryTime": 1771893013240,
       "entryRate": -0.0001407917,
       "notionalSize": 1000,
-      "cumulativeFunding": 9.369585,
-      "lastCollectedAt": 1772152211393,
-      "isOpen": true,
-      "fees": 0.25
+      "cumulativeFunding": 12.193857000000001,
+      "lastCollectedAt": 1772325692809,
+      "isOpen": false,
+      "fees": 0.5,
+      "exitTime": 1772325692809,
+      "exitReason": "max_duration_72h"
     },
     {
       "id": "FOGO-1771979411113",
@@ -271,8 +275,10 @@
       "notionalSize": 1000,
       "cumulativeFunding": 1.1784303,
       "lastCollectedAt": 1772152211393,
-      "isOpen": true,
-      "fees": 0.25
+      "isOpen": false,
+      "fees": 0.5,
+      "exitTime": 1772325692809,
+      "exitReason": "coin_dropped_from_scan"
     },
     {
       "id": "ATOM-1772065816051",
@@ -281,10 +287,12 @@
       "entryTime": 1772065816051,
       "entryRate": -0.0002745473,
       "notionalSize": 1000,
-      "cumulativeFunding": 1.2619778,
-      "lastCollectedAt": 1772152211393,
-      "isOpen": true,
-      "fees": 0.25
+      "cumulativeFunding": 2.3599874,
+      "lastCollectedAt": 1772325692809,
+      "isOpen": false,
+      "fees": 0.5,
+      "exitTime": 1772325692809,
+      "exitReason": "max_duration_72h"
     },
     {
       "id": "AXS-1772152213714",
@@ -293,12 +301,60 @@
       "entryTime": 1772152213714,
       "entryRate": -0.0001444114,
       "notionalSize": 1000,
+      "cumulativeFunding": 4.7043024,
+      "lastCollectedAt": 1772325692809,
+      "isOpen": true,
+      "fees": 0.25
+    },
+    {
+      "id": "SOPH-1772325693477",
+      "coin": "SOPH",
+      "direction": "SHORT_BASIS",
+      "entryTime": 1772325693477,
+      "entryRate": -0.0003783351,
+      "notionalSize": 1000,
       "cumulativeFunding": 0,
-      "lastCollectedAt": 1772152213714,
+      "lastCollectedAt": 1772325693477,
+      "isOpen": true,
+      "fees": 0.25
+    },
+    {
+      "id": "INIT-1772325695568",
+      "coin": "INIT",
+      "direction": "SHORT_BASIS",
+      "entryTime": 1772325695568,
+      "entryRate": -0.0000679647,
+      "notionalSize": 1000,
+      "cumulativeFunding": 0,
+      "lastCollectedAt": 1772325695568,
+      "isOpen": true,
+      "fees": 0.25
+    },
+    {
+      "id": "ICP-1772325696294",
+      "coin": "ICP",
+      "direction": "SHORT_BASIS",
+      "entryTime": 1772325696294,
+      "entryRate": -0.0000632542,
+      "notionalSize": 1000,
+      "cumulativeFunding": 0,
+      "lastCollectedAt": 1772325696294,
+      "isOpen": true,
+      "fees": 0.25
+    },
+    {
+      "id": "ACE-1772325697174",
+      "coin": "ACE",
+      "direction": "SHORT_BASIS",
+      "entryTime": 1772325697174,
+      "entryRate": -0.0000632176,
+      "notionalSize": 1000,
+      "cumulativeFunding": 0,
+      "lastCollectedAt": 1772325697174,
       "isOpen": true,
       "fees": 0.25
     }
   ],
-  "cumulativePnl": 260.35985630000005,
+  "cumulativePnl": 285.01034430000004,
   "lastScanAt": 0
 }

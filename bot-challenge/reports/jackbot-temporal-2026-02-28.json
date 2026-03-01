@@ -1,0 +1,16 @@
+{
+  "date": "2026-02-28",
+  "scannedAt": "2026-02-28T13:04:24.369Z",
+  "session": "european",
+  "nextResetMinutes": 56,
+  "btcRegime": {
+    "regime": "TRENDING_DOWN",
+    "adx": 30.471602000596743,
+    "volatilityRatio": 0.4516732430355156,
+    "priceChange1h": -0.17195291616513733,
+    "priceChange24h": -3.60021737161489
+  },
+  "signalCount": 0,
+  "signals": [],
+  "allRawSignals": []
+}

@@ -21,6 +21,7 @@
 import * as fs from 'fs';
 import * as path from 'path';
 import { REGIME_PARAMS, DEFAULT_REGIME_PARAMS } from '../../academy/src/services/temporal-edge';
+import { plattScale, calibrateConfidence } from '../../academy/src/utils/platt-scaling';
 
 // ═══ Config ═══
 
@@ -28,14 +29,14 @@ const LEDGER_FILE = path.join(__dirname, '..', 'results', 'paper-ledger.json');
 const REPORT_DIR = path.join(__dirname, '..', 'reports');
 const MAX_KELLY = 0.20; // 20% max position cap
 
-// Confidence → probability mapping
+// Confidence → raw probability mapping (before Platt calibration)
 const CONFIDENCE_MAP: Record<string, number> = {
   high: 0.70,
   medium: 0.55,
   low: 0.35,
 };
 
-// ═══ Kelly Criterion ═══
+// ═══ Kelly Criterion (with Platt-calibrated probabilities) ═══
 
 interface KellyResult {
   rawKelly: number;    // uncapped Kelly fraction
@@ -44,8 +45,18 @@ interface KellyResult {
   reasoning: string;
 }
 
-function computeKelly(confidence: string, expectedEdge?: number): KellyResult {
-  const p = CONFIDENCE_MAP[confidence] ?? 0.35;
+function computeKelly(confidence: string | number, expectedEdge?: number): KellyResult {
+  let rawP: number;
+  
+  if (typeof confidence === 'number') {
+    // Numeric confidence (0-1 from temporal-edge, or 0-100 from pixel-momentum)
+    rawP = confidence > 1 ? confidence / 100 : confidence;
+  } else {
+    rawP = CONFIDENCE_MAP[confidence] ?? 0.35;
+  }
+  
+  // Apply Platt scaling to correct LLM hedging bias (Bridgewater AIA paper)
+  const p = plattScale(rawP);
   
   // Kelly % = (p - (1-p)) / 1 = 2p - 1
   // This is the simplified Kelly for even-money bets
@@ -55,12 +66,15 @@ function computeKelly(confidence: string, expectedEdge?: number): KellyResult {
   const action = rawKelly > 0 ? 'SIZE' : 'SKIP';
 
   let reasoning: string;
+  const rawPStr = typeof confidence === 'number' 
+    ? `raw=${(rawP * 100).toFixed(0)}%` 
+    : `${confidence}=${(rawP * 100).toFixed(0)}%`;
   if (action === 'SKIP') {
-    reasoning = `Kelly = ${(rawKelly * 100).toFixed(1)}% (p=${(p * 100).toFixed(0)}%). Negative edge — no position.`;
+    reasoning = `Kelly = ${(rawKelly * 100).toFixed(1)}% (${rawPStr}→calibrated ${(p * 100).toFixed(0)}%). Negative edge — no position.`;
   } else if (rawKelly > MAX_KELLY) {
-    reasoning = `Kelly = ${(rawKelly * 100).toFixed(1)}% (p=${(p * 100).toFixed(0)}%). Capped at ${(MAX_KELLY * 100).toFixed(0)}% max position.`;
+    reasoning = `Kelly = ${(rawKelly * 100).toFixed(1)}% (${rawPStr}→calibrated ${(p * 100).toFixed(0)}%). Capped at ${(MAX_KELLY * 100).toFixed(0)}% max position.`;
   } else {
-    reasoning = `Kelly = ${(rawKelly * 100).toFixed(1)}% (p=${(p * 100).toFixed(0)}%). Within cap.`;
+    reasoning = `Kelly = ${(rawKelly * 100).toFixed(1)}% (${rawPStr}→calibrated ${(p * 100).toFixed(0)}%). Within cap.`;
   }
 
   return { rawKelly, cappedKelly, action, reasoning };
@@ -274,16 +288,22 @@ async function main() {
     console.log(`🔄 Dedup: ${dedupCount} duplicate signals superseded → ${bestByKey.size} unique positions\n`);
   }
   
+  // ═══ Hard Allocation Cap (Oracle directive 2026-03-01) ═══
+  // Portfolio must never exceed 85% total. This is a hard ceiling regardless of Kelly sizing.
+  // Prevents repeated 200-300% over-allocation events from piling new signals on a full book.
+  const HARD_CAP = 0.85;
+
   // Compute total allocation across ACTIVE (non-superseded) sized signals only
   const allSizedSignals = ledger.signals.filter(s => s.kelly_action === 'SIZE' && s.kelly_status === 'ACTIVE' && s.kelly_size > 0);
   const totalAllocation = allSizedSignals.reduce((sum, s) => sum + (s.kelly_size || 0), 0);
   
   console.log(`Summary: ${sized} sized | ${skipped} skipped | Total allocation: ${(totalAllocation * 100).toFixed(1)}% of bankroll`);
-  
-  if (totalAllocation > 1.0) {
-    const scaleFactor = 1.0 / totalAllocation;
-    console.log(`\n⚠️ Total allocation ${(totalAllocation * 100).toFixed(1)}% exceeds 100%!`);
-    console.log(`📉 Applying proportional reduction: scale factor = ${(scaleFactor * 100).toFixed(2)}%`);
+  console.log(`Hard cap: ${(HARD_CAP * 100).toFixed(0)}% | Headroom: ${Math.max(0, (HARD_CAP - totalAllocation) * 100).toFixed(1)}%`);
+
+  if (totalAllocation > HARD_CAP) {
+    const scaleFactor = HARD_CAP / totalAllocation;
+    console.log(`\n🚨 Hard cap breach: ${(totalAllocation * 100).toFixed(1)}% exceeds ${(HARD_CAP * 100).toFixed(0)}% ceiling!`);
+    console.log(`📉 Scaling all positions to ${(HARD_CAP * 100).toFixed(0)}%: scale factor = ${(scaleFactor * 100).toFixed(2)}%`);
     
     let reducedCount = 0;
     for (const signal of allSizedSignals) {
@@ -296,7 +316,7 @@ async function main() {
     }
     
     const newTotal = allSizedSignals.reduce((sum, s) => sum + (s.kelly_size || 0), 0);
-    console.log(`✅ Reduced ${reducedCount} positions: ${(totalAllocation * 100).toFixed(1)}% → ${(newTotal * 100).toFixed(1)}%`);
+    console.log(`✅ Capped ${reducedCount} positions: ${(totalAllocation * 100).toFixed(1)}% → ${(newTotal * 100).toFixed(1)}% (hard cap ${(HARD_CAP * 100).toFixed(0)}%)`);
     console.log('');
     
     // Print top 10 positions after reduction

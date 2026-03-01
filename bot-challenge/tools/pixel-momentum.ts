@@ -20,6 +20,7 @@
 import * as fs from 'fs';
 import * as path from 'path';
 import { isClosedPosition } from './lib/closed-position-gate';
+import { isBlocked } from './lib/blocklist';
 
 const HL_API = 'https://api.hyperliquid.xyz/info';
 
@@ -537,7 +538,17 @@ async function main() {
     ledger = { signals: [], lastScanAt: '', totalScans: 0 };
   }
 
-  ledger.signals.push(...signals);
+  // Filter out blocked/cooldown coins
+  const filtered = signals.filter(s => {
+    const check = isBlocked(s.coin);
+    if (check.blocked) {
+      console.log(`🚫 ${s.coin} — ${check.reason}`);
+      return false;
+    }
+    return true;
+  });
+
+  ledger.signals.push(...filtered);
   ledger.lastScanAt = new Date().toISOString();
   ledger.totalScans++;
 
@@ -545,7 +556,7 @@ async function main() {
   if (!fs.existsSync(resultsDir)) fs.mkdirSync(resultsDir, { recursive: true });
   fs.writeFileSync(LEDGER_FILE, JSON.stringify(ledger, null, 2), 'utf-8');
 
-  console.log(`✅ Logged ${signals.length} signals to paper-ledger.json (total: ${ledger.signals.length} signals, ${ledger.totalScans} scans)`);
+  console.log(`✅ Logged ${filtered.length} signals to paper-ledger.json (${signals.length - filtered.length} blocked) (total: ${ledger.signals.length} signals, ${ledger.totalScans} scans)`);
 
   // Save daily report
   if (!fs.existsSync(REPORT_DIR)) fs.mkdirSync(REPORT_DIR, { recursive: true });

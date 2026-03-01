@@ -1,0 +1,1097 @@
+{
+  "tool": "jinx-correlation-monitor",
+  "timestamp": "2026-02-28T21:05:07.747Z",
+  "unixMs": 1772312707748,
+  "signalsAnalyzed": 30,
+  "uniqueCoins": 29,
+  "uniqueTools": 6,
+  "directionalBalance": {
+    "longs": 6,
+    "shorts": 11,
+    "flat": 0,
+    "ratio": 0.6470588235294118
+  },
+  "correlationPairs": [
+    {
+      "coinA": "LINK",
+      "coinB": "ETH",
+      "correlation": 0.9604,
+      "sameDirection": true,
+      "risk": "HIGH"
+    },
+    {
+      "coinA": "BTC",
+      "coinB": "ETH",
+      "correlation": 0.9453,
+      "sameDirection": true,
+      "risk": "HIGH"
+    },
+    {
+      "coinA": "SOL",
+      "coinB": "ETH",
+      "correlation": 0.9339,
+      "sameDirection": false,
+      "risk": "MEDIUM"
+    },
+    {
+      "coinA": "LINK",
+      "coinB": "BTC",
+      "correlation": 0.9264,
+      "sameDirection": true,
+      "risk": "HIGH"
+    },
+    {
+      "coinA": "SOL",
+      "coinB": "LINK",
+      "correlation": 0.9206,
+      "sameDirection": false,
+      "risk": "MEDIUM"
+    },
+    {
+      "coinA": "SOL",
+      "coinB": "BTC",
+      "correlation": 0.9196,
+      "sameDirection": false,
+      "risk": "MEDIUM"
+    },
+    {
+      "coinA": "PENGU",
+      "coinB": "DOGE",
+      "correlation": 0.9167,
+      "sameDirection": false,
+      "risk": "MEDIUM"
+    },
+    {
+      "coinA": "PENGU",
+      "coinB": "LINK",
+      "correlation": 0.9051,
+      "sameDirection": false,
+      "risk": "MEDIUM"
+    },
+    {
+      "coinA": "DOGE",
+      "coinB": "LINK",
+      "correlation": 0.8976,
+      "sameDirection": true,
+      "risk": "HIGH"
+    },
+    {
+      "coinA": "OP",
+      "coinB": "PENGU",
+      "correlation": 0.8885,
+      "sameDirection": true,
+      "risk": "HIGH"
+    },
+    {
+      "coinA": "PENGU",
+      "coinB": "SOL",
+      "correlation": 0.8884,
+      "sameDirection": true,
+      "risk": "HIGH"
+    },
+    {
+      "coinA": "PENGU",
+      "coinB": "ETH",
+      "correlation": 0.8859,
+      "sameDirection": false,
+      "risk": "MEDIUM"
+    },
+    {
+      "coinA": "DOGE",
+      "coinB": "ETH",
+      "correlation": 0.8825,
+      "sameDirection": true,
+      "risk": "HIGH"
+    },
+    {
+      "coinA": "PENGU",
+      "coinB": "TAO",
+      "correlation": 0.88,
+      "sameDirection": true,
+      "risk": "HIGH"
+    },
+    {
+      "coinA": "PENGU",
+      "coinB": "BTC",
+      "correlation": 0.8774,
+      "sameDirection": false,
+      "risk": "MEDIUM"
+    },
+    {
+      "coinA": "TAO",
+      "coinB": "DOGE",
+      "correlation": 0.8729,
+      "sameDirection": false,
+      "risk": "MEDIUM"
+    },
+    {
+      "coinA": "TAO",
+      "coinB": "LINK",
+      "correlation": 0.8717,
+      "sameDirection": false,
+      "risk": "MEDIUM"
+    },
+    {
+      "coinA": "OP",
+      "coinB": "DOGE",
+      "correlation": 0.8662,
+      "sameDirection": false,
+      "risk": "MEDIUM"
+    },
+    {
+      "coinA": "SOL",
+      "coinB": "DOGE",
+      "correlation": 0.8581,
+      "sameDirection": false,
+      "risk": "MEDIUM"
+    },
+    {
+      "coinA": "TAO",
+      "coinB": "ETH",
+      "correlation": 0.8537,
+      "sameDirection": false,
+      "risk": "MEDIUM"
+    },
+    {
+      "coinA": "OP",
+      "coinB": "ARB",
+      "correlation": 0.8505,
+      "sameDirection": false,
+      "risk": "MEDIUM"
+    },
+    {
+      "coinA": "DOGE",
+      "coinB": "BTC",
+      "correlation": 0.8495,
+      "sameDirection": true,
+      "risk": "HIGH"
+    },
+    {
+      "coinA": "TAO",
+      "coinB": "SOL",
+      "correlation": 0.8436,
+      "sameDirection": true,
+      "risk": "HIGH"
+    },
+    {
+      "coinA": "TAO",
+      "coinB": "BTC",
+      "correlation": 0.8388,
+      "sameDirection": false,
+      "risk": "MEDIUM"
+    },
+    {
+      "coinA": "OP",
+      "coinB": "LINK",
+      "correlation": 0.8213,
+      "sameDirection": false,
+      "risk": "MEDIUM"
+    },
+    {
+      "coinA": "LINK",
+      "coinB": "NEAR",
+      "correlation": 0.8152,
+      "sameDirection": false,
+      "risk": "MEDIUM"
+    },
+    {
+      "coinA": "OP",
+      "coinB": "TAO",
+      "correlation": 0.812,
+      "sameDirection": true,
+      "risk": "HIGH"
+    },
+    {
+      "coinA": "PENGU",
+      "coinB": "ARB",
+      "correlation": 0.8098,
+      "sameDirection": false,
+      "risk": "MEDIUM"
+    },
+    {
+      "coinA": "OP",
+      "coinB": "ETH",
+      "correlation": 0.8023,
+      "sameDirection": false,
+      "risk": "MEDIUM"
+    },
+    {
+      "coinA": "OP",
+      "coinB": "BTC",
+      "correlation": 0.7989,
+      "sameDirection": false,
+      "risk": "MEDIUM"
+    },
+    {
+      "coinA": "OP",
+      "coinB": "SOL",
+      "correlation": 0.794,
+      "sameDirection": true,
+      "risk": "HIGH"
+    },
+    {
+      "coinA": "OP",
+      "coinB": "NEAR",
+      "correlation": 0.7897,
+      "sameDirection": true,
+      "risk": "HIGH"
+    },
+    {
+      "coinA": "PENGU",
+      "coinB": "NEAR",
+      "correlation": 0.7888,
+      "sameDirection": true,
+      "risk": "HIGH"
+    },
+    {
+      "coinA": "ETH",
+      "coinB": "NEAR",
+      "correlation": 0.787,
+      "sameDirection": false,
+      "risk": "MEDIUM"
+    },
+    {
+      "coinA": "LINK",
+      "coinB": "ARB",
+      "correlation": 0.7835,
+      "sameDirection": true,
+      "risk": "HIGH"
+    },
+    {
+      "coinA": "DOGE",
+      "coinB": "NEAR",
+      "correlation": 0.7736,
+      "sameDirection": false,
+      "risk": "MEDIUM"
+    },
+    {
+      "coinA": "DOGE",
+      "coinB": "ARB",
+      "correlation": 0.7727,
+      "sameDirection": true,
+      "risk": "HIGH"
+    },
+    {
+      "coinA": "SOL",
+      "coinB": "NEAR",
+      "correlation": 0.7596,
+      "sameDirection": true,
+      "risk": "HIGH"
+    },
+    {
+      "coinA": "TAO",
+      "coinB": "NEAR",
+      "correlation": 0.7574,
+      "sameDirection": true,
+      "risk": "HIGH"
+    },
+    {
+      "coinA": "BTC",
+      "coinB": "NEAR",
+      "correlation": 0.7546,
+      "sameDirection": false,
+      "risk": "MEDIUM"
+    },
+    {
+      "coinA": "ETH",
+      "coinB": "ARB",
+      "correlation": 0.7473,
+      "sameDirection": true,
+      "risk": "HIGH"
+    },
+    {
+      "coinA": "SOL",
+      "coinB": "ARB",
+      "correlation": 0.7408,
+      "sameDirection": false,
+      "risk": "MEDIUM"
+    },
+    {
+      "coinA": "BTC",
+      "coinB": "ARB",
+      "correlation": 0.7314,
+      "sameDirection": true,
+      "risk": "HIGH"
+    },
+    {
+      "coinA": "ETH",
+      "coinB": "ATOM",
+      "correlation": 0.7198,
+      "sameDirection": true,
+      "risk": "HIGH"
+    },
+    {
+      "coinA": "TAO",
+      "coinB": "ARB",
+      "correlation": 0.7085,
+      "sameDirection": false,
+      "risk": "MEDIUM"
+    },
+    {
+      "coinA": "ANIME",
+      "coinB": "PENGU",
+      "correlation": 0.7049,
+      "sameDirection": false,
+      "risk": "MEDIUM"
+    },
+    {
+      "coinA": "ATOM",
+      "coinB": "ARB",
+      "correlation": 0.6974,
+      "sameDirection": true,
+      "risk": "HIGH"
+    },
+    {
+      "coinA": "SOL",
+      "coinB": "ATOM",
+      "correlation": 0.6965,
+      "sameDirection": false,
+      "risk": "MEDIUM"
+    },
+    {
+      "coinA": "LINK",
+      "coinB": "ATOM",
+      "correlation": 0.6908,
+      "sameDirection": true,
+      "risk": "HIGH"
+    },
+    {
+      "coinA": "ANIME",
+      "coinB": "TAO",
+      "correlation": 0.6826,
+      "sameDirection": false,
+      "risk": "MEDIUM"
+    },
+    {
+      "coinA": "NEAR",
+      "coinB": "ARB",
+      "correlation": 0.6814,
+      "sameDirection": false,
+      "risk": "MEDIUM"
+    },
+    {
+      "coinA": "BTC",
+      "coinB": "ATOM",
+      "correlation": 0.6782,
+      "sameDirection": true,
+      "risk": "HIGH"
+    },
+    {
+      "coinA": "DOGE",
+      "coinB": "ATOM",
+      "correlation": 0.673,
+      "sameDirection": true,
+      "risk": "HIGH"
+    },
+    {
+      "coinA": "PENGU",
+      "coinB": "ATOM",
+      "correlation": 0.6698,
+      "sameDirection": false,
+      "risk": "MEDIUM"
+    },
+    {
+      "coinA": "OP",
+      "coinB": "ATOM",
+      "correlation": 0.6662,
+      "sameDirection": false,
+      "risk": "MEDIUM"
+    },
+    {
+      "coinA": "ANIME",
+      "coinB": "LINK",
+      "correlation": 0.6615,
+      "sameDirection": true,
+      "risk": "HIGH"
+    },
+    {
+      "coinA": "NEAR",
+      "coinB": "ATOM",
+      "correlation": 0.6585,
+      "sameDirection": false,
+      "risk": "MEDIUM"
+    },
+    {
+      "coinA": "TAO",
+      "coinB": "ATOM",
+      "correlation": 0.6509,
+      "sameDirection": false,
+      "risk": "MEDIUM"
+    },
+    {
+      "coinA": "ANIME",
+      "coinB": "DOGE",
+      "correlation": 0.6452,
+      "sameDirection": true,
+      "risk": "HIGH"
+    },
+    {
+      "coinA": "ANIME",
+      "coinB": "BTC",
+      "correlation": 0.6414,
+      "sameDirection": true,
+      "risk": "HIGH"
+    },
+    {
+      "coinA": "ANIME",
+      "coinB": "ETH",
+      "correlation": 0.6388,
+      "sameDirection": true,
+      "risk": "HIGH"
+    },
+    {
+      "coinA": "ANIME",
+      "coinB": "SOL",
+      "correlation": 0.6172,
+      "sameDirection": false,
+      "risk": "MEDIUM"
+    },
+    {
+      "coinA": "ANIME",
+      "coinB": "NEAR",
+      "correlation": 0.6121,
+      "sameDirection": false,
+      "risk": "MEDIUM"
+    },
+    {
+      "coinA": "OP",
+      "coinB": "ANIME",
+      "correlation": 0.6104,
+      "sameDirection": false,
+      "risk": "MEDIUM"
+    },
+    {
+      "coinA": "SOPH",
+      "coinB": "ANIME",
+      "correlation": 0.6037,
+      "sameDirection": true,
+      "risk": "HIGH"
+    },
+    {
+      "coinA": "ANIME",
+      "coinB": "ARB",
+      "correlation": 0.5434,
+      "sameDirection": true,
+      "risk": "MEDIUM"
+    },
+    {
+      "coinA": "SOPH",
+      "coinB": "ETH",
+      "correlation": 0.5286,
+      "sameDirection": true,
+      "risk": "MEDIUM"
+    },
+    {
+      "coinA": "SOPH",
+      "coinB": "PENGU",
+      "correlation": 0.5259,
+      "sameDirection": false,
+      "risk": "LOW"
+    },
+    {
+      "coinA": "SOPH",
+      "coinB": "BTC",
+      "correlation": 0.5259,
+      "sameDirection": true,
+      "risk": "MEDIUM"
+    },
+    {
+      "coinA": "SOPH",
+      "coinB": "SOL",
+      "correlation": 0.5069,
+      "sameDirection": false,
+      "risk": "LOW"
+    },
+    {
+      "coinA": "SOPH",
+      "coinB": "OP",
+      "correlation": 0.4971,
+      "sameDirection": false,
+      "risk": "LOW"
+    },
+    {
+      "coinA": "SOPH",
+      "coinB": "NEAR",
+      "correlation": 0.4964,
+      "sameDirection": false,
+      "risk": "LOW"
+    },
+    {
+      "coinA": "SOPH",
+      "coinB": "LINK",
+      "correlation": 0.4885,
+      "sameDirection": true,
+      "risk": "MEDIUM"
+    },
+    {
+      "coinA": "SOPH",
+      "coinB": "ARB",
+      "correlation": 0.4703,
+      "sameDirection": true,
+      "risk": "MEDIUM"
+    },
+    {
+      "coinA": "SOPH",
+      "coinB": "TAO",
+      "correlation": 0.4516,
+      "sameDirection": false,
+      "risk": "LOW"
+    },
+    {
+      "coinA": "ANIME",
+      "coinB": "ATOM",
+      "correlation": 0.45,
+      "sameDirection": true,
+      "risk": "MEDIUM"
+    },
+    {
+      "coinA": "SOPH",
+      "coinB": "DOGE",
+      "correlation": 0.4441,
+      "sameDirection": true,
+      "risk": "MEDIUM"
+    },
+    {
+      "coinA": "SOPH",
+      "coinB": "ATOM",
+      "correlation": 0.4211,
+      "sameDirection": true,
+      "risk": "MEDIUM"
+    },
+    {
+      "coinA": "TAO",
+      "coinB": "LAYER",
+      "correlation": 0.3137,
+      "sameDirection": false,
+      "risk": "LOW"
+    },
+    {
+      "coinA": "DOGE",
+      "coinB": "LAYER",
+      "correlation": 0.3044,
+      "sameDirection": true,
+      "risk": "LOW"
+    },
+    {
+      "coinA": "OP",
+      "coinB": "LAYER",
+      "correlation": 0.2932,
+      "sameDirection": false,
+      "risk": "LOW"
+    },
+    {
+      "coinA": "LAYER",
+      "coinB": "NEAR",
+      "correlation": 0.2802,
+      "sameDirection": false,
+      "risk": "LOW"
+    },
+    {
+      "coinA": "PENGU",
+      "coinB": "LAYER",
+      "correlation": 0.2783,
+      "sameDirection": false,
+      "risk": "LOW"
+    },
+    {
+      "coinA": "ETH",
+      "coinB": "LAYER",
+      "correlation": 0.2764,
+      "sameDirection": true,
+      "risk": "LOW"
+    },
+    {
+      "coinA": "SOL",
+      "coinB": "LAYER",
+      "correlation": 0.2646,
+      "sameDirection": false,
+      "risk": "LOW"
+    },
+    {
+      "coinA": "LAYER",
+      "coinB": "ARB",
+      "correlation": 0.2582,
+      "sameDirection": true,
+      "risk": "LOW"
+    },
+    {
+      "coinA": "BTC",
+      "coinB": "LAYER",
+      "correlation": 0.2572,
+      "sameDirection": true,
+      "risk": "LOW"
+    },
+    {
+      "coinA": "ANIME",
+      "coinB": "LAYER",
+      "correlation": 0.2514,
+      "sameDirection": true,
+      "risk": "LOW"
+    },
+    {
+      "coinA": "LINK",
+      "coinB": "LAYER",
+      "correlation": 0.2461,
+      "sameDirection": true,
+      "risk": "LOW"
+    },
+    {
+      "coinA": "LAYER",
+      "coinB": "ATOM",
+      "correlation": 0.2233,
+      "sameDirection": true,
+      "risk": "LOW"
+    },
+    {
+      "coinA": "SOPH",
+      "coinB": "LAYER",
+      "correlation": 0.2059,
+      "sameDirection": true,
+      "risk": "LOW"
+    }
+  ],
+  "alerts": [
+    {
+      "type": "correlation",
+      "severity": "HIGH",
+      "message": "LINK/ETH correlation 96% — same direction (SHORT). Effective exposure doubled.",
+      "coins": [
+        "LINK",
+        "ETH"
+      ]
+    },
+    {
+      "type": "correlation",
+      "severity": "HIGH",
+      "message": "BTC/ETH correlation 95% — same direction (SHORT). Effective exposure doubled.",
+      "coins": [
+        "BTC",
+        "ETH"
+      ]
+    },
+    {
+      "type": "correlation",
+      "severity": "HIGH",
+      "message": "LINK/BTC correlation 93% — same direction (SHORT). Effective exposure doubled.",
+      "coins": [
+        "LINK",
+        "BTC"
+      ]
+    },
+    {
+      "type": "correlation",
+      "severity": "HIGH",
+      "message": "DOGE/LINK correlation 90% — same direction (SHORT). Effective exposure doubled.",
+      "coins": [
+        "DOGE",
+        "LINK"
+      ]
+    },
+    {
+      "type": "correlation",
+      "severity": "HIGH",
+      "message": "OP/PENGU correlation 89% — same direction (LONG). Effective exposure doubled.",
+      "coins": [
+        "OP",
+        "PENGU"
+      ]
+    },
+    {
+      "type": "correlation",
+      "severity": "HIGH",
+      "message": "PENGU/SOL correlation 89% — same direction (LONG). Effective exposure doubled.",
+      "coins": [
+        "PENGU",
+        "SOL"
+      ]
+    },
+    {
+      "type": "correlation",
+      "severity": "HIGH",
+      "message": "DOGE/ETH correlation 88% — same direction (SHORT). Effective exposure doubled.",
+      "coins": [
+        "DOGE",
+        "ETH"
+      ]
+    },
+    {
+      "type": "correlation",
+      "severity": "HIGH",
+      "message": "PENGU/TAO correlation 88% — same direction (LONG). Effective exposure doubled.",
+      "coins": [
+        "PENGU",
+        "TAO"
+      ]
+    },
+    {
+      "type": "correlation",
+      "severity": "HIGH",
+      "message": "DOGE/BTC correlation 85% — same direction (SHORT). Effective exposure doubled.",
+      "coins": [
+        "DOGE",
+        "BTC"
+      ]
+    },
+    {
+      "type": "correlation",
+      "severity": "HIGH",
+      "message": "TAO/SOL correlation 84% — same direction (LONG). Effective exposure doubled.",
+      "coins": [
+        "TAO",
+        "SOL"
+      ]
+    },
+    {
+      "type": "correlation",
+      "severity": "HIGH",
+      "message": "OP/TAO correlation 81% — same direction (LONG). Effective exposure doubled.",
+      "coins": [
+        "OP",
+        "TAO"
+      ]
+    },
+    {
+      "type": "correlation",
+      "severity": "HIGH",
+      "message": "OP/SOL correlation 79% — same direction (LONG). Effective exposure doubled.",
+      "coins": [
+        "OP",
+        "SOL"
+      ]
+    },
+    {
+      "type": "correlation",
+      "severity": "HIGH",
+      "message": "OP/NEAR correlation 79% — same direction (LONG). Effective exposure doubled.",
+      "coins": [
+        "OP",
+        "NEAR"
+      ]
+    },
+    {
+      "type": "correlation",
+      "severity": "HIGH",
+      "message": "PENGU/NEAR correlation 79% — same direction (LONG). Effective exposure doubled.",
+      "coins": [
+        "PENGU",
+        "NEAR"
+      ]
+    },
+    {
+      "type": "correlation",
+      "severity": "HIGH",
+      "message": "LINK/ARB correlation 78% — same direction (SHORT). Effective exposure doubled.",
+      "coins": [
+        "LINK",
+        "ARB"
+      ]
+    },
+    {
+      "type": "correlation",
+      "severity": "HIGH",
+      "message": "DOGE/ARB correlation 77% — same direction (SHORT). Effective exposure doubled.",
+      "coins": [
+        "DOGE",
+        "ARB"
+      ]
+    },
+    {
+      "type": "correlation",
+      "severity": "HIGH",
+      "message": "SOL/NEAR correlation 76% — same direction (LONG). Effective exposure doubled.",
+      "coins": [
+        "SOL",
+        "NEAR"
+      ]
+    },
+    {
+      "type": "correlation",
+      "severity": "HIGH",
+      "message": "TAO/NEAR correlation 76% — same direction (LONG). Effective exposure doubled.",
+      "coins": [
+        "TAO",
+        "NEAR"
+      ]
+    },
+    {
+      "type": "correlation",
+      "severity": "HIGH",
+      "message": "ETH/ARB correlation 75% — same direction (SHORT). Effective exposure doubled.",
+      "coins": [
+        "ETH",
+        "ARB"
+      ]
+    },
+    {
+      "type": "correlation",
+      "severity": "HIGH",
+      "message": "BTC/ARB correlation 73% — same direction (SHORT). Effective exposure doubled.",
+      "coins": [
+        "BTC",
+        "ARB"
+      ]
+    },
+    {
+      "type": "correlation",
+      "severity": "HIGH",
+      "message": "ETH/ATOM correlation 72% — same direction (SHORT). Effective exposure doubled.",
+      "coins": [
+        "ETH",
+        "ATOM"
+      ]
+    },
+    {
+      "type": "correlation",
+      "severity": "HIGH",
+      "message": "ATOM/ARB correlation 70% — same direction (SHORT). Effective exposure doubled.",
+      "coins": [
+        "ATOM",
+        "ARB"
+      ]
+    },
+    {
+      "type": "correlation",
+      "severity": "HIGH",
+      "message": "LINK/ATOM correlation 69% — same direction (SHORT). Effective exposure doubled.",
+      "coins": [
+        "LINK",
+        "ATOM"
+      ]
+    },
+    {
+      "type": "correlation",
+      "severity": "HIGH",
+      "message": "BTC/ATOM correlation 68% — same direction (SHORT). Effective exposure doubled.",
+      "coins": [
+        "BTC",
+        "ATOM"
+      ]
+    },
+    {
+      "type": "correlation",
+      "severity": "HIGH",
+      "message": "DOGE/ATOM correlation 67% — same direction (SHORT). Effective exposure doubled.",
+      "coins": [
+        "DOGE",
+        "ATOM"
+      ]
+    },
+    {
+      "type": "correlation",
+      "severity": "HIGH",
+      "message": "ANIME/LINK correlation 66% — same direction (SHORT). Effective exposure doubled.",
+      "coins": [
+        "ANIME",
+        "LINK"
+      ]
+    },
+    {
+      "type": "correlation",
+      "severity": "HIGH",
+      "message": "ANIME/DOGE correlation 65% — same direction (SHORT). Effective exposure doubled.",
+      "coins": [
+        "ANIME",
+        "DOGE"
+      ]
+    },
+    {
+      "type": "correlation",
+      "severity": "HIGH",
+      "message": "ANIME/BTC correlation 64% — same direction (SHORT). Effective exposure doubled.",
+      "coins": [
+        "ANIME",
+        "BTC"
+      ]
+    },
+    {
+      "type": "correlation",
+      "severity": "HIGH",
+      "message": "ANIME/ETH correlation 64% — same direction (SHORT). Effective exposure doubled.",
+      "coins": [
+        "ANIME",
+        "ETH"
+      ]
+    },
+    {
+      "type": "correlation",
+      "severity": "HIGH",
+      "message": "SOPH/ANIME correlation 60% — same direction (SHORT). Effective exposure doubled.",
+      "coins": [
+        "SOPH",
+        "ANIME"
+      ]
+    },
+    {
+      "type": "concentration",
+      "severity": "HIGH",
+      "message": "4 signals in L1 sector: SOL, ETH, SOL, NEAR. Sector risk concentrated.",
+      "coins": [
+        "SOL",
+        "ETH",
+        "SOL",
+        "NEAR"
+      ]
+    },
+    {
+      "type": "stale",
+      "severity": "MEDIUM",
+      "message": "1686 signals older than 24h. Review or close: AZTEC, OM, AXS, BIO, ACE, SKR, JTO, BERA, SNX, INJ, INIT, Will Bitcoin reach $200,000 be, [@mattyb’s 500th market specta, Will Bitcoin (BTC) be below CH, Will Bitcoin (BTC) price first, Will a Republican President ch, Will a former US president acc, Will Quinn Ewers defeat Arch M, (1k subsidy) Will Connor McGre, Same city wins 2+ major sports, Will Roger Goodell be replaced, Will Bitcoin Outperform Altcoi, More than 70% of U.S. populati, YGG, BLAST, ZORA, 0G, ICP, STABLE, ALGO, ATOM, DASH, UMA, BIGTIME, CELO, STRK, PYTH, MON, PNUT, TRUMP, IO, MEME, OP, kNEIRO, SOPH, XMR, WLFI, ZETA, W, MOVE, MOODENG, kLUNC, PENDLE, MORPHO, APE, AVNT, Will Bitcoin be higher than $8, MANTA, FET, MNT, SEI, ANIME, ZK, 2Z, TNSR, POL, AR, FIL, ZEN, kFLOKI, SAND, VVV, IP, S, NXPC, FTT, Bitcoin $120K in 2026?, PENGU, BRETT, SPX, TAO, DOT, SOL, DOGE, XRP, AIXBT, KAITO, BSV, EIGEN, MET, kSHIB, DYDX, LINK, AVAX, JUP, YZY, APT, STX, kBONK, ENA, PROMPT, PURR, RESOLV, GOAT, ALT, MELANIA, MERL, FARTCOIN, POPCAT, Will Bitcoin hit $100.000 agai, BTC, SUI, ETH, ARB, TURBO, NEAR, KAS, Bitcoin $140K in 2026?, Carried Interest Repeal by End, SKY, LIT, Will Bitcoin exceed $100,000 b, VIRTUAL, TRB, GRASS, GMX, GAS, AERO, RUNE, HYPER, XLM, Will Bitcoin (BTC) close at $1, FOGO, ME, DYM, IMX, COMP, , LAYER, HYPE, GRIFFAIN, SCR, AAVE, BLUR, NEO, APEX, HEMI, XAI, UNI, BONK, Will bitcoin's price go below , MAVIA",
+      "coins": [
+        "AZTEC",
+        "OM",
+        "AXS",
+        "BIO",
+        "ACE",
+        "SKR",
+        "JTO",
+        "BERA",
+        "SNX",
+        "INJ",
+        "INIT",
+        "Will Bitcoin reach $200,000 be",
+        "[@mattyb’s 500th market specta",
+        "Will Bitcoin (BTC) be below CH",
+        "Will Bitcoin (BTC) price first",
+        "Will a Republican President ch",
+        "Will a former US president acc",
+        "Will Quinn Ewers defeat Arch M",
+        "(1k subsidy) Will Connor McGre",
+        "Same city wins 2+ major sports",
+        "Will Roger Goodell be replaced",
+        "Will Bitcoin Outperform Altcoi",
+        "More than 70% of U.S. populati",
+        "YGG",
+        "BLAST",
+        "ZORA",
+        "0G",
+        "ICP",
+        "STABLE",
+        "ALGO",
+        "ATOM",
+        "DASH",
+        "UMA",
+        "BIGTIME",
+        "CELO",
+        "STRK",
+        "PYTH",
+        "MON",
+        "PNUT",
+        "TRUMP",
+        "IO",
+        "MEME",
+        "OP",
+        "kNEIRO",
+        "SOPH",
+        "XMR",
+        "WLFI",
+        "ZETA",
+        "W",
+        "MOVE",
+        "MOODENG",
+        "kLUNC",
+        "PENDLE",
+        "MORPHO",
+        "APE",
+        "AVNT",
+        "Will Bitcoin be higher than $8",
+        "MANTA",
+        "FET",
+        "MNT",
+        "SEI",
+        "ANIME",
+        "ZK",
+        "2Z",
+        "TNSR",
+        "POL",
+        "AR",
+        "FIL",
+        "ZEN",
+        "kFLOKI",
+        "SAND",
+        "VVV",
+        "IP",
+        "S",
+        "NXPC",
+        "FTT",
+        "Bitcoin $120K in 2026?",
+        "PENGU",
+        "BRETT",
+        "SPX",
+        "TAO",
+        "DOT",
+        "SOL",
+        "DOGE",
+        "XRP",
+        "AIXBT",
+        "KAITO",
+        "BSV",
+        "EIGEN",
+        "MET",
+        "kSHIB",
+        "DYDX",
+        "LINK",
+        "AVAX",
+        "JUP",
+        "YZY",
+        "APT",
+        "STX",
+        "kBONK",
+        "ENA",
+        "PROMPT",
+        "PURR",
+        "RESOLV",
+        "GOAT",
+        "ALT",
+        "MELANIA",
+        "MERL",
+        "FARTCOIN",
+        "POPCAT",
+        "Will Bitcoin hit $100.000 agai",
+        "BTC",
+        "SUI",
+        "ETH",
+        "ARB",
+        "TURBO",
+        "NEAR",
+        "KAS",
+        "Bitcoin $140K in 2026?",
+        "Carried Interest Repeal by End",
+        "SKY",
+        "LIT",
+        "Will Bitcoin exceed $100,000 b",
+        "VIRTUAL",
+        "TRB",
+        "GRASS",
+        "GMX",
+        "GAS",
+        "AERO",
+        "RUNE",
+        "HYPER",
+        "XLM",
+        "Will Bitcoin (BTC) close at $1",
+        "FOGO",
+        "ME",
+        "DYM",
+        "IMX",
+        "COMP",
+        null,
+        "LAYER",
+        "HYPE",
+        "GRIFFAIN",
+        "SCR",
+        "AAVE",
+        "BLUR",
+        "NEO",
+        "APEX",
+        "HEMI",
+        "XAI",
+        "UNI",
+        "BONK",
+        "Will bitcoin's price go below ",
+        "MAVIA"
+      ]
+    }
+  ],
+  "portfolioRiskScore": 64,
+  "recommendation": "CAUTION: Moderate portfolio risk. Consider reducing position sizes on correlated pairs or adding opposing positions."
+}

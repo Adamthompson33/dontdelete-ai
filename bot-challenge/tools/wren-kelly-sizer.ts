@@ -27,6 +27,8 @@ import { plattScale, calibrateConfidence } from '../../academy/src/utils/platt-s
 
 const LEDGER_FILE = path.join(__dirname, '..', 'results', 'paper-ledger.json');
 const REPORT_DIR = path.join(__dirname, '..', 'reports');
+const PROPHET_OUTPUT_FILE = path.join(__dirname, '..', 'results', 'prophet-benter-output.json');
+const PROPHET_MAX_AGE_MS = 5 * 60 * 60 * 1000; // 5 hours
 const MAX_KELLY = 0.20; // 20% max position cap
 
 // Confidence → raw probability mapping (before Platt calibration)
@@ -80,6 +82,37 @@ function computeKelly(confidence: string | number, expectedEdge?: number): Kelly
   return { rawKelly, cappedKelly, action, reasoning };
 }
 
+// ═══ Prophet Gate Loader ═══
+
+interface ProphetOutputEntry {
+  coin: string;
+  direction: 'LONG' | 'SHORT';
+  edge: number;
+  kellyFraction: number;
+  confidence: 'HIGH' | 'MEDIUM' | 'LOW';
+}
+
+interface ProphetOutput {
+  generatedAt: string;
+  signals: ProphetOutputEntry[];
+}
+
+function loadProphetOutput(now: number): Map<string, ProphetOutputEntry> | null {
+  try {
+    const raw = fs.readFileSync(PROPHET_OUTPUT_FILE, 'utf-8');
+    const data: ProphetOutput = JSON.parse(raw);
+    const age = now - new Date(data.generatedAt).getTime();
+    if (age > PROPHET_MAX_AGE_MS) return null; // stale
+    const map = new Map<string, ProphetOutputEntry>();
+    for (const sig of data.signals) {
+      map.set(sig.coin, sig);
+    }
+    return map;
+  } catch {
+    return null; // file missing or unreadable
+  }
+}
+
 // ═══ Main ═══
 
 interface PaperLedgerEntry {
@@ -114,6 +147,14 @@ async function main() {
   if (currentRegime) {
     const rp = REGIME_PARAMS[currentRegime] || DEFAULT_REGIME_PARAMS;
     console.log(`Regime: ${currentRegime} | sizeLong=${rp.sizeLong ?? rp.size}x, sizeShort=${rp.sizeShort ?? rp.size}x`);
+  }
+
+  // Load Prophet Benter output (ensemble supervisor gate)
+  const prophetOutput = loadProphetOutput(now);
+  if (prophetOutput === null) {
+    console.log('Prophet: stale or missing — neutral (1.0x multiplier)');
+  } else {
+    console.log(`Prophet: loaded ${prophetOutput.size} signal(s) from prophet-benter-output.json`);
   }
 
   // Process all signals that don't already have kelly_size
@@ -165,14 +206,54 @@ async function main() {
         }
       }
     }
-    const regimeAdjustedKelly = result.cappedKelly * regimeMultiplier;
-    
+
+    // ─── Prophet Gate (Benter ensemble supervisor) ───
+    // Applies after regime/sentry gating. If Prophet has a view on this coin, adjust sizing.
+    let prophetMultiplier = 1.0;
+    let prophetNote = 'no signal';
+    const coin = signal.coin;
+    const dir = (signal.direction || '').toUpperCase();
+
+    if (prophetOutput === null) {
+      // Stale or missing output → neutral
+      prophetMultiplier = 1.0;
+      prophetNote = 'stale';
+    } else {
+      const prophetSig = prophetOutput.get(coin);
+      if (!prophetSig) {
+        // No Prophet signal for this coin → reduce (no ensemble data)
+        prophetMultiplier = 0.75;
+        prophetNote = 'no signal';
+      } else if (prophetSig.direction === dir) {
+        // Prophet endorses → boost
+        prophetMultiplier = 1.5;
+        prophetNote = 'endorsed';
+      } else {
+        // Prophet opposes → near-block
+        prophetMultiplier = 0.1;
+        prophetNote = 'blocked';
+      }
+    }
+
+    if (prophetNote !== 'stale' && coin && signal.kelly_action !== 'BLOCKED') {
+      const prophetIcon =
+        prophetNote === 'endorsed' ? '✅' :
+        prophetNote === 'blocked' ? '🔴' :
+        prophetNote === 'no signal' ? '⬜' : '⏳';
+      console.log(`   ${prophetIcon} Prophet [${coin}]: ${prophetNote} (${prophetMultiplier}x)`);
+    }
+
+    const regimeAdjustedKelly = result.cappedKelly * regimeMultiplier * prophetMultiplier;
+
     // Annotate signal
     signal.kelly_size = parseFloat(regimeAdjustedKelly.toFixed(6));
     signal.kelly_size_pre_regime = result.cappedKelly;
     signal.kelly_raw = result.rawKelly;
     signal.kelly_action = result.action;
-    signal.kelly_reasoning = result.reasoning + (regimeMultiplier < 1.0 ? ` Regime-adjusted: ${regimeMultiplier}x.` : '');
+    signal.kelly_reasoning =
+      result.reasoning +
+      (regimeMultiplier < 1.0 ? ` Regime-adjusted: ${regimeMultiplier}x.` : '') +
+      ` Prophet: ${prophetNote} (${prophetMultiplier}x).`;
     signal.kelly_sizedAt = new Date().toISOString();
 
     if (result.action === 'SIZE') {

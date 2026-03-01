@@ -1,0 +1,32 @@
+{
+  "generatedAt": "2026-03-01T16:22:35.041Z",
+  "agentCalibration": {
+    "rei-funding-carry": {
+      "agent": "rei-funding-carry",
+      "brierScore": 0.3,
+      "winRate": null,
+      "n": 9,
+      "weight": 0.3333333333333333,
+      "usingDefault": true
+    },
+    "pixel-momentum": {
+      "agent": "pixel-momentum",
+      "brierScore": 0.3,
+      "winRate": null,
+      "n": 0,
+      "weight": 0.3333333333333333,
+      "usingDefault": true
+    },
+    "sentry-sentiment-scanner": {
+      "agent": "sentry-sentiment-scanner",
+      "brierScore": 0.3,
+      "winRate": null,
+      "n": 0,
+      "weight": 0.3333333333333333,
+      "usingDefault": true
+    }
+  },
+  "signals": [],
+  "suppressed": 2,
+  "evaluated": 2
+}

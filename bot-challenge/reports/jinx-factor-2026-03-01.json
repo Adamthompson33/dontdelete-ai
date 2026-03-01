@@ -1,11 +1,11 @@
 {
-  "timestamp": "2026-03-01T09:08:03.596Z",
+  "timestamp": "2026-03-01T13:08:02.541Z",
   "regime": "TRENDING_DOWN",
   "directional": {
     "longCount": 33,
-    "shortCount": 32,
+    "shortCount": 23,
     "longPct": 21,
-    "longAllocPct": 46,
+    "longAllocPct": 34,
     "crowdingScore": 58,
     "verdict": "MODERATE: Slight short bias (21%). Acceptable for carry strategy."
   },
@@ -13,14 +13,11 @@
     {
       "name": "New / Unclassified",
       "code": "NEW",
-      "count": 137,
-      "allocPct": 78,
+      "count": 128,
+      "allocPct": 72,
       "coins": [
         "BTC",
         "PENGU",
-        "TAO",
-        "SOPH",
-        "LAYER",
         "Will Bitcoin be higher than $8",
         "[@mattyb’s 500th market specta",
         "Will Bitcoin (BTC) be below CH",
@@ -36,6 +33,7 @@
         "Same city wins 2+ major sports",
         "PORTFOLIO",
         null,
+        "TAO",
         "XRP",
         "DOT",
         "ADA",
@@ -45,20 +43,21 @@
     {
       "name": "Layer 1",
       "code": "L1",
-      "count": 18,
-      "allocPct": 16,
+      "count": 23,
+      "allocPct": 22,
       "coins": [
         "ETH",
         "SOL",
         "SUI",
         "NEAR",
-        "APT"
+        "APT",
+        "AVAX"
       ]
     },
     {
       "name": "Infrastructure",
       "code": "INFRA",
-      "count": 2,
+      "count": 3,
       "allocPct": 3,
       "coins": [
         "LINK"
@@ -67,19 +66,10 @@
     {
       "name": "Meme / Narrative",
       "code": "MEME",
-      "count": 1,
+      "count": 2,
       "allocPct": 3,
       "coins": [
         "DOGE"
-      ]
-    },
-    {
-      "name": "Layer 2 / Scaling",
-      "code": "L2",
-      "count": 1,
-      "allocPct": 1,
-      "coins": [
-        "ARB"
       ]
     },
     {
@@ -92,14 +82,12 @@
       ]
     }
   ],
-  "sectorHHI": 6359,
-  "sectorVerdict": "CRITICAL: HHI 6359 — portfolio dominated by New / Unclassified (78%). A sector-wide event would be catastrophic.",
+  "sectorHHI": 5686,
+  "sectorVerdict": "CRITICAL: HHI 5686 — portfolio dominated by New / Unclassified (72%). A sector-wide event would be catastrophic.",
   "btcBeta": {
-    "avgCorrelation": 34.95,
+    "avgCorrelation": 34,
     "highBetaCoins": [],
     "lowBetaCoins": [
-      "SOPH",
-      "LAYER",
       "BTC",
       "PENGU",
       "SOL",
@@ -109,7 +97,8 @@
       "XRP",
       "NEAR",
       "ADA",
-      "APT"
+      "APT",
+      "AVAX"
     ],
     "btcExposurePct": 0,
     "verdict": "LOW: Only 0% high-beta. Portfolio has meaningful independence from BTC moves."
@@ -122,9 +111,10 @@
           "SOL",
           "SUI",
           "NEAR",
-          "APT"
+          "APT",
+          "AVAX"
         ],
-        "totalAlloc": 10
+        "totalAlloc": 16
       },
       {
         "narrative": "Meme Momentum",
@@ -141,37 +131,23 @@
         "totalAlloc": 3
       },
       {
-        "narrative": "L2 Scaling",
-        "coins": [
-          "ARB"
-        ],
-        "totalAlloc": 1
-      },
-      {
         "narrative": "DeFi Revival",
         "coins": [
           "UNI"
         ],
         "totalAlloc": 0
-      },
-      {
-        "narrative": "New Token Hype",
-        "coins": [
-          "SOPH"
-        ],
-        "totalAlloc": 0
       }
     ],
-    "maxClusterPct": 10,
+    "maxClusterPct": 16,
     "verdict": "LOW: No single narrative exceeds 25%. Good narrative diversification."
   },
   "overallRisk": {
-    "score": 46,
+    "score": 45,
     "grade": "MODERATE",
     "factors": [
       "Directional crowding (21% long)",
-      "Sector concentration (HHI 6359)",
-      "Narrative clustering (\"Alt L1 Recovery\" at 10%)"
+      "Sector concentration (HHI 5686)",
+      "Narrative clustering (\"Alt L1 Recovery\" at 16%)"
     ],
     "recommendation": "ACCEPTABLE. Current risk controls (regime params, Sentry gate, Kelly sizing) are adequate. Monitor for crowding increases."
   }

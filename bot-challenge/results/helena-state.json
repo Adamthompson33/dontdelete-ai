@@ -1,7 +1,7 @@
 {
-  "lastRunAt": "2026-03-01T09:20:02.435Z",
+  "lastRunAt": "2026-03-01T13:20:02.690Z",
   "lastJinxScore": 50,
-  "lastSaturation": 0.592826,
+  "lastSaturation": 0.5235320000000001,
   "haltActive": false,
   "activeDirectives": [
     {
@@ -11,14 +11,14 @@
       "agentFlags": [
         "sentry-sentiment-scanner"
       ],
-      "timestamp": "2026-03-01T09:20:02.424Z"
+      "timestamp": "2026-03-01T13:20:02.678Z"
     }
   ],
   "agentWatchlist": {
     "sentry-sentiment-scanner": {
       "wr": 0.13559322033898305,
       "signals": 295,
-      "flaggedAt": "2026-03-01T09:20:02.435Z"
+      "flaggedAt": "2026-03-01T13:20:02.690Z"
     }
   }
 }

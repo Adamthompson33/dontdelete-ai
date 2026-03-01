@@ -1,14 +1,27 @@
 {
-  "timestamp": "2026-03-01T09:09:03.070Z",
+  "timestamp": "2026-03-01T13:09:02.789Z",
   "regime": "TRENDING_DOWN",
   "previousRegime": "TRENDING_DOWN",
   "regimeShifted": false,
-  "alerts": [],
+  "alerts": [
+    {
+      "type": "STOP_APPROACHING",
+      "severity": "WARNING",
+      "coin": "NEAR",
+      "direction": "LONG",
+      "message": "Price at -2.6%, approaching 3% stop (0.4% away).",
+      "action": "MONITOR",
+      "details": {
+        "pnlPct": -2.56,
+        "distanceToStop": 0.44
+      }
+    }
+  ],
   "summary": {
-    "totalPositions": 12,
-    "alertCount": 0,
+    "totalPositions": 19,
+    "alertCount": 1,
     "criticalCount": 0,
-    "warningCount": 0,
+    "warningCount": 1,
     "recommendedExits": [],
     "recommendedExtensions": []
   }

@@ -1,14 +1,14 @@
 {
-  "timestamp": "2026-03-01T09:20:02.435Z",
-  "jinxScore": 46,
+  "timestamp": "2026-03-01T13:20:02.690Z",
+  "jinxScore": 45,
   "jinxCorrelation": 50,
-  "saturation": 0.592826,
+  "saturation": 0.5235320000000001,
   "directionalExposure": {
-    "long": 5,
+    "long": 7,
     "short": 1,
-    "pctShort": 16.666666666666664
+    "pctShort": 12.5
   },
-  "activePositions": 6,
+  "activePositions": 8,
   "directives": [
     {
       "action": "FLAG_AGENT",
@@ -17,7 +17,7 @@
       "agentFlags": [
         "sentry-sentiment-scanner"
       ],
-      "timestamp": "2026-03-01T09:20:02.424Z"
+      "timestamp": "2026-03-01T13:20:02.678Z"
     }
   ],
   "agentPerformance": {

@@ -1,51 +1,19 @@
 {
   "date": "2026-03-01",
-  "sizedAt": "2026-03-01T09:06:02.351Z",
-  "totalSignals": 2097,
-  "newlySized": 46,
-  "alreadySized": 2051,
-  "sized": 30,
-  "skipped": 16,
-  "totalAllocation": 2.9836650000000007,
+  "sizedAt": "2026-03-01T13:06:02.612Z",
+  "totalSignals": 2136,
+  "newlySized": 39,
+  "alreadySized": 2097,
+  "sized": 25,
+  "skipped": 14,
+  "totalAllocation": 3.756207000000001,
   "maxKelly": 0.2,
   "positions": [
     {
       "coin": "UNKNOWN",
       "tool": "prophet-lead-lag",
       "direction": "SHORT",
-      "confidence": 0.6180034517213191,
-      "kelly": 0.2,
-      "action": "SIZE"
-    },
-    {
-      "coin": "UNKNOWN",
-      "tool": "prophet-lead-lag",
-      "direction": "SHORT",
-      "confidence": 0.6180034517213191,
-      "kelly": 0.2,
-      "action": "SIZE"
-    },
-    {
-      "coin": "UNKNOWN",
-      "tool": "prophet-lead-lag",
-      "direction": "LONG",
-      "confidence": 0.5862527716186253,
-      "kelly": 0.2,
-      "action": "SIZE"
-    },
-    {
-      "coin": "UNKNOWN",
-      "tool": "prophet-lead-lag",
-      "direction": "SHORT",
-      "confidence": 0.6180034517213191,
-      "kelly": 0.2,
-      "action": "SIZE"
-    },
-    {
-      "coin": "UNKNOWN",
-      "tool": "prophet-lead-lag",
-      "direction": "SHORT",
-      "confidence": 0.6180034517213191,
+      "confidence": 0.85,
       "kelly": 0.2,
       "action": "SIZE"
     },
@@ -61,7 +29,7 @@
       "coin": "UNKNOWN",
       "tool": "prophet-lead-lag",
       "direction": "SHORT",
-      "confidence": 0.761601377529057,
+      "confidence": 0.85,
       "kelly": 0.2,
       "action": "SIZE"
     },
@@ -69,63 +37,55 @@
       "coin": "UNKNOWN",
       "tool": "prophet-lead-lag",
       "direction": "SHORT",
-      "confidence": 0.6180034517213191,
+      "confidence": 0.85,
       "kelly": 0.2,
       "action": "SIZE"
     },
     {
       "coin": "UNKNOWN",
       "tool": "prophet-lead-lag",
-      "direction": "SHORT",
-      "confidence": 0.6180034517213191,
+      "direction": "LONG",
+      "confidence": 0.6368675475346439,
       "kelly": 0.2,
       "action": "SIZE"
     },
     {
-      "coin": "UNKNOWN",
-      "tool": "prophet-lead-lag",
-      "direction": "SHORT",
-      "confidence": 0.6180034517213191,
-      "kelly": 0.2,
-      "action": "SIZE"
-    },
-    {
-      "coin": "UNKNOWN",
-      "tool": "prophet-lead-lag",
-      "direction": "SHORT",
-      "confidence": 0.738718082334549,
-      "kelly": 0.2,
-      "action": "SIZE"
-    },
-    {
-      "coin": "SOL",
+      "coin": "PENGU",
       "tool": "sentry-sentiment-scanner",
       "direction": "LONG",
-      "confidence": 0.7,
+      "confidence": 0.85,
       "kelly": 0.2,
       "action": "SIZE"
     },
     {
       "coin": "BTC",
       "tool": "sentry-sentiment-scanner",
-      "direction": "LONG",
-      "confidence": 0.75,
+      "direction": "FLAT",
+      "confidence": 0.6,
       "kelly": 0.2,
       "action": "SIZE"
     },
     {
-      "coin": "NEAR",
+      "coin": "SOL",
       "tool": "sentry-sentiment-scanner",
-      "direction": "LONG",
-      "confidence": 0.8,
+      "direction": "FLAT",
+      "confidence": 0.65,
       "kelly": 0.2,
       "action": "SIZE"
     },
     {
       "coin": "ETH",
       "tool": "sentry-sentiment-scanner",
-      "direction": "LONG",
+      "direction": "FLAT",
       "confidence": 0.7,
+      "kelly": 0.2,
+      "action": "SIZE"
+    },
+    {
+      "coin": "NEAR",
+      "tool": "sentry-sentiment-scanner",
+      "direction": "FLAT",
+      "confidence": 0.65,
       "kelly": 0.2,
       "action": "SIZE"
     },
@@ -133,7 +93,71 @@
       "coin": "XRP",
       "tool": "sentry-sentiment-scanner",
       "direction": "LONG",
+      "confidence": 0.78,
+      "kelly": 0.2,
+      "action": "SIZE"
+    },
+    {
+      "coin": "SUI",
+      "tool": "sentry-sentiment-scanner",
+      "direction": "SHORT",
+      "confidence": 0.7,
+      "kelly": 0.2,
+      "action": "SIZE"
+    },
+    {
+      "coin": "AVAX",
+      "tool": "sentry-sentiment-scanner",
+      "direction": "LONG",
+      "confidence": 0.88,
+      "kelly": 0.2,
+      "action": "SIZE"
+    },
+    {
+      "coin": "DOGE",
+      "tool": "sentry-sentiment-scanner",
+      "direction": "FLAT",
+      "confidence": 0.7,
+      "kelly": 0.2,
+      "action": "SIZE"
+    },
+    {
+      "coin": "BTC",
+      "tool": "sentry-sentiment-scanner",
+      "direction": "FLAT",
+      "confidence": 0.7,
+      "kelly": 0.2,
+      "action": "SIZE"
+    },
+    {
+      "coin": "ETH",
+      "tool": "sentry-sentiment-scanner",
+      "direction": "LONG",
       "confidence": 0.8,
+      "kelly": 0.2,
+      "action": "SIZE"
+    },
+    {
+      "coin": "SUI",
+      "tool": "sentry-sentiment-scanner",
+      "direction": "FLAT",
+      "confidence": 0.7,
+      "kelly": 0.2,
+      "action": "SIZE"
+    },
+    {
+      "coin": "SOL",
+      "tool": "sentry-sentiment-scanner",
+      "direction": "FLAT",
+      "confidence": 0.7,
+      "kelly": 0.2,
+      "action": "SIZE"
+    },
+    {
+      "coin": "XRP",
+      "tool": "sentry-sentiment-scanner",
+      "direction": "FLAT",
+      "confidence": 0.7,
       "kelly": 0.2,
       "action": "SIZE"
     },
@@ -154,71 +178,7 @@
       "action": "SIZE"
     },
     {
-      "coin": "BTC",
-      "tool": "pixel-momentum",
-      "direction": "LONG",
-      "confidence": "medium",
-      "kelly": 0.1720572657915318,
-      "action": "SIZE"
-    },
-    {
-      "coin": "SOL",
-      "tool": "sentry-sentiment-scanner",
-      "direction": "LONG",
-      "confidence": 0.7,
-      "kelly": 0.2,
-      "action": "SIZE"
-    },
-    {
-      "coin": "BTC",
-      "tool": "sentry-sentiment-scanner",
-      "direction": "FLAT",
-      "confidence": 0.7,
-      "kelly": 0.2,
-      "action": "SIZE"
-    },
-    {
-      "coin": "NEAR",
-      "tool": "sentry-sentiment-scanner",
-      "direction": "LONG",
-      "confidence": 0.8,
-      "kelly": 0.2,
-      "action": "SIZE"
-    },
-    {
-      "coin": "ETH",
-      "tool": "sentry-sentiment-scanner",
-      "direction": "LONG",
-      "confidence": 0.8,
-      "kelly": 0.2,
-      "action": "SIZE"
-    },
-    {
-      "coin": "XRP",
-      "tool": "sentry-sentiment-scanner",
-      "direction": "LONG",
-      "confidence": 0.7,
-      "kelly": 0.2,
-      "action": "SIZE"
-    },
-    {
-      "coin": "LINK",
-      "tool": "sentry-sentiment-scanner",
-      "direction": "FLAT",
-      "confidence": 0.7,
-      "kelly": 0.2,
-      "action": "SIZE"
-    },
-    {
-      "coin": "DOGE",
-      "tool": "sentry-sentiment-scanner",
-      "direction": "FLAT",
-      "confidence": 0.7,
-      "kelly": 0.2,
-      "action": "SIZE"
-    },
-    {
-      "coin": "Will Bitcoin hit $10",
+      "coin": "Will Bitcoin be high",
       "tool": "sakura-arb-scanner",
       "direction": "ARB",
       "confidence": "medium",
@@ -226,7 +186,7 @@
       "action": "SIZE"
     },
     {
-      "coin": "Will Bitcoin hit $10",
+      "coin": "Will Bitcoin be high",
       "tool": "sakura-arb-scanner",
       "direction": "ARB",
       "confidence": "high",
@@ -252,31 +212,23 @@
   ],
   "skippedPositions": [
     {
+      "coin": "LINK",
+      "tool": "sentry-sentiment-scanner",
+      "direction": "FLAT",
+      "confidence": 0.5,
+      "kelly": 0,
+      "action": "SKIP"
+    },
+    {
+      "coin": "BTC",
+      "tool": "pixel-momentum",
+      "direction": "LONG",
+      "confidence": "low",
+      "kelly": 0,
+      "action": "SKIP"
+    },
+    {
       "coin": "PENGU",
-      "tool": "sentry-sentiment-scanner",
-      "direction": "FLAT",
-      "confidence": 0.3,
-      "kelly": 0,
-      "action": "SKIP"
-    },
-    {
-      "coin": "TAO",
-      "tool": "sentry-sentiment-scanner",
-      "direction": "FLAT",
-      "confidence": 0.3,
-      "kelly": 0,
-      "action": "SKIP"
-    },
-    {
-      "coin": "PENGU",
-      "tool": "sentry-sentiment-scanner",
-      "direction": "FLAT",
-      "confidence": 0.3,
-      "kelly": 0,
-      "action": "SKIP"
-    },
-    {
-      "coin": "TAO",
       "tool": "sentry-sentiment-scanner",
       "direction": "FLAT",
       "confidence": 0.3,
@@ -341,14 +293,6 @@
     },
     {
       "coin": "Will Roger Goodell b",
-      "tool": "sakura-arb-scanner",
-      "direction": "ARB",
-      "confidence": "low",
-      "kelly": 0,
-      "action": "SKIP"
-    },
-    {
-      "coin": "Will Bitcoin Outperf",
       "tool": "sakura-arb-scanner",
       "direction": "ARB",
       "confidence": "low",

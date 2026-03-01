@@ -815,5 +815,52 @@
     "regime": "UNKNOWN",
     "coinCount": 0,
     "spreads": []
+  },
+  {
+    "timestamp": "2026-03-01T13:03:06.628Z",
+    "regime": "UNKNOWN",
+    "coinCount": 5,
+    "spreads": [
+      {
+        "coin": "BTC",
+        "binance_rate_apr": 7.13,
+        "hyperliquid_rate_apr": -5.59,
+        "spread_apr": 12.72,
+        "binance_available": true,
+        "hyperliquid_available": true
+      },
+      {
+        "coin": "DOGE",
+        "binance_rate_apr": 5.83,
+        "hyperliquid_rate_apr": 3.19,
+        "spread_apr": 2.64,
+        "binance_available": true,
+        "hyperliquid_available": true
+      },
+      {
+        "coin": "LINK",
+        "binance_rate_apr": 7.15,
+        "hyperliquid_rate_apr": 10.95,
+        "spread_apr": -3.8,
+        "binance_available": true,
+        "hyperliquid_available": true
+      },
+      {
+        "coin": "NEAR",
+        "binance_rate_apr": -2.97,
+        "hyperliquid_rate_apr": 10.95,
+        "spread_apr": -13.92,
+        "binance_available": true,
+        "hyperliquid_available": true
+      },
+      {
+        "coin": "XRP",
+        "binance_rate_apr": 1,
+        "hyperliquid_rate_apr": -9.05,
+        "spread_apr": 10.05,
+        "binance_available": true,
+        "hyperliquid_available": true
+      }
+    ]
   }
 ]

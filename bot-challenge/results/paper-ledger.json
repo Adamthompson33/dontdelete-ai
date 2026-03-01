@@ -54143,10 +54143,10 @@
       "kelly_reasoning": "Kelly = -30.0% (p=35%). Negative edge — no position.",
       "kelly_sizedAt": "2026-02-26T17:06:03.706Z",
       "outcome": {
-        "checkedAt": "2026-03-01T15:28:16.251Z",
-        "currentPrice": 67120,
-        "currentRate": 0.021670487999999998,
-        "priceChange": 0.27431118179545605,
+        "checkedAt": "2026-03-01T15:29:02.852Z",
+        "currentPrice": 67132,
+        "currentRate": 0.023768508,
+        "priceChange": 0.2922386510174696,
         "pnlPercent": 0,
         "status": "LOSING"
       }
@@ -54171,10 +54171,10 @@
       "kelly_reasoning": "Kelly = -30.0% (p=35%). Negative edge — no position.",
       "kelly_sizedAt": "2026-02-26T17:06:03.706Z",
       "outcome": {
-        "checkedAt": "2026-03-01T15:28:16.253Z",
-        "currentPrice": 86.23,
-        "currentRate": -0.1066749,
-        "priceChange": 1.367467901820461,
+        "checkedAt": "2026-03-01T15:29:02.854Z",
+        "currentPrice": 86.254,
+        "currentRate": -0.10533374399999999,
+        "priceChange": 1.3956810437622886,
         "pnlPercent": 0,
         "status": "LOSING"
       }
@@ -54199,11 +54199,11 @@
       "kelly_reasoning": "Kelly = -30.0% (p=35%). Negative edge — no position.",
       "kelly_sizedAt": "2026-02-26T17:06:03.706Z",
       "outcome": {
-        "checkedAt": "2026-03-01T15:28:16.253Z",
-        "currentPrice": 0.91469,
-        "currentRate": -0.040919712000000004,
-        "priceChange": -0.9692448335934596,
-        "pnlPercent": 0.9692448335934596,
+        "checkedAt": "2026-03-01T15:29:02.854Z",
+        "currentPrice": 0.91555,
+        "currentRate": -0.0389601,
+        "priceChange": -0.8761352014305335,
+        "pnlPercent": 0.8761352014305335,
         "status": "WINNING"
       }
     },
@@ -54227,10 +54227,10 @@
       "kelly_reasoning": "Kelly = -30.0% (p=35%). Negative edge — no position.",
       "kelly_sizedAt": "2026-02-26T17:06:03.706Z",
       "outcome": {
-        "checkedAt": "2026-03-01T15:28:16.253Z",
-        "currentPrice": 2009.7,
+        "checkedAt": "2026-03-01T15:29:02.855Z",
+        "currentPrice": 2011.4,
         "currentRate": 0.10950000000000001,
-        "priceChange": 0.6796731018694946,
+        "priceChange": 0.7648377753397553,
         "pnlPercent": 0,
         "status": "LOSING"
       }
@@ -54255,10 +54255,10 @@
       "kelly_reasoning": "Kelly = -30.0% (p=35%). Negative edge — no position.",
       "kelly_sizedAt": "2026-02-26T17:06:03.706Z",
       "outcome": {
-        "checkedAt": "2026-03-01T15:28:16.253Z",
-        "currentPrice": 1.5608,
-        "currentRate": -0.597590556,
-        "priceChange": 0.6944368335511544,
+        "checkedAt": "2026-03-01T15:29:02.855Z",
+        "currentPrice": 1.5607,
+        "currentRate": -0.588530964,
+        "priceChange": 0.6879853704019013,
         "pnlPercent": 0,
         "status": "LOSING"
       }
@@ -54676,10 +54676,10 @@
       "kelly_reasoning": "Kelly = -30.0% (p=35%). Negative edge — no position.",
       "kelly_sizedAt": "2026-02-26T21:06:03.336Z",
       "outcome": {
-        "checkedAt": "2026-03-01T15:28:16.253Z",
-        "currentPrice": 67120,
-        "currentRate": 0.021670487999999998,
-        "priceChange": -0.3186150438854945,
+        "checkedAt": "2026-03-01T15:29:02.855Z",
+        "currentPrice": 67132,
+        "currentRate": 0.023768508,
+        "priceChange": -0.30079358054411526,
         "pnlPercent": 0,
         "status": "LOSING"
       }
@@ -54704,9 +54704,9 @@
       "kelly_reasoning": "Kelly = -30.0% (p=35%). Negative edge — no position.",
       "kelly_sizedAt": "2026-02-26T21:06:03.336Z",
       "outcome": {
-        "checkedAt": "2026-03-01T15:28:16.253Z",
+        "checkedAt": "2026-03-01T15:29:02.855Z",
         "currentPrice": 0.006895,
-        "currentRate": -0.146937612,
+        "currentRate": -0.147655932,
         "priceChange": 0.26890284423650496,
         "pnlPercent": -0.26890284423650496,
         "status": "LOSING"
@@ -54732,11 +54732,11 @@
       "kelly_reasoning": "Kelly = -30.0% (p=35%). Negative edge — no position.",
       "kelly_sizedAt": "2026-02-26T21:06:03.336Z",
       "outcome": {
-        "checkedAt": "2026-03-01T15:28:16.253Z",
-        "currentPrice": 0.91469,
-        "currentRate": -0.040919712000000004,
-        "priceChange": -1.497936156228806,
-        "pnlPercent": 1.497936156228806,
+        "checkedAt": "2026-03-01T15:29:02.855Z",
+        "currentPrice": 0.91555,
+        "currentRate": -0.0389601,
+        "priceChange": -1.4053236045384623,
+        "pnlPercent": 1.4053236045384623,
         "status": "WINNING"
       }
     },
@@ -54760,10 +54760,10 @@
       "kelly_reasoning": "Kelly = -30.0% (p=35%). Negative edge — no position.",
       "kelly_sizedAt": "2026-02-26T21:06:03.336Z",
       "outcome": {
-        "checkedAt": "2026-03-01T15:28:16.253Z",
-        "currentPrice": 181.85,
+        "checkedAt": "2026-03-01T15:29:02.855Z",
+        "currentPrice": 182.11,
         "currentRate": 0.10950000000000001,
-        "priceChange": -0.068878248170732,
+        "priceChange": 0.07399825254676892,
         "pnlPercent": 0,
         "status": "LOSING"
       }
@@ -54788,11 +54788,11 @@
       "kelly_reasoning": "Kelly = -30.0% (p=35%). Negative edge — no position.",
       "kelly_sizedAt": "2026-02-26T21:06:03.336Z",
       "outcome": {
-        "checkedAt": "2026-03-01T15:28:16.253Z",
-        "currentPrice": 1.8199,
-        "currentRate": -1.312779732,
-        "priceChange": -1.3001645340326335,
-        "pnlPercent": 1.3001645340326335,
+        "checkedAt": "2026-03-01T15:29:02.855Z",
+        "currentPrice": 1.8198,
+        "currentRate": -1.307774268,
+        "priceChange": -1.3055878999025141,
+        "pnlPercent": 1.3055878999025141,
         "status": "WINNING"
       }
     },
@@ -54816,11 +54816,11 @@
       "kelly_reasoning": "Kelly = -30.0% (p=35%). Negative edge — no position.",
       "kelly_sizedAt": "2026-02-26T21:06:03.336Z",
       "outcome": {
-        "checkedAt": "2026-03-01T15:28:16.254Z",
-        "currentPrice": 115.6,
-        "currentRate": 0.05730354000000001,
-        "priceChange": 1.1755460346546618,
-        "pnlPercent": -1.1755460346546618,
+        "checkedAt": "2026-03-01T15:29:02.855Z",
+        "currentPrice": 115.65,
+        "currentRate": 0.056815608000000004,
+        "priceChange": 1.2193070839776192,
+        "pnlPercent": -1.2193070839776192,
         "status": "LOSING"
       }
     },
@@ -54844,11 +54844,11 @@
       "kelly_reasoning": "Kelly = -30.0% (p=35%). Negative edge — no position.",
       "kelly_sizedAt": "2026-02-26T21:06:03.336Z",
       "outcome": {
-        "checkedAt": "2026-03-01T15:28:16.254Z",
-        "currentPrice": 86.23,
-        "currentRate": -0.1066749,
-        "priceChange": 0.2884796400013094,
-        "pnlPercent": -0.2884796400013094,
+        "checkedAt": "2026-03-01T15:29:02.855Z",
+        "currentPrice": 86.254,
+        "currentRate": -0.10533374399999999,
+        "priceChange": 0.31639247209408594,
+        "pnlPercent": -0.31639247209408594,
         "status": "LOSING"
       }
     },
@@ -54872,11 +54872,11 @@
       "kelly_reasoning": "Kelly = -30.0% (p=35%). Negative edge — no position.",
       "kelly_sizedAt": "2026-02-26T21:06:03.336Z",
       "outcome": {
-        "checkedAt": "2026-03-01T15:28:16.254Z",
-        "currentPrice": 1.1573,
+        "checkedAt": "2026-03-01T15:29:02.855Z",
+        "currentPrice": 1.1579,
         "currentRate": 0.10950000000000001,
-        "priceChange": 4.479312017733647,
-        "pnlPercent": -4.479312017733647,
+        "priceChange": 4.533479119790705,
+        "pnlPercent": -4.533479119790705,
         "status": "LOSING"
       }
     },
@@ -55411,10 +55411,10 @@
       "kelly_reasoning": "Kelly = -30.0% (p=35%). Negative edge — no position.",
       "kelly_sizedAt": "2026-02-27T01:11:22.947Z",
       "outcome": {
-        "checkedAt": "2026-03-01T15:28:16.254Z",
-        "currentPrice": 67120,
-        "currentRate": 0.021670487999999998,
-        "priceChange": -0.0785572198469247,
+        "checkedAt": "2026-03-01T15:29:02.855Z",
+        "currentPrice": 67132,
+        "currentRate": 0.023768508,
+        "priceChange": -0.06069283794344083,
         "pnlPercent": 0,
         "status": "LOSING"
       }
@@ -55439,9 +55439,9 @@
       "kelly_reasoning": "Kelly = -30.0% (p=35%). Negative edge — no position.",
       "kelly_sizedAt": "2026-02-27T01:11:22.947Z",
       "outcome": {
-        "checkedAt": "2026-03-01T15:28:16.254Z",
+        "checkedAt": "2026-03-01T15:29:02.855Z",
         "currentPrice": 0.006895,
-        "currentRate": -0.146937612,
+        "currentRate": -0.147655932,
         "priceChange": 0.02826363107635474,
         "pnlPercent": -0.02826363107635474,
         "status": "LOSING"
@@ -55467,10 +55467,10 @@
       "kelly_reasoning": "Kelly = -30.0% (p=35%). Negative edge — no position.",
       "kelly_sizedAt": "2026-02-27T01:11:22.947Z",
       "outcome": {
-        "checkedAt": "2026-03-01T15:28:16.254Z",
-        "currentPrice": 1.5608,
-        "currentRate": -0.597590556,
-        "priceChange": -2.874116977604114,
+        "checkedAt": "2026-03-01T15:29:02.855Z",
+        "currentPrice": 1.5607,
+        "currentRate": -0.588530964,
+        "priceChange": -2.8803398045532678,
         "pnlPercent": 0,
         "status": "LOSING"
       }
@@ -55495,10 +55495,10 @@
       "kelly_reasoning": "Kelly = -30.0% (p=35%). Negative edge — no position.",
       "kelly_sizedAt": "2026-02-27T01:11:22.947Z",
       "outcome": {
-        "checkedAt": "2026-03-01T15:28:16.254Z",
-        "currentPrice": 2009.7,
+        "checkedAt": "2026-03-01T15:29:02.855Z",
+        "currentPrice": 2011.4,
         "currentRate": 0.10950000000000001,
-        "priceChange": -0.18327411996062112,
+        "priceChange": -0.09883941129959137,
         "pnlPercent": 0,
         "status": "LOSING"
       }
@@ -55523,11 +55523,11 @@
       "kelly_reasoning": "Kelly = -30.0% (p=35%). Negative edge — no position.",
       "kelly_sizedAt": "2026-02-27T01:11:22.947Z",
       "outcome": {
-        "checkedAt": "2026-03-01T15:28:16.254Z",
-        "currentPrice": 3.8006,
-        "currentRate": -0.015314232000000002,
-        "priceChange": -1.5147699812364146,
-        "pnlPercent": 1.5147699812364146,
+        "checkedAt": "2026-03-01T15:29:02.856Z",
+        "currentPrice": 3.8012,
+        "currentRate": -0.014981351999999998,
+        "priceChange": -1.4992221366825935,
+        "pnlPercent": 1.4992221366825935,
         "status": "WINNING"
       }
     },
@@ -55551,11 +55551,11 @@
       "kelly_reasoning": "Kelly = -30.0% (p=35%). Negative edge — no position.",
       "kelly_sizedAt": "2026-02-27T01:11:22.947Z",
       "outcome": {
-        "checkedAt": "2026-03-01T15:28:16.254Z",
-        "currentPrice": 0.16723,
-        "currentRate": -0.03825492,
-        "priceChange": 8.333703445202127,
-        "pnlPercent": -8.333703445202127,
+        "checkedAt": "2026-03-01T15:29:02.856Z",
+        "currentPrice": 0.16734,
+        "currentRate": -0.034554696,
+        "priceChange": 8.404962832746062,
+        "pnlPercent": -8.404962832746062,
         "status": "LOSING"
       }
     },
@@ -55579,11 +55579,11 @@
       "kelly_reasoning": "Kelly = -30.0% (p=35%). Negative edge — no position.",
       "kelly_sizedAt": "2026-02-27T01:11:22.947Z",
       "outcome": {
-        "checkedAt": "2026-03-01T15:28:16.254Z",
-        "currentPrice": 115.6,
-        "currentRate": 0.05730354000000001,
-        "priceChange": 1.1498449997034639,
-        "pnlPercent": -1.1498449997034639,
+        "checkedAt": "2026-03-01T15:29:02.856Z",
+        "currentPrice": 115.65,
+        "currentRate": 0.056815608000000004,
+        "priceChange": 1.193594932661823,
+        "pnlPercent": -1.193594932661823,
         "status": "LOSING"
       }
     },
@@ -56039,10 +56039,10 @@
       "kelly_reasoning": "Kelly = -30.0% (p=35%). Negative edge — no position.",
       "kelly_sizedAt": "2026-02-27T05:06:03.578Z",
       "outcome": {
-        "checkedAt": "2026-03-01T15:28:16.254Z",
-        "currentPrice": 67120,
-        "currentRate": 0.021670487999999998,
-        "priceChange": -0.9773714672820488,
+        "checkedAt": "2026-03-01T15:29:02.856Z",
+        "currentPrice": 67132,
+        "currentRate": 0.023768508,
+        "priceChange": -0.959667779224948,
         "pnlPercent": 0,
         "status": "LOSING"
       }
@@ -56067,9 +56067,9 @@
       "kelly_reasoning": "Kelly = -30.0% (p=35%). Negative edge — no position.",
       "kelly_sizedAt": "2026-02-27T05:06:03.579Z",
       "outcome": {
-        "checkedAt": "2026-03-01T15:28:16.254Z",
+        "checkedAt": "2026-03-01T15:29:02.856Z",
         "currentPrice": 0.006895,
-        "currentRate": -0.146937612,
+        "currentRate": -0.147655932,
         "priceChange": -3.139827555089705,
         "pnlPercent": 0,
         "status": "LOSING"
@@ -56095,10 +56095,10 @@
       "kelly_reasoning": "Kelly = -30.0% (p=35%). Negative edge — no position.",
       "kelly_sizedAt": "2026-02-27T05:06:03.579Z",
       "outcome": {
-        "checkedAt": "2026-03-01T15:28:16.254Z",
-        "currentPrice": 0.91469,
-        "currentRate": -0.040919712000000004,
-        "priceChange": -3.6786643555455822,
+        "checkedAt": "2026-03-01T15:29:02.856Z",
+        "currentPrice": 0.91555,
+        "currentRate": -0.0389601,
+        "priceChange": -3.5881021446826358,
         "pnlPercent": 0,
         "status": "LOSING"
       }
@@ -56123,10 +56123,10 @@
       "kelly_reasoning": "Kelly = -30.0% (p=35%). Negative edge — no position.",
       "kelly_sizedAt": "2026-02-27T05:06:03.579Z",
       "outcome": {
-        "checkedAt": "2026-03-01T15:28:16.254Z",
-        "currentPrice": 1.5608,
-        "currentRate": -0.597590556,
-        "priceChange": -3.9626262076824403,
+        "checkedAt": "2026-03-01T15:29:02.856Z",
+        "currentPrice": 1.5607,
+        "currentRate": -0.588530964,
+        "priceChange": -3.968779294163239,
         "pnlPercent": 0,
         "status": "LOSING"
       }
@@ -56151,10 +56151,10 @@
       "kelly_reasoning": "Kelly = -30.0% (p=35%). Negative edge — no position.",
       "kelly_sizedAt": "2026-02-27T05:06:03.579Z",
       "outcome": {
-        "checkedAt": "2026-03-01T15:28:16.254Z",
-        "currentPrice": 115.6,
-        "currentRate": 0.05730354000000001,
-        "priceChange": -2.040957305947692,
+        "checkedAt": "2026-03-01T15:29:02.856Z",
+        "currentPrice": 115.65,
+        "currentRate": 0.056815608000000004,
+        "priceChange": -1.9985874777928156,
         "pnlPercent": 0,
         "status": "LOSING"
       }
@@ -56179,11 +56179,11 @@
       "kelly_reasoning": "Kelly = -30.0% (p=35%). Negative edge — no position.",
       "kelly_sizedAt": "2026-02-27T05:06:03.579Z",
       "outcome": {
-        "checkedAt": "2026-03-01T15:28:16.254Z",
-        "currentPrice": 3.8006,
-        "currentRate": -0.015314232000000002,
-        "priceChange": -2.6144955357420945,
-        "pnlPercent": 2.6144955357420945,
+        "checkedAt": "2026-03-01T15:29:02.856Z",
+        "currentPrice": 3.8012,
+        "currentRate": -0.014981351999999998,
+        "priceChange": -2.5991213046526482,
+        "pnlPercent": 2.5991213046526482,
         "status": "WINNING"
       }
     },
@@ -56207,10 +56207,10 @@
       "kelly_reasoning": "Kelly = -30.0% (p=35%). Negative edge — no position.",
       "kelly_sizedAt": "2026-02-27T05:06:03.579Z",
       "outcome": {
-        "checkedAt": "2026-03-01T15:28:16.254Z",
-        "currentPrice": 2009.7,
+        "checkedAt": "2026-03-01T15:29:02.856Z",
+        "currentPrice": 2011.4,
         "currentRate": 0.10950000000000001,
-        "priceChange": -1.8367577991686357,
+        "priceChange": -1.7537217680488575,
         "pnlPercent": 0,
         "status": "LOSING"
       }
@@ -56235,10 +56235,10 @@
       "kelly_reasoning": "Kelly = -30.0% (p=35%). Negative edge — no position.",
       "kelly_sizedAt": "2026-02-27T05:06:03.579Z",
       "outcome": {
-        "checkedAt": "2026-03-01T15:28:16.254Z",
-        "currentPrice": 86.23,
-        "currentRate": -0.1066749,
-        "priceChange": -1.612278024316214,
+        "checkedAt": "2026-03-01T15:29:02.856Z",
+        "currentPrice": 86.254,
+        "currentRate": -0.10533374399999999,
+        "priceChange": -1.5848942213773702,
         "pnlPercent": 0,
         "status": "LOSING"
       }
@@ -56659,10 +56659,10 @@
       "kelly_reasoning": "Kelly = -30.0% (p=35%). Negative edge — no position.",
       "kelly_sizedAt": "2026-02-27T09:06:03.943Z",
       "outcome": {
-        "checkedAt": "2026-03-01T15:28:16.254Z",
-        "currentPrice": 67120,
-        "currentRate": 0.021670487999999998,
-        "priceChange": -1.2011561679418974,
+        "checkedAt": "2026-03-01T15:29:02.856Z",
+        "currentPrice": 67132,
+        "currentRate": 0.023768508,
+        "priceChange": -1.1834924890684664,
         "pnlPercent": 0,
         "status": "LOSING"
       }
@@ -56687,9 +56687,9 @@
       "kelly_reasoning": "Kelly = -30.0% (p=35%). Negative edge — no position.",
       "kelly_sizedAt": "2026-02-27T09:06:03.943Z",
       "outcome": {
-        "checkedAt": "2026-03-01T15:28:16.254Z",
+        "checkedAt": "2026-03-01T15:29:02.856Z",
         "currentPrice": 0.006895,
-        "currentRate": -0.146937612,
+        "currentRate": -0.147655932,
         "priceChange": -4.493744709581854,
         "pnlPercent": 0,
         "status": "LOSING"
@@ -56715,10 +56715,10 @@
       "kelly_reasoning": "Kelly = -30.0% (p=35%). Negative edge — no position.",
       "kelly_sizedAt": "2026-02-27T09:06:03.943Z",
       "outcome": {
-        "checkedAt": "2026-03-01T15:28:16.254Z",
-        "currentPrice": 0.7074,
-        "currentRate": -0.189095112,
-        "priceChange": -2.5639918908015336,
+        "checkedAt": "2026-03-01T15:29:02.856Z",
+        "currentPrice": 0.70765,
+        "currentRate": -0.18770840399999997,
+        "priceChange": -2.529557338882822,
         "pnlPercent": 0,
         "status": "LOSING"
       }
@@ -56743,10 +56743,10 @@
       "kelly_reasoning": "Kelly = -30.0% (p=35%). Negative edge — no position.",
       "kelly_sizedAt": "2026-02-27T09:06:03.943Z",
       "outcome": {
-        "checkedAt": "2026-03-01T15:28:16.254Z",
-        "currentPrice": 86.23,
-        "currentRate": -0.1066749,
-        "priceChange": -1.4895092300556547,
+        "checkedAt": "2026-03-01T15:29:02.856Z",
+        "currentPrice": 86.254,
+        "currentRate": -0.10533374399999999,
+        "priceChange": -1.4620912574419618,
         "pnlPercent": 0,
         "status": "LOSING"
       }
@@ -56771,10 +56771,10 @@
       "kelly_reasoning": "Kelly = -30.0% (p=35%). Negative edge — no position.",
       "kelly_sizedAt": "2026-02-27T09:06:03.943Z",
       "outcome": {
-        "checkedAt": "2026-03-01T15:28:16.254Z",
-        "currentPrice": 2009.7,
+        "checkedAt": "2026-03-01T15:29:02.856Z",
+        "currentPrice": 2011.4,
         "currentRate": 0.10950000000000001,
-        "priceChange": -1.1183171827224663,
+        "priceChange": -1.034673424554891,
         "pnlPercent": 0,
         "status": "LOSING"
       }
@@ -56799,10 +56799,10 @@
       "kelly_reasoning": "Kelly = -30.0% (p=35%). Negative edge — no position.",
       "kelly_sizedAt": "2026-02-27T09:06:03.943Z",
       "outcome": {
-        "checkedAt": "2026-03-01T15:28:16.254Z",
-        "currentPrice": 0.91469,
-        "currentRate": -0.040919712000000004,
-        "priceChange": -4.4658024382964445,
+        "checkedAt": "2026-03-01T15:29:02.856Z",
+        "currentPrice": 0.91555,
+        "currentRate": -0.0389601,
+        "priceChange": -4.37598030194089,
         "pnlPercent": 0,
         "status": "LOSING"
       }
@@ -56827,10 +56827,10 @@
       "kelly_reasoning": "Kelly = -30.0% (p=35%). Negative edge — no position.",
       "kelly_sizedAt": "2026-02-27T09:06:03.943Z",
       "outcome": {
-        "checkedAt": "2026-03-01T15:28:16.254Z",
-        "currentPrice": 1.5608,
-        "currentRate": -0.597590556,
-        "priceChange": -3.4291234888384223,
+        "checkedAt": "2026-03-01T15:29:02.856Z",
+        "currentPrice": 1.5607,
+        "currentRate": -0.588530964,
+        "priceChange": -3.4353107566825503,
         "pnlPercent": 0,
         "status": "LOSING"
       }
@@ -56855,11 +56855,11 @@
       "kelly_reasoning": "Kelly = -30.0% (p=35%). Negative edge — no position.",
       "kelly_sizedAt": "2026-02-27T09:06:03.943Z",
       "outcome": {
-        "checkedAt": "2026-03-01T15:28:16.254Z",
-        "currentPrice": 3.8006,
-        "currentRate": -0.015314232000000002,
-        "priceChange": -2.0938482164645356,
-        "pnlPercent": 2.0938482164645356,
+        "checkedAt": "2026-03-01T15:29:02.856Z",
+        "currentPrice": 3.8012,
+        "currentRate": -0.014981351999999998,
+        "priceChange": -2.0783917908817022,
+        "pnlPercent": 2.0783917908817022,
         "status": "WINNING"
       }
     },
@@ -57276,11 +57276,11 @@
       "kelly_reasoning": "Kelly = -30.0% (p=35%). Negative edge — no position.",
       "kelly_sizedAt": "2026-02-27T13:06:03.704Z",
       "outcome": {
-        "checkedAt": "2026-03-01T15:28:16.254Z",
-        "currentPrice": 67120,
-        "currentRate": 0.021670487999999998,
-        "priceChange": 2.0531572869215013,
-        "pnlPercent": -2.0531572869215013,
+        "checkedAt": "2026-03-01T15:29:02.856Z",
+        "currentPrice": 67132,
+        "currentRate": 0.023768508,
+        "priceChange": 2.071402785840498,
+        "pnlPercent": -2.071402785840498,
         "status": "LOSING"
       }
     },
@@ -57304,11 +57304,11 @@
       "kelly_reasoning": "Kelly = -30.0% (p=35%). Negative edge — no position.",
       "kelly_sizedAt": "2026-02-27T13:06:03.705Z",
       "outcome": {
-        "checkedAt": "2026-03-01T15:28:16.254Z",
-        "currentPrice": 86.23,
-        "currentRate": -0.1066749,
-        "priceChange": 4.02773504984609,
-        "pnlPercent": -4.02773504984609,
+        "checkedAt": "2026-03-01T15:29:02.856Z",
+        "currentPrice": 86.254,
+        "currentRate": -0.10533374399999999,
+        "priceChange": 4.056688611729383,
+        "pnlPercent": -4.056688611729383,
         "status": "LOSING"
       }
     },
@@ -57332,11 +57332,11 @@
       "kelly_reasoning": "Kelly = -30.0% (p=35%). Negative edge — no position.",
       "kelly_sizedAt": "2026-02-27T13:06:03.705Z",
       "outcome": {
-        "checkedAt": "2026-03-01T15:28:16.254Z",
-        "currentPrice": 2009.7,
+        "checkedAt": "2026-03-01T15:29:02.856Z",
+        "currentPrice": 2011.4,
         "currentRate": 0.10950000000000001,
-        "priceChange": 2.762476976442813,
-        "pnlPercent": -2.762476976442813,
+        "priceChange": 2.8494034882903314,
+        "pnlPercent": -2.8494034882903314,
         "status": "LOSING"
       }
     },
@@ -57360,10 +57360,10 @@
       "kelly_reasoning": "Kelly = -30.0% (p=35%). Negative edge — no position.",
       "kelly_sizedAt": "2026-02-27T13:06:03.705Z",
       "outcome": {
-        "checkedAt": "2026-03-01T15:28:16.254Z",
-        "currentPrice": 0.7074,
-        "currentRate": -0.189095112,
-        "priceChange": 2.721838468730522,
+        "checkedAt": "2026-03-01T15:29:02.856Z",
+        "currentPrice": 0.70765,
+        "currentRate": -0.18770840399999997,
+        "priceChange": 2.758141069263714,
         "pnlPercent": 0,
         "status": "LOSING"
       }
@@ -57388,10 +57388,10 @@
       "kelly_reasoning": "Kelly = -30.0% (p=35%). Negative edge — no position.",
       "kelly_sizedAt": "2026-02-27T13:06:03.705Z",
       "outcome": {
-        "checkedAt": "2026-03-01T15:28:16.255Z",
-        "currentPrice": 181.85,
+        "checkedAt": "2026-03-01T15:29:02.856Z",
+        "currentPrice": 182.11,
         "currentRate": 0.10950000000000001,
-        "priceChange": 0.8683844540098847,
+        "priceChange": 1.0126010058825519,
         "pnlPercent": 0,
         "status": "LOSING"
       }
@@ -57416,9 +57416,9 @@
       "kelly_reasoning": "Kelly = -30.0% (p=35%). Negative edge — no position.",
       "kelly_sizedAt": "2026-02-27T13:06:03.705Z",
       "outcome": {
-        "checkedAt": "2026-03-01T15:28:16.255Z",
+        "checkedAt": "2026-03-01T15:29:02.857Z",
         "currentPrice": 0.006895,
-        "currentRate": -0.146937612,
+        "currentRate": -0.147655932,
         "priceChange": 0.21522312453677375,
         "pnlPercent": 0,
         "status": "LOSING"
@@ -57444,11 +57444,11 @@
       "kelly_reasoning": "Kelly = -30.0% (p=35%). Negative edge — no position.",
       "kelly_sizedAt": "2026-02-27T13:06:03.705Z",
       "outcome": {
-        "checkedAt": "2026-03-01T15:28:16.255Z",
-        "currentPrice": 1.1573,
+        "checkedAt": "2026-03-01T15:29:02.857Z",
+        "currentPrice": 1.1579,
         "currentRate": 0.10950000000000001,
-        "priceChange": 4.50712999717039,
-        "pnlPercent": -4.50712999717039,
+        "priceChange": 4.561311521406366,
+        "pnlPercent": -4.561311521406366,
         "status": "LOSING"
       }
     },
@@ -57472,11 +57472,11 @@
       "kelly_reasoning": "Kelly = -30.0% (p=35%). Negative edge — no position.",
       "kelly_sizedAt": "2026-02-27T13:06:03.705Z",
       "outcome": {
-        "checkedAt": "2026-03-01T15:28:16.255Z",
-        "currentPrice": 1.7253,
+        "checkedAt": "2026-03-01T15:29:02.857Z",
+        "currentPrice": 1.7263,
         "currentRate": 0.10950000000000001,
-        "priceChange": -3.3367682232332196,
-        "pnlPercent": 3.3367682232332196,
+        "priceChange": -3.2807413109415857,
+        "pnlPercent": 3.2807413109415857,
         "status": "WINNING"
       }
     },
@@ -57500,10 +57500,10 @@
       "kelly_reasoning": "Kelly = -30.0% (p=35%). Negative edge — no position.",
       "kelly_sizedAt": "2026-02-27T13:06:03.705Z",
       "outcome": {
-        "checkedAt": "2026-03-01T15:28:16.255Z",
-        "currentPrice": 1.5608,
-        "currentRate": -0.597590556,
-        "priceChange": -1.0764588051092994,
+        "checkedAt": "2026-03-01T15:29:02.857Z",
+        "currentPrice": 1.5607,
+        "currentRate": -0.588530964,
+        "priceChange": -1.0827968074923644,
         "pnlPercent": 0,
         "status": "LOSING"
       }
@@ -58063,11 +58063,11 @@
       "kelly_sizedAt": "2026-02-28T01:06:01.999Z",
       "kelly_status": "STALE",
       "outcome": {
-        "checkedAt": "2026-03-01T15:28:16.255Z",
-        "currentPrice": 67120,
-        "currentRate": 0.021670487999999998,
-        "priceChange": 1.8358367470793506,
-        "pnlPercent": -1.8358367470793506,
+        "checkedAt": "2026-03-01T15:29:02.857Z",
+        "currentPrice": 67132,
+        "currentRate": 0.023768508,
+        "priceChange": 1.854043392504931,
+        "pnlPercent": -1.854043392504931,
         "status": "LOSING"
       },
       "kelly_superseded_by": "2026-02-28T13:01:04.126Z",
@@ -58093,9 +58093,9 @@
       "kelly_reasoning": "Kelly = -30.0% (p=35%). Negative edge — no position.",
       "kelly_sizedAt": "2026-02-28T01:06:01.999Z",
       "outcome": {
-        "checkedAt": "2026-03-01T15:28:16.255Z",
+        "checkedAt": "2026-03-01T15:29:02.857Z",
         "currentPrice": 0.006895,
-        "currentRate": -0.146937612,
+        "currentRate": -0.147655932,
         "priceChange": 0.7929124444714365,
         "pnlPercent": 0,
         "status": "LOSING"
@@ -58121,10 +58121,10 @@
       "kelly_reasoning": "Kelly = -30.0% (p=35%). Negative edge — no position.",
       "kelly_sizedAt": "2026-02-28T01:06:01.999Z",
       "outcome": {
-        "checkedAt": "2026-03-01T15:28:16.255Z",
-        "currentPrice": 67120,
-        "currentRate": 0.021670487999999998,
-        "priceChange": 1.7780914890805393,
+        "checkedAt": "2026-03-01T15:29:02.857Z",
+        "currentPrice": 67132,
+        "currentRate": 0.023768508,
+        "priceChange": 1.7962878105624964,
         "pnlPercent": 0,
         "status": "LOSING"
       }
@@ -58149,11 +58149,11 @@
       "kelly_reasoning": "Kelly = -30.0% (p=35%). Negative edge — no position.",
       "kelly_sizedAt": "2026-02-28T01:06:01.999Z",
       "outcome": {
-        "checkedAt": "2026-03-01T15:28:16.255Z",
-        "currentPrice": 86.23,
-        "currentRate": -0.1066749,
-        "priceChange": 5.115289847169872,
-        "pnlPercent": -5.115289847169872,
+        "checkedAt": "2026-03-01T15:29:02.857Z",
+        "currentPrice": 86.254,
+        "currentRate": -0.10533374399999999,
+        "priceChange": 5.144546103186712,
+        "pnlPercent": -5.144546103186712,
         "status": "LOSING"
       }
     },
@@ -58177,10 +58177,10 @@
       "kelly_reasoning": "Kelly = -30.0% (p=35%). Negative edge — no position.",
       "kelly_sizedAt": "2026-02-28T01:06:01.999Z",
       "outcome": {
-        "checkedAt": "2026-03-01T15:28:16.255Z",
-        "currentPrice": 1.3853,
-        "currentRate": -0.049020084000000005,
-        "priceChange": 1.7440040549737326,
+        "checkedAt": "2026-03-01T15:29:02.857Z",
+        "currentPrice": 1.3862,
+        "currentRate": -0.044239752,
+        "priceChange": 1.810104974377103,
         "pnlPercent": 0,
         "status": "LOSING"
       }
@@ -58205,11 +58205,11 @@
       "kelly_reasoning": "Kelly = -30.0% (p=35%). Negative edge — no position.",
       "kelly_sizedAt": "2026-02-28T01:06:01.999Z",
       "outcome": {
-        "checkedAt": "2026-03-01T15:28:16.255Z",
-        "currentPrice": 2009.7,
+        "checkedAt": "2026-03-01T15:29:02.857Z",
+        "currentPrice": 2011.4,
         "currentRate": 0.10950000000000001,
-        "priceChange": 3.9786745988086403,
-        "pnlPercent": -3.9786745988086403,
+        "priceChange": 4.066629889059911,
+        "pnlPercent": -4.066629889059911,
         "status": "LOSING"
       }
     },
@@ -58233,11 +58233,11 @@
       "kelly_reasoning": "Kelly = -30.0% (p=35%). Negative edge — no position.",
       "kelly_sizedAt": "2026-02-28T01:06:01.999Z",
       "outcome": {
-        "checkedAt": "2026-03-01T15:28:16.255Z",
-        "currentPrice": 0.09433,
-        "currentRate": 0.016474931999999998,
-        "priceChange": 0.7679638895436174,
-        "pnlPercent": -0.7679638895436174,
+        "checkedAt": "2026-03-01T15:29:02.857Z",
+        "currentPrice": 0.094379,
+        "currentRate": 0.017512992,
+        "priceChange": 0.8203081090982488,
+        "pnlPercent": -0.8203081090982488,
         "status": "LOSING"
       }
     },
@@ -58261,10 +58261,10 @@
       "kelly_reasoning": "Kelly = -30.0% (p=35%). Negative edge — no position.",
       "kelly_sizedAt": "2026-02-28T01:06:01.999Z",
       "outcome": {
-        "checkedAt": "2026-03-01T15:28:16.255Z",
-        "currentPrice": 1.5608,
-        "currentRate": -0.597590556,
-        "priceChange": -2.0057420766839877,
+        "checkedAt": "2026-03-01T15:29:02.857Z",
+        "currentPrice": 1.5607,
+        "currentRate": -0.588530964,
+        "priceChange": -2.0120205401593405,
         "pnlPercent": 0,
         "status": "LOSING"
       }
@@ -58289,10 +58289,10 @@
       "kelly_reasoning": "Kelly = -30.0% (p=35%). Negative edge — no position.",
       "kelly_sizedAt": "2026-02-28T01:06:01.999Z",
       "outcome": {
-        "checkedAt": "2026-03-01T15:28:16.255Z",
-        "currentPrice": 181.85,
+        "checkedAt": "2026-03-01T15:29:02.857Z",
+        "currentPrice": 182.11,
         "currentRate": 0.10950000000000001,
-        "priceChange": 1.9682982911820566,
+        "priceChange": 2.114087444636603,
         "pnlPercent": 0,
         "status": "LOSING"
       }
@@ -58916,11 +58916,11 @@
       "kelly_reasoning": "Kelly = -30.0% (p=35%). Negative edge — no position. Regime-adjusted: 0.75x.",
       "kelly_sizedAt": "2026-02-28T05:06:02.959Z",
       "outcome": {
-        "checkedAt": "2026-03-01T15:28:16.255Z",
-        "currentPrice": 67120,
-        "currentRate": 0.021670487999999998,
-        "priceChange": 2.2687449528424066,
-        "pnlPercent": -2.2687449528424066,
+        "checkedAt": "2026-03-01T15:29:02.857Z",
+        "currentPrice": 67132,
+        "currentRate": 0.023768508,
+        "priceChange": 2.287028995444226,
+        "pnlPercent": -2.287028995444226,
         "status": "LOSING"
       }
     },
@@ -58951,11 +58951,11 @@
       "kelly_reasoning": "Kelly = -30.0% (p=35%). Negative edge — no position. Regime-adjusted: 0.75x.",
       "kelly_sizedAt": "2026-02-28T05:06:02.959Z",
       "outcome": {
-        "checkedAt": "2026-03-01T15:28:16.255Z",
-        "currentPrice": 2009.7,
+        "checkedAt": "2026-03-01T15:29:02.857Z",
+        "currentPrice": 2011.4,
         "currentRate": 0.10950000000000001,
-        "priceChange": 4.470551541300619,
-        "pnlPercent": -4.470551541300619,
+        "priceChange": 4.558922908977493,
+        "pnlPercent": -4.558922908977493,
         "status": "LOSING"
       }
     },
@@ -58986,11 +58986,11 @@
       "kelly_reasoning": "Kelly = -30.0% (p=35%). Negative edge — no position. Regime-adjusted: 0.75x.",
       "kelly_sizedAt": "2026-02-28T05:06:02.959Z",
       "outcome": {
-        "checkedAt": "2026-03-01T15:28:16.255Z",
-        "currentPrice": 86.23,
-        "currentRate": -0.1066749,
-        "priceChange": 5.697335196489435,
-        "pnlPercent": -5.697335196489435,
+        "checkedAt": "2026-03-01T15:29:02.857Z",
+        "currentPrice": 86.254,
+        "currentRate": -0.10533374399999999,
+        "priceChange": 5.7267534505160596,
+        "pnlPercent": -5.7267534505160596,
         "status": "LOSING"
       }
     },
@@ -59014,11 +59014,11 @@
       "kelly_reasoning": "Kelly = -30.0% (p=35%). Negative edge — no position. Regime-adjusted: 0.75x.",
       "kelly_sizedAt": "2026-02-28T05:06:02.959Z",
       "outcome": {
-        "checkedAt": "2026-03-01T15:28:16.255Z",
-        "currentPrice": 67120,
-        "currentRate": 0.021670487999999998,
-        "priceChange": 2.231234659172019,
-        "pnlPercent": -2.231234659172019,
+        "checkedAt": "2026-03-01T15:29:02.857Z",
+        "currentPrice": 67132,
+        "currentRate": 0.023768508,
+        "priceChange": 2.2495119955234797,
+        "pnlPercent": -2.2495119955234797,
         "status": "LOSING"
       }
     },
@@ -59042,9 +59042,9 @@
       "kelly_reasoning": "Kelly = -30.0% (p=35%). Negative edge — no position. Regime-adjusted: 0.75x.",
       "kelly_sizedAt": "2026-02-28T05:06:02.959Z",
       "outcome": {
-        "checkedAt": "2026-03-01T15:28:16.255Z",
+        "checkedAt": "2026-03-01T15:29:02.857Z",
         "currentPrice": 0.006895,
-        "currentRate": -0.146937612,
+        "currentRate": -0.147655932,
         "priceChange": 1.9173669414660655,
         "pnlPercent": -1.9173669414660655,
         "status": "LOSING"
@@ -59070,11 +59070,11 @@
       "kelly_reasoning": "Kelly = -30.0% (p=35%). Negative edge — no position. Regime-adjusted: 0.75x.",
       "kelly_sizedAt": "2026-02-28T05:06:02.959Z",
       "outcome": {
-        "checkedAt": "2026-03-01T15:28:16.255Z",
-        "currentPrice": 86.23,
-        "currentRate": -0.1066749,
-        "priceChange": 5.515471540309292,
-        "pnlPercent": -5.515471540309292,
+        "checkedAt": "2026-03-01T15:29:02.857Z",
+        "currentPrice": 86.254,
+        "currentRate": -0.10533374399999999,
+        "priceChange": 5.544839177059466,
+        "pnlPercent": -5.544839177059466,
         "status": "LOSING"
       }
     },
@@ -59098,11 +59098,11 @@
       "kelly_reasoning": "Kelly = -30.0% (p=35%). Negative edge — no position. Regime-adjusted: 0.75x.",
       "kelly_sizedAt": "2026-02-28T05:06:02.959Z",
       "outcome": {
-        "checkedAt": "2026-03-01T15:28:16.255Z",
-        "currentPrice": 181.85,
+        "checkedAt": "2026-03-01T15:29:02.857Z",
+        "currentPrice": 182.11,
         "currentRate": 0.10950000000000001,
-        "priceChange": 1.774447938139729,
-        "pnlPercent": -1.774447938139729,
+        "priceChange": 1.919959934091988,
+        "pnlPercent": -1.919959934091988,
         "status": "LOSING"
       }
     },
@@ -59126,11 +59126,11 @@
       "kelly_reasoning": "Kelly = -30.0% (p=35%). Negative edge — no position. Regime-adjusted: 0.75x.",
       "kelly_sizedAt": "2026-02-28T05:06:02.959Z",
       "outcome": {
-        "checkedAt": "2026-03-01T15:28:16.255Z",
-        "currentPrice": 2009.7,
+        "checkedAt": "2026-03-01T15:29:02.857Z",
+        "currentPrice": 2011.4,
         "currentRate": 0.10950000000000001,
-        "priceChange": 4.339710042213949,
-        "pnlPercent": -4.339710042213949,
+        "priceChange": 4.427970731407246,
+        "pnlPercent": -4.427970731407246,
         "status": "LOSING"
       }
     },
@@ -59154,11 +59154,11 @@
       "kelly_reasoning": "Kelly = -30.0% (p=35%). Negative edge — no position. Regime-adjusted: 0.75x.",
       "kelly_sizedAt": "2026-02-28T05:06:02.959Z",
       "outcome": {
-        "checkedAt": "2026-03-01T15:28:16.255Z",
-        "currentPrice": 1.8199,
-        "currentRate": -1.312779732,
-        "priceChange": -1.4298205858403177,
-        "pnlPercent": 1.4298205858403177,
+        "checkedAt": "2026-03-01T15:29:02.857Z",
+        "currentPrice": 1.8198,
+        "currentRate": -1.307774268,
+        "priceChange": -1.43523682735986,
+        "pnlPercent": 1.43523682735986,
         "status": "WINNING"
       }
     },
@@ -59615,11 +59615,11 @@
       "regimeAdx": 34.344583976729524,
       "regimeVolRatio": 0.4396176188931912,
       "outcome": {
-        "checkedAt": "2026-03-01T15:28:16.255Z",
-        "currentPrice": 0.12346,
-        "currentRate": -0.161352192,
-        "priceChange": 4.220834036805677,
-        "pnlPercent": 4.220834036805677,
+        "checkedAt": "2026-03-01T15:29:02.857Z",
+        "currentPrice": 0.12363,
+        "currentRate": -0.15979554,
+        "priceChange": 4.364342394057073,
+        "pnlPercent": 4.364342394057073,
         "status": "WINNING"
       }
     },
@@ -59669,11 +59669,11 @@
       "kelly_reasoning": "Kelly = -49.0% (low=35%→calibrated 25%). Negative edge — no position. Regime-adjusted: 0.75x.",
       "kelly_sizedAt": "2026-02-28T09:06:02.137Z",
       "outcome": {
-        "checkedAt": "2026-03-01T15:28:16.255Z",
-        "currentPrice": 67120,
-        "currentRate": 0.021670487999999998,
-        "priceChange": 5.78408195429472,
-        "pnlPercent": -5.78408195429472,
+        "checkedAt": "2026-03-01T15:29:02.857Z",
+        "currentPrice": 67132,
+        "currentRate": 0.023768508,
+        "priceChange": 5.802994483845548,
+        "pnlPercent": -5.802994483845548,
         "status": "LOSING"
       }
     },
@@ -59704,11 +59704,11 @@
       "kelly_reasoning": "Kelly = -49.0% (low=35%→calibrated 25%). Negative edge — no position. Regime-adjusted: 0.75x.",
       "kelly_sizedAt": "2026-02-28T09:06:02.137Z",
       "outcome": {
-        "checkedAt": "2026-03-01T15:28:16.255Z",
-        "currentPrice": 86.23,
-        "currentRate": -0.1066749,
-        "priceChange": 10.471968842882044,
-        "pnlPercent": -10.471968842882044,
+        "checkedAt": "2026-03-01T15:29:02.857Z",
+        "currentPrice": 86.254,
+        "currentRate": -0.10533374399999999,
+        "priceChange": 10.502715998770123,
+        "pnlPercent": -10.502715998770123,
         "status": "LOSING"
       }
     },
@@ -59732,11 +59732,11 @@
       "kelly_reasoning": "Kelly = -11.8% (raw=47%→calibrated 44%). Negative edge — no position. Regime-adjusted: 0.75x.",
       "kelly_sizedAt": "2026-02-28T09:06:02.137Z",
       "outcome": {
-        "checkedAt": "2026-03-01T15:28:16.255Z",
-        "currentPrice": 67120,
-        "currentRate": 0.021670487999999998,
-        "priceChange": 5.666291203625313,
-        "pnlPercent": -5.666291203625313,
+        "checkedAt": "2026-03-01T15:29:02.858Z",
+        "currentPrice": 67132,
+        "currentRate": 0.023768508,
+        "priceChange": 5.685182674043125,
+        "pnlPercent": -5.685182674043125,
         "status": "LOSING"
       }
     },
@@ -59761,11 +59761,11 @@
       "kelly_sizedAt": "2026-02-28T09:06:02.137Z",
       "kelly_status": "STALE",
       "outcome": {
-        "checkedAt": "2026-03-01T15:28:16.255Z",
-        "currentPrice": 86.23,
-        "currentRate": -0.1066749,
-        "priceChange": 10.46625738503907,
-        "pnlPercent": -10.46625738503907,
+        "checkedAt": "2026-03-01T15:29:02.858Z",
+        "currentPrice": 86.254,
+        "currentRate": -0.10533374399999999,
+        "priceChange": 10.497002951283314,
+        "pnlPercent": -10.497002951283314,
         "status": "LOSING"
       },
       "kelly_size_unreduced": 0.032805,
@@ -59793,11 +59793,11 @@
       "kelly_sizedAt": "2026-02-28T09:06:02.137Z",
       "kelly_status": "STALE",
       "outcome": {
-        "checkedAt": "2026-03-01T15:28:16.255Z",
-        "currentPrice": 0.91469,
-        "currentRate": -0.040919712000000004,
-        "priceChange": 8.943445313327684,
-        "pnlPercent": -8.943445313327684,
+        "checkedAt": "2026-03-01T15:29:02.858Z",
+        "currentPrice": 0.91555,
+        "currentRate": -0.0389601,
+        "priceChange": 9.045874948471239,
+        "pnlPercent": -9.045874948471239,
         "status": "LOSING"
       },
       "kelly_size_unreduced": 0.032805,
@@ -59832,11 +59832,11 @@
       "kelly_reasoning": "Kelly = -2.4% (raw=49%→calibrated 49%). Negative edge — no position. Regime-adjusted: 0.75x.",
       "kelly_sizedAt": "2026-02-28T09:06:02.137Z",
       "outcome": {
-        "checkedAt": "2026-03-01T15:28:16.256Z",
-        "currentPrice": 1.3853,
-        "currentRate": -0.049020084000000005,
-        "priceChange": 7.455872919348833,
-        "pnlPercent": -7.455872919348833,
+        "checkedAt": "2026-03-01T15:29:02.858Z",
+        "currentPrice": 1.3862,
+        "currentRate": -0.044239752,
+        "priceChange": 7.525684718690079,
+        "pnlPercent": -7.525684718690079,
         "status": "LOSING"
       }
     },
@@ -59860,11 +59860,11 @@
       "kelly_reasoning": "Kelly = -3.6% (raw=49%→calibrated 48%). Negative edge — no position. Regime-adjusted: 0.75x.",
       "kelly_sizedAt": "2026-02-28T09:06:02.137Z",
       "outcome": {
-        "checkedAt": "2026-03-01T15:28:16.256Z",
-        "currentPrice": 2009.7,
+        "checkedAt": "2026-03-01T15:29:02.858Z",
+        "currentPrice": 2011.4,
         "currentRate": 0.10950000000000001,
-        "priceChange": 8.462184183447784,
-        "pnlPercent": -8.462184183447784,
+        "priceChange": 8.553932062788913,
+        "pnlPercent": -8.553932062788913,
         "status": "LOSING"
       }
     },
@@ -59889,9 +59889,9 @@
       "kelly_sizedAt": "2026-02-28T09:06:02.137Z",
       "kelly_status": "STALE",
       "outcome": {
-        "checkedAt": "2026-03-01T15:28:16.256Z",
+        "checkedAt": "2026-03-01T15:29:02.858Z",
         "currentPrice": 0.006895,
-        "currentRate": -0.146937612,
+        "currentRate": -0.147655932,
         "priceChange": 9.065779487854146,
         "pnlPercent": -9.065779487854146,
         "status": "LOSING"
@@ -59952,11 +59952,11 @@
       "kelly_reasoning": "Kelly = -5.1% (raw=49%→calibrated 47%). Negative edge — no position. Regime-adjusted: 0.75x.",
       "kelly_sizedAt": "2026-02-28T09:06:02.137Z",
       "outcome": {
-        "checkedAt": "2026-03-01T15:28:16.256Z",
-        "currentPrice": 1.5608,
-        "currentRate": -0.597590556,
-        "priceChange": 5.458978583701437,
-        "pnlPercent": -5.458978583701437,
+        "checkedAt": "2026-03-01T15:29:02.858Z",
+        "currentPrice": 1.5607,
+        "currentRate": -0.588530964,
+        "priceChange": 5.4522218577542505,
+        "pnlPercent": -5.4522218577542505,
         "status": "LOSING"
       }
     },
@@ -60575,11 +60575,11 @@
       "kelly_scale_factor": 0.478875,
       "kelly_reduced_at": "2026-02-28T13:06:02.669Z",
       "outcome": {
-        "checkedAt": "2026-03-01T15:28:16.256Z",
-        "currentPrice": 67120,
-        "currentRate": 0.021670487999999998,
-        "priceChange": 4.791494277997221,
-        "pnlPercent": -4.791494277997221,
+        "checkedAt": "2026-03-01T15:29:02.858Z",
+        "currentPrice": 67132,
+        "currentRate": 0.023768508,
+        "priceChange": 4.8102293484879235,
+        "pnlPercent": -4.8102293484879235,
         "status": "LOSING"
       },
       "kelly_superseded_by": "2026-02-28T17:01:03.107Z",
@@ -60616,11 +60616,11 @@
       "kelly_scale_factor": 0.478875,
       "kelly_reduced_at": "2026-02-28T13:06:02.669Z",
       "outcome": {
-        "checkedAt": "2026-03-01T15:28:16.256Z",
-        "currentPrice": 2009.7,
+        "checkedAt": "2026-03-01T15:29:02.858Z",
+        "currentPrice": 2011.4,
         "currentRate": 0.10950000000000001,
-        "priceChange": 7.407407407407415,
-        "pnlPercent": -7.407407407407415,
+        "priceChange": 7.4982630538186195,
+        "pnlPercent": -7.4982630538186195,
         "status": "LOSING"
       },
       "kelly_superseded_by": "2026-02-28T17:01:03.512Z",
@@ -60657,11 +60657,11 @@
       "kelly_scale_factor": 0.478875,
       "kelly_reduced_at": "2026-02-28T13:06:02.669Z",
       "outcome": {
-        "checkedAt": "2026-03-01T15:28:16.256Z",
-        "currentPrice": 86.23,
-        "currentRate": -0.1066749,
-        "priceChange": 9.120129582526616,
-        "pnlPercent": -9.120129582526616,
+        "checkedAt": "2026-03-01T15:29:02.858Z",
+        "currentPrice": 86.254,
+        "currentRate": -0.10533374399999999,
+        "priceChange": 9.15050048719994,
+        "pnlPercent": -9.15050048719994,
         "status": "LOSING"
       },
       "kelly_superseded_by": "2026-02-28T17:01:03.885Z",
@@ -60687,10 +60687,10 @@
       "kelly_reasoning": "Kelly = -49.0% (raw=35%→calibrated 25%). Negative edge — no position.",
       "kelly_sizedAt": "2026-02-28T13:06:02.668Z",
       "outcome": {
-        "checkedAt": "2026-03-01T15:28:16.256Z",
-        "currentPrice": 67120,
-        "currentRate": 0.021670487999999998,
-        "priceChange": 5.019823688293654,
+        "checkedAt": "2026-03-01T15:29:02.858Z",
+        "currentPrice": 67132,
+        "currentRate": 0.023768508,
+        "priceChange": 5.038599580490607,
         "pnlPercent": 0,
         "status": "LOSING"
       }
@@ -60715,9 +60715,9 @@
       "kelly_reasoning": "Kelly = -7.3% (raw=48%→calibrated 46%). Negative edge — no position.",
       "kelly_sizedAt": "2026-02-28T13:06:02.668Z",
       "outcome": {
-        "checkedAt": "2026-03-01T15:28:16.256Z",
+        "checkedAt": "2026-03-01T15:29:02.858Z",
         "currentPrice": 0.006895,
-        "currentRate": -0.146937612,
+        "currentRate": -0.147655932,
         "priceChange": 8.7079142920743,
         "pnlPercent": -8.7079142920743,
         "status": "LOSING"
@@ -60743,11 +60743,11 @@
       "kelly_reasoning": "Kelly = -5.8% (raw=48%→calibrated 47%). Negative edge — no position.",
       "kelly_sizedAt": "2026-02-28T13:06:02.668Z",
       "outcome": {
-        "checkedAt": "2026-03-01T15:28:16.256Z",
-        "currentPrice": 0.91469,
-        "currentRate": -0.040919712000000004,
-        "priceChange": 9.5321393680367,
-        "pnlPercent": -9.5321393680367,
+        "checkedAt": "2026-03-01T15:29:02.858Z",
+        "currentPrice": 0.91555,
+        "currentRate": -0.0389601,
+        "priceChange": 9.635122498776633,
+        "pnlPercent": -9.635122498776633,
         "status": "LOSING"
       }
     },
@@ -60771,11 +60771,11 @@
       "kelly_reasoning": "Kelly = -17.4% (raw=45%→calibrated 41%). Negative edge — no position.",
       "kelly_sizedAt": "2026-02-28T13:06:02.668Z",
       "outcome": {
-        "checkedAt": "2026-03-01T15:28:16.256Z",
-        "currentPrice": 86.23,
-        "currentRate": -0.1066749,
-        "priceChange": 9.398330140972057,
-        "pnlPercent": -9.398330140972057,
+        "checkedAt": "2026-03-01T15:29:02.858Z",
+        "currentPrice": 86.254,
+        "currentRate": -0.10533374399999999,
+        "priceChange": 9.428778475929537,
+        "pnlPercent": -9.428778475929537,
         "status": "LOSING"
       }
     },
@@ -60799,11 +60799,11 @@
       "kelly_reasoning": "Kelly = -9.2% (raw=47%→calibrated 45%). Negative edge — no position.",
       "kelly_sizedAt": "2026-02-28T13:06:02.668Z",
       "outcome": {
-        "checkedAt": "2026-03-01T15:28:16.256Z",
-        "currentPrice": 181.85,
+        "checkedAt": "2026-03-01T15:29:02.858Z",
+        "currentPrice": 182.11,
         "currentRate": 0.10950000000000001,
-        "priceChange": 8.850987741880752,
-        "pnlPercent": -8.850987741880752,
+        "priceChange": 9.006617419158129,
+        "pnlPercent": -9.006617419158129,
         "status": "LOSING"
       }
     },
@@ -60827,11 +60827,11 @@
       "kelly_reasoning": "Kelly = -17.8% (raw=45%→calibrated 41%). Negative edge — no position.",
       "kelly_sizedAt": "2026-02-28T13:06:02.668Z",
       "outcome": {
-        "checkedAt": "2026-03-01T15:28:16.256Z",
-        "currentPrice": 2009.7,
+        "checkedAt": "2026-03-01T15:29:02.858Z",
+        "currentPrice": 2011.4,
         "currentRate": 0.10950000000000001,
-        "priceChange": 7.771282304386347,
-        "pnlPercent": -7.771282304386347,
+        "priceChange": 7.862445751625965,
+        "pnlPercent": -7.862445751625965,
         "status": "LOSING"
       }
     },
@@ -60855,11 +60855,11 @@
       "kelly_reasoning": "Kelly = -15.2% (raw=46%→calibrated 42%). Negative edge — no position.",
       "kelly_sizedAt": "2026-02-28T13:06:02.668Z",
       "outcome": {
-        "checkedAt": "2026-03-01T15:28:16.256Z",
-        "currentPrice": 8.9675,
-        "currentRate": 0.10631924400000001,
-        "priceChange": 8.004518681613257,
-        "pnlPercent": -8.004518681613257,
+        "checkedAt": "2026-03-01T15:29:02.858Z",
+        "currentPrice": 8.9725,
+        "currentRate": 0.10729248,
+        "priceChange": 8.064738652999724,
+        "pnlPercent": -8.064738652999724,
         "status": "LOSING"
       }
     },
@@ -60887,11 +60887,11 @@
       "kelly_scale_factor": 0.335158,
       "kelly_reduced_at": "2026-03-01T09:06:02.344Z",
       "outcome": {
-        "checkedAt": "2026-03-01T15:28:16.256Z",
-        "currentPrice": 0.10098,
-        "currentRate": 0.001597824,
-        "priceChange": 10.129165025731677,
-        "pnlPercent": -10.129165025731677,
+        "checkedAt": "2026-03-01T15:29:02.858Z",
+        "currentPrice": 0.101,
+        "currentRate": 0.0020235599999999998,
+        "priceChange": 10.15097710040503,
+        "pnlPercent": -10.15097710040503,
         "status": "LOSING"
       },
       "medic_exit": {
@@ -61875,11 +61875,11 @@
       "kelly_scale_factor": 0.226292,
       "kelly_reduced_at": "2026-03-01T13:06:02.604Z",
       "outcome": {
-        "checkedAt": "2026-03-01T15:28:16.256Z",
-        "currentPrice": 67120,
-        "currentRate": 0.021670487999999998,
-        "priceChange": 3.166308023363049,
-        "pnlPercent": -3.166308023363049,
+        "checkedAt": "2026-03-01T15:29:02.858Z",
+        "currentPrice": 67132,
+        "currentRate": 0.023768508,
+        "priceChange": 3.184752536120504,
+        "pnlPercent": -3.184752536120504,
         "status": "LOSING"
       },
       "medic_exit": {
@@ -61922,11 +61922,11 @@
       "kelly_scale_factor": 0.226292,
       "kelly_reduced_at": "2026-03-01T13:06:02.604Z",
       "outcome": {
-        "checkedAt": "2026-03-01T15:28:16.256Z",
-        "currentPrice": 2009.7,
+        "checkedAt": "2026-03-01T15:29:02.858Z",
+        "currentPrice": 2011.4,
         "currentRate": 0.10950000000000001,
-        "priceChange": 5.612486205265645,
-        "pnlPercent": -5.612486205265645,
+        "priceChange": 5.701823532503021,
+        "pnlPercent": -5.701823532503021,
         "status": "LOSING"
       }
     },
@@ -61961,11 +61961,11 @@
       "kelly_scale_factor": 0.226292,
       "kelly_reduced_at": "2026-03-01T13:06:02.604Z",
       "outcome": {
-        "checkedAt": "2026-03-01T15:28:16.256Z",
-        "currentPrice": 86.23,
-        "currentRate": -0.1066749,
-        "priceChange": 6.43707955316917,
-        "pnlPercent": -6.43707955316917,
+        "checkedAt": "2026-03-01T15:29:02.858Z",
+        "currentPrice": 86.254,
+        "currentRate": -0.10533374399999999,
+        "priceChange": 6.466703696846269,
+        "pnlPercent": -6.466703696846269,
         "status": "LOSING"
       }
     },
@@ -61989,10 +61989,10 @@
       "kelly_reasoning": "Kelly = -49.0% (raw=35%→calibrated 25%). Negative edge — no position.",
       "kelly_sizedAt": "2026-02-28T17:06:02.296Z",
       "outcome": {
-        "checkedAt": "2026-03-01T15:28:16.256Z",
-        "currentPrice": 67120,
-        "currentRate": 0.021670487999999998,
-        "priceChange": 3.115438901483377,
+        "checkedAt": "2026-03-01T15:29:02.858Z",
+        "currentPrice": 67132,
+        "currentRate": 0.023768508,
+        "priceChange": 3.1338743196421643,
         "pnlPercent": 0,
         "status": "LOSING"
       }
@@ -62017,10 +62017,10 @@
       "kelly_reasoning": "Kelly = -49.0% (raw=35%→calibrated 25%). Negative edge — no position.",
       "kelly_sizedAt": "2026-02-28T17:06:02.296Z",
       "outcome": {
-        "checkedAt": "2026-03-01T15:28:16.256Z",
-        "currentPrice": 86.23,
-        "currentRate": -0.1066749,
-        "priceChange": 6.434273491406308,
+        "checkedAt": "2026-03-01T15:29:02.858Z",
+        "currentPrice": 86.254,
+        "currentRate": -0.10533374399999999,
+        "priceChange": 6.463896854085117,
         "pnlPercent": 0,
         "status": "LOSING"
       }
@@ -62045,9 +62045,9 @@
       "kelly_reasoning": "Kelly = -17.7% (raw=45%→calibrated 41%). Negative edge — no position.",
       "kelly_sizedAt": "2026-02-28T17:06:02.296Z",
       "outcome": {
-        "checkedAt": "2026-03-01T15:28:16.256Z",
+        "checkedAt": "2026-03-01T15:29:02.858Z",
         "currentPrice": 0.006895,
-        "currentRate": -0.146937612,
+        "currentRate": -0.147655932,
         "priceChange": 6.133090518785586,
         "pnlPercent": -6.133090518785586,
         "status": "LOSING"
@@ -62073,11 +62073,11 @@
       "kelly_reasoning": "Kelly = -16.6% (raw=45%→calibrated 42%). Negative edge — no position.",
       "kelly_sizedAt": "2026-02-28T17:06:02.296Z",
       "outcome": {
-        "checkedAt": "2026-03-01T15:28:16.256Z",
-        "currentPrice": 0.91469,
-        "currentRate": -0.040919712000000004,
-        "priceChange": 6.567942839543396,
-        "pnlPercent": -6.567942839543396,
+        "checkedAt": "2026-03-01T15:29:02.858Z",
+        "currentPrice": 0.91555,
+        "currentRate": -0.0389601,
+        "priceChange": 6.668139005284799,
+        "pnlPercent": -6.668139005284799,
         "status": "LOSING"
       }
     },
@@ -62101,10 +62101,10 @@
       "kelly_reasoning": "Kelly = -49.0% (raw=35%→calibrated 25%). Negative edge — no position.",
       "kelly_sizedAt": "2026-02-28T17:06:02.296Z",
       "outcome": {
-        "checkedAt": "2026-03-01T15:28:16.256Z",
-        "currentPrice": 3.8006,
-        "currentRate": -0.015314232000000002,
-        "priceChange": 3.256229713977832,
+        "checkedAt": "2026-03-01T15:29:02.858Z",
+        "currentPrice": 3.8012,
+        "currentRate": -0.014981351999999998,
+        "priceChange": 3.2725307553471894,
         "pnlPercent": 0,
         "status": "LOSING"
       }
@@ -62913,10 +62913,10 @@
       "kelly_reasoning": "Kelly = -49.0% (raw=35%→calibrated 25%). Negative edge — no position.",
       "kelly_sizedAt": "2026-02-28T21:06:02.461Z",
       "outcome": {
-        "checkedAt": "2026-03-01T15:28:16.256Z",
-        "currentPrice": 67120,
-        "currentRate": 0.021670487999999998,
-        "priceChange": 0.29488946623944456,
+        "checkedAt": "2026-03-01T15:29:02.859Z",
+        "currentPrice": 67132,
+        "currentRate": 0.023768508,
+        "priceChange": 0.31282061453495813,
         "pnlPercent": 0,
         "status": "LOSING"
       }
@@ -62941,9 +62941,9 @@
       "kelly_reasoning": "Kelly = -4.6% (raw=49%→calibrated 48%). Negative edge — no position.",
       "kelly_sizedAt": "2026-02-28T21:06:02.461Z",
       "outcome": {
-        "checkedAt": "2026-03-01T15:28:16.256Z",
+        "checkedAt": "2026-03-01T15:29:02.859Z",
         "currentPrice": 0.006895,
-        "currentRate": -0.146937612,
+        "currentRate": -0.147655932,
         "priceChange": -1.6986024396367303,
         "pnlPercent": -1.6986024396367303,
         "status": "LOSING"
@@ -62969,11 +62969,11 @@
       "kelly_reasoning": "Kelly = -6.7% (raw=48%→calibrated 47%). Negative edge — no position.",
       "kelly_sizedAt": "2026-02-28T21:06:02.461Z",
       "outcome": {
-        "checkedAt": "2026-03-01T15:28:16.256Z",
-        "currentPrice": 86.23,
-        "currentRate": -0.1066749,
-        "priceChange": 2.5735398868840136,
-        "pnlPercent": 2.5735398868840136,
+        "checkedAt": "2026-03-01T15:29:02.859Z",
+        "currentPrice": 86.254,
+        "currentRate": -0.10533374399999999,
+        "priceChange": 2.6020887093041147,
+        "pnlPercent": 2.6020887093041147,
         "status": "WINNING"
       }
     },
@@ -62997,11 +62997,11 @@
       "kelly_reasoning": "Kelly = -6.1% (raw=48%→calibrated 47%). Negative edge — no position.",
       "kelly_sizedAt": "2026-02-28T21:06:02.461Z",
       "outcome": {
-        "checkedAt": "2026-03-01T15:28:16.256Z",
-        "currentPrice": 181.85,
+        "checkedAt": "2026-03-01T15:29:02.859Z",
+        "currentPrice": 182.11,
         "currentRate": 0.10950000000000001,
-        "priceChange": 0.895894250221858,
-        "pnlPercent": 0.895894250221858,
+        "priceChange": 1.0401501342199864,
+        "pnlPercent": 1.0401501342199864,
         "status": "WINNING"
       }
     },
@@ -63025,10 +63025,10 @@
       "kelly_reasoning": "Kelly = -49.0% (raw=35%→calibrated 25%). Negative edge — no position.",
       "kelly_sizedAt": "2026-02-28T21:06:02.461Z",
       "outcome": {
-        "checkedAt": "2026-03-01T15:28:16.256Z",
-        "currentPrice": 0.91469,
-        "currentRate": -0.040919712000000004,
-        "priceChange": 1.4164739055121622,
+        "checkedAt": "2026-03-01T15:29:02.859Z",
+        "currentPrice": 0.91555,
+        "currentRate": -0.0389601,
+        "priceChange": 1.5118266125044082,
         "pnlPercent": 0,
         "status": "LOSING"
       }
@@ -63053,10 +63053,10 @@
       "kelly_reasoning": "Kelly = -49.0% (raw=35%→calibrated 25%). Negative edge — no position.",
       "kelly_sizedAt": "2026-02-28T21:06:02.461Z",
       "outcome": {
-        "checkedAt": "2026-03-01T15:28:16.256Z",
-        "currentPrice": 2009.7,
+        "checkedAt": "2026-03-01T15:29:02.859Z",
+        "currentPrice": 2011.4,
         "currentRate": 0.10950000000000001,
-        "priceChange": 2.383509859266455,
+        "priceChange": 2.4701158038157702,
         "pnlPercent": 0,
         "status": "LOSING"
       }
@@ -63081,10 +63081,10 @@
       "kelly_reasoning": "Kelly = -49.0% (raw=35%→calibrated 25%). Negative edge — no position.",
       "kelly_sizedAt": "2026-02-28T21:06:02.461Z",
       "outcome": {
-        "checkedAt": "2026-03-01T15:28:16.256Z",
-        "currentPrice": 1.3853,
-        "currentRate": -0.049020084000000005,
-        "priceChange": 0.8459995109836379,
+        "checkedAt": "2026-03-01T15:29:02.859Z",
+        "currentPrice": 1.3862,
+        "currentRate": -0.044239752,
+        "priceChange": 0.9115170158994667,
         "pnlPercent": 0,
         "status": "LOSING"
       }
@@ -63109,10 +63109,10 @@
       "kelly_reasoning": "Kelly = -49.0% (raw=35%→calibrated 25%). Negative edge — no position.",
       "kelly_sizedAt": "2026-02-28T21:06:02.461Z",
       "outcome": {
-        "checkedAt": "2026-03-01T15:28:16.256Z",
-        "currentPrice": 1.5608,
-        "currentRate": -0.597590556,
-        "priceChange": -3.8243868056623995,
+        "checkedAt": "2026-03-01T15:29:02.859Z",
+        "currentPrice": 1.5607,
+        "currentRate": -0.588530964,
+        "priceChange": -3.8305487491012977,
         "pnlPercent": 0,
         "status": "LOSING"
       }
@@ -63137,11 +63137,11 @@
       "kelly_reasoning": "Kelly = -3.6% (raw=49%→calibrated 48%). Negative edge — no position.",
       "kelly_sizedAt": "2026-02-28T21:06:02.461Z",
       "outcome": {
-        "checkedAt": "2026-03-01T15:28:16.257Z",
-        "currentPrice": 1.1573,
+        "checkedAt": "2026-03-01T15:29:02.859Z",
+        "currentPrice": 1.1579,
         "currentRate": 0.10950000000000001,
-        "priceChange": 2.0916110181456498,
-        "pnlPercent": 2.0916110181456498,
+        "priceChange": 2.1445402211274875,
+        "pnlPercent": 2.1445402211274875,
         "status": "WINNING"
       }
     },
@@ -63592,10 +63592,10 @@
       "kelly_reasoning": "Kelly = -49.0% (raw=35%→calibrated 25%). Negative edge — no position.",
       "kelly_sizedAt": "2026-03-01T05:06:02.575Z",
       "outcome": {
-        "checkedAt": "2026-03-01T15:28:16.257Z",
-        "currentPrice": 67120,
-        "currentRate": 0.021670487999999998,
-        "priceChange": -0.3377595207986381,
+        "checkedAt": "2026-03-01T15:29:02.859Z",
+        "currentPrice": 67132,
+        "currentRate": 0.023768508,
+        "priceChange": -0.3199414801885306,
         "pnlPercent": 0,
         "status": "LOSING"
       }
@@ -63620,9 +63620,9 @@
       "kelly_reasoning": "Kelly = -1.4% (raw=50%→calibrated 49%). Negative edge — no position.",
       "kelly_sizedAt": "2026-03-01T05:06:02.575Z",
       "outcome": {
-        "checkedAt": "2026-03-01T15:28:16.257Z",
+        "checkedAt": "2026-03-01T15:29:02.859Z",
         "currentPrice": 0.006895,
-        "currentRate": -0.146937612,
+        "currentRate": -0.147655932,
         "priceChange": -2.5501396006289796,
         "pnlPercent": -2.5501396006289796,
         "status": "LOSING"
@@ -63652,11 +63652,11 @@
       "kelly_scale_factor": 0.857143,
       "kelly_reduced_at": "2026-03-01T05:06:02.576Z",
       "outcome": {
-        "checkedAt": "2026-03-01T15:28:16.257Z",
-        "currentPrice": 86.23,
-        "currentRate": -0.1066749,
-        "priceChange": -1.5818509835205017,
-        "pnlPercent": -1.5818509835205017,
+        "checkedAt": "2026-03-01T15:29:02.859Z",
+        "currentPrice": 86.254,
+        "currentRate": -0.10533374399999999,
+        "priceChange": -1.5544587119630904,
+        "pnlPercent": -1.5544587119630904,
         "status": "LOSING"
       },
       "kelly_superseded_by": "2026-03-01T09:00:41.001Z",
@@ -63682,11 +63682,11 @@
       "kelly_reasoning": "Kelly = -5.8% (raw=48%→calibrated 47%). Negative edge — no position.",
       "kelly_sizedAt": "2026-03-01T05:06:02.575Z",
       "outcome": {
-        "checkedAt": "2026-03-01T15:28:16.257Z",
-        "currentPrice": 0.28116,
-        "currentRate": 0.04219692,
-        "priceChange": -1.6438334573346833,
-        "pnlPercent": -1.6438334573346833,
+        "checkedAt": "2026-03-01T15:29:02.859Z",
+        "currentPrice": 0.28141,
+        "currentRate": 0.044845068,
+        "priceChange": -1.5563777679206003,
+        "pnlPercent": -1.5563777679206003,
         "status": "LOSING"
       }
     },
@@ -63710,11 +63710,11 @@
       "kelly_reasoning": "Kelly = -2.8% (raw=49%→calibrated 49%). Negative edge — no position.",
       "kelly_sizedAt": "2026-03-01T05:06:02.575Z",
       "outcome": {
-        "checkedAt": "2026-03-01T15:28:16.257Z",
-        "currentPrice": 0.9436,
-        "currentRate": -0.29769545999999997,
-        "priceChange": -1.8008667315627063,
-        "pnlPercent": -1.8008667315627063,
+        "checkedAt": "2026-03-01T15:29:02.859Z",
+        "currentPrice": 0.9441,
+        "currentRate": -0.29747120400000004,
+        "priceChange": -1.7488324303394926,
+        "pnlPercent": -1.7488324303394926,
         "status": "LOSING"
       }
     },
@@ -63738,11 +63738,11 @@
       "kelly_reasoning": "Kelly = -0.9% (raw=50%→calibrated 50%). Negative edge — no position.",
       "kelly_sizedAt": "2026-03-01T05:06:02.575Z",
       "outcome": {
-        "checkedAt": "2026-03-01T15:28:16.257Z",
-        "currentPrice": 2009.7,
+        "checkedAt": "2026-03-01T15:29:02.859Z",
+        "currentPrice": 2011.4,
         "currentRate": 0.10950000000000001,
-        "priceChange": -0.32752131097315984,
-        "pnlPercent": -0.32752131097315984,
+        "priceChange": -0.24320862063562182,
+        "pnlPercent": -0.24320862063562182,
         "status": "LOSING"
       }
     },
@@ -63766,10 +63766,10 @@
       "kelly_reasoning": "Kelly = -49.0% (raw=35%→calibrated 25%). Negative edge — no position.",
       "kelly_sizedAt": "2026-03-01T05:06:02.575Z",
       "outcome": {
-        "checkedAt": "2026-03-01T15:28:16.257Z",
-        "currentPrice": 181.85,
+        "checkedAt": "2026-03-01T15:29:02.859Z",
+        "currentPrice": 182.11,
         "currentRate": 0.10950000000000001,
-        "priceChange": -0.7424279416055843,
+        "priceChange": -0.6005144484233766,
         "pnlPercent": 0,
         "status": "LOSING"
       }
@@ -64528,9 +64528,9 @@
       "kelly_reasoning": "Kelly = -62.5% (raw=30%→calibrated 19%). Negative edge — no position.",
       "kelly_sizedAt": "2026-03-01T09:06:02.343Z",
       "outcome": {
-        "checkedAt": "2026-03-01T15:28:16.257Z",
+        "checkedAt": "2026-03-01T15:29:02.859Z",
         "currentPrice": 0.006895,
-        "currentRate": -0.146937612,
+        "currentRate": -0.147655932,
         "priceChange": -0.13431561797345376,
         "pnlPercent": 0,
         "status": "LOSING"
@@ -64567,11 +64567,11 @@
       "kelly_superseded_by": "2026-03-01T09:02:06.601Z",
       "kelly_superseded_reason": "Replaced by undefined signal at 2026-03-01T09:02:06.601Z",
       "outcome": {
-        "checkedAt": "2026-03-01T15:28:16.257Z",
-        "currentPrice": 86.23,
-        "currentRate": -0.1066749,
-        "priceChange": 1.0261916913916374,
-        "pnlPercent": 1.0261916913916374,
+        "checkedAt": "2026-03-01T15:29:02.859Z",
+        "currentPrice": 86.254,
+        "currentRate": -0.10533374399999999,
+        "priceChange": 1.0543098474926866,
+        "pnlPercent": 1.0543098474926866,
         "status": "WINNING"
       }
     },
@@ -64607,11 +64607,11 @@
       "kelly_scale_factor": 0.226292,
       "kelly_reduced_at": "2026-03-01T13:06:02.604Z",
       "outcome": {
-        "checkedAt": "2026-03-01T15:28:16.257Z",
-        "currentPrice": 67120,
-        "currentRate": 0.021670487999999998,
-        "priceChange": 0.670350604035096,
-        "pnlPercent": 0.670350604035096,
+        "checkedAt": "2026-03-01T15:29:02.859Z",
+        "currentPrice": 67132,
+        "currentRate": 0.023768508,
+        "priceChange": 0.6883488788749116,
+        "pnlPercent": 0.6883488788749116,
         "status": "WINNING"
       }
     },
@@ -64646,11 +64646,11 @@
       "kelly_superseded_by": "2026-03-01T09:02:19.846Z",
       "kelly_superseded_reason": "Replaced by undefined signal at 2026-03-01T09:02:19.846Z",
       "outcome": {
-        "checkedAt": "2026-03-01T15:28:16.257Z",
-        "currentPrice": 1.1573,
+        "checkedAt": "2026-03-01T15:29:02.859Z",
+        "currentPrice": 1.1579,
         "currentRate": 0.10950000000000001,
-        "priceChange": -1.659701018314047,
-        "pnlPercent": -1.659701018314047,
+        "priceChange": -1.6087166759749774,
+        "pnlPercent": -1.6087166759749774,
         "status": "LOSING"
       }
     },
@@ -64678,10 +64678,10 @@
       "kelly_reasoning": "Kelly = -62.5% (raw=30%→calibrated 19%). Negative edge — no position.",
       "kelly_sizedAt": "2026-03-01T09:06:02.343Z",
       "outcome": {
-        "checkedAt": "2026-03-01T15:28:16.257Z",
-        "currentPrice": 181.85,
+        "checkedAt": "2026-03-01T15:29:02.859Z",
+        "currentPrice": 182.11,
         "currentRate": 0.10950000000000001,
-        "priceChange": 0.9492330818019288,
+        "priceChange": 1.0935652269835094,
         "pnlPercent": 0,
         "status": "LOSING"
       }
@@ -64717,11 +64717,11 @@
       "kelly_superseded_by": "2026-03-01T09:02:22.992Z",
       "kelly_superseded_reason": "Replaced by undefined signal at 2026-03-01T09:02:22.992Z",
       "outcome": {
-        "checkedAt": "2026-03-01T15:28:16.257Z",
-        "currentPrice": 2009.7,
+        "checkedAt": "2026-03-01T15:29:02.859Z",
+        "currentPrice": 2011.4,
         "currentRate": 0.10950000000000001,
-        "priceChange": 1.1641668405936934,
-        "pnlPercent": 1.1641668405936934,
+        "priceChange": 1.2497413460567048,
+        "pnlPercent": 1.2497413460567048,
         "status": "WINNING"
       }
     },
@@ -64756,11 +64756,11 @@
       "kelly_superseded_by": "2026-03-01T09:02:27.084Z",
       "kelly_superseded_reason": "Replaced by undefined signal at 2026-03-01T09:02:27.084Z",
       "outcome": {
-        "checkedAt": "2026-03-01T15:28:16.257Z",
-        "currentPrice": 1.3853,
-        "currentRate": -0.049020084000000005,
-        "priceChange": 0.38551566574533036,
-        "pnlPercent": 0.38551566574533036,
+        "checkedAt": "2026-03-01T15:29:02.859Z",
+        "currentPrice": 1.3862,
+        "currentRate": -0.044239752,
+        "priceChange": 0.4507340040830068,
+        "pnlPercent": 0.4507340040830068,
         "status": "WINNING"
       }
     },
@@ -64857,11 +64857,11 @@
       "kelly_scale_factor": 0.226292,
       "kelly_reduced_at": "2026-03-01T13:06:02.604Z",
       "outcome": {
-        "checkedAt": "2026-03-01T15:28:16.257Z",
-        "currentPrice": 67120,
-        "currentRate": 0.021670487999999998,
-        "priceChange": 0.9384023099133783,
-        "pnlPercent": 0.9384023099133783,
+        "checkedAt": "2026-03-01T15:29:02.859Z",
+        "currentPrice": 67132,
+        "currentRate": 0.023768508,
+        "priceChange": 0.9564485081809432,
+        "pnlPercent": 0.9564485081809432,
         "status": "WINNING"
       }
     },
@@ -64889,9 +64889,9 @@
       "kelly_reasoning": "Kelly = -62.5% (raw=30%→calibrated 19%). Negative edge — no position.",
       "kelly_sizedAt": "2026-03-01T09:06:02.343Z",
       "outcome": {
-        "checkedAt": "2026-03-01T15:28:16.257Z",
+        "checkedAt": "2026-03-01T15:29:02.859Z",
         "currentPrice": 0.006895,
-        "currentRate": -0.146937612,
+        "currentRate": -0.147655932,
         "priceChange": -0.13431561797345376,
         "pnlPercent": 0,
         "status": "LOSING"
@@ -64929,11 +64929,11 @@
       "kelly_scale_factor": 0.226292,
       "kelly_reduced_at": "2026-03-01T13:06:02.604Z",
       "outcome": {
-        "checkedAt": "2026-03-01T15:28:16.257Z",
-        "currentPrice": 86.23,
-        "currentRate": -0.1066749,
-        "priceChange": 1.0261916913916374,
-        "pnlPercent": 1.0261916913916374,
+        "checkedAt": "2026-03-01T15:29:02.859Z",
+        "currentPrice": 86.254,
+        "currentRate": -0.10533374399999999,
+        "priceChange": 1.0543098474926866,
+        "pnlPercent": 1.0543098474926866,
         "status": "WINNING"
       }
     },
@@ -64971,10 +64971,10 @@
       "kelly_superseded_by": "2026-03-01T10:47:32.583Z",
       "kelly_superseded_reason": "Replaced by undefined signal at 2026-03-01T10:47:32.583Z",
       "outcome": {
-        "checkedAt": "2026-03-01T15:28:16.257Z",
-        "currentPrice": 67120,
-        "currentRate": 0.021670487999999998,
-        "priceChange": 0.670350604035096,
+        "checkedAt": "2026-03-01T15:29:02.859Z",
+        "currentPrice": 67132,
+        "currentRate": 0.023768508,
+        "priceChange": 0.6883488788749116,
         "pnlPercent": 0,
         "status": "LOSING"
       }
@@ -65011,11 +65011,11 @@
       "kelly_scale_factor": 0.226292,
       "kelly_reduced_at": "2026-03-01T13:06:02.604Z",
       "outcome": {
-        "checkedAt": "2026-03-01T15:28:16.257Z",
-        "currentPrice": 1.1573,
+        "checkedAt": "2026-03-01T15:29:02.859Z",
+        "currentPrice": 1.1579,
         "currentRate": 0.10950000000000001,
-        "priceChange": -1.659701018314047,
-        "pnlPercent": -1.659701018314047,
+        "priceChange": -1.6087166759749774,
+        "pnlPercent": -1.6087166759749774,
         "status": "LOSING"
       }
     },
@@ -65043,10 +65043,10 @@
       "kelly_reasoning": "Kelly = -62.5% (raw=30%→calibrated 19%). Negative edge — no position.",
       "kelly_sizedAt": "2026-03-01T09:06:02.343Z",
       "outcome": {
-        "checkedAt": "2026-03-01T15:28:16.257Z",
-        "currentPrice": 181.85,
+        "checkedAt": "2026-03-01T15:29:02.860Z",
+        "currentPrice": 182.11,
         "currentRate": 0.10950000000000001,
-        "priceChange": 0.9492330818019288,
+        "priceChange": 1.0935652269835094,
         "pnlPercent": 0,
         "status": "LOSING"
       }
@@ -65085,11 +65085,11 @@
       "kelly_superseded_by": "2026-03-01T13:02:40.252Z",
       "kelly_superseded_reason": "Replaced by undefined signal at 2026-03-01T13:02:40.252Z",
       "outcome": {
-        "checkedAt": "2026-03-01T15:28:16.257Z",
-        "currentPrice": 2009.7,
+        "checkedAt": "2026-03-01T15:29:02.860Z",
+        "currentPrice": 2011.4,
         "currentRate": 0.10950000000000001,
-        "priceChange": 1.1641668405936934,
-        "pnlPercent": 1.1641668405936934,
+        "priceChange": 1.2497413460567048,
+        "pnlPercent": 1.2497413460567048,
         "status": "WINNING"
       }
     },
@@ -65127,11 +65127,11 @@
       "kelly_superseded_by": "2026-03-01T10:47:42.416Z",
       "kelly_superseded_reason": "Replaced by undefined signal at 2026-03-01T10:47:42.416Z",
       "outcome": {
-        "checkedAt": "2026-03-01T15:28:16.257Z",
-        "currentPrice": 1.3853,
-        "currentRate": -0.049020084000000005,
-        "priceChange": 0.38551566574533036,
-        "pnlPercent": 0.38551566574533036,
+        "checkedAt": "2026-03-01T15:29:02.860Z",
+        "currentPrice": 1.3862,
+        "currentRate": -0.044239752,
+        "priceChange": 0.4507340040830068,
+        "pnlPercent": 0.4507340040830068,
         "status": "WINNING"
       }
     },
@@ -65805,9 +65805,9 @@
       "kelly_scale_factor": 0.226292,
       "kelly_reduced_at": "2026-03-01T13:06:02.604Z",
       "outcome": {
-        "checkedAt": "2026-03-01T15:28:16.257Z",
+        "checkedAt": "2026-03-01T15:29:02.860Z",
         "currentPrice": 0.006895,
-        "currentRate": -0.146937612,
+        "currentRate": -0.147655932,
         "priceChange": 0.8811566706266754,
         "pnlPercent": 0.8811566706266754,
         "status": "WINNING"
@@ -65853,10 +65853,10 @@
       "kelly_superseded_by": "2026-03-01T13:02:38.847Z",
       "kelly_superseded_reason": "Replaced by undefined signal at 2026-03-01T13:02:38.847Z",
       "outcome": {
-        "checkedAt": "2026-03-01T15:28:16.257Z",
-        "currentPrice": 67120,
-        "currentRate": 0.021670487999999998,
-        "priceChange": 0.8897001917498476,
+        "checkedAt": "2026-03-01T15:29:02.860Z",
+        "currentPrice": 67132,
+        "currentRate": 0.023768508,
+        "priceChange": 0.9077376828449162,
         "pnlPercent": 0,
         "status": "LOSING"
       }
@@ -65901,10 +65901,10 @@
       "kelly_superseded_by": "2026-03-01T13:02:47.010Z",
       "kelly_superseded_reason": "Replaced by undefined signal at 2026-03-01T13:02:47.010Z",
       "outcome": {
-        "checkedAt": "2026-03-01T15:28:16.257Z",
-        "currentPrice": 86.23,
-        "currentRate": -0.1066749,
-        "priceChange": 0.9330126672689601,
+        "checkedAt": "2026-03-01T15:29:02.860Z",
+        "currentPrice": 86.254,
+        "currentRate": -0.10533374399999999,
+        "priceChange": 0.9611048892800299,
         "pnlPercent": 0,
         "status": "LOSING"
       }
@@ -65950,10 +65950,10 @@
       "kelly_scale_factor": 0.226292,
       "kelly_reduced_at": "2026-03-01T13:06:02.604Z",
       "outcome": {
-        "checkedAt": "2026-03-01T15:28:16.257Z",
-        "currentPrice": 2009.7,
+        "checkedAt": "2026-03-01T15:29:02.860Z",
+        "currentPrice": 2011.4,
         "currentRate": 0.10950000000000001,
-        "priceChange": 1.2263162351865373,
+        "priceChange": 1.3119433126606985,
         "pnlPercent": 0,
         "status": "LOSING"
       }
@@ -65999,10 +65999,10 @@
       "kelly_scale_factor": 0.226292,
       "kelly_reduced_at": "2026-03-01T13:06:02.604Z",
       "outcome": {
-        "checkedAt": "2026-03-01T15:28:16.257Z",
-        "currentPrice": 1.1573,
+        "checkedAt": "2026-03-01T15:29:02.860Z",
+        "currentPrice": 1.1579,
         "currentRate": 0.10950000000000001,
-        "priceChange": 0.2708334063945906,
+        "priceChange": 0.32281863066127175,
         "pnlPercent": 0,
         "status": "LOSING"
       }
@@ -66048,11 +66048,11 @@
       "kelly_scale_factor": 0.226292,
       "kelly_reduced_at": "2026-03-01T13:06:02.604Z",
       "outcome": {
-        "checkedAt": "2026-03-01T15:28:16.257Z",
-        "currentPrice": 1.3853,
-        "currentRate": -0.049020084000000005,
-        "priceChange": 0.5634789968132812,
-        "pnlPercent": 0.5634789968132812,
+        "checkedAt": "2026-03-01T15:29:02.860Z",
+        "currentPrice": 1.3862,
+        "currentRate": -0.044239752,
+        "priceChange": 0.6288129541489805,
+        "pnlPercent": 0.6288129541489805,
         "status": "WINNING"
       }
     },
@@ -66097,11 +66097,11 @@
       "kelly_scale_factor": 0.226292,
       "kelly_reduced_at": "2026-03-01T13:06:02.604Z",
       "outcome": {
-        "checkedAt": "2026-03-01T15:28:16.257Z",
-        "currentPrice": 0.91469,
-        "currentRate": -0.040919712000000004,
-        "priceChange": 1.0294994564470183,
-        "pnlPercent": -1.0294994564470183,
+        "checkedAt": "2026-03-01T15:29:02.860Z",
+        "currentPrice": 0.91555,
+        "currentRate": -0.0389601,
+        "priceChange": 1.124488326482267,
+        "pnlPercent": -1.124488326482267,
         "status": "LOSING"
       }
     },
@@ -66146,11 +66146,11 @@
       "kelly_scale_factor": 0.226292,
       "kelly_reduced_at": "2026-03-01T13:06:02.604Z",
       "outcome": {
-        "checkedAt": "2026-03-01T15:28:16.257Z",
-        "currentPrice": 9.1753,
+        "checkedAt": "2026-03-01T15:29:02.860Z",
+        "currentPrice": 9.1785,
         "currentRate": 0.10950000000000001,
-        "priceChange": 0.09346548766782799,
-        "pnlPercent": 0.09346548766782799,
+        "priceChange": 0.12837432874773835,
+        "pnlPercent": 0.12837432874773835,
         "status": "WINNING"
       }
     },
@@ -66250,11 +66250,11 @@
       "kelly_reasoning": "Kelly = -49.0% (low=35%→calibrated 25%). Negative edge — no position.",
       "kelly_sizedAt": "2026-03-01T13:06:02.604Z",
       "outcome": {
-        "checkedAt": "2026-03-01T15:28:16.257Z",
-        "currentPrice": 67120,
-        "currentRate": 0.021670487999999998,
-        "priceChange": 1.2963885241695718,
-        "pnlPercent": 1.2963885241695718,
+        "checkedAt": "2026-03-01T15:29:02.860Z",
+        "currentPrice": 67132,
+        "currentRate": 0.023768508,
+        "priceChange": 1.3144987247400433,
+        "pnlPercent": 1.3144987247400433,
         "status": "WINNING"
       }
     },
@@ -66287,9 +66287,9 @@
       "kelly_reasoning": "Kelly = -62.5% (raw=30%→calibrated 19%). Negative edge — no position.",
       "kelly_sizedAt": "2026-03-01T13:06:02.604Z",
       "outcome": {
-        "checkedAt": "2026-03-01T15:28:16.257Z",
+        "checkedAt": "2026-03-01T15:29:02.860Z",
         "currentPrice": 0.006895,
-        "currentRate": -0.146937612,
+        "currentRate": -0.147655932,
         "priceChange": 1.5662528448174915,
         "pnlPercent": 0,
         "status": "LOSING"
@@ -66332,10 +66332,10 @@
       "kelly_scale_factor": 0.226292,
       "kelly_reduced_at": "2026-03-01T13:06:02.604Z",
       "outcome": {
-        "checkedAt": "2026-03-01T15:28:16.257Z",
-        "currentPrice": 67120,
-        "currentRate": 0.021670487999999998,
-        "priceChange": 1.1927908761894919,
+        "checkedAt": "2026-03-01T15:29:02.860Z",
+        "currentPrice": 67132,
+        "currentRate": 0.023768508,
+        "priceChange": 1.2108825551304079,
         "pnlPercent": 0,
         "status": "LOSING"
       }
@@ -66377,11 +66377,11 @@
       "kelly_scale_factor": 0.226292,
       "kelly_reduced_at": "2026-03-01T13:06:02.604Z",
       "outcome": {
-        "checkedAt": "2026-03-01T15:28:16.258Z",
-        "currentPrice": 2009.7,
+        "checkedAt": "2026-03-01T15:29:02.860Z",
+        "currentPrice": 2011.4,
         "currentRate": 0.10950000000000001,
-        "priceChange": 1.599953288947395,
-        "pnlPercent": 1.599953288947395,
+        "priceChange": 1.6858964250329875,
+        "pnlPercent": 1.6858964250329875,
         "status": "WINNING"
       }
     },
@@ -66422,10 +66422,10 @@
       "kelly_scale_factor": 0.226292,
       "kelly_reduced_at": "2026-03-01T13:06:02.604Z",
       "outcome": {
-        "checkedAt": "2026-03-01T15:28:16.258Z",
-        "currentPrice": 0.91469,
-        "currentRate": -0.040919712000000004,
-        "priceChange": 1.752327607128499,
+        "checkedAt": "2026-03-01T15:29:02.860Z",
+        "currentPrice": 0.91555,
+        "currentRate": -0.0389601,
+        "priceChange": 1.8479960868780616,
         "pnlPercent": 0,
         "status": "LOSING"
       }

@@ -1,331 +1,121 @@
 {
   "tool": "jinx-correlation-monitor",
-  "timestamp": "2026-03-01T09:05:06.897Z",
-  "unixMs": 1772355906899,
-  "signalsAnalyzed": 27,
-  "uniqueCoins": 25,
-  "uniqueTools": 5,
+  "timestamp": "2026-03-01T13:05:07.123Z",
+  "unixMs": 1772370307125,
+  "signalsAnalyzed": 22,
+  "uniqueCoins": 21,
+  "uniqueTools": 4,
   "directionalBalance": {
-    "longs": 7,
-    "shorts": 6,
+    "longs": 5,
+    "shorts": 3,
     "flat": 0,
-    "ratio": 0.5384615384615384
+    "ratio": 0.625
   },
   "correlationPairs": [
     {
       "coinA": "ETH",
       "coinB": "BTC",
-      "correlation": 0.9288,
+      "correlation": 0.9301,
       "sameDirection": true,
       "risk": "HIGH"
     },
     {
-      "coinA": "SOL",
-      "coinB": "ETH",
-      "correlation": 0.9266,
+      "coinA": "ETH",
+      "coinB": "SOL",
+      "correlation": 0.9276,
+      "sameDirection": false,
+      "risk": "MEDIUM"
+    },
+    {
+      "coinA": "AVAX",
+      "coinB": "ADA",
+      "correlation": 0.9151,
       "sameDirection": true,
       "risk": "HIGH"
     },
     {
       "coinA": "ETH",
       "coinB": "ADA",
-      "correlation": 0.9086,
+      "correlation": 0.9088,
       "sameDirection": true,
       "risk": "HIGH"
     },
     {
-      "coinA": "SOL",
-      "coinB": "BTC",
-      "correlation": 0.9014,
-      "sameDirection": true,
-      "risk": "HIGH"
-    },
-    {
-      "coinA": "XRP",
-      "coinB": "ETH",
-      "correlation": 0.8902,
-      "sameDirection": true,
-      "risk": "HIGH"
-    },
-    {
-      "coinA": "XRP",
+      "coinA": "AVAX",
       "coinB": "SOL",
-      "correlation": 0.8864,
+      "correlation": 0.9085,
+      "sameDirection": false,
+      "risk": "MEDIUM"
+    },
+    {
+      "coinA": "ETH",
+      "coinB": "AVAX",
+      "correlation": 0.9069,
+      "sameDirection": true,
+      "risk": "HIGH"
+    },
+    {
+      "coinA": "BTC",
+      "coinB": "SOL",
+      "correlation": 0.9051,
+      "sameDirection": false,
+      "risk": "MEDIUM"
+    },
+    {
+      "coinA": "AVAX",
+      "coinB": "BTC",
+      "correlation": 0.8989,
       "sameDirection": true,
       "risk": "HIGH"
     },
     {
       "coinA": "BTC",
       "coinB": "ADA",
-      "correlation": 0.884,
-      "sameDirection": true,
-      "risk": "HIGH"
-    },
-    {
-      "coinA": "XRP",
-      "coinB": "ADA",
-      "correlation": 0.8828,
+      "correlation": 0.8883,
       "sameDirection": true,
       "risk": "HIGH"
     },
     {
       "coinA": "SOL",
       "coinB": "ADA",
-      "correlation": 0.8794,
-      "sameDirection": true,
-      "risk": "HIGH"
+      "correlation": 0.8746,
+      "sameDirection": false,
+      "risk": "MEDIUM"
     },
     {
-      "coinA": "XRP",
-      "coinB": "BTC",
-      "correlation": 0.8724,
-      "sameDirection": true,
-      "risk": "HIGH"
-    },
-    {
-      "coinA": "NEAR",
+      "coinA": "AVAX",
       "coinB": "APT",
-      "correlation": 0.8218,
+      "correlation": 0.8358,
       "sameDirection": true,
       "risk": "HIGH"
-    },
-    {
-      "coinA": "ARB",
-      "coinB": "ADA",
-      "correlation": 0.8138,
-      "sameDirection": false,
-      "risk": "MEDIUM"
-    },
-    {
-      "coinA": "APT",
-      "coinB": "ARB",
-      "correlation": 0.8115,
-      "sameDirection": false,
-      "risk": "MEDIUM"
     },
     {
       "coinA": "ETH",
       "coinB": "APT",
-      "correlation": 0.8113,
+      "correlation": 0.8126,
+      "sameDirection": true,
+      "risk": "HIGH"
+    },
+    {
+      "coinA": "BTC",
+      "coinB": "APT",
+      "correlation": 0.8023,
       "sameDirection": true,
       "risk": "HIGH"
     },
     {
       "coinA": "APT",
       "coinB": "ADA",
-      "correlation": 0.7978,
-      "sameDirection": true,
-      "risk": "HIGH"
-    },
-    {
-      "coinA": "BTC",
-      "coinB": "APT",
-      "correlation": 0.7972,
-      "sameDirection": true,
-      "risk": "HIGH"
-    },
-    {
-      "coinA": "ETH",
-      "coinB": "ARB",
-      "correlation": 0.7828,
-      "sameDirection": false,
-      "risk": "MEDIUM"
-    },
-    {
-      "coinA": "XRP",
-      "coinB": "ARB",
-      "correlation": 0.7738,
-      "sameDirection": false,
-      "risk": "MEDIUM"
-    },
-    {
-      "coinA": "BTC",
-      "coinB": "ARB",
-      "correlation": 0.768,
-      "sameDirection": false,
-      "risk": "MEDIUM"
-    },
-    {
-      "coinA": "SOL",
-      "coinB": "ARB",
-      "correlation": 0.7659,
-      "sameDirection": false,
-      "risk": "MEDIUM"
-    },
-    {
-      "coinA": "XRP",
-      "coinB": "APT",
-      "correlation": 0.7633,
+      "correlation": 0.799,
       "sameDirection": true,
       "risk": "HIGH"
     },
     {
       "coinA": "SOL",
       "coinB": "APT",
-      "correlation": 0.7629,
-      "sameDirection": true,
-      "risk": "HIGH"
-    },
-    {
-      "coinA": "NEAR",
-      "coinB": "ADA",
-      "correlation": 0.7498,
-      "sameDirection": true,
-      "risk": "HIGH"
-    },
-    {
-      "coinA": "ETH",
-      "coinB": "NEAR",
-      "correlation": 0.746,
-      "sameDirection": true,
-      "risk": "HIGH"
-    },
-    {
-      "coinA": "BTC",
-      "coinB": "NEAR",
-      "correlation": 0.7254,
-      "sameDirection": true,
-      "risk": "HIGH"
-    },
-    {
-      "coinA": "SOL",
-      "coinB": "NEAR",
-      "correlation": 0.6853,
-      "sameDirection": true,
-      "risk": "HIGH"
-    },
-    {
-      "coinA": "NEAR",
-      "coinB": "ARB",
-      "correlation": 0.6786,
+      "correlation": 0.7611,
       "sameDirection": false,
       "risk": "MEDIUM"
-    },
-    {
-      "coinA": "XRP",
-      "coinB": "NEAR",
-      "correlation": 0.6721,
-      "sameDirection": true,
-      "risk": "HIGH"
-    },
-    {
-      "coinA": "SOPH",
-      "coinB": "BTC",
-      "correlation": 0.5656,
-      "sameDirection": false,
-      "risk": "LOW"
-    },
-    {
-      "coinA": "SOPH",
-      "coinB": "ETH",
-      "correlation": 0.5506,
-      "sameDirection": false,
-      "risk": "LOW"
-    },
-    {
-      "coinA": "SOPH",
-      "coinB": "APT",
-      "correlation": 0.5241,
-      "sameDirection": false,
-      "risk": "LOW"
-    },
-    {
-      "coinA": "SOPH",
-      "coinB": "ARB",
-      "correlation": 0.5171,
-      "sameDirection": true,
-      "risk": "MEDIUM"
-    },
-    {
-      "coinA": "SOPH",
-      "coinB": "SOL",
-      "correlation": 0.5154,
-      "sameDirection": false,
-      "risk": "LOW"
-    },
-    {
-      "coinA": "SOPH",
-      "coinB": "NEAR",
-      "correlation": 0.5125,
-      "sameDirection": false,
-      "risk": "LOW"
-    },
-    {
-      "coinA": "SOPH",
-      "coinB": "ADA",
-      "correlation": 0.4865,
-      "sameDirection": false,
-      "risk": "LOW"
-    },
-    {
-      "coinA": "SOPH",
-      "coinB": "XRP",
-      "correlation": 0.4489,
-      "sameDirection": false,
-      "risk": "LOW"
-    },
-    {
-      "coinA": "XRP",
-      "coinB": "LAYER",
-      "correlation": 0.3065,
-      "sameDirection": false,
-      "risk": "LOW"
-    },
-    {
-      "coinA": "ETH",
-      "coinB": "LAYER",
-      "correlation": 0.2777,
-      "sameDirection": false,
-      "risk": "LOW"
-    },
-    {
-      "coinA": "LAYER",
-      "coinB": "ADA",
-      "correlation": 0.272,
-      "sameDirection": false,
-      "risk": "LOW"
-    },
-    {
-      "coinA": "SOL",
-      "coinB": "LAYER",
-      "correlation": 0.27,
-      "sameDirection": false,
-      "risk": "LOW"
-    },
-    {
-      "coinA": "LAYER",
-      "coinB": "ARB",
-      "correlation": 0.2473,
-      "sameDirection": true,
-      "risk": "LOW"
-    },
-    {
-      "coinA": "LAYER",
-      "coinB": "APT",
-      "correlation": 0.2454,
-      "sameDirection": false,
-      "risk": "LOW"
-    },
-    {
-      "coinA": "BTC",
-      "coinB": "LAYER",
-      "correlation": 0.2401,
-      "sameDirection": false,
-      "risk": "LOW"
-    },
-    {
-      "coinA": "LAYER",
-      "coinB": "NEAR",
-      "correlation": 0.2054,
-      "sameDirection": false,
-      "risk": "LOW"
-    },
-    {
-      "coinA": "SOPH",
-      "coinB": "LAYER",
-      "correlation": 0.2045,
-      "sameDirection": true,
-      "risk": "LOW"
     }
   ],
   "alerts": [
@@ -341,10 +131,10 @@
     {
       "type": "correlation",
       "severity": "HIGH",
-      "message": "SOL/ETH correlation 93% — same direction (LONG). Effective exposure doubled.",
+      "message": "AVAX/ADA correlation 92% — same direction (LONG). Effective exposure doubled.",
       "coins": [
-        "SOL",
-        "ETH"
+        "AVAX",
+        "ADA"
       ]
     },
     {
@@ -359,34 +149,25 @@
     {
       "type": "correlation",
       "severity": "HIGH",
-      "message": "SOL/BTC correlation 90% — same direction (LONG). Effective exposure doubled.",
+      "message": "ETH/AVAX correlation 91% — same direction (LONG). Effective exposure doubled.",
       "coins": [
-        "SOL",
+        "ETH",
+        "AVAX"
+      ]
+    },
+    {
+      "type": "correlation",
+      "severity": "HIGH",
+      "message": "AVAX/BTC correlation 90% — same direction (LONG). Effective exposure doubled.",
+      "coins": [
+        "AVAX",
         "BTC"
       ]
     },
     {
       "type": "correlation",
       "severity": "HIGH",
-      "message": "XRP/ETH correlation 89% — same direction (LONG). Effective exposure doubled.",
-      "coins": [
-        "XRP",
-        "ETH"
-      ]
-    },
-    {
-      "type": "correlation",
-      "severity": "HIGH",
-      "message": "XRP/SOL correlation 89% — same direction (LONG). Effective exposure doubled.",
-      "coins": [
-        "XRP",
-        "SOL"
-      ]
-    },
-    {
-      "type": "correlation",
-      "severity": "HIGH",
-      "message": "BTC/ADA correlation 88% — same direction (LONG). Effective exposure doubled.",
+      "message": "BTC/ADA correlation 89% — same direction (LONG). Effective exposure doubled.",
       "coins": [
         "BTC",
         "ADA"
@@ -395,36 +176,9 @@
     {
       "type": "correlation",
       "severity": "HIGH",
-      "message": "XRP/ADA correlation 88% — same direction (LONG). Effective exposure doubled.",
+      "message": "AVAX/APT correlation 84% — same direction (LONG). Effective exposure doubled.",
       "coins": [
-        "XRP",
-        "ADA"
-      ]
-    },
-    {
-      "type": "correlation",
-      "severity": "HIGH",
-      "message": "SOL/ADA correlation 88% — same direction (LONG). Effective exposure doubled.",
-      "coins": [
-        "SOL",
-        "ADA"
-      ]
-    },
-    {
-      "type": "correlation",
-      "severity": "HIGH",
-      "message": "XRP/BTC correlation 87% — same direction (LONG). Effective exposure doubled.",
-      "coins": [
-        "XRP",
-        "BTC"
-      ]
-    },
-    {
-      "type": "correlation",
-      "severity": "HIGH",
-      "message": "NEAR/APT correlation 82% — same direction (LONG). Effective exposure doubled.",
-      "coins": [
-        "NEAR",
+        "AVAX",
         "APT"
       ]
     },
@@ -440,15 +194,6 @@
     {
       "type": "correlation",
       "severity": "HIGH",
-      "message": "APT/ADA correlation 80% — same direction (LONG). Effective exposure doubled.",
-      "coins": [
-        "APT",
-        "ADA"
-      ]
-    },
-    {
-      "type": "correlation",
-      "severity": "HIGH",
       "message": "BTC/APT correlation 80% — same direction (LONG). Effective exposure doubled.",
       "coins": [
         "BTC",
@@ -458,83 +203,28 @@
     {
       "type": "correlation",
       "severity": "HIGH",
-      "message": "XRP/APT correlation 76% — same direction (LONG). Effective exposure doubled.",
+      "message": "APT/ADA correlation 80% — same direction (LONG). Effective exposure doubled.",
       "coins": [
-        "XRP",
-        "APT"
-      ]
-    },
-    {
-      "type": "correlation",
-      "severity": "HIGH",
-      "message": "SOL/APT correlation 76% — same direction (LONG). Effective exposure doubled.",
-      "coins": [
-        "SOL",
-        "APT"
-      ]
-    },
-    {
-      "type": "correlation",
-      "severity": "HIGH",
-      "message": "NEAR/ADA correlation 75% — same direction (LONG). Effective exposure doubled.",
-      "coins": [
-        "NEAR",
+        "APT",
         "ADA"
-      ]
-    },
-    {
-      "type": "correlation",
-      "severity": "HIGH",
-      "message": "ETH/NEAR correlation 75% — same direction (LONG). Effective exposure doubled.",
-      "coins": [
-        "ETH",
-        "NEAR"
-      ]
-    },
-    {
-      "type": "correlation",
-      "severity": "HIGH",
-      "message": "BTC/NEAR correlation 73% — same direction (LONG). Effective exposure doubled.",
-      "coins": [
-        "BTC",
-        "NEAR"
-      ]
-    },
-    {
-      "type": "correlation",
-      "severity": "HIGH",
-      "message": "SOL/NEAR correlation 69% — same direction (LONG). Effective exposure doubled.",
-      "coins": [
-        "SOL",
-        "NEAR"
-      ]
-    },
-    {
-      "type": "correlation",
-      "severity": "HIGH",
-      "message": "XRP/NEAR correlation 67% — same direction (LONG). Effective exposure doubled.",
-      "coins": [
-        "XRP",
-        "NEAR"
       ]
     },
     {
       "type": "concentration",
       "severity": "HIGH",
-      "message": "6 signals in L1 sector: SOL, ETH, ETH, SOL, NEAR, APT. Sector risk concentrated.",
+      "message": "5 signals in L1 sector: ETH, AVAX, ETH, SOL, APT. Sector risk concentrated.",
       "coins": [
-        "SOL",
         "ETH",
+        "AVAX",
         "ETH",
         "SOL",
-        "NEAR",
         "APT"
       ]
     },
     {
       "type": "stale",
       "severity": "MEDIUM",
-      "message": "1764 signals older than 24h. Review or close: AZTEC, OM, AXS, BIO, ACE, SKR, JTO, BERA, SNX, INJ, INIT, Will Bitcoin reach $200,000 be, [@mattyb’s 500th market specta, Will Bitcoin (BTC) be below CH, Will Bitcoin (BTC) price first, Will a Republican President ch, Will a former US president acc, Will Quinn Ewers defeat Arch M, (1k subsidy) Will Connor McGre, Same city wins 2+ major sports, Will Roger Goodell be replaced, Will Bitcoin Outperform Altcoi, More than 70% of U.S. populati, YGG, BLAST, ZORA, 0G, ICP, STABLE, ALGO, ATOM, DASH, UMA, BIGTIME, CELO, STRK, PYTH, MON, PNUT, TRUMP, IO, MEME, OP, kNEIRO, SOPH, XMR, WLFI, ZETA, W, MOVE, MOODENG, kLUNC, PENDLE, MORPHO, APE, AVNT, Will Bitcoin be higher than $8, MANTA, FET, MNT, SEI, ANIME, ZK, 2Z, TNSR, POL, AR, FIL, ZEN, kFLOKI, SAND, VVV, IP, S, NXPC, FTT, Bitcoin $120K in 2026?, PENGU, BRETT, SPX, TAO, DOT, SOL, DOGE, XRP, AIXBT, KAITO, BSV, EIGEN, MET, kSHIB, DYDX, LINK, AVAX, JUP, YZY, APT, STX, kBONK, ENA, PROMPT, PURR, RESOLV, GOAT, ALT, MELANIA, MERL, FARTCOIN, POPCAT, Will Bitcoin hit $100.000 agai, BTC, SUI, ETH, ARB, TURBO, NEAR, KAS, Bitcoin $140K in 2026?, Carried Interest Repeal by End, SKY, LIT, Will Bitcoin exceed $100,000 b, VIRTUAL, TRB, GRASS, GMX, GAS, AERO, RUNE, HYPER, XLM, Will Bitcoin (BTC) close at $1, FOGO, ME, DYM, IMX, COMP, , LAYER, HYPE, GRIFFAIN, SCR, AAVE, BLUR, NEO, APEX, HEMI, XAI, UNI, BONK, Will bitcoin's price go below , MAVIA, PEPE",
+      "message": "1794 signals older than 24h. Review or close: AZTEC, OM, AXS, BIO, ACE, SKR, JTO, BERA, SNX, INJ, INIT, Will Bitcoin reach $200,000 be, [@mattyb’s 500th market specta, Will Bitcoin (BTC) be below CH, Will Bitcoin (BTC) price first, Will a Republican President ch, Will a former US president acc, Will Quinn Ewers defeat Arch M, (1k subsidy) Will Connor McGre, Same city wins 2+ major sports, Will Roger Goodell be replaced, Will Bitcoin Outperform Altcoi, More than 70% of U.S. populati, YGG, BLAST, ZORA, 0G, ICP, STABLE, ALGO, ATOM, DASH, UMA, BIGTIME, CELO, STRK, PYTH, MON, PNUT, TRUMP, IO, MEME, OP, kNEIRO, SOPH, XMR, WLFI, ZETA, W, MOVE, MOODENG, kLUNC, PENDLE, MORPHO, APE, AVNT, Will Bitcoin be higher than $8, MANTA, FET, MNT, SEI, ANIME, ZK, 2Z, TNSR, POL, AR, FIL, ZEN, kFLOKI, SAND, VVV, IP, S, NXPC, FTT, Bitcoin $120K in 2026?, PENGU, BRETT, SPX, TAO, DOT, SOL, DOGE, XRP, AIXBT, KAITO, BSV, EIGEN, MET, kSHIB, DYDX, LINK, AVAX, JUP, YZY, APT, STX, kBONK, ENA, PROMPT, PURR, RESOLV, GOAT, ALT, MELANIA, MERL, FARTCOIN, POPCAT, Will Bitcoin hit $100.000 agai, BTC, SUI, ETH, ARB, TURBO, NEAR, KAS, Bitcoin $140K in 2026?, Carried Interest Repeal by End, SKY, LIT, Will Bitcoin exceed $100,000 b, VIRTUAL, TRB, GRASS, GMX, GAS, AERO, RUNE, HYPER, XLM, Will Bitcoin (BTC) close at $1, FOGO, ME, DYM, IMX, COMP, , LAYER, HYPE, GRIFFAIN, SCR, AAVE, BLUR, NEO, APEX, HEMI, XAI, UNI, BONK, Will bitcoin's price go below , MAVIA, PEPE",
       "coins": [
         "AZTEC",
         "OM",
@@ -692,6 +382,6 @@
       ]
     }
   ],
-  "portfolioRiskScore": 57,
+  "portfolioRiskScore": 63,
   "recommendation": "CAUTION: Moderate portfolio risk. Consider reducing position sizes on correlated pairs or adding opposing positions."
 }
